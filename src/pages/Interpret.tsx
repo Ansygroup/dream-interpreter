@@ -94,6 +94,8 @@ export default function Interpret() {
               <span className="serif" style={{ fontSize: 22, fontWeight: 600, color: 'var(--text)' }}>Dreamscope</span>
             </Link>
             <div style={{ display: 'flex', alignItems: 'center', gap: 28 }}>
+              <Link to="/about" className="navlink">About</Link>
+              <Link to="/faq" className="navlink">FAQ</Link>
               <Link to="/history" className="navlink">History</Link>
               <Link to="/saved" className="navlink">Saved</Link>
             </div>

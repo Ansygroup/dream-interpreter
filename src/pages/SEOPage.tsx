@@ -168,17 +168,25 @@ export default function SEOPage() {
   }, [content, symbol, lang]);
 
   if (!content) {
+    const known = Object.keys(CONTENT);
     return (
       <>
         <div className="ambient" />
-        <div style={{ minHeight: '70vh', display: 'grid', placeItems: 'center', textAlign: 'center', padding: 24 }}>
-        <div>
-          <span className="eyebrow">404</span>
-          <h1 className="display serif" style={{ marginBottom: 14 }}>No such symbol</h1>
-          <p className="lede" style={{ margin: '0 auto 28px' }}>This dream symbol page doesn't exist.</p>
-          <Link to="/" className="btn btn-primary">Back to Home</Link>
+        <div style={{ minHeight: '70vh', display: 'grid', placeItems: 'center', textAlign: 'center', padding: 24, position: 'relative', zIndex: 1 }}>
+          <div style={{ maxWidth: 640 }}>
+            <span className="eyebrow" style={{ justifyContent: 'center' }}>Dream Symbols</span>
+            <h1 className="h2 serif" style={{ marginBottom: 14 }}>Explore a symbol</h1>
+            <p className="lede" style={{ margin: '0 auto 28px' }}>Pick a symbol to read its meaning across traditions and languages.</p>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, justifyContent: 'center' }}>
+              {known.map((sym) => (
+                <Link key={sym} to={`/seo/${sym}/en`} className="tag" style={{ textDecoration: 'none' }}>{sym}</Link>
+              ))}
+            </div>
+            <div style={{ marginTop: 32 }}>
+              <Link to="/" className="btn btn-primary">Back to Home</Link>
+            </div>
+          </div>
         </div>
-      </div>
       </>
     );
   }
@@ -201,6 +209,8 @@ export default function SEOPage() {
           </Link>
           <div style={{ display: 'flex', alignItems: 'center', gap: 28 }}>
             <Link to="/interpret" className="navlink">Interpret</Link>
+            <Link to="/about" className="navlink">About</Link>
+            <Link to="/faq" className="navlink">FAQ</Link>
             <Link to="/history" className="navlink">History</Link>
             <Link to="/saved" className="navlink">Saved</Link>
           </div>

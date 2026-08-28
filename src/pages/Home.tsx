@@ -81,6 +81,8 @@ export default function Home() {
           </Link>
           <div style={{ display: 'flex', alignItems: 'center', gap: 28 }}>
             <Link to="/interpret" className="navlink">Interpret</Link>
+            <Link to="/about" className="navlink">About</Link>
+            <Link to="/faq" className="navlink">FAQ</Link>
             <Link to="/history" className="navlink">History</Link>
             <Link to="/saved" className="navlink">Saved</Link>
             <Link to="/interpret" className="btn btn-primary" style={{ padding: '10px 18px' }}>Start</Link>
@@ -212,6 +214,9 @@ export default function Home() {
           <div style={{ display: 'flex', gap: 24 }}>
             <Link to="/" className="navlink">Home</Link>
             <Link to="/interpret" className="navlink">Interpret</Link>
+            <Link to="/about" className="navlink">About</Link>
+            <Link to="/faq" className="navlink">FAQ</Link>
+            <Link to="/contact" className="navlink">Contact</Link>
             <Link to="/history" className="navlink">History</Link>
             <Link to="/saved" className="navlink">Saved</Link>
           </div>

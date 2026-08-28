@@ -69,6 +69,9 @@ function renderPage({ BASE, LANGS, SYM, CSS }, sk, lang, q, scenario) {
   <meta property="og:description" content="${h1}">
   <meta property="og:type" content="article">
   <meta property="og:url" content="${canonical}">
+  <meta property="og:image" content="${BASE}/og/${sk}.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="${BASE}/og/${sk}.svg">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"${title}","description":"${h1}","author":{"@type":"Organization","name":"Dreamscope"},"datePublished":"2024-01-01","dateModified":"2024-12-01"}</script>
   <style>${CSS}</style>
 </head>

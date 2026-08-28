@@ -1055,6 +1055,29 @@ fs.mkdirSync(outDir, { recursive: true });
 const dataJson = JSON.stringify({ BASE, LANGS, SYM, QUESTIONS, SCENARIOS, CSS });
 fs.writeFileSync(path.join(process.cwd(), 'api', 'seo-data.json'), dataJson);
 
+// Generate branded OG images (SVG) per symbol for social share cards
+const ogDir = path.join(process.cwd(), 'public', 'og');
+fs.mkdirSync(ogDir, { recursive: true });
+const OG_W = 1200, OG_H = 630;
+function ogSvg(label) {
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${OG_W}" height="${OG_H}" viewBox="0 0 ${OG_W} ${OG_H}">
+  <defs><radialGradient id="g" cx="28%" cy="18%" r="95%"><stop offset="0%" stop-color="#0f1a14"/><stop offset="100%" stop-color="#070a08"/></radialGradient></defs>
+  <rect width="${OG_W}" height="${OG_H}" fill="url(#g)"/>
+  <circle cx="980" cy="110" r="230" fill="none" stroke="#34d399" stroke-opacity="0.16" stroke-width="2"/>
+  <circle cx="980" cy="110" r="155" fill="none" stroke="#34d399" stroke-opacity="0.26" stroke-width="2"/>
+  <text x="80" y="120" fill="#34d399" font-family="ui-monospace,monospace" font-size="22" letter-spacing="5">DREAMSCOPE</text>
+  <text x="80" y="330" fill="#ffffff" font-family="Georgia,serif" font-size="82" font-weight="700">${label}</text>
+  <text x="80" y="408" fill="#b6bfb8" font-family="-apple-system,Segoe UI,sans-serif" font-size="34">Free AI Dream Interpretation</text>
+  <text x="80" y="560" fill="#7e8a82" font-family="-apple-system,Segoe UI,sans-serif" font-size="26">Ibn Sirin tradition · 36 languages · Private on device</text>
+</svg>`;
+}
+for (const sk of Object.keys(SYM)) {
+  const label = sk.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+  fs.writeFileSync(path.join(ogDir, sk + '.svg'), ogSvg(label));
+}
+// Generic OG for homepage
+fs.writeFileSync(path.join(ogDir, 'default.svg'), ogSvg('Dream Interpretation'));
+
 // Build sitemap URL list (on-demand pages, no static files needed)
 const pages = [];
 const slugify = (q) => q.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');

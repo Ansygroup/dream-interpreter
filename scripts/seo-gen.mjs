@@ -1,6 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 import { EXTRA_SYMBOLS } from './symbols-extra.mjs';
+import { BATCH2_SYMBOLS } from './symbols-batch2.mjs';
+import { SCENARIOS } from './scenarios.mjs';
 
 const BASE = 'https://dream-interpreter-alpha-ruddy.vercel.app';
 
@@ -19,6 +21,21 @@ function convertExtra() {
   return out;
 }
 const EXTRA = convertExtra();
+
+// Convert BATCH2_SYMBOLS (same tuple format) into SYM format
+function convertBatch2() {
+  const out = {};
+  for (const [sk, arr] of Object.entries(BATCH2_SYMBOLS)) {
+    const rec = {};
+    LANG_ORDER.forEach((lang, i) => {
+      const o = i * 3;
+      rec[lang] = { t: arr[o], h: arr[o+1], m: arr[o+2] };
+    });
+    out[sk] = rec;
+  }
+  return out;
+}
+const BATCH2 = convertBatch2();
 
 // 13 core languages for programmatic pages
 const LANGS = {
@@ -986,8 +1003,11 @@ const SYM = {
   },
 };
 
-// Merge EXTRA symbols into SYM (skip any already present)
+// Merge EXTRA + BATCH2 symbols into SYM (skip any already present)
 for (const [sk, rec] of Object.entries(EXTRA)) {
+  if (!SYM[sk]) SYM[sk] = rec;
+}
+for (const [sk, rec] of Object.entries(BATCH2)) {
   if (!SYM[sk]) SYM[sk] = rec;
 }
 
@@ -1032,19 +1052,23 @@ const outDir = path.join(process.cwd(), 'dist');
 fs.mkdirSync(outDir, { recursive: true });
 
 // Write SEO data for the serverless function (api/seo.js) — single file, no per-page files
-const dataJson = JSON.stringify({ BASE, LANGS, SYM, QUESTIONS, CSS });
+const dataJson = JSON.stringify({ BASE, LANGS, SYM, QUESTIONS, SCENARIOS, CSS });
 fs.writeFileSync(path.join(process.cwd(), 'api', 'seo-data.json'), dataJson);
 
 // Build sitemap URL list (on-demand pages, no static files needed)
 const pages = [];
+const slugify = (q) => q.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 for (const sk of Object.keys(SYM)) {
   for (const lang of Object.keys(LANGS)) {
     if (!SYM[sk][lang]) continue;
     pages.push('/seo/' + sk + '/' + lang);
     for (const q of (QUESTIONS[lang] || [])) {
-      const slug = q.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-      pages.push('/seo/' + sk + '/' + lang + '/' + slug);
+      pages.push('/seo/' + sk + '/' + lang + '/' + slugify(q));
     }
+    // Long-tail scenarios — use stable s<N> slug (phrase may be non-latin)
+    SCENARIOS.forEach((sc, si) => {
+      pages.push('/seo/' + sk + '/' + lang + '/s' + (si + 1));
+    });
   }
 }
 const sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n' +

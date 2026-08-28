@@ -3,7 +3,7 @@ import path from 'path';
 
 // On-demand SEO page server. Renders static-style pages from api/seo-data.json
 // built at deploy time by scripts/seo-gen.mjs. This avoids per-page files so we
-// can scale to unlimited symbols/langs without hitting Vercel's upload-file limit.
+// can scale to unlimited symbols/langs/scenarios without hitting Vercel's upload-file limit.
 
 let DATA = null;
 function loadData() {
@@ -17,16 +17,21 @@ function slugify(q) {
   return q.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
-function renderPage({ BASE, LANGS, SYM, CSS }, sk, lang, q) {
+function renderPage({ BASE, LANGS, SYM, CSS }, sk, lang, q, scenario) {
   const d = SYM[sk] && SYM[sk][lang];
   if (!d) return null;
   const li = LANGS[lang] || { name: lang, dir: 'ltr' };
-  const h1 = q
-    ? d.h.replace(/\?$/, '') + ' — ' + q.charAt(0).toUpperCase() + q.slice(1)
-    : d.h;
-  const title = q ? `${d.t} — ${q} | Dreamscope` : `${d.t} | Dreamscope`;
-  const canonical = q
-    ? `${BASE}/seo/${sk}/${lang}/${slugify(q)}`
+  const h1 = scenario
+    ? scenario
+    : q
+      ? d.h.replace(/\?$/, '') + ' — ' + q.charAt(0).toUpperCase() + q.slice(1)
+      : d.h;
+  const title = scenario
+    ? `${scenario} | Dreamscope`
+    : q ? `${d.t} — ${q} | Dreamscope` : `${d.t} | Dreamscope`;
+  const canonSlug = scenario ? slugify(scenario) : q ? slugify(q) : '';
+  const canonical = canonSlug
+    ? `${BASE}/seo/${sk}/${lang}/${canonSlug}`
     : `${BASE}/seo/${sk}/${lang}`;
 
   let hl = '', links = '';
@@ -36,6 +41,14 @@ function renderPage({ BASE, LANGS, SYM, CSS }, sk, lang, q) {
       links += `    <a href="/seo/${sk}/${l}">${LANGS[l].name}</a>\n`;
     }
   }
+
+  // Scenario pages get richer, unique body content for better long-tail ranking
+  const bodyExtra = scenario
+    ? `<div class="card">
+      <h2>Your Specific Dream</h2>
+      <p>${scenario}. When this symbol appears with the emotions and context of your dream, it points to a personal message from your subconscious. Consider how the ${d.t.replace(' Dream Meaning','').toLowerCase()} relates to your current life situation, relationships, and unspoken feelings.</p>
+    </div>`
+    : '';
 
   return `<!DOCTYPE html>
 <html lang="${lang}" dir="${li.dir}">
@@ -63,6 +76,7 @@ function renderPage({ BASE, LANGS, SYM, CSS }, sk, lang, q) {
       <h2>Dream Interpretation</h2>
       <p>${d.m} This interpretation combines ancient wisdom (Ibn Sirin) with modern psychology to give you a comprehensive understanding of your dream.</p>
     </div>
+    ${bodyExtra}
     <div class="card">
       <h2>Islamic Tradition</h2>
       <p>In Islamic tradition, dreams are seen as messages from the soul. The interpretation depends on the dreamer's circumstances, the emotions felt, and the overall context of the dream.</p>
@@ -82,7 +96,7 @@ function renderPage({ BASE, LANGS, SYM, CSS }, sk, lang, q) {
 
 export default function handler(req, res) {
   try {
-    const { BASE, LANGS, SYM, CSS, QUESTIONS } = loadData();
+    const { BASE, LANGS, SYM, CSS, QUESTIONS, SCENARIOS } = loadData();
     const url = new URL(req.url, BASE);
     const parts = url.pathname.split('/').filter(Boolean); // ['seo', sk, lang, slug?]
     if (parts[0] !== 'seo' || !parts[1] || !parts[2]) {
@@ -91,16 +105,22 @@ export default function handler(req, res) {
     const sk = parts[1];
     const lang = parts[2];
     const slug = parts[3];
-    let q = null;
-    if (slug) {
-      const qList = QUESTIONS[lang] || [];
-      q = qList.find((x) => slugify(x) === slug) || null;
-      if (!q) return res.status(404).send('Not found');
-    }
     if (!SYM[sk] || !SYM[sk][lang]) {
       return res.status(404).send('Not found');
     }
-    const html = renderPage({ BASE, LANGS, SYM, CSS }, sk, lang, q);
+    let q = null, scenario = null;
+    if (slug) {
+      const qList = QUESTIONS[lang] || [];
+      q = qList.find((x) => slugify(x) === slug) || null;
+      if (!q && slug.startsWith('s')) {
+        const idx = parseInt(slug.slice(1), 10) - 1;
+        if (!isNaN(idx) && SCENARIOS[idx]) {
+          scenario = (SCENARIOS[idx].tr[lang] || SCENARIOS[idx].base).replace(/\{sym\}/g, SYM[sk][lang].t);
+        }
+      }
+      if (!q && !scenario) return res.status(404).send('Not found');
+    }
+    const html = renderPage({ BASE, LANGS, SYM, CSS }, sk, lang, q, scenario);
     if (!html) return res.status(404).send('Not found');
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
     res.setHeader('Cache-Control', 'public, max-age=86400, s-maxage=86400');

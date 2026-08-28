@@ -167,6 +167,16 @@ h1, h2, h3, h4, .serif {
 
 @keyframes spin { to { transform: rotate(360deg); } }
 
+/* Skeleton loading shimmer */
+.skeleton {
+  background: linear-gradient(90deg, var(--surface) 25%, var(--surface-2) 50%, var(--surface) 75%);
+  background-size: 200% 100%;
+  border-radius: var(--radius-sm);
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+@keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+@media (prefers-reduced-motion: reduce) { .skeleton { animation: none; } }
+
 /* Ambient glow (fixed, behind hero) */
 .ambient {
   position: fixed;

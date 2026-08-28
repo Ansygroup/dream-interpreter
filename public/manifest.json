@@ -1,0 +1,17 @@
+{
+  "name": "Dreamscope — AI Dream Interpretation",
+  "short_name": "Dreamscope",
+  "description": "Describe your dream in your own words and get a clear reading grounded in Ibn Sirin and modern psychology.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0c0b",
+  "theme_color": "#0a0c0b",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

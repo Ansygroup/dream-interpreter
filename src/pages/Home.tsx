@@ -13,6 +13,22 @@ const SYMBOLS = [
   { key: 'fire', en: 'Fire', ar: 'النار' },
   { key: 'dog', en: 'Dog', ar: 'الكلب' },
   { key: 'marriage', en: 'Marriage', ar: 'الزواج' },
+  { key: 'cat', en: 'Cat', ar: 'القطة' },
+  { key: 'bird', en: 'Bird', ar: 'الطائر' },
+  { key: 'fish', en: 'Fish', ar: 'السمكة' },
+  { key: 'tree', en: 'Tree', ar: 'الشجرة' },
+  { key: 'sun', en: 'Sun', ar: 'الشمس' },
+  { key: 'moon', en: 'Moon', ar: 'القمر' },
+  { key: 'baby', en: 'Baby', ar: 'الرضيع' },
+  { key: 'money', en: 'Money', ar: 'المال' },
+  { key: 'pregnancy', en: 'Pregnancy', ar: 'الحمل' },
+  { key: 'blood', en: 'Blood', ar: 'الدم' },
+];
+
+const STATS = [
+  { value: '36', label: 'Languages' },
+  { value: '4,100+', label: 'Symbol pages' },
+  { value: '100%', label: 'Private' },
 ];
 
 const FEATURES = [
@@ -27,8 +43,8 @@ const FEATURES = [
     icon: (
       <svg className="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" /></svg>
     ),
-    title: '12 Languages',
-    body: 'Interpret and read symbols in English, Arabic, Spanish, Chinese, and eight more languages.',
+    title: '36 Languages',
+    body: 'Interpret and read symbols in English, Arabic, Spanish, Chinese, Japanese, and 31 more languages.',
   },
   {
     icon: (
@@ -90,22 +106,14 @@ export default function Home() {
                   <a href="#symbols" className="btn btn-ghost">Browse Symbols</a>
                 </div>
                 <div style={{ display: 'flex', gap: 28, marginTop: 44, flexWrap: 'wrap' }}>
-                  <div>
-                    <div className="serif" style={{ fontSize: 30, color: 'var(--text)' }}>12</div>
-                    <div style={{ fontSize: 13, color: 'var(--muted)' }}>Languages</div>
-                  </div>
-                  <div style={{ width: 1, background: 'var(--border)' }} />
-                  <div>
-                    <div className="serif" style={{ fontSize: 30, color: 'var(--text)' }}>130</div>
-                    <div style={{ fontSize: 13, color: 'var(--muted)' }}>Symbol pages</div>
-                  </div>
-                  <div style={{ width: 1, background: 'var(--border)' }} />
-                  <div>
-                    <div className="serif" style={{ fontSize: 30, color: 'var(--text)' }}>100%</div>
-                    <div style={{ fontSize: 13, color: 'var(--muted)' }}>Private</div>
+                  {STATS.map((s) => (
+                    <div key={s.label}>
+                      <div className="serif" style={{ fontSize: 30, color: 'var(--text)' }}>{s.value}</div>
+                      <div style={{ fontSize: 13, color: 'var(--muted)' }}>{s.label}</div>
+                    </div>
+                  ))}
                   </div>
                 </div>
-              </div>
 
               {/* Sample card stack */}
               <div className="reveal" data-delay="120ms" style={{ position: 'relative', minHeight: '360px' }}>

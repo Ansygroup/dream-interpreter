@@ -16,10 +16,33 @@ const LANGUAGES = [
   { code: 'pt', name: 'Português' },
   { code: 'ru', name: 'Русский' },
   { code: 'hi', name: 'हिंदी' },
+  { code: 'it', name: 'Italiano' },
+  { code: 'nl', name: 'Nederlands' },
+  { code: 'pl', name: 'Polski' },
+  { code: 'sv', name: 'Svenska' },
+  { code: 'uk', name: 'Українська' },
+  { code: 'id', name: 'Indonesia' },
+  { code: 'th', name: 'ไทย' },
+  { code: 'vi', name: 'Tiếng Việt' },
+  { code: 'fa', name: 'فارسی' },
+  { code: 'ur', name: 'اردو' },
+  { code: 'bn', name: 'বাংলা' },
+  { code: 'pa', name: 'ਪੰਜਾਬੀ' },
+  { code: 'ta', name: 'தமிழ்' },
+  { code: 'te', name: 'తెలుగు' },
+  { code: 'ms', name: 'Melayu' },
+  { code: 'ro', name: 'Română' },
+  { code: 'cs', name: 'Čeština' },
+  { code: 'el', name: 'Ελληνικά' },
+  { code: 'he', name: 'עברית' },
+  { code: 'hu', name: 'Magyar' },
+  { code: 'da', name: 'Dansk' },
+  { code: 'no', name: 'Norsk' },
+  { code: 'fi', name: 'Suomi' },
 ];
 
 export default function Interpret() {
-  const { language, setLanguage } = useI18n();
+  const { language, setLanguage, isRtl } = useI18n();
   const [dream, setDream] = useState('');
   const [result, setResult] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
@@ -45,7 +68,7 @@ export default function Interpret() {
       } else {
         setError('The interpretation failed. Please try again.');
       }
-    } catch {
+    } catch (e) {
       setError('Connection error. Please try again.');
     }
     setLoading(false);
@@ -61,7 +84,7 @@ export default function Interpret() {
   return (
     <>
       <div className="ambient" />
-      <div ref={ref}>
+      <div ref={ref} dir={isRtl ? 'rtl' : 'ltr'}>
         <header style={{ position: 'sticky', top: 0, zIndex: 10, backdropFilter: 'blur(12px)', background: 'rgba(10,12,11,0.72)', borderBottom: '1px solid var(--border-soft)' }}>
           <nav className="container" style={{ height: 68, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 10 }}>
@@ -134,7 +157,19 @@ export default function Interpret() {
               </button>
             </div>
 
-            {result && (
+            {loading && (
+              <div className="reveal" style={{ marginTop: 48 }}>
+                <div className="card" style={{ borderColor: 'var(--accent-line)', background: 'var(--surface-2)' }}>
+                  <div className="skeleton" style={{ height: 14, width: '40%', marginBottom: 16 }} />
+                  <div className="skeleton" style={{ height: 12, width: '100%', marginBottom: 10 }} />
+                  <div className="skeleton" style={{ height: 12, width: '92%', marginBottom: 10 }} />
+                  <div className="skeleton" style={{ height: 12, width: '97%', marginBottom: 10 }} />
+                  <div className="skeleton" style={{ height: 12, width: '85%' }} />
+                </div>
+              </div>
+            )}
+
+            {result && !loading && (
               <div className="reveal" style={{ marginTop: 48 }}>
                 <div className="card" style={{ borderColor: 'var(--accent-line)', background: 'var(--surface-2)', boxShadow: 'var(--shadow)' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>

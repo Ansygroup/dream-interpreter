@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/contexts/authcontext.tsx","./src/contexts/i18ncontext.tsx","./src/pages/history.tsx","./src/pages/home.tsx","./src/pages/interpret.tsx","./src/pages/saved.tsx"],"version":"5.9.3"}

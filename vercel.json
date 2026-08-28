@@ -2,8 +2,9 @@
   "version": 2,
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/sitemap.xml", "destination": "/api/sitemap.xml" },
     { "source": "/seo/:sym/:lang/:slug", "destination": "/seo/:sym/:lang/:slug.html" },
     { "source": "/seo/:sym/:lang", "destination": "/seo/:sym/:lang.html" },
-    { "source": "/((?!api/|seo/|favicon|robots.txt|sitemap.xml|assets/).*)", "destination": "/index.html" }
+    { "source": "/((?!api/|seo/|favicon|robots.txt|assets/).*)", "destination": "/index.html" }
   ]
 }

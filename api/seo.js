@@ -50,6 +50,11 @@ function renderPage({ BASE, LANGS, SYM, CSS }, sk, lang, q, scenario) {
     </div>`
     : '';
 
+  // Related symbols (internal linking equity — strongest rank signal we control)
+  const others = Object.keys(SYM).filter((s) => s !== sk).slice(0, 4);
+  const related = others.map((s) => `    <a href="/seo/${s}/${lang}">${SYM[s][lang] ? SYM[s][lang].t.replace(' Dream Meaning','').replace(' تفسير حلم','') : s}</a>`).join('\n');
+  const relatedBlock = `<div class="ls"><strong>Related dream symbols:</strong><br>${related}</div>`;
+
   return `<!DOCTYPE html>
 <html lang="${lang}" dir="${li.dir}">
 <head>
@@ -87,6 +92,7 @@ function renderPage({ BASE, LANGS, SYM, CSS }, sk, lang, q, scenario) {
       <p>Share your dream and get a personalized AI interpretation.</p>
       <a href="/interpret" class="cta">Try Dreamscope</a>
     </div>
+    ${relatedBlock}
     <div class="ls"><strong>Other languages:</strong><br>${links}</div>
     <footer><p>© 2024 Dreamscope. All rights reserved.</p></footer>
   </div>

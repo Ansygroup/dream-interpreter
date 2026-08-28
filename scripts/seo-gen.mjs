@@ -1027,152 +1027,33 @@ const CSS = `
   [dir=rtl]{direction:rtl;text-align:right}
 `;
 
-const outDir = path.join(process.cwd(), 'dist', 'seo');
+// ---- Build-time output: data module for on-demand serverless rendering ----
+const outDir = path.join(process.cwd(), 'dist');
 fs.mkdirSync(outDir, { recursive: true });
-let count = 0;
+
+// Write SEO data for the serverless function (api/seo.js) — single file, no per-page files
+const dataJson = JSON.stringify({ BASE, LANGS, SYM, QUESTIONS, CSS });
+fs.writeFileSync(path.join(process.cwd(), 'api', 'seo-data.json'), dataJson);
+
+// Build sitemap URL list (on-demand pages, no static files needed)
 const pages = [];
-
-function page(sk, lang, q) {
-  const d = SYM[sk][lang];
-  if (!d) return;
-  const li = LANGS[lang];
-  // Build localized H1 with the question modifier
-  const h1 = d.h.replace(/\?$/, '') + ' — ' + q.charAt(0).toUpperCase() + q.slice(1);
-  let hl = '', links = '';
-  for (const l of Object.keys(LANGS)) {
-    if (SYM[sk][l]) {
-      hl += `  <link rel="alternate" hreflang="${l}" href="${BASE}/seo/${sk}/${l}">\n`;
-      links += `    <a href="/seo/${sk}/${l}">${LANGS[l].name}</a>\n`;
-    }
-  }
-  const slug = q.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-  const html = `<!DOCTYPE html>
-<html lang="${lang}" dir="${li.dir}">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${d.t} — ${q} | Dreamscope</title>
-  <meta name="description" content="${h1}. Free AI-powered dream interpretation grounded in Ibn Sirin and modern psychology.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="${BASE}/seo/${sk}/${lang}/${slug}">
-  ${hl}
-  <meta property="og:title" content="${d.t} — ${q}">
-  <meta property="og:description" content="${h1}">
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="${BASE}/seo/${sk}/${lang}/${slug}">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"${d.t} — ${q}","description":"${h1}","author":{"@type":"Organization","name":"Dreamscope"},"datePublished":"2024-01-01","dateModified":"2024-12-01"}</script>
-  <style>${CSS}</style>
-</head>
-<body>
-  <div class="c">
-    <span class="ey">Dream Symbol</span>
-    <h1>${h1}</h1>
-    <p>${d.m}</p>
-    <div class="card">
-      <h2>Dream Interpretation</h2>
-      <p>${d.m} This interpretation combines ancient wisdom (Ibn Sirin) with modern psychology to give you a comprehensive understanding of your dream.</p>
-    </div>
-    <div class="card">
-      <h2>Islamic Tradition</h2>
-      <p>In Islamic tradition, dreams are seen as messages from the soul. The interpretation depends on the dreamer's circumstances, the emotions felt, and the overall context of the dream.</p>
-    </div>
-    <div class="ad">Advertisement<br><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3423159322001021" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
-    <div class="card" style="text-align:center">
-      <h2>Interpret Your Dreams with AI</h2>
-      <p>Share your dream and get a personalized AI interpretation.</p>
-      <a href="/interpret" class="cta">Try Dreamscope</a>
-    </div>
-    <div class="ls"><strong>Other languages:</strong><br>${links}</div>
-    <footer><p>© 2024 Dreamscope. All rights reserved.</p></footer>
-  </div>
-</body>
-</html>`;
-  const d2 = path.join(outDir, sk, lang);
-  fs.mkdirSync(d2, { recursive: true });
-  fs.writeFileSync(path.join(d2, slug + '.html'), html);
-  pages.push(`/seo/${sk}/${lang}/${slug}`);
-  count++;
-}
-
-// Base symbol pages (no question suffix)
 for (const sk of Object.keys(SYM)) {
   for (const lang of Object.keys(LANGS)) {
     if (!SYM[sk][lang]) continue;
-    const d = SYM[sk][lang];
-    const li = LANGS[lang];
-    let hl = '', links = '';
-    for (const l of Object.keys(LANGS)) {
-      if (SYM[sk][l]) {
-        hl += `  <link rel="alternate" hreflang="${l}" href="${BASE}/seo/${sk}/${l}">\n`;
-        links += `    <a href="/seo/${sk}/${l}">${LANGS[l].name}</a>\n`;
-      }
-    }
-    const html = `<!DOCTYPE html>
-<html lang="${lang}" dir="${li.dir}">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${d.t} | Dreamscope</title>
-  <meta name="description" content="${d.h} Free AI-powered dream interpretation grounded in Ibn Sirin and modern psychology.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="${BASE}/seo/${sk}/${lang}">
-  ${hl}
-  <meta property="og:title" content="${d.t}">
-  <meta property="og:description" content="${d.h}">
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="${BASE}/seo/${sk}/${lang}">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"${d.t}","description":"${d.h}","author":{"@type":"Organization","name":"Dreamscope"},"datePublished":"2024-01-01","dateModified":"2024-12-01"}</script>
-  <style>${CSS}</style>
-</head>
-<body>
-  <div class="c">
-    <span class="ey">Dream Symbol</span>
-    <h1>${d.h}</h1>
-    <p>${d.m}</p>
-    <div class="card">
-      <h2>Dream Interpretation</h2>
-      <p>${d.m} This interpretation combines ancient wisdom (Ibn Sirin) with modern psychology to give you a comprehensive understanding of your dream.</p>
-    </div>
-    <div class="card">
-      <h2>Islamic Tradition</h2>
-      <p>In Islamic tradition, dreams are seen as messages from the soul. The interpretation depends on the dreamer's circumstances, the emotions felt, and the overall context of the dream.</p>
-    </div>
-    <div class="ad">Advertisement<br><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3423159322001021" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
-    <div class="card" style="text-align:center">
-      <h2>Interpret Your Dreams with AI</h2>
-      <p>Share your dream and get a personalized AI interpretation.</p>
-      <a href="/interpret" class="cta">Try Dreamscope</a>
-    </div>
-    <div class="ls"><strong>Other languages:</strong><br>${links}</div>
-    <footer><p>© 2024 Dreamscope. All rights reserved.</p></footer>
-  </div>
-</body>
-</html>`;
-    const d2 = path.join(outDir, sk);
-    fs.mkdirSync(d2, { recursive: true });
-    fs.writeFileSync(path.join(d2, lang + '.html'), html);
-    pages.push(`/seo/${sk}/${lang}`);
-    count++;
-  }
-}
-
-// Long-tail question pages
-for (const sk of Object.keys(SYM)) {
-  for (const lang of Object.keys(LANGS)) {
-    if (!SYM[sk][lang]) continue;
-    for (const q of QUESTIONS[lang] || []) {
-      page(sk, lang, q);
+    pages.push('/seo/' + sk + '/' + lang);
+    for (const q of (QUESTIONS[lang] || [])) {
+      const slug = q.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      pages.push('/seo/' + sk + '/' + lang + '/' + slug);
     }
   }
 }
+const sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n' +
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+  '  <url><loc>' + BASE + '/</loc><lastmod>2024-12-01</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>\n' +
+  pages.map((p) => '  <url><loc>' + BASE + p + '</loc><lastmod>2024-12-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>').join('\n') +
+  '\n</urlset>';
+fs.writeFileSync(path.join(outDir, 'sitemap.xml'), sitemap);
+fs.writeFileSync(path.join(outDir, 'robots.txt'), 'User-agent: *\nAllow: /\nSitemap: ' + BASE + '/sitemap.xml');
 
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>${BASE}/</loc><lastmod>2024-12-01</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-${pages.map((p) => `  <url><loc>${BASE}${p}</loc><lastmod>2024-12-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>`).join('\n')}
-</urlset>`;
-fs.writeFileSync(path.join(outDir, '..', 'sitemap.xml'), sitemap);
-fs.writeFileSync(path.join(outDir, '..', 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${BASE}/sitemap.xml`);
-
-console.log('Generated ' + count + ' SEO pages');
+console.log('On-demand SEO mode: data module + sitemap generated');
 console.log('Sitemap: ' + (pages.length + 1) + ' URLs');

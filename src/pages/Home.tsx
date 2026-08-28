@@ -105,7 +105,7 @@ export default function Home() {
                 </p>
                 <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
                   <Link to="/interpret" className="btn btn-primary">Interpret a Dream</Link>
-                  <a href="#symbols" className="btn btn-ghost">Browse Symbols</a>
+                  <Link to="/symbols" className="btn btn-ghost">Browse Symbols</Link>
                 </div>
                 <div style={{ display: 'flex', gap: 28, marginTop: 44, flexWrap: 'wrap' }}>
                   {STATS.map((s) => (

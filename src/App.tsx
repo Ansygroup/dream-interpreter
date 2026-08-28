@@ -5,6 +5,7 @@ import Interpret from './pages/Interpret';
 import History from './pages/History';
 import Saved from './pages/Saved';
 import SEOPage from './pages/SEOPage';
+import Symbols from './pages/Symbols';
 import NotFound from './pages/NotFound';
 import FAQ from './pages/FAQ';
 import About from './pages/About';
@@ -19,6 +20,7 @@ function App() {
         <Route path="/interpret" element={<Interpret />} />
         <Route path="/history" element={<History />} />
         <Route path="/saved" element={<Saved />} />
+        <Route path="/symbols" element={<Symbols />} />
         <Route path="/seo/:symbol/:lang" element={<SEOPage />} />
         <Route path="/seo/:symbol/:lang/:slug" element={<SEOPage />} />
         <Route path="/faq" element={<FAQ />} />

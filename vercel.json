@@ -1,23 +1,9 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/**/*.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
-    }
-  ],
-  "outputDirectory": "dist",
-  "github": {
-    "silent": true
-  },
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/seo/:sym/:lang/:slug", "destination": "/seo/:sym/:lang/:slug.html" },
+    { "source": "/seo/:sym/:lang", "destination": "/seo/:sym/:lang.html" },
+    { "source": "/((?!api/|seo/|favicon|robots.txt|sitemap.xml|assets/).*)", "destination": "/index.html" }
   ]
 }

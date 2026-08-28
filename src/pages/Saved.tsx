@@ -1,146 +1,98 @@
 import { useState, useEffect } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
-import { useI18n } from '../contexts/I18nContext';
+import { Link } from 'react-router-dom';
+import { useReveal } from '../hooks/useReveal';
+
+type DreamItem = { id: number; dream: string; interpretation: string; date: string; language?: string };
+
+const Nav = () => (
+  <header style={{ position: 'sticky', top: 0, zIndex: 10, backdropFilter: 'blur(12px)', background: 'rgba(10,12,11,0.72)', borderBottom: '1px solid var(--border-soft)' }}>
+    <nav className="container" style={{ height: 68, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+      <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 10 }}>
+        <span style={{ width: 26, height: 26, borderRadius: 7, background: 'var(--accent-glow)', border: '1px solid var(--accent-line)', display: 'grid', placeItems: 'center' }}>
+          <svg className="icon" viewBox="0 0 24 24" style={{ width: 15, height: 15, color: 'var(--accent)' }}><path d="M12 3a6 6 0 0 0 0 12 4 4 0 0 1 0 6" /><path d="M12 3a6 6 0 0 1 0 12" /></svg>
+        </span>
+        <span className="serif" style={{ fontSize: 22, fontWeight: 600, color: 'var(--text)' }}>Dreamscope</span>
+      </Link>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 28 }}>
+        <Link to="/interpret" className="navlink">Interpret</Link>
+        <Link to="/history" className="navlink">History</Link>
+      </div>
+    </nav>
+  </header>
+);
+
+const Footer = () => (
+  <footer className="section-line" style={{ padding: '40px 0' }}>
+    <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16 }}>
+      <span className="serif" style={{ fontSize: 18, color: 'var(--text-dim)' }}>Dreamscope</span>
+      <Link to="/" className="navlink">Home</Link>
+      <span style={{ fontSize: 13, color: 'var(--muted)' }}>© 2024 Dreamscope</span>
+    </div>
+  </footer>
+);
+
+const EmptyState = ({ label, cta }: { label: string; cta: string }) => (
+  <div className="card" style={{ textAlign: 'center', padding: '48px 24px' }}>
+    <svg className="icon" viewBox="0 0 24 24" style={{ width: 32, height: 32, color: 'var(--muted)', margin: '0 auto 16px' }}><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" /></svg>
+    <p style={{ color: 'var(--muted)', marginBottom: 20 }}>{label}</p>
+    <Link to="/interpret" className="btn btn-primary">{cta}</Link>
+  </div>
+);
 
 export default function Saved() {
-  const { t } = useI18n();
-  const navigate = useNavigate();
-  const [savedDreams, setSavedDreams] = useState<Array<any>>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [dreams, setDreams] = useState<DreamItem[]>([]);
+  const ref = useReveal<HTMLDivElement>();
 
   useEffect(() => {
-    const fetchSaved = async () => {
-      try {
-        setLoading(true);
-        const response = await fetch('http://localhost:3001/api/saved');
-        if (!response.ok) {
-          throw new Error('Failed to fetch saved dreams');
-        }
-        const data = await response.json();
-        setSavedDreams(data.dreams || []);
-      } catch (err: any) {
-        setError(err.message || t('error.something'));
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchSaved();
+    const raw = localStorage.getItem('saved-dreams');
+    if (raw) {
+      try { setDreams(JSON.parse(raw)); } catch { setDreams([]); }
+    }
   }, []);
 
-  const handleUnsave = async (id: string) => {
-    // In a real app, this would call an unsave endpoint
-    // For now, we'll just filter locally
-    setSavedDreams(prev => prev.filter(dream => dream.id !== id));
+  const remove = (id: number) => {
+    const next = dreams.filter((d) => d.id !== id);
+    setDreams(next);
+    localStorage.setItem('saved-dreams', JSON.stringify(next));
   };
-
-  const handleInterpretAgain = (dream: string, language: string) => {
-    navigate(`/interpret`, { state: { dream, language } });
-  };
-
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-background text-foreground flex items-center justify-center">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-cosmic-500"></div>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="min-h-screen bg-background text-foreground flex items-center justify-center">
-        <div className="bg-red-500/20 border border-red-500/50 text-red-400 rounded-lg px-6 py-4 max-w-xl">
-          {error}
-        </div>
-      </div>
-    );
-  }
 
   return (
-    <div className="min-h-screen bg-background text-foreground transition-colors duration-200 dark">
-      {/* Language switcher */}
-      <div className="fixed top-4 right-4 z-50">
-        <select 
-          value={localStorage.getItem('i18nextLng') || 'en'} 
-          onChange={(e) => {
-            localStorage.setItem('i18nextLng', e.target.value);
-            window.location.reload();
-          }}
-          className="bg-cosmic-800/50 backdrop-blur-sm text-white border border-cosmic-600/30 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-cosmic-400"
-        >
-          {['en', 'ar', 'es', 'fr', 'de', 'it', 'pt', 'ru', 'zh', 'ja', 'ko', 'tr', 'nl', 'pl', 'sv', 'da', 'no'].map(lang => {
-            const langName = t('app.title') as any;
-            const displayName = langName[lang] ? langName[lang] : lang.toUpperCase();
-            return (
-              <option key={lang} value={lang}>
-                {displayName}
-              </option>
-            );
-          })}
-        </select>
-      </div>
+    <>
+      <div className="ambient" />
+      <div ref={ref}>
+        <Nav />
+        <main className="section" style={{ position: 'relative', zIndex: 1, paddingTop: 'clamp(48px, 7vw, 80px)' }}>
+          <div className="container-narrow">
+            <div className="reveal" style={{ marginBottom: 40 }}>
+              <span className="eyebrow">Your Library</span>
+              <h1 className="h2 serif" style={{ marginBottom: 12 }}>Saved dreams</h1>
+              <p className="lede">Keep the interpretations that mattered. They stay on this device.</p>
+            </div>
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <header className="mb-8">
-          <Link to="/" className="inline-flex items-center text-cosmic-300 hover:text-cosmic-200 mb-4">
-            <span className="mr-2">←</span>
-            <span>{t('nav.home')}</span>
-          </Link>
-          
-          <h1 className="text-3xl font-display text-white mb-2">
-            {t('saved.title')}
-          </h1>
-        </header>
-
-        {savedDreams.length === 0 ? (
-          <div className="text-center py-16">
-            <p className="text-cosmic-400">{t('saved.empty')}</p>
-          </div>
-        ) : (
-          <div className="space-y-6">
-            {savedDreams.map((dream) => (
-              <div key={dream.id} className="bg-cosmic-800/50 backdrop-blur-sm border border-cosmic-600/30 rounded-lg p-5 hover:border-cosmic-400/50 transition-all duration-200">
-                <div className="flex justify-between items-start mb-3">
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-white mb-1">
-                      {dream.dream.length > 50 ? dream.dream.substring(0, 50) + '...' : dream.dream}
-                    </h3>
-                    <p className="text-cosmic-300 text-sm">
-                      {new Date(dream.timestamp).toLocaleString(undefined, { 
-                        dateStyle: 'short', 
-                        timeStyle: 'short' 
-                      })} · {dream.language.toUpperCase()}
-                    </p>
+            {dreams.length === 0 ? (
+              <EmptyState label="Nothing saved yet." cta="Interpret a Dream" />
+            ) : (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+                {dreams.map((d, i) => (
+                  <div key={d.id} className="card card-hover reveal" data-delay={`${(i % 6) * 60}ms`} style={{ padding: '20px 22px' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', gap: 16, alignItems: 'flex-start', marginBottom: 10 }}>
+                      <p style={{ fontWeight: 500, color: 'var(--text)' }}>{d.dream.length > 80 ? d.dream.slice(0, 80) + '…' : d.dream}</p>
+                      <button onClick={() => remove(d.id)} aria-label="Remove" style={{ background: 'transparent', border: 'none', color: 'var(--muted)', cursor: 'pointer', fontSize: 18, lineHeight: 1, padding: 4 }}>
+                        ×
+                      </button>
+                    </div>
+                    <p style={{ color: 'var(--text-dim)', fontSize: 14, lineHeight: 1.7 }}>{d.interpretation}</p>
+                    <div style={{ marginTop: 12, fontSize: 12, color: 'var(--muted)', fontFamily: 'JetBrains Mono Variable, monospace' }}>
+                      {new Date(d.date).toLocaleDateString()} · {d.language?.toUpperCase() || 'EN'}
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <button
-                      onClick={() => handleInterpretAgain(dream.dream, dream.language)}
-                      className="text-cosmic-300 hover:text-cosmic-200 hover:underline text-sm"
-                    >
-                      {t('nav.interpret')}
-                    </button>
-                    <button
-                      onClick={() => handleUnsave(dream.id)}
-                      className="text-red-400 hover:text-red-300 hover:underline text-sm"
-                    >
-                      ×
-                    </button>
-                  </div>
-                </div>
-                
-                {dream.interpretation && (
-                  <div className="bg-cosmic-700/50 rounded-lg p-4 mt-3">
-                    <p className="text-cosmic-100 leading-relaxed whitespace-pre-wrap">
-                      {dream.interpretation}
-                    </p>
-                  </div>
-                )}
+                ))}
               </div>
-            ))}
+            )}
           </div>
-        )}
+        </main>
+        <Footer />
       </div>
-    </div>
+    </>
   );
 }

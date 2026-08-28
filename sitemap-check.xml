@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Interpreter - Interpret Your Dreams with AI</title>
+    <meta name="description" content="Free AI-powered dream interpreter in 17+ languages. Understand the meaning of your dreams with ancient wisdom and modern psychology." />
+    <script type="module" crossorigin src="/assets/index-Bc_OmitS.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/react-C3i0E6rp.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-BpaiJNt2.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

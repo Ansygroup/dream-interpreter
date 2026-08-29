@@ -5,17 +5,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "#0c0f0d",
-        foreground: "#e8e8e3",
-        muted: "#9ba39c",
-        border: "#2a332d",
-        surface: "#1a1f1b",
-        accent: "#2ecc71",
+        background: "var(--bg)",
+        foreground: "var(--text)",
+        muted: "var(--muted)",
+        border: "var(--border)",
+        surface: "var(--surface)",
+        accent: "var(--accent)",
       },
       fontFamily: {
         display: ["Cormorant Garamond", "Georgia", "serif"],
-        body: ["Outfit", "system-ui", "sans-serif"],
-        mono: ["JetBrains Mono Variable", "monospace"],
+        body: ["Outfit Variable", "system-ui", "sans-serif"],
+        mono: ["JetBrains Mono Variable", "ui-monospace", "monospace"],
       },
     },
   },

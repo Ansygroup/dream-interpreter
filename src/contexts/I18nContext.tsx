@@ -1,8 +1,51 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useContext, useState, useEffect, useCallback, type ReactNode } from 'react';
+import { LANGUAGES, resolveLanguageCode, isRtlCode, getLanguage, type LanguageInfo } from '../i18n/languages';
+import en from '../i18n/locales/en.json';
+import ar from '../i18n/locales/ar.json';
+
+type Dict = Record<string, unknown>;
+
+/** Locales bundled with the app. Phase 2 makes these lazy-loadable per language. */
+const translations: Record<string, Dict> = {
+  en: en as Dict,
+  ar: ar as Dict,
+};
+
+export { LANGUAGES };
+export type { LanguageInfo };
+
+/** Languages that currently have UI translations available. */
+export const AVAILABLE_LANGUAGES = LANGUAGES.filter((l) => Boolean(translations[l.code]) || l.code === 'en');
+
+const COUNTRY_LANG: Record<string, string> = {
+  SA: 'ar', AE: 'ar', EG: 'ar', MA: 'ar', DZ: 'ar', TN: 'ar', IQ: 'ar', JO: 'ar',
+  SY: 'ar', LB: 'ar', KW: 'ar', QA: 'ar', BH: 'ar', OM: 'ar', YE: 'ar', PS: 'ar',
+  SD: 'ar', LY: 'ar', MR: 'ar', SO: 'ar', DJ: 'ar', KM: 'ar',
+  ES: 'es', MX: 'es', AR: 'es', CO: 'es', CL: 'es', PE: 'es', VE: 'es', EC: 'es',
+  GT: 'es', CU: 'es', BO: 'es', DO: 'es', HN: 'es', PY: 'es', SV: 'es', NI: 'es', CR: 'es', PA: 'es', UY: 'es',
+  FR: 'fr', CA: 'fr', BE: 'fr', CH: 'fr', LU: 'fr', MC: 'fr',
+  DE: 'de', AT: 'de', LI: 'de',
+  IT: 'it', SM: 'it',
+  BR: 'pt', PT: 'pt', AO: 'pt', MZ: 'pt', CV: 'pt',
+  RU: 'ru', BY: 'ru', KZ: 'kk',
+  CN: 'zh', TW: 'zh', HK: 'zh', SG: 'zh',
+  JP: 'ja', KR: 'ko', TR: 'tr', IN: 'hi', PK: 'ur', BD: 'bn',
+  NL: 'nl', PL: 'pl', SE: 'sv', DK: 'da', NO: 'no', FI: 'fi',
+  IL: 'he', IR: 'fa', AF: 'fa',
+  TH: 'th', VN: 'vi', ID: 'id', MY: 'ms', PH: 'fil',
+  GR: 'el', CZ: 'cs', SK: 'sk', HU: 'hu', RO: 'ro', BG: 'bg',
+  HR: 'hr', RS: 'sr', SI: 'sl', UA: 'uk',
+  LT: 'lt', LV: 'lv', EE: 'et',
+  KE: 'sw', TZ: 'sw', UG: 'sw', ET: 'am',
+  GE: 'ka', AM: 'hy', AZ: 'az', UZ: 'uz',
+  NP: 'ne', LK: 'si', KH: 'km', MM: 'my', MN: 'mn',
+  ZA: 'af', NG: 'ha',
+};
 
 interface I18nContextType {
   language: string;
-  t: (key: string) => string;
+  languageInfo: LanguageInfo;
+  t: (key: string, vars?: Record<string, string | number>) => string;
   setLanguage: (lang: string) => void;
   isRtl: boolean;
   country: string | null;
@@ -11,68 +54,47 @@ interface I18nContextType {
 
 const I18nContext = createContext<I18nContextType | undefined>(undefined);
 
+const STORAGE_KEY = 'ds-lang';
 const DEFAULT_LANGUAGE = 'en';
 
-// Full supported language list (27)
-export const SUPPORTED_LANGUAGES = [
-  'en', 'ar', 'es', 'fr', 'de', 'it', 'pt', 'ru', 'zh', 'ja', 'ko',
-  'tr', 'nl', 'pl', 'sv', 'da', 'no', 'fi', 'he', 'hi', 'th', 'vi',
-  'id', 'ms', 'el', 'cs', 'hu', 'ro', 'sk', 'uk', 'bg', 'hr', 'lt', 'lv', 'et', 'sl'
-];
+function lookup(dict: Dict, path: string): string | undefined {
+  let node: unknown = dict;
+  for (const part of path.split('.')) {
+    if (node && typeof node === 'object' && part in (node as Dict)) {
+      node = (node as Dict)[part];
+    } else {
+      return undefined;
+    }
+  }
+  return typeof node === 'string' ? node : undefined;
+}
 
-const RTL_LANGUAGES = ['ar', 'he', 'fa', 'ur'];
-
-// Country → language (ISO alpha-2)
-export const COUNTRY_LANG: Record<string, string> = {
-  SA: 'ar', AE: 'ar', EG: 'ar', MA: 'ar', DZ: 'ar', TN: 'ar', IQ: 'ar', JO: 'ar',
-  SY: 'ar', LB: 'ar', KW: 'ar', QA: 'ar', BH: 'ar', OM: 'ar', YE: 'ar', PS: 'ar',
-  ES: 'es', MX: 'es', AR: 'es', CO: 'es', CL: 'es', PE: 'es', VE: 'es', EC: 'es',
-  FR: 'fr', CA: 'fr', BE: 'fr', CH: 'fr', LU: 'fr',
-  DE: 'de', AT: 'de', LI: 'de',
-  IT: 'it', BR: 'pt', PT: 'pt', RU: 'ru', CN: 'zh', TW: 'zh', HK: 'zh',
-  JP: 'ja', KR: 'ko', TR: 'tr', IN: 'hi', NL: 'nl', PL: 'pl', SE: 'sv',
-  DK: 'da', NO: 'no', FI: 'fi', IL: 'he', TH: 'th', VN: 'vi', ID: 'id',
-  MY: 'ms', GR: 'el', CZ: 'cs', HU: 'hu', RO: 'ro', SK: 'sk', UA: 'uk',
-  BG: 'bg', HR: 'hr', LT: 'lt', LV: 'lv', EE: 'et', SI: 'sl',
-};
-
-// UI strings (minimal — SEO pages carry their own copy)
-const translations: Record<string, Record<string, string>> = {
-  en: {
-    'app.title': 'Dreamscope',
-    'nav.home': 'Home', 'nav.interpret': 'Interpret', 'nav.history': 'History', 'nav.saved': 'Saved',
-    'hero.title': 'What your subconscious is trying to say',
-    'hero.subtitle': 'Ancient symbolism, modern psychology, and AI — combined into one clear reading.',
-    'hero.button': 'Interpret a Dream', 'hero.browse': 'Browse Symbols',
-    'history.title': 'Dream history', 'history.empty': 'No dreams interpreted yet.',
-    'saved.title': 'Saved dreams', 'saved.empty': 'Nothing saved yet.',
-    'error.empty': 'Please describe your dream first.',
-    'error.network': 'Connection error. Please try again.',
-  },
-  ar: {
-    'app.title': 'دريم سكوب',
-    'nav.home': 'الرئيسية', 'nav.interpret': 'فسر', 'nav.history': 'السجل', 'nav.saved': 'المحفوظات',
-    'hero.title': 'ماذا يحاول عقلك الباطن أن يقول',
-    'hero.subtitle': 'رموز قديمة وعلم نفس حديث وذكاء اصطناعي — في قراءة واحدة واضحة.',
-    'hero.button': 'فسر حلمك', 'hero.browse': 'تصفح الرموز',
-    'history.title': 'سجل الأحلام', 'history.empty': 'لا توجد أحلام مفسرة بعد.',
-    'saved.title': 'الأحلام المحفوظة', 'saved.empty': 'لا شيء محفوظ بعد.',
-    'error.empty': 'يرجى وصف حلمك أولاً.',
-    'error.network': 'خطأ في الاتصال. حاول مرة أخرى.',
-  },
-};
-
-export const I18nProvider = ({ children }: { children: React.ReactNode }) => {
+export const I18nProvider = ({ children }: { children: ReactNode }) => {
   const getInitial = (): string => {
-    const saved = localStorage.getItem('ds-lang');
-    if (saved && SUPPORTED_LANGUAGES.includes(saved)) return saved;
-    return DEFAULT_LANGUAGE;
+    try {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      const savedResolved = resolveLanguageCode(saved);
+      if (savedResolved) return savedResolved;
+      // No saved preference yet — try the browser language while geo loads.
+      return resolveLanguageCode(navigator.language) ?? DEFAULT_LANGUAGE;
+    } catch {
+      return DEFAULT_LANGUAGE;
+    }
   };
 
   const [language, setLanguageState] = useState<string>(getInitial);
   const [country, setCountryState] = useState<string | null>(null);
 
-  // Geo-detect once on mount
+  // Keep <html lang/dir> in sync with the active language at all times —
+  // including the very first paint (this fixes the RTL/LTR mismatch bug).
+  useEffect(() => {
+    const html = document.documentElement;
+    html.lang = language;
+    html.dir = isRtlCode(language) ? 'rtl' : 'ltr';
+  }, [language]);
+
+  // Geo-detect once on mount; adopt the country language only when the user
+  // has no explicit preference (saved OR browser-detected).
   useEffect(() => {
     let active = true;
     fetch('/api/geo')
@@ -80,30 +102,39 @@ export const I18nProvider = ({ children }: { children: React.ReactNode }) => {
       .then((d) => {
         if (!active) return;
         setCountryState(d.country || null);
-        // If user has no saved preference, adopt country language
-        if (!localStorage.getItem('ds-lang') && d.country && COUNTRY_LANG[d.country]) {
-          setLanguage(COUNTRY_LANG[d.country]);
+        let saved: string | null = null;
+        try { saved = localStorage.getItem(STORAGE_KEY); } catch { /* private mode */ }
+        if (!saved && d.country && COUNTRY_LANG[d.country]) {
+          const geoLang = resolveLanguageCode(COUNTRY_LANG[d.country]);
+          if (geoLang) setLanguageState(geoLang);
         }
       })
       .catch(() => {});
     return () => { active = false; };
   }, []);
 
-  const setLanguage = (lang: string) => {
-    if (SUPPORTED_LANGUAGES.includes(lang)) {
-      setLanguageState(lang);
-      localStorage.setItem('ds-lang', lang);
-      document.documentElement.lang = lang;
-      document.documentElement.dir = RTL_LANGUAGES.includes(lang) ? 'rtl' : 'ltr';
-    }
-  };
+  const setLanguage = useCallback((lang: string) => {
+    if (!getLanguage(lang)) return;
+    setLanguageState(lang);
+    try { localStorage.setItem(STORAGE_KEY, lang); } catch { /* private mode */ }
+  }, []);
 
-  const setCountry = (c: string) => setCountryState(c);
+  const setCountry = useCallback((c: string) => setCountryState(c), []);
 
-  const isRtl = RTL_LANGUAGES.includes(language);
+  const t = useCallback((key: string, vars?: Record<string, string | number>): string => {
+    const raw =
+      lookup(translations[language], key) ??
+      lookup(translations[DEFAULT_LANGUAGE], key) ??
+      key;
+    if (!vars) return raw;
+    return raw.replace(/\{(\w+)\}/g, (_, k: string) => String(vars[k] ?? `{${k}}`));
+  }, [language]);
+
+  const isRtl = isRtlCode(language);
+  const languageInfo = getLanguage(language) ?? getLanguage(DEFAULT_LANGUAGE)!;
 
   return (
-    <I18nContext.Provider value={{ language, t: (key: string) => translations[language]?.[key] || translations.en[key] || key, setLanguage, isRtl, country, setCountry }}>
+    <I18nContext.Provider value={{ language, languageInfo, t, setLanguage, isRtl, country, setCountry }}>
       {children}
     </I18nContext.Provider>
   );

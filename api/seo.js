@@ -96,6 +96,16 @@ function renderPage({ BASE, LANGS, SYM, CSS }, sk, lang, q, scenario) {
       <a href="/interpret" class="cta">Try Dreamscope</a>
     </div>
     ${relatedBlock}
+    <div class="card" style="background:linear-gradient(135deg,#1a1430,#0c1424);border-color:#3a2d6b">
+      <h2>Explore our network</h2>
+      <p>More free AI tools by Ansy Group:</p>
+      <ul style="list-style:none;padding:0;display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+        <li><a class="cta" href="https://ai-blog-ansygroups-projects.vercel.app" style="text-decoration:none">AI Tool Reviews</a></li>
+        <li><a class="cta" href="https://ebook-store-ten-flax.vercel.app" style="text-decoration:none">E-books</a></li>
+        <li><a class="cta" href="https://ai-company-store-ansygroups-projects.vercel.app" style="text-decoration:none">AI Company Store</a></li>
+        <li><a class="cta" href="https://ansygroup.com" style="text-decoration:none">Ansy Group</a></li>
+      </ul>
+    </div>
     <div class="ls"><strong>Other languages:</strong><br>${links}</div>
     <footer><p>© 2024 Dreamscope. All rights reserved.</p></footer>
   </div>

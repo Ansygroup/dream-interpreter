@@ -7,7 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google-site-verification" content="google5726a2aae33cbd36" />
     <meta name="robots" content="index,follow,max-image-preview:large" />
-    <meta name="theme-color" content="#0a0c0b" />
+    <meta name="theme-color" content="#0a0c0b" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f6f4ee" media="(prefers-color-scheme: light)" />
+    <script>
+      /* Set theme before first paint to avoid a flash of the wrong theme */
+      try {
+        var t = localStorage.getItem('ds-theme');
+        if (t !== 'light' && t !== 'dark') {
+          t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        }
+        document.documentElement.dataset.theme = t;
+      } catch (e) {
+        document.documentElement.dataset.theme = 'dark';
+      }
+    </script>
     <meta property="og:title" content="Dreamscope — AI Dream Interpretation" />
     <meta property="og:description" content="Describe your dream in your own words and get a clear reading grounded in Ibn Sirin and modern psychology." />
     <meta property="og:type" content="website" />

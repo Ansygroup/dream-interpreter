@@ -4,6 +4,7 @@ import { EXTRA_SYMBOLS } from './symbols-extra.mjs';
 import { BATCH2_SYMBOLS } from './symbols-batch2.mjs';
 import { BATCH3_SYMBOLS } from './symbols-batch3.mjs';
 import { BATCH4_SYMBOLS } from './symbols-batch4.mjs';
+import { BATCH5_SYMBOLS } from './symbols-batch5.mjs';
 import { SCENARIOS } from './scenarios.mjs';
 
 const BASE = 'https://dream-interpreter-alpha-ruddy.vercel.app';
@@ -68,6 +69,21 @@ function convertBatch4() {
   return out;
 }
 const BATCH4 = convertBatch4();
+
+// Convert BATCH5_SYMBOLS (same tuple format) into SYM format
+function convertBatch5() {
+  const out = {};
+  for (const [sk, arr] of Object.entries(BATCH5_SYMBOLS)) {
+    const rec = {};
+    LANG_ORDER.forEach((lang, i) => {
+      const o = i * 3;
+      rec[lang] = { t: arr[o], h: arr[o+1], m: arr[o+2] };
+    });
+    out[sk] = rec;
+  }
+  return out;
+}
+const BATCH5 = convertBatch5();
 
 // 13 core languages for programmatic pages
 const LANGS = {
@@ -1046,6 +1062,9 @@ for (const [sk, rec] of Object.entries(BATCH3)) {
   if (!SYM[sk]) SYM[sk] = rec;
 }
 for (const [sk, rec] of Object.entries(BATCH4)) {
+  if (!SYM[sk]) SYM[sk] = rec;
+}
+for (const [sk, rec] of Object.entries(BATCH5)) {
   if (!SYM[sk]) SYM[sk] = rec;
 }
 

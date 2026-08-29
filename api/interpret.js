@@ -1,130 +1,284 @@
+/**
+ * POST /api/interpret — the Dreamscope interpretation engine.
+ *
+ * Hybrid chain (first success wins):
+ *   1. OpenRouter LLM (primary paid-cheap model, then free fallback)
+ *   2. Offline symbol-keyword DB (never fails)
+ *
+ * Body: { dream: string, language: string, perspective?: string }
+ * Resp: { interpretation, symbols, engine, perspective, id }
+ */
+
 const LANGUAGES = {
-  en: 'English', ar: 'العربية', es: 'Español', fr: 'Français',
-  de: 'Deutsch', it: 'Italiano', pt: 'Português', ru: 'Русский',
-  zh: '中文', ja: '日本語', ko: '한국어', tr: 'Türkçe',
-  nl: 'Nederlands', pl: 'Polski', sv: 'Svenska', da: 'Dansk', no: 'Norsk',
-  fi: 'Suomi', he: 'עברית', hi: 'हिंदी', th: 'ไทย', vi: 'Tiếng Việt',
-  id: 'Bahasa Indonesia', ms: 'Bahasa Melayu', el: 'Ελληνικά',
-  cs: 'Čeština', hu: 'Magyar', ro: 'Română', sk: 'Slovenčina',
-  uk: 'Українська', bg: 'Български', hr: 'Hrvatski',
-  lt: 'Lietuvių', lv: 'Latviešu', et: 'Eesti', sl: 'Slovenščina'
+  en: 'English', ar: 'Arabic', es: 'Spanish', fr: 'French', de: 'German',
+  it: 'Italian', pt: 'Portuguese', ru: 'Russian', zh: 'Chinese', ja: 'Japanese',
+  ko: 'Korean', tr: 'Turkish', nl: 'Dutch', pl: 'Polish', sv: 'Swedish',
+  da: 'Danish', no: 'Norwegian', fi: 'Finnish', el: 'Greek', cs: 'Czech',
+  sk: 'Slovak', hu: 'Hungarian', ro: 'Romanian', bg: 'Bulgarian', hr: 'Croatian',
+  sr: 'Serbian', sl: 'Slovenian', uk: 'Ukrainian', lt: 'Lithuanian',
+  lv: 'Latvian', et: 'Estonian', he: 'Hebrew', fa: 'Persian', ur: 'Urdu',
+  hi: 'Hindi', bn: 'Bengali', pa: 'Punjabi', ta: 'Tamil', te: 'Telugu',
+  th: 'Thai', vi: 'Vietnamese', id: 'Indonesian', ms: 'Malay', fil: 'Filipino',
+  sw: 'Swahili', am: 'Amharic', ha: 'Hausa', yo: 'Yoruba', zu: 'Zulu',
+  af: 'Afrikaans', ka: 'Georgian', hy: 'Armenian', az: 'Azerbaijani',
+  kk: 'Kazakh', uz: 'Uzbek', ne: 'Nepali', si: 'Sinhala', km: 'Khmer',
+  my: 'Burmese', mn: 'Mongolian',
 };
+
+/** Interpretation perspectives — religious traditions + psychology. */
+const PERSPECTIVES = {
+  general: {
+    label: 'Universal blend',
+    prompt: 'Blend the wisest threads of world dream traditions with depth psychology. Stay universal and inclusive.',
+  },
+  islamic: {
+    label: 'Islamic (Ibn Sirin)',
+    prompt: "Interpret through the classical Islamic tradition of Ibn Sirin and authentic oneiric science (ta'bir al-ru'ya). Use its symbolism, speak respectfully of lawful guidance, and may mention prayer and reflection (salah, dhikr) where fitting. Avoid fortune-telling claims.",
+  },
+  christian: {
+    label: 'Christian',
+    prompt: 'Interpret through the Christian biblical tradition — Joseph and Daniel-style dream reading, pastoral warmth, scriptural symbolism (light, sheep, living water). Encourage prayerful reflection. Avoid superstition.',
+  },
+  jewish: {
+    label: 'Jewish',
+    prompt: 'Interpret through the Jewish tradition — Torah and Talmudic dream wisdom (Choni, the dream-interpretation sages), symbolism of the prophets. A thoughtful, textually-grounded voice.',
+  },
+  hindu: {
+    label: 'Hindu',
+    prompt: 'Interpret through the Hindu tradition — Vedic and Upanishadic dream understanding, symbolism of deities and nature, karma and samskara. A dharmic, reflective voice.',
+  },
+  buddhist: {
+    label: 'Buddhist',
+    prompt: 'Interpret through the Buddhist tradition — mind and impermanence, Tibetan dream yoga insight, mindful awareness. Gentle, non-attached, compassionate framing.',
+  },
+  psychology: {
+    label: 'Psychology (Jung & Freud)',
+    prompt: 'Interpret through depth psychology — Jungian archetypes, the shadow, individuation, and Freudian wish-symbolism. Secular, reflective, focused on what the psyche may be processing.',
+  },
+  chinese: {
+    label: 'Chinese (Zhou Gong)',
+    prompt: 'Interpret through the Chinese tradition of Zhou Gong dream interpretation (Zhou Gong Jie Meng) — classical symbolism, yin-yang and five-elements balance. A calm, traditional voice.',
+  },
+};
+
+/* ---------------- Offline fallback DB ---------------- */
 
 const DREAM_SYMBOLS = {
   snake: {
+    keywords: ['snake', 'serpent', 'viper', 'cobra', 'أفعى', 'ثعبان', 'حية'],
     en: 'Snakes in dreams often represent transformation, hidden fears, or wisdom. Consider what is shedding or changing in your life.',
     ar: 'الأفاعي في الأحلام غالباً ما ترمز إلى التحول والمخاوف المخفية والحكمة. فكر فيما يتغير أو يتساقط في حياتك.',
-    es: 'Las serpientes en los sueños a menudo representan transformación, miedos ocultos o sabiduría.',
-    fr: 'Les serpents dans les rêves représentent souvent la transformation, les peurs cachées ou la sagesse.',
-    de: 'Schlangen in Träumen stehen oft für Transformation, verborgene Ängste oder Weisheit.'
   },
   water: {
-    en: 'Water represents emotions, the subconscious mind, and purification. Clear water suggests clarity; turbulent water suggests emotional turmoil.',
+    keywords: ['water', 'ocean', 'river', 'sea', 'ماء', 'بحر', 'نهر'],
+    en: 'Water represents emotions, the subconscious, and purification. Clear water suggests clarity; turbulent water suggests emotional turmoil.',
     ar: 'الماء يرمز إلى العواطف والعقل الباطن والتطهير. الماء الصافي يوحي بالوضوح، والمضطرب يوحي بالاضطراب العاطفي.',
-    es: 'El agua representa emociones, el subconsciente y la purificación.',
-    fr: 'L\'eau représente les émotions, l\'inconscient et la purification.',
-    de: 'Wasser steht für Emotionen, das Unterbewusstsein und Reinigung.'
   },
   flying: {
-    en: 'Flying in dreams symbolizes freedom, ambition, and transcendence. It often reflects a desire to rise above current circumstances.',
-    ar: 'الطيران في الأحلام يرمز إلى الحرية والطموح والتسامي. غالباً ما يعكس رغبة في الارتفاع فوق الظروف الحالية.',
-    es: 'Volar en sueños simboliza libertad, ambición y trascendencia.',
-    fr: 'Voler dans les rêves symbolise la liberté, l\'ambition et la transcendance.',
-    de: 'Fliegen im Traum symbolisiert Freiheit, Ehrgeiz und Transzendenz.'
+    keywords: ['fly', 'flying', 'flew', 'طيران', 'يطير'],
+    en: 'Flying symbolizes freedom, ambition, and transcendence — a desire to rise above current circumstances.',
+    ar: 'الطيران يرمز إلى الحرية والطموح والتسامي — رغبة في الارتفاع فوق الظروف الحالية.',
   },
   house: {
-    en: 'A house in dreams represents the self, your psyche, and different aspects of your personality. Each room may symbolize a different facet.',
-    ar: 'البيت في الأحلام يمثل الذات والنفس وجوانب مختلفة من شخصيتك. كل غرفة قد ترمز لجانب مختلف.',
-    es: 'Una casa en los sueños representa el yo, la psique y diferentes aspectos de tu personalidad.',
-    fr: 'Une maison dans les rêves représente le soi, la psyché et différents aspects de votre personnalité.',
-    de: 'Ein Haus im Traum steht für das Selbst, die Psyche und verschiedene Aspekte der Persönlichkeit.'
-  },
-  death: {
-    en: 'Dreams of death often symbolize transformation, endings, and new beginnings rather than literal death. They mark transitions in life.',
-    ar: 'أحلام الموت غالباً ما ترمز إلى التحول والنهايات والبدايات الجديدة وليس الموت الفعلي. فهي تحدد انتقالات في الحياة.',
-    es: 'Los sueños de muerte a menudo simbolizan transformación, finales y nuevos comienzos.',
-    fr: 'Les rêves de mort symbolisent souvent la transformation, les fins et les nouveaux départs.',
-    de: 'Todesräume symbolisieren oft Transformation, Enden und Neuanfänge.'
+    keywords: ['house', 'home', 'room', 'بيت', 'منزل', 'غرفة'],
+    en: 'A house represents the self and different facets of your personality — each room a different aspect.',
+    ar: 'البيت يمثل الذات وجوانب شخصيتك المختلفة — وكل غرفة جانباً مختلفاً.',
   },
   teeth: {
-    en: 'Dreaming about teeth falling out often relates to anxiety, loss of control, or concerns about appearance and communication.',
-    ar: 'الحلم بسقوط الأسنان غالباً ما يتعلق بالقلق وفقدان السيطرة أو مخاوف بشأن المظهر والتواصل.',
-    es: 'Soñar con dientes que se caen a menudo se relaciona con ansiedad, pérdida de control o preocupaciones sobre la apariencia.',
-    fr: 'Rêver de dents qui tombent est souvent lié à l\'anxiété, à la perte de contrôle ou aux préoccupations concernant l\'apparence.',
-    de: 'Von ausfallenden Zähnen zu träumen hängt oft mit Angst, Kontrollverlust oder Sorgen um das Aussehen zusammen.'
-  }
+    keywords: ['teeth', 'tooth', 'أسنان', 'ضرس', 'سن'],
+    en: 'Teeth falling out often relates to anxiety, loss of control, or concerns about appearance and communication.',
+    ar: 'سقوط الأسنان غالباً ما يتعلق بالقلق وفقدان السيطرة أو مخاوف بشأن المظهر والتواصل.',
+  },
+  death: {
+    keywords: ['death', 'died', 'funeral', 'موت', 'ميت', 'جنازة'],
+    en: 'Dreams of death symbolize transformation, endings, and new beginnings rather than literal death — a transition in life.',
+    ar: 'أحلام الموت ترمز إلى التحول والنهايات والبدايات الجديدة وليس الموت الفعلي — انتقال في الحياة.',
+  },
+  falling: {
+    keywords: ['fall', 'falling', 'سقوط', 'يسقط'],
+    en: 'Falling often reflects insecurity, loss of control, or the need to let go of something.',
+    ar: 'السقوط غالباً يعكس انعدام الأمان أو فقدان السيطرة أو الحاجة إلى التخلي عن شيء ما.',
+  },
+  baby: {
+    keywords: ['baby', 'infant', 'رضيع', 'طفل صغير'],
+    en: 'A baby symbolizes new beginnings, potential, or a growing responsibility or project.',
+    ar: 'الرضيع يرمز إلى بدايات جديدة وإمكانات أو مسؤولية أو مشروع نامٍ.',
+  },
+  money: {
+    keywords: ['money', 'cash', 'gold', 'مال', 'ذهب', 'نقود'],
+    en: 'Money in dreams reflects self-worth, opportunity, or anxieties about security and resources.',
+    ar: 'المال في الأحلام يعكس تقدير الذات أو الفرص أو مخاوف الأمان والموارد.',
+  },
+  wedding: {
+    keywords: ['wedding', 'marriage', 'زواج', 'عرس'],
+    en: 'A wedding symbolizes union — often of two parts of yourself, or a meaningful commitment beginning.',
+    ar: 'الزواج يرمز إلى الاتحاد — غالباً بين جزأين منك، أو التزام ذي معنى يبدأ.',
+  },
 };
 
-const KEYWORDS = {
-  snake: ['snake', 'serpent', 'viper', 'cobra', 'أفعى', 'ثعبان', 'حية'],
-  water: ['water', 'ocean', 'river', 'sea', 'ماء', 'بحر', 'نهر'],
-  flying: ['fly', 'flying', 'soar', 'أطير', 'طيران', 'حلّق'],
-  house: ['house', 'home', 'building', 'بيت', 'منزل', 'دار'],
-  death: ['death', 'dying', 'dead', 'موت', 'ميت', 'مامات'],
-  teeth: ['teeth', 'tooth', 'أسنان', 'سنة', 'سن']
-};
-
-function detectSymbols(dream) {
-  const lower = dream.toLowerCase();
-  const found = [];
-  for (const [symbol, words] of Object.entries(KEYWORDS)) {
-    if (words.some(w => lower.includes(w))) found.push(symbol);
-  }
-  return found;
+function detectSymbols(text) {
+  const lower = (text || '').toLowerCase();
+  return Object.entries(DREAM_SYMBOLS)
+    .filter(([, v]) => v.keywords.some((k) => lower.includes(k)))
+    .map(([k]) => k);
 }
 
-function buildInterpretation(dream, language) {
-  const lang = LANGUAGES[language] ? language : 'en';
-  const symbols = detectSymbols(dream);
-  const intros = {
-    en: 'Your dream touches on important symbols from your subconscious. Here is what they may mean:',
-    ar: 'حلمك يلامس رموزاً مهمة من عقلك الباطن. إليك ما قد تعنيه:',
-    es: 'Tu sueño toca símbolos importantes de tu subconsciente. Aquí está lo que pueden significar:',
-    fr: 'Votre rêve touche des symboles importants de votre inconscient. Voici ce qu\'ils peuvent signifier:',
-    de: 'Ihr Traum berührt wichtige Symbole Ihres Unterbewusstseins. Hier ist, was sie bedeuten können:'
-  };
-  const closings = {
-    en: '\n\nIn Islamic tradition (Ibn Sirin), dreams are seen as messages from the soul. Reflect on what your heart is telling you, and seek wisdom through prayer and contemplation.',
-    ar: '\n\nفي التراث الإسلامي (ابن سيرين)، تُعتبر الأحلام رسائل من الروح. تأمل فيما يخبرك به قلبك، واطلب الحكمة من خلال الصلاة والتأمل.',
-    es: '\n\nEn la tradición islámica (Ibn Sirin), los sueños son mensajes del alma. Reflexiona sobre lo que te dice tu corazón.',
-    fr: '\n\nDans la tradition islamique (Ibn Sirin), les rêves sont des messages de l\'âme. Réfléchissez à ce que votre cœur vous dit.',
-    de: '\n\nIn der islamischen Tradition (Ibn Sirin) sind Träume Botschaften der Seele. Reflektieren Sie, was Ihr Herz Ihnen sagt.'
-  };
-  let result = intros[lang] || intros.en;
-  if (symbols.length > 0) {
-    for (const sym of symbols) {
-      const text = DREAM_SYMBOLS[sym][lang] || DREAM_SYMBOLS[sym].en;
-      result += '\n\n• ' + text;
+function buildFallback(dream, lang, perspective) {
+  const isAr = lang === 'ar';
+  const hits = detectSymbols(dream);
+  const parts = [];
+  if (hits.length) {
+    parts.push(isAr ? 'حلمك يلامس رموزاً مهمة من عقلك الباطن:' : 'Your dream touches important symbols from your subconscious:');
+    for (const h of hits.slice(0, 3)) {
+      const line = DREAM_SYMBOLS[h][lang] || DREAM_SYMBOLS[h].en;
+      parts.push(`• ${line}`);
     }
   } else {
-    const generic = {
-      en: '\n\nYour dream is a personal narrative from your subconscious. Consider the emotions you felt, the setting, and any people involved. These details offer keys to understanding your inner world.',
-      ar: '\n\nحلمك سرد شخصي من عقلك الباطن. فكر في المشاعر التي شعرت بها والمكان وأي أشخاص مشاركين. هذه التفاصيل تقدم مفاتيح لفهم عالمك الداخلي.',
-      es: '\n\nTu sueño es una narrativa personal de tu subconsciente. Considera las emociones que sentiste, el escenario y las personas involucradas.',
-      fr: '\n\nVotre rêve est un récit personnel de votre inconscient. Considérez les émotions que vous avez ressenties, le décor et les personnes impliquées.',
-      de: '\n\nIhr Traum ist eine persönliche Erzählung Ihres Unterbewusstseins. Betrachten Sie die Emotionen, die Sie gefühlt haben.'
-    };
-    result += generic[lang] || generic.en;
+    parts.push(
+      isAr
+        ? 'حلمك يحمل تفاصيل شخصية خاصة بك. تأمل في المشاعر السائدة فيه — هي المفتاح الحقيقي لمعناه.'
+        : 'Your dream carries details that are uniquely yours. Reflect on the dominant feelings in it — they are the true key to its meaning.'
+    );
   }
-  result += closings[lang] || closings.en;
-  return result;
+  const closings = {
+    general: isAr
+      ? 'تأمل فيما يخبرك به قلبك — الأحلام مرايا لما نحمله في الداخل.'
+      : 'Reflect on what your heart tells you — dreams mirror what we carry within.',
+    islamic: isAr
+      ? 'وفي التراث الإسلامي (ابن سيرين) تُعدّ الأحلام رسائل للروح: تأمّل، وتحرَّ الخير، وتقرَّب بالصلاة والتأمل.'
+      : 'In the Islamic tradition (Ibn Sirin), dreams are messages of the soul: reflect, seek the good, and turn to prayer and contemplation.',
+    christian: isAr
+      ? 'وفي التقليد المسيحي، تُقرأ الأحلام كما قرأها يوسف ودانيال: رسائل يتدبّرها القلب بالصلاة.'
+      : 'In the Christian tradition, dreams are read as Joseph and Daniel read them: messages the heart ponders in prayer.',
+    jewish: isAr
+      ? 'وفي التقليد اليهودي، الحلم رسالة تحتاج إلى تفسير وحكمة كما في التلمود.'
+      : 'In the Jewish tradition, a dream is a message awaiting wise interpretation, as the Talmud teaches.',
+    hindu: isAr
+      ? 'وفي التقليد الهندوسي، الحلم انعكاس للذهن الداخلي ودورة الكارما — تأمّل بعمق.'
+      : 'In the Hindu tradition, a dream reflects the inner mind and the play of karma — reflect deeply.',
+    buddhist: isAr
+      ? 'وفي التقليد البوذي، الحلم إدراك عابر — لاحظه بوعي دون تشبث.'
+      : 'In the Buddhist tradition, a dream is a passing perception — observe it with awareness, without attachment.',
+    psychology: isAr
+      ? 'وعلى منهج يونغ وفرويد، الحلم رسالة من اللاشعور إلى الوعي — فكّر فيما يعالجه عقلك.'
+      : 'In the tradition of Jung and Freud, a dream is a message from the unconscious to the conscious mind — consider what your psyche is processing.',
+    chinese: isAr
+      ? 'وفي تقليد تشو قونغ الصيني، الحلم يتحدث عن توازن قوى الطبيعة — اطلب التوازن في حياتك.'
+      : 'In the Chinese tradition of Zhou Gong, a dream speaks of balance among natural forces — seek balance in your life.',
+  };
+  parts.push(closings[perspective] || closings.general);
+  return parts.join('\n\n');
 }
 
+/* ---------------- OpenRouter client ---------------- */
+
+const MODELS = [
+  process.env.DREAMSCOPE_AI_MODEL || 'google/gemini-2.5-flash',
+  'z-ai/glm-5.2:free',
+];
+
+async function callLLM(dream, langName, perspective) {
+  const key = process.env.OPENROUTER_API_KEY;
+  if (!key) throw new Error('no-key');
+  const p = PERSPECTIVES[perspective] || PERSPECTIVES.general;
+
+  const system = `You are Dreamscope, a wise and culturally-grounded dream interpreter. You write clear, warm, reflective readings in ${langName}.
+
+${p.prompt}
+
+Rules:
+- Respond ONLY in ${langName}.
+- 2 to 4 short paragraphs (max ~180 words). No headings, no markdown.
+- Name the key symbols and what they traditionally mean; tie them gently to life circumstances.
+- Never predict death, illness, or misfortune as fact; dreams reflect, they do not foretell.
+- End with one grounding sentence of reflection or gentle guidance.
+- If the dream text is too short or unclear, ask for one kind clarifying detail instead of inventing meaning.`;
+
+  const user = `Dream (as the dreamer wrote it):\n"""${dream.slice(0, 2000)}"""\n\nFirst line of your reply must be exactly the detected symbols in English, comma-separated, like: SYMBOLS: snake, water, fire. If none are clear, write SYMBOLS: none. Then a blank line, then the ${langName} interpretation.`;
+
+  for (const model of MODELS) {
+    try {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 25000);
+      const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${key}`,
+          'Content-Type': 'application/json',
+          'HTTP-Referer': 'https://dreamscope.app',
+          'X-Title': 'Dreamscope',
+        },
+        body: JSON.stringify({
+          model,
+          temperature: 0.7,
+          max_tokens: 700,
+          messages: [
+            { role: 'system', content: system },
+            { role: 'user', content: user },
+          ],
+        }),
+        signal: controller.signal,
+      });
+      clearTimeout(timeout);
+      if (!res.ok) continue;
+      const data = await res.json();
+      const text = data?.choices?.[0]?.message?.content?.trim();
+      if (!text) continue;
+      // Parse "SYMBOLS: a, b" prefix
+      const m = text.match(/^SYMBOLS:\s*(.+)\n*/i);
+      let symbols = [];
+      let interpretation = text;
+      if (m) {
+        symbols = m[1]
+          .split(',')
+          .map((s) => s.trim().toLowerCase())
+          .filter((s) => s && s !== 'none')
+          .slice(0, 4);
+        interpretation = text.slice(m[0].length).trim();
+      }
+      if (interpretation.length < 40) continue;
+      return { interpretation, symbols, engine: model };
+    } catch {
+      continue;
+    }
+  }
+  throw new Error('all-models-failed');
+}
+
+/* ---------------- Handler ---------------- */
+
 export default async function handler(req, res) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  if (req.method === 'OPTIONS') return res.status(204).end();
+  if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
+
+  const { dream, language, perspective } = req.body || {};
+  if (!dream || typeof dream !== 'string' || !dream.trim()) {
+    return res.status(400).json({ error: 'Dream text is required' });
   }
-  const { dream, language } = req.body || {};
-  if (!dream || !language) {
-    return res.status(400).json({ error: 'Dream and language are required' });
-  }
+  const lang = LANGUAGES[language] ? language : 'en';
+  const persp = PERSPECTIVES[perspective] ? perspective : 'general';
+  const langName = LANGUAGES[lang];
+
   try {
-    const interpretation = buildInterpretation(dream, language);
+    const result = await callLLM(dream.trim(), langName, persp);
     return res.status(200).json({
-      interpretation,
-      id: Date.now().toString()
+      interpretation: result.interpretation,
+      symbols: result.symbols,
+      engine: result.engine,
+      perspective: persp,
+      id: String(Date.now()),
     });
-  } catch (error) {
-    return res.status(500).json({ error: 'Failed to interpret dream' });
+  } catch {
+    // Offline keyword DB — the engine never fully fails
+    return res.status(200).json({
+      interpretation: buildFallback(dream, lang, persp),
+      symbols: detectSymbols(dream),
+      engine: 'offline',
+      perspective: persp,
+      id: String(Date.now()),
+    });
   }
 }

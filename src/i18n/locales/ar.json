@@ -67,7 +67,25 @@
     "viewHistory": "عرض السجل",
     "errorEmpty": "يرجى وصف حلمك أولاً.",
     "errorFailed": "فشل التفسير. حاول مرة أخرى.",
-    "errorNetwork": "خطأ في الاتصال. حاول مرة أخرى."
+    "errorNetwork": "خطأ في الاتصال. حاول مرة أخرى.",
+    "perspectiveLabel": "القراءة عبر",
+    "symbolsLabel": "رموز حلمك",
+    "feedbackQ": {
+      "en": "Was this reading helpful?",
+      "ar": "هل كانت هذه القراءة مفيدة؟"
+    },
+    "yes": {
+      "en": "Yes, helpful",
+      "ar": "نعم، مفيدة"
+    },
+    "no": {
+      "en": "Not really",
+      "ar": "ليس تماماً"
+    },
+    "thanks": {
+      "en": "Thank you — your feedback improves future readings.",
+      "ar": "شكراً لك — تقييمك يحسّن القراءات المستقبلية."
+    }
   },
   "history": {
     "eyebrow": "نشاطك",
@@ -134,5 +152,31 @@
     "title": "تبخّر هذا الحلم",
     "lede": "الصفحة التي تبحث عنها ليست هنا. لعدنا إلى التفسير.",
     "cta": "العودة للرئيسية"
+  },
+  "perspectives": {
+    "general": {
+      "name": "جامع"
+    },
+    "islamic": {
+      "name": "ابن سيرين (إسلامي)"
+    },
+    "christian": {
+      "name": "مسيحي"
+    },
+    "jewish": {
+      "name": "يهودي"
+    },
+    "hindu": {
+      "name": "هندوسي"
+    },
+    "buddhist": {
+      "name": "بوذي"
+    },
+    "psychology": {
+      "name": "نفساني (يونغ)"
+    },
+    "chinese": {
+      "name": "تشو قونغ (صيني)"
+    }
   }
 }

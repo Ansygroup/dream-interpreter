@@ -67,7 +67,25 @@
     "viewHistory": "View History",
     "errorEmpty": "Please describe your dream first.",
     "errorFailed": "The interpretation failed. Please try again.",
-    "errorNetwork": "Connection error. Please try again."
+    "errorNetwork": "Connection error. Please try again.",
+    "perspectiveLabel": "Reading through",
+    "symbolsLabel": "Symbols in your dream",
+    "feedbackQ": {
+      "en": "Was this reading helpful?",
+      "ar": "هل كانت هذه القراءة مفيدة؟"
+    },
+    "yes": {
+      "en": "Yes, helpful",
+      "ar": "نعم، مفيدة"
+    },
+    "no": {
+      "en": "Not really",
+      "ar": "ليس تماماً"
+    },
+    "thanks": {
+      "en": "Thank you — your feedback improves future readings.",
+      "ar": "شكراً لك — تقييمك يحسّن القراءات المستقبلية."
+    }
   },
   "history": {
     "eyebrow": "Your Activity",
@@ -134,5 +152,31 @@
     "title": "This dream dissolved",
     "lede": "The page you were looking for isn't here. Let's get you back to interpreting.",
     "cta": "Return Home"
+  },
+  "perspectives": {
+    "general": {
+      "name": "Universal"
+    },
+    "islamic": {
+      "name": "Ibn Sirin (Islamic)"
+    },
+    "christian": {
+      "name": "Christian"
+    },
+    "jewish": {
+      "name": "Jewish"
+    },
+    "hindu": {
+      "name": "Hindu"
+    },
+    "buddhist": {
+      "name": "Buddhist"
+    },
+    "psychology": {
+      "name": "Psychology (Jung)"
+    },
+    "chinese": {
+      "name": "Zhou Gong (Chinese)"
+    }
   }
 }

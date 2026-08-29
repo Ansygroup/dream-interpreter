@@ -392,6 +392,9 @@ a { text-underline-offset: 3px; text-decoration-thickness: 1px; }
   padding: 4px 6px 10px 2px;
 }
 
+/* Perspective picker (traditions) */
+.perspective-picker { display: flex; flex-wrap: wrap; gap: 8px; }
+
 /* Hero grid — stacks on mobile */
 .hero-grid {
   display: grid;

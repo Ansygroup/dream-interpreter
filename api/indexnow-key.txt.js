@@ -1,6 +1,5 @@
 // Serves the IndexNow key file (required by IndexNow Option 1).
-// Primary: /API_KEY.txt  (Vercel rewrite points here)
-// Also serves /<KEY>.txt when INDEXNOW_KEY is set, so the key file name matches the key value.
+// Any /<anything>.txt request is routed here by vercel.json; the body is the key.
 // Get a free key at https://www.indexnow.org, then set INDEXNOW_KEY env in Vercel.
 export default function handler(req, res) {
   const key = process.env.INDEXNOW_KEY;

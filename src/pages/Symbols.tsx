@@ -26,7 +26,6 @@ export default function Symbols() {
       <div className="section" style={{ paddingTop: 'clamp(48px, 7vw, 72px)' }}>
         <div className="container">
           <header style={{ textAlign: 'center', margin: '0 auto 40px', maxWidth: 640 }}>
-            <span className="eyebrow" style={{ justifyContent: 'center' }}>{t('symbols.eyebrow')}</span>
             <h1 className="h2 serif" style={{ margin: '12px 0' }}>{t('symbols.title', { n: SYMBOL_LIST.length })}</h1>
             <p className="lede" style={{ margin: '0 auto' }}>{t('symbols.lede')}</p>
             <input

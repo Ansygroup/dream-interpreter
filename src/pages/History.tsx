@@ -26,7 +26,6 @@ export default function History() {
       <div className="section" style={{ paddingTop: 'clamp(48px, 7vw, 80px)' }}>
         <div className="container-narrow">
           <div className="reveal" style={{ marginBottom: 40 }}>
-            <span className="eyebrow">{t('history.eyebrow')}</span>
             <h1 className="h2 serif" style={{ marginBottom: 12 }}>{t('history.title')}</h1>
             <p className="lede">{t('history.lede')}</p>
           </div>

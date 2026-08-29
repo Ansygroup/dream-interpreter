@@ -24,7 +24,6 @@ export default function FAQ() {
     <Layout>
       <div className="section">
         <div className="container-narrow">
-          <span className="eyebrow">{t('faq.eyebrow')}</span>
           <h1 className="h2 serif" style={{ marginBottom: 40 }}>{t('faq.title')}</h1>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {faqs.map((f, i) => (

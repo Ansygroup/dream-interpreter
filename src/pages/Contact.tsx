@@ -9,7 +9,6 @@ export default function Contact() {
     <Layout>
       <div className="section">
         <div className="container-narrow">
-          <span className="eyebrow">{t('contact.eyebrow')}</span>
           <h1 className="h2 serif" style={{ marginBottom: 20 }}>{t('contact.title')}</h1>
           <p className="lede" style={{ marginBottom: 32 }}>{t('contact.lede')}</p>
           <div className="card" style={{ marginBottom: 24 }}>

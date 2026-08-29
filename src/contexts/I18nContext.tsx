@@ -93,8 +93,9 @@ export const I18nProvider = ({ children }: { children: ReactNode }) => {
     html.dir = isRtlCode(language) ? 'rtl' : 'ltr';
   }, [language]);
 
-  // Geo-detect once on mount; adopt the country language only when the user
-  // has no explicit preference (saved OR browser-detected).
+  // Geo-detect once on mount. Adopt the country's language ONLY when the
+  // browser language agrees with it (an Arabic browser in an Arab country →
+  // Arabic). An English browser in Egypt stays English by design.
   useEffect(() => {
     let active = true;
     fetch('/api/geo')
@@ -104,10 +105,13 @@ export const I18nProvider = ({ children }: { children: ReactNode }) => {
         setCountryState(d.country || null);
         let saved: string | null = null;
         try { saved = localStorage.getItem(STORAGE_KEY); } catch { /* private mode */ }
-        if (!saved && d.country && COUNTRY_LANG[d.country]) {
-          const geoLang = resolveLanguageCode(COUNTRY_LANG[d.country]);
-          if (geoLang) setLanguageState(geoLang);
-        }
+        if (saved || !d.country) return;
+        const geoLang = resolveLanguageCode(COUNTRY_LANG[d.country]);
+        if (!geoLang) return;
+        const browserBase = (navigator.language || '').toLowerCase().split(/[-_]/)[0];
+        const browserLang = resolveLanguageCode(navigator.language);
+        const agrees = browserLang === geoLang || browserBase === geoLang;
+        if (agrees) setLanguageState(geoLang);
       })
       .catch(() => {});
     return () => { active = false; };

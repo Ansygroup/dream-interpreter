@@ -15,7 +15,6 @@ export default function About() {
     <Layout>
       <div className="section">
         <div className="container-narrow">
-          <span className="eyebrow">{t('about.eyebrow')}</span>
           <h1 className="h2 serif" style={{ marginBottom: 24 }}>{t('about.title')}</h1>
           <div style={{ color: 'var(--text-dim)', fontSize: 16, lineHeight: 1.8, display: 'flex', flexDirection: 'column', gap: 18 }}>
             <p>{t('about.p1')}</p>

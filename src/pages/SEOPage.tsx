@@ -174,7 +174,7 @@ export default function SEOPage() {
         <div className="ambient" />
         <div style={{ minHeight: '70vh', display: 'grid', placeItems: 'center', textAlign: 'center', padding: 24, position: 'relative', zIndex: 1 }}>
           <div style={{ maxWidth: 640 }}>
-            <span className="eyebrow" style={{ justifyContent: 'center' }}>Dream Symbols</span>
+            <span className="tag">Dream Symbols</span>
             <h1 className="h2 serif" style={{ marginBottom: 14 }}>Explore a symbol</h1>
             <p className="lede" style={{ margin: '0 auto 28px' }}>Pick a symbol to read its meaning across traditions and languages.</p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, justifyContent: 'center' }}>
@@ -220,7 +220,7 @@ export default function SEOPage() {
       <main className="section" style={{ position: 'relative', zIndex: 1, paddingTop: 'clamp(48px, 7vw, 80px)' }}>
         <div className="container-narrow">
         <div className="reveal" style={{ marginBottom: 48 }}>
-          <div className="eyebrow">Dream Symbol</div>
+          <div className="mono-meta" style={{ color: 'var(--accent)' }}>Dream Symbol</div>
           <h1 className="h2 serif" style={{ marginBottom: 16 }}>
             {content.h1}
           </h1>

@@ -26,7 +26,6 @@ export default function Saved() {
       <div className="section" style={{ paddingTop: 'clamp(48px, 7vw, 80px)' }}>
         <div className="container-narrow">
           <div className="reveal" style={{ marginBottom: 40 }}>
-            <span className="eyebrow">{t('saved.eyebrow')}</span>
             <h1 className="h2 serif" style={{ marginBottom: 12 }}>{t('saved.title')}</h1>
             <p className="lede">{t('saved.lede')}</p>
           </div>

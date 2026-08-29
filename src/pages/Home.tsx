@@ -30,12 +30,6 @@ export default function Home() {
   const [heroBefore, heroAfter] = t('home.heroTitle').split('{accent}');
   const heroAccent = t('home.heroAccent');
 
-  const stats = [
-    { value: '60', label: t('home.statLanguages') },
-    { value: '26,000+', label: t('home.statPages') },
-    { value: '100%', label: t('home.statPrivate') },
-  ];
-
   const features = [
     {
       icon: <svg className="icon" viewBox="0 0 24 24"><path d="M12 3v18M12 3c3 3 6 4 6 8s-3 7-6 10c-3-3-6-4-6-8s3-5 6-10z" /></svg>,
@@ -61,38 +55,32 @@ export default function Home() {
 
   return (
     <Layout>
-      {/* Hero */}
-      <section className="section" style={{ paddingTop: 'clamp(56px, 8vw, 96px)' }}>
+      {/* Hero — the page's one authored moment */}
+      <section className="section" style={{ paddingTop: 'clamp(56px, 8vw, 104px)' }}>
         <div className="container">
           <div className="hero-grid">
-            <div className="reveal">
-              <span className="eyebrow">{t('home.eyebrow')}</span>
-              <h1 className="display serif" style={{ marginBottom: 24 }}>
+            <div>
+              <h1 className="display serif rise" style={{ marginBottom: 24 }}>
                 {heroBefore}
                 <em style={{ color: 'var(--accent)', fontStyle: 'italic' }}>{heroAccent}</em>
                 {heroAfter}
               </h1>
-              <p className="lede" style={{ marginBottom: 36 }}>{t('home.heroLede')}</p>
-              <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
+              <p className="lede rise" data-delay="90ms" style={{ marginBottom: 36 }}>{t('home.heroLede')}</p>
+              <div className="rise" data-delay="180ms" style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
                 <Link to="/interpret" className="btn btn-primary">{t('home.interpretCta')}</Link>
                 <Link to="/symbols" className="btn btn-ghost">{t('home.browseCta')}</Link>
               </div>
-              <div style={{ display: 'flex', gap: 28, marginTop: 44, flexWrap: 'wrap' }}>
-                {stats.map((s) => (
-                  <div key={s.label}>
-                    <div className="serif" style={{ fontSize: 30, color: 'var(--text)' }}>{s.value}</div>
-                    <div style={{ fontSize: 13, color: 'var(--muted)' }}>{s.label}</div>
-                  </div>
-                ))}
-              </div>
+              <p className="rise mono-meta" data-delay="260ms" style={{ marginTop: 36 }}>
+                {t('home.statLanguages', { n: 60 })} · {t('home.statSymbols', { n: 146 })} · {t('home.statPrivateLine')}
+              </p>
             </div>
 
-            {/* Sample card stack */}
-            <div className="reveal hero-sample" data-delay="120ms" style={{ position: 'relative', minHeight: '360px' }}>
+            {/* Sample reading — real proof, not decoration */}
+            <div className="hero-sample rise" data-delay="220ms" style={{ position: 'relative', minHeight: '360px' }}>
               <div className="card" style={{ position: 'relative', zIndex: 2, boxShadow: 'var(--shadow)' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
                   <span className="tag">{t('home.sampleTag')}</span>
-                  <span style={{ fontFamily: 'JetBrains Mono Variable, monospace', fontSize: 11, color: 'var(--muted)' }}>{t('home.sampleJustNow')}</span>
+                  <span className="mono-meta">{t('home.sampleJustNow')}</span>
                 </div>
                 <p style={{ color: 'var(--text-dim)', fontSize: 14, lineHeight: 1.7, fontStyle: 'italic', marginBottom: 18 }}>
                   {t('home.sampleDream')}
@@ -115,33 +103,34 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features bento */}
+      {/* Features — editorial manifest, not a card grid */}
       <section className="section section-line">
         <div className="container">
-          <div className="reveal" style={{ marginBottom: 48, maxWidth: 620 }}>
-            <span className="eyebrow">{t('home.whyEyebrow')}</span>
-            <h2 className="h2 serif">{t('home.whyTitle')}</h2>
-          </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 16 }}>
-            {features.map((f, i) => (
-              <div key={i} className="card card-hover reveal" data-delay={`${i * 80}ms`}>
-                <span style={{ color: 'var(--accent)', display: 'inline-flex', marginBottom: 16 }}>{f.icon}</span>
-                <h3 className="h3 serif" style={{ marginBottom: 10 }}>{f.title}</h3>
-                <p style={{ color: 'var(--muted)', fontSize: 14.5, lineHeight: 1.65 }}>{f.body}</p>
-              </div>
-            ))}
+          <div className="manifest-grid">
+            <div style={{ position: 'sticky', top: 96, alignSelf: 'start' }}>
+              <h2 className="h2 serif" style={{ marginBottom: 18 }}>{t('home.whyTitle')}</h2>
+              <p className="lede">{t('home.whyLede')}</p>
+            </div>
+            <div>
+              {features.map((f) => (
+                <div key={f.title} className="manifest-row">
+                  <span style={{ color: 'var(--accent)', display: 'inline-flex', paddingTop: 3 }}>{f.icon}</span>
+                  <div>
+                    <h3 className="h3 serif" style={{ marginBottom: 6 }}>{f.title}</h3>
+                    <p style={{ color: 'var(--muted)', fontSize: 14.5, lineHeight: 1.65 }}>{f.body}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Symbols grid */}
+      {/* Symbols index */}
       <section id="symbols" className="section section-line">
         <div className="container">
           <div className="reveal" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,1fr)', gap: 40, alignItems: 'end', marginBottom: 48 }}>
-            <div>
-              <span className="eyebrow">{t('home.symbolsEyebrow')}</span>
-              <h2 className="h2 serif">{t('home.symbolsTitle')}</h2>
-            </div>
+            <h2 className="h2 serif">{t('home.symbolsTitle')}</h2>
             <p className="lede" style={{ paddingBottom: 6 }}>{t('home.symbolsLede')}</p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(180px, 1fr))', gap: 12 }}>
@@ -164,12 +153,9 @@ export default function Home() {
       {/* CTA */}
       <section className="section section-line">
         <div className="container-narrow" style={{ textAlign: 'center' }}>
-          <div className="reveal">
-            <span className="eyebrow" style={{ justifyContent: 'center' }}>{t('home.ctaEyebrow')}</span>
-            <h2 className="h2 serif" style={{ marginBottom: 18 }}>{t('home.ctaTitle')}</h2>
-            <p className="lede" style={{ margin: '0 auto 32px' }}>{t('home.ctaLede')}</p>
-            <Link to="/interpret" className="btn btn-primary">{t('home.ctaButton')}</Link>
-          </div>
+          <h2 className="h2 serif" style={{ marginBottom: 18 }}>{t('home.ctaTitle')}</h2>
+          <p className="lede" style={{ margin: '0 auto 32px' }}>{t('home.ctaLede')}</p>
+          <Link to="/interpret" className="btn btn-primary">{t('home.ctaButton')}</Link>
         </div>
       </section>
     </Layout>

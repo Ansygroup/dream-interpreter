@@ -47,7 +47,6 @@ export default function Interpret() {
       <div className="section" style={{ paddingTop: 'clamp(48px, 7vw, 80px)' }}>
         <div className="container-narrow">
           <div className="reveal" style={{ marginBottom: 40 }}>
-            <span className="eyebrow">{t('interpret.eyebrow')}</span>
             <h1 className="h2 serif" style={{ marginBottom: 14 }}>{t('interpret.title')}</h1>
             <p className="lede">{t('interpret.lede')}</p>
           </div>
@@ -117,7 +116,7 @@ export default function Interpret() {
             <div className="reveal" style={{ marginTop: 48 }}>
               <div className="card" style={{ borderColor: 'var(--accent-line)', background: 'var(--surface-2)', boxShadow: 'var(--shadow)' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
-                  <span className="eyebrow" style={{ marginBottom: 0 }}>{t('interpret.yourReading')}</span>
+                  <span className="mono-meta" style={{ color: 'var(--accent)' }}>{t('interpret.yourReading')}</span>
                   <span style={{ fontFamily: 'JetBrains Mono Variable, monospace', fontSize: 11, color: 'var(--muted)' }}>{new Date().toLocaleDateString()}</span>
                 </div>
                 <p style={{ fontSize: 16, lineHeight: 1.8, whiteSpace: 'pre-wrap', color: 'var(--text)' }}>{result}</p>

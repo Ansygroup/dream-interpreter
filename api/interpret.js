@@ -172,9 +172,17 @@ function buildFallback(dream, lang, perspective) {
 
 /* ---------------- OpenRouter client ---------------- */
 
-const MODELS = [
-  process.env.DREAMSCOPE_AI_MODEL || 'google/gemini-2.5-flash',
+// Free-first chain: each free model has its own availability window, so we
+// cascade. A paid model is only used when explicitly set via DREAMSCOPE_AI_MODEL.
+const FREE_MODELS = [
   'z-ai/glm-5.2:free',
+  'minimax/minimax-m3:free',
+  'nvidia/nemotron-3-super-120b-a12b:free',
+  'google/gemma-4-31b-it:free',
+  'inclusionai/ling-3.0-flash-fin:free',
+];
+const MODELS = [
+  ...(process.env.DREAMSCOPE_AI_MODEL ? [process.env.DREAMSCOPE_AI_MODEL] : FREE_MODELS),
 ];
 
 async function callLLM(dream, langName, perspective) {
@@ -199,7 +207,7 @@ Rules:
   for (const model of MODELS) {
     try {
       const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 25000);
+      const timeout = setTimeout(() => controller.abort(), 8000);
       const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
         method: 'POST',
         headers: {
@@ -220,7 +228,10 @@ Rules:
         signal: controller.signal,
       });
       clearTimeout(timeout);
-      if (!res.ok) continue;
+      if (!res.ok) {
+        console.log(`[interpret] ${model} -> HTTP ${res.status}`);
+        continue;
+      }
       const data = await res.json();
       const text = data?.choices?.[0]?.message?.content?.trim();
       if (!text) continue;
@@ -238,7 +249,8 @@ Rules:
       }
       if (interpretation.length < 40) continue;
       return { interpretation, symbols, engine: model };
-    } catch {
+    } catch (e) {
+      console.log(`[interpret] ${model} -> error ${e?.message || e}`);
       continue;
     }
   }
@@ -246,6 +258,9 @@ Rules:
 }
 
 /* ---------------- Handler ---------------- */
+
+// Allow the full free-model cascade to run within the function budget.
+export const maxDuration = 45;
 
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');

@@ -1,5 +1,5 @@
-// IndexNow bulk submit — pushes all sitemap URLs to Bing/Google/Yandex instantly.
-// Free, no daily crawl wait. Requires INDEXNOW_KEY (get free at https://www.indexnow.org).
+// IndexNow bulk submit — pushes all SEO URLs to Bing/Google/Yandex instantly.
+// Free, no daily crawl wait. Requires INDEXNOW_KEY (free at https://www.indexnow.org).
 // Usage: INDEXNOW_KEY=xxxx node scripts/indexnow-submit.mjs
 import fs from 'fs';
 import https from 'https';
@@ -11,15 +11,29 @@ if (!KEY) {
   process.exit(1);
 }
 const HOST = 'dream-interpreter-alpha-ruddy.vercel.app';
-const sitemap = fs.readFileSync(path.join(process.cwd(), 'dist', 'sitemap.xml'), 'utf8');
-const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((m) => m[1]).filter((u) => u.includes('/seo/'));
+const BASE = 'https://' + HOST;
+
+// Build the full SEO URL list from the data module (same source the sitemap uses)
+const data = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'api', 'seo-data.json'), 'utf8'));
+const SYM = data.SYM;
+const LANGS = Object.keys(data.LANGS);
+const urls = [];
+for (const sk of Object.keys(SYM)) {
+  for (const lang of LANGS) {
+    if (!SYM[sk][lang]) continue;
+    urls.push(`${BASE}/seo/${sk}/${lang}`);
+    if (data.SCENARIOS) {
+      for (let i = 0; i < data.SCENARIOS.length; i++) urls.push(`${BASE}/seo/${sk}/${lang}/s${i + 1}`);
+    }
+  }
+}
 
 const payload = JSON.stringify({ host: HOST, key: KEY, urlList: urls });
-const endpoints = ['https://api.indexnow.org/indexnow', 'https://www.bing.com/indexnow'];
+const endpoints = ['https://api.indexnow.org/indexnow', 'https://www.bing.com/indexnow', 'https://search.mysite.com/indexnow'];
 
 function post(ep) {
   return new Promise((res) => {
-    const req = https.request(ep, { method: 'POST', headers: { 'Content-Type': 'application/json' } }, (r) => {
+    const req = https.request(ep, { method: 'POST', headers: { 'Content-Type': 'application/json; charset=utf-8' } }, (r) => {
       let b = '';
       r.on('data', (c) => (b += c));
       r.on('end', () => res({ ep, status: r.statusCode, body: b.slice(0, 80) }));

@@ -3,6 +3,7 @@
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/$1" },
     { "source": "/sitemap.xml", "destination": "/api/sitemap.xml" },
+    { "source": "/[a-zA-Z0-9-]{8,128}.txt", "destination": "/api/indexnow-key.txt.js" },
     { "source": "/seo/(.*)", "destination": "/api/seo" },
     { "source": "/((?!api/|seo/|favicon|robots.txt|assets/).*)", "destination": "/index.html" }
   ]

@@ -35,7 +35,7 @@ try {
   const st = execSync('git status --short', { cwd: root, encoding: 'utf8' }).trim();
   if (st) { execSync('git add -A', { cwd: root }); execSync('git -c user.email="ansy0@ansygroup.com" -c user.name="ansy0" commit -q -m "chore: auto-complete pending work"', { cwd: root }); }
   const b = execSync('git branch --show-current', { cwd: root, encoding: 'utf8' }).trim();
-  execSync(`git push origin ${b}`, { cwd: root, stdio: 'inherit' });
+  execSync(`git push origin ${b}`, { cwd: root, stdio: 'inherit', env: { ...process.env, GIT_TERMINAL_PROMPT: '0', GCM_INTERACTIVE: 'never', GCM_TERMINAL_PROMPT: '0' } });
   log('✅ pushed');
 } catch (e) { log(`⚠ push skipped: ${e.message.split('\n')[0]}`); }
 log('done.');

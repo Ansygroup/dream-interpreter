@@ -231,7 +231,7 @@ export default function SEOPage() {
 
         {/* AdSense */}
         <div className="reveal" style={{ margin: '32px 0', padding: 24, background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius)', textAlign: 'center' }}>
-          <ins className="adsbygoogle" style={{ display: 'block' }} data-ad-client="ca-pub-3423159322001021" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          <ins className="adsbygoogle" style={{ display: 'block' }} data-ad-client="ca-pub-4665838048081250" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
         </div>
 
         <div className="space-y-6">

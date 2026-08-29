@@ -89,7 +89,7 @@ function renderPage({ BASE, LANGS, SYM, CSS }, sk, lang, q, scenario) {
       <h2>Islamic Tradition</h2>
       <p>In Islamic tradition, dreams are seen as messages from the soul. The interpretation depends on the dreamer's circumstances, the emotions felt, and the overall context of the dream.</p>
     </div>
-    <div class="ad">Advertisement<br><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3423159322001021" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+    <div class="ad">Advertisement<br><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4665838048081250" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
     <div class="card" style="text-align:center">
       <h2>Interpret Your Dreams with AI</h2>
       <p>Share your dream and get a personalized AI interpretation.</p>

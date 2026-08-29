@@ -351,6 +351,37 @@ a { text-underline-offset: 3px; text-decoration-thickness: 1px; }
 .mobile-menu .navlink { padding: 10px 4px; font-size: 15px; }
 .mobile-menu .nav-ext { color: var(--accent); }
 
+/* Language menu (nav picker) */
+.lang-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  inset-inline-end: 0;
+  width: 320px;
+  max-width: calc(100vw - 32px);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  z-index: 50;
+  overflow: hidden;
+  animation: pageIn 0.25s var(--ease);
+}
+.lang-menu-list { max-height: 340px; overflow-y: auto; padding: 4px; }
+.lang-menu-item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-align: start;
+  transition: background 0.15s var(--ease);
+}
+.lang-menu-item:hover { background: var(--surface-2); }
+
 /* Language picker (Interpret page) */
 .lang-picker {
   display: flex;

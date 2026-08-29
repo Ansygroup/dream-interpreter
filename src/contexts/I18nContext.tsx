@@ -1,21 +1,19 @@
-import { createContext, useContext, useState, useEffect, useCallback, type ReactNode } from 'react';
+import { createContext, useContext, useState, useEffect, useCallback, useMemo, type ReactNode } from 'react';
 import { LANGUAGES, resolveLanguageCode, isRtlCode, getLanguage, type LanguageInfo } from '../i18n/languages';
 import en from '../i18n/locales/en.json';
-import ar from '../i18n/locales/ar.json';
 
 type Dict = Record<string, unknown>;
 
-/** Locales bundled with the app. Phase 2 makes these lazy-loadable per language. */
-const translations: Record<string, Dict> = {
-  en: en as Dict,
-  ar: ar as Dict,
-};
+/** Every locale file on disk — Vite code-splits these into lazy chunks. */
+const localeModules = import.meta.glob('../i18n/locales/*.json');
 
-export { LANGUAGES };
-export type { LanguageInfo };
+const codeFromPath = (path: string): string | null =>
+  path.match(/\/([a-z][a-z-]+)\.json$/i)?.[1] ?? null;
 
-/** Languages that currently have UI translations available. */
-export const AVAILABLE_LANGUAGES = LANGUAGES.filter((l) => Boolean(translations[l.code]) || l.code === 'en');
+/** Languages that actually have a translation file. */
+export const AVAILABLE_LANGUAGES: LanguageInfo[] = LANGUAGES.filter((l) =>
+  Object.keys(localeModules).some((p) => codeFromPath(p) === l.code)
+);
 
 const COUNTRY_LANG: Record<string, string> = {
   SA: 'ar', AE: 'ar', EG: 'ar', MA: 'ar', DZ: 'ar', TN: 'ar', IQ: 'ar', JO: 'ar',
@@ -75,7 +73,6 @@ export const I18nProvider = ({ children }: { children: ReactNode }) => {
       const saved = localStorage.getItem(STORAGE_KEY);
       const savedResolved = resolveLanguageCode(saved);
       if (savedResolved) return savedResolved;
-      // No saved preference yet — try the browser language while geo loads.
       return resolveLanguageCode(navigator.language) ?? DEFAULT_LANGUAGE;
     } catch {
       return DEFAULT_LANGUAGE;
@@ -84,14 +81,31 @@ export const I18nProvider = ({ children }: { children: ReactNode }) => {
 
   const [language, setLanguageState] = useState<string>(getInitial);
   const [country, setCountryState] = useState<string | null>(null);
+  /** Loaded locale dictionaries. English ships in the main bundle. */
+  const [dicts, setDicts] = useState<Record<string, Dict>>({ [DEFAULT_LANGUAGE]: en as Dict });
 
-  // Keep <html lang/dir> in sync with the active language at all times —
-  // including the very first paint (this fixes the RTL/LTR mismatch bug).
+  // Keep <html lang/dir> in sync at all times, including first paint.
   useEffect(() => {
     const html = document.documentElement;
     html.lang = language;
     html.dir = isRtlCode(language) ? 'rtl' : 'ltr';
   }, [language]);
+
+  // Lazy-load the active locale bundle; t() falls back to English meanwhile.
+  useEffect(() => {
+    if (language === DEFAULT_LANGUAGE || dicts[language]) return;
+    const loaderKey = Object.keys(localeModules).find((p) => codeFromPath(p) === language);
+    if (!loaderKey) return;
+    let active = true;
+    localeModules[loaderKey]()
+      .then((mod: unknown) => {
+        if (!active) return;
+        const dict = (mod as { default: Dict }).default;
+        setDicts((prev) => ({ ...prev, [language]: dict }));
+      })
+      .catch(() => {});
+    return () => { active = false; };
+  }, [language, dicts]);
 
   // Geo-detect once on mount. Adopt the country's language ONLY when the
   // browser language agrees with it (an Arabic browser in an Arab country →
@@ -127,15 +141,18 @@ export const I18nProvider = ({ children }: { children: ReactNode }) => {
 
   const t = useCallback((key: string, vars?: Record<string, string | number>): string => {
     const raw =
-      lookup(translations[language], key) ??
-      lookup(translations[DEFAULT_LANGUAGE], key) ??
+      lookup(dicts[language], key) ??
+      lookup(dicts[DEFAULT_LANGUAGE], key) ??
       key;
     if (!vars) return raw;
     return raw.replace(/\{(\w+)\}/g, (_, k: string) => String(vars[k] ?? `{${k}}`));
-  }, [language]);
+  }, [dicts, language]);
 
   const isRtl = isRtlCode(language);
-  const languageInfo = getLanguage(language) ?? getLanguage(DEFAULT_LANGUAGE)!;
+  const languageInfo = useMemo(
+    () => getLanguage(language) ?? getLanguage(DEFAULT_LANGUAGE)!,
+    [language]
+  );
 
   return (
     <I18nContext.Provider value={{ language, languageInfo, t, setLanguage, isRtl, country, setCountry }}>

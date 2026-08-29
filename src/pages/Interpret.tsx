@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useI18n, LANGUAGES } from '../contexts/I18nContext';
+import { useI18n } from '../contexts/I18nContext';
 import Layout from '../components/Layout';
+import LanguagePicker from '../components/LanguagePicker';
 
 export default function Interpret() {
-  const { t, language, setLanguage } = useI18n();
+  const { t, language, languageInfo } = useI18n();
   const [dream, setDream] = useState('');
   const [result, setResult] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
@@ -53,22 +54,9 @@ export default function Interpret() {
 
           <div className="reveal" style={{ marginBottom: 28 }}>
             <label style={{ fontSize: 13, color: 'var(--muted)', display: 'block', marginBottom: 12 }}>{t('interpret.language')}</label>
-            <div className="lang-picker">
-              {LANGUAGES.map((l) => (
-                <button
-                  key={l.code}
-                  onClick={() => setLanguage(l.code)}
-                  className="tag lang-chip"
-                  style={{
-                    cursor: 'pointer',
-                    borderColor: language === l.code ? 'var(--accent)' : 'var(--accent-line)',
-                    background: language === l.code ? 'var(--accent-glow)' : 'transparent',
-                    color: language === l.code ? 'var(--accent)' : 'var(--muted)',
-                  }}
-                >
-                  {l.native}
-                </button>
-              ))}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+              <LanguagePicker />
+              <span style={{ fontSize: 14.5, color: 'var(--text)' }}>{languageInfo.native}</span>
             </div>
           </div>
 

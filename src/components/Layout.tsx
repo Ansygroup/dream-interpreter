@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { useI18n } from '../contexts/I18nContext';
 import { useReveal } from '../hooks/useReveal';
 import { useTheme } from '../hooks/useTheme';
+import LanguagePicker from './LanguagePicker';
 
 export function Logo({ size = 22 }: { size?: number }) {
   return (
@@ -72,6 +73,7 @@ export default function Layout({ children, title }: { children: ReactNode; title
             <Logo />
             <div className="nav-links">{navLinks}</div>
             <div className="nav-actions">
+              <LanguagePicker />
               <button className="icon-btn" onClick={toggleTheme} aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}>
                 {theme === 'dark' ? SunIcon : MoonIcon}
               </button>

@@ -10,7 +10,10 @@
     "start": "Start",
     "home": "Home",
     "aiBlog": "AI Blog",
-    "ansyGroup": "Ansy Group"
+    "ansyGroup": "Ansy Group",
+    "language": "Language",
+    "searchLanguage": "Search languages…",
+    "noLanguage": "No language matches your search."
   },
   "footer": {
     "tagline": "Free AI dream interpretation grounded in Ibn Sirin & modern psychology.",

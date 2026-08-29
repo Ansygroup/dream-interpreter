@@ -76,9 +76,6 @@ export const LANGUAGES: LanguageInfo[] = [
   { code: 'mn', native: 'Монгол', english: 'Mongolian', dir: 'ltr' },
 ];
 
-/** Locale codes that have a translation file on disk (subset of LANGUAGES). */
-export const TRANSLATED_LANGUAGES = ['en', 'ar'];
-
 const byCode = new Map(LANGUAGES.map((l) => [l.code, l]));
 
 export const getLanguage = (code: string): LanguageInfo | undefined => byCode.get(code);

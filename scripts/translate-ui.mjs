@@ -23,7 +23,19 @@ const languagesTs = readFileSync(join(root, 'src', 'i18n', 'languages.ts'), 'utf
 const args = process.argv.slice(2);
 const only = args.find((a) => a.startsWith('--only='))?.split('=')[1]?.split(',').map((s) => s.trim());
 const force = args.includes('--force');
-const MODEL = args.find((a) => a.startsWith('--model='))?.split('=')[1] || 'google/gemini-2.5-flash';
+/** --complete: only (re)translate files that are partial (missing the "about" section). */
+const complete = args.includes('--complete');
+const MODEL = args.find((a) => a.startsWith('--model='))?.split('=')[1] || '';
+
+// Free-first cascade — mirrors api/interpret.js
+const FREE_MODELS = [
+  'z-ai/glm-5.2:free',
+  'minimax/minimax-m3:free',
+  'nvidia/nemotron-3-super-120b-a12b:free',
+  'google/gemma-4-31b-it:free',
+  'inclusionai/ling-3.0-flash-fin:free',
+];
+const MODELS = MODEL ? [MODEL] : FREE_MODELS;
 
 const KEY = process.env.OPENROUTER_API_KEY;
 if (!KEY) {
@@ -40,11 +52,23 @@ while ((m = LANG_RE.exec(languagesTs))) all.push({ code: m[1], english: m[2], di
 const source = JSON.parse(readFileSync(join(localesDir, 'en.json'), 'utf8'));
 const sourceKeys = Object.keys(source).length;
 
-const targets = all.filter(
-  (l) => l.code !== 'en' && (!only || only.includes(l.code)) && (force || !existsSync(join(localesDir, `${l.code}.json`)))
-);
+const isPartial = (code) => {
+  try {
+    const d = JSON.parse(readFileSync(join(localesDir, `${code}.json`), 'utf8'));
+    return !d.about; // full files carry the "about" section
+  } catch {
+    return true;
+  }
+};
 
-console.log(`Source: en.json (${sourceKeys} keys) → ${targets.length} language(s) via ${MODEL}\n`);
+const targets = all.filter((l) => {
+  if (l.code === 'en') return false;
+  if (only && !only.includes(l.code)) return false;
+  if (complete) return existsSync(join(localesDir, `${l.code}.json`)) && isPartial(l.code);
+  return force || !existsSync(join(localesDir, `${l.code}.json`));
+});
+
+console.log(`Source: en.json → ${targets.length} language(s) via ${MODELS.join(' → ')}\n`);
 
 // Flatten nested JSON to "a.b.c" paths so the model sees a flat map (safer JSON out)
 const flatten = (obj, prefix = '') =>
@@ -84,31 +108,39 @@ Rules:
 Input JSON:
 ${JSON.stringify(Object.fromEntries(pairs), null, 0)}`;
 
-  const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${KEY}`,
-      'Content-Type': 'application/json',
-      'HTTP-Referer': 'https://dream-interpreter-alpha-ruddy.vercel.app',
-      'X-Title': 'Dreamscope UI Localization',
-    },
-    body: JSON.stringify({
-      model: MODEL,
-      temperature: 0.3,
-      max_tokens: 8000,
-      messages: [
-        { role: 'system', content: 'You are a professional UI localizer. You output only valid JSON.' },
-        { role: 'user', content: prompt },
-      ],
-    }),
-  });
-
-  if (!res.ok) {
-    const body = await res.text().catch(() => '');
-    throw new Error(`HTTP ${res.status} ${body.slice(0, 200)}`);
+  let text = '';
+  for (const model of MODELS) {
+    try {
+      const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${KEY}`,
+          'Content-Type': 'application/json',
+          'HTTP-Referer': 'https://dreamscope.app',
+          'X-Title': 'Dreamscope UI Localization',
+        },
+        body: JSON.stringify({
+          model,
+          temperature: 0.3,
+          max_tokens: 8000,
+          messages: [
+            { role: 'system', content: 'You are a professional UI localizer. You output only valid JSON.' },
+            { role: 'user', content: prompt },
+          ],
+        }),
+      });
+      if (!res.ok) {
+        console.log(`[${code}] ${model} HTTP ${res.status}`);
+        continue;
+      }
+      const data = await res.json();
+      text = data?.choices?.[0]?.message?.content ?? '';
+      if (text.trim()) break;
+    } catch (e) {
+      console.log(`[${code}] ${model} error ${e?.message || e}`);
+    }
   }
-  const data = await res.json();
-  const text = data?.choices?.[0]?.message?.content ?? '';
+  if (!text.trim()) throw new Error('all models failed');
   const cleaned = text.replace(/^```(?:json)?\s*/i, '').replace(/```\s*$/i, '').trim();
   const parsed = JSON.parse(cleaned);
 

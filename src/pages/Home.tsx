@@ -85,6 +85,7 @@ export default function Home() {
             <Link to="/faq" className="navlink">FAQ</Link>
             <Link to="/history" className="navlink">History</Link>
             <Link to="/saved" className="navlink">Saved</Link>
+            <a href="https://ai-blog-ansygroups-projects.vercel.app" target="_blank" rel="noopener noreferrer" className="navlink" style={{ color: 'var(--accent)' }}>AI Blog</a>
             <Link to="/interpret" className="btn btn-primary" style={{ padding: '10px 18px' }}>Start</Link>
           </div>
         </nav>

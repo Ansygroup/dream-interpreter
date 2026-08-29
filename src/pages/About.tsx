@@ -15,6 +15,7 @@ export default function About() {
             <Link to="/interpret" className="navlink">Interpret</Link>
             <Link to="/faq" className="navlink">FAQ</Link>
             <Link to="/contact" className="navlink">Contact</Link>
+            <a href="https://ai-blog-ansygroups-projects.vercel.app" target="_blank" rel="noopener noreferrer" className="navlink" style={{ color: 'var(--accent)' }}>AI Blog</a>
           </div>
         </nav>
       </header>
@@ -63,6 +64,7 @@ export default function About() {
             <Link to="/" className="navlink">Home</Link>
             <Link to="/faq" className="navlink">FAQ</Link>
             <Link to="/contact" className="navlink">Contact</Link>
+            <a href="https://ai-blog-ansygroups-projects.vercel.app" target="_blank" rel="noopener noreferrer" className="navlink" style={{ color: 'var(--accent)' }}>AI Blog</a>
           </div>
           <span style={{ fontSize: 13, color: 'var(--muted)' }}>© 2024 Dreamscope</span>
         </div>

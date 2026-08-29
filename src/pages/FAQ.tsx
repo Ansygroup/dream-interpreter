@@ -48,6 +48,7 @@ export default function FAQ() {
             <Link to="/interpret" className="navlink">Interpret</Link>
             <Link to="/about" className="navlink">About</Link>
             <Link to="/contact" className="navlink">Contact</Link>
+            <a href="https://ai-blog-ansygroups-projects.vercel.app" target="_blank" rel="noopener noreferrer" className="navlink" style={{ color: 'var(--accent)' }}>AI Blog</a>
           </div>
         </nav>
       </header>

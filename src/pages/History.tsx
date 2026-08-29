@@ -16,6 +16,7 @@ const Nav = () => (
       <div style={{ display: 'flex', alignItems: 'center', gap: 28 }}>
         <Link to="/interpret" className="navlink">Interpret</Link>
         <Link to="/saved" className="navlink">Saved</Link>
+        <a href="https://ai-blog-ansygroups-projects.vercel.app" target="_blank" rel="noopener noreferrer" className="navlink" style={{ color: 'var(--accent)' }}>AI Blog</a>
       </div>
     </nav>
   </header>

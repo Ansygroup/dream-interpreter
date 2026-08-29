@@ -1,0 +1,138 @@
+{
+  "nav": {
+    "interpret": "Interpret",
+    "symbols": "Symbols",
+    "about": "About",
+    "faq": "FAQ",
+    "history": "History",
+    "saved": "Saved",
+    "contact": "Contact",
+    "start": "Start",
+    "home": "Home",
+    "aiBlog": "AI Blog",
+    "ansyGroup": "Ansy Group"
+  },
+  "footer": {
+    "tagline": "Free AI dream interpretation grounded in Ibn Sirin & modern psychology.",
+    "copyright": "© {year} Dreamscope"
+  },
+  "home": {
+    "eyebrow": "AI Dream Interpretation",
+    "heroTitle": "What your {accent} is trying to say",
+    "heroAccent": "subconscious",
+    "heroLede": "Ancient symbolism, modern psychology, and AI — combined into one clear reading. Describe a dream in your own words and get an interpretation grounded in both Ibn Sirin and depth psychology.",
+    "interpretCta": "Interpret a Dream",
+    "browseCta": "Browse Symbols",
+    "statLanguages": "Languages",
+    "statPages": "Pages of meanings",
+    "statPrivate": "Private",
+    "whyEyebrow": "Why Dreamscope",
+    "whyTitle": "A reading you can actually use",
+    "feature1Title": "Symbolic Analysis",
+    "feature1Body": "Every dream is mapped to its core symbols and traced through centuries of interpretation tradition.",
+    "feature2Title": "60 Languages",
+    "feature2Body": "Interpret and read symbols in English, Arabic, Spanish, Chinese, Japanese, and 55 more languages.",
+    "feature3Title": "All Traditions",
+    "feature3Body": "Ibn Sirin, depth psychology, and perspectives across faiths — one reading, seen through your lens.",
+    "feature4Title": "Saved & Private",
+    "feature4Body": "Your dreams stay on your device. Revisit, compare, and track patterns over time.",
+    "sampleTag": "Sample Reading",
+    "sampleJustNow": "just now",
+    "sampleDream": "\"I saw a green snake leave the house through the garden gate.\"",
+    "sampleReading": "Snakes mark transformation — something in your life is shedding its old skin. The gate suggests a clear exit is opening. In Ibn Sirin's tradition, a harmless snake leaving the home often means a lingering worry is finally moving on.",
+    "sampleTag1": "Transformation",
+    "sampleTag2": "Release",
+    "sampleTag3": "Ibn Sirin",
+    "sampleSaved": "Saved to your device",
+    "symbolsEyebrow": "Dream Symbols",
+    "symbolsTitle": "Every symbol carries a meaning",
+    "symbolsLede": "From water to fire, explore the most common dream motifs and what each one tends to signal across traditions.",
+    "ctaEyebrow": "Ready when you are",
+    "ctaTitle": "Describe your dream",
+    "ctaLede": "A few sentences is enough. The reading takes seconds and stays on your device.",
+    "ctaButton": "Start Interpreting"
+  },
+  "interpret": {
+    "eyebrow": "Interpret",
+    "title": "Describe your dream",
+    "lede": "Write it in your own words. The more detail, the sharper the reading — setting, feelings, and anything unusual all matter.",
+    "language": "Language",
+    "yourDream": "Your dream",
+    "placeholder": "Last night I dreamed I was walking through a door that kept changing shape...",
+    "loading": "Interpreting...",
+    "button": "Interpret Dream",
+    "yourReading": "Your Reading",
+    "save": "Save",
+    "saved": "Saved",
+    "viewHistory": "View History",
+    "errorEmpty": "Please describe your dream first.",
+    "errorFailed": "The interpretation failed. Please try again.",
+    "errorNetwork": "Connection error. Please try again."
+  },
+  "history": {
+    "eyebrow": "Your Activity",
+    "title": "Dream history",
+    "lede": "Every interpretation you've generated, stored on this device.",
+    "empty": "No dreams interpreted yet."
+  },
+  "saved": {
+    "eyebrow": "Your Library",
+    "title": "Saved dreams",
+    "lede": "Keep the interpretations that mattered. They stay on this device.",
+    "empty": "Nothing saved yet."
+  },
+  "common": {
+    "interpretCta": "Interpret a Dream",
+    "delete": "Delete",
+    "remove": "Remove",
+    "backHome": "Return Home"
+  },
+  "symbols": {
+    "eyebrow": "Dream Symbol Dictionary",
+    "title": "{n} Dream Symbols",
+    "lede": "Browse every symbol we interpret — free, in dozens of languages. Pick yours to read the meaning.",
+    "search": "Search a symbol…"
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "A clear reading, rooted in tradition",
+    "p1": "Dreamscope exists to make dream interpretation accessible in your own language. We combine two streams of understanding: the classical Islamic dream scholarship of Ibn Sirin, one of the most influential dream interpreters in history, and the symbolic frameworks of modern depth psychology.",
+    "p2": "Every reading is generated to help you reflect — not to predict the future. Symbols like water, fire, flight, or a snake have carried meaning across cultures for thousands of years, and our interpretations trace those threads so you can find what resonates with your own life.",
+    "p3": "The service is free, private by design, and available in 60 languages. Your dreams never leave your device.",
+    "card1Title": "Ibn Sirin",
+    "card1Body": "Classical Islamic dream scholarship, traced through centuries of interpretation.",
+    "card2Title": "60 languages",
+    "card2Body": "From Arabic to Japanese — interpret in the language you dream in.",
+    "card3Title": "100% private",
+    "card3Body": "Dreams stay on your device. No accounts, no tracking.",
+    "cta": "Start Interpreting"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Get in touch",
+    "lede": "Questions, corrections, or partnership ideas? Reach the Dreamscope team by email.",
+    "email": "Email",
+    "disclaimer": "Dreamscope provides reflection and entertainment only. Interpretations are not medical, psychological, or religious advice. If you need support, please consult a qualified professional.",
+    "back": "Back to Interpreter"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions",
+    "q1": "How does Dreamscope interpret dreams?",
+    "a1": "Dreamscope blends classical dream scholarship — including Ibn Sirin's tradition — with modern depth psychology. You describe a dream in your own words and receive a reading that maps its symbols to their common meanings across cultures.",
+    "q2": "Is my dream data private?",
+    "a2": "Yes. Your dreams are stored only in your browser's local storage on your device. Nothing is sent to a server for storage, and you can delete your history at any time.",
+    "q3": "In which languages can I interpret dreams?",
+    "a3": "Dreamscope supports 60 languages including English, Arabic, Spanish, French, German, Chinese, Japanese, Korean, Turkish, Portuguese, Russian, Hindi, and more. The reading follows the language you choose.",
+    "q4": "Are the interpretations a substitute for professional advice?",
+    "a4": "No. Dream readings are for reflection and entertainment. They are not medical, psychological, or religious guidance. If you are struggling, please speak with a qualified professional.",
+    "q5": "How many dream symbols are covered?",
+    "a5": "Dreamscope has dedicated pages for 146 common symbols — snake, water, flying, fire, pregnancy, money, and many more — each available in multiple languages with long-tail question variants."
+  },
+  "notfound": {
+    "code": "404",
+    "title": "This dream dissolved",
+    "lede": "The page you were looking for isn't here. Let's get you back to interpreting.",
+    "cta": "Return Home"
+  }
+}

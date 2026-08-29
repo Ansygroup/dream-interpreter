@@ -178,5 +178,8 @@
     "chinese": {
       "name": "Zhou Gong (Chinese)"
     }
+  },
+  "daily": {
+    "tag": "Dream of the day"
   }
 }

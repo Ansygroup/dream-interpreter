@@ -1,6 +1,14 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useI18n } from '../contexts/I18nContext';
 import Layout from '../components/Layout';
+
+interface DreamToday {
+  date: string;
+  symbol: { key: string; en: string; ar: string };
+  dream: { en: string; ar: string };
+  reading: { en: string; ar: string };
+}
 
 const SYMBOLS = [
   { key: 'snake', en: 'Snake', ar: 'الثعبان' },
@@ -29,6 +37,16 @@ export default function Home() {
   const { t, language } = useI18n();
   const [heroBefore, heroAfter] = t('home.heroTitle').split('{accent}');
   const heroAccent = t('home.heroAccent');
+  const [daily, setDaily] = useState<DreamToday | null>(null);
+
+  useEffect(() => {
+    fetch('/dream-today.json')
+      .then((r) => (r.ok ? r.json() : Promise.reject()))
+      .then((d: DreamToday) => {
+        if (d?.date === new Date().toISOString().slice(0, 10)) setDaily(d);
+      })
+      .catch(() => {});
+  }, []);
 
   const features = [
     {
@@ -149,6 +167,26 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Dream of the day — refreshed daily by the evolve automation */}
+      {daily && (
+        <section className="section section-line">
+          <div className="container-narrow">
+            <div className="card reveal" style={{ borderColor: 'var(--accent-line)' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 14, flexWrap: 'wrap', gap: 8 }}>
+                <span className="tag">{t('daily.tag')}</span>
+                <span className="mono-meta">{language === 'ar' ? daily.symbol.ar : daily.symbol.en}</span>
+              </div>
+              <p className="serif" style={{ fontSize: 'clamp(1.3rem, 2.4vw, 1.7rem)', lineHeight: 1.5, marginBottom: 14, fontStyle: 'italic', color: 'var(--text)' }}>
+                “{language === 'ar' ? daily.dream.ar : daily.dream.en}”
+              </p>
+              <p style={{ color: 'var(--text-dim)', fontSize: 15, lineHeight: 1.75 }}>
+                {language === 'ar' ? daily.reading.ar : daily.reading.en}
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* CTA */}
       <section className="section section-line">

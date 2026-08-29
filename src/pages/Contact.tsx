@@ -16,6 +16,7 @@ export default function Contact() {
             <Link to="/about" className="navlink">About</Link>
             <Link to="/faq" className="navlink">FAQ</Link>
             <a href="https://ai-blog-ansygroups-projects.vercel.app" target="_blank" rel="noopener noreferrer" className="navlink" style={{ color: 'var(--accent)' }}>AI Blog</a>
+            <a href="https://ansygroup.com" target="_blank" rel="noopener noreferrer" className="navlink" style={{ color: 'var(--accent)' }}>Ansy Group</a>
           </div>
         </nav>
       </header>

@@ -318,6 +318,10 @@ export default function Interpret() {
                     <svg className="icon" viewBox="0 0 24 24" style={{ width: 16, height: 16 }}><rect x="9" y="9" width="11" height="11" rx="2" /><path d="M5 15V5a2 2 0 0 1 2-2h10" /></svg>
                     {copied ? t('interpret.copied') : t('interpret.copy')}
                   </button>
+                  <button onClick={() => shareReading(result.interpretation)} className="btn btn-ghost" style={{ padding: '10px 18px' }} aria-label={t('interpret.share')}>
+                    <svg className="icon" viewBox="0 0 24 24" style={{ width: 16, height: 16 }}><circle cx="18" cy="5" r="3" /><circle cx="6" cy="12" r="3" /><circle cx="18" cy="19" r="3" /><path d="M8.6 13.5 15.4 17.5M15.4 6.5 8.6 10.5" /></svg>
+                    {t('interpret.share')}
+                  </button>
                   <Link to="/history" className="btn btn-ghost" style={{ padding: '10px 18px' }}>{t('interpret.viewHistory')}</Link>
                   <div style={{ marginInlineStart: 'auto', display: 'flex', alignItems: 'center', gap: 8 }}>
                     {feedback ? (
@@ -382,6 +386,15 @@ export default function Interpret() {
                         >
                           <svg className="icon" viewBox="0 0 24 24" style={{ width: 15, height: 15 }}><rect x="9" y="9" width="11" height="11" rx="2" /><path d="M5 15V5a2 2 0 0 1 2-2h10" /></svg>
                           {copied ? t('interpret.copied') : t('interpret.copy')}
+                        </button>
+                        <button
+                          onClick={() => c.reading && shareReading(c.reading.interpretation)}
+                          className="btn btn-ghost"
+                          style={{ padding: '8px 14px', marginTop: 16 }}
+                          aria-label={t('interpret.share')}
+                        >
+                          <svg className="icon" viewBox="0 0 24 24" style={{ width: 15, height: 15 }}><circle cx="18" cy="5" r="3" /><circle cx="6" cy="12" r="3" /><circle cx="18" cy="19" r="3" /><path d="M8.6 13.5 15.4 17.5M15.4 6.5 8.6 10.5" /></svg>
+                          {t('interpret.share')}
                         </button>
                       </>
                     )}

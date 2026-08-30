@@ -58,6 +58,20 @@ export default function Interpret() {
     } catch { /* clipboard may be unavailable */ }
   };
 
+  // Share a reading: native share sheet where available, otherwise WhatsApp fallback.
+  const shareReading = async (text: string) => {
+    const url = typeof window !== 'undefined' ? window.location.origin + '/interpret' : '';
+    const payload = `${text.slice(0, 600)}${text.length > 600 ? '…' : ''}\n\n— Dreamscope (${url})`;
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: 'Dreamscope', text: payload, url });
+        return;
+      }
+    } catch { /* user cancelled or unsupported — fall through */ }
+    const wa = `https://wa.me/?text=${encodeURIComponent(payload)}`;
+    window.open(wa, '_blank', 'noopener,noreferrer');
+  };
+
   const persist = (reading: Reading, persp: string) => {
     const entry = { dream, interpretation: reading.interpretation, date: new Date().toISOString(), id: Date.now(), language, perspective: persp, symbols: reading.symbols, mood: mood ?? undefined };
     const history = JSON.parse(localStorage.getItem('dream-history') || '[]');

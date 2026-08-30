@@ -23,10 +23,13 @@
 | 8 | Vercel 100/day limit | wasted deploys | batched + curl-verify | ✅ RESOLVED (quota opened) |
 
 ## GAPS REMAINING
-- [ ] **Deploy ansygroup.com hub** — BLOCKED: project `ansygroup.com` (and new `ansy-group-hub`) show "Login – Vercel" wall = Vercel Authentication/Password Protection ENABLED at project level. Agent cannot disable (no console access, no VERCEL_TOKEN). **USER ACTION**: Vercel console → project → Settings → Deployment Protection → turn OFF "Vercel Authentication" + any Password Protection. Then `vercel --prod` serves the static hub.
-- [ ] **ansygroup.com DNS** — bind `ansygroup.com` → A `76.76.21.21` (USER action in Cloudflare/Vercel; agent cannot touch DNS)
-- [ ] **IndexNow** — endpoint 500 (no key). If key provided: set `INDEXNOW_KEY` env → `deploy-all.sh` auto-pings. Respect user's decline.
-- [ ] **User action**: submit `sitemap.xml` in Bing Webmaster + GSC (verified already)
+- [x] **ai-blog daily auto-publish** — cron `7ecf4205e099` runs 10:00 UTC daily, `--batch 15` + queue auto-refill + dup-cover guard. Rate: ~15 posts/day free.
+- [x] **ai-blog duplicate covers** — were 50 posts sharing 1 image; fixed via `fix-duplicate-covers.cjs` (49 unique loremflickr images). 0 real duplicates. Committed `60c95ca`.
+- [ ] **ansygroup.com hub** — BLOCKED: Vercel Authentication wall (project-level Deployment Protection). USER ACTION: Vercel console → project → Settings → Deployment Protection → OFF "Vercel Authentication" + Password Protection. Then `vercel --prod` serves it.
+- [ ] **ansygroup.com DNS** — bind `ansygroup.com` → A `76.76.21.21` (USER action, Cloudflare/Vercel).
+- [ ] **ai-blog video** — no VideoObject schema / no video gen yet. DEFERRED (post-priority). Option: local slideshow+TTS or YouTube embed schema. User said "تمام" to do after priorities.
+- [ ] **IndexNow** — endpoint 500 (no key). If provided: set `INDEXNOW_KEY` env → `deploy-all.sh` auto-pings.
+- [ ] **User action**: submit `sitemap.xml` in Bing Webmaster + GSC (verified already).
 - [ ] **dream-interpreter batch6** — optional, target 30k+ pages
 
 ## AUTONOMOUS WORKFLOW (created this session)

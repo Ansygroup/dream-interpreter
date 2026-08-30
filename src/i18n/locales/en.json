@@ -71,22 +71,10 @@
     "errorNetwork": "Connection error. Please try again.",
     "perspectiveLabel": "Reading through",
     "symbolsLabel": "Symbols in your dream",
-    "feedbackQ": {
-      "en": "Was this reading helpful?",
-      "ar": "هل كانت هذه القراءة مفيدة؟"
-    },
-    "yes": {
-      "en": "Yes, helpful",
-      "ar": "نعم، مفيدة"
-    },
-    "no": {
-      "en": "Not really",
-      "ar": "ليس تماماً"
-    },
-    "thanks": {
-      "en": "Thank you — your feedback improves future readings.",
-      "ar": "شكراً لك — تقييمك يحسّن القراءات المستقبلية."
-    },
+    "feedbackQ": "Was this reading helpful?",
+    "yes": "Yes, helpful",
+    "no": "Not really",
+    "thanks": "Thank you — your feedback improves future readings.",
     "perspectiveDesc": "One reading that weaves the wisest threads of world traditions with depth psychology."
   },
   "history": {

@@ -71,22 +71,10 @@
     "errorNetwork": "خطأ في الاتصال. حاول مرة أخرى.",
     "perspectiveLabel": "القراءة عبر",
     "symbolsLabel": "رموز حلمك",
-    "feedbackQ": {
-      "en": "Was this reading helpful?",
-      "ar": "هل كانت هذه القراءة مفيدة؟"
-    },
-    "yes": {
-      "en": "Yes, helpful",
-      "ar": "نعم، مفيدة"
-    },
-    "no": {
-      "en": "Not really",
-      "ar": "ليس تماماً"
-    },
-    "thanks": {
-      "en": "Thank you — your feedback improves future readings.",
-      "ar": "شكراً لك — تقييمك يحسّن القراءات المستقبلية."
-    },
+    "feedbackQ": "هل كانت هذه القراءة مفيدة؟",
+    "yes": "نعم، مفيدة",
+    "no": "ليس تماماً",
+    "thanks": "شكراً لك — تقييمك يحسّن القراءات المستقبلية.",
     "perspectiveDesc": "قراءة واحدة تنسج أرشق خيوط تقاليد العالم مع علم النفس العميق."
   },
   "history": {

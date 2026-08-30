@@ -6,6 +6,10 @@
  *   - git remote reachable        → commit + push pending work
  * Idempotent and prompt-free.
  *
+ * Cron-safe: when local is already in sync with the remote we skip `git push`
+ * entirely, so Git Credential Manager never touches stdin (which would fail
+ * with "stdin is not a tty" under </dev/null> on a headless cron).
+ *
  * Usage: node generic-auto-complete.mjs   (run inside the target repo)
  */
 import { readFileSync, existsSync } from 'node:fs';
@@ -26,7 +30,7 @@ if (existsSync(envPath)) {
   if (m && m[1] && m[1].startsWith('sk_') && existsSync(resolve(root, 'scripts/gen-stripe-links.mjs'))) {
     log('key + gen script found — generating links…');
     try { execSync('node scripts/gen-stripe-links.mjs', { cwd: root, stdio: 'inherit' }); log('✅ links done'); }
-    catch (e) { log(`⚠ links failed: ${e.message}`); }
+    catch (e) { log(`⚠ links failed: ${e.message.split('\n')[0]}`); }
   }
 }
 
@@ -35,7 +39,16 @@ try {
   const st = execSync('git status --short', { cwd: root, encoding: 'utf8' }).trim();
   if (st) { execSync('git add -A', { cwd: root }); execSync('git -c user.email="ansy0@ansygroup.com" -c user.name="ansy0" commit -q -m "chore: auto-complete pending work"', { cwd: root }); }
   const b = execSync('git branch --show-current', { cwd: root, encoding: 'utf8' }).trim();
-  execSync(`git push origin ${b}`, { cwd: root, stdio: 'inherit', env: { ...process.env, GIT_TERMINAL_PROMPT: '0', GCM_INTERACTIVE: 'never', GCM_TERMINAL_PROMPT: '0' } });
-  log('✅ pushed');
+  // Only push if there is actually something ahead of the remote — avoids
+  // invoking the credential manager when idle (which fails headless).
+  let ahead = '';
+  try { ahead = execSync(`git log --oneline origin/${b}..HEAD`, { cwd: root, encoding: 'utf8' }).trim(); }
+  catch { ahead = 'unknown'; }
+  if (!ahead) {
+    log('✅ nothing to push (local in sync with origin)');
+  } else {
+    execSync(`git push origin ${b}`, { cwd: root, stdio: 'inherit', env: { ...process.env, GIT_TERMINAL_PROMPT: '0', GCM_INTERACTIVE: 'never', GCM_TERMINAL_PROMPT: '0' } });
+    log('✅ pushed');
+  }
 } catch (e) { log(`⚠ push skipped: ${e.message.split('\n')[0]}`); }
 log('done.');

@@ -2,115 +2,215 @@
   "nav": {
     "interpret": "Yorumla",
     "symbols": "Semboller",
-    "about": "Hakkımızda",
+    "about": "Hakkında",
     "faq": "SSS",
     "history": "Geçmiş",
     "saved": "Kaydedilenler",
     "contact": "İletişim",
     "start": "Başla",
-    "home": "Ana sayfa",
-    "aiBlog": "Yapay Zekâ Blogu",
+    "home": "Ana Sayfa",
+    "aiBlog": "AI Blog",
     "ansyGroup": "Ansy Group",
     "language": "Dil",
     "searchLanguage": "Dil ara…",
-    "noLanguage": "Aramanızla eşleşen dil yok."
+    "noLanguage": "Aramanızla eşleşen dil bulunamadı.",
+    "profile": "Profil"
   },
   "footer": {
-    "tagline": "Yapay zekâyla rüya tabiri, ücretsiz — İbn Sirîn geleneği ve modern psikolojiyle.",
+    "tagline": "İbn Sirin ve modern psikolojiye dayalı ücretsiz yapay zekâ rüya yorumu.",
     "copyright": "© {year} Dreamscope"
   },
   "home": {
-    "heroTitle": "{accent} sana söylemek istiyor",
-    "heroAccent": "bilinçaltın",
-    "heroLede": "Kadim sembolizm, modern psikoloji ve yapay zekâ — tek bir net okumada birleşti. Rüyanı kendi kelimelerinle anlat; İbn Sirîn ve derin psikolojiye dayanan bir yorum al.",
-    "interpretCta": "Rüya yorumla",
-    "browseCta": "Sembolleri keşfet",
+    "heroTitle": "{accent}iniz size ne anlatmaya çalışıyor",
+    "heroAccent": "bilinçaltı",
+    "heroLede": "Antik sembolizm, modern psikoloji ve yapay zekâ — tek bir net okumada birleşti. Rüyanızı kendi sözcüklerinizle anlatın; hem İbn Sirin geleneğine hem de derinlik psikolojisine dayalı bir yorum alın.",
+    "interpretCta": "Rüya Yorumla",
+    "browseCta": "Sembolleri Keşfet",
     "statLanguages": "{n} dil",
     "statSymbols": "{n} rüya sembolü",
-    "statPrivateLine": "cihazında, gizli",
-    "whyTitle": "Gerçekten işine yarayan bir okuma",
-    "whyLede": "Dreamscope rüyanı sembollerine ayırır ve güvendiğin geleneğin gözünden okur — psikoloji yanındadır, yerini almaz.",
-    "feature1Title": "Sembol analizi",
-    "feature1Body": "Her rüya temel sembollerine ayrılır ve yüzyıllarlık yorum geleneği üzerinden izlenir.",
-    "feature2Title": "60 dil",
-    "feature2Body": "Türkçe, İngilizce, Arapça, Çince, Japonca ve 55 dil daha ile rüya yorumla, sembolleri oku.",
-    "feature3Title": "Tüm gelenekler",
-    "feature3Body": "İbn Sirîn, derin psikoloji ve tüm inançların perspektifleri — tek bir okuma, kendi merceğinle.",
-    "feature4Title": "Kayıtlı ve gizli",
-    "feature4Body": "Rüyaların cihazında kalır. Yeniden oku, karşılaştır ve örüntüleri zaman içinde izle.",
-    "sampleTag": "Örnek okuma",
-    "sampleJustNow": "şimdi",
-    "sampleDream": "\"Yeşil bir yılanın bahçe kapısından evi terk ettiğini gördüm.\"",
-    "sampleReading": "Yılanlar dönüşümü işaret eder — hayatında bir şey eski derisini döküyor. Kapı, net bir çıkışın açıldığını ima eder. İbn Sirîn geleneğinde, evi terk eden zararsız bir yılan çoğu zaman uzun süredir süren bir endişenin nihayet dağıldığı anlamına gelir.",
+    "statPrivateLine": "cihazınızda gizli",
+    "whyTitle": "Gerçekten işinize yarayan bir okuma",
+    "whyLede": "Dreamscope rüyanızı sembollerine ayırır, sonra onları güvendiğiniz gelenek üzerinden — yanında psikoloji ile birlikte, onun yerine değil — okur.",
+    "feature1Title": "Sembolik Çözümleme",
+    "feature1Body": "Her rüya temel sembollerine ayrılır ve yüzyılların yorum geleneği içinde izi sürülür.",
+    "feature2Title": "60 Dil",
+    "feature2Body": "İngilizce, Arapça, İspanyolca, Çince, Japonca ve 55 dil daha — yorumlayın ve sembolleri okuyun.",
+    "feature3Title": "Tüm Gelenekler",
+    "feature3Body": "İbn Sirin, derinlik psikolojisi ve farklı inançların bakış açıları — tek bir okumada, sizin merceğinizden.",
+    "feature4Title": "Kaydedin & Gizli Kalsın",
+    "feature4Body": "Rüyalarınız cihazınızda kalır. Tekrar ziyaret edin, karşılaştırın ve zamanla örüntüleri takip edin.",
+    "sampleTag": "Örnek Okuma",
+    "sampleJustNow": "az önce",
+    "sampleDream": "\"Bahçe kapısından çıkıp giden yeşil bir yılan gördüm.\"",
+    "sampleReading": "Yılanlar dönüşümü işaret eder — hayatınızda bir şey eski kabuğunu soyuyor. Kapı, açılmakta olan net bir çıkışa işaret eder. İbn Sirin geleneğinde, zararsız bir yılanın evden ayrılması genellikle uzun süredir taşınan bir endişenin sonunda geride bırakıldığı anlamına gelir.",
     "sampleTag1": "Dönüşüm",
-    "sampleTag2": "Kurtuluş",
-    "sampleTag3": "İbn Sirîn",
-    "sampleSaved": "Cihazına kaydedildi",
+    "sampleTag2": "Bırakma",
+    "sampleTag3": "İbn Sirin",
+    "sampleSaved": "Cihazınıza kaydedildi",
     "symbolsTitle": "Her sembol bir anlam taşır",
-    "symbolsLede": "Sudan ateşe, en yaygın rüya motiflerini ve her birinin gelenekler boyunca neye işaret ettiğini keşfet.",
-    "ctaTitle": "Rüyanı anlat",
-    "ctaLede": "Birkaç cümle yeter. Okuma saniyeler sürer ve cihazında kalır.",
-    "ctaButton": "Yorumlamaya başla"
+    "symbolsLede": "Sudan ateşe kadar en yaygın rüya motiflerini ve her birinin gelenekler boyunca neye işaret ettiğini keşfedin.",
+    "ctaTitle": "Rüyanızı anlatın",
+    "ctaLede": "Birkaç cümle yeterli. Okuma saniyeler içinde hazır ve cihazınızda kalır.",
+    "ctaButton": "Yoruma Başla"
   },
   "interpret": {
-    "title": "Rüyanı anlat",
-    "lede": "Kendi kelimelerinle yaz. Ne kadar çok ayrıntı, o kadar net bir okuma — mekân, duygular ve alışılmadık her şey önemlidir.",
+    "title": "Rüyanızı anlatın",
+    "lede": "Kendi sözcüklerinizle yazın. Ne kadar ayrıntı verirseniz, okuma o kadar net olur — ortam, duygular ve olağandışı her şey önemlidir.",
     "language": "Dil",
-    "yourDream": "Rüyan",
-    "placeholder": "Dün gece sürekli şekil değiştiren bir kapıdan geçtiğimi rüyada gördüm...",
+    "yourDream": "Rüyanız",
+    "placeholder": "Dün gece şekli sürekli değişen bir kapıdan geçtiğimi rüya gördüm...",
     "loading": "Yorumlanıyor...",
-    "button": "Rüyayı yorumla",
-    "yourReading": "Okuman",
+    "button": "Rüyayı Yorumla",
+    "yourReading": "Yorumunuz",
     "save": "Kaydet",
-    "viewHistory": "Geçmişi gör",
-    "errorEmpty": "Önce rüyanı anlat.",
-    "errorFailed": "Yorum başarısız oldu. Tekrar dene.",
-    "errorNetwork": "Bağlantı hatası. Tekrar dene."
+    "viewHistory": "Geçmişi Gör",
+    "errorEmpty": "Lütfen önce rüyanızı anlatın.",
+    "errorFailed": "Yorum başarısız oldu. Lütfen tekrar deneyin.",
+    "errorNetwork": "Bağlantı hatası. Lütfen tekrar deneyin.",
+    "perspectiveLabel": "Hangi gelenek üzerinden okunuyor",
+    "symbolsLabel": "Rüyanızdaki semboller",
+    "feedbackQ": "Bu okuma işinize yaradı mı?",
+    "yes": "Evet, yaradı",
+    "no": "Pek değil",
+    "thanks": "Teşekkürler — geri bildiriminiz sonraki okumaları geliştirir.",
+    "perspectiveDesc": "Dünya geleneklerinin en bilge izlerini derinlik psikolojisiyle harmanlayan tek bir okuma.",
+    "moodLabel": "Rüya nasıl hissettirdi?"
   },
   "history": {
     "title": "Rüya geçmişi",
-    "lede": "Oluşturduğun her yorum, bu cihazda saklanır.",
-    "empty": "Henüz yorumlanmış rüya yok."
+    "lede": "Bu cihazda oluşturduğunuz tüm yorumlar.",
+    "empty": "Henüz yorumlanmış bir rüya yok."
   },
   "saved": {
     "title": "Kaydedilen rüyalar",
-    "lede": "Sana dokunan yorumları sakla. Bu cihazda kalırlar.",
-    "empty": "Henüz kaydedilen yok."
+    "lede": "Sizin için anlamlı olan yorumları saklayın. Hepsi bu cihazda kalır.",
+    "empty": "Henüz kaydedilen bir şey yok."
   },
   "common": {
-    "interpretCta": "Rüya yorumla",
+    "interpretCta": "Rüya Yorumla",
     "delete": "Sil",
     "remove": "Kaldır",
-    "backHome": "Ana sayfaya dön"
+    "backHome": "Ana Sayfaya Dön"
   },
   "symbols": {
-    "title": "{n} rüya sembolü",
-    "lede": "Yorumladığımız her sembole göz at — ücretsiz, düzinelerce dilde. Anlamını okumak için sembolünü seç.",
-    "search": "Bir sembol ara…"
+    "title": "{n} Rüya Sembolü",
+    "lede": "Yorumladığımız tüm sembollere göz atın — ücretsiz, onlarca dilde. Anlamı okumak için kendi dilinizi seçin.",
+    "search": "Sembol ara…"
+  },
+  "about": {
+    "title": "Geleneklere kök salmış, net bir okuma",
+    "p1": "Dreamscope, rüya yorumunu kendi dilinizde erişilebilir kılmak için var. İki anlama akışını bir araya getiriyoruz: tarihin en etkili rüya yorumcularından biri olan İbn Sirin'in klasik İslam rüya ilmi ve modern derinlik psikolojisinin sembolik çerçeveleri.",
+    "p2": "Her okuma, geleceği tahmin etmek için değil, üzerine düşünmenize yardımcı olmak için üretilir. Su, ateş, uçmak ya da yılan gibi semboller binlerce yıldır kültürler boyunca anlam taşımıştır; yorumlarımız bu izleri sizin kendi hayatınızda neye denk geldiğini bulmanız için süzer.",
+    "p3": "Hizmet ücretsizdir, tasarım gereği gizlidir ve 60 dilde sunulur. Rüyalarınız cihazınızdan asla ayrılmaz.",
+    "card1Title": "İbn Sirin",
+    "card1Body": "Yüzyılların yorum geleneği içinden süzülmüş klasik İslam rüya ilmi.",
+    "card2Title": "60 dil",
+    "card2Body": "Arapçadan Japoncaya — rüyanızı kurduğunuz dilde yorumlayın.",
+    "card3Title": "%100 gizli",
+    "card3Body": "Rüyalar cihazınızda kalır. Hesap yok, takip yok.",
+    "cta": "Yoruma Başla",
+    "traditionsTitle": "Her gelenek, tek bir rüya",
+    "traditionsLede": "Kalbinizin güvendiği merceği seçin — her okuma, kendine özgü bir yorum okulu üzerinden üretilir."
   },
   "contact": {
-    "title": "Bize ulaş",
-    "lede": "Soru, düzeltme veya iş birliği fikri mi var? Dreamscope ekibine e-postayla yaz.",
+    "title": "İletişime geçin",
+    "lede": "Sorular, düzeltmeler ya da iş birliği önerileri mi var? Dreamscope ekibine e-posta ile ulaşın.",
     "email": "E-posta",
-    "disclaimer": "Dreamscope yalnızca düşünme ve eğlence amacıyla içerik sunar. Yorumlar tıbbi, psikolojik veya dini tavsiye değildir. Destek gerekiyorsa nitelikli bir uzmana başvur.",
-    "back": "Yorumlayıcıya dön"
+    "disclaimer": "Dreamscope yalnızca üzerine düşünme ve eğlence amaçlıdır. Yorumlar tıbbi, psikolojik ya da dini tavsiye niteliği taşımaz. Destek ihtiyacınız varsa lütfen yetkin bir uzmana başvurun.",
+    "back": "Yorumlayıcıya Dön"
   },
   "faq": {
-    "title": "Sık sorulan sorular",
-    "q1": "Dreamscope rüyaları nasıl yorumlar?",
-    "a1": "Dreamscope, klasik rüya ilmini — İbn Sirîn geleneği dahil — modern derin psikolojiyle harmanlar. Rüyanı kendi kelimelerinle anlatırısın; sembollerini kültürler arası yaygın anlamlarıyla eşleştiren bir okuma alırsın.",
-    "q2": "Rüyalarım gizli mi?",
-    "a2": "Evet. Rüyaların yalnızca cihazındaki tarayıcının yerel deposunda saklanır. Hiçbir şey sunucuya gönderilmez ve geçmişini istediğin an silebilirsin.",
-    "q3": "Hangi dillerde rüya yorumlayabilirim?",
-    "a3": "Dreamscope 60 dili destekler: Türkçe, İngilizce, Arapça, İspanyolca, Fransızca, Almanca, Çince, Japonca, Korece, Portekizce, Rusça, Hintçe ve dahası. Okuma seçtiğin dili izler.",
-    "q4": "Yorumlar profesyonel tavsiyenin yerine geçer mi?",
-    "a4": "Hayır. Rüya okumaları düşünme ve eğlence içindir. Tıbbi, psikolojik veya dini yönlendirme değildir. Zor bir dönemden geçiyorsan nitelikli bir profesyonelle konuş.",
+    "title": "Sıkça sorulan sorular",
+    "q1": "Dreamscope rüyaları nasıl yorumluyor?",
+    "a1": "Dreamscope, İbn Sirin geleneği de dahil olmak üzere klasik rüya ilmini modern derinlik psikolojisiyle harmanlar. Rüyanızı kendi sözcüklerinizle anlatırsınız; karşılığında sembollerini kültürler arası ortak anlamlarıyla eşleştiren bir okuma alırsınız.",
+    "q2": "Rüya verilerim gizli mi?",
+    "a2": "Evet. Rüyalarınız yalnızca tarayıcınızın yerel depolamasında, cihazınızda saklanır. Sunucuya gönderilip saklanmaz; geçmişinizi istediğiniz zaman silebilirsiniz.",
+    "q3": "Hangi dillerde rüya yorumlanabilir?",
+    "a3": "Dreamscope İngilizce, Arapça, İspanyolca, Fransızca, Almanca, Çince, Japonca, Korece, Türkçe, Portekizce, Rusça, Hintçe ve daha pek çok dil olmak üzere 60 dili destekler. Okuma, seçtiğiniz dile göre sunulur.",
+    "q4": "Yorumlar profesyonel tavsiyenin yerini tutar mı?",
+    "a4": "Hayır. Rüya okumaları yalnızca üzerine düşünme ve eğlence amaçlıdır. Tıbbi, psikolojik ya da dini rehberlik niteliği taşımaz. Zor bir dönemden geçiyorsanız lütfen yetkin bir uzmana danışın.",
     "q5": "Kaç rüya sembolü kapsanıyor?",
-    "a5": "Dreamscope'ta 146 yaygın sembol için özel sayfa var — yılan, su, uçuş, ateş, gebelik, para ve dahası — her biri birden çok dilde ve soru varyasyonlarıyla sunuluyor."
+    "a5": "Dreamscope, yılan, su, uçmak, ateş, hamilelik, para ve daha pek çoğu olmak üzere 146 yaygın sembol için özel sayfalara sahiptir; her biri birçok dilde ve farklı soru varyasyonlarıyla sunulur."
   },
   "notfound": {
     "title": "Bu rüya dağıldı",
-    "lede": "Aradığın sayfa burada değil. Yorumlamaya dönelim.",
-    "cta": "Ana sayfaya dön"
+    "lede": "Aradığınız sayfa burada değil. Haydi sizi yorumlamaya geri götürelim.",
+    "cta": "Ana Sayfaya Dön"
+  },
+  "perspectives": {
+    "general": {
+      "name": "Evrensel"
+    },
+    "islamic": {
+      "name": "İbn Sirin (İslami)"
+    },
+    "christian": {
+      "name": "Hristiyan"
+    },
+    "jewish": {
+      "name": "Yahudi"
+    },
+    "hindu": {
+      "name": "Hindu"
+    },
+    "buddhist": {
+      "name": "Budist"
+    },
+    "psychology": {
+      "name": "Psikoloji (Jung)"
+    },
+    "chinese": {
+      "name": "Zhou Gong (Çin)"
+    }
+  },
+  "daily": {
+    "tag": "Günün rüyası"
+  },
+  "profile": {
+    "title": "Sizin alanınız",
+    "cloudOff": "Hesaplar çok yakında geliyor. O zamana kadar her şey sizin için konuk olarak çalışıyor — rüyalarınız cihazınızda kalır.",
+    "signInLede": "Rüya güncenizi tüm cihazlarınızda saklamak için giriş yapın. Konuk geçmişiniz sizinle birlikte otomatik olarak taşınır.",
+    "emailLabel": "E-posta",
+    "magicLink": "Giriş bağlantısı gönder",
+    "google": "Google ile devam et",
+    "checkEmail": "Gelen kutunuzu kontrol edin — bir giriş bağlantısı sizi bekliyor.",
+    "invalidEmail": "Lütfen geçerli bir e-posta adresi girin.",
+    "guestNote": "Şifre yok, takip yok — yalnızca bir bağlantı. Cihaz üzerinde depolama ile konuk modu tamamen kullanılabilir kalır.",
+    "member": "Üye",
+    "migrated": "Bu cihazdan güncenize {n} rüya taşındı.",
+    "signOut": "Çıkış yap",
+    "navLabel": "Profil",
+    "lede": "Dreamscope'un yolculuğunuz hakkında bildiği her şey — cihazınızda, yalnızca size ait.",
+    "yourState": "Şu anki durumunuz",
+    "statDreams": "Yorumlanan rüyalar",
+    "statSaved": "Kaydedilen okumalar",
+    "statStreak": "Günlük seri",
+    "statTopSymbol": "En sık çıkan sembol",
+    "emptyState": "Henüz rüya yok — ilk okumanız bu sayfayı aydınlatacak.",
+    "symbolsYouMeet": "Sıkça karşılaştığınız semboller",
+    "noneYet": "—",
+    "lastReading": "Son okuma",
+    "languagesUsed": "Kullanılan diller",
+    "perspectivesUsed": "Kullanılan gelenekler",
+    "cloudTitle": "Tüm cihazlarınızda",
+    "privacyNote": "Rüyalarınız cihazınızda saklanır — asla satılmaz, asla profillenmez."
+  },
+  "perspDesc": {
+    "general": "Dünya geleneklerinin en bilge izlerini derinlik psikolojisiyle harmanlayan tek bir okuma.",
+    "islamic": "İbn Sirin'in klasik okulu — sembolik, yasalara bağlı ve ruha odaklı.",
+    "christian": "Yusuf ve Daniel geleneğinde rüya okuma, kutsal metinlerin sembolizmiyle.",
+    "jewish": "Tevrat ve Talmud rüya bilgeliği — bilgece yorumlanmayı bekleyen bir mesaj.",
+    "hindu": "Vedik sembolizm, karma ve zihnin iç manzaraları.",
+    "buddhist": "Geçicilik ve bilinçli farkındalık — rüyayı ona sarılmadan gözlemlemek.",
+    "psychology": "Jung'un arketipleri ve gölge — psikenizin işlemekte olduğu şey.",
+    "chinese": "Zhou Gong'un klasik sözlüğü — yin, yang ve beş elementin dengesi."
+  },
+  "moods": {
+    "peace": "Huzurlu",
+    "anxiety": "Kaygılı",
+    "hope": "Umutlu",
+    "sadness": "Üzgün",
+    "anger": "Kızgın",
+    "confusion": "Kafası karışık"
   }
 }

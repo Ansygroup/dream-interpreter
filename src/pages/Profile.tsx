@@ -13,6 +13,7 @@ interface LocalState {
   topSymbols: Array<{ name: string; count: number }>;
   languages: string[];
   perspectives: string[];
+  topMoods: Array<{ name: string; count: number }>;
 }
 
 function computeLocalState(): LocalState {
@@ -40,6 +41,13 @@ function computeLocalState(): LocalState {
     .slice(0, 5)
     .map(([name, count]) => ({ name, count }));
 
+  const moodCount = new Map<string, number>();
+  for (const d of all) if (d.mood) moodCount.set(d.mood, (moodCount.get(d.mood) ?? 0) + 1);
+  const topMoods = [...moodCount.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 3)
+    .map(([name, count]) => ({ name, count }));
+
   const last = all.map((d) => d.date).filter(Boolean).sort().pop() ?? null;
 
   return {
@@ -50,8 +58,13 @@ function computeLocalState(): LocalState {
     topSymbols,
     languages: [...new Set(all.map((d) => d.language).filter(Boolean))] as string[],
     perspectives: [...new Set(all.map((d) => d.perspective).filter(Boolean))] as string[],
+    topMoods,
   };
 }
+
+const MOOD_EMOJI: Record<string, string> = {
+  peace: '😌', anxiety: '😰', hope: '✨', sadness: '😢', anger: '😠', confusion: '🤔',
+};
 
 const Stat = ({ value, label }: { value: string | number; label: string }) => (
   <div className="card" style={{ textAlign: 'center', padding: '18px 12px' }}>
@@ -111,6 +124,16 @@ export default function Profile() {
                     )) : <span style={{ color: 'var(--muted)' }}>{t('profile.noneYet')}</span>}
                   </div>
                 </div>
+                {local.topMoods.length > 0 && (
+                  <div>
+                    <span className="mono-meta" style={{ display: 'block', marginBottom: 6 }}>{t('profile.moodPattern')}</span>
+                    <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+                      {local.topMoods.map((m) => (
+                        <span key={m.name} className="tag">{MOOD_EMOJI[m.name] ?? ''} {t(`moods.${m.name}`)} ×{m.count}</span>
+                      ))}
+                    </div>
+                  </div>
+                )}
                 <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap' }}>
                   <span>
                     <span className="mono-meta" style={{ display: 'block', marginBottom: 4 }}>{t('profile.lastReading')}</span>

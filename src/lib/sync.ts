@@ -1,5 +1,5 @@
 import type { DreamItem } from '../components/DreamCard';
-import { supabase } from './supabase';
+import { getSupabase } from './supabase';
 
 /**
  * One-time local→cloud migration: push every locally stored dream on first
@@ -8,6 +8,7 @@ import { supabase } from './supabase';
 const MIGRATED_KEY = 'ds-migrated';
 
 export async function migrateLocalDreams(userId: string): Promise<number> {
+  const supabase = getSupabase();
   if (!supabase) return 0;
   try {
     if (localStorage.getItem(MIGRATED_KEY) === userId) return 0;
@@ -39,6 +40,7 @@ export async function migrateLocalDreams(userId: string): Promise<number> {
 
 /** Save one interpretation to the cloud journal (best-effort). */
 export async function saveDreamToCloud(userId: string, item: DreamItem): Promise<boolean> {
+  const supabase = getSupabase();
   if (!supabase) return false;
   void userId; // RLS scopes the row to the authenticated user
   const { error } = await supabase.from('dreams').upsert(
@@ -58,6 +60,7 @@ export async function saveDreamToCloud(userId: string, item: DreamItem): Promise
 
 /** Fetch the cloud journal, newest first. */
 export async function fetchCloudDreams(userId: string): Promise<DreamItem[]> {
+  const supabase = getSupabase();
   if (!supabase) return [];
   const { data } = await supabase
     .from('dreams')
@@ -78,6 +81,7 @@ export async function fetchCloudDreams(userId: string): Promise<DreamItem[]> {
 
 /** Delete one cloud dream by client_id. */
 export async function deleteCloudDream(userId: string, clientId: number): Promise<void> {
+  const supabase = getSupabase();
   if (!supabase) return;
   await supabase.from('dreams').delete().eq('user_id', userId).eq('client_id', clientId);
 }
@@ -90,6 +94,7 @@ export async function sendCloudFeedback(payload: {
   perspective: string;
   engine: string;
 }): Promise<boolean> {
+  const supabase = getSupabase();
   if (!supabase) return false;
   const { data: userData } = await supabase.auth.getUser();
   const { error } = await supabase.from('feedback').insert({

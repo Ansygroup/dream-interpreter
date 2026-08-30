@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
 import type { Session, User } from '@supabase/supabase-js';
-import { supabase, cloudEnabled } from '../lib/supabase';
+import { supabase as initialClient, cloudEnabled as initialCloud, reinitSupabase, connectSupabase as persistConnection } from '../lib/supabase';
 
 interface AuthContextType {
   user: User | null;
@@ -11,29 +11,45 @@ interface AuthContextType {
   signInWithMagicLink: (email: string) => Promise<{ error?: string }>;
   signInWithGoogle: () => Promise<{ error?: string }>;
   signOut: () => Promise<void>;
+  /** Connect the user's own Supabase project (no redeploy needed). */
+  connect: (url: string, anonKey: string) => boolean;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [user, setUser] = useState<User | null>(null);
-  const [ready, setReady] = useState(!cloudEnabled);
+  const [ready, setReady] = useState(!initialCloud);
+  const [cloudEnabled, setCloudEnabled] = useState(initialCloud);
 
+  // (Re)bind auth listeners whenever the client changes (initial + after connect).
   useEffect(() => {
-    if (!supabase) return;
-    supabase.auth.getSession().then(({ data }) => {
+    const client = initialClient;
+    if (!client) {
+      setReady(true);
+      return;
+    }
+    let active = true;
+    client.auth.getSession().then(({ data }) => {
+      if (!active) return;
       setUser(data.session?.user ?? null);
       setReady(true);
     });
-    const { data: sub } = supabase.auth.onAuthStateChange((_event, session: Session | null) => {
+    const { data: sub } = client.auth.onAuthStateChange((_event, session: Session | null) => {
       setUser(session?.user ?? null);
     });
-    return () => sub.subscription.unsubscribe();
+    return () => {
+      active = false;
+      sub.subscription.unsubscribe();
+    };
+    // initialClient is stable for the session; reconnects call connect() which re-renders.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const signInWithMagicLink = async (email: string) => {
-    if (!supabase) return { error: 'cloud-disabled' };
-    const { error } = await supabase.auth.signInWithOtp({
+    const client = reinitSupabase();
+    if (!client) return { error: 'cloud-disabled' };
+    const { error } = await client.auth.signInWithOtp({
       email,
       options: { emailRedirectTo: window.location.origin + '/profile' },
     });
@@ -41,8 +57,9 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const signInWithGoogle = async () => {
-    if (!supabase) return { error: 'cloud-disabled' };
-    const { error } = await supabase.auth.signInWithOAuth({
+    const client = reinitSupabase();
+    if (!client) return { error: 'cloud-disabled' };
+    const { error } = await client.auth.signInWithOAuth({
       provider: 'google',
       options: { redirectTo: window.location.origin + '/profile' },
     });
@@ -50,12 +67,19 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const signOut = async () => {
-    if (supabase) await supabase.auth.signOut();
+    const client = reinitSupabase();
+    if (client) await client.auth.signOut();
     setUser(null);
   };
 
+  const connect = (url: string, anonKey: string): boolean => {
+    const ok = persistConnection(url, anonKey);
+    if (ok) setCloudEnabled(true);
+    return ok;
+  };
+
   return (
-    <AuthContext.Provider value={{ user, ready, cloudEnabled, signInWithMagicLink, signInWithGoogle, signOut }}>
+    <AuthContext.Provider value={{ user, ready, cloudEnabled, signInWithMagicLink, signInWithGoogle, signOut, connect }}>
       {children}
     </AuthContext.Provider>
   );

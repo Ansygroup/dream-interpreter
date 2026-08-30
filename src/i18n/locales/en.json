@@ -204,6 +204,13 @@
     "languagesUsed": "Languages used",
     "perspectivesUsed": "Traditions used",
     "cloudTitle": "Across your devices",
+    "connectTitle": "Connect your Supabase project",
+    "connectUrlLabel": "Project URL",
+    "connectKeyLabel": "Anon public key",
+    "connectCta": "Connect",
+    "connected": "Connected — you can now sign in and sync your journal.",
+    "connectError": "Could not connect. Check the URL and anon key.",
+    "disconnect": "Disconnect",
     "privacyNote": "Your dreams are stored on your device — never sold, never profiled.",
     "moodPattern": "Mood pattern"
   },

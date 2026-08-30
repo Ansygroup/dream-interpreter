@@ -75,13 +75,26 @@ const Stat = ({ value, label }: { value: string | number; label: string }) => (
 
 export default function Profile() {
   const { t, language } = useI18n();
-  const { user, cloudEnabled, signInWithMagicLink, signInWithGoogle, signOut } = useAuth();
+  const { user, cloudEnabled, signInWithMagicLink, signInWithGoogle, signOut, connect } = useAuth();
   const [email, setEmail] = useState('');
   const [sent, setSent] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [migrated, setMigrated] = useState<number | null>(null);
   const [local] = useState<LocalState>(() => computeLocalState());
+  const [supaUrl, setSupaUrl] = useState('');
+  const [supaKey, setSupaKey] = useState('');
+  const [connecting, setConnecting] = useState(false);
+  const [supaError, setSupaError] = useState<string | null>(null);
   const rtlLangs = ['ar', 'he', 'fa', 'ur'];
+
+  const handleConnect = async () => {
+    setSupaError(null);
+    if (!supaUrl.trim() || !supaKey.trim()) { setSupaError(t('profile.connectError')); return; }
+    setConnecting(true);
+    const ok = connect(supaUrl.trim(), supaKey.trim());
+    setConnecting(false);
+    if (!ok) setSupaError(t('profile.connectError'));
+  };
 
   useEffect(() => {
     if (user && migrated === null) migrateLocalDreams(user.id).then(setMigrated);
@@ -158,8 +171,26 @@ export default function Profile() {
           <h2 className="h3 serif" style={{ marginBottom: 16 }}>{t('profile.cloudTitle')}</h2>
 
           {!cloudEnabled && (
-            <div className="card" style={{ marginBottom: 24 }}>
-              <p style={{ color: 'var(--muted)', fontSize: 14.5, lineHeight: 1.7 }}>{t('profile.cloudOff')}</p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 16, maxWidth: 460, marginBottom: 24 }}>
+              <div className="card">
+                <p style={{ color: 'var(--muted)', fontSize: 14.5, lineHeight: 1.7, marginBottom: 16 }}>{t('profile.connectTitle')}</p>
+                <label htmlFor="supa-url" style={{ fontSize: 13, color: 'var(--muted)', display: 'block', marginBottom: 8 }}>{t('profile.connectUrlLabel')}</label>
+                <input id="supa-url" type="url" className="field" value={supaUrl} onChange={(e) => setSupaUrl(e.target.value)} placeholder="https://xxxx.supabase.co" />
+                <label htmlFor="supa-key" style={{ fontSize: 13, color: 'var(--muted)', display: 'block', margin: '14px 0 8px' }}>{t('profile.connectKeyLabel')}</label>
+                <input id="supa-key" type="password" className="field" value={supaKey} onChange={(e) => setSupaKey(e.target.value)} placeholder="eyJhbGciOi…" />
+                {supaError && <p role="alert" style={{ color: '#f87171', fontSize: 13, marginTop: 10 }}>{supaError}</p>}
+                <button
+                  onClick={handleConnect}
+                  className="btn btn-primary"
+                  style={{ marginTop: 16, width: '100%' }}
+                  disabled={connecting}
+                >
+                  {connecting ? t('interpret.loading') : t('profile.connectCta')}
+                </button>
+                <p style={{ fontSize: 12.5, color: 'var(--text-dim)', lineHeight: 1.6, marginTop: 12 }}>
+                  {t('profile.cloudOff')}
+                </p>
+              </div>
             </div>
           )}
 
@@ -184,6 +215,7 @@ export default function Profile() {
                   </button>
                 </div>
               )}
+              <button onClick={() => { try { localStorage.removeItem('ds_supabase_url'); localStorage.removeItem('ds_supabase_key'); } catch {} window.location.reload(); }} className="btn btn-ghost" style={{ fontSize: 13 }}>{t('profile.disconnect')}</button>
               <p style={{ fontSize: 13, color: 'var(--muted)', lineHeight: 1.6 }}>{t('profile.guestNote')}</p>
             </div>
           )}

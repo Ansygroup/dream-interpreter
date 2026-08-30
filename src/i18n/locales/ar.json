@@ -204,6 +204,13 @@
     "languagesUsed": "اللغات المستخدمة",
     "perspectivesUsed": "التقاليد المستخدمة",
     "cloudTitle": "عبر أجهزتك",
+    "connectTitle": "اربط مشروع Supabase الخاص بك",
+    "connectUrlLabel": "رابط المشروع",
+    "connectKeyLabel": "مفتاح الأنون العام",
+    "connectCta": "اربط",
+    "connected": "تم الربط — يمكنك الآن تسجيل الدخول ومزامنة مفكرّتك.",
+    "connectError": "تعذّر الربط. تحقق من الرابط ومفتاح الأنون.",
+    "disconnect": "إلغاء الربط",
     "privacyNote": "أحلامك محفوظة على جهازك — لا تُباع ولا تُستخدم للتوصيف.",
     "moodPattern": "نمط مشاعرك"
   },

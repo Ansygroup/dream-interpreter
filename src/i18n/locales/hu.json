@@ -53,7 +53,6 @@
     "ctaButton": "Kezdd el az értelmezést"
   },
   "interpret": {
-    "eyebrow": "Értelmezés",
     "title": "Írd le az álmodat",
     "lede": "Fogalmazd meg a saját szavaiddal. Minél több részletet adsz meg, annál élesebb lesz az olvasat – a helyszín, az érzések és minden szokatlan részlet számít.",
     "language": "Nyelv",
@@ -63,7 +62,6 @@
     "button": "Álom értelmezése",
     "yourReading": "A te olvasatod",
     "save": "Mentés",
-    "saved": "Mentve",
     "viewHistory": "Előzmények megtekintése",
     "errorEmpty": "Kérlek, előbb írd le az álmodat.",
     "errorFailed": "Az értelmezés nem sikerült. Kérlek, próbáld újra.",
@@ -88,13 +86,11 @@
     }
   },
   "history": {
-    "eyebrow": "A te tevékenységed",
     "title": "Álmok előzményei",
     "lede": "Minden értelmezés, amelyet készítettél, ezen a készüléken tárolódik.",
     "empty": "Még nincs értelmezett álom."
   },
   "saved": {
-    "eyebrow": "A te gyűjteményed",
     "title": "Mentett álmok",
     "lede": "Tartsd meg azokat az értelmezéseket, amelyek fontosak voltak. Ezek a készülékeden maradnak.",
     "empty": "Még nincs semmi mentve."
@@ -106,13 +102,11 @@
     "backHome": "Vissza a főoldalra"
   },
   "symbols": {
-    "eyebrow": "Álomszimbólum-szótár",
     "title": "{n} álomszimbólum",
     "lede": "Böngéssz az összes általunk értelmezett szimbólum között – ingyenesen, számos nyelven. Válaszd ki a tiédet a jelentés elolvasásához.",
     "search": "Szimbólum keresése…"
   },
   "about": {
-    "eyebrow": "Rólunk",
     "title": "Érthető olvasat, hagyományba ágyazva",
     "p1": "A Dreamscope azért jött létre, hogy az álomértelmezést elérhetővé tegye a saját nyelveden. Két megértési hagyományt ötvözünk: Ibn Sirin klasszikus iszlám álomtudományát – a történelem egyik legnagyobb hatású álomfejtőjét – és a modern mélylélektan szimbolikus keretrendszereit.",
     "p2": "Minden olvasat célja, hogy segítsen elgondolkodni – nem az, hogy jósoljon. Az olyan szimbólumok, mint a víz, a tűz, a repülés vagy a kígyó, évezredek óta hordoznak jelentést a kultúrákban, és értelmezéseink ezeket a szálakat követik, hogy megtaláld, mi rezonál a saját életeddel.",
@@ -126,7 +120,6 @@
     "cta": "Kezdd el az értelmezést"
   },
   "contact": {
-    "eyebrow": "Kapcsolat",
     "title": "Lépj velünk kapcsolatba",
     "lede": "Kérdéseid, javításaid vagy együttműködési ötleteid vannak? Írj a Dreamscope csapatának e-mailben.",
     "email": "E-mail",
@@ -134,7 +127,6 @@
     "back": "Vissza az értelmezőhöz"
   },
   "faq": {
-    "eyebrow": "GYIK",
     "title": "Gyakran ismételt kérdések",
     "q1": "Hogyan értelmezi a Dreamscope az álmokat?",
     "a1": "A Dreamscope ötvözi a klasszikus álomtudományt – beleértve Ibn Sirin hagyományát – a modern mélylélektannal. Leírod az álmodat a saját szavaiddal, és egy olyan olvasatot kapsz, amely szimbólumait a kultúrákban elterjedt jelentéseikhez rendeli.",
@@ -148,7 +140,6 @@
     "a5": "A Dreamscope 146 gyakori szimbólumhoz kínál dedikált oldalt – kígyó, víz, repülés, tűz, terhesség, pénz és még sok más – mindegyik több nyelven, hosszú keresési kérdésváltozatokkal."
   },
   "notfound": {
-    "code": "404",
     "title": "Ez az álom szertefoszlott",
     "lede": "A keresett oldal nem található. Visszamegyünk az értelmezéshez.",
     "cta": "Vissza a főoldalra"

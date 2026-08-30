@@ -53,7 +53,6 @@
     "ctaButton": "Beginnen met duiden"
   },
   "interpret": {
-    "eyebrow": "Interpretatie",
     "title": "Beschrijf je droom",
     "lede": "Schrijf het in je eigen woorden. Hoe meer detail, hoe scherper de duiding — de setting, je gevoelens en alles wat opvallend is, doen er allemaal toe.",
     "language": "Taal",
@@ -63,7 +62,6 @@
     "button": "Droom duiden",
     "yourReading": "Jouw duiding",
     "save": "Bewaren",
-    "saved": "Bewaard",
     "viewHistory": "Geschiedenis bekijken",
     "errorEmpty": "Beschrijf je droom eerst.",
     "errorFailed": "De duiding is mislukt. Probeer het opnieuw.",
@@ -88,13 +86,11 @@
     }
   },
   "history": {
-    "eyebrow": "Jouw activiteit",
     "title": "Droomgeschiedenis",
     "lede": "Alle duidingen die je hebt gegenereerd, opgeslagen op dit apparaat.",
     "empty": "Nog geen dromen geduid."
   },
   "saved": {
-    "eyebrow": "Jouw bibliotheek",
     "title": "Bewaarde dromen",
     "lede": "Bewaar de duidingen die ertoe deden. Ze blijven op dit apparaat.",
     "empty": "Nog niets bewaard."
@@ -106,13 +102,11 @@
     "backHome": "Terug naar start"
   },
   "symbols": {
-    "eyebrow": "Droomsymbolenwoordenboek",
     "title": "{n} droomsymbolen",
     "lede": "Bekijk alle symbolen die wij duiden — gratis, in tientallen talen. Kies de jouwe om de betekenis te lezen.",
     "search": "Zoek een symbool…"
   },
   "about": {
-    "eyebrow": "Over ons",
     "title": "Een heldere duiding, geworteld in traditie",
     "p1": "Dreamscope bestaat om droomduiding toegankelijk te maken in je eigen taal. We combineren twee stromingen van inzicht: de klassieke islamitische droombeschouwing van Ibn Sirin, een van de meest invloedrijke droomduiders uit de geschiedenis, en de symbolische kaders van de moderne dieptepsychologie.",
     "p2": "Elke duiding wordt gegenereerd om je te helpen reflecteren — niet om de toekomst te voorspellen. Symbolen als water, vuur, vliegen of een slang dragen al duizenden jaren betekenis met zich mee, en onze duidingen volgen die draden zodat je kunt vinden wat resoneert met je eigen leven.",
@@ -126,7 +120,6 @@
     "cta": "Beginnen met duiden"
   },
   "contact": {
-    "eyebrow": "Contact",
     "title": "Neem contact op",
     "lede": "Vragen, correcties of samenwerkingsideeën? Bereik het Dreamscope-team via e-mail.",
     "email": "E-mail",
@@ -134,7 +127,6 @@
     "back": "Terug naar de duider"
   },
   "faq": {
-    "eyebrow": "FAQ",
     "title": "Veelgestelde vragen",
     "q1": "Hoe duidt Dreamscope dromen?",
     "a1": "Dreamscope combineert klassieke droombeschouwing — inclusief de traditie van Ibn Sirin — met moderne dieptepsychologie. Je beschrijft een droom in je eigen woorden en ontvangt een duiding die haar symbolen koppelt aan gangbare betekenissen in verschillende culturen.",
@@ -148,7 +140,6 @@
     "a5": "Dreamscope heeft speciale pagina's voor 146 veelvoorkomende symbolen — slang, water, vliegen, vuur, zwangerschap, geld en nog veel meer — elk beschikbaar in meerdere talen met talloze vraagvarianten."
   },
   "notfound": {
-    "code": "404",
     "title": "Deze droom is vervlogen",
     "lede": "De pagina die je zocht is er niet. Laten we je terugbrengen naar het duiden.",
     "cta": "Terug naar start"

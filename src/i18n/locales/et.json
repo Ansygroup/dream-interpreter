@@ -54,7 +54,6 @@
     "ctaButton": "Alusta tõlgendamist"
   },
   "interpret": {
-    "eyebrow": "Tõlgenda",
     "title": "Kirjelda oma unenägu",
     "lede": "Kirjuta see oma sõnadega. Mida rohkem detaile, seda täpsem lugemine — oluline on keskkond, tunded ja kõik ebatavaline.",
     "language": "Keel",
@@ -64,7 +63,6 @@
     "button": "Tõlgenda unenägu",
     "yourReading": "Sinu tõlgendus",
     "save": "Salvesta",
-    "saved": "Salvestatud",
     "viewHistory": "Vaata ajalugu",
     "errorEmpty": "Palun kirjelda oma unenägu esmalt.",
     "errorFailed": "Tõlgendus ebaõnnestus. Palun proovi uuesti.",
@@ -78,13 +76,11 @@
     "perspectiveDesc": "Üks tõlgendus, mis põimib maailmatraditsioonide targemad niidid sügavpsühholoogiaga."
   },
   "history": {
-    "eyebrow": "Sinu tegevus",
     "title": "Unenägude ajalugu",
     "lede": "Kõik tõlgendused, mille oled loonud, salvestatud sellesse seadmesse.",
     "empty": "Ühtegi unenägu pole veel tõlgendatud."
   },
   "saved": {
-    "eyebrow": "Sinu kogu",
     "title": "Salvestatud unenäod",
     "lede": "Hoia alles tõlgendused, mis olid olulised. Need jäävad sellesse seadmesse.",
     "empty": "Midagi pole veel salvestatud."
@@ -96,13 +92,11 @@
     "backHome": "Tagasi avalehele"
   },
   "symbols": {
-    "eyebrow": "Unenäosümbolite sõnastik",
     "title": "{n} unenäosümbolit",
     "lede": "Sirvi kõiki sümboleid, mida tõlgendame — tasuta, kümnetes keeltes. Vali oma keel, et tähendust lugeda.",
     "search": "Otsi sümbolit…"
   },
   "about": {
-    "eyebrow": "Meist",
     "title": "Selge tõlgendus, mis on juurdunud traditsioonis",
     "p1": "Dreamscope eesmärk on muuta unenägude tõlgendamine kättesaadavaks sinu emakeeles. Ühendame kaks mõistmisvoogu: klassikalise islami unenäoteaduse Ibn Sirinist, kes on üks ajaloo mõjukamaid unenägude tõlgendajaid, ning kaasaegse sügavpsühholoogia sümboliraamistikud.",
     "p2": "Iga tõlgendus on loodud selleks, et aidata sul mõtestada — mitte ennustada tulevikku. Sümbolid nagu vesi, tuli, lendamine või madu on kandnud tähendust kultuuriti tuhandeid aastaid ning meie tõlgendused jälgivad neid niite, et leiaksid selle, mis resoneerub sinu enda eluga.",
@@ -118,7 +112,6 @@
     "traditionsLede": "Vali lääts, mida sinu süda usaldab — iga tõlgendus luuakse kindlat tõlgenduskoolkonda järgides."
   },
   "contact": {
-    "eyebrow": "Kontakt",
     "title": "Võta ühendust",
     "lede": "Küsimused, parandused või koostööideed? Võta Dreamscope meeskonnaga ühendust e-posti teel.",
     "email": "E-post",
@@ -126,7 +119,6 @@
     "back": "Tagasi tõlgendaja juurde"
   },
   "faq": {
-    "eyebrow": "KKK",
     "title": "Korduma kippuvad küsimused",
     "q1": "Kuidas Dreamscope unenägusid tõlgendab?",
     "a1": "Dreamscope ühendab klassikalise unenäoteaduse — sealhulgas Ibn Sirini traditsiooni — kaasaegse sügavpsühholoogiaga. Kirjeldad unenägu oma sõnadega ning saad tõlgenduse, mis seostab selle sümbolid nende levinud kultuurüleste tähendustega.",
@@ -140,7 +132,6 @@
     "a5": "Dreamscope'il on pühendatud leheküljed 146 levinud sümbolile — madu, vesi, lendamine, tuli, rasedus, raha ja paljud teised — igaüks saadaval mitmes keeles koos pika sabaga küsimuste variantidega."
   },
   "notfound": {
-    "code": "404",
     "title": "See unenägu haihtus",
     "lede": "Lehekülge, mida otsisid, pole siin. Viime sind tagasi tõlgendamise juurde.",
     "cta": "Tagasi avalehele"

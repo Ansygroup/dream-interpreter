@@ -53,7 +53,6 @@
     "ctaButton": "Börja tolka"
   },
   "interpret": {
-    "eyebrow": "Tolka",
     "title": "Beskriv din dröm",
     "lede": "Skriv med egna ord. Ju mer detaljer, desto skarpare läsning — miljö, känslor och allt ovanligt spelar roll.",
     "language": "Språk",
@@ -63,7 +62,6 @@
     "button": "Tolk drömmen",
     "yourReading": "Din läsning",
     "save": "Spara",
-    "saved": "Sparad",
     "viewHistory": "Visa historik",
     "errorEmpty": "Beskriv din dröm först.",
     "errorFailed": "Tolkningen misslyckades. Försök igen.",
@@ -88,13 +86,11 @@
     }
   },
   "history": {
-    "eyebrow": "Din aktivitet",
     "title": "Drömhistorik",
     "lede": "Varje tolkning du har skapat, lagrad på denna enhet.",
     "empty": "Inga drömmar har tolkats ännu."
   },
   "saved": {
-    "eyebrow": "Ditt bibliotek",
     "title": "Sparade drömmar",
     "lede": "Behåll de tolkningar som betydde något. De stannar på denna enhet.",
     "empty": "Inget sparat ännu."
@@ -106,13 +102,11 @@
     "backHome": "Tillbaka till startsidan"
   },
   "symbols": {
-    "eyebrow": "Drömsymbollexikon",
     "title": "{n} drömsymboler",
     "lede": "Bläddra bland alla symboler vi tolkar — gratis, på dussintals språk. Välj ditt för att läsa betydelsen.",
     "search": "Sök en symbol…"
   },
   "about": {
-    "eyebrow": "Om oss",
     "title": "En tydlig läsning, förankrad i tradition",
     "p1": "Dreamscope finns för att göra drömtydning tillgänglig på ditt eget språk. Vi förenar två förståelseströmmar: den klassiska islamiska drömvetenskapen hos Ibn Sirin, en av historiens mest inflytelserika drömtydare, och de symboliska ramverken i modern djuppsykologi.",
     "p2": "Varje läsning skapas för att hjälpa dig reflektera — inte för att förutsäga framtiden. Symboler som vatten, eld, flykt eller en orm har burit mening över kulturer i tusentals år, och våra tolkningar spårar dessa trådar så att du kan hitta det som resonerar med ditt eget liv.",
@@ -126,7 +120,6 @@
     "cta": "Börja tolka"
   },
   "contact": {
-    "eyebrow": "Kontakt",
     "title": "Hör av dig",
     "lede": "Frågor, rättelser eller samarbetsidéer? Nå Dreamscope-teamet via e-post.",
     "email": "E-post",
@@ -134,7 +127,6 @@
     "back": "Tillbaka till tolken"
   },
   "faq": {
-    "eyebrow": "FAQ",
     "title": "Vanliga frågor",
     "q1": "Hur tolkar Dreamscope drömmar?",
     "a1": "Dreamscope blandar klassisk drömvetenskap — inklusive Ibn Sirins tradition — med modern djuppsykologi. Du beskriver en dröm med egna ord och får en läsning som kopplar dess symboler till deras vanliga betydelser över kulturer.",
@@ -148,7 +140,6 @@
     "a5": "Dreamscope har dedikerade sidor för 146 vanliga symboler — orm, vatten, flyga, eld, graviditet, pengar och många fler — varje tillgänglig på flera språk med olika frågevarianter."
   },
   "notfound": {
-    "code": "404",
     "title": "Denna dröm försvann",
     "lede": "Sidan du letade efter finns inte här. Låt oss ta dig tillbaka till tolkningen.",
     "cta": "Tillbaka till startsidan"

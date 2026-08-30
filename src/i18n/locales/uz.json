@@ -1,1 +1,58 @@
-{"nav":{"interpret":"Yoʻsh","symbols":"Belgilar","about":"Biz haqimizda","faq":"Savollar","history":"Tarix","saved":"Saqlanganlar","contact":"Aloqa","start":"Boshlash","home":"Asosiy","aiBlog":"AI blog","ansyGroup":"Ansy Group","language":"Til","searchLanguage":"Tillarni qidirish…","noLanguage":"Qidiruvingizga mos til topilmadi."},"footer":{"tagline":"AI bilan tush tabiri, bepul — Ibn Siring an'anasi va zamonaviy psixologiya asosida.","copyright":"© {year} Dreamscope"},"home":{"heroTitle":"Sizning {accent} sizga nima demoqchi","heroAccent":"onsiz bilimingiz","heroLede":"Qadimiy ramzlar, zamonaviy psixologiya va AI — bitta ravon o'qishda birlashdi. Tushni o'z so'zlaringiz bilan tasvirlab bering, Ibn Siring va chuqur psixologiyaga tayanadigan tabir oling.","interpretCta":"Tush tabirini bering","browseCta":"Ramzlarni ko'rish","ctaTitle":"Tushingizni tasvirlang","ctaButton":"Tabirni boshlash"},"interpret":{"title":"Tushingizni tasvirlang","language":"Til","yourDream":"Sizning tushingiz","placeholder":"Kechqurun doim shaklini o'zgartirib turgan bir eshikdan o'tayotganimni ko'rdim...","button":"Tush tabirini bering"},"common":{"interpretCta":"Tush tabirini bering","backHome":"Asosiy sahifaga"},"history":{"title":"Tushlar tarixi","empty":"Hali tabir qilingan tush yo'q."},"saved":{"title":"Saqlangan tushlar","empty":"Hali hech narsa saqlanmagan."},"symbols":{"title":"{n} tush ramzi","search":"Ramzni qidirish…"},"notfound":{"title":"Bu tush erib ketdi","cta":"Asosiy sahifaga"}}
+{
+  "nav": {
+    "interpret": "Yoʻsh",
+    "symbols": "Belgilar",
+    "about": "Biz haqimizda",
+    "faq": "Savollar",
+    "history": "Tarix",
+    "saved": "Saqlanganlar",
+    "contact": "Aloqa",
+    "start": "Boshlash",
+    "home": "Asosiy",
+    "aiBlog": "AI blog",
+    "ansyGroup": "Ansy Group",
+    "language": "Til",
+    "searchLanguage": "Tillarni qidirish…",
+    "noLanguage": "Qidiruvingizga mos til topilmadi."
+  },
+  "footer": {
+    "tagline": "AI bilan tush tabiri, bepul — Ibn Siring an'anasi va zamonaviy psixologiya asosida.",
+    "copyright": "© {year} Dreamscope"
+  },
+  "home": {
+    "heroTitle": "Sizning {accent} sizga nima demoqchi",
+    "heroAccent": "onsiz bilimingiz",
+    "heroLede": "Qadimiy ramzlar, zamonaviy psixologiya va AI — bitta ravon o'qishda birlashdi. Tushni o'z so'zlaringiz bilan tasvirlab bering, Ibn Siring va chuqur psixologiyaga tayanadigan tabir oling.",
+    "interpretCta": "Tush tabirini bering",
+    "browseCta": "Ramzlarni ko'rish",
+    "ctaTitle": "Tushingizni tasvirlang",
+    "ctaButton": "Tabirni boshlash"
+  },
+  "interpret": {
+    "title": "Tushingizni tasvirlang",
+    "language": "Til",
+    "yourDream": "Sizning tushingiz",
+    "placeholder": "Kechqurun doim shaklini o'zgartirib turgan bir eshikdan o'tayotganimni ko'rdim...",
+    "button": "Tush tabirini bering"
+  },
+  "common": {
+    "interpretCta": "Tush tabirini bering",
+    "backHome": "Asosiy sahifaga"
+  },
+  "history": {
+    "title": "Tushlar tarixi",
+    "empty": "Hali tabir qilingan tush yo'q."
+  },
+  "saved": {
+    "title": "Saqlangan tushlar",
+    "empty": "Hali hech narsa saqlanmagan."
+  },
+  "symbols": {
+    "title": "{n} tush ramzi",
+    "search": "Ramzni qidirish…"
+  },
+  "notfound": {
+    "title": "Bu tush erib ketdi",
+    "cta": "Asosiy sahifaga"
+  }
+}

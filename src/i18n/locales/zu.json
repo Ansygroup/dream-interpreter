@@ -1,1 +1,58 @@
-{"nav":{"interpret":"Humusha","symbols":"Izimpawu","about":"Mayelana nathi","faq":"Imibuzo ejwayelekile","history":"Umlando","saved":"Okugciniwe","contact":"Xhumana","start":"Qala","home":"Ikhaya","aiBlog":"Ibhulogi le-AI","ansyGroup":"Ansy Group","language":"Ulwazi","searchLanguage":"Sesha izilimi…","noLanguage":"Ayikho ilimi ehambisana nosesho lwakho."},"footer":{"tagline":"Ukuhumusha amaphupho nge-AI, mahhala — ngokwendabuko ka-Ibn Sirin kanye nembali yengqondo yesimanje.","copyright":"© {year} Dreamscope"},"home":{"heroTitle":"Ini engcane yakho {accent} izama ukukutshela","heroAccent":"ingqondo yansuku zonke","heroLede":"Isithombe esidala, sayensi yengqondo yesimanje ne-AI — kuhlanganiswe ekufundweni okukodwa okucacile. Chaza iphupho lakho ngamagama akho uthole ukuhumusha okususelwa ku-Ibn Sirin nasemoyeni okujulile.","interpretCta":"Humusha iphupho","browseCta":"Bheka izimpawu","ctaTitle":"Chaza iphupho lakho","ctaButton":"Qala ukuhumusha"},"interpret":{"title":"Chaza iphupho lakho","language":"Ulwazi","yourDream":"Iphupho lakho","placeholder":"Izolo ebusuku ngaphupha ukuthi ngiedlula emnyango owashintsha isimo sonke isikhathi...","button":"Humusha iphupho"},"common":{"interpretCta":"Humusha iphupho","backHome":"Buyela ekhaya"},"history":{"title":"Umlando wamaphupho","empty":"Kamaphupho ake ahunyushwa."},"saved":{"title":"Amaphupho agciniwe","empty":"Akukhona okugciniwe okukhona."},"symbols":{"title":"Izimpawu zamaphupho ezingu-{n}","search":"Sesha isithonjana…"},"notfound":{"title":"Lesi siphipho","cta":"Buyela ekhaya"}}
+{
+  "nav": {
+    "interpret": "Humusha",
+    "symbols": "Izimpawu",
+    "about": "Mayelana nathi",
+    "faq": "Imibuzo ejwayelekile",
+    "history": "Umlando",
+    "saved": "Okugciniwe",
+    "contact": "Xhumana",
+    "start": "Qala",
+    "home": "Ikhaya",
+    "aiBlog": "Ibhulogi le-AI",
+    "ansyGroup": "Ansy Group",
+    "language": "Ulwazi",
+    "searchLanguage": "Sesha izilimi…",
+    "noLanguage": "Ayikho ilimi ehambisana nosesho lwakho."
+  },
+  "footer": {
+    "tagline": "Ukuhumusha amaphupho nge-AI, mahhala — ngokwendabuko ka-Ibn Sirin kanye nembali yengqondo yesimanje.",
+    "copyright": "© {year} Dreamscope"
+  },
+  "home": {
+    "heroTitle": "Ini engcane yakho {accent} izama ukukutshela",
+    "heroAccent": "ingqondo yansuku zonke",
+    "heroLede": "Isithombe esidala, sayensi yengqondo yesimanje ne-AI — kuhlanganiswe ekufundweni okukodwa okucacile. Chaza iphupho lakho ngamagama akho uthole ukuhumusha okususelwa ku-Ibn Sirin nasemoyeni okujulile.",
+    "interpretCta": "Humusha iphupho",
+    "browseCta": "Bheka izimpawu",
+    "ctaTitle": "Chaza iphupho lakho",
+    "ctaButton": "Qala ukuhumusha"
+  },
+  "interpret": {
+    "title": "Chaza iphupho lakho",
+    "language": "Ulwazi",
+    "yourDream": "Iphupho lakho",
+    "placeholder": "Izolo ebusuku ngaphupha ukuthi ngiedlula emnyango owashintsha isimo sonke isikhathi...",
+    "button": "Humusha iphupho"
+  },
+  "common": {
+    "interpretCta": "Humusha iphupho",
+    "backHome": "Buyela ekhaya"
+  },
+  "history": {
+    "title": "Umlando wamaphupho",
+    "empty": "Kamaphupho ake ahunyushwa."
+  },
+  "saved": {
+    "title": "Amaphupho agciniwe",
+    "empty": "Akukhona okugciniwe okukhona."
+  },
+  "symbols": {
+    "title": "Izimpawu zamaphupho ezingu-{n}",
+    "search": "Sesha isithonjana…"
+  },
+  "notfound": {
+    "title": "Lesi siphipho",
+    "cta": "Buyela ekhaya"
+  }
+}

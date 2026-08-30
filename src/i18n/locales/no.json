@@ -53,7 +53,6 @@
     "ctaButton": "Start tolkningen"
   },
   "interpret": {
-    "eyebrow": "Tolk",
     "title": "Beskriv drømmen din",
     "lede": "Skriv med egne ord. Jo mer detalj, desto skarpere blir tolkningen — omgivelser, følelser og alt uvanlig har betydning.",
     "language": "Språk",
@@ -63,7 +62,6 @@
     "button": "Tolk drømmen",
     "yourReading": "Din tolkning",
     "save": "Lagre",
-    "saved": "Lagret",
     "viewHistory": "Se historikk",
     "errorEmpty": "Vennligst beskriv drømmen din først.",
     "errorFailed": "Tolkningen mislyktes. Vennligst prøv igjen.",
@@ -88,13 +86,11 @@
     }
   },
   "history": {
-    "eyebrow": "Din aktivitet",
     "title": "Drømmehistorikk",
     "lede": "Hver tolkning du har generert, lagret på denne enheten.",
     "empty": "Ingen drømmer tolket ennå."
   },
   "saved": {
-    "eyebrow": "Ditt bibliotek",
     "title": "Lagrede drømmer",
     "lede": "Ta vare på tolkningene som betød noe. De blir på denne enheten.",
     "empty": "Ingenting lagret ennå."
@@ -106,13 +102,11 @@
     "backHome": "Tilbake til forsiden"
   },
   "symbols": {
-    "eyebrow": "Drømmesymbolordbok",
     "title": "{n} drømmesymboler",
     "lede": "Bla gjennom alle symbolene vi tolker — gratis, på dusinvis av språk. Velg ditt for å lese betydningen.",
     "search": "Søk etter et symbol…"
   },
   "about": {
-    "eyebrow": "Om oss",
     "title": "En tydelig tolkning, forankret i tradisjonen",
     "p1": "Dreamscope finnes for å gjøre drømmetolkning tilgjengelig på ditt eget språk. Vi kombinerer to forståelsesstrømmer: den klassiske islamske drømmevitenskapen til Ibn Sirin, en av historiens mest innflytelsesrike drømmetolkere, og de symbolske rammene i moderne dybdepsykologi.",
     "p2": "Hver tolkning er laget for å hjelpe deg å reflektere — ikke for å spå fremtiden. Symboler som vann, ild, flukt eller en slange har båret mening på tvers av kulturer i tusenvis av år, og våre tolkninger følger disse trådene slik at du kan finne det som resonnerer med ditt eget liv.",
@@ -126,7 +120,6 @@
     "cta": "Start tolkningen"
   },
   "contact": {
-    "eyebrow": "Kontakt",
     "title": "Ta kontakt",
     "lede": "Spørsmål, rettelser eller samarbeidsidéer? Nå Dreamscope-teamet via e-post.",
     "email": "E-post",
@@ -134,7 +127,6 @@
     "back": "Tilbake til tolkningen"
   },
   "faq": {
-    "eyebrow": "FAQ",
     "title": "Ofte stilte spørsmål",
     "q1": "Hvordan tolker Dreamscope drømmer?",
     "a1": "Dreamscope blander klassisk drømmevitenskap — inkludert Ibn Sirins tradisjon — med moderne dybdepsykologi. Du beskriver en drøm med egne ord og får en tolkning som knytter symbolene til deres vanlige betydninger på tvers av kulturer.",
@@ -148,7 +140,6 @@
     "a5": "Dreamscope har dedikerte sider for 146 vanlige symboler — slange, vann, å fly, ild, graviditet, penger og mange flere — hver tilgjengelig på flere språk med varianter for langhale-spørsmål."
   },
   "notfound": {
-    "code": "404",
     "title": "Denne drømmen forsvant",
     "lede": "Siden du lette etter finnes ikke. La oss få deg tilbake til tolkningen.",
     "cta": "Tilbake til forsiden"

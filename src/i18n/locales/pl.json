@@ -53,7 +53,6 @@
     "ctaButton": "Zacznij interpretować"
   },
   "interpret": {
-    "eyebrow": "Interpretacja",
     "title": "Opisz swój sen",
     "lede": "Napisz go własnymi słowami. Im więcej szczegółów, tym trafniejsze odczytanie — miejsce, uczucia i wszystko, co niezwykłe, mają znaczenie.",
     "language": "Język",
@@ -63,7 +62,6 @@
     "button": "Interpretuj sen",
     "yourReading": "Twoje odczytanie",
     "save": "Zapisz",
-    "saved": "Zapisano",
     "viewHistory": "Pokaż historię",
     "errorEmpty": "Proszę, najpierw opisz swój sen.",
     "errorFailed": "Interpretacja się nie powiodła. Spróbuj ponownie.",
@@ -88,13 +86,11 @@
     }
   },
   "history": {
-    "eyebrow": "Twoja aktywność",
     "title": "Historia snów",
     "lede": "Wszystkie wygenerowane interpretacje, przechowywane na tym urządzeniu.",
     "empty": "Jeszcze nie zinterpretowano żadnych snów."
   },
   "saved": {
-    "eyebrow": "Twoja biblioteka",
     "title": "Zapisane sny",
     "lede": "Zachowaj interpretacje, które miały znaczenie. Pozostają na tym urządzeniu.",
     "empty": "Nie ma jeszcze nic zapisanego."
@@ -106,13 +102,11 @@
     "backHome": "Wróć na stronę główną"
   },
   "symbols": {
-    "eyebrow": "Słownik symboli snów",
     "title": "{n} symboli snów",
     "lede": "Przeglądaj wszystkie symbole, które interpretujemy — bezpłatnie, w dziesiątkach języków. Wybierz swój, aby przeczytać znaczenie.",
     "search": "Szukaj symbolu…"
   },
   "about": {
-    "eyebrow": "O nas",
     "title": "Jasne odczytanie, zakorzenione w tradycji",
     "p1": "Dreamscope powstało, aby uczynić interpretację snów dostępną w twoim własnym języku. Łączymy dwa nurty rozumienia: klasyczną islamską naukę o snach Ibn Sirina, jednego z najbardziej wpływowych interpretatorów snów w historii, oraz symboliczne ramy współczesnej psychologii głębi.",
     "p2": "Każde odczytanie jest generowane, aby pomóc ci się zastanowić — nie przepowiadać przyszłości. Symbole takie jak woda, ogień, lot czy wąż niosą znaczenie w różnych kulturach od tysięcy lat, a nasze interpretacje śledzą te wątki, abyś mógł odnaleźć to, co rezonuje z twoim życiem.",
@@ -126,7 +120,6 @@
     "cta": "Zacznij interpretować"
   },
   "contact": {
-    "eyebrow": "Kontakt",
     "title": "Skontaktuj się z nami",
     "lede": "Pytania, poprawki lub pomysły na współpracę? Napisz do zespołu Dreamscope.",
     "email": "E-mail",
@@ -134,7 +127,6 @@
     "back": "Wróć do interpretera"
   },
   "faq": {
-    "eyebrow": "FAQ",
     "title": "Najczęściej zadawane pytania",
     "q1": "Jak Dreamscope interpretuje sny?",
     "a1": "Dreamscope łączy klasyczną naukę o snach — w tym tradycję Ibn Sirina — ze współczesną psychologią głębi. Opisujesz sen własnymi słowami, a otrzymujesz odczytanie, które mapuje jego symbole na ich wspólne znaczenia w różnych kulturach.",
@@ -148,7 +140,6 @@
     "a5": "Dreamscope ma dedykowane strony dla 146 popularnych symboli — wąż, woda, latanie, ogień, ciąża, pieniądze i wiele innych — każdy dostępny w wielu językach z wariantami pytań long-tail."
   },
   "notfound": {
-    "code": "404",
     "title": "Ten sen się rozproszył",
     "lede": "Strona, której szukałeś, nie istnieje. Wróćmy do interpretowania.",
     "cta": "Wróć na stronę główną"

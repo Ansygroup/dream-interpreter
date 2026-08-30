@@ -1,1 +1,58 @@
-{"nav":{"interpret":"Túmọ̀","symbols":"Àmì","about":"Nípa wa","faq":"Ìbéèrè","history":"Ìtàn","saved":"Tí a fi pamọ́","contact":"Kàn sí wa","start":"Bẹ̀rẹ̀","home":"Ilé oju-iwe","aiBlog":"Bulọọgi AI","ansyGroup":"Ansy Group","language":"Èdè","searchLanguage":"Ṣàwárí èdè…","noLanguage":"Kò sí èdè tí ó bá àwárí rẹ mu."},"footer":{"tagline":"Ìtumọ̀ àlàyí àpá pipeline AI, ọ̀fẹ́ — ní àbá Ibn Sirin àti ìmọ̀ ẹ̀dá-ìhàn òde òní.","copyright":"© {year} Dreamscope"},"home":{"heroTitle":"Kí ni {accent} rẹ fẹ́ sọ fún ọ","heroAccent":"ọkàn rẹ tí kò rí","heroLede":"Àmì àtijọ́, ìmọ̀ ẹ̀dá-ìhàn òde òní, àti AI — dapọ̀ mọ́ ọ̀kan ìkà òfnítì. Ṣàpèjúwe alá fi ọ̀rọ̀ rẹ, kí o sì gbà ìtumọ̀ tí ó dá lórí Ibn Sirin àti ìmọ̀ ẹ̀dá-ìhàn gidi.","interpretCta":"Túmọ̀ alá","browseCta":"Yè kíkọ àmì","ctaTitle":"Ṣàpèjúwe alá rẹ","ctaButton":"Bẹ̀rẹ̀ ìtumọ̀"},"interpret":{"title":"Ṣàpèjúwe alá rẹ","language":"Èdè","yourDream":"Alá rẹ","placeholder":"Àárọ̀ àná mo lálá pé mo ń kọjá nínú ilẹ̀kun tí ó ń yí ìráwọ̀ padà...","button":"Túmọ̀ alá"},"common":{"interpretCta":"Túmọ̀ alá","backHome":"Padà sí ilé oju-iwe"},"history":{"title":"Ìtàn àwọn alá","empty":"Kò sí alá tí a ti túmọ̀ sí ti."},"saved":{"title":"Àwọn alá tí a fi pamọ́","empty":"Kò sí ohun tí a fi pamọ́ ti."},"symbols":{"title":"Àmì alá {n}","search":"Ṣàwárí àmì…"},"notfound":{"title":"Alá yìí ti rí nkankan","cta":"Padà sí ilé oju-iwe"}}
+{
+  "nav": {
+    "interpret": "Túmọ̀",
+    "symbols": "Àmì",
+    "about": "Nípa wa",
+    "faq": "Ìbéèrè",
+    "history": "Ìtàn",
+    "saved": "Tí a fi pamọ́",
+    "contact": "Kàn sí wa",
+    "start": "Bẹ̀rẹ̀",
+    "home": "Ilé oju-iwe",
+    "aiBlog": "Bulọọgi AI",
+    "ansyGroup": "Ansy Group",
+    "language": "Èdè",
+    "searchLanguage": "Ṣàwárí èdè…",
+    "noLanguage": "Kò sí èdè tí ó bá àwárí rẹ mu."
+  },
+  "footer": {
+    "tagline": "Ìtumọ̀ àlàyí àpá pipeline AI, ọ̀fẹ́ — ní àbá Ibn Sirin àti ìmọ̀ ẹ̀dá-ìhàn òde òní.",
+    "copyright": "© {year} Dreamscope"
+  },
+  "home": {
+    "heroTitle": "Kí ni {accent} rẹ fẹ́ sọ fún ọ",
+    "heroAccent": "ọkàn rẹ tí kò rí",
+    "heroLede": "Àmì àtijọ́, ìmọ̀ ẹ̀dá-ìhàn òde òní, àti AI — dapọ̀ mọ́ ọ̀kan ìkà òfnítì. Ṣàpèjúwe alá fi ọ̀rọ̀ rẹ, kí o sì gbà ìtumọ̀ tí ó dá lórí Ibn Sirin àti ìmọ̀ ẹ̀dá-ìhàn gidi.",
+    "interpretCta": "Túmọ̀ alá",
+    "browseCta": "Yè kíkọ àmì",
+    "ctaTitle": "Ṣàpèjúwe alá rẹ",
+    "ctaButton": "Bẹ̀rẹ̀ ìtumọ̀"
+  },
+  "interpret": {
+    "title": "Ṣàpèjúwe alá rẹ",
+    "language": "Èdè",
+    "yourDream": "Alá rẹ",
+    "placeholder": "Àárọ̀ àná mo lálá pé mo ń kọjá nínú ilẹ̀kun tí ó ń yí ìráwọ̀ padà...",
+    "button": "Túmọ̀ alá"
+  },
+  "common": {
+    "interpretCta": "Túmọ̀ alá",
+    "backHome": "Padà sí ilé oju-iwe"
+  },
+  "history": {
+    "title": "Ìtàn àwọn alá",
+    "empty": "Kò sí alá tí a ti túmọ̀ sí ti."
+  },
+  "saved": {
+    "title": "Àwọn alá tí a fi pamọ́",
+    "empty": "Kò sí ohun tí a fi pamọ́ ti."
+  },
+  "symbols": {
+    "title": "Àmì alá {n}",
+    "search": "Ṣàwárí àmì…"
+  },
+  "notfound": {
+    "title": "Alá yìí ti rí nkankan",
+    "cta": "Padà sí ilé oju-iwe"
+  }
+}

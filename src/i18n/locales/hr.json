@@ -53,7 +53,6 @@
     "ctaButton": "Započni tumačenje"
   },
   "interpret": {
-    "eyebrow": "Interpretiraj",
     "title": "Opišite svoj san",
     "lede": "Napišite ga vlastitim riječima. Što više detalja, to će tumačenje biti jasnije — mjesto, osjećaji i sve neuobičajeno su važni.",
     "language": "Jezik",
@@ -63,7 +62,6 @@
     "button": "Interpretiraj san",
     "yourReading": "Vaše tumačenje",
     "save": "Spremi",
-    "saved": "Spremljeno",
     "viewHistory": "Pogledaj povijest",
     "errorEmpty": "Molimo, prvo opišite svoj san.",
     "errorFailed": "Tumačenje nije uspjelo. Pokušajte ponovo.",
@@ -88,13 +86,11 @@
     }
   },
   "history": {
-    "eyebrow": "Vaša aktivnost",
     "title": "Povijest snova",
     "lede": "Svako tumačenje koje ste generirali, pohranjeno na ovom uređaju.",
     "empty": "Još nema interpretiranih snova."
   },
   "saved": {
-    "eyebrow": "Vaša biblioteka",
     "title": "Spremljeni snovi",
     "lede": "Zadržite tumačenja koja su vam bila važna. Ostaju na ovom uređaju.",
     "empty": "Još ništa nije spremljeno."
@@ -106,13 +102,11 @@
     "backHome": "Povratak na početnu"
   },
   "symbols": {
-    "eyebrow": "Rječnik simbola snova",
     "title": "{n} simbola snova",
     "lede": "Pregledajte sve simbole koje tumačimo — besplatno, na desecima jezika. Odaberite svoj kako biste pročitali značenje.",
     "search": "Traži simbol…"
   },
   "about": {
-    "eyebrow": "O nama",
     "title": "Jasno tumačenje, ukorijenjeno u tradiciji",
     "p1": "Dreamscope postoji kako bi tumačenje snova učinio dostupnim na vašem jeziku. Kombiniramo dva toka razumijevanja: klasičnu islamsku znanost o snovima Ibn Sirina, jednog od najutjecajnijih tumača snova u povijesti, i simboličke okvire moderne dubinske psihologije.",
     "p2": "Svako tumačenje generirano je da vam pomogne u promišljanju — ne da predvidi budućnost. Simboli poput vode, vatre, letenja ili zmije nose značenje u kulturama tisućama godina, a naša tumačenja prate te niti kako biste pronašli ono što rezonira s vašim vlastitim životom.",
@@ -126,7 +120,6 @@
     "cta": "Započni tumačenje"
   },
   "contact": {
-    "eyebrow": "Kontakt",
     "title": "Stupite u kontakt",
     "lede": "Pitanja, ispravke ili ideje za suradnju? Kontaktirajte Dreamscope tim putem e-pošte.",
     "email": "E-pošta",
@@ -134,7 +127,6 @@
     "back": "Natrag na tumač"
   },
   "faq": {
-    "eyebrow": "FAQ",
     "title": "Često postavljana pitanja",
     "q1": "Kako Dreamscope tumači snove?",
     "a1": "Dreamscope spaja klasičnu znanost o snovima — uključujući Ibn Sirinovu tradiciju — s modernom dubinskom psihologijom. Opišete san vlastitim riječima i dobijete tumačenje koje povezuje njegove simbole s njihovim uobičajenim značenjima u kulturama.",
@@ -148,7 +140,6 @@
     "a5": "Dreamscope ima posvećene stranice za 146 uobičajenih simbola — zmija, voda, letenje, vatra, trudnoća, novac i mnogi drugi — svaki dostupan na više jezika s varijantama dugih upita."
   },
   "notfound": {
-    "code": "404",
     "title": "Ovaj se san raspršio",
     "lede": "Stranica koju ste tražili nije ovdje. Vratimo vas na tumačenje.",
     "cta": "Povratak na početnu"

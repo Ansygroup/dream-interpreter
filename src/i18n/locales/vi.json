@@ -1,1 +1,116 @@
-{"nav":{"interpret":"Giải mã","symbols":"Biểu tượng","about":"Giới thiệu","faq":"Hỏi đáp","history":"Lịch sử","saved":"Đã lưu","contact":"Liên hệ","start":"Bắt đầu","home":"Trang chủ","aiBlog":"Blog AI","ansyGroup":"Ansy Group","language":"Ngôn ngữ","searchLanguage":"Tìm ngôn ngữ…","noLanguage":"Không có ngôn ngữ nào khớp tìm kiếm của bạn."},"footer":{"tagline":"Giải mã giấc mơ bằng AI, miễn phí — theo truyền thống Ibn Sirin và tâm lý học hiện đại.","copyright":"© {year} Dreamscope"},"home":{"heroTitle":"{accent} của bạn đang muốn nói điều gì","heroAccent":"vô thức","heroLede":"Biểu tượng cổ xưa, tâm lý học hiện đại và AI — hòa vào một phép giải rõ ràng. Kể giấc mơ của bạn bằng chính lời của mình và nhận cách lý giải dựa trên Ibn Sirin cùng tâm lý học chiều sâu.","interpretCta":"Giải mã giấc mơ","browseCta":"Khám phá biểu tượng","statLanguages":"{n} ngôn ngữ","statSymbols":"{n} biểu tượng giấc mơ","statPrivateLine":"riêng tư trên thiết bị của bạn","whyTitle":"Một phép giải bạn thực sự dùng được","whyLede":"Dreamscope mổ xẻ giấc mơ thành các biểu tượng, rồi đọc chúng qua truyền thống bạn tin tưởng — tâm lý học đi cùng, không thay thế.","feature1Title":"Phân tích biểu tượng","feature1Body":"Mỗi giấc mơ được tách thành những biểu tượng cốt lõi và lần theo hàng thế kỷ truyền thống giải mộng.","feature2Title":"60 ngôn ngữ","feature2Body":"Giải mã và đọc biểu tượng bằng tiếng Việt, Anh, Ả Rập, Trung, Nhật và 55 ngôn ngữ khác.","feature3Title":"Mọi truyền thống","feature3Body":"Ibn Sirin, tâm lý học chiều sâu và góc nhìn của mọi tín ngưỡng — một phép giải, nhìn qua lăng kính của bạn.","feature4Title":"Đã lưu & riêng tư","feature4Body":"Giấc mơ của bạn nằm trên thiết bị của bạn. Đọc lại, so sánh và theo dõi quy luật theo thời gian.","sampleTag":"Ví dụ giải mộng","sampleJustNow":"vừa xong","sampleDream":"\"Tôi thấy một con rắn xanh rời khỏi nhà qua cánh cổng vườn.\"","sampleReading":"Rắn báo hiệu sự chuyển hóa — có điều gì trong cuộc sống bạn đang lột xác. Cánh cổng gợi ý một lối ra rõ ràng đang mở. Theo truyền thống Ibn Sirin, một con rắn vô hại rời khỏi nhà thường nghĩa là nỗi lo từ lâu cuối cùng cũng đi qua.","sampleTag1":"Chuyển hóa","sampleTag2":"Giải phóng","sampleTag3":"Ibn Sirin","sampleSaved":"Đã lưu trên thiết bị của bạn","symbolsTitle":"Mỗi biểu tượng mang một ý nghĩa","symbolsLede":"Từ nước đến lửa, khám phá những hình tượng mộng phổ biến nhất và điều mỗi hình thường báo hiệu qua các truyền thống.","ctaTitle":"Kể giấc mơ của bạn","ctaLede":"Vài câu là đủ. Phép giải chỉ mất vài giây và nằm trên thiết bị của bạn.","ctaButton":"Bắt đầu giải mã"},"interpret":{"title":"Kể giấc mơ của bạn","lede":"Viết bằng lời của bạn. Chi tiết càng nhiều, phép giải càng sắc — bối cảnh, cảm xúc và mọi điều khác thường đều quan trọng.","language":"Ngôn ngữ","yourDream":"Giấc mơ của bạn","placeholder":"Đêm qua tôi mơ mình đi qua một cánh cửa liên tục thay đổi hình dạng...","loading":"Đang giải mã...","button":"Giải mã giấc mơ","yourReading":"Phép giải của bạn","save":"Lưu","saved":"Đã lưu","viewHistory":"Xem lịch sử","errorEmpty":"Hãy kể giấc mơ trước đã.","errorFailed":"Giải mã thất bại. Vui lòng thử lại.","errorNetwork":"Lỗi kết nối. Vui lòng thử lại."},"history":{"title":"Lịch sử giấc mơ","lede":"Mỗi phép giải bạn đã tạo, được lưu trên thiết bị này.","empty":"Chưa có giấc mơ nào được giải."},"saved":{"title":"Giấc mơ đã lưu","lede":"Giữ lại những phép giải từng chạm đến bạn. Chúng nằm trên thiết bị này.","empty":"Chưa có gì được lưu."},"common":{"interpretCta":"Giải mã giấc mơ","delete":"Xóa","remove":"Bỏ","backHome":"Về trang chủ"},"symbols":{"title":"{n} biểu tượng giấc mơ","lede":"Duyệt qua mọi biểu tượng chúng tôi giải mã — miễn phí, bằng hàng chục ngôn ngữ. Chọn biểu tượng của bạn để đọc ý nghĩa.","search":"Tìm một biểu tượng…"},"about":{"title":"Phép giải rõ ràng, bén rễ trong truyền thống","p1":"Dreamscope tồn tại để việc giải mộng trở nên gần gũi bằng chính ngôn ngữ của bạn. Chúng tôi kết hợp hai dòng hiểu biết: học thuật Hồi giáo cổ điển của Ibn Sirin — một trong những nhà giải mộng ảnh hưởng nhất lịch sử — và khuôn khổ biểu tượng của tâm lý học chiều sâu hiện đại.","p2":"Mỗi phép giải được tạo ra để giúp bạn chiêm nghiệm — không phải để tiên đoái tương lai. Những biểu tượng như nước, lửa, bay lượn hay con rắn đã mang ý nghĩa qua các nền văn hóa hàng nghìn năm, và cách lý giải của chúng tôi lần theo những sợi chỉ ấy để bạn tìm thấy điều cộng hưởng với đời mình.","p3":"Dịch vụ miễn phí, riêng tư ngay từ thiết kế và có sẵn 60 ngôn ngữ. Giấc mơ của bạn không bao giờ rời thiết bị.","card1Title":"Ibn Sirin","card1Body":"Học thuật giải mộng Hồi giáo cổ điển, lần theo hàng thế kỷ chiêm nghiệm.","card2Title":"60 ngôn ngữ","card2Body":"Từ Ả Rập đến Nhật Bản — giải mã bằng chính ngôn ngữ bạn nằm mơ.","card3Title":"100% riêng tư","card3Body":"Giấc mơ ở lại trên thiết bị của bạn. Không tài khoản, không theo dõi.","cta":"Bắt đầu giải mã"},"contact":{"title":"Liên hệ","lede":"Câu hỏi, góp ý hay ý tưởng hợp tác? Viết email cho đội ngũ Dreamscope.","email":"Email","disclaimer":"Dreamscope chỉ cung cấp nội dung chiêm nghiệm và giải trí. Các phép giải không phải lời khuyên y khoa, tâm lý hay tôn giáo. Nếu bạn cần hỗ trợ, hãy gặp chuyên gia có chuyên môn.","back":"Về trang giải mã"},"faq":{"title":"Câu hỏi thường gặp","q1":"Dreamscope giải mã giấc mơ thế nào?","a1":"Dreamscope kết hợp học thuật giải mộng cổ điển — gồm truyền thống Ibn Sirin — với tâm lý học chiều sâu hiện đại. Bạn kể giấc mơ bằng lời của mình và nhận một phép giải liên hệ các biểu tượng với ý nghĩa phổ quát qua các nền văn hóa.","q2":"Giấc mơ của tôi có riêng tư không?","a2":"Có. Giấc mơ của bạn chỉ lưu trong bộ nhớ cục bộ của trình duyệt trên thiết bị của bạn. Không gì được gửi lên máy chủ, và bạn có thể xóa lịch sử bất cứ lúc nào.","q3":"Tôi có thể giải mã giấc mơ bằng những ngôn ngữ nào?","a3":"Dreamscope hỗ trợ 60 ngôn ngữ, gồm tiếng Việt, Anh, Ả Rập, Tây Ban Nha, Pháp, Đức, Trung, Nhật, Hàn, Thổ Nhĩ Kỳ, Bồ Đào Nha, Nga, Hindi và nhiều nữa. Phép giải theo ngôn ngữ bạn chọn.","q4":"Các phép giải có thay thế lời khuyên chuyên môn không?","a4":"Không. Giải mộng để chiêm nghiệm và giải trí. Không phải hướng dẫn y khoa, tâm lý hay tôn giáo. Nếu bạn đang khó khăn, hãy nói với chuyên gia đủ tiêu chuẩn.","q5":"Bao nhiêu biểu tượng giấc mơ được bao phủ?","a5":"Dreamscope có trang riêng cho 146 biểu tượng phổ biến — rắn, nước, bay, lửa, mang thai, tiền bạc và nhiều nữa — mỗi biểu tượng có bản đa ngôn ngữ cùng các biến thể câu hỏi."},"notfound":{"title":"Giấc mơ này đã tan biến","lede":"Trang bạn tìm không có ở đây. Quay lại giải mã thôi.","cta":"Về trang chủ"}}
+{
+  "nav": {
+    "interpret": "Giải mã",
+    "symbols": "Biểu tượng",
+    "about": "Giới thiệu",
+    "faq": "Hỏi đáp",
+    "history": "Lịch sử",
+    "saved": "Đã lưu",
+    "contact": "Liên hệ",
+    "start": "Bắt đầu",
+    "home": "Trang chủ",
+    "aiBlog": "Blog AI",
+    "ansyGroup": "Ansy Group",
+    "language": "Ngôn ngữ",
+    "searchLanguage": "Tìm ngôn ngữ…",
+    "noLanguage": "Không có ngôn ngữ nào khớp tìm kiếm của bạn."
+  },
+  "footer": {
+    "tagline": "Giải mã giấc mơ bằng AI, miễn phí — theo truyền thống Ibn Sirin và tâm lý học hiện đại.",
+    "copyright": "© {year} Dreamscope"
+  },
+  "home": {
+    "heroTitle": "{accent} của bạn đang muốn nói điều gì",
+    "heroAccent": "vô thức",
+    "heroLede": "Biểu tượng cổ xưa, tâm lý học hiện đại và AI — hòa vào một phép giải rõ ràng. Kể giấc mơ của bạn bằng chính lời của mình và nhận cách lý giải dựa trên Ibn Sirin cùng tâm lý học chiều sâu.",
+    "interpretCta": "Giải mã giấc mơ",
+    "browseCta": "Khám phá biểu tượng",
+    "statLanguages": "{n} ngôn ngữ",
+    "statSymbols": "{n} biểu tượng giấc mơ",
+    "statPrivateLine": "riêng tư trên thiết bị của bạn",
+    "whyTitle": "Một phép giải bạn thực sự dùng được",
+    "whyLede": "Dreamscope mổ xẻ giấc mơ thành các biểu tượng, rồi đọc chúng qua truyền thống bạn tin tưởng — tâm lý học đi cùng, không thay thế.",
+    "feature1Title": "Phân tích biểu tượng",
+    "feature1Body": "Mỗi giấc mơ được tách thành những biểu tượng cốt lõi và lần theo hàng thế kỷ truyền thống giải mộng.",
+    "feature2Title": "60 ngôn ngữ",
+    "feature2Body": "Giải mã và đọc biểu tượng bằng tiếng Việt, Anh, Ả Rập, Trung, Nhật và 55 ngôn ngữ khác.",
+    "feature3Title": "Mọi truyền thống",
+    "feature3Body": "Ibn Sirin, tâm lý học chiều sâu và góc nhìn của mọi tín ngưỡng — một phép giải, nhìn qua lăng kính của bạn.",
+    "feature4Title": "Đã lưu & riêng tư",
+    "feature4Body": "Giấc mơ của bạn nằm trên thiết bị của bạn. Đọc lại, so sánh và theo dõi quy luật theo thời gian.",
+    "sampleTag": "Ví dụ giải mộng",
+    "sampleJustNow": "vừa xong",
+    "sampleDream": "\"Tôi thấy một con rắn xanh rời khỏi nhà qua cánh cổng vườn.\"",
+    "sampleReading": "Rắn báo hiệu sự chuyển hóa — có điều gì trong cuộc sống bạn đang lột xác. Cánh cổng gợi ý một lối ra rõ ràng đang mở. Theo truyền thống Ibn Sirin, một con rắn vô hại rời khỏi nhà thường nghĩa là nỗi lo từ lâu cuối cùng cũng đi qua.",
+    "sampleTag1": "Chuyển hóa",
+    "sampleTag2": "Giải phóng",
+    "sampleTag3": "Ibn Sirin",
+    "sampleSaved": "Đã lưu trên thiết bị của bạn",
+    "symbolsTitle": "Mỗi biểu tượng mang một ý nghĩa",
+    "symbolsLede": "Từ nước đến lửa, khám phá những hình tượng mộng phổ biến nhất và điều mỗi hình thường báo hiệu qua các truyền thống.",
+    "ctaTitle": "Kể giấc mơ của bạn",
+    "ctaLede": "Vài câu là đủ. Phép giải chỉ mất vài giây và nằm trên thiết bị của bạn.",
+    "ctaButton": "Bắt đầu giải mã"
+  },
+  "interpret": {
+    "title": "Kể giấc mơ của bạn",
+    "lede": "Viết bằng lời của bạn. Chi tiết càng nhiều, phép giải càng sắc — bối cảnh, cảm xúc và mọi điều khác thường đều quan trọng.",
+    "language": "Ngôn ngữ",
+    "yourDream": "Giấc mơ của bạn",
+    "placeholder": "Đêm qua tôi mơ mình đi qua một cánh cửa liên tục thay đổi hình dạng...",
+    "loading": "Đang giải mã...",
+    "button": "Giải mã giấc mơ",
+    "yourReading": "Phép giải của bạn",
+    "save": "Lưu",
+    "viewHistory": "Xem lịch sử",
+    "errorEmpty": "Hãy kể giấc mơ trước đã.",
+    "errorFailed": "Giải mã thất bại. Vui lòng thử lại.",
+    "errorNetwork": "Lỗi kết nối. Vui lòng thử lại."
+  },
+  "history": {
+    "title": "Lịch sử giấc mơ",
+    "lede": "Mỗi phép giải bạn đã tạo, được lưu trên thiết bị này.",
+    "empty": "Chưa có giấc mơ nào được giải."
+  },
+  "saved": {
+    "title": "Giấc mơ đã lưu",
+    "lede": "Giữ lại những phép giải từng chạm đến bạn. Chúng nằm trên thiết bị này.",
+    "empty": "Chưa có gì được lưu."
+  },
+  "common": {
+    "interpretCta": "Giải mã giấc mơ",
+    "delete": "Xóa",
+    "remove": "Bỏ",
+    "backHome": "Về trang chủ"
+  },
+  "symbols": {
+    "title": "{n} biểu tượng giấc mơ",
+    "lede": "Duyệt qua mọi biểu tượng chúng tôi giải mã — miễn phí, bằng hàng chục ngôn ngữ. Chọn biểu tượng của bạn để đọc ý nghĩa.",
+    "search": "Tìm một biểu tượng…"
+  },
+  "contact": {
+    "title": "Liên hệ",
+    "lede": "Câu hỏi, góp ý hay ý tưởng hợp tác? Viết email cho đội ngũ Dreamscope.",
+    "email": "Email",
+    "disclaimer": "Dreamscope chỉ cung cấp nội dung chiêm nghiệm và giải trí. Các phép giải không phải lời khuyên y khoa, tâm lý hay tôn giáo. Nếu bạn cần hỗ trợ, hãy gặp chuyên gia có chuyên môn.",
+    "back": "Về trang giải mã"
+  },
+  "faq": {
+    "title": "Câu hỏi thường gặp",
+    "q1": "Dreamscope giải mã giấc mơ thế nào?",
+    "a1": "Dreamscope kết hợp học thuật giải mộng cổ điển — gồm truyền thống Ibn Sirin — với tâm lý học chiều sâu hiện đại. Bạn kể giấc mơ bằng lời của mình và nhận một phép giải liên hệ các biểu tượng với ý nghĩa phổ quát qua các nền văn hóa.",
+    "q2": "Giấc mơ của tôi có riêng tư không?",
+    "a2": "Có. Giấc mơ của bạn chỉ lưu trong bộ nhớ cục bộ của trình duyệt trên thiết bị của bạn. Không gì được gửi lên máy chủ, và bạn có thể xóa lịch sử bất cứ lúc nào.",
+    "q3": "Tôi có thể giải mã giấc mơ bằng những ngôn ngữ nào?",
+    "a3": "Dreamscope hỗ trợ 60 ngôn ngữ, gồm tiếng Việt, Anh, Ả Rập, Tây Ban Nha, Pháp, Đức, Trung, Nhật, Hàn, Thổ Nhĩ Kỳ, Bồ Đào Nha, Nga, Hindi và nhiều nữa. Phép giải theo ngôn ngữ bạn chọn.",
+    "q4": "Các phép giải có thay thế lời khuyên chuyên môn không?",
+    "a4": "Không. Giải mộng để chiêm nghiệm và giải trí. Không phải hướng dẫn y khoa, tâm lý hay tôn giáo. Nếu bạn đang khó khăn, hãy nói với chuyên gia đủ tiêu chuẩn.",
+    "q5": "Bao nhiêu biểu tượng giấc mơ được bao phủ?",
+    "a5": "Dreamscope có trang riêng cho 146 biểu tượng phổ biến — rắn, nước, bay, lửa, mang thai, tiền bạc và nhiều nữa — mỗi biểu tượng có bản đa ngôn ngữ cùng các biến thể câu hỏi."
+  },
+  "notfound": {
+    "title": "Giấc mơ này đã tan biến",
+    "lede": "Trang bạn tìm không có ở đây. Quay lại giải mã thôi.",
+    "cta": "Về trang chủ"
+  }
+}

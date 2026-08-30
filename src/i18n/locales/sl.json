@@ -54,7 +54,6 @@
     "ctaButton": "Začnite razlagati"
   },
   "interpret": {
-    "eyebrow": "Razlaga",
     "title": "Opišite svoje sanje",
     "lede": "Napišite jih s svojimi besedami. Več podrobnosti kot podate, ostrejša bo razlaga — pomembni so prostor, občutja in vse, kar je nenavadno.",
     "language": "Jezik",
@@ -64,7 +63,6 @@
     "button": "Razloži sanje",
     "yourReading": "Vaša razlaga",
     "save": "Shrani",
-    "saved": "Shranjeno",
     "viewHistory": "Poglej zgodovino",
     "errorEmpty": "Prosimo, najprej opišite svoje sanje.",
     "errorFailed": "Razlaga ni uspela. Poskusite znova.",
@@ -78,13 +76,11 @@
     "perspectiveDesc": "Ena razlaga, ki prepleta najmodrejše niti svetovnih tradicij z globinsko psihologijo."
   },
   "history": {
-    "eyebrow": "Vaša dejavnost",
     "title": "Zgodovina sanj",
     "lede": "Vsaka razlaga, ki ste jo ustvarili, shranjena na tej napravi.",
     "empty": "Še ni razlaganih sanj."
   },
   "saved": {
-    "eyebrow": "Vaša knjižnica",
     "title": "Shranjene sanje",
     "lede": "Obdržite razlage, ki so vas ganile. Ostanejo na tej napravi.",
     "empty": "Še ni nič shranjenega."
@@ -96,13 +92,11 @@
     "backHome": "Nazaj domov"
   },
   "symbols": {
-    "eyebrow": "Slovar sanjskih simbolov",
     "title": "{n} sanjskih simbolov",
     "lede": "Raziščite vse simbole, ki jih razlagamo — brezplačno, v ducatih jezikih. Izberite svojega in preberite pomen.",
     "search": "Poišči simbol…"
   },
   "about": {
-    "eyebrow": "O nas",
     "title": "Jasna razlaga, ukoreninjena v tradiciji",
     "p1": "Dreamscope obstaja zato, da razlago sanj naredi dostopno v vašem jeziku. Združujemo dva toka razumevanja: klasično islamsko sanjsko znanost Ibn Sirina, enega najvplivnejših razlagateljev sanj v zgodovini, in simbolne okvire sodobne globinske psihologije.",
     "p2": "Vsaka razlaga je ustvarjena, da vam pomaga pri razmisleku — ne da bi napovedovala prihodnost. Simboli, kot so voda, ogenj, letenje ali kača, nosijo pomen v različnih kulturah že tisočletja in naše razlage sledijo tem nitim, da boste našli tisto, kar se dotakne vašega življenja.",
@@ -118,7 +112,6 @@
     "traditionsLede": "Izberite perspektivo, ki ji zaupa vaše srce — vsaka razlaga je ustvarjena skozi posebno interpretativno šolo."
   },
   "contact": {
-    "eyebrow": "Kontakt",
     "title": "Stopite v stik",
     "lede": "Vprašanja, popravki ali zamisli za sodelovanje? Pišite ekipi Dreamscope.",
     "email": "E-pošta",
@@ -126,7 +119,6 @@
     "back": "Nazaj na razlaganje"
   },
   "faq": {
-    "eyebrow": "FAQ",
     "title": "Pogosto zastavljena vprašanja",
     "q1": "Kako Dreamscope razlaga sanje?",
     "a1": "Dreamscope združuje klasično sanjsko znanost — vključno s tradicijo Ibn Sirina — s sodobno globinsko psihologijo. Opišete sanje s svojimi besedami in prejmete razlago, ki njihove simbole poveže s pogostimi pomeni v različnih kulturah.",
@@ -140,7 +132,6 @@
     "a5": "Dreamscope ima namenske strani za 146 pogostih simbolov — kača, voda, letenje, ogenj, nosečnost, denar in še mnogo drugih — vsak je na voljo v več jezikih s številnimi različicami vprašanj."
   },
   "notfound": {
-    "code": "404",
     "title": "Te sanje so se razblinile",
     "lede": "Stran, ki ste jo iskali, ni tukaj. Vrnimo se k razlaganju.",
     "cta": "Nazaj domov"

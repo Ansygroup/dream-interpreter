@@ -1,1 +1,129 @@
-{"nav":{"interpret":"Deuten","symbols":"Symbole","about":"Über uns","faq":"FAQ","history":"Verlauf","saved":"Gespeichert","contact":"Kontakt","start":"Starten","home":"Startseite","aiBlog":"KI-Blog","ansyGroup":"Ansy Group","language":"Sprache","searchLanguage":"Sprachen suchen…","noLanguage":"Keine Sprache entspricht deiner Suche."},"footer":{"tagline":"KI-Traumdeutung, kostenlos — nach der Tradition Ibn Sirins und der modernen Psychologie.","copyright":"© {year} Dreamscope"},"home":{"heroTitle":"Was dein {accent} dir sagen will","heroAccent":"Unterbewusstsein","heroLede":"Antike Symbolik, moderne Psychologie und KI — vereint in einer klaren Deutung. Beschreibe deinen Traum in eigenen Worten und erhalte eine Auslegung, die auf Ibn Sirin und der Tiefenpsychologie fußt.","interpretCta":"Traum deuten","browseCta":"Symbole entdecken","statLanguages":"{n} Sprachen","statSymbols":"{n} Traumsymbole","statPrivateLine":"privat auf deinem Gerät","whyTitle":"Eine Deutung, die dir wirklich nützt","whyLede":"Dreamscope zerlegt deinen Traum in seine Symbole und liest sie durch die Tradition, der du vertraust — mit Psychologie an der Seite, nicht an ihrer Stelle.","feature1Title":"Symbolanalyse","feature1Body":"Jeder Traum wird in seine Kernsymbole zerlegt und durch Jahrhunderte der Deutungstradition verfolgt.","feature2Title":"60 Sprachen","feature2Body":"Deute und lies Symbole auf Deutsch, Englisch, Arabisch, Chinesisch, Japanisch und 55 weiteren Sprachen.","feature3Title":"Alle Traditionen","feature3Body":"Ibn Sirin, Tiefenpsychologie und Perspektiven aller Glaubensrichtungen — eine Deutung, gesehen durch deine Brille.","feature4Title":"Gespeichert & privat","feature4Body":"Deine Träume bleiben auf deinem Gerät. Blättere, vergleiche und verfolge Muster über die Zeit.","sampleTag":"Beispiel-Deutung","sampleJustNow":"gerade eben","sampleDream":"„Ich sah eine grüne Schlange, die durch die Gartentür das Haus verließ.“","sampleReading":"Schlangen stehen für Wandlung — etwas in deinem Leben häutet sich und lässt die alte Haut fallen. Das Tor deutet auf einen klaren Ausgang. In der Tradition Ibn Sirins bedeutet eine harmlose Schlange, die das Haus verlässt, oft, dass eine alte Sorge sich endlich verflüchtigt.","sampleTag1":"Wandlung","sampleTag2":"Loslassen","sampleTag3":"Ibn Sirin","sampleSaved":"Auf deinem Gerät gespeichert","symbolsTitle":"Jedes Symbol trägt eine Bedeutung","symbolsLede":"Vom Wasser bis zum Feuer — entdecke die häufigsten Traummotive und was jedes von ihnen über Traditionen hinweg signalisiert.","ctaTitle":"Beschreibe deinen Traum","ctaLede":"Ein paar Sätze genügen. Die Deutung dauert Sekunden und bleibt auf deinem Gerät.","ctaButton":"Jetzt deuten"},"interpret":{"title":"Beschreibe deinen Traum","lede":"Schreibe ihn in deinen eigenen Worten. Je mehr Details, desto schärfer die Deutung — Ort, Gefühle und alles Ungewöhnliche zählen.","language":"Sprache","yourDream":"Dein Traum","placeholder":"Letzte Nacht träumte ich, dass ich durch eine Tür ging, die ständig ihre Form wechselte...","loading":"Deute...","button":"Traum deuten","yourReading":"Deine Deutung","save":"Speichern","saved":"Gespeichert","viewHistory":"Verlauf ansehen","errorEmpty":"Beschreibe zuerst deinen Traum.","errorFailed":"Die Deutung ist fehlgeschlagen. Bitte versuche es erneut.","errorNetwork":"Verbindungsfehler. Bitte versuche es erneut."},"history":{"title":"Traumverlauf","lede":"Jede Deutung, die du erstellt hast, gespeichert auf diesem Gerät.","empty":"Noch keine Träume gedeutet."},"saved":{"title":"Gespeicherte Träume","lede":"Bewahre die Deutungen auf, die dir wichtig waren. Sie bleiben auf diesem Gerät.","empty":"Noch nichts gespeichert."},"common":{"interpretCta":"Traum deuten","delete":"Löschen","remove":"Entfernen","backHome":"Zurück zur Startseite"},"symbols":{"title":"{n} Traumsymbole","lede":"Stöbere durch jedes Symbol, das wir deuten — kostenlos, in Dutzenden Sprachen. Wähle deins, um die Bedeutung zu lesen.","search":"Symbol suchen…"},"about":{"title":"Eine klare Deutung, verwurzelt in der Tradition","p1":"Dreamscope existiert, um Traumdeutung in deiner eigenen Sprache zugänglich zu machen. Wir verbinden zwei Ströme des Verstehens: die klassische islamische Gelehrsamkeit Ibn Sirins — einen der einflussreichsten Traumdeuter der Geschichte — und die symbolischen Rahmen der modernen Tiefenpsychologie.","p2":"Jede Deutung entsteht, damit du reflektierst — nicht, um die Zukunft vorherzusagen. Symbole wie Wasser, Feuer, Fliegen oder eine Schlange tragen seit Jahrtausenden Bedeutungen über Kulturen hinweg, und unsere Deutungen verfolgen diese Fäden, damit du findest, was in deinem Leben widerklingt.","p3":"Der Dienst ist kostenlos, privat von Grund auf und in 60 Sprachen verfügbar. Deine Träume verlassen dein Gerät nie.","card1Title":"Ibn Sirin","card1Body":"Klassische islamische Traumgelehrsamkeit, verfolgt durch Jahrhunderte der Deutung.","card2Title":"60 Sprachen","card2Body":"Von Arabisch bis Japanisch — deute in der Sprache, in der du träumst.","card3Title":"100 % privat","card3Body":"Träume bleiben auf deinem Gerät. Keine Konten, kein Tracking.","cta":"Jetzt deuten"},"contact":{"title":"Kontakt","lede":"Fragen, Korrekturen oder Partnerschaftsideen? Schreib dem Dreamscope-Team per E-Mail.","email":"E-Mail","disclaimer":"Dreamscope bietet Inhalte zur Reflexion und Unterhaltung. Deutungen sind keine medizinischen, psychologischen oder religiösen Ratschläge. Wenn du Unterstützung brauchst, wende dich an eine qualifizierte Fachkraft.","back":"Zurück zum Deuter"},"faq":{"title":"Häufige Fragen","q1":"Wie deutet Dreamscope Träume?","a1":"Dreamscope verbindet klassische Traumgelehrsamkeit — einschließlich der Tradition Ibn Sirins — mit moderner Tiefenpsychologie. Du beschreibst einen Traum in deinen eigenen Worten und erhältst eine Deutung, die seine Symbole mit ihren verbreiteten Bedeutungen über Kulturen hinweg verknüpft.","q2":"Sind meine Träume privat?","a2":"Ja. Deine Träume werden nur im lokalen Speicher deines Browsers auf deinem Gerät gespeichert. Nichts wird an einen Server gesendet, und du kannst deinen Verlauf jederzeit löschen.","q3":"In welchen Sprachen kann ich Träume deuten?","a3":"Dreamscope unterstützt 60 Sprachen, darunter Deutsch, Englisch, Arabisch, Spanisch, Französisch, Chinesisch, Japanisch, Koreanisch, Türkisch, Portugiesisch, Russisch, Hindi und viele mehr. Die Deutung folgt der Sprache, die du wählst.","q4":"Ersetzen die Deutungen professionellen Rat?","a4":"Nein. Traumdeutungen dienen der Reflexion und Unterhaltung. Sie sind keine medizinischen, psychologischen oder religiösen Ratschläge. Wenn du dir schwer tust, sprich mit einer qualifizierten Fachkraft.","q5":"Wie viele Traumsymbole werden abgedeckt?","a5":"Dreamscope hat eigene Seiten für 146 häufige Symbole — Schlange, Wasser, Fliegen, Feuer, Schwangerschaft, Geld und viele mehr — jedes in mehreren Sprachen mit Fragen-Varianten."},"notfound":{"title":"Dieser Traum hat sich aufgelöst","lede":"Die Seite, die du suchst, ist nicht hier. Zurück zum Deuten.","cta":"Zurück zur Startseite"}}
+{
+  "nav": {
+    "interpret": "Deuten",
+    "symbols": "Symbole",
+    "about": "Über uns",
+    "faq": "FAQ",
+    "history": "Verlauf",
+    "saved": "Gespeichert",
+    "contact": "Kontakt",
+    "start": "Starten",
+    "home": "Startseite",
+    "aiBlog": "KI-Blog",
+    "ansyGroup": "Ansy Group",
+    "language": "Sprache",
+    "searchLanguage": "Sprachen suchen…",
+    "noLanguage": "Keine Sprache entspricht deiner Suche."
+  },
+  "footer": {
+    "tagline": "KI-Traumdeutung, kostenlos — nach der Tradition Ibn Sirins und der modernen Psychologie.",
+    "copyright": "© {year} Dreamscope"
+  },
+  "home": {
+    "heroTitle": "Was dein {accent} dir sagen will",
+    "heroAccent": "Unterbewusstsein",
+    "heroLede": "Antike Symbolik, moderne Psychologie und KI — vereint in einer klaren Deutung. Beschreibe deinen Traum in eigenen Worten und erhalte eine Auslegung, die auf Ibn Sirin und der Tiefenpsychologie fußt.",
+    "interpretCta": "Traum deuten",
+    "browseCta": "Symbole entdecken",
+    "statLanguages": "{n} Sprachen",
+    "statSymbols": "{n} Traumsymbole",
+    "statPrivateLine": "privat auf deinem Gerät",
+    "whyTitle": "Eine Deutung, die dir wirklich nützt",
+    "whyLede": "Dreamscope zerlegt deinen Traum in seine Symbole und liest sie durch die Tradition, der du vertraust — mit Psychologie an der Seite, nicht an ihrer Stelle.",
+    "feature1Title": "Symbolanalyse",
+    "feature1Body": "Jeder Traum wird in seine Kernsymbole zerlegt und durch Jahrhunderte der Deutungstradition verfolgt.",
+    "feature2Title": "60 Sprachen",
+    "feature2Body": "Deute und lies Symbole auf Deutsch, Englisch, Arabisch, Chinesisch, Japanisch und 55 weiteren Sprachen.",
+    "feature3Title": "Alle Traditionen",
+    "feature3Body": "Ibn Sirin, Tiefenpsychologie und Perspektiven aller Glaubensrichtungen — eine Deutung, gesehen durch deine Brille.",
+    "feature4Title": "Gespeichert & privat",
+    "feature4Body": "Deine Träume bleiben auf deinem Gerät. Blättere, vergleiche und verfolge Muster über die Zeit.",
+    "sampleTag": "Beispiel-Deutung",
+    "sampleJustNow": "gerade eben",
+    "sampleDream": "„Ich sah eine grüne Schlange, die durch die Gartentür das Haus verließ.“",
+    "sampleReading": "Schlangen stehen für Wandlung — etwas in deinem Leben häutet sich und lässt die alte Haut fallen. Das Tor deutet auf einen klaren Ausgang. In der Tradition Ibn Sirins bedeutet eine harmlose Schlange, die das Haus verlässt, oft, dass eine alte Sorge sich endlich verflüchtigt.",
+    "sampleTag1": "Wandlung",
+    "sampleTag2": "Loslassen",
+    "sampleTag3": "Ibn Sirin",
+    "sampleSaved": "Auf deinem Gerät gespeichert",
+    "symbolsTitle": "Jedes Symbol trägt eine Bedeutung",
+    "symbolsLede": "Vom Wasser bis zum Feuer — entdecke die häufigsten Traummotive und was jedes von ihnen über Traditionen hinweg signalisiert.",
+    "ctaTitle": "Beschreibe deinen Traum",
+    "ctaLede": "Ein paar Sätze genügen. Die Deutung dauert Sekunden und bleibt auf deinem Gerät.",
+    "ctaButton": "Jetzt deuten"
+  },
+  "interpret": {
+    "title": "Beschreibe deinen Traum",
+    "lede": "Schreibe ihn in deinen eigenen Worten. Je mehr Details, desto schärfer die Deutung — Ort, Gefühle und alles Ungewöhnliche zählen.",
+    "language": "Sprache",
+    "yourDream": "Dein Traum",
+    "placeholder": "Letzte Nacht träumte ich, dass ich durch eine Tür ging, die ständig ihre Form wechselte...",
+    "loading": "Deute...",
+    "button": "Traum deuten",
+    "yourReading": "Deine Deutung",
+    "save": "Speichern",
+    "viewHistory": "Verlauf ansehen",
+    "errorEmpty": "Beschreibe zuerst deinen Traum.",
+    "errorFailed": "Die Deutung ist fehlgeschlagen. Bitte versuche es erneut.",
+    "errorNetwork": "Verbindungsfehler. Bitte versuche es erneut."
+  },
+  "history": {
+    "title": "Traumverlauf",
+    "lede": "Jede Deutung, die du erstellt hast, gespeichert auf diesem Gerät.",
+    "empty": "Noch keine Träume gedeutet."
+  },
+  "saved": {
+    "title": "Gespeicherte Träume",
+    "lede": "Bewahre die Deutungen auf, die dir wichtig waren. Sie bleiben auf diesem Gerät.",
+    "empty": "Noch nichts gespeichert."
+  },
+  "common": {
+    "interpretCta": "Traum deuten",
+    "delete": "Löschen",
+    "remove": "Entfernen",
+    "backHome": "Zurück zur Startseite"
+  },
+  "symbols": {
+    "title": "{n} Traumsymbole",
+    "lede": "Stöbere durch jedes Symbol, das wir deuten — kostenlos, in Dutzenden Sprachen. Wähle deins, um die Bedeutung zu lesen.",
+    "search": "Symbol suchen…"
+  },
+  "about": {
+    "title": "Eine klare Deutung, verwurzelt in der Tradition",
+    "p1": "Dreamscope existiert, um Traumdeutung in deiner eigenen Sprache zugänglich zu machen. Wir verbinden zwei Ströme des Verstehens: die klassische islamische Gelehrsamkeit Ibn Sirins — einen der einflussreichsten Traumdeuter der Geschichte — und die symbolischen Rahmen der modernen Tiefenpsychologie.",
+    "p2": "Jede Deutung entsteht, damit du reflektierst — nicht, um die Zukunft vorherzusagen. Symbole wie Wasser, Feuer, Fliegen oder eine Schlange tragen seit Jahrtausenden Bedeutungen über Kulturen hinweg, und unsere Deutungen verfolgen diese Fäden, damit du findest, was in deinem Leben widerklingt.",
+    "p3": "Der Dienst ist kostenlos, privat von Grund auf und in 60 Sprachen verfügbar. Deine Träume verlassen dein Gerät nie.",
+    "card1Title": "Ibn Sirin",
+    "card1Body": "Klassische islamische Traumgelehrsamkeit, verfolgt durch Jahrhunderte der Deutung.",
+    "card2Title": "60 Sprachen",
+    "card2Body": "Von Arabisch bis Japanisch — deute in der Sprache, in der du träumst.",
+    "card3Title": "100 % privat",
+    "card3Body": "Träume bleiben auf deinem Gerät. Keine Konten, kein Tracking.",
+    "cta": "Jetzt deuten"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "lede": "Fragen, Korrekturen oder Partnerschaftsideen? Schreib dem Dreamscope-Team per E-Mail.",
+    "email": "E-Mail",
+    "disclaimer": "Dreamscope bietet Inhalte zur Reflexion und Unterhaltung. Deutungen sind keine medizinischen, psychologischen oder religiösen Ratschläge. Wenn du Unterstützung brauchst, wende dich an eine qualifizierte Fachkraft.",
+    "back": "Zurück zum Deuter"
+  },
+  "faq": {
+    "title": "Häufige Fragen",
+    "q1": "Wie deutet Dreamscope Träume?",
+    "a1": "Dreamscope verbindet klassische Traumgelehrsamkeit — einschließlich der Tradition Ibn Sirins — mit moderner Tiefenpsychologie. Du beschreibst einen Traum in deinen eigenen Worten und erhältst eine Deutung, die seine Symbole mit ihren verbreiteten Bedeutungen über Kulturen hinweg verknüpft.",
+    "q2": "Sind meine Träume privat?",
+    "a2": "Ja. Deine Träume werden nur im lokalen Speicher deines Browsers auf deinem Gerät gespeichert. Nichts wird an einen Server gesendet, und du kannst deinen Verlauf jederzeit löschen.",
+    "q3": "In welchen Sprachen kann ich Träume deuten?",
+    "a3": "Dreamscope unterstützt 60 Sprachen, darunter Deutsch, Englisch, Arabisch, Spanisch, Französisch, Chinesisch, Japanisch, Koreanisch, Türkisch, Portugiesisch, Russisch, Hindi und viele mehr. Die Deutung folgt der Sprache, die du wählst.",
+    "q4": "Ersetzen die Deutungen professionellen Rat?",
+    "a4": "Nein. Traumdeutungen dienen der Reflexion und Unterhaltung. Sie sind keine medizinischen, psychologischen oder religiösen Ratschläge. Wenn du dir schwer tust, sprich mit einer qualifizierten Fachkraft.",
+    "q5": "Wie viele Traumsymbole werden abgedeckt?",
+    "a5": "Dreamscope hat eigene Seiten für 146 häufige Symbole — Schlange, Wasser, Fliegen, Feuer, Schwangerschaft, Geld und viele mehr — jedes in mehreren Sprachen mit Fragen-Varianten."
+  },
+  "notfound": {
+    "title": "Dieser Traum hat sich aufgelöst",
+    "lede": "Die Seite, die du suchst, ist nicht hier. Zurück zum Deuten.",
+    "cta": "Zurück zur Startseite"
+  }
+}

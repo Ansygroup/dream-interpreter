@@ -54,7 +54,6 @@
     "ctaButton": "Sākt interpretēt"
   },
   "interpret": {
-    "eyebrow": "Interpretēt",
     "title": "Aprakstiet savu sapni",
     "lede": "Uzrakstiet to saviem vārdiem. Jo vairāk detaļu, jo asāks lasījums — vide, sajūtas un viss neparastais ir svarīgs.",
     "language": "Valoda",
@@ -64,7 +63,6 @@
     "button": "Interpretēt sapni",
     "yourReading": "Jūsu lasījums",
     "save": "Saglabāt",
-    "saved": "Saglabāts",
     "viewHistory": "Skatīt vēsturi",
     "errorEmpty": "Lūdzu, vispirms aprakstiet savu sapni.",
     "errorFailed": "Interpretācija neizdevās. Lūdzu, mēģiniet vēlreiz.",
@@ -78,13 +76,11 @@
     "perspectiveDesc": "Viens lasījums, kas savij pasaules tradīciju gudrākās diegus ar dziļuma psiholoģiju."
   },
   "history": {
-    "eyebrow": "Jūsu aktivitāte",
     "title": "Sapņu vēsture",
     "lede": "Visas interpretācijas, ko esat ģenerējis, saglabātas šajā ierīcē.",
     "empty": "Vēl nav interpretētu sapņu."
   },
   "saved": {
-    "eyebrow": "Jūsu bibliotēka",
     "title": "Saglabātie sapņi",
     "lede": "Saglabājiet tās interpretācijas, kas bija svarīgas. Tās paliek šajā ierīcē.",
     "empty": "Vēl nekas nav saglabāts."
@@ -96,13 +92,11 @@
     "backHome": "Atgriezties sākumā"
   },
   "symbols": {
-    "eyebrow": "Sapņu simbolu vārdnīca",
     "title": "{n} sapņu simboli",
     "lede": "Pārlūkojiet katru simbolu, ko interpretējam — bez maksas, desmitiem valodās. Izvēlieties savējo, lai lasītu nozīmi.",
     "search": "Meklēt simbolu…"
   },
   "about": {
-    "eyebrow": "Par mums",
     "title": "Skaidrs lasījums, sakņots tradīcijā",
     "p1": "Dreamscope pastāv, lai padarītu sapņu interpretāciju pieejamu jūsu dzimtajā valodā. Mēs apvienojam divus izpratnes straumus: klasisko islāma sapņu zinātni, ko pārstāv Ibn Sirīns — viens no ietekmīgākajiem sapņu interpretētājiem vēsturē — un mūsdienu dziļuma psiholoģijas simboliskos ietvarus.",
     "p2": "Katrs lasījums tiek ģenerēts, lai palīdzētu jums pārdomāt — ne paredzēt nākotni. Simboli kā ūdens, uguns, lidošana vai čūska ir nesuši nozīmi kultūrās tūkstošiem gadu, un mūsu interpretācijas izseko šīs pavedienus, lai jūs atrastu to, kas rezonē ar jūsu paša dzīvi.",
@@ -118,7 +112,6 @@
     "traditionsLede": "Izvēlieties skatpunktu, kam uzticas jūsu sirds — katrs lasījums tiek ģenerēts caur īpašu interpretācijas skolu."
   },
   "contact": {
-    "eyebrow": "Kontakti",
     "title": "Sazinieties ar mums",
     "lede": "Jautājumi, labojumi vai sadarbības idejas? Sazinieties ar Dreamscope komandu pa e-pastu.",
     "email": "E-pasts",
@@ -126,7 +119,6 @@
     "back": "Atpakaļ uz interpretētāju"
   },
   "faq": {
-    "eyebrow": "BUJ",
     "title": "Bieži uzdotie jautājumi",
     "q1": "Kā Dreamscope interpretē sapņus?",
     "a1": "Dreamscope apvieno klasisko sapņu zinātni — tostarp Ibn Sirīna tradīciju — ar mūsdienu dziļuma psiholoģiju. Jūs aprakstāt sapni saviem vārdiem un saņemat lasījumu, kas sasaista tā simbolus ar to kopējām nozīmēm kultūrās.",
@@ -140,7 +132,6 @@
     "a5": "Dreamscope ir veltītas lapas 146 izplatītiem simboliem — čūska, ūdens, lidošana, uguns, grūtniecība, nauda un daudzi citi — katrs pieejams vairākās valodās ar dažādiem jautājumu variantiem."
   },
   "notfound": {
-    "code": "404",
     "title": "Šis sapnis izkusa",
     "lede": "Lapa, ko meklējāt, šeit nav. Laiks atgriezties pie interpretēšanas.",
     "cta": "Atgriezties sākumā"

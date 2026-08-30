@@ -53,7 +53,6 @@
     "ctaButton": "Începe interpretarea"
   },
   "interpret": {
-    "eyebrow": "Interpretare",
     "title": "Descrie visul tău",
     "lede": "Scrie-l în cuvintele tale. Cu cât mai multe detalii, cu atât interpretarea e mai precisă — cadrul, sentimentele și orice lucru neobișnuit contează.",
     "language": "Limbă",
@@ -63,7 +62,6 @@
     "button": "Interpretează visul",
     "yourReading": "Interpretarea ta",
     "save": "Salvează",
-    "saved": "Salvat",
     "viewHistory": "Vezi istoricul",
     "errorEmpty": "Te rog descrie mai întâi visul tău.",
     "errorFailed": "Interpretarea a eșuat. Te rog încearcă din nou.",
@@ -88,13 +86,11 @@
     }
   },
   "history": {
-    "eyebrow": "Activitatea ta",
     "title": "Istoric vise",
     "lede": "Fiecare interpretare pe care ai generat-o, stocată pe acest dispozitiv.",
     "empty": "Niciun vis interpretat încă."
   },
   "saved": {
-    "eyebrow": "Biblioteca ta",
     "title": "Vise salvate",
     "lede": "Păstrează interpretările care au contat. Rămân pe acest dispozitiv.",
     "empty": "Nimic salvat încă."
@@ -106,13 +102,11 @@
     "remove": "Elimină"
   },
   "symbols": {
-    "eyebrow": "Dicționar de simboluri onirice",
     "title": "{n} simboluri onirice",
     "lede": "Răsfoiește fiecare simbol pe care îl interpretăm — gratuit, în zeci de limbi. Alege-l pe al tău pentru a citi semnificația.",
     "search": "Caută un simbol…"
   },
   "about": {
-    "eyebrow": "Despre",
     "title": "O interpretare clară, înrădăcinată în tradiție",
     "p1": "Dreamscope există pentru a face interpretarea viselor accesibilă în propria ta limbă. Combinăm două curente de înțelegere: învățătura clasică islamică a lui Ibn Sirin, unul dintre cei mai influenți interpreți de vise din istorie, și cadrele simbolice ale psihologiei profunzimii moderne.",
     "p2": "Fiecare interpretare este generată pentru a te ajuta să reflectezi — nu pentru a prezice viitorul. Simboluri precum apa, focul, zborul sau un șarpe au purtat semnificații în culturi de mii de ani, iar interpretările noastre urmăresc acele fire ca să găsești ce rezonează cu propria ta viață.",
@@ -126,7 +120,6 @@
     "cta": "Începe interpretarea"
   },
   "contact": {
-    "eyebrow": "Contact",
     "title": "Contactează-ne",
     "lede": "Întrebări, corecturi sau idei de parteneriat? Scrie echipei Dreamscope prin email.",
     "email": "Email",
@@ -134,7 +127,6 @@
     "back": "Înapoi la interpretare"
   },
   "faq": {
-    "eyebrow": "Întrebări frecvente",
     "title": "Întrebări frecvente",
     "q1": "Cum interpretează Dreamscope visele?",
     "a1": "Dreamscope combină învățătura clasică a viselor — inclusiv tradiția lui Ibn Sirin — cu psihologia profunzimii moderne. Descrii un vis în cuvintele tale și primești o interpretare care mapează simbolurile pe semnificațiile lor comune în culturi.",
@@ -148,7 +140,6 @@
     "a5": "Dreamscope are pagini dedicate pentru 146 de simboluri comune — șarpe, apă, zbor, foc, sarcină, bani și multe altele — fiecare disponibil în mai multe limbi, cu variante de întrebări detaliate."
   },
   "notfound": {
-    "code": "404",
     "title": "Acest vis s-a dizolvat",
     "lede": "Pagina pe care o căutai nu e aici. Hai să te aducem înapoi la interpretare.",
     "cta": "Înapoi acasă"

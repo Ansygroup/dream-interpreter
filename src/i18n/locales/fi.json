@@ -53,7 +53,6 @@
     "ctaButton": "Aloita tulkinta"
   },
   "interpret": {
-    "eyebrow": "Tulkkaa",
     "title": "Kuvaile unesi",
     "lede": "Kirjoita se omin sanoin. Mitä enemmän yksityiskohtia, sitä tarkempi tulkinta – ympäristö, tunteet ja kaikki epätavallinen ovat tärkeitä.",
     "language": "Kieli",
@@ -63,7 +62,6 @@
     "button": "Tulkkaa uni",
     "yourReading": "Sinun tulkintasi",
     "save": "Tallenna",
-    "saved": "Tallennettu",
     "viewHistory": "Näytä historia",
     "errorEmpty": "Kuvaile ensin unesi.",
     "errorFailed": "Tulkinta epäonnistui. Yritä uudelleen.",
@@ -88,13 +86,11 @@
     }
   },
   "history": {
-    "eyebrow": "Sinun toimintasi",
     "title": "Unihistoria",
     "lede": "Jokainen tulkitsemasi uni, tallennettuna tälle laitteelle.",
     "empty": "Et ole vielä tulkinnut unia."
   },
   "saved": {
-    "eyebrow": "Sinun kirjastosi",
     "title": "Tallennetut unet",
     "lede": "Säilytä ne tulkinnat, jotka olivat merkityksellisiä. Ne pysyvät tällä laitteella.",
     "empty": "Ei vielä tallennettuja."
@@ -106,13 +102,11 @@
     "backHome": "Palaa etusivulle"
   },
   "symbols": {
-    "eyebrow": "Unisymbolien sanakirja",
     "title": "{n} unisymbolia",
     "lede": "Selaa kaikkia tulkitsemiamme symboleita – ilmaiseksi, kymmenillä kielillä. Valitse omasi ja lue merkitys.",
     "search": "Hae symbolia…"
   },
   "about": {
-    "eyebrow": "Tietoja",
     "title": "Selkeä tulkinta, juurtunut perinteeseen",
     "p1": "Dreamscope tekee unien tulkinnasta saavutettavaa sinun omalla kielelläsi. Yhdistämme kaksi ymmärryksen virtaa: Ibn Sirinin klassisen islamilaisen unitutkimuksen – yhden historian vaikutusvaltaisimmista unientulkitsijoista – ja modernin syvyyspsykologian symboliset viitekehykset.",
     "p2": "Jokainen tulkinta on luotu auttamaan sinua pohtimaan – ei ennustamaan tulevaa. Symbolit kuten vesi, tuli, lento tai käärme ovat kantaneet merkitystä kulttuurien yli tuhansia vuosia, ja tulkintamme jäljittävät näitä lankoja, jotta löydät sen, mikä puhuttelee juuri sinun elämääsi.",
@@ -126,7 +120,6 @@
     "cta": "Aloita tulkinta"
   },
   "contact": {
-    "eyebrow": "Yhteystiedot",
     "title": "Ota yhteyttä",
     "lede": "Kysymyksiä, korjauksia tai yhteistyöideoita? Tavoita Dreamscope-tiimi sähköpostitse.",
     "email": "Sähköposti",
@@ -134,7 +127,6 @@
     "back": "Takaisin tulkitsimeen"
   },
   "faq": {
-    "eyebrow": "UKK",
     "title": "Usein kysytyt kysymykset",
     "q1": "Miten Dreamscope tulkitsee unia?",
     "a1": "Dreamscope yhdistää klassisen unitutkimuksen – Ibn Sirinin perinne mukaan lukien – ja modernin syvyyspsykologian. Kuvaile uni omin sanoin, ja saat tulkinnan, joka yhdistää sen symbolit kulttuurien yleisiin merkityksiin.",
@@ -148,7 +140,6 @@
     "a5": "Dreamscopella on omat sivut 146 yleiselle symbolille – käärme, vesi, lentäminen, tuli, raskaus, raha ja monet muut – joista jokainen on saatavilla useilla kielillä ja pitkän hännän kysymysmuunnelmilla."
   },
   "notfound": {
-    "code": "404",
     "title": "Tämä uni haihtui",
     "lede": "Etsimääsi sivua ei ole täällä. Palataan tulkitsemiseen.",
     "cta": "Palaa etusivulle"

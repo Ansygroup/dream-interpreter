@@ -1,1 +1,129 @@
-{"nav":{"interpret":"Tafsirkan","symbols":"Simbol","about":"Tentang","faq":"FAQ","history":"Riwayat","saved":"Tersimpan","contact":"Kontak","start":"Mulai","home":"Beranda","aiBlog":"Blog AI","ansyGroup":"Ansy Group","language":"Bahasa","searchLanguage":"Cari bahasa…","noLanguage":"Tidak ada bahasa yang cocok dengan pencarian Anda."},"footer":{"tagline":"Tafsir mimpi dengan AI, gratis — berdasarkan tradisi Ibnu Sirin dan psikologi modern.","copyright":"© {year} Dreamscope"},"home":{"heroTitle":"Apa yang {accent} Anda coba sampaikan","heroAccent":"bawah sadar","heroLede":"Simbolisme kuno, psikologi modern, dan AI — dipadukan dalam satu pembacaan yang jelas. Ceritakan mimpi Anda dengan kata-kata sendiri dan dapatkan tafsir yang berakar pada Ibnu Sirin dan psikologi kedalaman.","interpretCta":"Tafsirkan mimpi","browseCta":"Jelajahi simbol","statLanguages":"{n} bahasa","statSymbols":"{n} simbol mimpi","statPrivateLine":"privat, di perangkat Anda","whyTitle":"Pembacaan yang benar-benar berguna","whyLede":"Dreamscope memecah mimpi Anda menjadi simbol-simbolnya, lalu membacanya melalui tradisi yang Anda percayai — psikologi di sisinya, bukan menggantikannya.","feature1Title":"Analisis simbolik","feature1Body":"Setiap mimpi diurai ke simbol-simbol intinya dan ditelusuri melalui berabad-abad tradisi tafsir.","feature2Title":"60 bahasa","feature2Body":"Tafsirkan dan baca simbol dalam bahasa Indonesia, Inggris, Arab, Mandarin, Jepang, dan 55 bahasa lainnya.","feature3Title":"Semua tradisi","feature3Body":"Ibnu Sirin, psikologi kedalaman, dan perspektif berbagai keyakinan — satu pembacaan, lewat kacamata Anda.","feature4Title":"Tersimpan & privat","feature4Body":"Mimpi Anda tetap di perangkat Anda. Baca ulang, bandingkan, dan pantau polanya dari waktu ke waktu.","sampleTag":"Contoh pembacaan","sampleJustNow":"baru saja","sampleDream":"\"Aku melihat ular hijau keluar dari rumah lewat pintu taman.\"","sampleReading":"Ular menandai transformasi — ada sesuatu dalam hidup Anda yang sedang meranggas. Pintu menandakan pintu keluar yang jelas sedang terbuka. Dalam tradisi Ibnu Sirin, ular yang tidak berbahaya meninggalkan rumah sering berarti kekhawatiran lama akhirnya pergi.","sampleTag1":"Transformasi","sampleTag2":"Pelepasan","sampleTag3":"Ibnu Sirin","sampleSaved":"Tersimpan di perangkat Anda","symbolsTitle":"Setiap simbol membawa makna","symbolsLede":"Dari air hingga api, jelajahi motif mimpi yang paling umum dan apa yang biasanya disampaikan masing-masing lintas tradisi.","ctaTitle":"Ceritakan mimpi Anda","ctaLede":"Beberapa kalimat cukup. Pembacaan hanya beberapa detik dan tetap di perangkat Anda.","ctaButton":"Mulai menafsirkan"},"interpret":{"title":"Ceritakan mimpi Anda","lede":"Tulis dengan kata-kata sendiri. Semakin banyak detail, semakin tajam pembacaannya — latar, perasaan, dan hal-hal aneh semuanya berarti.","language":"Bahasa","yourDream":"Mimpi Anda","placeholder":"Semalam aku bermimpi melewati pintu yang terus berubah bentuk...","loading":"Menafsirkan...","button":"Tafsirkan mimpi","yourReading":"Pembacaan Anda","save":"Simpan","saved":"Tersimpan","viewHistory":"Lihat riwayat","errorEmpty":"Ceritakan mimpi Anda terlebih dahulu.","errorFailed":"Tafsiran gagal. Silakan coba lagi.","errorNetwork":"Kesalahan koneksi. Silakan coba lagi."},"history":{"title":"Riwayat mimpi","lede":"Setiap tafsiran yang Anda buat, tersimpan di perangkat ini.","empty":"Belum ada mimpi yang ditafsirkan."},"saved":{"title":"Mimpi tersimpan","lede":"Simpan tafsiran yang berarti bagi Anda. Semuanya tetap di perangkat ini.","empty":"Belum ada yang tersimpan."},"common":{"interpretCta":"Tafsirkan mimpi","delete":"Hapus","remove":"Buang","backHome":"Kembali ke beranda"},"symbols":{"title":"{n} simbol mimpi","lede":"Jelajahi setiap simbol yang kami tafsirkan — gratis, dalam puluhan bahasa. Pilih simbol Anda untuk membaca maknanya.","search":"Cari simbol…"},"about":{"title":"Pembacaan jernih, berakar pada tradisi","p1":"Dreamscope hadir agar tafsir mimpi bisa diakses dalam bahasa Anda sendiri. Kami memadukan dua aliran pemahaman: khazanah klasik Islam Ibnu Sirin — salah satu penafsir mimpi paling berpengaruh dalam sejarah — dan kerangka simbolik psikologi kedalaman modern.","p2":"Setiap pembacaan dibuat untuk membantu Anda merenung — bukan meramal masa depan. Simbol seperti air, api, terbang, atau ular telah membawa makna lintas budaya selama ribuan tahun, dan tafsiran kami menelusuri benang itu agar Anda menemukan yang beresonansi dengan hidup Anda.","p3":"Layanan ini gratis, privat sejak desainnya, dan tersedia dalam 60 bahasa. Mimpi Anda tidak pernah meninggalkan perangkat Anda.","card1Title":"Ibnu Sirin","card1Body":"Khazanah mimpi klasik Islam, ditelusuri melalui berabad-abad tafsir.","card2Title":"60 bahasa","card2Body":"Dari Arab hingga Jepang — tafsirkan dalam bahasa Anda bermimpi.","card3Title":"100% privat","card3Body":"Mimpi tetap di perangkat Anda. Tanpa akun, tanpa pelacakan.","cta":"Mulai menafsirkan"},"contact":{"title":"Hubungi kami","lede":"Ada pertanyaan, koreksi, atau ide kemitraan? Kirim email ke tim Dreamscope.","email":"Email","disclaimer":"Dreamscope menyediakan konten untuk renungan dan hiburan saja. Tafsiran bukan nasihat medis, psikologis, atau keagamaan. Jika Anda butuh dukungan, konsultasikan dengan profesional yang kompeten.","back":"Kembali ke penafsir"},"faq":{"title":"Pertanyaan umum","q1":"Bagaimana Dreamscope menafsirkan mimpi?","a1":"Dreamscope memadukan khazanah tafsir klasik — termasuk tradisi Ibnu Sirin — dengan psikologi kedalaman modern. Anda menceritakan mimpi dengan kata-kata sendiri dan menerima pembacaan yang menghubungkan simbolnya dengan makna umumnya lintas budaya.","q2":"Apakah mimpi saya privat?","a2":"Ya. Mimpi Anda hanya tersimpan di penyimpanan lokal peramban di perangkat Anda. Tidak ada yang dikirim ke server, dan Anda bisa menghapus riwayat kapan saja.","q3":"Dalam bahasa apa saya bisa menafsirkan mimpi?","a3":"Dreamscope mendukung 60 bahasa, termasuk bahasa Indonesia, Inggris, Arab, Spanyol, Prancis, Jerman, Mandarin, Jepang, Korea, Turki, Portugis, Rusia, Hindi, dan lainnya. Pembacaan mengikuti bahasa yang Anda pilih.","q4":"Apakah tafsiran menggantikan nasihat profesional?","a4":"Tidak. Pembacaan mimpi untuk merenung dan hiburan. Ini bukan panduan medis, psikologis, atau keagamaan. Jika Anda sedang berjuang, bicaralah dengan profesional yang kompeten.","q5":"Berapa banyak simbol mimpi yang dicakup?","a5":"Dreamscope memiliki halaman khusus untuk 146 simbol umum — ular, air, terbang, api, kehamilan, uang, dan banyak lagi — masing-masing dalam berbagai bahasa dengan ragam pertanyaan."},"notfound":{"title":"Mimpi ini larut","lede":"Halaman yang Anda cari tidak ada di sini. Mari kembali menafsirkan.","cta":"Kembali ke beranda"}}
+{
+  "nav": {
+    "interpret": "Tafsirkan",
+    "symbols": "Simbol",
+    "about": "Tentang",
+    "faq": "FAQ",
+    "history": "Riwayat",
+    "saved": "Tersimpan",
+    "contact": "Kontak",
+    "start": "Mulai",
+    "home": "Beranda",
+    "aiBlog": "Blog AI",
+    "ansyGroup": "Ansy Group",
+    "language": "Bahasa",
+    "searchLanguage": "Cari bahasa…",
+    "noLanguage": "Tidak ada bahasa yang cocok dengan pencarian Anda."
+  },
+  "footer": {
+    "tagline": "Tafsir mimpi dengan AI, gratis — berdasarkan tradisi Ibnu Sirin dan psikologi modern.",
+    "copyright": "© {year} Dreamscope"
+  },
+  "home": {
+    "heroTitle": "Apa yang {accent} Anda coba sampaikan",
+    "heroAccent": "bawah sadar",
+    "heroLede": "Simbolisme kuno, psikologi modern, dan AI — dipadukan dalam satu pembacaan yang jelas. Ceritakan mimpi Anda dengan kata-kata sendiri dan dapatkan tafsir yang berakar pada Ibnu Sirin dan psikologi kedalaman.",
+    "interpretCta": "Tafsirkan mimpi",
+    "browseCta": "Jelajahi simbol",
+    "statLanguages": "{n} bahasa",
+    "statSymbols": "{n} simbol mimpi",
+    "statPrivateLine": "privat, di perangkat Anda",
+    "whyTitle": "Pembacaan yang benar-benar berguna",
+    "whyLede": "Dreamscope memecah mimpi Anda menjadi simbol-simbolnya, lalu membacanya melalui tradisi yang Anda percayai — psikologi di sisinya, bukan menggantikannya.",
+    "feature1Title": "Analisis simbolik",
+    "feature1Body": "Setiap mimpi diurai ke simbol-simbol intinya dan ditelusuri melalui berabad-abad tradisi tafsir.",
+    "feature2Title": "60 bahasa",
+    "feature2Body": "Tafsirkan dan baca simbol dalam bahasa Indonesia, Inggris, Arab, Mandarin, Jepang, dan 55 bahasa lainnya.",
+    "feature3Title": "Semua tradisi",
+    "feature3Body": "Ibnu Sirin, psikologi kedalaman, dan perspektif berbagai keyakinan — satu pembacaan, lewat kacamata Anda.",
+    "feature4Title": "Tersimpan & privat",
+    "feature4Body": "Mimpi Anda tetap di perangkat Anda. Baca ulang, bandingkan, dan pantau polanya dari waktu ke waktu.",
+    "sampleTag": "Contoh pembacaan",
+    "sampleJustNow": "baru saja",
+    "sampleDream": "\"Aku melihat ular hijau keluar dari rumah lewat pintu taman.\"",
+    "sampleReading": "Ular menandai transformasi — ada sesuatu dalam hidup Anda yang sedang meranggas. Pintu menandakan pintu keluar yang jelas sedang terbuka. Dalam tradisi Ibnu Sirin, ular yang tidak berbahaya meninggalkan rumah sering berarti kekhawatiran lama akhirnya pergi.",
+    "sampleTag1": "Transformasi",
+    "sampleTag2": "Pelepasan",
+    "sampleTag3": "Ibnu Sirin",
+    "sampleSaved": "Tersimpan di perangkat Anda",
+    "symbolsTitle": "Setiap simbol membawa makna",
+    "symbolsLede": "Dari air hingga api, jelajahi motif mimpi yang paling umum dan apa yang biasanya disampaikan masing-masing lintas tradisi.",
+    "ctaTitle": "Ceritakan mimpi Anda",
+    "ctaLede": "Beberapa kalimat cukup. Pembacaan hanya beberapa detik dan tetap di perangkat Anda.",
+    "ctaButton": "Mulai menafsirkan"
+  },
+  "interpret": {
+    "title": "Ceritakan mimpi Anda",
+    "lede": "Tulis dengan kata-kata sendiri. Semakin banyak detail, semakin tajam pembacaannya — latar, perasaan, dan hal-hal aneh semuanya berarti.",
+    "language": "Bahasa",
+    "yourDream": "Mimpi Anda",
+    "placeholder": "Semalam aku bermimpi melewati pintu yang terus berubah bentuk...",
+    "loading": "Menafsirkan...",
+    "button": "Tafsirkan mimpi",
+    "yourReading": "Pembacaan Anda",
+    "save": "Simpan",
+    "viewHistory": "Lihat riwayat",
+    "errorEmpty": "Ceritakan mimpi Anda terlebih dahulu.",
+    "errorFailed": "Tafsiran gagal. Silakan coba lagi.",
+    "errorNetwork": "Kesalahan koneksi. Silakan coba lagi."
+  },
+  "history": {
+    "title": "Riwayat mimpi",
+    "lede": "Setiap tafsiran yang Anda buat, tersimpan di perangkat ini.",
+    "empty": "Belum ada mimpi yang ditafsirkan."
+  },
+  "saved": {
+    "title": "Mimpi tersimpan",
+    "lede": "Simpan tafsiran yang berarti bagi Anda. Semuanya tetap di perangkat ini.",
+    "empty": "Belum ada yang tersimpan."
+  },
+  "common": {
+    "interpretCta": "Tafsirkan mimpi",
+    "delete": "Hapus",
+    "remove": "Buang",
+    "backHome": "Kembali ke beranda"
+  },
+  "symbols": {
+    "title": "{n} simbol mimpi",
+    "lede": "Jelajahi setiap simbol yang kami tafsirkan — gratis, dalam puluhan bahasa. Pilih simbol Anda untuk membaca maknanya.",
+    "search": "Cari simbol…"
+  },
+  "about": {
+    "title": "Pembacaan jernih, berakar pada tradisi",
+    "p1": "Dreamscope hadir agar tafsir mimpi bisa diakses dalam bahasa Anda sendiri. Kami memadukan dua aliran pemahaman: khazanah klasik Islam Ibnu Sirin — salah satu penafsir mimpi paling berpengaruh dalam sejarah — dan kerangka simbolik psikologi kedalaman modern.",
+    "p2": "Setiap pembacaan dibuat untuk membantu Anda merenung — bukan meramal masa depan. Simbol seperti air, api, terbang, atau ular telah membawa makna lintas budaya selama ribuan tahun, dan tafsiran kami menelusuri benang itu agar Anda menemukan yang beresonansi dengan hidup Anda.",
+    "p3": "Layanan ini gratis, privat sejak desainnya, dan tersedia dalam 60 bahasa. Mimpi Anda tidak pernah meninggalkan perangkat Anda.",
+    "card1Title": "Ibnu Sirin",
+    "card1Body": "Khazanah mimpi klasik Islam, ditelusuri melalui berabad-abad tafsir.",
+    "card2Title": "60 bahasa",
+    "card2Body": "Dari Arab hingga Jepang — tafsirkan dalam bahasa Anda bermimpi.",
+    "card3Title": "100% privat",
+    "card3Body": "Mimpi tetap di perangkat Anda. Tanpa akun, tanpa pelacakan.",
+    "cta": "Mulai menafsirkan"
+  },
+  "contact": {
+    "title": "Hubungi kami",
+    "lede": "Ada pertanyaan, koreksi, atau ide kemitraan? Kirim email ke tim Dreamscope.",
+    "email": "Email",
+    "disclaimer": "Dreamscope menyediakan konten untuk renungan dan hiburan saja. Tafsiran bukan nasihat medis, psikologis, atau keagamaan. Jika Anda butuh dukungan, konsultasikan dengan profesional yang kompeten.",
+    "back": "Kembali ke penafsir"
+  },
+  "faq": {
+    "title": "Pertanyaan umum",
+    "q1": "Bagaimana Dreamscope menafsirkan mimpi?",
+    "a1": "Dreamscope memadukan khazanah tafsir klasik — termasuk tradisi Ibnu Sirin — dengan psikologi kedalaman modern. Anda menceritakan mimpi dengan kata-kata sendiri dan menerima pembacaan yang menghubungkan simbolnya dengan makna umumnya lintas budaya.",
+    "q2": "Apakah mimpi saya privat?",
+    "a2": "Ya. Mimpi Anda hanya tersimpan di penyimpanan lokal peramban di perangkat Anda. Tidak ada yang dikirim ke server, dan Anda bisa menghapus riwayat kapan saja.",
+    "q3": "Dalam bahasa apa saya bisa menafsirkan mimpi?",
+    "a3": "Dreamscope mendukung 60 bahasa, termasuk bahasa Indonesia, Inggris, Arab, Spanyol, Prancis, Jerman, Mandarin, Jepang, Korea, Turki, Portugis, Rusia, Hindi, dan lainnya. Pembacaan mengikuti bahasa yang Anda pilih.",
+    "q4": "Apakah tafsiran menggantikan nasihat profesional?",
+    "a4": "Tidak. Pembacaan mimpi untuk merenung dan hiburan. Ini bukan panduan medis, psikologis, atau keagamaan. Jika Anda sedang berjuang, bicaralah dengan profesional yang kompeten.",
+    "q5": "Berapa banyak simbol mimpi yang dicakup?",
+    "a5": "Dreamscope memiliki halaman khusus untuk 146 simbol umum — ular, air, terbang, api, kehamilan, uang, dan banyak lagi — masing-masing dalam berbagai bahasa dengan ragam pertanyaan."
+  },
+  "notfound": {
+    "title": "Mimpi ini larut",
+    "lede": "Halaman yang Anda cari tidak ada di sini. Mari kembali menafsirkan.",
+    "cta": "Kembali ke beranda"
+  }
+}

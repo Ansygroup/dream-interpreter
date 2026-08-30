@@ -54,7 +54,6 @@
     "ctaButton": "Start Interpreting"
   },
   "interpret": {
-    "eyebrow": "Interpret",
     "title": "Describe your dream",
     "lede": "Write it in your own words. The more detail, the sharper the reading — setting, feelings, and anything unusual all matter.",
     "language": "Language",
@@ -64,7 +63,6 @@
     "button": "Interpret Dream",
     "yourReading": "Your Reading",
     "save": "Save",
-    "saved": "Saved",
     "viewHistory": "View History",
     "errorEmpty": "Please describe your dream first.",
     "errorFailed": "The interpretation failed. Please try again.",
@@ -78,13 +76,11 @@
     "perspectiveDesc": "One reading that weaves the wisest threads of world traditions with depth psychology."
   },
   "history": {
-    "eyebrow": "Your Activity",
     "title": "Dream history",
     "lede": "Every interpretation you've generated, stored on this device.",
     "empty": "No dreams interpreted yet."
   },
   "saved": {
-    "eyebrow": "Your Library",
     "title": "Saved dreams",
     "lede": "Keep the interpretations that mattered. They stay on this device.",
     "empty": "Nothing saved yet."
@@ -96,13 +92,11 @@
     "backHome": "Return Home"
   },
   "symbols": {
-    "eyebrow": "Dream Symbol Dictionary",
     "title": "{n} Dream Symbols",
     "lede": "Browse every symbol we interpret — free, in dozens of languages. Pick yours to read the meaning.",
     "search": "Search a symbol…"
   },
   "about": {
-    "eyebrow": "About",
     "title": "A clear reading, rooted in tradition",
     "p1": "Dreamscope exists to make dream interpretation accessible in your own language. We combine two streams of understanding: the classical Islamic dream scholarship of Ibn Sirin, one of the most influential dream interpreters in history, and the symbolic frameworks of modern depth psychology.",
     "p2": "Every reading is generated to help you reflect — not to predict the future. Symbols like water, fire, flight, or a snake have carried meaning across cultures for thousands of years, and our interpretations trace those threads so you can find what resonates with your own life.",
@@ -118,7 +112,6 @@
     "traditionsLede": "Pick the lens your heart trusts — each reading is generated through a dedicated interpretation school."
   },
   "contact": {
-    "eyebrow": "Contact",
     "title": "Get in touch",
     "lede": "Questions, corrections, or partnership ideas? Reach the Dreamscope team by email.",
     "email": "Email",
@@ -126,7 +119,6 @@
     "back": "Back to Interpreter"
   },
   "faq": {
-    "eyebrow": "FAQ",
     "title": "Frequently asked questions",
     "q1": "How does Dreamscope interpret dreams?",
     "a1": "Dreamscope blends classical dream scholarship — including Ibn Sirin's tradition — with modern depth psychology. You describe a dream in your own words and receive a reading that maps its symbols to their common meanings across cultures.",
@@ -140,7 +132,6 @@
     "a5": "Dreamscope has dedicated pages for 146 common symbols — snake, water, flying, fire, pregnancy, money, and many more — each available in multiple languages with long-tail question variants."
   },
   "notfound": {
-    "code": "404",
     "title": "This dream dissolved",
     "lede": "The page you were looking for isn't here. Let's get you back to interpreting.",
     "cta": "Return Home"

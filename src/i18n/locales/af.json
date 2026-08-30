@@ -1,1 +1,58 @@
-{"nav":{"interpret":"Vertolk","symbols":"Simbole","about":"Oor ons","faq":"Gereelde vrae","history":"Geskiedenis","saved":"Bewaar","contact":"Kontak","start":"Begin","home":"Tuis","aiBlog":"AI-webjoernaal","ansyGroup":"Ansy Group","language":"Taal","searchLanguage":"Soek tale…","noLanguage":"Geen taal pas met jou soektog nie."},"footer":{"tagline":"Droomvertolking met KI, gratis — volgens die tradisie van Ibn Sirin en moderne sielkunde.","copyright":"© {year} Dreamscope"},"home":{"heroTitle":"Wat jou {accent} probeer sê","heroAccent":"onderbewuste","heroLede":"Antieke simboliek, moderne sielkunde en KI — verenig in een helder lesing. Beskryf jou droom in jou eie woorde en ontvang 'n vertolking gegrond in Ibn Sirin en dieptesielkunde.","interpretCta":"Vertolk 'n droom","browseCta":"Verken simbole","ctaTitle":"Beskryf jou droom","ctaButton":"Begin vertolk"},"interpret":{"title":"Beskryf jou droom","language":"Taal","yourDream":"Jou droom","placeholder":"Laasnag het ek gedroom dat ek deur 'n deur loop wat gedurig van vorm verander...","button":"Vertolk die droom"},"common":{"interpretCta":"Vertolk 'n droom","backHome":"Terug huis toe"},"history":{"title":"Droomgeskiedenis","empty":"Nog geen drome vertolk nie."},"saved":{"title":"Bewaarde drome","empty":"Nog niks bewaar nie."},"symbols":{"title":"{n} droomsimbole","search":"Soek 'n simbool…"},"notfound":{"title":"Hierdie droom het opgelos","cta":"Terug huis toe"}}
+{
+  "nav": {
+    "interpret": "Vertolk",
+    "symbols": "Simbole",
+    "about": "Oor ons",
+    "faq": "Gereelde vrae",
+    "history": "Geskiedenis",
+    "saved": "Bewaar",
+    "contact": "Kontak",
+    "start": "Begin",
+    "home": "Tuis",
+    "aiBlog": "AI-webjoernaal",
+    "ansyGroup": "Ansy Group",
+    "language": "Taal",
+    "searchLanguage": "Soek tale…",
+    "noLanguage": "Geen taal pas met jou soektog nie."
+  },
+  "footer": {
+    "tagline": "Droomvertolking met KI, gratis — volgens die tradisie van Ibn Sirin en moderne sielkunde.",
+    "copyright": "© {year} Dreamscope"
+  },
+  "home": {
+    "heroTitle": "Wat jou {accent} probeer sê",
+    "heroAccent": "onderbewuste",
+    "heroLede": "Antieke simboliek, moderne sielkunde en KI — verenig in een helder lesing. Beskryf jou droom in jou eie woorde en ontvang 'n vertolking gegrond in Ibn Sirin en dieptesielkunde.",
+    "interpretCta": "Vertolk 'n droom",
+    "browseCta": "Verken simbole",
+    "ctaTitle": "Beskryf jou droom",
+    "ctaButton": "Begin vertolk"
+  },
+  "interpret": {
+    "title": "Beskryf jou droom",
+    "language": "Taal",
+    "yourDream": "Jou droom",
+    "placeholder": "Laasnag het ek gedroom dat ek deur 'n deur loop wat gedurig van vorm verander...",
+    "button": "Vertolk die droom"
+  },
+  "common": {
+    "interpretCta": "Vertolk 'n droom",
+    "backHome": "Terug huis toe"
+  },
+  "history": {
+    "title": "Droomgeskiedenis",
+    "empty": "Nog geen drome vertolk nie."
+  },
+  "saved": {
+    "title": "Bewaarde drome",
+    "empty": "Nog niks bewaar nie."
+  },
+  "symbols": {
+    "title": "{n} droomsimbole",
+    "search": "Soek 'n simbool…"
+  },
+  "notfound": {
+    "title": "Hierdie droom het opgelos",
+    "cta": "Terug huis toe"
+  }
+}

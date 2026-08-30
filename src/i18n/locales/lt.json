@@ -54,7 +54,6 @@
     "ctaButton": "Pradėti interpretuoti"
   },
   "interpret": {
-    "eyebrow": "Interpretuoti",
     "title": "Aprašykite savo sapną",
     "lede": "Rašykite savais žodžiais. Kuo daugiau detalių, tuo tikslesnis aiškinimas — aplinka, jausmai ir visa, kas neįprasta, visi svarbu.",
     "language": "Kalba",
@@ -64,7 +63,6 @@
     "button": "Interpretuoti sapną",
     "yourReading": "Jūsų aiškinimas",
     "save": "Išsaugoti",
-    "saved": "Išsaugota",
     "viewHistory": "Peržiūrėti istoriją",
     "errorEmpty": "Pirmiausia aprašykite savo sapną.",
     "errorFailed": "Interpretuoti nepavyko. Bandykite dar kartą.",
@@ -78,13 +76,11 @@
     "perspectiveDesc": "Vienas aiškinimas, kuriame persipina išmintingiausi pasaulio tradicijų siūlai su gelmės psichologija."
   },
   "history": {
-    "eyebrow": "Jūsų veikla",
     "title": "Sapnų istorija",
     "lede": "Kiekviena jūsų sugeneruota interpretacija, saugoma šiame įrenginyje.",
     "empty": "Dar neinterpretuota nė vieno sapno."
   },
   "saved": {
-    "eyebrow": "Jūsų biblioteka",
     "title": "Išsaugoti sapnai",
     "lede": "Pasilikite aiškinimus, kurie buvo svarbūs. Jie lieka šiame įrenginyje.",
     "empty": "Kol kas nieko neišsaugota."
@@ -96,13 +92,11 @@
     "backHome": "Grįžti į pradžią"
   },
   "symbols": {
-    "eyebrow": "Sapnų simbolių žodynas",
     "title": "{n} sapnų simboliai",
     "lede": "Peržiūrėkite visus simbolius, kuriuos interpretuojame — nemokamai, dešimtimis kalbų. Pasirinkite savo kalbą ir skaitykite reikšmę.",
     "search": "Ieškoti simbolio…"
   },
   "about": {
-    "eyebrow": "Apie",
     "title": "Aiškus aiškinimas, įsišaknijęs tradicijoje",
     "p1": "Dreamscope siekia sapnų interpretaciją padaryti prieinamą jūsų gimtąja kalba. Mes deriname du supratimo srautus: klasikinę islamiškąją sapnų hermeneutiką Ibn Sirino — vieno įtakingiausių sapnų interpretatorių istorijoje — ir šiuolaikinės gelmės psichologijos simbolinius pagrindus.",
     "p2": "Kiekvienas aiškinimas generuojamas tam, kad padėtų jums apmąstyti — o ne nuspėti ateitį. Tokie simboliai kaip vanduo, ugnis, skrydis ar gyvatė tūkstančius metų nešė prasmę įvairiose kultūrose, o mūsų interpretacijos atseka tas gijas, kad rastumėte tai, kas rezonuoja su jūsų gyvenimu.",
@@ -118,7 +112,6 @@
     "traditionsLede": "Pasirinkite prizmę, kuria pasitiki jūsų širdis — kiekvienas aiškinimas generuojamas per specialią interpretavimo mokyklą."
   },
   "contact": {
-    "eyebrow": "Kontaktai",
     "title": "Susisiekime",
     "lede": "Klausimai, pataisymai ar partnerystės idėjos? Susiekite su Dreamscope komanda el. paštu.",
     "email": "El. paštas",
@@ -126,7 +119,6 @@
     "back": "Grįžti į interpretavimą"
   },
   "faq": {
-    "eyebrow": "DUK",
     "title": "Dažniausiai užduodami klausimai",
     "q1": "Kaip Dreamscope interpretuoja sapnus?",
     "a1": "Dreamscope derina klasikinę sapnų hermeneutiką — įskaitant Ibn Sirino tradiciją — su šiuolaikine gelmės psichologija. Jūs aprašote sapną savais žodžiais ir gaunate aiškinimą, kuriame jo simboliai susiejami su jų bendrosiomis reikšmėmis įvairiose kultūrose.",
@@ -140,7 +132,6 @@
     "a5": "Dreamscope turi atskirus puslapius 146 dažniems simboliams — gyvatė, vanduo, skrydis, ugnis, nėštumas, pinigai ir daugelis kitų — kiekvienas prieinamas keliomis kalbomis su įvairiais klausimų variantais."
   },
   "notfound": {
-    "code": "404",
     "title": "Šis sapnas išsisklaidė",
     "lede": "Puslapis, kurio ieškojote, čia nerastas. Grįžkime prie interpretavimo.",
     "cta": "Grįžti į pradžią"

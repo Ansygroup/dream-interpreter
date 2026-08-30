@@ -1,1 +1,58 @@
-{"nav":{"interpret":"Tafsiri","symbols":"Ishara","about":"Kutuhusu","faq":"Maswali","history":"Historia","saved":"Vilivyohifadhiwa","contact":"Wasiliana","start":"Anza","home":"Mwanzo","aiBlog":"Blogu ya AI","ansyGroup":"Ansy Group","language":"Lugha","searchLanguage":"Tafuta lugha…","noLanguage":"Hakuna lugha inayolingana na utafutaji wako."},"footer":{"tagline":"Kutafsiri ndoto kwa AI, bila malipo — kulingana na tradition ya Ibn Sirin na saikolojia ya kisasa.","copyright":"© {year} Dreamscope"},"home":{"heroTitle":"{accent} yako inajaribu kusema nini","heroAccent":"akili ifichayo","heroLede":"Ishara za kale, saikolojia ya kisasa, na AI — zimeunganwa katika usomaji mmoja uwazi. Eleza ndoto yako kwa maneno yako mwenyewe na upate tafsiri iliyozama katika Ibn Sirin na saikolojia ya kina.","interpretCta":"Tafsiri ndoto","browseCta":"Vinjari ishara","ctaTitle":"Eleza ndoto yako","ctaButton":"Anza kutafsiri"},"interpret":{"title":"Eleza ndoto yako","language":"Lugha","yourDream":"Ndoto yako","placeholder":"Jana usiku niliota nilipita kwenye mlango uliokuwa ukibadilisha umbo...","button":"Tafsiri ndoto"},"common":{"interpretCta":"Tafsiri ndoto","backHome":"Rudi mwanzo"},"history":{"title":"Historia ya ndoto","empty":"Hakuna ndoto iliyotafsiriwa bado."},"saved":{"title":"Ndoto zilizohifadhiwa","empty":"Hakuna kilichohifadhiwa bado."},"symbols":{"title":"Ishara {n} za ndoto","search":"Tafuta ishara…"},"notfound":{"title":"Ndoto hii imeyeyuka","cta":"Rudi mwanzo"}}
+{
+  "nav": {
+    "interpret": "Tafsiri",
+    "symbols": "Ishara",
+    "about": "Kutuhusu",
+    "faq": "Maswali",
+    "history": "Historia",
+    "saved": "Vilivyohifadhiwa",
+    "contact": "Wasiliana",
+    "start": "Anza",
+    "home": "Mwanzo",
+    "aiBlog": "Blogu ya AI",
+    "ansyGroup": "Ansy Group",
+    "language": "Lugha",
+    "searchLanguage": "Tafuta lugha…",
+    "noLanguage": "Hakuna lugha inayolingana na utafutaji wako."
+  },
+  "footer": {
+    "tagline": "Kutafsiri ndoto kwa AI, bila malipo — kulingana na tradition ya Ibn Sirin na saikolojia ya kisasa.",
+    "copyright": "© {year} Dreamscope"
+  },
+  "home": {
+    "heroTitle": "{accent} yako inajaribu kusema nini",
+    "heroAccent": "akili ifichayo",
+    "heroLede": "Ishara za kale, saikolojia ya kisasa, na AI — zimeunganwa katika usomaji mmoja uwazi. Eleza ndoto yako kwa maneno yako mwenyewe na upate tafsiri iliyozama katika Ibn Sirin na saikolojia ya kina.",
+    "interpretCta": "Tafsiri ndoto",
+    "browseCta": "Vinjari ishara",
+    "ctaTitle": "Eleza ndoto yako",
+    "ctaButton": "Anza kutafsiri"
+  },
+  "interpret": {
+    "title": "Eleza ndoto yako",
+    "language": "Lugha",
+    "yourDream": "Ndoto yako",
+    "placeholder": "Jana usiku niliota nilipita kwenye mlango uliokuwa ukibadilisha umbo...",
+    "button": "Tafsiri ndoto"
+  },
+  "common": {
+    "interpretCta": "Tafsiri ndoto",
+    "backHome": "Rudi mwanzo"
+  },
+  "history": {
+    "title": "Historia ya ndoto",
+    "empty": "Hakuna ndoto iliyotafsiriwa bado."
+  },
+  "saved": {
+    "title": "Ndoto zilizohifadhiwa",
+    "empty": "Hakuna kilichohifadhiwa bado."
+  },
+  "symbols": {
+    "title": "Ishara {n} za ndoto",
+    "search": "Tafuta ishara…"
+  },
+  "notfound": {
+    "title": "Ndoto hii imeyeyuka",
+    "cta": "Rudi mwanzo"
+  }
+}

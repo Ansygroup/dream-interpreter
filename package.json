@@ -13,7 +13,8 @@
     "symbols:regen": "node scripts/symbols-regen.mjs",
     "deploy": "vercel deploy --prod --yes",
     "ship": "git add -A && git commit -m \"%npm_config_msg%\" && git push origin master && npm run deploy",
-    "health": "node scripts/health.mjs"
+    "health": "node scripts/health.mjs",
+    "qa": "node scripts/qa-translations.mjs"
   },
   "dependencies": {
     "@fontsource-variable/jetbrains-mono": "^5.3.0",

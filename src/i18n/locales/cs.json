@@ -53,7 +53,6 @@
     "ctaButton": "Začít interpretovat"
   },
   "interpret": {
-    "eyebrow": "Interpretovat",
     "title": "Popište svůj sen",
     "lede": "Napište to svými vlastními slovy. Čím více detailů, tím ostřejší bude čtení — prostředí, pocity a cokoli neobvyklého mají význam.",
     "language": "Jazyk",
@@ -63,7 +62,6 @@
     "button": "Interpretovat sen",
     "yourReading": "Vaše čtení",
     "save": "Uložit",
-    "saved": "Uloženo",
     "viewHistory": "Zobrazit historii",
     "errorEmpty": "Nejprve popište svůj sen.",
     "errorFailed": "Interpretace se nezdařila. Prosím zkuste to znovu.",
@@ -88,13 +86,11 @@
     }
   },
   "history": {
-    "eyebrow": "Vaše aktivita",
     "title": "Historie snů",
     "lede": "Každá interpretace, kterou jste vygenerovali, je uložena na tomto zařízení.",
     "empty": "Ještě nebyly interpretovány žádné sny."
   },
   "saved": {
-    "eyebrow": "Vaše knihovna",
     "title": "Uložené sny",
     "lede": "Uchovejte interpretace, které byly důležité. Zůstávají na tomto zařízení.",
     "empty": "Ještě nic nebylo uloženo."
@@ -106,13 +102,11 @@
     "backHome": "Návrat na domovskou stránku"
   },
   "symbols": {
-    "eyebrow": "Slovník symbolů snů",
     "title": "{n} symbolů snů",
     "lede": "Procházejte všechny symboly, které interpretujeme — zdarma, v desítkách jazyků. Vyberte si svůj a přečtěte si jeho význam.",
     "search": "Vyhledat symbol…"
   },
   "about": {
-    "eyebrow": "O nás",
     "title": "Jasné čtení zakořeněné v tradici",
     "p1": "Dreamscope existuje, aby zpřístupnila interpretaci snů ve vašem vlastním jazyce. Kombinujeme dva proudy porozumění: klasickou islámskou stipendii snů Ibn Sirin, jednoho z nejvlivnějších interpretů snů v historii, a symbolické rámce moderní hluboké psychologie.",
     "p2": "Každé čtení je generováno, aby vám pomohlo přemýšlet — ne předpovídat budoucnost. Symboly jako voda, oheň, let nebo had nesly význam napříč kulturami po tisíce let, a naše interpretace tyto nitě sledují, abyste mohli najít, co rezonuje s vaším životem.",
@@ -126,7 +120,6 @@
     "cta": "Začít interpretovat"
   },
   "contact": {
-    "eyebrow": "Kontakt",
     "title": "Navázat kontakt",
     "lede": "Máte otázky, připomínky nebo nápady na spolupráci? Kontaktujte tým Dreamscope e-mailem.",
     "email": "E-mail",
@@ -134,7 +127,6 @@
     "back": "Zpět k interpretaci"
   },
   "faq": {
-    "eyebrow": "Často kladené otázky",
     "title": "Často kladené otázky",
     "q1": "Jak Dreamscope interpretuje sny?",
     "a1": "Dreamscope kombinuje klasickou stipendii snů — včetně tradice Ibn Sirin — s moderní hlubokou psychologií. Popíšete sen svými vlastními slovy a obdržíte čtení, které namapuje jeho symboly na jejich běžné významy napříč kulturami.",
@@ -148,7 +140,6 @@
     "a5": "Dreamscope má věnované stránky pro 146 běžných symbolů — had, voda, létání, oheň, těhotenství, peníze a mnoho dalších — každý dostupný v několika jazycích s variantami dlouhých dotazů."
   },
   "notfound": {
-    "code": "404",
     "title": "Tento sen se rozplynul",
     "lede": "Stránka, kterou jste hledali, zde není. Pojďme vás vrátit k interpretaci.",
     "cta": "Návrat na domovskou stránku"

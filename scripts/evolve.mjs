@@ -114,21 +114,23 @@ if (!args.includes('--no-daily')) {
     return d.interpretation;
   };
 
-  try {
-    const readingEn = await interpret(scenario.en, 'en');
-    await sleep(2000);
-    const readingAr = await interpret(scenario.ar, 'ar');
-    const out = {
-      date: today,
-      symbol: { key: scenario.key, en: scenario.key, ar: '' },
-      dream: { en: scenario.en, ar: scenario.ar },
-      reading: { en: readingEn, ar: readingAr },
-    };
-    writeFileSync(outFile, JSON.stringify(out, null, 2) + '\n', 'utf8');
-    console.log(`  ✓ dream of the day (${scenario.key}) generated`);
-  } catch (e) {
-    console.log(`  ✗ dream of the day failed: ${e?.message || e}`);
-    process.exitCode = 1;
+  if (!dailyDone) {
+    try {
+      const readingEn = await interpret(scenario.en, 'en');
+      await sleep(2000);
+      const readingAr = await interpret(scenario.ar, 'ar');
+      const out = {
+        date: today,
+        symbol: { key: scenario.key, en: scenario.key, ar: '' },
+        dream: { en: scenario.en, ar: scenario.ar },
+        reading: { en: readingEn, ar: readingAr },
+      };
+      writeFileSync(outFile, JSON.stringify(out, null, 2) + '\n', 'utf8');
+      console.log(`  ✓ dream of the day (${scenario.key}) generated`);
+    } catch (e) {
+      console.log(`  ✗ dream of the day failed: ${e?.message || e}`);
+      process.exitCode = 1;
+    }
   }
 }
 

@@ -39,6 +39,18 @@ deploy "$REPOS/ansygroup.com"   "ansygroup.com"
 deploy "$REPOS/dream-interpreter" "dream-interpreter"
 deploy "$REPOS/ai-blog"          "ai-blog"
 
+# --- IndexNow ping (only if INDEXNOW_KEY env is present) ---
+ping_indexnow() {
+  local key="${INDEXNOW_KEY:-}"
+  [ -z "$key" ] && { log "INDEXNOW_KEY not set -> skip IndexNow ping (user withheld key)"; return 0; }
+  log "[indexnow] pinging with key ${key:0:8}..."
+  curl -s -X POST "https://api.indexnow.org/indexnow" \
+    -H "Content-Type: application/json; charset=utf-8" \
+    -d "{\"host\":\"dream-interpreter-alpha-ruddy.vercel.app\",\"key\":\"$key\",\"keyLocation\":\"https://dream-interpreter-alpha-ruddy.vercel.app/$key.txt\",\"urlList\":[\"https://dream-interpreter-alpha-ruddy.vercel.app/sitemap.xml\"]}" \
+    | tee -a "$LOG"
+  log "[indexnow] done"
+}
+
 log "=== deploy run complete ==="
 
 # --- Post-deploy verification (curl live) ---
@@ -51,4 +63,5 @@ curl -s -L "$B" --max-time 20 | grep -o "ca-pub-4665838048081250" | head -1 | se
 curl -s -L "$B/seo/snake/ar" --max-time 20 | grep -o "Explore our network" | head -1 | sed 's/^/di_network:/' | tee -a "$LOG"
 curl -s -L "$AB" --max-time 20 | grep -o "Dream Interpreter" | head -1 | sed 's/^/blog_link:/' | tee -a "$LOG"
 log "=== VERIFY done ==="
+ping_indexnow
 log "USER ACTION: submit sitemap.xml in Bing Webmaster + GSC (already verified)."

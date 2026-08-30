@@ -9,6 +9,81 @@
 
 ---
 
+## 0) الأوامر الموحدة (كل شيء بأمر واحد)
+
+```bash
+npm run build      # بناء كامل (+ توليد صفحات SEO وsitemap)
+npm run deploy     # نشر على الإنتاج
+npm run evolve     # دورة التطور اليومية (ترجمات + حلم اليوم)
+npm run translate  # إكمال ترجمات الواجهة الناقصة فقط
+npm run symbols:regen  # إعادة توليد قائمة الرموز من seo-data
+npm run health     # فحص صحة الموقع الحي (6 فحوصات)
+npm run ship msg="نص الكوميت"  # commit + push + deploy
+```
+
+## 0.1) المخططات المرئية
+
+### تدفق التفسير (قبل البرومبت وبعده)
+```mermaid
+flowchart TD
+    A[طلب POST /api/interpret] --> B{حقل dream موجود؟}
+    B -- لا --> E400[400 خطأ]
+    B -- نعم --> C{حد الاستخدام<br/>12/دقيقة لكل IP}
+    C -- تجاوز --> E429[429 انتظر]
+    C -- داخل الحد --> D[تعتيم البيانات الحساسة<br/>بريد/هاتف/روابط]
+    D --> E{في الكاش؟<br/>نفس الحلم+اللغة+المنظور}
+    E -- نعم --> R1[رد فوري engine=cache]
+    E -- لا --> F{الميزانية اليومية<br/>300 LLM/مثيل}
+    F -- استُنفدت --> OFF
+    F -- متاحة --> G[سلسلة النماذج المجانية<br/>GLM → MiniMax → Nemotron → Gemma → Ling]
+    G --> H{الرد بلغة الطلب؟<br/>فحص الحروف}
+    H -- لا --> G
+    H -- نعم --> I[كاش + رد engine=نموذج]
+    G -- فشل الكل --> OFF[قاعدة الرموز الأوفلاين<br/>+ خاتمة حسب المنظور]
+    OFF --> R2[رد engine=offline]
+```
+
+### دورة التطور اليومية (3 فجراً)
+```mermaid
+flowchart LR
+    A[كرون 3 صباحاً] --> B[node scripts/evolve.mjs]
+    B --> C[اكتشاف اللغات الناقصة<br/>التي تنقصها about]
+    C --> D{لغات ناقصة؟}
+    D -- نعم --> E[POST /api/translate<br/>لكل لغة عبر النماذج المجانية]
+    E -- 429 استنزاف --> F[توقف بلطف<br/>يُكمل غداً]
+    E -- نجاح --> G[كتابة locale كامل]
+    D -- لا --> H
+    G --> H[توليد حلم اليوم<br/>عربي + إنجليزي]
+    H --> I[public/dream-today.json]
+    I --> J[git commit + push<br/>+ npm run deploy]
+```
+
+### تدفق النشر
+```mermaid
+flowchart TD
+    A[تعديلات] --> B[npm run ship أو push يدوي]
+    B --> C[git push origin master]
+    C --> D{GitHub Actions<br/>مفعّل بالأسرار؟}
+    D -- نعم --> E[نشر تلقائي]
+    D -- لا --> F[npm run deploy يدوي]
+    E --> G{الحالة}
+    F --> G
+    G -- Queued --> H[انتظر الطابور<br/>vercel ls]
+    G -- Ready --> I[تحقق: npm run health]
+```
+
+### تفعيل الحسابات (عند وصول المفاتيح)
+```mermaid
+flowchart LR
+    A[mفاتيح Supabase] --> B[تنفيذ supabase/schema.sql]
+    B --> C[تفعيل Email + Google providers]
+    C --> D[vercel env add VITE_SUPABASE_URL + ANON_KEY]
+    D --> E[npm run deploy]
+    E --> F[أيقونة الحساب تظهر تلقائياً<br/>+ ترحيل أحلام الزوار عند أول دخول]
+```
+
+---
+
 ## 1) دورة النشر (Deployment)
 
 ⚠️ **تكامل Git→Vercel غير مفعّل في هذا المشروع** — الـ push وحده لا ينشر!

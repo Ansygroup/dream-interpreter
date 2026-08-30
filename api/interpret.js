@@ -257,6 +257,75 @@ Rules:
   throw new Error('all-models-failed');
 }
 
+/* ---------------- Pre-prompt pipeline ---------------- */
+
+// Response cache (per warm instance; TTL 24h, capped at 500 entries)
+const CACHE_TTL = 24 * 60 * 60 * 1000;
+const cache = new Map();
+const cacheKey = (dream, language, perspective) => {
+  let h = 5381;
+  const s = `${language}|${perspective}|${dream.toLowerCase().replace(/\s+/g, ' ').trim()}`;
+  for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) >>> 0;
+  return String(h);
+};
+function cacheGet(key) {
+  const hit = cache.get(key);
+  if (!hit) return null;
+  if (Date.now() - hit.at > CACHE_TTL) { cache.delete(key); return null; }
+  return hit.value;
+}
+function cacheSet(key, value) {
+  if (cache.size > 500) cache.delete(cache.keys().next().value);
+  cache.set(key, { value, at: Date.now() });
+}
+
+// Per-IP sliding-window rate limit: 12 interpretations / minute
+const RATE = new Map();
+const RATE_LIMIT = 12;
+const RATE_WINDOW = 60 * 1000;
+function rateLimited(ip) {
+  const now = Date.now();
+  const entry = RATE.get(ip);
+  if (!entry || now > entry.resetAt) {
+    RATE.set(ip, { count: 1, resetAt: now + RATE_WINDOW });
+    return false;
+  }
+  entry.count += 1;
+  return entry.count > RATE_LIMIT;
+}
+
+// Soft daily budget for LLM calls per instance — after this, serve offline mode
+// to preserve the shared free-model quota for real users.
+const DAILY_LLM_BUDGET = 300;
+const dailyLLM = { day: new Date().toISOString().slice(0, 10), count: 0 };
+
+// Redact obvious PII before the text reaches any model
+function redactPII(text) {
+  return text
+    .replace(/[\w.+-]+@[\w-]+\.[\w.]+/g, '[email]')
+    .replace(/\b(?:\+?\d[\d\s().-]{7,}\d)\b/g, '[phone]')
+    .replace(/https?:\/\/\S+/g, '[link]');
+}
+
+// Response must actually be written in the requested script
+function looksLikeLanguage(text, lang) {
+  const rtl = { ar: /[\u0600-\u06FF]/g, he: /[\u0590-\u05FF]/g, fa: /[\u0600-\u06FF]/g, ur: /[\u0600-\u06FF]/g };
+  const re = rtl[lang];
+  if (!re) return true; // latin-script languages accepted by default
+  const letters = text.replace(/[^\p{L}]/gu, '');
+  if (!letters) return false;
+  const matches = letters.match(re)?.length ?? 0;
+  return matches / letters.length > 0.5;
+}
+
+function getClientIp(req) {
+  return (
+    req.headers['x-forwarded-for']?.split(',')[0]?.trim() ||
+    req.headers['x-real-ip'] ||
+    'unknown'
+  );
+}
+
 /* ---------------- Handler ---------------- */
 
 // Allow the full free-model cascade to run within the function budget.
@@ -269,31 +338,54 @@ export default async function handler(req, res) {
   if (req.method === 'OPTIONS') return res.status(204).end();
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
-  const { dream, language, perspective } = req.body || {};
-  if (!dream || typeof dream !== 'string' || !dream.trim()) {
+  const { dream: rawDream, language, perspective } = req.body || {};
+  if (!rawDream || typeof rawDream !== 'string' || !rawDream.trim()) {
     return res.status(400).json({ error: 'Dream text is required' });
   }
+  const ip = getClientIp(req);
+  if (rateLimited(ip)) {
+    return res.status(429).json({ error: 'Too many interpretations — please wait a minute.' });
+  }
+  const dream = redactPII(rawDream.trim()).slice(0, 2000);
   const lang = LANGUAGES[language] ? language : 'en';
   const persp = PERSPECTIVES[perspective] ? perspective : 'general';
   const langName = LANGUAGES[lang];
 
+  // Cache — identical dreams get the same reading instantly, zero cost
+  const key = cacheKey(dream, lang, persp);
+  const cached = cacheGet(key);
+  if (cached) {
+    return res.status(200).json({ ...cached, engine: 'cache', id: String(Date.now()) });
+  }
+
+  // Daily LLM budget — protect the shared free quota from abuse
+  const today = new Date().toISOString().slice(0, 10);
+  if (dailyLLM.day !== today) { dailyLLM.day = today; dailyLLM.count = 0; }
+  const budgetExhausted = dailyLLM.count >= DAILY_LLM_BUDGET;
+
   try {
-    const result = await callLLM(dream.trim(), langName, persp);
-    return res.status(200).json({
+    if (budgetExhausted) throw new Error('daily-budget');
+    const result = await callLLM(dream, langName, persp);
+    if (!looksLikeLanguage(result.interpretation, lang)) {
+      throw new Error('language-mismatch');
+    }
+    dailyLLM.count += 1;
+    const value = {
       interpretation: result.interpretation,
       symbols: result.symbols,
       engine: result.engine,
       perspective: persp,
-      id: String(Date.now()),
-    });
+    };
+    cacheSet(key, value);
+    return res.status(200).json({ ...value, id: String(Date.now()) });
   } catch {
     // Offline keyword DB — the engine never fully fails
-    return res.status(200).json({
+    const value = {
       interpretation: buildFallback(dream, lang, persp),
       symbols: detectSymbols(dream),
       engine: 'offline',
       perspective: persp,
-      id: String(Date.now()),
-    });
+    };
+    return res.status(200).json({ ...value, id: String(Date.now()) });
   }
 }

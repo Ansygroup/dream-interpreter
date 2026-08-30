@@ -17,41 +17,79 @@ const MOODS = [
 ];
 import { saveDreamToCloud, sendCloudFeedback } from '../lib/sync';
 
+type Reading = { interpretation: string; symbols: string[]; engine: string; id: string };
+
 export default function Interpret() {
   const { t, language, languageInfo } = useI18n();
   const { user } = useAuth();
   const [dream, setDream] = useState('');
   const [perspective, setPerspective] = useState('general');
   const [mood, setMood] = useState<string | null>(null);
-  const [result, setResult] = useState<{ interpretation: string; symbols: string[]; engine: string; id: string } | null>(null);
+  const [result, setResult] = useState<Reading | null>(null);
+  const [compare, setCompare] = useState<boolean>(false);
+  const [comparison, setComparison] = useState<Array<{ id: string; name: string; reading: Reading | null; error?: boolean }> | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<'up' | 'down' | null>(null);
 
+  const persist = (reading: Reading, persp: string) => {
+    const entry = { dream, interpretation: reading.interpretation, date: new Date().toISOString(), id: Date.now(), language, perspective: persp, symbols: reading.symbols, mood: mood ?? undefined };
+    const history = JSON.parse(localStorage.getItem('dream-history') || '[]');
+    history.unshift(entry);
+    localStorage.setItem('dream-history', JSON.stringify(history.slice(0, 50)));
+    if (user) saveDreamToCloud(user.id, entry);
+  };
+
+  const fetchReading = async (persp: string): Promise<Reading> => {
+    const res = await fetch('/api/interpret', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ dream, language, perspective: persp }),
+    });
+    if (!res.ok) throw new Error(String(res.status));
+    const data = await res.json();
+    if (!data.interpretation) throw new Error('empty');
+    return data as Reading;
+  };
+
   const handleInterpret = async () => {
     if (!dream.trim()) { setError(t('interpret.errorEmpty')); return; }
+    setCompare(false);
     setLoading(true);
     setError(null);
     setResult(null);
+    setComparison(null);
     setFeedback(null);
     try {
-      const res = await fetch('/api/interpret', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ dream, language, perspective }),
-      });
-      const data = await res.json();
-      if (data.interpretation) {
-        setResult(data);
-        const history = JSON.parse(localStorage.getItem('dream-history') || '[]');
-        history.unshift({ dream, interpretation: data.interpretation, date: new Date().toISOString(), id: Date.now(), language, perspective, symbols: data.symbols, mood: mood ?? undefined });
-        localStorage.setItem('dream-history', JSON.stringify(history.slice(0, 50)));
-        if (user) {
-          saveDreamToCloud(user.id, { dream, interpretation: data.interpretation, date: new Date().toISOString(), id: Date.now(), language, perspective, symbols: data.symbols, mood: mood ?? undefined });
-        }
-      } else {
-        setError(t('interpret.errorFailed'));
-      }
+      const reading = await fetchReading(perspective);
+      setResult(reading);
+      persist(reading, perspective);
+    } catch {
+      setError(t('interpret.errorNetwork'));
+    }
+    setLoading(false);
+  };
+
+  const handleCompare = async () => {
+    if (!dream.trim()) { setError(t('interpret.errorEmpty')); return; }
+    setCompare(true);
+    setLoading(true);
+    setError(null);
+    setResult(null);
+    setComparison(PERSPECTIVES.map((p) => ({ id: p.id, name: t(`perspectives.${p.id}.name`), reading: null })));
+    try {
+      const results = await Promise.all(
+        PERSPECTIVES.map(async (p) => {
+          try {
+            const reading = await fetchReading(p.id);
+            persist(reading, p.id);
+            return { id: p.id, name: t(`perspectives.${p.id}.name`), reading };
+          } catch {
+            return { id: p.id, name: t(`perspectives.${p.id}.name`), reading: null, error: true };
+          }
+        })
+      );
+      setComparison(results);
     } catch {
       setError(t('interpret.errorNetwork'));
     }
@@ -144,7 +182,7 @@ export default function Interpret() {
               <p role="alert" style={{ color: '#f87171', marginTop: 12, fontSize: 14 }}>{error}</p>
             )}
             <button onClick={handleInterpret} disabled={loading} className="btn btn-primary" style={{ marginTop: 20 }}>
-              {loading ? (
+              {loading && !compare ? (
                 <>
                   <svg className="icon" viewBox="0 0 24 24" style={{ width: 16, height: 16, animation: 'spin 1s linear infinite' }}><path d="M21 12a9 9 0 1 1-6.2-8.5" /></svg>
                   {t('interpret.loading')}
@@ -155,6 +193,10 @@ export default function Interpret() {
                   {t('interpret.button')}
                 </>
               )}
+            </button>
+            <button onClick={handleCompare} disabled={loading} className="btn btn-ghost" style={{ marginTop: 20, marginInlineStart: 10 }}>
+              <svg className="icon" viewBox="0 0 24 24" style={{ width: 16, height: 16 }}><path d="M12 3v18M3 7h18M3 17h18" /></svg>
+              {t('interpret.compareLabel')}
             </button>
           </div>
 
@@ -175,9 +217,7 @@ export default function Interpret() {
               <div className="card" style={{ borderColor: 'var(--accent-line)', background: 'var(--surface-2)', boxShadow: 'var(--shadow)' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16, flexWrap: 'wrap', gap: 10 }}>
                   <span className="mono-meta" style={{ color: 'var(--accent)' }}>{t('interpret.yourReading')}</span>
-                  <span className="mono-meta">
-                    {t(`perspectives.${perspective}.name`)}
-                  </span>
+                  <span className="mono-meta">{t(`perspectives.${perspective}.name`)}</span>
                 </div>
                 <p style={{ fontSize: 16, lineHeight: 1.8, whiteSpace: 'pre-wrap', color: 'var(--text)' }}>{result.interpretation}</p>
                 {result.symbols?.length > 0 && (
@@ -188,7 +228,6 @@ export default function Interpret() {
                     </div>
                   </div>
                 )}
-                {/* Mood — how did the dream feel? */}
                 <div style={{ marginTop: 18 }}>
                   <span style={{ fontSize: 12, color: 'var(--muted)', display: 'block', marginBottom: 8 }}>{t('interpret.moodLabel')}</span>
                   <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
@@ -232,6 +271,43 @@ export default function Interpret() {
                     )}
                   </div>
                 </div>
+              </div>
+            </div>
+          )}
+
+          {comparison && (
+            <div className="reveal" style={{ marginTop: 48 }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20, flexWrap: 'wrap', gap: 10 }}>
+                <span className="mono-meta" style={{ color: 'var(--accent)' }}>{t('interpret.compareLabel')}</span>
+                <button onClick={() => setComparison(null)} className="btn btn-ghost" style={{ padding: '8px 14px' }}>{t('interpret.compareBack')}</button>
+              </div>
+              <div style={{ display: 'grid', gap: 18, gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
+                {comparison.map((c) => (
+                  <div key={c.id} className="card" style={{ borderColor: 'var(--accent-line)', background: 'var(--surface-2)', boxShadow: 'var(--shadow)' }}>
+                    <span className="mono-meta" style={{ color: 'var(--accent)', display: 'block', marginBottom: 12 }}>{c.name}</span>
+                    {loading && !c.reading && !c.error ? (
+                      <>
+                        <div className="skeleton" style={{ height: 12, width: '100%', marginBottom: 10 }} />
+                        <div className="skeleton" style={{ height: 12, width: '88%', marginBottom: 10 }} />
+                        <div className="skeleton" style={{ height: 12, width: '94%' }} />
+                      </>
+                    ) : c.error ? (
+                      <p style={{ fontSize: 14, color: 'var(--muted)', lineHeight: 1.7 }}>{t('interpret.errorNetwork')}</p>
+                    ) : (
+                      <>
+                        <p style={{ fontSize: 15, lineHeight: 1.75, whiteSpace: 'pre-wrap', color: 'var(--text)' }}>{c.reading?.interpretation}</p>
+                        {c.reading?.symbols?.length ? (
+                          <div style={{ marginTop: 14 }}>
+                            <span style={{ fontSize: 12, color: 'var(--muted)', display: 'block', marginBottom: 6 }}>{t('interpret.compareSymbols')}</span>
+                            <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+                              {c.reading.symbols.map((s) => <span key={s} className="tag">{s}</span>)}
+                            </div>
+                          </div>
+                        ) : null}
+                      </>
+                    )}
+                  </div>
+                ))}
               </div>
             </div>
           )}

@@ -75,12 +75,13 @@ if (!args.includes('--no-daily')) {
   const today = new Date().toISOString().slice(0, 10);
   const outFile = join(root, 'public', 'dream-today.json');
 
+  let dailyDone = false;
   if (existsSync(outFile)) {
     try {
       const prev = JSON.parse(readFileSync(outFile, 'utf8'));
       if (prev.date === today) {
         console.log('  already generated for', today);
-        process.exit(0);
+        dailyDone = true;
       }
     } catch { /* regenerate */ }
   }

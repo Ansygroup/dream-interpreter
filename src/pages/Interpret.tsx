@@ -1,12 +1,15 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useI18n } from '../contexts/I18nContext';
+import { useAuth } from '../contexts/AuthContext';
 import Layout from '../components/Layout';
 import LanguagePicker from '../components/LanguagePicker';
 import { PERSPECTIVES } from '../data/perspectives';
+import { saveDreamToCloud, sendCloudFeedback } from '../lib/sync';
 
 export default function Interpret() {
   const { t, language, languageInfo } = useI18n();
+  const { user } = useAuth();
   const [dream, setDream] = useState('');
   const [perspective, setPerspective] = useState('general');
   const [result, setResult] = useState<{ interpretation: string; symbols: string[]; engine: string; id: string } | null>(null);
@@ -32,6 +35,9 @@ export default function Interpret() {
         const history = JSON.parse(localStorage.getItem('dream-history') || '[]');
         history.unshift({ dream, interpretation: data.interpretation, date: new Date().toISOString(), id: Date.now(), language, perspective, symbols: data.symbols });
         localStorage.setItem('dream-history', JSON.stringify(history.slice(0, 50)));
+        if (user) {
+          saveDreamToCloud(user.id, { dream, interpretation: data.interpretation, date: new Date().toISOString(), id: Date.now(), language, perspective, symbols: data.symbols });
+        }
       } else {
         setError(t('interpret.errorFailed'));
       }
@@ -46,18 +52,25 @@ export default function Interpret() {
     const saved = JSON.parse(localStorage.getItem('saved-dreams') || '[]');
     saved.unshift({ dream, interpretation: result.interpretation, date: new Date().toISOString(), id: Date.now(), language, perspective, symbols: result.symbols });
     localStorage.setItem('saved-dreams', JSON.stringify(saved));
+    if (user) {
+      saveDreamToCloud(user.id, { dream, interpretation: result.interpretation, date: new Date().toISOString(), id: Date.now(), language, perspective, symbols: result.symbols });
+    }
   };
 
   const sendFeedback = async (helpful: boolean) => {
     if (!result || feedback) return;
     setFeedback(helpful ? 'up' : 'down');
-    try {
-      await fetch('/api/feedback', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ id: result.id, helpful, language, perspective, engine: result.engine }),
-      });
-    } catch { /* logged client-side only for now */ }
+    const payload = { interpretationId: result.id, helpful, language, perspective, engine: result.engine };
+    const cloudOk = await sendCloudFeedback(payload).catch(() => false);
+    if (!cloudOk) {
+      try {
+        await fetch('/api/feedback', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ id: result.id, helpful, language, perspective, engine: result.engine }),
+        });
+      } catch { /* best effort */ }
+    }
   };
 
   return (

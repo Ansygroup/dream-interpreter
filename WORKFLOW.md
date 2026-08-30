@@ -52,13 +52,23 @@ npx vercel deploy --prod --yes
 - `POST /api/translate` — ترجمة الواجهة (للاستخدام الآلي فقط)
 - متغيرات البيئة: `OPENROUTER_API_KEY` (موجود في Vercel Production). اختياري: `DREAMSCOPE_AI_MODEL` لإجبار نموذج مدفوع
 
-## 4) الحسابات والسحابة (Phase 4 — بانتظار المفاتيح)
+## 4) الحسابات والسحابة (Phase 4 — الكود جاهز، ينتظر المفاتيح فقط)
 
-عند توفّر مفاتيح Supabase (URL + anon key):
-1. أضفها في Vercel: `npx vercel env add SUPABASE_URL production` و `SUPABASE_ANON_KEY`
-2. نفّذ مخطط قاعدة البيانات: `profiles` (اللغة، المنظور، الثيم) • `dreams` (اليومية السحابية) • `feedback`
-3. فعّل Auth: Magic Link + Google OAuth
-4. ارفع الأحلام المحلية (localStorage) عند أول تسجيل دخول — **وضع الزائر يبقى كاملاً بدون حساب**
+**الكود منشور بالكامل** — وضع الزائر يعمل بدون Supabase، والميزات السحابية تتفعّل تلقائياً عند إضافة المفاتيح:
+
+1. أنشئ مشروعاً في supabase.com (مجاني)
+2. افتح SQL Editor والصق محتوى `supabase/schema.sql` ونفّذه (جداول + RLS + trigger تلقائي للبروفايل)
+3. فعّل مزودي الدخول: Authentication → Providers → Email (Magic Link) + Google (يحتاج OAuth client من Google Cloud)
+4. أضف المتغيرات في Vercel (الواجهة تقرأها):
+   ```
+   npx vercel env add VITE_SUPABASE_URL production
+   npx vercel env add VITE_SUPABASE_ANON_KEY production
+   ```
+   (القيم من: Supabase → Settings → API)
+5. انشر: `npx vercel deploy --prod --yes`
+6. أيقونة الحساب تظهر في الشريط العلوي — أول تسجيل دخول يرحّل أحلام الجهاز محلياً للسحابة تلقائياً
+
+ما يعمل بعد التفعيل: رابط سحري بالبريد • جوجل OAuth • مفكرّة سحابية متزامنة • ترحيل تلقائي من الجهاز • تقييمات محفوظة بقاعدة البيانات (الزوار أيضاً)
 
 ## 5) مشاكل شائعة وحلولها
 

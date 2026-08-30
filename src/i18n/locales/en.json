@@ -13,7 +13,8 @@
     "ansyGroup": "Ansy Group",
     "language": "Language",
     "searchLanguage": "Search languages…",
-    "noLanguage": "No language matches your search."
+    "noLanguage": "No language matches your search.",
+    "profile": "Profile"
   },
   "footer": {
     "tagline": "Free AI dream interpretation grounded in Ibn Sirin & modern psychology.",
@@ -181,5 +182,20 @@
   },
   "daily": {
     "tag": "Dream of the day"
+  },
+  "profile": {
+    "title": "Your space",
+    "cloudOff": "Accounts are coming soon. Meanwhile, everything already works for you as a guest — your dreams stay on your device.",
+    "signInLede": "Sign in to keep your dream journal across all your devices. Your guest history moves with you automatically.",
+    "emailLabel": "Email",
+    "magicLink": "Send me a sign-in link",
+    "google": "Continue with Google",
+    "checkEmail": "Check your inbox — a sign-in link is waiting for you.",
+    "invalidEmail": "Please enter a valid email address.",
+    "guestNote": "No password, no tracking — just a link. Guest mode with on-device storage remains fully available.",
+    "member": "Member",
+    "migrated": "Migrated {n} dreams from this device to your journal.",
+    "signOut": "Sign out",
+    "navLabel": "Profile"
   }
 }

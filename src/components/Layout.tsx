@@ -2,6 +2,7 @@ import { useState, type ReactNode } from 'react';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useI18n } from '../contexts/I18nContext';
+import { useAuth } from '../contexts/AuthContext';
 import { useReveal } from '../hooks/useReveal';
 import { useTheme } from '../hooks/useTheme';
 import LanguagePicker from './LanguagePicker';
@@ -42,6 +43,7 @@ const EXTERNAL_LINKS = [
 export default function Layout({ children, title }: { children: ReactNode; title?: string }) {
   const { t, isRtl } = useI18n();
   const { theme, toggleTheme } = useTheme();
+  const { user, cloudEnabled } = useAuth();
   const [menuOpen, setMenuOpen] = useState(false);
   const ref = useReveal<HTMLDivElement>();
   const year = new Date().getFullYear();
@@ -58,6 +60,9 @@ export default function Layout({ children, title }: { children: ReactNode; title
       <Link to="/faq" className="navlink" onClick={() => setMenuOpen(false)}>{t('nav.faq')}</Link>
       <Link to="/history" className="navlink" onClick={() => setMenuOpen(false)}>{t('nav.history')}</Link>
       <Link to="/saved" className="navlink" onClick={() => setMenuOpen(false)}>{t('nav.saved')}</Link>
+      {cloudEnabled && (
+        <Link to="/profile" className="navlink" onClick={() => setMenuOpen(false)}>{t('nav.profile')}</Link>
+      )}
       {EXTERNAL_LINKS.map((l) => (
         <a key={l.href} href={l.href} target="_blank" rel="noopener noreferrer" className="navlink nav-ext" onClick={() => setMenuOpen(false)}>{t(l.label)}</a>
       ))}
@@ -77,6 +82,17 @@ export default function Layout({ children, title }: { children: ReactNode; title
               <button className="icon-btn" onClick={toggleTheme} aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}>
                 {theme === 'dark' ? SunIcon : MoonIcon}
               </button>
+              {cloudEnabled && (
+                <Link to="/profile" className="icon-btn" aria-label={t('nav.profile')} title={t('nav.profile')}>
+                  {user ? (
+                    <span style={{ width: 17, height: 17, borderRadius: 999, background: 'var(--accent)', color: 'var(--accent-contrast)', display: 'grid', placeItems: 'center', fontSize: 10, fontWeight: 700 }}>
+                      {(user.email ?? '?')[0]?.toUpperCase()}
+                    </span>
+                  ) : (
+                    <svg className="icon" viewBox="0 0 24 24" style={{ width: 16, height: 16 }}><circle cx="12" cy="8" r="4" /><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6" /></svg>
+                  )}
+                </Link>
+              )}
               <Link to="/interpret" className="btn btn-primary nav-cta">{t('nav.start')}</Link>
               <button className="icon-btn nav-burger" onClick={() => setMenuOpen((v) => !v)} aria-label="Menu" aria-expanded={menuOpen}>
                 {menuOpen ? CloseIcon : BurgerIcon}

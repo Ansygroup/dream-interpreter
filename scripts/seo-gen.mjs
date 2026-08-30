@@ -1151,13 +1151,35 @@ for (const sk of Object.keys(SYM)) {
     });
   }
 }
-const sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n' +
+// Sitemap: single file under 45K URLs, otherwise index + chunked files
+// (Google limit: 50,000 URLs per sitemap file)
+const MAX_PER = 45000;
+const allPages = ['/', ...pages];
+const urlXml = (urls) => '<?xml version="1.0" encoding="UTF-8"?>\n' +
   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
-  '  <url><loc>' + BASE + '/</loc><lastmod>2024-12-01</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>\n' +
-  pages.map((p) => '  <url><loc>' + BASE + p + '</loc><lastmod>2024-12-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>').join('\n') +
+  urls.map((p) => {
+    const home = p === '/';
+    return '  <url><loc>' + BASE + p + '</loc><lastmod>2024-12-01</lastmod><changefreq>' + (home ? 'weekly' : 'monthly') + '</changefreq><priority>' + (home ? '1.0' : '0.8') + '</priority></url>';
+  }).join('\n') +
   '\n</urlset>';
-fs.writeFileSync(path.join(outDir, 'sitemap.xml'), sitemap);
+
+let sitemapFiles = 1;
+if (allPages.length <= MAX_PER) {
+  fs.writeFileSync(path.join(outDir, 'sitemap.xml'), urlXml(allPages));
+} else {
+  const chunks = [];
+  for (let i = 0; i < allPages.length; i += MAX_PER) chunks.push(allPages.slice(i, i + MAX_PER));
+  chunks.forEach((urls, i) => {
+    fs.writeFileSync(path.join(outDir, 'sitemap-' + (i + 1) + '.xml'), urlXml(urls));
+  });
+  const index = '<?xml version="1.0" encoding="UTF-8"?>\n' +
+    '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+    chunks.map((_, i) => '  <sitemap><loc>' + BASE + '/sitemap-' + (i + 1) + '.xml</loc></sitemap>').join('\n') +
+    '\n</sitemapindex>';
+  fs.writeFileSync(path.join(outDir, 'sitemap.xml'), index);
+  sitemapFiles = chunks.length;
+}
 fs.writeFileSync(path.join(outDir, 'robots.txt'), 'User-agent: *\nAllow: /\nSitemap: ' + BASE + '/sitemap.xml');
 
 console.log('On-demand SEO mode: data module + sitemap generated');
-console.log('Sitemap: ' + (pages.length + 1) + ' URLs');
+console.log('Sitemap: ' + (pages.length + 1) + ' URLs in ' + sitemapFiles + ' file(s)');

@@ -1109,6 +1109,27 @@ const outDir = path.join(process.cwd(), 'dist');
 fs.mkdirSync(outDir, { recursive: true });
 
 // Write SEO data for the serverless function (api/seo.js) — single file, no per-page files
+// Preserve runtime-expanded languages (added by scripts/seo-expand.mjs) across rebuilds:
+// build-time languages (LANGS above) win; anything extra in the previous data file is merged back.
+const buildLangs = new Set(Object.keys(LANGS));
+try {
+  const prevPath = path.join(process.cwd(), 'api', 'seo-data.json');
+  if (fs.existsSync(prevPath)) {
+    const prev = JSON.parse(fs.readFileSync(prevPath, 'utf8'));
+    const preserved = [];
+    for (const lang of Object.keys(prev.LANGS || {})) {
+      if (buildLangs.has(lang)) continue;
+      LANGS[lang] = prev.LANGS[lang];
+      for (const sk of Object.keys(prev.SYM || {})) {
+        if (prev.SYM[sk]?.[lang] && SYM[sk]) SYM[sk][lang] = prev.SYM[sk][lang];
+      }
+      if (prev.QUESTIONS?.[lang]) QUESTIONS[lang] = prev.QUESTIONS[lang];
+      preserved.push(lang);
+    }
+    if (preserved.length) console.log('Preserved runtime-expanded languages: ' + preserved.join(', '));
+  }
+} catch { /* first build — nothing to preserve */ }
+
 const dataJson = JSON.stringify({ BASE, LANGS, SYM, QUESTIONS, SCENARIOS, CSS });
 fs.writeFileSync(path.join(process.cwd(), 'api', 'seo-data.json'), dataJson);
 

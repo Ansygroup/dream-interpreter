@@ -5,6 +5,7 @@ import { useAuth } from '../contexts/AuthContext';
 import Layout from '../components/Layout';
 import LanguagePicker from '../components/LanguagePicker';
 import { PERSPECTIVES } from '../data/perspectives';
+import { SYMBOL_LIST } from '../symbols-list';
 
 /** Dream emotions — saved with the entry, tracked in the user state. */
 const MOODS = [
@@ -16,6 +17,14 @@ const MOODS = [
   { id: 'confusion', emoji: '🤔' },
 ];
 import { saveDreamToCloud, sendCloudFeedback } from '../lib/sync';
+
+const SYMBOL_SET = new Set(SYMBOL_LIST);
+/** Turn the API's human label (e.g. "green snake", "garden gate") into a known slug if it matches. */
+const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '');
+const toSlug = (label: string): string | null => {
+  const slug = slugify(label);
+  return SYMBOL_SET.has(slug) ? slug : null;
+};
 
 type Reading = { interpretation: string; symbols: string[]; engine: string; id: string };
 
@@ -31,6 +40,23 @@ export default function Interpret() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<'up' | 'down' | null>(null);
+  const [copied, setCopied] = useState(false);
+
+  // ⌘/Ctrl + Enter submits the active reading
+  const onKeyDown = (e: React.KeyboardEvent) => {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'Enter' && !loading && dream.trim()) {
+      e.preventDefault();
+      compare ? handleCompare() : handleInterpret();
+    }
+  };
+
+  const copyReading = async (text: string) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1800);
+    } catch { /* clipboard may be unavailable */ }
+  };
 
   const persist = (reading: Reading, persp: string) => {
     const entry = { dream, interpretation: reading.interpretation, date: new Date().toISOString(), id: Date.now(), language, perspective: persp, symbols: reading.symbols, mood: mood ?? undefined };
@@ -175,9 +201,22 @@ export default function Interpret() {
               className="field"
               value={dream}
               onChange={(e) => setDream(e.target.value)}
+              onKeyDown={onKeyDown}
               placeholder={t('interpret.placeholder')}
               rows={6}
             />
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginTop: 12, flexWrap: 'wrap' }}>
+              <button
+                type="button"
+                onClick={() => { setDream(t('interpret.exampleDream')); setError(null); }}
+                className="btn btn-ghost"
+                style={{ padding: '8px 14px' }}
+              >
+                <svg className="icon" viewBox="0 0 24 24" style={{ width: 15, height: 15 }}><path d="M12 2a7 7 0 0 0-7 7c0 3 2 4 2 7h10c0-3 2-4 2-7a7 7 0 0 0-7-7zM9 21h6" /></svg>
+                {t('interpret.example')}
+              </button>
+              <span style={{ fontSize: 12.5, color: 'var(--text-dim)' }}>{t('interpret.shortcutHint')}</span>
+            </div>
             {error && (
               <p role="alert" style={{ color: '#f87171', marginTop: 12, fontSize: 14 }}>{error}</p>
             )}
@@ -224,7 +263,14 @@ export default function Interpret() {
                   <div style={{ marginTop: 18 }}>
                     <span style={{ fontSize: 12, color: 'var(--muted)', display: 'block', marginBottom: 8 }}>{t('interpret.symbolsLabel')}</span>
                     <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-                      {result.symbols.map((s) => <span key={s} className="tag">{s}</span>)}
+                      {result.symbols.map((s) => {
+                        const slug = toSlug(s);
+                        return slug ? (
+                          <Link key={s} to={`/seo/${slug}/${language}`} className="tag" style={{ textDecoration: 'none' }}>{s}</Link>
+                        ) : (
+                          <span key={s} className="tag">{s}</span>
+                        );
+                      })}
                     </div>
                   </div>
                 )}
@@ -253,6 +299,10 @@ export default function Interpret() {
                   <button onClick={saveDream} className="btn btn-ghost" style={{ padding: '10px 18px' }}>
                     <svg className="icon" viewBox="0 0 24 24" style={{ width: 16, height: 16 }}><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" /></svg>
                     {t('interpret.save')}
+                  </button>
+                  <button onClick={() => copyReading(result.interpretation)} className="btn btn-ghost" style={{ padding: '10px 18px' }}>
+                    <svg className="icon" viewBox="0 0 24 24" style={{ width: 16, height: 16 }}><rect x="9" y="9" width="11" height="11" rx="2" /><path d="M5 15V5a2 2 0 0 1 2-2h10" /></svg>
+                    {copied ? t('interpret.copied') : t('interpret.copy')}
                   </button>
                   <Link to="/history" className="btn btn-ghost" style={{ padding: '10px 18px' }}>{t('interpret.viewHistory')}</Link>
                   <div style={{ marginInlineStart: 'auto', display: 'flex', alignItems: 'center', gap: 8 }}>
@@ -300,10 +350,25 @@ export default function Interpret() {
                           <div style={{ marginTop: 14 }}>
                             <span style={{ fontSize: 12, color: 'var(--muted)', display: 'block', marginBottom: 6 }}>{t('interpret.compareSymbols')}</span>
                             <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-                              {c.reading.symbols.map((s) => <span key={s} className="tag">{s}</span>)}
+                              {c.reading.symbols.map((s) => {
+                                const slug = toSlug(s);
+                                return slug ? (
+                                  <Link key={s} to={`/seo/${slug}/${language}`} className="tag" style={{ textDecoration: 'none' }}>{s}</Link>
+                                ) : (
+                                  <span key={s} className="tag">{s}</span>
+                                );
+                              })}
                             </div>
                           </div>
                         ) : null}
+                        <button
+                          onClick={() => c.reading && copyReading(c.reading.interpretation)}
+                          className="btn btn-ghost"
+                          style={{ padding: '8px 14px', marginTop: 16 }}
+                        >
+                          <svg className="icon" viewBox="0 0 24 24" style={{ width: 15, height: 15 }}><rect x="9" y="9" width="11" height="11" rx="2" /><path d="M5 15V5a2 2 0 0 1 2-2h10" /></svg>
+                          {copied ? t('interpret.copied') : t('interpret.copy')}
+                        </button>
                       </>
                     )}
                   </div>

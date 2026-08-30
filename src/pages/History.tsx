@@ -35,7 +35,14 @@ export default function History() {
           ) : (
             <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
               {dreams.map((d, i) => (
-                <DreamCard key={d.id} item={d} index={i} onRemove={remove} removeLabel={t('common.delete')} />
+                <DreamCard
+                  key={d.id}
+                  item={d}
+                  index={i}
+                  onRemove={remove}
+                  removeLabel={t('common.delete')}
+                  perspectiveName={d.perspective ? t(`perspectives.${d.perspective}.name`) : undefined}
+                />
               ))}
             </div>
           )}

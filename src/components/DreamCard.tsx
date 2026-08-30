@@ -5,13 +5,15 @@ export interface DreamItem {
   date: string;
   language?: string;
   perspective?: string;
+  symbols?: string[];
 }
 
-export default function DreamCard({ item, index, onRemove, removeLabel }: {
+export default function DreamCard({ item, index, onRemove, removeLabel, perspectiveName }: {
   item: DreamItem;
   index: number;
   onRemove: (id: number) => void;
   removeLabel: string;
+  perspectiveName?: string;
 }) {
   const excerpt = item.dream.length > 80 ? item.dream.slice(0, 80) + '…' : item.dream;
   return (
@@ -27,8 +29,12 @@ export default function DreamCard({ item, index, onRemove, removeLabel }: {
         </button>
       </div>
       <p style={{ color: 'var(--text-dim)', fontSize: 14, lineHeight: 1.7 }}>{item.interpretation}</p>
-      <div style={{ marginTop: 12, fontSize: 12, color: 'var(--muted)', fontFamily: 'JetBrains Mono Variable, monospace' }}>
-        {new Date(item.date).toLocaleDateString()} · {(item.language || 'en').toUpperCase()}
+      <div style={{ marginTop: 12, display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center' }}>
+        {item.symbols?.slice(0, 4).map((s) => <span key={s} className="tag" style={{ fontSize: 10 }}>{s}</span>)}
+        <span className="mono-meta">
+          {new Date(item.date).toLocaleDateString()} · {(item.language || 'en').toUpperCase()}
+          {perspectiveName ? ` · ${perspectiveName}` : ''}
+        </span>
       </div>
     </div>
   );

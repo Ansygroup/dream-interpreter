@@ -35,7 +35,14 @@ export default function Saved() {
           ) : (
             <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
               {dreams.map((d, i) => (
-                <DreamCard key={d.id} item={d} index={i} onRemove={remove} removeLabel={t('common.remove')} />
+                <DreamCard
+                  key={d.id}
+                  item={d}
+                  index={i}
+                  onRemove={remove}
+                  removeLabel={t('common.remove')}
+                  perspectiveName={d.perspective ? t(`perspectives.${d.perspective}.name`) : undefined}
+                />
               ))}
             </div>
           )}

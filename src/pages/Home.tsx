@@ -172,7 +172,7 @@ export default function Home() {
       {daily && (
         <section className="section section-line">
           <div className="container-narrow">
-            <div className="card reveal" style={{ borderColor: 'var(--accent-line)' }}>
+            <div className="card" style={{ borderColor: 'var(--accent-line)', animation: 'pageIn 0.6s var(--ease)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 14, flexWrap: 'wrap', gap: 8 }}>
                 <span className="tag">{t('daily.tag')}</span>
                 <span className="mono-meta">{language === 'ar' ? daily.symbol.ar : daily.symbol.en}</span>

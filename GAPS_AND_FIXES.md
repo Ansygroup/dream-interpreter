@@ -25,8 +25,10 @@
 ## GAPS REMAINING
 - [x] **ai-blog daily auto-publish** — cron `7ecf4205e099` runs 10:00 UTC daily, `--batch 15` + queue auto-refill + dup-cover guard. Rate: ~15 posts/day free.
 - [x] **ai-blog duplicate covers** — were 50 posts sharing 1 image; fixed via `fix-duplicate-covers.cjs` (49 unique loremflickr images). 0 real duplicates. Committed `60c95ca`.
-- [ ] **ansygroup.com hub** — BLOCKED: Vercel Authentication wall (project-level Deployment Protection). USER ACTION: Vercel console → project → Settings → Deployment Protection → OFF "Vercel Authentication" + Password Protection. Then `vercel --prod` serves it.
-- [ ] **ansygroup.com DNS** — bind `ansygroup.com` → A `76.76.21.21` (USER action, Cloudflare/Vercel).
+- [x] **ai-company-store + ai-blog Vercel Auth** — USER disabled "Require Log In" (Standard Protection) on both. Verified live: both 200 now. (User did this 2026-08-30.)
+- [ ] **ansygroup.com hub** — STILL BLOCKED two ways: (a) project `ansygroup.com` itself still has Deployment Protection ON (user only disabled on ai-company-store + ai-blog, NOT the hub project); (b) domain `ansygroup.com` is Third Party (Cloudflare) → needs A `76.76.21.21` + SSL. Currently 503/SSL Error. USER ACTION: disable Protection on `ansygroup.com` project too, then point domain to hub (or leave on ai-company-store).
+- [ ] **ansygroup.com DNS** — Cloudflare A `76.76.21.21` (USER action; agent cannot touch Cloudflare). Until then domain 503.
+- [ ] **ai-company-store deployment pile-up** — 42 deployments (not critical). Do NOT auto-prune (CLAUDE.md: vercel CLI hangs + don't risk live selling site). User can prune from console if desired.
 - [ ] **ai-blog video** — no VideoObject schema / no video gen yet. DEFERRED (post-priority). Option: local slideshow+TTS or YouTube embed schema. User said "تمام" to do after priorities.
 - [ ] **IndexNow** — endpoint 500 (no key). If provided: set `INDEXNOW_KEY` env → `deploy-all.sh` auto-pings.
 - [ ] **User action**: submit `sitemap.xml` in Bing Webmaster + GSC (verified already).

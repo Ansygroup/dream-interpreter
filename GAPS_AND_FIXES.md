@@ -23,7 +23,7 @@
 | 8 | Vercel 100/day limit | wasted deploys | batched + curl-verify | ✅ RESOLVED (quota opened) |
 
 ## GAPS REMAINING
-- [ ] **Deploy ansygroup.com hub** — repo ready; `vercel link --project ansygroup.com` + `vercel --prod` (cron does this 05:00 UTC daily, guarded by quota)
+- [ ] **Deploy ansygroup.com hub** — BLOCKED: project `ansygroup.com` (and new `ansy-group-hub`) show "Login – Vercel" wall = Vercel Authentication/Password Protection ENABLED at project level. Agent cannot disable (no console access, no VERCEL_TOKEN). **USER ACTION**: Vercel console → project → Settings → Deployment Protection → turn OFF "Vercel Authentication" + any Password Protection. Then `vercel --prod` serves the static hub.
 - [ ] **ansygroup.com DNS** — bind `ansygroup.com` → A `76.76.21.21` (USER action in Cloudflare/Vercel; agent cannot touch DNS)
 - [ ] **IndexNow** — endpoint 500 (no key). If key provided: set `INDEXNOW_KEY` env → `deploy-all.sh` auto-pings. Respect user's decline.
 - [ ] **User action**: submit `sitemap.xml` in Bing Webmaster + GSC (verified already)

@@ -1,1 +1,216 @@
-{"nav":{"interpret":"Razlagaj","symbols":"Simboli","about":"O nas","faq":"Pogosta vprašanja","history":"Zgodovina","saved":"Shranjeno","contact":"Kontakt","start":"Začni","home":"Domov","aiBlog":"AI blog","ansyGroup":"Ansy Group","language":"Jezik","searchLanguage":"Iskanje jezikov…","noLanguage":"Noben jezik se ne ujema z iskanjem."},"footer":{"tagline":"Razlaga sanj z umetno inteligenco, brezplačno — po tradiciji Ibn Sirina in moderni psihologiji.","copyright":"© {year} Dreamscope"},"home":{"heroTitle":"Kaj ti hoče povedati tvoje {accent}","heroAccent":"podzavost","heroLede":"Starodavna simbolika, sodobna psihologija in UI — združeni v eno jasno branje. Opiši san s svojimi besedami in prejmi razlago, ukoreninjeno v Ibn Sirinu in globinski psihologiji.","interpretCta":"Razlagaj sanjo","browseCta":"Razišči simbole","ctaTitle":"Opiši svojo sanjo","ctaButton":"Začni razlagati"},"interpret":{"title":"Opiši svojo sanjo","language":"Jezik","yourDream":"Tvoja sanja","placeholder":"Ponoči sem sanjal(a), da prehajam skozi vrata, ki nenehno spreminjajo obliko...","button":"Razlagaj sanjo"},"common":{"interpretCta":"Razlagaj sanjo","backHome":"Nazaj domov"},"history":{"title":"Zgodovina sanj","empty":"Še ni razlaganih sanj."},"saved":{"title":"Shranjene sanje","empty":"Še nič shranjenega."},"symbols":{"title":"{n} simbolov sanj","search":"Iskanje simbola…"},"notfound":{"title":"Ta sanja se je raztopila","cta":"Nazaj domov"}}
+{
+  "nav": {
+    "interpret": "Razlaga",
+    "symbols": "Simboli",
+    "about": "O nas",
+    "faq": "FAQ",
+    "history": "Zgodovina",
+    "saved": "Shranjeno",
+    "contact": "Kontakt",
+    "start": "Začni",
+    "home": "Domov",
+    "aiBlog": "AI Blog",
+    "ansyGroup": "Ansy Group",
+    "language": "Jezik",
+    "searchLanguage": "Iskanje jezikov…",
+    "noLanguage": "Noben jezik ne ustreza iskanju.",
+    "profile": "Profil"
+  },
+  "footer": {
+    "tagline": "Brezplačna razlaga sanj z umetno inteligenco, zasnovana na Ibn Sirinu in sodobni psihologiji.",
+    "copyright": "© {year} Dreamscope"
+  },
+  "home": {
+    "heroTitle": "Kaj vam želi povedati vaše {accent}",
+    "heroAccent": "podzavest",
+    "heroLede": "Starodavna simbolika, sodobna psihologija in UI — združeni v eno jasno razlago. Opišite sanje s svojimi besedami in prejmite razlago, ki temelji na Ibn Sirinu in globinski psihologiji.",
+    "interpretCta": "Razloži sanje",
+    "browseCta": "Razišči simbole",
+    "statLanguages": "{n} jezikov",
+    "statSymbols": "{n} sanjskih simbolov",
+    "statPrivateLine": "zasebno na vaši napravi",
+    "whyTitle": "Razlaga, ki jo dejansko lahko uporabite",
+    "whyLede": "Dreamscope vaše sanje poveže s simboli, nato pa jih bere skozi tradicijo, ki ji zaupate — psihologija je ob njej, ne namesto nje.",
+    "feature1Title": "Simbolna analiza",
+    "feature1Body": "Vsake sanje so povezane s svojimi osrednjimi simboli in sledene skozi stoletja interpretativne tradicije.",
+    "feature2Title": "60 jezikov",
+    "feature2Body": "Razlagajte in berite simbole v angleščini, arabščini, španščini, kitajščini, japonščini in še 55 drugih jezikih.",
+    "feature3Title": "Vse tradicije",
+    "feature3Body": "Ibn Sirin, globinska psihologija in perspektive različnih verstev — ena razlaga, videna skozi vašo perspektivo.",
+    "feature4Title": "Shranjeno in zasebno",
+    "feature4Body": "Vaše sanje ostanejo na vaši napravi. Preglejte jih, primerjajte in spremljajte vzorce skozi čas.",
+    "sampleTag": "Primer razlage",
+    "sampleJustNow": "pravkar",
+    "sampleDream": "\"Videl sem zeleno kačo, ki je zapustila hišo skozi vrtna vrata.\"",
+    "sampleReading": "Kače pomenijo preobrazbo — nekaj v vašem življenju se jeza stara kožo. Vrata nakazujejo, da se odpira jasen izhod. V tradiciji Ibn Sirina nenevarna kača, ki zapusti dom, pogosto pomeni, da skrb, ki vas je dolgo bremenila, končno odhaja.",
+    "sampleTag1": "Preobrazba",
+    "sampleTag2": "Sprostitev",
+    "sampleTag3": "Ibn Sirin",
+    "sampleSaved": "Shranjeno na vaši napravi",
+    "symbolsTitle": "Vsak simbol nosi svoj pomen",
+    "symbolsLede": "Od vode do ognja — raziščite najpogostejše sanjske motive in kaj vsak od njih navadno sporoča v različnih tradicijah.",
+    "ctaTitle": "Opišite svoje sanje",
+    "ctaLede": "Dovolj je nekaj stavkov. Razlaga traja le sekunde in ostane na vaši napravi.",
+    "ctaButton": "Začnite razlagati"
+  },
+  "interpret": {
+    "eyebrow": "Razlaga",
+    "title": "Opišite svoje sanje",
+    "lede": "Napišite jih s svojimi besedami. Več podrobnosti kot podate, ostrejša bo razlaga — pomembni so prostor, občutja in vse, kar je nenavadno.",
+    "language": "Jezik",
+    "yourDream": "Vaše sanje",
+    "placeholder": "Prejšnjo noč sem sanjal, da hodim skozi vrata, ki so se nenehno spreminjala...",
+    "loading": "Razlagam...",
+    "button": "Razloži sanje",
+    "yourReading": "Vaša razlaga",
+    "save": "Shrani",
+    "saved": "Shranjeno",
+    "viewHistory": "Poglej zgodovino",
+    "errorEmpty": "Prosimo, najprej opišite svoje sanje.",
+    "errorFailed": "Razlaga ni uspela. Poskusite znova.",
+    "errorNetwork": "Napaka povezave. Poskusite znova.",
+    "perspectiveLabel": "Branje skozi",
+    "symbolsLabel": "Simboli v vaših sanjah",
+    "feedbackQ": "Ali vam je bila ta razlaga koristna?",
+    "yes": "Da, koristna",
+    "no": "Ne ravno",
+    "thanks": "Hvala — vaše mnenje izboljšuje prihodnje razlage.",
+    "perspectiveDesc": "Ena razlaga, ki prepleta najmodrejše niti svetovnih tradicij z globinsko psihologijo."
+  },
+  "history": {
+    "eyebrow": "Vaša dejavnost",
+    "title": "Zgodovina sanj",
+    "lede": "Vsaka razlaga, ki ste jo ustvarili, shranjena na tej napravi.",
+    "empty": "Še ni razlaganih sanj."
+  },
+  "saved": {
+    "eyebrow": "Vaša knjižnica",
+    "title": "Shranjene sanje",
+    "lede": "Obdržite razlage, ki so vas ganile. Ostanejo na tej napravi.",
+    "empty": "Še ni nič shranjenega."
+  },
+  "common": {
+    "interpretCta": "Razloži sanje",
+    "delete": "Izbriši",
+    "remove": "Odstrani",
+    "backHome": "Nazaj domov"
+  },
+  "symbols": {
+    "eyebrow": "Slovar sanjskih simbolov",
+    "title": "{n} sanjskih simbolov",
+    "lede": "Raziščite vse simbole, ki jih razlagamo — brezplačno, v ducatih jezikih. Izberite svojega in preberite pomen.",
+    "search": "Poišči simbol…"
+  },
+  "about": {
+    "eyebrow": "O nas",
+    "title": "Jasna razlaga, ukoreninjena v tradiciji",
+    "p1": "Dreamscope obstaja zato, da razlago sanj naredi dostopno v vašem jeziku. Združujemo dva toka razumevanja: klasično islamsko sanjsko znanost Ibn Sirina, enega najvplivnejših razlagateljev sanj v zgodovini, in simbolne okvire sodobne globinske psihologije.",
+    "p2": "Vsaka razlaga je ustvarjena, da vam pomaga pri razmisleku — ne da bi napovedovala prihodnost. Simboli, kot so voda, ogenj, letenje ali kača, nosijo pomen v različnih kulturah že tisočletja in naše razlage sledijo tem nitim, da boste našli tisto, kar se dotakne vašega življenja.",
+    "p3": "Storitev je brezplačna, zasebna po zasnovi in na voljo v 60 jezikih. Vaše sanje nikoli ne zapustitjo vašne napravi.",
+    "card1Title": "Ibn Sirin",
+    "card1Body": "Klasična islamska sanjska znanost, sledena skozi stoletja razlag.",
+    "card2Title": "60 jezikov",
+    "card2Body": "Od arabščine do japonščine — razlagajte v jeziku, v katerem sanjate.",
+    "card3Title": "100 % zasebno",
+    "card3Body": "Sanje ostanejo na vaši napravi. Brez račit, brez sledenja.",
+    "cta": "Začnite razlagati",
+    "traditionsTitle": "Vsaka tradicija, ene sanje",
+    "traditionsLede": "Izberite perspektivo, ki ji zaupa vaše srce — vsaka razlaga je ustvarjena skozi posebno interpretativno šolo."
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik",
+    "lede": "Vprašanja, popravki ali zamisli za sodelovanje? Pišite ekipi Dreamscope.",
+    "email": "E-pošta",
+    "disclaimer": "Dreamscope ponuja le razmislek in razvedrilo. Razlage niso zdravstveni, psihološki ali verski nasvet. Če potrebujete podporo, se posvetujte z usposobljenim strokovnjakom.",
+    "back": "Nazaj na razlaganje"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Pogosto zastavljena vprašanja",
+    "q1": "Kako Dreamscope razlaga sanje?",
+    "a1": "Dreamscope združuje klasično sanjsko znanost — vključno s tradicijo Ibn Sirina — s sodobno globinsko psihologijo. Opišete sanje s svojimi besedami in prejmete razlago, ki njihove simbole poveže s pogostimi pomeni v različnih kulturah.",
+    "q2": "Ali so podatki o mojih sanjah zasebni?",
+    "a2": "Da. Vaše sanje so shranjene le v lokalnem pomnilniku vašega brskalnika na tej napravi. Nič ni poslanega v strežnik za shranjevanje in zgodovino lahko kadarkoli izbrišete.",
+    "q3": "V katerih jezikih lahko razlagam sanje?",
+    "a3": "Dreamscope podpira 60 jezikov, vključno z angleščino, arabščino, španščino, francoščino, nemščino, kitajščino, japonščino, korejščino, turščino, portugalščino, ruščino, hindujščino in drugimi. Razlaga sledi jeziku, ki ga izberete.",
+    "q4": "Ali razlage nadomeščajo strokovni nasvet?",
+    "a4": "Ne. Razlage sanj so namenjene razmisleku in razvedrilu. Niso zdravstveni, psihološki ali verski napotki. Če se znajdete v stiski, se pogovorite z usposobljenim strokovnjakom.",
+    "q5": "Koliko sanjskih simbolov je zajetih?",
+    "a5": "Dreamscope ima namenske strani za 146 pogostih simbolov — kača, voda, letenje, ogenj, nosečnost, denar in še mnogo drugih — vsak je na voljo v več jezikih s številnimi različicami vprašanj."
+  },
+  "notfound": {
+    "code": "404",
+    "title": "Te sanje so se razblinile",
+    "lede": "Stran, ki ste jo iskali, ni tukaj. Vrnimo se k razlaganju.",
+    "cta": "Nazaj domov"
+  },
+  "perspectives": {
+    "general": {
+      "name": "Univerzalno"
+    },
+    "islamic": {
+      "name": "Ibn Sirin (islamsko)"
+    },
+    "christian": {
+      "name": "Krščansko"
+    },
+    "jewish": {
+      "name": "Judovsko"
+    },
+    "hindu": {
+      "name": "Hindujsko"
+    },
+    "buddhist": {
+      "name": "Budistično"
+    },
+    "psychology": {
+      "name": "Psihologija (Jung)"
+    },
+    "chinese": {
+      "name": "Zhou Gong (kitajsko)"
+    }
+  },
+  "daily": {
+    "tag": "Sanj dana"
+  },
+  "profile": {
+    "title": "Vaš prostor",
+    "cloudOff": "Računi prihajajo kmalu. Medtem vam vse že deluje kot gostu — vaše sanje ostanejo na vaši napravi.",
+    "signInLede": "Prijavite se, da ohranite svoj sanjski dnevnik na vseh napravah. Vaša gostujoča zgodovina se samodejno preseli z vami.",
+    "emailLabel": "E-pošta",
+    "magicLink": "Pošlji mi povezavo za prijavo",
+    "google": "Nadaljuj z Googlom",
+    "checkEmail": "Preverite nabiralnik — povezava za prijavo vas že čaka.",
+    "invalidEmail": "Prosimo, vnesite veljaven e-naslov.",
+    "guestNote": "Brez gesla, brez sledenja — samo povezava. Gostni način s shranjevanjem na napravi ostaja v celoti na voljo.",
+    "member": "Član",
+    "migrated": "Preseljenih {n} sanj s te naprave v vaš dnevnik.",
+    "signOut": "Odjava",
+    "navLabel": "Profil",
+    "lede": "Vse, kar Dreamscope ve o vaši poti — shranjeno na vaši napravi, samo vaše.",
+    "yourState": "Vaše trenutno stanje",
+    "statDreams": "Razlaganih sanj",
+    "statSaved": "Shranjene razlage",
+    "statStreak": "Dnevni niz",
+    "statTopSymbol": "Najpogostejši simbol",
+    "emptyState": "Še ni sanj — vaša prva razlaga bo osvetlila to stran.",
+    "symbolsYouMeet": "Simboli, ki se vam vedno znova pojavljajo",
+    "noneYet": "—",
+    "lastReading": "Zadnja razlaga",
+    "languagesUsed": "Uporabljeni jeziki",
+    "perspectivesUsed": "Uporabljene tradicije",
+    "cloudTitle": "Na vseh vaših napravah",
+    "privacyNote": "Vaše sanje so shranjene na vaši napravi — nikoli prodane, nikoli profilirane."
+  },
+  "perspDesc": {
+    "general": "Ena razlaga, ki prepleta najmodrejše niti svetovnih tradicij z globinsko psihologijo.",
+    "islamic": "Klasična šola Ibn Sirina — simbolna, zakonita in usmerjena v dušo.",
+    "christian": "Razlaga sanj v liniji Jožefa in Daniela, s svetopisemsko simboliko.",
+    "jewish": "Tora in talmudsko sanjsko modrost — sporočilo, ki čaka na modro razlago.",
+    "hindu": "Vedska simbolika, karma in notranje pokrajine uma.",
+    "buddhist": "Minljivost in pozorno zavedanje — opazujte sanje, ne da bi se jih oprijemali.",
+    "psychology": "Jungovi arhetipi in senca — kaj vaša psiha predeluje.",
+    "chinese": "Klasični slovar Zhou Gonga — ravnovesje jina, janga in petih elementov."
+  }
+}

@@ -131,4 +131,16 @@ if (!args.includes('--no-daily')) {
   }
 }
 
+/* ---------- 3. SEO language expansion (Phase 6, quota permitting) ---------- */
+
+if (!args.includes('--no-seo')) {
+  console.log('== 3. SEO language expansion ==');
+  const r = spawnSync(process.execPath, [join(root, 'scripts', 'seo-expand.mjs'), '--max-calls=20'], {
+    stdio: 'inherit',
+    env: process.env,
+    cwd: root,
+  });
+  console.log(`seo-expand exited with ${r.status}\n`);
+}
+
 console.log('\nEvolve pass done. (The auto-complete workflow will commit & push.)');

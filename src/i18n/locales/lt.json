@@ -1,1 +1,216 @@
-{"nav":{"interpret":"Aiškinti","symbols":"Simboliai","about":"Apie mus","faq":"DAK","history":"Istorija","saved":"Išsaugota","contact":"Kontaktai","start":"Pradėti","home":"Pradžia","aiBlog":"AI tinklaraštis","ansyGroup":"Ansy Group","language":"Kalba","searchLanguage":"Ieškoti kalbų…","noLanguage":"Jokia kalba neatitinka jūsų paieškos."},"footer":{"tagline":"Sapnų aiškinimas su AI, nemokamai — pagal Ibn Sirino tradiciją ir šiuolaikinę psichologiją.","copyright":"© {year} Dreamscope"},"home":{"heroTitle":"Ką jums bando pasakyti jūsų {accent}","heroAccent":"pasąmonė","heroLede":"Senovinė simbolika, šiuolaikinė psichologija ir DI — sujungti į vieną aiškų skaitymą. Aprašykite sapną savais žodžiais ir gaukite aiškinimą, paremtą Ibn Sirinu ir giliąja psichologija.","interpretCta":"Aiškinti sapną","browseCta":"Naršyti simbolius","ctaTitle":"Aprašykite savo sapną","ctaButton":"Pradėti aiškinti"},"interpret":{"title":"Aprašykite savo sapną","language":"Kalba","yourDream":"Jūsų sapnas","placeholder":"Vakar naktį sapnavau, kad einu pro duris, kurios nuolat keičia formą...","button":"Aiškinti sapną"},"common":{"interpretCta":"Aiškinti sapną","backHome":"Grįžti į pradžią"},"history":{"title":"Sapnų istorija","empty":"Dar nėra aiškintų sapnų."},"saved":{"title":"Išsaugoti sapnai","empty":"Dar nieko išsaugota."},"symbols":{"title":"{n} sapnų simbolių","search":"Ieškoti simbolio…"},"notfound":{"title":"Šis sapnas ištirpo","cta":"Grįžti į pradžią"}}
+{
+  "nav": {
+    "interpret": "Interpretuoti",
+    "symbols": "Simboliai",
+    "about": "Apie",
+    "faq": "DUK",
+    "history": "Istorija",
+    "saved": "Išsaugota",
+    "contact": "Kontaktai",
+    "start": "Pradėti",
+    "home": "Pagrindinis",
+    "aiBlog": "AI dienoraštis",
+    "ansyGroup": "Ansy Group",
+    "language": "Kalba",
+    "searchLanguage": "Ieškoti kalbų…",
+    "noLanguage": "Kalbų pagal jūsų užklausą nerasta.",
+    "profile": "Profilis"
+  },
+  "footer": {
+    "tagline": "Nemokama AI sapnų interpretacija, pagrįsta Ibn Sirino ir šiuolaikinės psichologijos tradicijomis.",
+    "copyright": "© {year} Dreamscope"
+  },
+  "home": {
+    "heroTitle": "Ką jūsų {accent} bando pasakyti",
+    "heroAccent": "pasąmonė",
+    "heroLede": "Senovės simbolika, šiuolaikinė psichologija ir AI — sujungta į vieną aiškų aiškinimą. Aprašykite sapną savais žodžiais ir gaukite interpretaciją, paremtą Ibn Sirino tradicija ir gelmės psichologija.",
+    "interpretCta": "Interpretuoti sapną",
+    "browseCta": "Peržiūrėti simbolius",
+    "statLanguages": "{n} kalbų",
+    "statSymbols": "{n} sapnų simbolių",
+    "statPrivateLine": "privatūs jūsų įrenginyje",
+    "whyTitle": "Aiškinimas, kuris tikrai pravers",
+    "whyLede": "Dreamscope susieja jūsų sapną su jo simboliais, o tada juos skaito per jūsų pasitikėjimo tradiciją — su psichologija šalia, o ne vietoje jos.",
+    "feature1Title": "Simbolinė analizė",
+    "feature1Body": "Kiekvienas sapnas susiejamas su pagrindiniais simboliais ir atsekamas per šimtmečių interpretavimo tradiciją.",
+    "feature2Title": "60 kalbų",
+    "feature2Body": "Interpretuokite ir skaitykite simbolius anglų, arabų, ispanų, kinų, japonų kalbomis ir dar 55 kalbomis.",
+    "feature3Title": "Visos tradicijos",
+    "feature3Body": "Ibn Sirinas, gelmės psichologija ir požiūriai iš įvairių tikėjimų — vienas aiškinimas, matomas per jūsų prizmę.",
+    "feature4Title": "Išsaugota ir privatu",
+    "feature4Body": "Jūsų sapnai lieka jūsų įrenginyje. Sugrįžkite, palyginkite ir sekite dėsningumus laikui bėgant.",
+    "sampleTag": "Pavyzdinis aiškinimas",
+    "sampleJustNow": "ką tik",
+    "sampleDream": "„Mačiau, kaip žalia gyvatė išėjo iš namo pro sodo vartelius.“",
+    "sampleReading": "Gyvatės žymi transformaciją — kažkas jūsų gyvenime keičia seną odą. Varteliai rodo, kad atsiveria aiškus išėjimas. Ibn Sirino tradicijoje nepavojinga gyvatė, paliekanti namus, dažnai reiškia, kad ilgai kamavęs rūpestis pagaliau išsisklaido.",
+    "sampleTag1": "Transformacija",
+    "sampleTag2": "Išsiskyrimas",
+    "sampleTag3": "Ibn Sirinas",
+    "sampleSaved": "Išsaugota jūsų įrenginyje",
+    "symbolsTitle": "Kiekvienas simbolis turi prasmę",
+    "symbolsLede": "Nuo vandens iki ugnies — atraskite dažniausius sapnų motyvus ir ką kiekvienas linkęs reikšti įvairiose tradicijose.",
+    "ctaTitle": "Aprašykite savo sapną",
+    "ctaLede": "Užtenka kelių sakinių. Aiškinimas trunka sekundes ir lieka jūsų įrenginyje.",
+    "ctaButton": "Pradėti interpretuoti"
+  },
+  "interpret": {
+    "eyebrow": "Interpretuoti",
+    "title": "Aprašykite savo sapną",
+    "lede": "Rašykite savais žodžiais. Kuo daugiau detalių, tuo tikslesnis aiškinimas — aplinka, jausmai ir visa, kas neįprasta, visi svarbu.",
+    "language": "Kalba",
+    "yourDream": "Jūsų sapnas",
+    "placeholder": "Praėjusią naktį sapnavau, kad einu pro duris, kurios nuolat keitė formą...",
+    "loading": "Interpretuojama...",
+    "button": "Interpretuoti sapną",
+    "yourReading": "Jūsų aiškinimas",
+    "save": "Išsaugoti",
+    "saved": "Išsaugota",
+    "viewHistory": "Peržiūrėti istoriją",
+    "errorEmpty": "Pirmiausia aprašykite savo sapną.",
+    "errorFailed": "Interpretuoti nepavyko. Bandykite dar kartą.",
+    "errorNetwork": "Ryšio klaida. Bandykite dar kartą.",
+    "perspectiveLabel": "Aiškinama per",
+    "symbolsLabel": "Jūsų sapno simboliai",
+    "feedbackQ": "Ar šis aiškinimas buvo naudingas?",
+    "yes": "Taip, naudingas",
+    "no": "Nelabai",
+    "thanks": "Ačiū — jūsų atsiliepimas pagerins būsimus aiškinimus.",
+    "perspectiveDesc": "Vienas aiškinimas, kuriame persipina išmintingiausi pasaulio tradicijų siūlai su gelmės psichologija."
+  },
+  "history": {
+    "eyebrow": "Jūsų veikla",
+    "title": "Sapnų istorija",
+    "lede": "Kiekviena jūsų sugeneruota interpretacija, saugoma šiame įrenginyje.",
+    "empty": "Dar neinterpretuota nė vieno sapno."
+  },
+  "saved": {
+    "eyebrow": "Jūsų biblioteka",
+    "title": "Išsaugoti sapnai",
+    "lede": "Pasilikite aiškinimus, kurie buvo svarbūs. Jie lieka šiame įrenginyje.",
+    "empty": "Kol kas nieko neišsaugota."
+  },
+  "common": {
+    "interpretCta": "Interpretuoti sapną",
+    "delete": "Ištrinti",
+    "remove": "Pašalinti",
+    "backHome": "Grįžti į pradžią"
+  },
+  "symbols": {
+    "eyebrow": "Sapnų simbolių žodynas",
+    "title": "{n} sapnų simboliai",
+    "lede": "Peržiūrėkite visus simbolius, kuriuos interpretuojame — nemokamai, dešimtimis kalbų. Pasirinkite savo kalbą ir skaitykite reikšmę.",
+    "search": "Ieškoti simbolio…"
+  },
+  "about": {
+    "eyebrow": "Apie",
+    "title": "Aiškus aiškinimas, įsišaknijęs tradicijoje",
+    "p1": "Dreamscope siekia sapnų interpretaciją padaryti prieinamą jūsų gimtąja kalba. Mes deriname du supratimo srautus: klasikinę islamiškąją sapnų hermeneutiką Ibn Sirino — vieno įtakingiausių sapnų interpretatorių istorijoje — ir šiuolaikinės gelmės psichologijos simbolinius pagrindus.",
+    "p2": "Kiekvienas aiškinimas generuojamas tam, kad padėtų jums apmąstyti — o ne nuspėti ateitį. Tokie simboliai kaip vanduo, ugnis, skrydis ar gyvatė tūkstančius metų nešė prasmę įvairiose kultūrose, o mūsų interpretacijos atseka tas gijas, kad rastumėte tai, kas rezonuoja su jūsų gyvenimu.",
+    "p3": "Paslauga nemokama, privati pagal dizainą ir prieinama 60 kalbų. Jūsų sapnai niekada nepalieka jūsų įrenginio.",
+    "card1Title": "Ibn Sirinas",
+    "card1Body": "Klasikinė islamiškoji sapnų hermeneutika, atsekama per šimtmečių interpretavimo tradiciją.",
+    "card2Title": "60 kalbų",
+    "card2Body": "Nuo arabų iki japonų — interpretuokite ta kalba, kuria sapnuojate.",
+    "card3Title": "100 % privatu",
+    "card3Body": "Sapnai lieka jūsų įrenginyje. Be paskyrų, be sekimo.",
+    "cta": "Pradėti interpretuoti",
+    "traditionsTitle": "Kiekviena tradicija, vienas sapnas",
+    "traditionsLede": "Pasirinkite prizmę, kuria pasitiki jūsų širdis — kiekvienas aiškinimas generuojamas per specialią interpretavimo mokyklą."
+  },
+  "contact": {
+    "eyebrow": "Kontaktai",
+    "title": "Susisiekime",
+    "lede": "Klausimai, pataisymai ar partnerystės idėjos? Susiekite su Dreamscope komanda el. paštu.",
+    "email": "El. paštas",
+    "disclaimer": "Dreamscope teikia tik apmąstymus ir pramogas. Interpretacijos nėra medicininis, psichologinis ar religinis patarimas. Jei jums reikia pagalbos, kreipkitės į kvalifikuotą specialistą.",
+    "back": "Grįžti į interpretavimą"
+  },
+  "faq": {
+    "eyebrow": "DUK",
+    "title": "Dažniausiai užduodami klausimai",
+    "q1": "Kaip Dreamscope interpretuoja sapnus?",
+    "a1": "Dreamscope derina klasikinę sapnų hermeneutiką — įskaitant Ibn Sirino tradiciją — su šiuolaikine gelmės psichologija. Jūs aprašote sapną savais žodžiais ir gaunate aiškinimą, kuriame jo simboliai susiejami su jų bendrosiomis reikšmėmis įvairiose kultūrose.",
+    "q2": "Ar mano sapnų duomenys yra privatūs?",
+    "a2": "Taip. Jūsų sapnai saugomi tik jūsų naršyklės vietinėje saugykloje įrenginyje. Nieko nesiunčiama į serverį saugojimui, o istoriją galite bet kada ištrinti.",
+    "q3": "Kokiomis kalbomis galima interpretuoti sapnus?",
+    "a3": "Dreamscope palaiko 60 kalbų, įskaitant anglų, arabų, ispanų, prancūzų, vokiečių, kinų, japonų, korėjiečių, turkų, portugalų, rusų, hindi ir daugelį kitų. Aiškinimas pateikiamas jūsų pasirinkta kalba.",
+    "q4": "Ar interpretacijos pakeičia profesionalų patarimą?",
+    "a4": "Ne. Sapnų aiškinimai skirti apmąstymui ir pramogai. Tai nėra medicininis, psichologinis ar religinis nurodymas. Jei sunkumai vargina, pasikalbėkite su kvalifikuotu specialistu.",
+    "q5": "Kiek sapnų simbolių yra apžvelgta?",
+    "a5": "Dreamscope turi atskirus puslapius 146 dažniems simboliams — gyvatė, vanduo, skrydis, ugnis, nėštumas, pinigai ir daugelis kitų — kiekvienas prieinamas keliomis kalbomis su įvairiais klausimų variantais."
+  },
+  "notfound": {
+    "code": "404",
+    "title": "Šis sapnas išsisklaidė",
+    "lede": "Puslapis, kurio ieškojote, čia nerastas. Grįžkime prie interpretavimo.",
+    "cta": "Grįžti į pradžią"
+  },
+  "perspectives": {
+    "general": {
+      "name": "Universali"
+    },
+    "islamic": {
+      "name": "Ibn Sirinas (islamo)"
+    },
+    "christian": {
+      "name": "Krikščionių"
+    },
+    "jewish": {
+      "name": "Žydų"
+    },
+    "hindu": {
+      "name": "Induistų"
+    },
+    "buddhist": {
+      "name": "Budistų"
+    },
+    "psychology": {
+      "name": "Psichologija (Jungas)"
+    },
+    "chinese": {
+      "name": "Džou Gongas (kinų)"
+    }
+  },
+  "daily": {
+    "tag": "Dienos sapnas"
+  },
+  "profile": {
+    "title": "Jūsų erdvė",
+    "cloudOff": "Paskyros greitai atsiras. Tuo tarpu viskas jau veikia kaip svečiui — jūsų sapnai lieka jūsų įrenginyje.",
+    "signInLede": "Prisijunkite, kad sapnų dienoraštis sektųsi visuose jūsų įrenginiuose. Jūsų svečio istorija keliaus automatiškai.",
+    "emailLabel": "El. paštas",
+    "magicLink": "Siųsti man prisijungimo nuorodą",
+    "google": "Tęsti su Google",
+    "checkEmail": "Patikrinkite savo el. pašto dėžutę — laukia prisijungimo nuoroda.",
+    "invalidEmail": "Įveskite galiojantį el. pašto adresą.",
+    "guestNote": "Be slaptažodžio, be sekimo — tik nuoroda. Svečio režimas su saugojimu įrenginyje išlieka visiškai prieinamas.",
+    "member": "Narys",
+    "migrated": "Migruoti {n} sapnai iš šio įrenginio į jūsų dienoraštį.",
+    "signOut": "Atsijungti",
+    "navLabel": "Profilis",
+    "lede": "Viskas, ką Dreamscope žino apie jūsų kelionę — saugoma įrenginyje, tik jūsų.",
+    "yourState": "Jūsų dabartinė būsena",
+    "statDreams": "Sapnai interpretuoti",
+    "statSaved": "Išsaugoti aiškinimai",
+    "statStreak": "Dienų iš eilės",
+    "statTopSymbol": "Dažniausias simbolis",
+    "emptyState": "Sapnų dar nėra — pirmasis aiškinimas nušvies šį puslapį.",
+    "symbolsYouMeet": "Simboliai, kuriuos sutinkate",
+    "noneYet": "—",
+    "lastReading": "Paskutinis aiškinimas",
+    "languagesUsed": "Naudojamos kalbos",
+    "perspectivesUsed": "Naudojamos tradicijos",
+    "cloudTitle": "Visuose jūsų įrenginiuose",
+    "privacyNote": "Jūsų sapnai saugomi jūsų įrenginyje — niekada neparduodami, niekada neapdorojami profilavimui."
+  },
+  "perspDesc": {
+    "general": "Vienas aiškinimas, kuriame persipina išmintingiausi pasaulio tradicijų siūlai su gelmės psichologija.",
+    "islamic": "Klasikinė Ibn Sirino mokykla — simboliška, dėsninga ir sielai artima.",
+    "christian": "Sapnų aiškinimas Juozapo ir Danieliaus tradicija, su šventraščio simbolika.",
+    "jewish": "Toros ir Talmudo sapnų išmintis — laukianti išmintingo interpretavimo žinutė.",
+    "hindu": "Vedų simbolika, karma ir vidiniai proto peizažai.",
+    "buddhist": "Nepastovumas ir sąmoningas dėmesys — stebėkite sapną jo nesulaikydami.",
+    "psychology": "Jungo archetipai ir šešėlis — ką jūsų psichika apdoroja.",
+    "chinese": "Džou Gongo klasikiniai žodynai — jino, jango ir penkių elementų pusiausvyra."
+  }
+}

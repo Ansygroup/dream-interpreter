@@ -1,1 +1,216 @@
-{"nav":{"interpret":"Tõlgi","symbols":"Sümbolid","about":"Meist","faq":"KKK","history":"Ajalugu","saved":"Salvestatud","contact":"Kontakt","start":"Alusta","home":"Avaleht","aiBlog":"AI-blogi","ansyGroup":"Ansy Group","language":"Keel","searchLanguage":"Otsi keeli…","noLanguage":"Ükski keel ei vasta otsingule."},"footer":{"tagline":"Unenägude tõlgendus tehisintellektiga, tasuta — Ibn Sirini traditsiooni ja kaasaegse psühholoogia põhjal.","copyright":"© {year} Dreamscope"},"home":{"heroTitle":"Mida sinu {accent} püüab sulle öelda","heroAccent":"alateadvus","heroLede":"Muistne sümbolika, kaasaegne psühholoogia ja tehisintellekt — üheks selgeks lugemiks. Kirjelda und oma sõnadega ja saa tõlgendus, mis toetub Ibn Sirinile ja sügavpsühholoogiale.","interpretCta":"Tõlga und","browseCta":"Sirvi sümboliteid","ctaTitle":"Kirjelda oma und","ctaButton":"Alusta tõlgendamist"},"interpret":{"title":"Kirjelda oma und","language":"Keel","yourDream":"Sinu uni","placeholder":"Öösel nägin und, et käin läbi ukse, mis pidevalt kuju vahetas...","button":"Tõlka uni"},"common":{"interpretCta":"Tõlga und","backHome":"Tagasi avalehele"},"history":{"title":"Unenägude ajalugu","empty":"Ühtegi und pole veel tõlgendatud."},"saved":{"title":"Salvestatud unenäod","empty":"Midagi pole veel salvestatud."},"symbols":{"title":"{n} unesümbolit","search":"Otsi sümbolit…"},"notfound":{"title":"See uni lahustus","cta":"Tagasi avalehele"}}
+{
+  "nav": {
+    "interpret": "Tõlgenda",
+    "symbols": "Sümbolid",
+    "about": "Meist",
+    "faq": "KKK",
+    "history": "Ajalugu",
+    "saved": "Salvestatud",
+    "contact": "Kontakt",
+    "start": "Alusta",
+    "home": "Avaleht",
+    "aiBlog": "AI-blogi",
+    "ansyGroup": "Ansy Group",
+    "language": "Keel",
+    "searchLanguage": "Otsi keeli…",
+    "noLanguage": "Ükski keel ei vasta teie otsingule.",
+    "profile": "Profiil"
+  },
+  "footer": {
+    "tagline": "Tasuta AI-põhine unenägude tõlgendus, mis toetub Ibn Sirinile ja kaasaegsele psühholoogiale.",
+    "copyright": "© {year} Dreamscope"
+  },
+  "home": {
+    "heroTitle": "Mida sinu {accent} üritab öelda",
+    "heroAccent": "alateadvus",
+    "heroLede": "Iidsed sümbolid, kaasaegne psühholoogia ja AI — ühendatud üheks selgeks tõlgenduseks. Kirjelda unenägu oma sõnadega ja saa tõlgendus, mis toetub nii Ibn Sirinile kui ka sügavpsühholoogiale.",
+    "interpretCta": "Tõlgenda unenägu",
+    "browseCta": "Sirvi sümboleid",
+    "statLanguages": "{n} keelt",
+    "statSymbols": "{n} unenäosümbolit",
+    "statPrivateLine": "privaatne sinu seadmes",
+    "whyTitle": "Tõlgendus, mis on tõeliselt kasulik",
+    "whyLede": "Dreamscope seostab sinu unenäo selle sümbolitega ja loeb neid läbi selle traditsiooni, mida sina usaldad — psühholoogia kõrval, mitte asemel.",
+    "feature1Title": "Sümbolanalüüs",
+    "feature1Body": "Iga unenägu seostatakse selle tuumsümbolitega ja jälgitakse läbi sajanditepikkuse tõlgendustraditsiooni.",
+    "feature2Title": "60 keelt",
+    "feature2Body": "Tõlgenda ja loe sümboleid inglise, araabia, hispaania, hiina, jaapani ja 55 muus keeles.",
+    "feature3Title": "Kõik traditsioonid",
+    "feature3Body": "Ibn Sirin, sügavpsühholoogia ja vaated erinevatelt usunditelt — üks tõlgendus, vaadatuna sinu läbi.",
+    "feature4Title": "Salvestatud ja privaatne",
+    "feature4Body": "Sinu unenäod jäävad sinu seadmesse. Vaata üle, võrdle ja jälgi mustreid aja jooksul.",
+    "sampleTag": "Näidislugemine",
+    "sampleJustNow": "just nüüd",
+    "sampleDream": "\"Nägin, kuidas roheline madu lahkus majast läbi aiavärava.\"",
+    "sampleReading": "Maod märgivad muutust — midagi sinu elus koorib oma vana nahka maha. Värav viitab selgele väljapääsule, mis avaneb. Ibn Sirini traditsioonis tähendab kahjutu maja lahkuv madu sageli, et pikaajaline mure on lõpuks liikunud edasi.",
+    "sampleTag1": "Muutus",
+    "sampleTag2": "Vabanemine",
+    "sampleTag3": "Ibn Sirin",
+    "sampleSaved": "Salvestatud sinu seadmesse",
+    "symbolsTitle": "Iga sümbol kannab tähendust",
+    "symbolsLede": "Veest tulekahjuni — avasta levinumad unenäomotiivid ja mida igaüks tavaliselt erinevates traditsioonides tähistab.",
+    "ctaTitle": "Kirjelda oma unenägu",
+    "ctaLede": "Mõned laused piisavad. Tõlgendus valmib sekunditega ja jääb sinu seadmesse.",
+    "ctaButton": "Alusta tõlgendamist"
+  },
+  "interpret": {
+    "eyebrow": "Tõlgenda",
+    "title": "Kirjelda oma unenägu",
+    "lede": "Kirjuta see oma sõnadega. Mida rohkem detaile, seda täpsem lugemine — oluline on keskkond, tunded ja kõik ebatavaline.",
+    "language": "Keel",
+    "yourDream": "Sinu unenägu",
+    "placeholder": "Eelmisel ööl nägin unes, et kõndisin läbi ukse, mis pidevalt oma kuju muutis...",
+    "loading": "Tõlgendan...",
+    "button": "Tõlgenda unenägu",
+    "yourReading": "Sinu tõlgendus",
+    "save": "Salvesta",
+    "saved": "Salvestatud",
+    "viewHistory": "Vaata ajalugu",
+    "errorEmpty": "Palun kirjelda oma unenägu esmalt.",
+    "errorFailed": "Tõlgendus ebaõnnestus. Palun proovi uuesti.",
+    "errorNetwork": "Ühenduse viga. Palun proovi uuesti.",
+    "perspectiveLabel": "Läbi vaadatuna",
+    "symbolsLabel": "Sümbolid sinu unenäos",
+    "feedbackQ": "Kas see tõlgendus oli kasulik?",
+    "yes": "Jah, oli kasulik",
+    "no": "Ei eriti",
+    "thanks": "Täname — sinu tagasiside parendab tulevasi tõlgendusi.",
+    "perspectiveDesc": "Üks tõlgendus, mis põimib maailmatraditsioonide targemad niidid sügavpsühholoogiaga."
+  },
+  "history": {
+    "eyebrow": "Sinu tegevus",
+    "title": "Unenägude ajalugu",
+    "lede": "Kõik tõlgendused, mille oled loonud, salvestatud sellesse seadmesse.",
+    "empty": "Ühtegi unenägu pole veel tõlgendatud."
+  },
+  "saved": {
+    "eyebrow": "Sinu kogu",
+    "title": "Salvestatud unenäod",
+    "lede": "Hoia alles tõlgendused, mis olid olulised. Need jäävad sellesse seadmesse.",
+    "empty": "Midagi pole veel salvestatud."
+  },
+  "common": {
+    "interpretCta": "Tõlgenda unenägu",
+    "delete": "Kustuta",
+    "remove": "Eemalda",
+    "backHome": "Tagasi avalehele"
+  },
+  "symbols": {
+    "eyebrow": "Unenäosümbolite sõnastik",
+    "title": "{n} unenäosümbolit",
+    "lede": "Sirvi kõiki sümboleid, mida tõlgendame — tasuta, kümnetes keeltes. Vali oma keel, et tähendust lugeda.",
+    "search": "Otsi sümbolit…"
+  },
+  "about": {
+    "eyebrow": "Meist",
+    "title": "Selge tõlgendus, mis on juurdunud traditsioonis",
+    "p1": "Dreamscope eesmärk on muuta unenägude tõlgendamine kättesaadavaks sinu emakeeles. Ühendame kaks mõistmisvoogu: klassikalise islami unenäoteaduse Ibn Sirinist, kes on üks ajaloo mõjukamaid unenägude tõlgendajaid, ning kaasaegse sügavpsühholoogia sümboliraamistikud.",
+    "p2": "Iga tõlgendus on loodud selleks, et aidata sul mõtestada — mitte ennustada tulevikku. Sümbolid nagu vesi, tuli, lendamine või madu on kandnud tähendust kultuuriti tuhandeid aastaid ning meie tõlgendused jälgivad neid niite, et leiaksid selle, mis resoneerub sinu enda eluga.",
+    "p3": "Teenuse kasutamine on tasuta, privaatne ja saadaval 60 keeles. Sinu unenäod ei lahku kunagi sinu seadmest.",
+    "card1Title": "Ibn Sirin",
+    "card1Body": "Klassikaline islami unenäoteadus, jälitatud läbi sajandite tõlgendustraditsiooni.",
+    "card2Title": "60 keelt",
+    "card2Body": "Araabiast jaapani keeleni — tõlgenda selles keeles, milles unenäod näed.",
+    "card3Title": "100% privaatne",
+    "card3Body": "Unenäod jäävad sinu seadmesse. Kontosid ei ole, jälgimist ei toimu.",
+    "cta": "Alusta tõlgendamist",
+    "traditionsTitle": "Iga traditsioon, üks unenägu",
+    "traditionsLede": "Vali lääts, mida sinu süda usaldab — iga tõlgendus luuakse kindlat tõlgenduskoolkonda järgides."
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Võta ühendust",
+    "lede": "Küsimused, parandused või koostööideed? Võta Dreamscope meeskonnaga ühendust e-posti teel.",
+    "email": "E-post",
+    "disclaimer": "Dreamscope pakub ainult mõtestamist ja meelelahutust. Tõlgendused ei ole meditsiiniline, psühholoogiline ega religioosne nõuanne. Kui vajad tuge, pöördu palun kvalifitseeritud spetsialisti poole.",
+    "back": "Tagasi tõlgendaja juurde"
+  },
+  "faq": {
+    "eyebrow": "KKK",
+    "title": "Korduma kippuvad küsimused",
+    "q1": "Kuidas Dreamscope unenägusid tõlgendab?",
+    "a1": "Dreamscope ühendab klassikalise unenäoteaduse — sealhulgas Ibn Sirini traditsiooni — kaasaegse sügavpsühholoogiaga. Kirjeldad unenägu oma sõnadega ning saad tõlgenduse, mis seostab selle sümbolid nende levinud kultuurüleste tähendustega.",
+    "q2": "Kas minu unenägude andmed on privaatsed?",
+    "a2": "Jah. Sinu unenäod salvestatakse ainult sinu brauseri kohalikku mällu sinu seadmes. Serverisse ei saadeta midagi salvestamiseks ning saad oma ajaloo igal ajal kustutada.",
+    "q3": "Millistes keeltes saan unenägusid tõlgendada?",
+    "a3": "Dreamscope toetab 60 keelt, sealhulgas inglise, araabia, hispaania, prantsuse, saksa, hiina, jaapani, korea, türgi, portugali, vene, hindi ja paljusid teisi. Tõlgendus järgib sinu valitud keelt.",
+    "q4": "Kas tõlgendused asendavad professionaalset nõuannet?",
+    "a4": "Ei. Unenägude tõlgendused on mõtestamiseks ja meelelahutuseks. Need ei ole meditsiiniline, psühholoogiline ega religioosne juhend. Kui sul on raske, räägi palun kvalifitseeritud spetsialistiga.",
+    "q5": "Kui paljusid unenäosümboleid on kaetud?",
+    "a5": "Dreamscope'il on pühendatud leheküljed 146 levinud sümbolile — madu, vesi, lendamine, tuli, rasedus, raha ja paljud teised — igaüks saadaval mitmes keeles koos pika sabaga küsimuste variantidega."
+  },
+  "notfound": {
+    "code": "404",
+    "title": "See unenägu haihtus",
+    "lede": "Lehekülge, mida otsisid, pole siin. Viime sind tagasi tõlgendamise juurde.",
+    "cta": "Tagasi avalehele"
+  },
+  "perspectives": {
+    "general": {
+      "name": "Universaalne"
+    },
+    "islamic": {
+      "name": "Ibn Sirin (islami)"
+    },
+    "christian": {
+      "name": "Kristlik"
+    },
+    "jewish": {
+      "name": "Juudi"
+    },
+    "buddhist": {
+      "name": "Budistlik"
+    },
+    "hindu": {
+      "name": "Hindu"
+    },
+    "psychology": {
+      "name": "Psühholoogia (Jung)"
+    },
+    "chinese": {
+      "name": "Zhou Gong (hiina)"
+    }
+  },
+  "daily": {
+    "tag": "Päeva unenägu"
+  },
+  "profile": {
+    "title": "Sinu ruum",
+    "cloudOff": "Kontod tulevad peagi. Seni toimib kõik sinu jaoks juba külalisena — sinu unenäod jäävad sinu seadmesse.",
+    "signInLede": "Logi sisse, et oma unenägude päevikut kõigis oma seadmetes hoida. Sinu külalise ajalugu liigub sinuga automaatselt kaasa.",
+    "emailLabel": "E-post",
+    "magicLink": "Saada mulle sisselogimislink",
+    "google": "Jätka Google'iga",
+    "checkEmail": "Kontrolli oma postkasti — sisselogimislink ootab sind.",
+    "invalidEmail": "Palun sisesta kehtiv e-posti aadress.",
+    "guestNote": "Parooli ei ole, jälgimist ei toimu — ainult link. Külalisrežiim koos seadmesisese salvestusega jääb täielikult kasutatavaks.",
+    "member": "Liige",
+    "migrated": "Viidi {n} unenägu sellest seadmest sinu päevikusse üle.",
+    "signOut": "Logi välja",
+    "navLabel": "Profiil",
+    "lede": "Kõik, mida Dreamscope sinu teekonnast teab — salvestatud sinu seadmesse, ainult sinu oma.",
+    "yourState": "Sinu praegune seisund",
+    "statDreams": "Tõlgendatud unenäod",
+    "statSaved": "Salvestatud tõlgendused",
+    "statStreak": "Päevade järjestikune seeria",
+    "statTopSymbol": "Lemmiksümbol",
+    "emptyState": "Unenägusid veel pole — sinu esimene tõlgendus toob selle lehe ellu.",
+    "symbolsYouMeet": "Sümbolid, millega korduvalt kohtud",
+    "noneYet": "—",
+    "lastReading": "Viimane tõlgendus",
+    "languagesUsed": "Kasutatud keeled",
+    "perspectivesUsed": "Kasutatud traditsioonid",
+    "cloudTitle": "Kõigis sinu seadmetes",
+    "privacyNote": "Sinu unenäod on salvestatud sinu seadmesse — kunagi ei müüda, kunagi ei profileerita."
+  },
+  "perspDesc": {
+    "general": "Üks tõlgendus, mis põimib maailmatraditsioonide targemad niidid sügavpsühholoogiaga.",
+    "islamic": "Ibn Sirini klassikaline koolkond — sümboolne, seadusekohane ja hingekeskne.",
+    "christian": "Unenägude tõlgendus Joosepi ja Taanieli liinis, koos piibli sümbolismiga.",
+    "jewish": "Toora ja Talmudi unenäotarkus — sõnum, mis ootab tarka tõlgendust.",
+    "hindu": "Veda sümbolism, karma ja meele sisemised maastikud.",
+    "buddhist": "Mööduvus ja teadlik tähelepanu — vaatle unenägu haarumata.",
+    "psychology": "Jungi arhetüübid ja vari — mida su psüühika töötleb.",
+    "chinese": "Zhou Gongi klassikaline sõnastik — jini, jangi ja viie elemendi tasakaal."
+  }
+}

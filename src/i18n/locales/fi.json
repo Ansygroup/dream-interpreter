@@ -1,1 +1,185 @@
-{"nav":{"interpret":"Tulkitse","symbols":"Symbolit","about":"Tietoja","faq":"Usein kysyttyä","history":"Historia","saved":"Tallennetut","contact":"Yhteystiedot","start":"Aloita","home":"Etusivu","aiBlog":"AI-blogi","ansyGroup":"Ansy Group","language":"Kieli","searchLanguage":"Etsi kieliä…","noLanguage":"Mikään kieli ei vastaa hakuasi."},"footer":{"tagline":"Unien tulkinta tekoälyllä, ilmaiseksi — Ibn Sirinin perinteen ja modernin psykologian pohjalta.","copyright":"© {year} Dreamscope"},"home":{"heroTitle":"Mitä sinun {accent} yrittää sanoa sinulle","heroAccent":"tiedostamaton","heroLede":"Muinainen symboliikka, moderni psykologia ja tekoäly — yhdistettynä yhdeksi selkeäksi lukemiseksi. Kuvaile unesi omin sanoin ja saat tulkinnan, joka nojaa Ibn Siriniin ja syvälliseen psykologiaan.","interpretCta":"Tulkita uni","browseCta":"Selaa symboleja","ctaTitle":"Kuvaile unesi","ctaButton":"Aloita tulkinta"},"interpret":{"title":"Kuvaile unesi","language":"Kieli","yourDream":"Unesi","placeholder":"Viime yönä näin unta, että kävelin oven läpi, joka jatkuvasti muutti muotoaan...","button":"Tulkita uni"},"common":{"interpretCta":"Tulkita uni","backHome":"Takaisin etusivulle"},"history":{"title":"Unien historia","empty":"Ei vielä tulkittuja unia."},"saved":{"title":"Tallennetut unet","empty":"Ei vielä tallennuksia."},"symbols":{"title":"{n} unisymbolia","search":"Etsi symbolia…"},"notfound":{"title":"Tämä uni liukesi käsistä","cta":"Takaisin etusivulle"}}
+{
+  "nav": {
+    "interpret": "Tulkkaa",
+    "symbols": "Symbolit",
+    "about": "Tietoja",
+    "faq": "UKK",
+    "history": "Historia",
+    "saved": "Tallennetut",
+    "contact": "Yhteystiedot",
+    "start": "Aloita",
+    "home": "Etusivu",
+    "aiBlog": "AI-blogin",
+    "ansyGroup": "Ansy Group",
+    "language": "Kieli",
+    "searchLanguage": "Hae kieliä…",
+    "noLanguage": "Hakuehtoihisi ei löytynyt kieliä."
+  },
+  "footer": {
+    "tagline": "Ilmainen tekoälyunien tulkinta, joka yhdistää Ibn Sirinin perinteen ja modernin psykologian.",
+    "copyright": "© {year} Dreamscope"
+  },
+  "home": {
+    "heroTitle": "Mitä {accent} yrittää sanoa sinulle",
+    "heroAccent": "alitajuntasi",
+    "heroLede": "Muinainen symboliikka, moderni psykologia ja tekoäly – yhdessä selkeässä tulkinnassa. Kuvaile unesi omin sanoin ja saat tulkinnan, joka nojaa sekä Ibn Sirinin perinteeseen että syvyyspsykologiaan.",
+    "interpretCta": "Tulkkaa uni",
+    "browseCta": "Selaa symboleita",
+    "statLanguages": "{n} kieltä",
+    "statSymbols": "{n} unisymbolia",
+    "statPrivateLine": "yksityinen laitteellasi",
+    "whyTitle": "Tulkinta, josta on sinulle oikeasti hyötyä",
+    "whyLede": "Dreamscope yhdistää unesi sen symboleihin ja tulkitsee ne sinulle luotettavan perinteen kautta – psykologia rinnalla, ei sen sijaan.",
+    "feature1Title": "Symbolinen analyysi",
+    "feature1Body": "Jokainen uni puretaan ydinsymboleikseen ja jäljitetään vuosisatojen tulkintaperinteeseen.",
+    "feature2Title": "60 kieltä",
+    "feature2Body": "Tulkkaa ja lue symboleita englanniksi, arabiaksi, espanjaksi, kiinaksi, japaniksi ja 55 muulla kielellä.",
+    "feature3Title": "Kaikki perinteet",
+    "feature3Body": "Ibn Sirin, syvyyspsykologia ja eri uskontojen näkökulmat – yksi tulkinta, sinun linssiesi kautta.",
+    "feature4Title": "Tallennettu ja yksityinen",
+    "feature4Body": "Unesi pysyvät laitteellasi. Palaa niihin, vertaile ja seuraa kaavoja ajan mittaan.",
+    "sampleTag": "Esimerkkitulkinta",
+    "sampleJustNow": "juuri nyt",
+    "sampleDream": "\"Näin vihreän käärmeen poistuvan talosta puutarhan portista.\"",
+    "sampleReading": "Käärmeet merkitsevät muutosta – jokin elämässäsi luo vanhaa kuortaan. Portti viittaa siihen, että avautumassa on selkeä ulospääsy. Ibn Sirinin perinteessä vaaraton käärme, joka poistuu kodista, tarkoittaa usein sitä, että pitkään jatkunut huoli on vihdoin jättämässä sinut rauhaan.",
+    "sampleTag1": "Muutos",
+    "sampleTag2": "Vapautuminen",
+    "sampleTag3": "Ibn Sirin",
+    "sampleSaved": "Tallennettu laitteellesi",
+    "symbolsTitle": "Jokainen symboli kantaa merkitystä",
+    "symbolsLede": "Vedestä tuleen – tutustu yleisimpiin unien teemoihin ja siihen, mitä ne perinteiden valossa yleensä viestivät.",
+    "ctaTitle": "Kuvaile unesi",
+    "ctaLede": "Muutama lause riittää. Tulkinta syntyy sekunneissa ja pysyy laitteellasi.",
+    "ctaButton": "Aloita tulkinta"
+  },
+  "interpret": {
+    "eyebrow": "Tulkkaa",
+    "title": "Kuvaile unesi",
+    "lede": "Kirjoita se omin sanoin. Mitä enemmän yksityiskohtia, sitä tarkempi tulkinta – ympäristö, tunteet ja kaikki epätavallinen ovat tärkeitä.",
+    "language": "Kieli",
+    "yourDream": "Unesi",
+    "placeholder": "Viime yönä unissani kävelin oven läpi, joka muutti jatkuvasti muotoaan...",
+    "loading": "Tulkitaan...",
+    "button": "Tulkkaa uni",
+    "yourReading": "Sinun tulkintasi",
+    "save": "Tallenna",
+    "saved": "Tallennettu",
+    "viewHistory": "Näytä historia",
+    "errorEmpty": "Kuvaile ensin unesi.",
+    "errorFailed": "Tulkinta epäonnistui. Yritä uudelleen.",
+    "errorNetwork": "Yhteysvirhe. Yritä uudelleen.",
+    "perspectiveLabel": "Tulkinta näkökulmasta",
+    "symbolsLabel": "Unesi symbolit",
+    "feedbackQ": {
+      "en": "Was this reading helpful?",
+      "ar": "هل كانت هذه القراءة مفيدة؟"
+    },
+    "yes": {
+      "en": "Yes, helpful",
+      "ar": "نعم، مفيدة"
+    },
+    "no": {
+      "en": "Not really",
+      "ar": "ليس تماماً"
+    },
+    "thanks": {
+      "en": "Thank you — your feedback improves future readings.",
+      "ar": "شكراً لك — تقييمك يحسّن القراءات المستقبلية."
+    }
+  },
+  "history": {
+    "eyebrow": "Sinun toimintasi",
+    "title": "Unihistoria",
+    "lede": "Jokainen tulkitsemasi uni, tallennettuna tälle laitteelle.",
+    "empty": "Et ole vielä tulkinnut unia."
+  },
+  "saved": {
+    "eyebrow": "Sinun kirjastosi",
+    "title": "Tallennetut unet",
+    "lede": "Säilytä ne tulkinnat, jotka olivat merkityksellisiä. Ne pysyvät tällä laitteella.",
+    "empty": "Ei vielä tallennettuja."
+  },
+  "common": {
+    "interpretCta": "Tulkkaa uni",
+    "delete": "Poista",
+    "remove": "Poista",
+    "backHome": "Palaa etusivulle"
+  },
+  "symbols": {
+    "eyebrow": "Unisymbolien sanakirja",
+    "title": "{n} unisymbolia",
+    "lede": "Selaa kaikkia tulkitsemiamme symboleita – ilmaiseksi, kymmenillä kielillä. Valitse omasi ja lue merkitys.",
+    "search": "Hae symbolia…"
+  },
+  "about": {
+    "eyebrow": "Tietoja",
+    "title": "Selkeä tulkinta, juurtunut perinteeseen",
+    "p1": "Dreamscope tekee unien tulkinnasta saavutettavaa sinun omalla kielelläsi. Yhdistämme kaksi ymmärryksen virtaa: Ibn Sirinin klassisen islamilaisen unitutkimuksen – yhden historian vaikutusvaltaisimmista unientulkitsijoista – ja modernin syvyyspsykologian symboliset viitekehykset.",
+    "p2": "Jokainen tulkinta on luotu auttamaan sinua pohtimaan – ei ennustamaan tulevaa. Symbolit kuten vesi, tuli, lento tai käärme ovat kantaneet merkitystä kulttuurien yli tuhansia vuosia, ja tulkintamme jäljittävät näitä lankoja, jotta löydät sen, mikä puhuttelee juuri sinun elämääsi.",
+    "p3": "Palvelu on ilmainen, yksityinen ja saatavilla 60 kielellä. Unesi eivät koskaan poistu laitteeltasi.",
+    "card1Title": "Ibn Sirin",
+    "card1Body": "Klassinen islantilainen unitutkimus, jäljitetty vuosisatojen tulkintaperinteen kautta.",
+    "card2Title": "60 kieltä",
+    "card2Body": "Arabiankielestä japaniin – tulkkaa sillä kielellä, jolla unelmoit.",
+    "card3Title": "100 % yksityinen",
+    "card3Body": "Unet pysyvät laitteellasi. Ei tilejä, ei seurantaa.",
+    "cta": "Aloita tulkinta"
+  },
+  "contact": {
+    "eyebrow": "Yhteystiedot",
+    "title": "Ota yhteyttä",
+    "lede": "Kysymyksiä, korjauksia tai yhteistyöideoita? Tavoita Dreamscope-tiimi sähköpostitse.",
+    "email": "Sähköposti",
+    "disclaimer": "Dreamscope tarjoaa pohdintaa ja viihdettä. Tulkinnat eivät ole lääketieteellistä, psykologista tai uskonnollista neuvontaa. Jos tarvitset tukea, käänny ammattilaisen puoleen.",
+    "back": "Takaisin tulkitsimeen"
+  },
+  "faq": {
+    "eyebrow": "UKK",
+    "title": "Usein kysytyt kysymykset",
+    "q1": "Miten Dreamscope tulkitsee unia?",
+    "a1": "Dreamscope yhdistää klassisen unitutkimuksen – Ibn Sirinin perinne mukaan lukien – ja modernin syvyyspsykologian. Kuvaile uni omin sanoin, ja saat tulkinnan, joka yhdistää sen symbolit kulttuurien yleisiin merkityksiin.",
+    "q2": "Ovatko uneni tiedot yksityisiä?",
+    "a2": "Kyllä. Unesi tallentuvat vain selaimesi paikalliseen tallennustilaan laitteellasi. Mitään ei lähetetä palvelimelle säilytettäväksi, ja voit poistaa historiansa milloin tahansa.",
+    "q3": "Millä kielillä voin tulkita unia?",
+    "a3": "Dreamscope tukee 60 kieltä, mukaan lukien englanti, arabia, espanja, ranska, saksa, kiina, japani, korea, turkki, portugali, venäjä, hindi ja monet muut. Tulkinta seuraa valitsemaasi kieltä.",
+    "q4": "Korvaavatko tulkinnat ammattilaisen neuvoja?",
+    "a4": "Ei. Unitulkinnat ovat pohdintaa ja viihdettä varten. Ne eivät ole lääketieteellistä, psykologista tai uskonnollista ohjausta. Jos kamppailet, keskustele pätevän ammattilaisen kanssa.",
+    "q5": "Kuinka montaa unisymbolia palvelu kattaa?",
+    "a5": "Dreamscopella on omat sivut 146 yleiselle symbolille – käärme, vesi, lentäminen, tuli, raskaus, raha ja monet muut – joista jokainen on saatavilla useilla kielillä ja pitkän hännän kysymysmuunnelmilla."
+  },
+  "notfound": {
+    "code": "404",
+    "title": "Tämä uni haihtui",
+    "lede": "Etsimääsi sivua ei ole täällä. Palataan tulkitsemiseen.",
+    "cta": "Palaa etusivulle"
+  },
+  "perspectives": {
+    "general": {
+      "name": "Yleismaailmallinen"
+    },
+    "islamic": {
+      "name": "Ibn Sirin (islamilainen)"
+    },
+    "christian": {
+      "name": "Kristillinen"
+    },
+    "jewish": {
+      "name": "Juutalainen"
+    },
+    "hindu": {
+      "name": "Hindulainen"
+    },
+    "buddhist": {
+      "name": "Buddhalainen"
+    },
+    "psychology": {
+      "name": "Psykologia (Jung)"
+    },
+    "chinese": {
+      "name": "Zhou Gong (kiinalainen)"
+    }
+  },
+  "daily": {
+    "tag": "Päivän uni"
+  }
+}

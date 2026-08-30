@@ -1,1 +1,185 @@
-{"nav":{"interpret":"Tumači","symbols":"Simboli","about":"O nama","faq":"Česta pitanja","history":"Povijest","saved":"Spremljeno","contact":"Kontakt","start":"Počni","home":"Početna","aiBlog":"AI blog","ansyGroup":"Ansy Group","language":"Jezik","searchLanguage":"Traži jezike…","noLanguage":"Nijedan jezik ne odgovara tvojoj pretrazi."},"footer":{"tagline":"Tumačenje snova uz AI, besplatno — prema tradiciji Ibn Sirina i modernoj psihologiji.","copyright":"© {year} Dreamscope"},"home":{"heroTitle":"Što ti tvoje {accent} pokušava reći","heroAccent":"podsvijest","heroLede":"Drevna simbolika, moderna psihologija i AI — spojeni u jedno jasno čitanje. Opiši san svojim riječima i primi tumačenje utemeljeno na Ibn Sirinu i dubinskoj psihologiji.","interpretCta":"Tumači san","browseCta":"Istraži simbole","ctaTitle":"Opiši svoj san","ctaButton":"Počni tumačiti"},"interpret":{"title":"Opiši svoj san","language":"Jezik","yourDream":"Tvoj san","placeholder":"Sinoć sam sanjao/la da prolazim kroz vrata koja su se stalno mijenjala u obliku...","button":"Tumači san"},"common":{"interpretCta":"Tumači san","backHome":"Natrag na početnu"},"history":{"title":"Povijest snova","empty":"Još nema tumačenih snova."},"saved":{"title":"Spremljeni snovi","empty":"Još nema spremljenog."},"symbols":{"title":"{n} simbola snova","search":"Traži simbol…"},"notfound":{"title":"Ovaj se san raspao","cta":"Natrag na početnu"}}
+{
+  "nav": {
+    "interpret": "Interpretiraj",
+    "symbols": "Simboli",
+    "about": "O nama",
+    "faq": "FAQ",
+    "history": "Povijest",
+    "saved": "Spremljeno",
+    "contact": "Kontakt",
+    "start": "Započni",
+    "home": "Početna",
+    "aiBlog": "AI Blog",
+    "ansyGroup": "Ansy Group",
+    "language": "Jezik",
+    "searchLanguage": "Pretraži jezike…",
+    "noLanguage": "Nijedan jezik ne odgovara vašoj pretrazi."
+  },
+  "footer": {
+    "tagline": "Besplatna AI interpretacija snova utemeljena u Ibn Sirinu i modernoj psihologiji.",
+    "copyright": "© {year} Dreamscope"
+  },
+  "home": {
+    "heroTitle": "Što vaša {accent} pokušava reći",
+    "heroAccent": "podsvijest",
+    "heroLede": "Drevna simbolika, moderna psihologija i AI — objedinjeni u jedno jasno tumačenje. Opišite san vlastitim riječima i dobijte tumačenje utemeljeno i u Ibn Sirinu i u dubinskoj psihologiji.",
+    "interpretCta": "Interpretiraj san",
+    "browseCta": "Pregledaj simbole",
+    "statLanguages": "{n} jezika",
+    "statSymbols": "{n} simbola snova",
+    "statPrivateLine": "privatno na vašem uređaju",
+    "whyTitle": "Tumačenje koje zaista možete upotrijebiti",
+    "whyLede": "Dreamscope povezuje vaš san s njegovim simbolima, a zatim ih čita kroz tradiciju kojoj vi vjerujete — s psihologijom uz, a ne umjesto.",
+    "feature1Title": "Simbolička analiza",
+    "feature1Body": "Svaki san mapiran je do svojih temeljnih simbola i praćen kroz stoljeća interpretacijske tradicije.",
+    "feature2Title": "60 jezika",
+    "feature2Body": "Tumačite i čitajte simbole na engleskom, arapskom, španjolskom, kineskom, japanskom i još 55 jezika.",
+    "feature3Title": "Sve tradicije",
+    "feature3Body": "Ibn Sirin, dubinska psihologija i perspektive raznih vjeroispovijesti — jedno tumačenje, gledano kroz vašu prizmu.",
+    "feature4Title": "Spremljeno i privatno",
+    "feature4Body": "Vaši snovi ostaju na vašem uređaju. Vratite se, uspoređujte i pratite obrasce kroz vrijeme.",
+    "sampleTag": "Primjer tumačenja",
+    "sampleJustNow": "upravo sad",
+    "sampleDream": "\"Sanjao sam kako zelena zmija izlazi iz kuće kroz vrtna vrata.\"",
+    "sampleReading": "Zmije označavaju preobrazbu — nešto u vašem životu odbacuje staru kožu. Vrata sugeriraju da se otvara jasan izlaz. U Ibn Sirinovoj tradiciji, bezopasna zmija koja napušta dom često znači da konačno nestaje briga koja vas je dugo pratila.",
+    "sampleTag1": "Preobrazba",
+    "sampleTag2": "Oslobođenje",
+    "sampleTag3": "Ibn Sirin",
+    "sampleSaved": "Spremljeno na vaš uređaj",
+    "symbolsTitle": "Svaki simbol nosi značenje",
+    "symbolsLede": "Od vode do vatre, istražite najčešće motive snova i što svaki od njih obično signalizira kroz tradicije.",
+    "ctaTitle": "Opišite svoj san",
+    "ctaLede": "Nekoliko rečenica je dovoljno. Tumačenje traje svega nekoliko sekundi i ostaje na vašem uređaju.",
+    "ctaButton": "Započni tumačenje"
+  },
+  "interpret": {
+    "eyebrow": "Interpretiraj",
+    "title": "Opišite svoj san",
+    "lede": "Napišite ga vlastitim riječima. Što više detalja, to će tumačenje biti jasnije — mjesto, osjećaji i sve neuobičajeno su važni.",
+    "language": "Jezik",
+    "yourDream": "Vaš san",
+    "placeholder": "Prošlu sam noć sanjao kako hodam kroz vrata koja su se neprestano mijenjala...",
+    "loading": "Tumačim...",
+    "button": "Interpretiraj san",
+    "yourReading": "Vaše tumačenje",
+    "save": "Spremi",
+    "saved": "Spremljeno",
+    "viewHistory": "Pogledaj povijest",
+    "errorEmpty": "Molimo, prvo opišite svoj san.",
+    "errorFailed": "Tumačenje nije uspjelo. Pokušajte ponovo.",
+    "errorNetwork": "Greška u povezivanju. Pokušajte ponovo.",
+    "perspectiveLabel": "Čitanje kroz",
+    "symbolsLabel": "Simboli u vašem snu",
+    "feedbackQ": {
+      "en": "Je li ovo tumačenje bilo korisno?",
+      "ar": "هل كانت هذه القراءة مفيدة؟"
+    },
+    "yes": {
+      "en": "Da, korisno",
+      "ar": "نعم، مفيدة"
+    },
+    "no": {
+      "en": "Ne baš",
+      "ar": "ليس تماماً"
+    },
+    "thanks": {
+      "en": "Hvala — vaše povratne informacije poboljšavaju buduća tumačenja.",
+      "ar": "شكراً لك — تقييمك يحسّن القراءات المستقبلية."
+    }
+  },
+  "history": {
+    "eyebrow": "Vaša aktivnost",
+    "title": "Povijest snova",
+    "lede": "Svako tumačenje koje ste generirali, pohranjeno na ovom uređaju.",
+    "empty": "Još nema interpretiranih snova."
+  },
+  "saved": {
+    "eyebrow": "Vaša biblioteka",
+    "title": "Spremljeni snovi",
+    "lede": "Zadržite tumačenja koja su vam bila važna. Ostaju na ovom uređaju.",
+    "empty": "Još ništa nije spremljeno."
+  },
+  "common": {
+    "interpretCta": "Interpretiraj san",
+    "delete": "Obriši",
+    "remove": "Ukloni",
+    "backHome": "Povratak na početnu"
+  },
+  "symbols": {
+    "eyebrow": "Rječnik simbola snova",
+    "title": "{n} simbola snova",
+    "lede": "Pregledajte sve simbole koje tumačimo — besplatno, na desecima jezika. Odaberite svoj kako biste pročitali značenje.",
+    "search": "Traži simbol…"
+  },
+  "about": {
+    "eyebrow": "O nama",
+    "title": "Jasno tumačenje, ukorijenjeno u tradiciji",
+    "p1": "Dreamscope postoji kako bi tumačenje snova učinio dostupnim na vašem jeziku. Kombiniramo dva toka razumijevanja: klasičnu islamsku znanost o snovima Ibn Sirina, jednog od najutjecajnijih tumača snova u povijesti, i simboličke okvire moderne dubinske psihologije.",
+    "p2": "Svako tumačenje generirano je da vam pomogne u promišljanju — ne da predvidi budućnost. Simboli poput vode, vatre, letenja ili zmije nose značenje u kulturama tisućama godina, a naša tumačenja prate te niti kako biste pronašli ono što rezonira s vašim vlastitim životom.",
+    "p3": "Usluga je besplatna, privatna po dizajnu i dostupna na 60 jezika. Vaši snovi nikada ne napuštaju vaš uređaj.",
+    "card1Title": "Ibn Sirin",
+    "card1Body": "Klasična islamska znanost o snovima, praćena kroz stoljeća tumačenja.",
+    "card2Title": "60 jezika",
+    "card2Body": "Od arapskog do japanskog — tumačite na jeziku na kojem sanjate.",
+    "card3Title": "100% privatno",
+    "card3Body": "Snovi ostaju na vašem uređaju. Bez računa, bez praćenja.",
+    "cta": "Započni tumačenje"
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Stupite u kontakt",
+    "lede": "Pitanja, ispravke ili ideje za suradnju? Kontaktirajte Dreamscope tim putem e-pošte.",
+    "email": "E-pošta",
+    "disclaimer": "Dreamscope pruža samo poticaj za promišljanje i zabavu. Tumačenja nisu medicinski, psihološki ni vjerski savjet. Ako vam je potrebna podrška, obratite se kvalificiranom stručnjaku.",
+    "back": "Natrag na tumač"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Često postavljana pitanja",
+    "q1": "Kako Dreamscope tumači snove?",
+    "a1": "Dreamscope spaja klasičnu znanost o snovima — uključujući Ibn Sirinovu tradiciju — s modernom dubinskom psihologijom. Opišete san vlastitim riječima i dobijete tumačenje koje povezuje njegove simbole s njihovim uobičajenim značenjima u kulturama.",
+    "q2": "Jesu li moji podaci o snovima privatni?",
+    "a2": "Da. Vaši snovi pohranjeni su samo u lokalnu pohranu vašeg preglednika na vašem uređaju. Ništa se ne šalje na poslužitelj radi pohrane, a svoju povijest možete obrisati u bilo kojem trenutku.",
+    "q3": "Na kojim jezicima mogu tumačiti snove?",
+    "a3": "Dreamscope podržava 60 jezika uključujući engleski, arapski, španjolski, francuski, njemački, kineski, japanski, korejski, turski, portugalski, ruski, hindski i druge. Tumačenje prati jezik koji odaberete.",
+    "q4": "Jesu li tumačenja zamjena za stručni savjet?",
+    "a4": "Ne. Tumačenja snova služe za promišljanje i zabavu. Ona nisu medicinski, psihološki ni vjerski vodič. Ako se suočavate s poteškoćama, molimo vas da razgovarate s kvalificiranim stručnjakom.",
+    "q5": "Koliko simbola snova je pokriveno?",
+    "a5": "Dreamscope ima posvećene stranice za 146 uobičajenih simbola — zmija, voda, letenje, vatra, trudnoća, novac i mnogi drugi — svaki dostupan na više jezika s varijantama dugih upita."
+  },
+  "notfound": {
+    "code": "404",
+    "title": "Ovaj se san raspršio",
+    "lede": "Stranica koju ste tražili nije ovdje. Vratimo vas na tumačenje.",
+    "cta": "Povratak na početnu"
+  },
+  "perspectives": {
+    "general": {
+      "name": "Univerzalno"
+    },
+    "islamic": {
+      "name": "Ibn Sirin (islamsko)"
+    },
+    "christian": {
+      "name": "Kršćansko"
+    },
+    "jewish": {
+      "name": "Židovsko"
+    },
+    "hindu": {
+      "name": "Hinduističko"
+    },
+    "buddhist": {
+      "name": "Budističko"
+    },
+    "psychology": {
+      "name": "Psihologija (Jung)"
+    },
+    "chinese": {
+      "name": "Zhou Gong (kinesko)"
+    }
+  },
+  "daily": {
+    "tag": "San dana"
+  }
+}

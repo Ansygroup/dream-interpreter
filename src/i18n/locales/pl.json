@@ -1,1 +1,185 @@
-{"nav":{"interpret":"Interpretuj","symbols":"Symbole","about":"O nas","faq":"FAQ","history":"Historia","saved":"Zapisane","contact":"Kontakt","start":"Zacznij","home":"Strona główna","aiBlog":"Blog AI","ansyGroup":"Ansy Group","language":"Język","searchLanguage":"Szukaj języków…","noLanguage":"Brak języków pasujących do wyszukiwania."},"footer":{"tagline":"Interpretacja snów z AI, za darmo — w oparciu o tradycję Ibn Sirina i nowoczesną psychologię.","copyright":"© {year} Dreamscope"},"home":{"heroTitle":"Co Twój {accent} próbuje Ci powiedzieć","heroAccent":"podświadomy","heroLede":"Starożytna symbolika, nowoczesna psychologia i AI — połączone w jedną jasną lekturę. Opisz swój sen własnymi słowami i otrzymaj interpretację opartą na Ibn Sirinie i psychologii głębi.","interpretCta":"Zinterpretuj sen","browseCta":"Przeglądaj symbole","ctaTitle":"Opisz swój sen","ctaButton":"Zacznij interpretować"},"interpret":{"title":"Opisz swój sen","language":"Język","yourDream":"Twój sen","placeholder":"Zeszłej nocy śniło mi się, że przechodzę przez drzwi, które nieustannie zmieniają kształt...","button":"Zinterpretuj sen"},"common":{"interpretCta":"Zinterpretuj sen","backHome":"Wróć na stronę główną"},"history":{"title":"Historia snów","empty":"Na razie nie zinterpretowano żadnych snów."},"saved":{"title":"Zapisane sny","empty":"Na razie nic nie zapisano."},"symbols":{"title":"{n} symboli snów","search":"Szukaj symbolu…"},"notfound":{"title":"Ten sen się rozpłynął","cta":"Wróć na stronę główną"}}
+{
+  "nav": {
+    "interpret": "Interpretacja",
+    "symbols": "Symbole",
+    "about": "O nas",
+    "faq": "FAQ",
+    "history": "Historia",
+    "saved": "Zapisane",
+    "contact": "Kontakt",
+    "start": "Zacznij",
+    "home": "Strona główna",
+    "aiBlog": "Blog AI",
+    "ansyGroup": "Ansy Group",
+    "language": "Język",
+    "searchLanguage": "Szukaj języków…",
+    "noLanguage": "Żaden język nie pasuje do wyszukiwania."
+  },
+  "footer": {
+    "tagline": "Bezpłatna interpretacja snów oparta na nauce Ibn Sirina i współczesnej psychologii.",
+    "copyright": "© {year} Dreamscope"
+  },
+  "home": {
+    "heroTitle": "Co twoja {accent} próbuje ci powiedzieć",
+    "heroAccent": "podświadomość",
+    "heroLede": "Starożytna symbolika, współczesna psychologia i sztuczna inteligencja — połączone w jedną jasną interpretację. Opisz sen własnymi słowami i otrzymaj odczytanie zakorzenione zarówno w tradycji Ibn Sirina, jak i w psychologii głębi.",
+    "interpretCta": "Interpretuj sen",
+    "browseCta": "Przeglądaj symbole",
+    "statLanguages": "{n} języków",
+    "statSymbols": "{n} symboli snów",
+    "statPrivateLine": "prywatnie na twoim urządzeniu",
+    "whyTitle": "Odczytanie, z którego naprawdę skorzystasz",
+    "whyLede": "Dreamscope dopasowuje twój sen do jego symboli, a następnie odczytuje je przez tradycję, której ufasz — psychologia towarzyszy, nie zastępuje.",
+    "feature1Title": "Analiza symboliczna",
+    "feature1Body": "Każdy sen jest mapowany na swoje kluczowe symbole i śledzony przez wieki tradycji interpretacyjnej.",
+    "feature2Title": "60 języków",
+    "feature2Body": "Interpretuj i czytaj symbole po angielsku, arabsku, hiszpańsku, chińsku, japońsku i w ponad 55 innych językach.",
+    "feature3Title": "Wszystkie tradycje",
+    "feature3Body": "Ibn Sirin, psychologia głębi oraz perspektywy różnych wyznań — jedno odczytanie widziane przez twój pryzmat.",
+    "feature4Title": "Zapisane i prywatne",
+    "feature4Body": "Twoje sny pozostają na twoim urządzeniu. Wróć do nich, porównuj i śledź wzorce na przestrzeni czasu.",
+    "sampleTag": "Przykładowe odczytanie",
+    "sampleJustNow": "przed chwilą",
+    "sampleDream": "„Widziałem zielonego węża wychodzącego z domu przez bramę ogrodu.\"",
+    "sampleReading": "Węże oznaczają transformację — coś w twoim życiu zrzuca starą skórę. Brama sugeruje, że otwiera się wyraźne wyjście. W tradycji Ibn Sirina niegroźny wąż opuszczający dom często oznacza, że dawny niepokój wreszcie odchodzi.",
+    "sampleTag1": "Transformacja",
+    "sampleTag2": "Uwolnienie",
+    "sampleTag3": "Ibn Sirin",
+    "sampleSaved": "Zapisane na twoim urządzeniu",
+    "symbolsTitle": "Każdy symbol niesie znaczenie",
+    "symbolsLede": "Od wody po ogień — odkryj najczęstsze motywy snów i to, co każdy z nich zwykle sygnalizuje w różnych tradycjach.",
+    "ctaTitle": "Opisz swój sen",
+    "ctaLede": "Wystarczy kilka zdań. Odczytanie trwa sekundy i zostaje na twoim urządzeniu.",
+    "ctaButton": "Zacznij interpretować"
+  },
+  "interpret": {
+    "eyebrow": "Interpretacja",
+    "title": "Opisz swój sen",
+    "lede": "Napisz go własnymi słowami. Im więcej szczegółów, tym trafniejsze odczytanie — miejsce, uczucia i wszystko, co niezwykłe, mają znaczenie.",
+    "language": "Język",
+    "yourDream": "Twój sen",
+    "placeholder": "Ostatniej nocy śniło mi się, że przechodzę przez drzwi, które ciągle zmieniały kształt...",
+    "loading": "Interpretuję...",
+    "button": "Interpretuj sen",
+    "yourReading": "Twoje odczytanie",
+    "save": "Zapisz",
+    "saved": "Zapisano",
+    "viewHistory": "Pokaż historię",
+    "errorEmpty": "Proszę, najpierw opisz swój sen.",
+    "errorFailed": "Interpretacja się nie powiodła. Spróbuj ponownie.",
+    "errorNetwork": "Błąd połączenia. Spróbuj ponownie.",
+    "perspectiveLabel": "Odczytanie przez",
+    "symbolsLabel": "Symbole w twoim śnie",
+    "feedbackQ": {
+      "en": "Czy to odczytanie było pomocne?",
+      "ar": "هل كانت هذه القراءة مفيدة؟"
+    },
+    "yes": {
+      "en": "Tak, pomocne",
+      "ar": "نعم، مفيدة"
+    },
+    "no": {
+      "en": "Nie do końca",
+      "ar": "ليس تماماً"
+    },
+    "thanks": {
+      "en": "Dziękujemy — twoja opinia ulepsza przyszłe odczytania.",
+      "ar": "شكراً لك — تقييمك يحسّن القراءات المستقبلية."
+    }
+  },
+  "history": {
+    "eyebrow": "Twoja aktywność",
+    "title": "Historia snów",
+    "lede": "Wszystkie wygenerowane interpretacje, przechowywane na tym urządzeniu.",
+    "empty": "Jeszcze nie zinterpretowano żadnych snów."
+  },
+  "saved": {
+    "eyebrow": "Twoja biblioteka",
+    "title": "Zapisane sny",
+    "lede": "Zachowaj interpretacje, które miały znaczenie. Pozostają na tym urządzeniu.",
+    "empty": "Nie ma jeszcze nic zapisanego."
+  },
+  "common": {
+    "interpretCta": "Interpretuj sen",
+    "delete": "Usuń",
+    "remove": "Usuń",
+    "backHome": "Wróć na stronę główną"
+  },
+  "symbols": {
+    "eyebrow": "Słownik symboli snów",
+    "title": "{n} symboli snów",
+    "lede": "Przeglądaj wszystkie symbole, które interpretujemy — bezpłatnie, w dziesiątkach języków. Wybierz swój, aby przeczytać znaczenie.",
+    "search": "Szukaj symbolu…"
+  },
+  "about": {
+    "eyebrow": "O nas",
+    "title": "Jasne odczytanie, zakorzenione w tradycji",
+    "p1": "Dreamscope powstało, aby uczynić interpretację snów dostępną w twoim własnym języku. Łączymy dwa nurty rozumienia: klasyczną islamską naukę o snach Ibn Sirina, jednego z najbardziej wpływowych interpretatorów snów w historii, oraz symboliczne ramy współczesnej psychologii głębi.",
+    "p2": "Każde odczytanie jest generowane, aby pomóc ci się zastanowić — nie przepowiadać przyszłości. Symbole takie jak woda, ogień, lot czy wąż niosą znaczenie w różnych kulturach od tysięcy lat, a nasze interpretacje śledzą te wątki, abyś mógł odnaleźć to, co rezonuje z twoim życiem.",
+    "p3": "Usługa jest bezpłatna, prywatna z założenia i dostępna w 60 językach. Twoje sny nigdy nie opuszczają twojego urządzenia.",
+    "card1Title": "Ibn Sirin",
+    "card1Body": "Klasyczna islamska nauka o snach, śledzona przez wieki interpretacji.",
+    "card2Title": "60 języków",
+    "card2Body": "Od arabskiego po japoński — interpretuj w języku, w którym śnisz.",
+    "card3Title": "100% prywatności",
+    "card3Body": "Sny pozostają na twoim urządzeniu. Bez kont, bez śledzenia.",
+    "cta": "Zacznij interpretować"
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Skontaktuj się z nami",
+    "lede": "Pytania, poprawki lub pomysły na współpracę? Napisz do zespołu Dreamscope.",
+    "email": "E-mail",
+    "disclaimer": "Dreamscope zapewnia wyłącznie refleksję i rozrywkę. Interpretacje nie stanowią porady medycznej, psychologicznej ani religijnej. Jeśli potrzebujesz wsparcia, skonsultuj się z wykwalifikowanym specjalistą.",
+    "back": "Wróć do interpretera"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Najczęściej zadawane pytania",
+    "q1": "Jak Dreamscope interpretuje sny?",
+    "a1": "Dreamscope łączy klasyczną naukę o snach — w tym tradycję Ibn Sirina — ze współczesną psychologią głębi. Opisujesz sen własnymi słowami, a otrzymujesz odczytanie, które mapuje jego symbole na ich wspólne znaczenia w różnych kulturach.",
+    "q2": "Czy moje dane o snach są prywatne?",
+    "a2": "Tak. Twoje sny są przechowywane wyłącznie w pamięci lokalnej przeglądarki na twoim urządzeniu. Nic nie jest wysyłane na serwer w celu przechowywania, a historię możesz usunąć w dowolnym momencie.",
+    "q3": "W jakich językach można interpretować sny?",
+    "a3": "Dreamscope obsługuje 60 języków, w tym angielski, arabski, hiszpański, francuski, niemiecki, chiński, japoński, koreański, turecki, portugalski, rosyjski, hindi i inne. Odczytanie podąża za wybranym językiem.",
+    "q4": "Czy interpretacje zastępują profesjonalną poradę?",
+    "a4": "Nie. Odczytania snów służą refleksji i rozrywce. Nie są wskazówką medyczną, psychologiczną ani religijną. Jeśli przeżywasz trudności, porozmawiaj z wykwalifikowanym specjalistą.",
+    "q5": "Ile symboli snów jest objętych?",
+    "a5": "Dreamscope ma dedykowane strony dla 146 popularnych symboli — wąż, woda, latanie, ogień, ciąża, pieniądze i wiele innych — każdy dostępny w wielu językach z wariantami pytań long-tail."
+  },
+  "notfound": {
+    "code": "404",
+    "title": "Ten sen się rozproszył",
+    "lede": "Strona, której szukałeś, nie istnieje. Wróćmy do interpretowania.",
+    "cta": "Wróć na stronę główną"
+  },
+  "perspectives": {
+    "general": {
+      "name": "Uniwersalna"
+    },
+    "islamic": {
+      "name": "Ibn Sirin (islamska)"
+    },
+    "christian": {
+      "name": "Chrześcijańska"
+    },
+    "jewish": {
+      "name": "Judaistyczna"
+    },
+    "hindu": {
+      "name": "Hinduistyczna"
+    },
+    "buddhist": {
+      "name": "Buddyjska"
+    },
+    "psychology": {
+      "name": "Psychologia (Jung)"
+    },
+    "chinese": {
+      "name": "Zhou Gong (chińska)"
+    }
+  },
+  "daily": {
+    "tag": "Sen dnia"
+  }
+}

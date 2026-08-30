@@ -1,1 +1,185 @@
-{"nav":{"interpret":"Értelmezés","symbols":"Szimbólumok","about":"Rólunk","faq":"GYIK","history":"Előzmények","saved":"Mentve","contact":"Kapcsolat","start":"Kezdés","home":"Főoldal","aiBlog":"AI-blog","ansyGroup":"Ansy Group","language":"Nyelv","searchLanguage":"Nyelvek keresése…","noLanguage":"Nincs a keresésednek megfelelő nyelv."},"footer":{"tagline":"Álomfejtés mesterséges intelligenciával, ingyen — Ibn Sirín hagyománya és a modern pszichológia alapján.","copyright":"© {year} Dreamscope"},"home":{"heroTitle":"Mit próbál mondani neked a {accent}","heroAccent":"tudatalattid","heroLede":"Ősi szimbolizmus, modern pszichológia és MI — egyetlen tiszta olvasattá olvadva. Írd le az álmodat a saját szavaiddal, és kapj Ibn Sirínre és a mélylélektanra épülő értelmezést.","interpretCta":"Álom értelmezése","browseCta":"Szimbólumok böngészése","ctaTitle":"Írd le az álmodat","ctaButton":"Kezdd az értelmezést"},"interpret":{"title":"Írd le az álmodat","language":"Nyelv","yourDream":"Az álmodat","placeholder":"A múlt éjjel azt álmodtam, hogy egy folyamatosan alakot váltó ajtón állandok...","button":"Álom értelmezése"},"common":{"interpretCta":"Álom értelmezése","backHome":"Vissza a főoldalra"},"history":{"title":"Álomelőzmények","empty":"Még nincs értelmezett álom."},"saved":{"title":"Mentett álmok","empty":"Még nincs mentve semmi."},"symbols":{"title":"{n} álomszimbólum","search":"Szimbólum keresése…"},"notfound":{"title":"Ez az álom feloldódott","cta":"Vissza a főoldalra"}}
+{
+  "nav": {
+    "interpret": "Értelmezés",
+    "symbols": "Szimbólumok",
+    "about": "Rólunk",
+    "faq": "GYIK",
+    "history": "Előzmények",
+    "saved": "Mentettek",
+    "contact": "Kapcsolat",
+    "start": "Kezdés",
+    "home": "Főoldal",
+    "aiBlog": "AI Blog",
+    "ansyGroup": "Ansy Group",
+    "language": "Nyelv",
+    "searchLanguage": "Nyelvek keresése…",
+    "noLanguage": "Nincs a keresésnek megfelelő nyelv."
+  },
+  "footer": {
+    "tagline": "Ingyenes AI-alapú álomértelmezés Ibn Sirin hagyományára és a modern pszichológiára építve.",
+    "copyright": "© {year} Dreamscope"
+  },
+  "home": {
+    "heroTitle": "Mit üzen a {accent}",
+    "heroAccent": " tudatalattid",
+    "heroLede": "Ősi szimbolika, modern pszichológia és mesterséges intelligencia – egyetlen érthető olvasatban. Írd le az álmodat a saját szavaiddal, és kapj egy értelmezést, amely egyszerre támaszkodik Ibn Sirinre és a mélylélektanra.",
+    "interpretCta": "Álomértelmezés",
+    "browseCta": "Szimbólumok böngészése",
+    "statLanguages": "{n} nyelv",
+    "statSymbols": "{n} álomszimbólum",
+    "statPrivateLine": "bizalmas, a készülékeden",
+    "whyTitle": "Egy olvasat, amit valóban használhatsz",
+    "whyLede": "A Dreamscope az álmodat a szimbólumaihoz rendeli, majd azon hagyomány szerint olvassa őket, amelyben megbízol – a pszichológia mellettük, nem helyettük szólal meg.",
+    "feature1Title": "Szimbolikus elemzés",
+    "feature1Body": "Minden álmot a legfontosabb szimbólumaihoz rendelünk, és évszázados értelmezési hagyományokon vezetjük végig.",
+    "feature2Title": "60 nyelv",
+    "feature2Body": "Értelmezz és olvass szimbólumokat angolul, arabul, spanyolul, kínaiul, japánul és további 55 nyelven.",
+    "feature3Title": "Minden hagyomány",
+    "feature3Body": "Ibn Sirin, a mélylélektan és különböző vallási szemléletek – egyetlen olvasat, a te szemszögedből.",
+    "feature4Title": "Mentve és bizalmas",
+    "feature4Body": "Az álmaid a készülékeden maradnak. Térj vissza hozzájuk, hasonlítsd össze és kövesd a mintákat az idő múlásával.",
+    "sampleTag": "Mintaolvasat",
+    "sampleJustNow": "épp most",
+    "sampleDream": "„Azt álmodtam, hogy egy zöld kígyó hagyta el a házat a kerti kapun át.”",
+    "sampleReading": "A kígyók az átalakulást jelzik – valami az életedben levetkőzi régi bőrét. A kapu arra utal, hogy egyértelmű kijárat nyílik. Ibn Sirin hagyományában egy ártalmatlan kígyó, amely elhagyja a házat, gyakran azt jelenti, hogy egy makacs aggodalom végre tovaszáll.",
+    "sampleTag1": "Átalakulás",
+    "sampleTag2": "Elengedés",
+    "sampleTag3": "Ibn Sirin",
+    "sampleSaved": "Mentve a készülékedre",
+    "symbolsTitle": "Minden szimbólum hordoz jelentést",
+    "symbolsLede": "A víztől a tűzig – fedezd fel a leggyakoribb álomképeket és azt, mit jeleznek általában a különböző hagyományokban.",
+    "ctaTitle": "Írd le az álmodat",
+    "ctaLede": "Elegendő néhány mondat. Az olvasat másodpercek alatt elkészül, és a készülékeden marad.",
+    "ctaButton": "Kezdd el az értelmezést"
+  },
+  "interpret": {
+    "eyebrow": "Értelmezés",
+    "title": "Írd le az álmodat",
+    "lede": "Fogalmazd meg a saját szavaiddal. Minél több részletet adsz meg, annál élesebb lesz az olvasat – a helyszín, az érzések és minden szokatlan részlet számít.",
+    "language": "Nyelv",
+    "yourDream": "Az álmod",
+    "placeholder": "Tegnap éjjel arról álmodtam, hogy ajtókon mentem keresztül, amelyek folyton változtatták az alakjukat...",
+    "loading": "Értelmezés folyamatban…",
+    "button": "Álom értelmezése",
+    "yourReading": "A te olvasatod",
+    "save": "Mentés",
+    "saved": "Mentve",
+    "viewHistory": "Előzmények megtekintése",
+    "errorEmpty": "Kérlek, előbb írd le az álmodat.",
+    "errorFailed": "Az értelmezés nem sikerült. Kérlek, próbáld újra.",
+    "errorNetwork": "Kapcsolódási hiba. Kérlek, próbáld újra.",
+    "perspectiveLabel": "Olvasat szemszöge",
+    "symbolsLabel": "Az álmod szimbólumai",
+    "feedbackQ": {
+      "en": "Hasznos volt ez az olvasat?",
+      "ar": "هل كانت هذه القراءة مفيدة؟"
+    },
+    "yes": {
+      "en": "Igen, hasznos",
+      "ar": "نعم، مفيدة"
+    },
+    "no": {
+      "en": "Nem igazán",
+      "ar": "ليس تماماً"
+    },
+    "thanks": {
+      "en": "Köszönjük – a visszajelzésed segít a jövőbeli olvasatok tökéletesítésében.",
+      "ar": "شكراً لك — تقييمك يحسّن القراءات المستقبلية."
+    }
+  },
+  "history": {
+    "eyebrow": "A te tevékenységed",
+    "title": "Álmok előzményei",
+    "lede": "Minden értelmezés, amelyet készítettél, ezen a készüléken tárolódik.",
+    "empty": "Még nincs értelmezett álom."
+  },
+  "saved": {
+    "eyebrow": "A te gyűjteményed",
+    "title": "Mentett álmok",
+    "lede": "Tartsd meg azokat az értelmezéseket, amelyek fontosak voltak. Ezek a készülékeden maradnak.",
+    "empty": "Még nincs semmi mentve."
+  },
+  "common": {
+    "interpretCta": "Álomértelmezés",
+    "delete": "Törlés",
+    "remove": "Eltávolítás",
+    "backHome": "Vissza a főoldalra"
+  },
+  "symbols": {
+    "eyebrow": "Álomszimbólum-szótár",
+    "title": "{n} álomszimbólum",
+    "lede": "Böngéssz az összes általunk értelmezett szimbólum között – ingyenesen, számos nyelven. Válaszd ki a tiédet a jelentés elolvasásához.",
+    "search": "Szimbólum keresése…"
+  },
+  "about": {
+    "eyebrow": "Rólunk",
+    "title": "Érthető olvasat, hagyományba ágyazva",
+    "p1": "A Dreamscope azért jött létre, hogy az álomértelmezést elérhetővé tegye a saját nyelveden. Két megértési hagyományt ötvözünk: Ibn Sirin klasszikus iszlám álomtudományát – a történelem egyik legnagyobb hatású álomfejtőjét – és a modern mélylélektan szimbolikus keretrendszereit.",
+    "p2": "Minden olvasat célja, hogy segítsen elgondolkodni – nem az, hogy jósoljon. Az olyan szimbólumok, mint a víz, a tűz, a repülés vagy a kígyó, évezredek óta hordoznak jelentést a kultúrákban, és értelmezéseink ezeket a szálakat követik, hogy megtaláld, mi rezonál a saját életeddel.",
+    "p3": "A szolgáltatás ingyenes, alapvetően bizalmas, és 60 nyelven érhető el. Az álmaid soha nem hagyják el a készülékedet.",
+    "card1Title": "Ibn Sirin",
+    "card1Body": "Klasszikus iszlám álomtudomány, évszázados értelmezési hagyományon átszűrve.",
+    "card2Title": "60 nyelv",
+    "card2Body": "Arabtól a japánig – értelmezz azon a nyelven, amelyen álmodsz.",
+    "card3Title": "100%-ban bizalmas",
+    "card3Body": "Az álmaid a készülékeden maradnak. Nincs fiók, nincs nyomon követés.",
+    "cta": "Kezdd el az értelmezést"
+  },
+  "contact": {
+    "eyebrow": "Kapcsolat",
+    "title": "Lépj velünk kapcsolatba",
+    "lede": "Kérdéseid, javításaid vagy együttműködési ötleteid vannak? Írj a Dreamscope csapatának e-mailben.",
+    "email": "E-mail",
+    "disclaimer": "A Dreamscope kizárólag elmélkedésre és szórakoztatásra szolgál. Az értelmezések nem minősülnek orvosi, pszichológiai vagy vallási tanácsnak. Ha támogatásra van szükséged, kérlek, fordulj szakképzett szakemberhez.",
+    "back": "Vissza az értelmezőhöz"
+  },
+  "faq": {
+    "eyebrow": "GYIK",
+    "title": "Gyakran ismételt kérdések",
+    "q1": "Hogyan értelmezi a Dreamscope az álmokat?",
+    "a1": "A Dreamscope ötvözi a klasszikus álomtudományt – beleértve Ibn Sirin hagyományát – a modern mélylélektannal. Leírod az álmodat a saját szavaiddal, és egy olyan olvasatot kapsz, amely szimbólumait a kultúrákban elterjedt jelentéseikhez rendeli.",
+    "q2": "Bizalmasak az álmaim adatai?",
+    "a2": "Igen. Az álmaid csak a böngésződ helyi tárhelyén, a készülékeden tárolódnak. Semmi nem kerül szerverre tárolásra, és az előzményeidet bármikor törölheted.",
+    "q3": "Milyen nyelveken lehet álmokat értelmezni?",
+    "a3": "A Dreamscope 60 nyelvet támogat, többek között az angolt, arabot, spanyolt, franciát, németet, kínait, japánt, koreait, törököt, portugált, oroszt, hindit és még sok mást. Az olvasat a választott nyelven készül.",
+    "q4": "Helyettesítik az értelmezések a szakmai tanácsot?",
+    "a4": "Nem. Az álomolvasatok elmélkedésre és szórakoztatásra szolgálnak. Nem minősülnek orvosi, pszichológiai vagy vallási útmutatásnak. Ha nehézségekkel küzdesz, kérlek, beszélj szakképzett szakemberrel.",
+    "q5": "Hány álomszimbólumot fed le a szolgáltatás?",
+    "a5": "A Dreamscope 146 gyakori szimbólumhoz kínál dedikált oldalt – kígyó, víz, repülés, tűz, terhesség, pénz és még sok más – mindegyik több nyelven, hosszú keresési kérdésváltozatokkal."
+  },
+  "notfound": {
+    "code": "404",
+    "title": "Ez az álom szertefoszlott",
+    "lede": "A keresett oldal nem található. Visszamegyünk az értelmezéshez.",
+    "cta": "Vissza a főoldalra"
+  },
+  "perspectives": {
+    "general": {
+      "name": "Univerzális"
+    },
+    "islamic": {
+      "name": "Ibn Sirin (iszlám)"
+    },
+    "christian": {
+      "name": "Keresztény"
+    },
+    "jewish": {
+      "name": "Zsidó"
+    },
+    "hindu": {
+      "name": "Hindu"
+    },
+    "buddhist": {
+      "name": "Buddhista"
+    },
+    "psychology": {
+      "name": "Pszichológia (Jung)"
+    },
+    "chinese": {
+      "name": "Zhou Gong (kínai)"
+    }
+  },
+  "daily": {
+    "tag": "A nap álma"
+  }
+}

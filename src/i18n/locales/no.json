@@ -1,1 +1,185 @@
-{"nav":{"interpret":"Tolk","symbols":"Symboler","about":"Om oss","faq":"FAQ","history":"Historikk","saved":"Lagret","contact":"Kontakt","start":"Start","home":"Hjem","aiBlog":"AI-blogg","ansyGroup":"Ansy Group","language":"Språk","searchLanguage":"Søk etter språk…","noLanguage":"Ingen språk matcher søket ditt."},"footer":{"tagline":"Drømmetolkning med AI, gratis — etter Ibn Sirins tradisjon og moderne psykologi.","copyright":"© {year} Dreamscope"},"home":{"heroTitle":"Hva det {accent} ditt prøver å si til deg","heroAccent":"underbevisste","heroLede":"Eldgammel symbolikk, moderne psykologi og AI — forent i én klar lesning. Beskriv drømmen din med dine egne ord og få en tolkning forankret i Ibn Sirin og dypsykologien.","interpretCta":"Tolk en drøm","browseCta":"Utforsk symboler","ctaTitle":"Beskriv drømmen din","ctaButton":"Begynn å tolke"},"interpret":{"title":"Beskriv drømmen din","language":"Språk","yourDream":"Drømmen din","placeholder":"I natt drømte jeg at jeg gikk gjennom en dør som stadig skiftet form...","button":"Tolk drømmen"},"common":{"interpretCta":"Tolk en drøm","backHome":"Tilbake hjem"},"history":{"title":"Drømmehistorikk","empty":"Ingen drømmer tolket ennå."},"saved":{"title":"Lagrede drømmer","empty":"Ingenting lagret ennå."},"symbols":{"title":"{n} drømmesymboler","search":"Søk etter et symbol…"},"notfound":{"title":"Denne drømmen oppløste seg","cta":"Tilbake hjem"}}
+{
+  "nav": {
+    "interpret": "Tolk",
+    "symbols": "Symboler",
+    "about": "Om oss",
+    "faq": "FAQ",
+    "history": "Historikk",
+    "saved": "Lagret",
+    "contact": "Kontakt",
+    "start": "Start",
+    "home": "Hjem",
+    "aiBlog": "AI-blogg",
+    "ansyGroup": "Ansy Group",
+    "language": "Språk",
+    "searchLanguage": "Søk språk…",
+    "noLanguage": "Ingen språk passer til søket ditt."
+  },
+  "footer": {
+    "tagline": "Gratis AI-drømmetolkning basert på Ibn Sirin og moderne psykologi.",
+    "copyright": "© {year} Dreamscope"
+  },
+  "home": {
+    "heroTitle": "Hva {accent} prøver å si deg",
+    "heroAccent": "underbevisstheten",
+    "heroLede": "Gammel symbolikk, moderne psykologi og AI — samlet i én tydelig tolkning. Beskriv en drøm med egne ord, og få en tolkning forankret i både Ibn Sirin og dybdepsykologi.",
+    "interpretCta": "Tolk en drøm",
+    "browseCta": "Utforsk symboler",
+    "statLanguages": "{n} språk",
+    "statSymbols": "{n} drømmesymboler",
+    "statPrivateLine": "privat på enheten din",
+    "whyTitle": "En tolkning du faktisk kan bruke",
+    "whyLede": "Dreamscope knytter drømmen din til symbolene sine og leser dem gjennom den tradisjonen du stoler på — med psykologi ved siden av, ikke i stedet for.",
+    "feature1Title": "Symbolsk analyse",
+    "feature1Body": "Hver drøm kartlegges etter kjernesymbolene sine og spores gjennom hundreår av tolkningstradisjon.",
+    "feature2Title": "60 språk",
+    "feature2Body": "Tolk og les symboler på engelsk, arabisk, spansk, kinesisk, japansk og 55 andre språk.",
+    "feature3Title": "Alle tradisjoner",
+    "feature3Body": "Ibn Sirin, dybdepsykologi og perspektiver fra ulike trosretninger — én tolkning, sett gjennom din linse.",
+    "feature4Title": "Lagret og privat",
+    "feature4Body": "Drømmene dine blir på enheten din. Gå tilbake, sammenlign og følg mønstre over tid.",
+    "sampleTag": "Eksempeltolkning",
+    "sampleJustNow": "akkurat nå",
+    "sampleDream": "«Jeg så en grønn slange forlate huset gjennom hageporten.»",
+    "sampleReading": "Slanger markerer transformasjon — noe i livet ditt kvitter seg med gammel hud. Porten antyder at en tydelig utgang åpner seg. I Ibn Sirins tradisjon betyr en ufarlig slange som forlater hjemmet ofte at en langvarig bekymring endelig slipper taket.",
+    "sampleTag1": "Transformasjon",
+    "sampleTag2": "Løslatelse",
+    "sampleTag3": "Ibn Sirin",
+    "sampleSaved": "Lagret på enheten din",
+    "symbolsTitle": "Hvert symbol bærer en betydning",
+    "symbolsLede": "Fra vann til ild — utforsk de vanligste drømmemotivene og hva de gjerne signaliserer på tvers av tradisjoner.",
+    "ctaTitle": "Beskriv drømmen din",
+    "ctaLede": "Noen få setninger holder. Tolkningen tar sekunder og blir på enheten din.",
+    "ctaButton": "Start tolkningen"
+  },
+  "interpret": {
+    "eyebrow": "Tolk",
+    "title": "Beskriv drømmen din",
+    "lede": "Skriv med egne ord. Jo mer detalj, desto skarpere blir tolkningen — omgivelser, følelser og alt uvanlig har betydning.",
+    "language": "Språk",
+    "yourDream": "Drømmen din",
+    "placeholder": "I natt drømte jeg at jeg gikk gjennom en dør som stadig skiftet form...",
+    "loading": "Tolker...",
+    "button": "Tolk drømmen",
+    "yourReading": "Din tolkning",
+    "save": "Lagre",
+    "saved": "Lagret",
+    "viewHistory": "Se historikk",
+    "errorEmpty": "Vennligst beskriv drømmen din først.",
+    "errorFailed": "Tolkningen mislyktes. Vennligst prøv igjen.",
+    "errorNetwork": "Tilkoblingsfeil. Vennligst prøv igjen.",
+    "perspectiveLabel": "Tolkning gjennom",
+    "symbolsLabel": "Symboler i drømmen din",
+    "feedbackQ": {
+      "en": "Was this reading helpful?",
+      "ar": "هل كانت هذه القراءة مفيدة؟"
+    },
+    "yes": {
+      "en": "Yes, helpful",
+      "ar": "نعم، مفيدة"
+    },
+    "no": {
+      "en": "Not really",
+      "ar": "ليس تماماً"
+    },
+    "thanks": {
+      "en": "Thank you — your feedback improves future readings.",
+      "ar": "شكراً لك — تقييمك يحسّن القراءات المستقبلية."
+    }
+  },
+  "history": {
+    "eyebrow": "Din aktivitet",
+    "title": "Drømmehistorikk",
+    "lede": "Hver tolkning du har generert, lagret på denne enheten.",
+    "empty": "Ingen drømmer tolket ennå."
+  },
+  "saved": {
+    "eyebrow": "Ditt bibliotek",
+    "title": "Lagrede drømmer",
+    "lede": "Ta vare på tolkningene som betød noe. De blir på denne enheten.",
+    "empty": "Ingenting lagret ennå."
+  },
+  "common": {
+    "interpretCta": "Tolk en drøm",
+    "delete": "Slett",
+    "remove": "Fjern",
+    "backHome": "Tilbake til forsiden"
+  },
+  "symbols": {
+    "eyebrow": "Drømmesymbolordbok",
+    "title": "{n} drømmesymboler",
+    "lede": "Bla gjennom alle symbolene vi tolker — gratis, på dusinvis av språk. Velg ditt for å lese betydningen.",
+    "search": "Søk etter et symbol…"
+  },
+  "about": {
+    "eyebrow": "Om oss",
+    "title": "En tydelig tolkning, forankret i tradisjonen",
+    "p1": "Dreamscope finnes for å gjøre drømmetolkning tilgjengelig på ditt eget språk. Vi kombinerer to forståelsesstrømmer: den klassiske islamske drømmevitenskapen til Ibn Sirin, en av historiens mest innflytelsesrike drømmetolkere, og de symbolske rammene i moderne dybdepsykologi.",
+    "p2": "Hver tolkning er laget for å hjelpe deg å reflektere — ikke for å spå fremtiden. Symboler som vann, ild, flukt eller en slange har båret mening på tvers av kulturer i tusenvis av år, og våre tolkninger følger disse trådene slik at du kan finne det som resonnerer med ditt eget liv.",
+    "p3": "Tjenesten er gratis, privat av design og tilgjengelig på 60 språk. Drømmene dine forlater aldri enheten din.",
+    "card1Title": "Ibn Sirin",
+    "card1Body": "Klassisk islamsk drømmevitenskap, sporet gjennom hundreår av tolkning.",
+    "card2Title": "60 språk",
+    "card2Body": "Fra arabisk til japansk — tolk på språket du drømmer på.",
+    "card3Title": "100 % privat",
+    "card3Body": "Drømmene blir på enheten din. Ingen kontoer, ingen sporing.",
+    "cta": "Start tolkningen"
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Ta kontakt",
+    "lede": "Spørsmål, rettelser eller samarbeidsidéer? Nå Dreamscope-teamet via e-post.",
+    "email": "E-post",
+    "disclaimer": "Dreamscope tilbyr kun refleksjon og underholdning. Tolkninger er ikke medisinske, psykologiske eller religiøse råd. Hvis du trenger støtte, vennligst kontakt en kvalifisert fagperson.",
+    "back": "Tilbake til tolkningen"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Ofte stilte spørsmål",
+    "q1": "Hvordan tolker Dreamscope drømmer?",
+    "a1": "Dreamscope blander klassisk drømmevitenskap — inkludert Ibn Sirins tradisjon — med moderne dybdepsykologi. Du beskriver en drøm med egne ord og får en tolkning som knytter symbolene til deres vanlige betydninger på tvers av kulturer.",
+    "q2": "Er drømmedataene mine private?",
+    "a2": "Ja. Drømmene dine lagres kun i nettleserens lokale lagring på enheten din. Ingenting sendes til en server for lagring, og du kan slette historikken din når som helst.",
+    "q3": "På hvilke språk kan jeg tolke drømmer?",
+    "a3": "Dreamscope støtter 60 språk, inkludert engelsk, arabisk, spansk, fransk, tysk, kinesisk, japansk, koreansk, tyrkisk, portugisisk, russisk, hindi og flere. Tolkningen følger språket du velger.",
+    "q4": "Er tolkningene en erstatning for profesjonelle råd?",
+    "a4": "Nei. Drømmetolkninger er for refleksjon og underholdning. De er ikke medisinske, psykologiske eller religiøse veiledninger. Hvis du sliter, vennligst snakk med en kvalifisert fagperson.",
+    "q5": "Hvor mange drømmesymboler dekkes?",
+    "a5": "Dreamscope har dedikerte sider for 146 vanlige symboler — slange, vann, å fly, ild, graviditet, penger og mange flere — hver tilgjengelig på flere språk med varianter for langhale-spørsmål."
+  },
+  "notfound": {
+    "code": "404",
+    "title": "Denne drømmen forsvant",
+    "lede": "Siden du lette etter finnes ikke. La oss få deg tilbake til tolkningen.",
+    "cta": "Tilbake til forsiden"
+  },
+  "perspectives": {
+    "general": {
+      "name": "Universell"
+    },
+    "islamic": {
+      "name": "Ibn Sirin (islam)"
+    },
+    "christian": {
+      "name": "Kristen"
+    },
+    "jewish": {
+      "name": "Jødisk"
+    },
+    "hindu": {
+      "name": "Hindu"
+    },
+    "buddhist": {
+      "name": "Buddhistisk"
+    },
+    "psychology": {
+      "name": "Psykologi (Jung)"
+    },
+    "chinese": {
+      "name": "Zhou Gong (kinesisk)"
+    }
+  },
+  "daily": {
+    "tag": "Dagens drøm"
+  }
+}

@@ -1,1 +1,185 @@
-{"nav":{"interpret":"Interpretovať","symbols":"Symboly","about":"O nás","faq":"Časté otázky","history":"História","saved":"Uložené","contact":"Kontakt","start":"Začať","home":"Domov","aiBlog":"AI blog","ansyGroup":"Ansy Group","language":"Jazyk","searchLanguage":"Hľadať jazyky…","noLanguage":"Žiadny jazyk nezodpovedá vášmu hľadaniu."},"footer":{"tagline":"Výklad snov s umelou inteligenciou, zadarmo — podľa tradície Ibn Sirína a modernej psychológie.","copyright":"© {year} Dreamscope"},"home":{"heroTitle":"Čo sa vám snaží povedať vaše {accent}","heroAccent":"podvedomie","heroLede":"Staroveká symbolika, moderná psychológia a AI — spojené v jednom jasnom čítaní. Opíšte si sen vlastnými slovami a získajte výklad zakotvený v Ibn Sirínovi a hlbinnej psychológií.","interpretCta":"Interpretovať sen","browseCta":"Prehliadať symboly","ctaTitle":"Opíšte svoj sen","ctaButton":"Začať interpretovať"},"interpret":{"title":"Opíšte svoj sen","language":"Jazyk","yourDream":"Váš sen","placeholder":"Včera v noci sa mi zdalo, že prechádzam dverami, ktoré sa neustále menili na podobu...","button":"Interpretovať sen"},"common":{"interpretCta":"Interpretovať sen","backHome":"Späť na domov"},"history":{"title":"História snov","empty":"Zatiaľ neboli interpretované žiadne sny."},"saved":{"title":"Uložené sny","empty":"Zatiaľ nič uložené."},"symbols":{"title":"{n} symbolov snov","search":"Hľadať symbol…"},"notfound":{"title":"Tento sen sa rozpustil","cta":"Späť na domov"}}
+{
+  "nav": {
+    "interpret": "Interpretácia",
+    "symbols": "Symboly",
+    "about": "O nás",
+    "faq": "FAQ",
+    "history": "História",
+    "saved": "Uložené",
+    "contact": "Kontakt",
+    "start": "Začať",
+    "home": "Domov",
+    "aiBlog": "AI Blog",
+    "ansyGroup": "Ansy Group",
+    "language": "Jazyk",
+    "searchLanguage": "Hľadať jazyky…",
+    "noLanguage": "Žiadny jazyk nevyhovuje vášmu vyhľadávaniu."
+  },
+  "footer": {
+    "tagline": "Bezplatná AI interpretácia snov založená na Ibn Sirinovi a modernej psychológii.",
+    "copyright": "© {year} Dreamscope"
+  },
+  "home": {
+    "heroTitle": "Čo sa vám snaží povedať vaše {accent}",
+    "heroAccent": "podvedomie",
+    "heroLede": "Starobylá symbolika, moderná psychológia a AI — spojené do jedného zrozumiteľného výkladu. Popíšte sen vlastnými slovami a získajte interpretáciu založenú na Ibn Sirinovi aj hĺbkovej psychológii.",
+    "interpretCta": "Interpretujte sen",
+    "browseCta": "Prehliadať symboly",
+    "statLanguages": "{n} jazykov",
+    "statSymbols": "{n} symbolov snov",
+    "statPrivateLine": "súkromné vo vašom zariadení",
+    "whyTitle": "Výklad, ktorý vám naozaj pomôže",
+    "whyLede": "Dreamscope mapuje váš sen na jeho symboly a potom ich číta cez tradíciu, ktorej dôverujete — psychológiu prináša popri nej, nie namiesto nej.",
+    "feature1Title": "Symbolická analýza",
+    "feature1Body": "Každý sen je namapovaný na svoje základné symboly a sledovaný cez stáročia interpretačnej tradície.",
+    "feature2Title": "60 jazykov",
+    "feature2Body": "Interpretujte a čítajte symboly po anglicky, arabsky, španielsky, čínsky, japonsky a v ďalších 55 jazykoch.",
+    "feature3Title": "Všetky tradície",
+    "feature3Body": "Ibn Sirin, hĺbková psychológia a pohľady rôznych vierouok — jeden výklad, videný vašou optikou.",
+    "feature4Title": "Uložené a súkromné",
+    "feature4Body": "Vaše sny zostávajú vo vašom zariadení. Vracajte sa k nim, porovnávajte ich a sledujte vzorce v čase.",
+    "sampleTag": "Ukážkový výklad",
+    "sampleJustNow": "práve teraz",
+    "sampleDream": "„Videl som zeleného hada, ako odchádza z domu cez záhradnú bránku.“",
+    "sampleReading": "Hady znamenajú premenu — vo vašom živote sa niečo zbavuje starej kože. Brána naznačuje, že sa otvára jasný východ. V tradícii Ibn Sirina neškodný had opúšťajúci dom často znamená, že dlhotrvajúca starosť sa konečne vytráca.",
+    "sampleTag1": "Premena",
+    "sampleTag2": "Uvoľnenie",
+    "sampleTag3": "Ibn Sirin",
+    "sampleSaved": "Uložené vo vašom zariadení",
+    "symbolsTitle": "Každý symbol nesie význam",
+    "symbolsLede": "Od vody po oheň — preskúmajte najčastejšie motívy snov a čo každý z nich zvykne naznačovať naprieč tradíciami.",
+    "ctaTitle": "Popíšte svoj sen",
+    "ctaLede": "Stačí pár viet. Výklad trvá len sekundy a zostáva vo vašom zariadení.",
+    "ctaButton": "Začať interpretáciu"
+  },
+  "interpret": {
+    "eyebrow": "Interpretácia",
+    "title": "Popíšte svoj sen",
+    "lede": "Napíšte to vlastnými slovami. Čím viac detailov, tým presnejší výklad — prostredie, pocity a všetko neobvyklé sa počíta.",
+    "language": "Jazyk",
+    "yourDream": "Váš sen",
+    "placeholder": "Minulú noc som sníval, že som prechádzal cez dvere, ktoré stále menili tvar...",
+    "loading": "Interpretujem...",
+    "button": "Interpretujte sen",
+    "yourReading": "Váš výklad",
+    "save": "Uložiť",
+    "saved": "Uložené",
+    "viewHistory": "Zobraziť históriu",
+    "errorEmpty": "Najprv prosím popíšte svoj sen.",
+    "errorFailed": "Interpretácia zlyhala. Skúste to prosím znova.",
+    "errorNetwork": "Chyba pripojenia. Skúste to prosím znova.",
+    "perspectiveLabel": "Čítanie cez",
+    "symbolsLabel": "Symboly vo vašom sne",
+    "feedbackQ": {
+      "en": "Bol tento výklad užitočný?",
+      "ar": "هل كانت هذه القراءة مفيدة؟"
+    },
+    "yes": {
+      "en": "Áno, užitočný",
+      "ar": "نعم، مفيدة"
+    },
+    "no": {
+      "en": "Skôr nie",
+      "ar": "ليس تماماً"
+    },
+    "thanks": {
+      "en": "Ďakujeme — vaša spätná väzba zlepšuje budúce výklady.",
+      "ar": "شكراً لك — تقييمك يحسّن القراءات المستقبلية."
+    }
+  },
+  "history": {
+    "eyebrow": "Vaša aktivita",
+    "title": "História snov",
+    "lede": "Každá interpretácia, ktorú ste vygenerovali, uložená v tomto zariadení.",
+    "empty": "Zatiaľ ste neinterpretujete žiadne sny."
+  },
+  "saved": {
+    "eyebrow": "Vaša knižnica",
+    "title": "Uložené sny",
+    "lede": "Uchovávajte si interpretácie, na ktorých záležalo. Zostávajú v tomto zariadení.",
+    "empty": "Zatiaľ nič uložené."
+  },
+  "common": {
+    "interpretCta": "Interpretujte sen",
+    "delete": "Vymazať",
+    "remove": "Odstrániť",
+    "backHome": "Späť domov"
+  },
+  "symbols": {
+    "eyebrow": "Slovník snových symbolov",
+    "title": "{n} snových symbolov",
+    "lede": "Prehliadajte všetky symboly, ktoré interpretujeme — zadarmo, v desiatkach jazykov. Vyberte si svoj a prečítajte si význam.",
+    "search": "Hľadať symbol…"
+  },
+  "about": {
+    "eyebrow": "O nás",
+    "title": "Jasný výklad, zakorenený v tradícii",
+    "p1": "Dreamscope vznikol, aby sprístupnil interpretáciu snov vo vašom vlastnom jazyku. Kombinujeme dva prúdy porozumenia: klasickú islamskú náuku o snoch Ibn Sirina, jedného z najvplyvnejších vykladačov snov v histórii, a symbolické rámce modernej hĺbkovej psychológie.",
+    "p2": "Každý výklad je vytvorený tak, aby vám pomohol zamyslieť sa — nie predpovedať budúcnosť. Symboly ako voda, oheň, let alebo had so sebou nesú význam naprieč kultúrami tisíce rokov a naše interpretácie sledujú tieto vlákna, aby ste našli to, čo rezonuje s vaším vlastným životom.",
+    "p3": "Služba je bezplatná, súkromná svojím návrhom a dostupná v 60 jazykoch. Vaše sny nikdy neopustia vaše zariadenie.",
+    "card1Title": "Ibn Sirin",
+    "card1Body": "Klasická islamská náuka o snoch, sledovaná cez stáročia interpretácie.",
+    "card2Title": "60 jazykov",
+    "card2Body": "Od arabčiny po japončinu — interpretujte v jazyku, v ktorom snívate.",
+    "card3Title": "100 % súkromie",
+    "card3Body": "Sny zostávajú vo vašom zariadení. Žiadne účty, žiadne sledovanie.",
+    "cta": "Začať interpretáciu"
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Kontaktujte nás",
+    "lede": "Máte otázky, opravy alebo nápady na spoluprácu? Kontaktujte tím Dreamscope e-mailom.",
+    "email": "E-mail",
+    "disclaimer": "Dreamscope poskytuje iba zamyslenie a zábavu. Interpretácie nie sú lekárskou, psychologickou ani náboženskou radou. Ak potrebujete podporu, obráťte sa prosím na kvalifikovaného odborníka.",
+    "back": "Späť na interpretáciu"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Často kladené otázky",
+    "q1": "Ako Dreamscope interpretuje sny?",
+    "a1": "Dreamscope spája klasickú náuku o snoch — vrátane tradície Ibn Sirina — s modernou hĺbkovou psychológiou. Popíšete sen vlastnými slovami a dostanete výklad, ktorý mapuje jeho symboly na ich bežné významy naprieč kultúrami.",
+    "q2": "Sú údaje o mojich snoch súkromné?",
+    "a2": "Áno. Vaše sny sú uložené iba v lokálnom úložisku vášho prehliadača v zariadení. Na server sa neodosiela nič na ukladanie a svoju históriu môžete kedykoľvek vymazať.",
+    "q3": "V ktorých jazykoch možno interpretovať sny?",
+    "a3": "Dreamscope podporuje 60 jazykov vrátane angličtiny, arabčiny, španielčiny, francúzštiny, nemčiny, čínštiny, japončiny, kórejčiny, turečtiny, portugalčiny, ruštiny, hindčiny a ďalších. Výklad prebieha vo zvolenom jazyku.",
+    "q4": "Sú interpretácie náhradou za odbornú radu?",
+    "a4": "Nie. Výklady snov slúžia na zamyslenie a zábavu. Nie sú lekárskym, psychologickým ani náboženským vedením. Ak máte ťažkosti, obráťte sa prosím na kvalifikovaného odborníka.",
+    "q5": "Koľko snových symbolov je pokrytých?",
+    "a5": "Dreamscope má vyhradené stránky pre 146 bežných symbolov — had, voda, lietanie, oheň, tehotenstvo, peniaze a mnoho ďalších — každý dostupný vo viacerých jazykoch s variantmi dlhých otázok."
+  },
+  "notfound": {
+    "code": "404",
+    "title": "Tento sen sa rozplynul",
+    "lede": "Stránka, ktorú ste hľadali, tu nie je. Poďme späť k interpretácii.",
+    "cta": "Späť domov"
+  },
+  "perspectives": {
+    "general": {
+      "name": "Univerzálny"
+    },
+    "islamic": {
+      "name": "Ibn Sirin (islamský)"
+    },
+    "christian": {
+      "name": "Kresťanský"
+    },
+    "jewish": {
+      "name": "Židovský"
+    },
+    "hindu": {
+      "name": "Hinduistický"
+    },
+    "buddhist": {
+      "name": "Budhistický"
+    },
+    "psychology": {
+      "name": "Psychológia (Jung)"
+    },
+    "chinese": {
+      "name": "Zhou Gong (čínsky)"
+    }
+  },
+  "daily": {
+    "tag": "Sen dňa"
+  }
+}

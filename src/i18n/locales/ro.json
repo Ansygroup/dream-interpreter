@@ -1,1 +1,185 @@
-{"nav":{"interpret":"Interpretează","symbols":"Simboluri","about":"Despre","faq":"Întrebări frecvente","history":"Istoric","saved":"Salvate","contact":"Contact","start":"Începe","home":"Acasă","aiBlog":"Blog AI","ansyGroup":"Ansy Group","language":"Limbă","searchLanguage":"Caută limbi…","noLanguage":"Nicio limbă nu corespunde căutării tale."},"footer":{"tagline":"Interpretarea viselor cu AI, gratuit — după tradiția lui Ibn Sirin și psihologia modernă.","copyright":"© {year} Dreamscope"},"home":{"heroTitle":"Ce încearcă să-ți spună {accent} tău","heroAccent":"subconștient","heroLede":"Simbolistică veche, psihologie modernă și AI — unite într-o singură lectură clară. Descrie visul cu propriile cuvinte și primește o interpretare întemeiată pe Ibn Sirin și psihologia adâncului.","interpretCta":"Interpretează un vis","browseCta":"Explorează simbolurile","ctaTitle":"Descrie visul tău","ctaButton":"Începe să interpretezi"},"interpret":{"title":"Descrie visul tău","language":"Limbă","yourDream":"Visul tău","placeholder":"Aseară am visat că treceam printr-o ușă care își schimba neîncetat forma...","button":"Interpretează visul"},"common":{"interpretCta":"Interpretează un vis","backHome":"Înapoi acasă"},"history":{"title":"Istoricul viselor","empty":"Încă nu a fost interpretat niciun vis."},"saved":{"title":"Vise salvate","empty":"Încă nimic salvat."},"symbols":{"title":"{n} simboluri de vise","search":"Caută un simbol…"},"notfound":{"title":"Acest vis s-a dizolvat","cta":"Înapoi acasă"}}
+{
+  "nav": {
+    "interpret": "Interpretare",
+    "symbols": "Simboluri",
+    "about": "Despre",
+    "faq": "Întrebări frecvente",
+    "history": "Istoric",
+    "saved": "Salvate",
+    "contact": "Contact",
+    "start": "Începe",
+    "home": "Acasă",
+    "aiBlog": "Blog AI",
+    "ansyGroup": "Ansy Group",
+    "language": "Limbă",
+    "searchLanguage": "Caută limbi…",
+    "noLanguage": "Nicio limbă nu se potrivește cu căutarea ta."
+  },
+  "footer": {
+    "tagline": "Interpretare a viselor gratuită prin AI, bazată pe Ibn Sirin și psihologia modernă.",
+    "copyright": "© {year} Dreamscope"
+  },
+  "home": {
+    "heroTitle": "Ce încearcă să-ți spună {accent}-ul",
+    "heroAccent": "subconștient",
+    "heroLede": "Simbolism antic, psihologie modernă și AI — îmbinate într-o singură interpretare clară. Descrie un vis în cuvintele tale și primește o interpretare bazată atât pe Ibn Sirin, cât și pe psihologia profunzimii.",
+    "interpretCta": "Interpretează un vis",
+    "browseCta": "Răsfoiește simboluri",
+    "statLanguages": "{n} limbi",
+    "statSymbols": "{n} simboluri onirice",
+    "statPrivateLine": "privat pe dispozitivul tău",
+    "whyTitle": "O interpretare pe care o poți folosi cu adevărat",
+    "whyLede": "Dreamscope îți mapează visul pe simbolurile sale, apoi le citește prin tradiția în care ai încredere — cu psihologia alături, nu în loc.",
+    "feature1Title": "Analiză simbolică",
+    "feature1Body": "Fiecare vis este mapat pe simbolurile sale centrale și urmărit prin secole de tradiție interpretativă.",
+    "feature2Title": "60 de limbi",
+    "feature2Body": "Interpretează și citește simboluri în engleză, arabă, spaniolă, chineză, japoneză și alte 55 de limbi.",
+    "feature3Title": "Toate tradițiile",
+    "feature3Body": "Ibn Sirin, psihologia profunzimii și perspective din diverse credințe — o singură interpretare, privită prin lentila ta.",
+    "feature4Title": "Salvat și privat",
+    "feature4Body": "Visele tale rămân pe dispozitivul tău. Revizitează, compară și urmărește tipare în timp.",
+    "sampleTag": "Interpretare exemplu",
+    "sampleJustNow": "chiar acum",
+    "sampleDream": "„Am văzut un șarpe verde ieșind din casă prin poarta grădinii.”",
+    "sampleReading": "Șerpii marchează transformarea — ceva din viața ta își leapădă vechea piele. Poarta sugerează că se deschide o ieșire clară. În tradiția lui Ibn Sirin, un șarpe inofensiv care părăsește casa înseamnă adesea că o grijă mai veche se risipește în sfârșit.",
+    "sampleTag1": "Transformare",
+    "sampleTag2": "Eliberare",
+    "sampleTag3": "Ibn Sirin",
+    "sampleSaved": "Salvat pe dispozitivul tău",
+    "symbolsTitle": "Fiecare simbol poartă o semnificație",
+    "symbolsLede": "De la apă la foc, explorează cele mai comune motive onirice și ce tinde să semnaleze fiecare în diferite tradiții.",
+    "ctaTitle": "Descrie visul tău",
+    "ctaLede": "Câteva propoziții sunt de ajuns. Interpretarea durează câteva secunde și rămâne pe dispozitivul tău.",
+    "ctaButton": "Începe interpretarea"
+  },
+  "interpret": {
+    "eyebrow": "Interpretare",
+    "title": "Descrie visul tău",
+    "lede": "Scrie-l în cuvintele tale. Cu cât mai multe detalii, cu atât interpretarea e mai precisă — cadrul, sentimentele și orice lucru neobișnuit contează.",
+    "language": "Limbă",
+    "yourDream": "Visul tău",
+    "placeholder": "Aseară am visat că mergeam printr-o ușă care își schimba mereu forma...",
+    "loading": "Se interpretează...",
+    "button": "Interpretează visul",
+    "yourReading": "Interpretarea ta",
+    "save": "Salvează",
+    "saved": "Salvat",
+    "viewHistory": "Vezi istoricul",
+    "errorEmpty": "Te rog descrie mai întâi visul tău.",
+    "errorFailed": "Interpretarea a eșuat. Te rog încearcă din nou.",
+    "errorNetwork": "Eroare de conexiune. Te rog încearcă din nou.",
+    "perspectiveLabel": "Interpretare prin",
+    "symbolsLabel": "Simboluri din visul tău",
+    "feedbackQ": {
+      "en": "Was this reading helpful?",
+      "ar": "هل كانت هذه القراءة مفيدة؟"
+    },
+    "yes": {
+      "en": "Yes, helpful",
+      "ar": "نعم، مفيدة"
+    },
+    "no": {
+      "en": "Not really",
+      "ar": "ليس تماماً"
+    },
+    "thanks": {
+      "en": "Thank you — your feedback improves future readings.",
+      "ar": "شكراً لك — تقييمك يحسّن القراءات المستقبلية."
+    }
+  },
+  "history": {
+    "eyebrow": "Activitatea ta",
+    "title": "Istoric vise",
+    "lede": "Fiecare interpretare pe care ai generat-o, stocată pe acest dispozitiv.",
+    "empty": "Niciun vis interpretat încă."
+  },
+  "saved": {
+    "eyebrow": "Biblioteca ta",
+    "title": "Vise salvate",
+    "lede": "Păstrează interpretările care au contat. Rămân pe acest dispozitiv.",
+    "empty": "Nimic salvat încă."
+  },
+  "common": {
+    "interpretCta": "Interpretează un vis",
+    "delete": "Șterge",
+    "backHome": "Înapoi acasă",
+    "remove": "Elimină"
+  },
+  "symbols": {
+    "eyebrow": "Dicționar de simboluri onirice",
+    "title": "{n} simboluri onirice",
+    "lede": "Răsfoiește fiecare simbol pe care îl interpretăm — gratuit, în zeci de limbi. Alege-l pe al tău pentru a citi semnificația.",
+    "search": "Caută un simbol…"
+  },
+  "about": {
+    "eyebrow": "Despre",
+    "title": "O interpretare clară, înrădăcinată în tradiție",
+    "p1": "Dreamscope există pentru a face interpretarea viselor accesibilă în propria ta limbă. Combinăm două curente de înțelegere: învățătura clasică islamică a lui Ibn Sirin, unul dintre cei mai influenți interpreți de vise din istorie, și cadrele simbolice ale psihologiei profunzimii moderne.",
+    "p2": "Fiecare interpretare este generată pentru a te ajuta să reflectezi — nu pentru a prezice viitorul. Simboluri precum apa, focul, zborul sau un șarpe au purtat semnificații în culturi de mii de ani, iar interpretările noastre urmăresc acele fire ca să găsești ce rezonează cu propria ta viață.",
+    "p3": "Serviciul este gratuit, privat prin design și disponibil în 60 de limbi. Visele tale nu părăsesc niciodată dispozitivul tău.",
+    "card1Title": "Ibn Sirin",
+    "card1Body": "Învățătura clasică islamică a viselor, urmărită prin secole de interpretare.",
+    "card2Title": "60 de limbi",
+    "card2Body": "De la arabă la japoneză — interpretează în limba în care visezi.",
+    "card3Title": "100% privat",
+    "card3Body": "Visele rămân pe dispozitivul tău. Fără conturi, fără urmărire.",
+    "cta": "Începe interpretarea"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Contactează-ne",
+    "lede": "Întrebări, corecturi sau idei de parteneriat? Scrie echipei Dreamscope prin email.",
+    "email": "Email",
+    "disclaimer": "Dreamscope oferă doar reflecție și divertisment. Interpretările nu constituie sfaturi medicale, psihologice sau religioase. Dacă ai nevoie de sprijin, te rog consultă un profesionist calificat.",
+    "back": "Înapoi la interpretare"
+  },
+  "faq": {
+    "eyebrow": "Întrebări frecvente",
+    "title": "Întrebări frecvente",
+    "q1": "Cum interpretează Dreamscope visele?",
+    "a1": "Dreamscope combină învățătura clasică a viselor — inclusiv tradiția lui Ibn Sirin — cu psihologia profunzimii moderne. Descrii un vis în cuvintele tale și primești o interpretare care mapează simbolurile pe semnificațiile lor comune în culturi.",
+    "q2": "Datele mele despre vise sunt private?",
+    "a2": "Da. Visele tale sunt stocate doar în memoria locală a browserului, pe dispozitivul tău. Nimic nu este trimis spre stocare pe un server și poți șterge oricând istoricul.",
+    "q3": "În ce limbi pot interpreta visele?",
+    "a3": "Dreamscope suportă 60 de limbi, inclusiv engleză, arabă, spaniolă, franceză, germană, chineză, japoneză, coreeană, turcă, portugheză, rusă, hindi și altele. Interpretarea urmează limba pe care o alegi.",
+    "q4": "Interpretările înlocuiesc sfaturile profesionale?",
+    "a4": "Nu. Interpretările viselor sunt pentru reflecție și divertisment. Nu constituie îndrumare medicală, psihologică sau religioasă. Dacă treci prin momente dificile, te rog vorbește cu un specialist calificat.",
+    "q5": "Câte simboluri onirice sunt acoperite?",
+    "a5": "Dreamscope are pagini dedicate pentru 146 de simboluri comune — șarpe, apă, zbor, foc, sarcină, bani și multe altele — fiecare disponibil în mai multe limbi, cu variante de întrebări detaliate."
+  },
+  "notfound": {
+    "code": "404",
+    "title": "Acest vis s-a dizolvat",
+    "lede": "Pagina pe care o căutai nu e aici. Hai să te aducem înapoi la interpretare.",
+    "cta": "Înapoi acasă"
+  },
+  "perspectives": {
+    "general": {
+      "name": "Universal"
+    },
+    "islamic": {
+      "name": "Ibn Sirin (Islamic)"
+    },
+    "christian": {
+      "name": "Creștin"
+    },
+    "jewish": {
+      "name": "Evreiesc"
+    },
+    "hindu": {
+      "name": "Hindu"
+    },
+    "buddhist": {
+      "name": "Budist"
+    },
+    "psychology": {
+      "name": "Psihologie (Jung)"
+    },
+    "chinese": {
+      "name": "Zhou Gong (Chinezesc)"
+    }
+  },
+  "daily": {
+    "tag": "Visul zilei"
+  }
+}

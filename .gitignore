@@ -5,5 +5,6 @@ dist
 .DS_Store
 .env.evolution
 .indexnow-key.local
-# deploy-when-quota idempotency marker (local only)
+# deploy idempotency markers (local only)
+.deploy-sha
 .di-deployed-sha

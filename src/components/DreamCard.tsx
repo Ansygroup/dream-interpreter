@@ -6,7 +6,12 @@ export interface DreamItem {
   language?: string;
   perspective?: string;
   symbols?: string[];
+  mood?: string;
 }
+
+const MOOD_EMOJI: Record<string, string> = {
+  peace: '😌', anxiety: '😰', hope: '✨', sadness: '😢', anger: '😠', confusion: '🤔',
+};
 
 export default function DreamCard({ item, index, onRemove, removeLabel, perspectiveName }: {
   item: DreamItem;
@@ -30,6 +35,7 @@ export default function DreamCard({ item, index, onRemove, removeLabel, perspect
       </div>
       <p style={{ color: 'var(--text-dim)', fontSize: 14, lineHeight: 1.7 }}>{item.interpretation}</p>
       <div style={{ marginTop: 12, display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center' }}>
+        {item.mood && <span className="tag" style={{ fontSize: 10 }}>{MOOD_EMOJI[item.mood] ?? ''} {item.mood}</span>}
         {item.symbols?.slice(0, 4).map((s) => <span key={s} className="tag" style={{ fontSize: 10 }}>{s}</span>)}
         <span className="mono-meta">
           {new Date(item.date).toLocaleDateString()} · {(item.language || 'en').toUpperCase()}

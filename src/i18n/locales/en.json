@@ -73,7 +73,8 @@
     "yes": "Yes, helpful",
     "no": "Not really",
     "thanks": "Thank you — your feedback improves future readings.",
-    "perspectiveDesc": "One reading that weaves the wisest threads of world traditions with depth psychology."
+    "perspectiveDesc": "One reading that weaves the wisest threads of world traditions with depth psychology.",
+    "moodLabel": "How did the dream feel?"
   },
   "history": {
     "title": "Dream history",
@@ -203,5 +204,13 @@
     "buddhist": "Impermanence and mindful awareness — observe the dream without grasping.",
     "psychology": "Jung's archetypes and the shadow — what your psyche is processing.",
     "chinese": "Zhou Gong's classical dictionary — balance of yin, yang, and the five elements."
+  },
+  "moods": {
+    "peace": "Peaceful",
+    "anxiety": "Anxious",
+    "hope": "Hopeful",
+    "sadness": "Sad",
+    "anger": "Angry",
+    "confusion": "Confused"
   }
 }

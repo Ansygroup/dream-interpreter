@@ -5,6 +5,16 @@ import { useAuth } from '../contexts/AuthContext';
 import Layout from '../components/Layout';
 import LanguagePicker from '../components/LanguagePicker';
 import { PERSPECTIVES } from '../data/perspectives';
+
+/** Dream emotions — saved with the entry, tracked in the user state. */
+const MOODS = [
+  { id: 'peace', emoji: '😌' },
+  { id: 'anxiety', emoji: '😰' },
+  { id: 'hope', emoji: '✨' },
+  { id: 'sadness', emoji: '😢' },
+  { id: 'anger', emoji: '😠' },
+  { id: 'confusion', emoji: '🤔' },
+];
 import { saveDreamToCloud, sendCloudFeedback } from '../lib/sync';
 
 export default function Interpret() {
@@ -12,6 +22,7 @@ export default function Interpret() {
   const { user } = useAuth();
   const [dream, setDream] = useState('');
   const [perspective, setPerspective] = useState('general');
+  const [mood, setMood] = useState<string | null>(null);
   const [result, setResult] = useState<{ interpretation: string; symbols: string[]; engine: string; id: string } | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -33,10 +44,10 @@ export default function Interpret() {
       if (data.interpretation) {
         setResult(data);
         const history = JSON.parse(localStorage.getItem('dream-history') || '[]');
-        history.unshift({ dream, interpretation: data.interpretation, date: new Date().toISOString(), id: Date.now(), language, perspective, symbols: data.symbols });
+        history.unshift({ dream, interpretation: data.interpretation, date: new Date().toISOString(), id: Date.now(), language, perspective, symbols: data.symbols, mood: mood ?? undefined });
         localStorage.setItem('dream-history', JSON.stringify(history.slice(0, 50)));
         if (user) {
-          saveDreamToCloud(user.id, { dream, interpretation: data.interpretation, date: new Date().toISOString(), id: Date.now(), language, perspective, symbols: data.symbols });
+          saveDreamToCloud(user.id, { dream, interpretation: data.interpretation, date: new Date().toISOString(), id: Date.now(), language, perspective, symbols: data.symbols, mood: mood ?? undefined });
         }
       } else {
         setError(t('interpret.errorFailed'));
@@ -50,10 +61,10 @@ export default function Interpret() {
   const saveDream = () => {
     if (!result) return;
     const saved = JSON.parse(localStorage.getItem('saved-dreams') || '[]');
-    saved.unshift({ dream, interpretation: result.interpretation, date: new Date().toISOString(), id: Date.now(), language, perspective, symbols: result.symbols });
+    saved.unshift({ dream, interpretation: result.interpretation, date: new Date().toISOString(), id: Date.now(), language, perspective, symbols: result.symbols, mood: mood ?? undefined });
     localStorage.setItem('saved-dreams', JSON.stringify(saved));
     if (user) {
-      saveDreamToCloud(user.id, { dream, interpretation: result.interpretation, date: new Date().toISOString(), id: Date.now(), language, perspective, symbols: result.symbols });
+      saveDreamToCloud(user.id, { dream, interpretation: result.interpretation, date: new Date().toISOString(), id: Date.now(), language, perspective, symbols: result.symbols, mood: mood ?? undefined });
     }
   };
 
@@ -177,6 +188,28 @@ export default function Interpret() {
                     </div>
                   </div>
                 )}
+                {/* Mood — how did the dream feel? */}
+                <div style={{ marginTop: 18 }}>
+                  <span style={{ fontSize: 12, color: 'var(--muted)', display: 'block', marginBottom: 8 }}>{t('interpret.moodLabel')}</span>
+                  <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+                    {MOODS.map((m) => (
+                      <button
+                        key={m.id}
+                        onClick={() => setMood(mood === m.id ? null : m.id)}
+                        className="tag"
+                        style={{
+                          cursor: 'pointer',
+                          gap: 6,
+                          borderColor: mood === m.id ? 'var(--accent)' : 'var(--accent-line)',
+                          background: mood === m.id ? 'var(--accent-glow)' : 'transparent',
+                          color: mood === m.id ? 'var(--accent)' : 'var(--muted)',
+                        }}
+                      >
+                        {m.emoji} {t(`moods.${m.id}`)}
+                      </button>
+                    ))}
+                  </div>
+                </div>
                 <div style={{ display: 'flex', gap: 12, marginTop: 24, flexWrap: 'wrap', alignItems: 'center' }}>
                   <button onClick={saveDream} className="btn btn-ghost" style={{ padding: '10px 18px' }}>
                     <svg className="icon" viewBox="0 0 24 24" style={{ width: 16, height: 16 }}><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" /></svg>

@@ -1,1 +1,185 @@
-{"nav":{"interpret":"Interpreteren","symbols":"Symbolen","about":"Over ons","faq":"FAQ","history":"Geschiedenis","saved":"Opgeslagen","contact":"Contact","start":"Start","home":"Home","aiBlog":"AI-blog","ansyGroup":"Ansy Group","language":"Taal","searchLanguage":"Talen zoeken…","noLanguage":"Geen taal komt overeen met je zoekopdracht."},"footer":{"tagline":"Droominterpretatie met AI, gratis — volgens de traditie van Ibn Sirin en de moderne psychologie.","copyright":"© {year} Dreamscope"},"home":{"heroTitle":"Wat je {accent} je probeert te vertellen","heroAccent":"onderbewuste","heroLede":"Oude symboliek, moderne psychologie en AI — samengebracht in één heldere lezing. Beschrijf je droom in je eigen woorden en ontvang een interpretatie geworteld in Ibn Sirin en de dieptepsychologie.","interpretCta":"Droom interpreteren","browseCta":"Symbolen bekijken","ctaTitle":"Beschrijf je droom","ctaButton":"Begin met interpreteren"},"interpret":{"title":"Beschrijf je droom","language":"Taal","yourDream":"Je droom","placeholder":"Afgelopen nacht droomde ik dat ik door een deur liep die voortdurend van vorm veranderde...","button":"Droom interpreteren"},"common":{"interpretCta":"Droom interpreteren","backHome":"Terug naar home"},"history":{"title":"Droomgeschiedenis","empty":"Nog geen dromen geïnterpreteerd."},"saved":{"title":"Opgeslagen dromen","empty":"Nog niets opgeslagen."},"symbols":{"title":"{n} droomymbolen","search":"Zoek een symbool…"},"notfound":{"title":"Deze droom loste op","cta":"Terug naar home"}}
+{
+  "nav": {
+    "interpret": "Interpretatie",
+    "symbols": "Symbolen",
+    "about": "Over ons",
+    "faq": "FAQ",
+    "history": "Geschiedenis",
+    "saved": "Bewaard",
+    "contact": "Contact",
+    "start": "Start",
+    "home": "Startpagina",
+    "aiBlog": "AI Blog",
+    "ansyGroup": "Ansy Group",
+    "language": "Taal",
+    "searchLanguage": "Zoek talen…",
+    "noLanguage": "Geen taal komt overeen met je zoekopdracht."
+  },
+  "footer": {
+    "tagline": "Gratis AI-droomduiding, geworteld in Ibn Sirin & moderne psychologie.",
+    "copyright": "© {year} Dreamscope"
+  },
+  "home": {
+    "heroTitle": "Wat je {accent} je probeert te vertellen",
+    "heroAccent": "onderbewustzijn",
+    "heroLede": "Oude symboliek, moderne psychologie en AI — gecombineerd tot één heldere duiding. Beschrijf een droom in je eigen woorden en ontvang een uitleg die is geworteld in zowel Ibn Sirin als dieptepsychologie.",
+    "interpretCta": "Droom duiden",
+    "browseCta": "Symbolen bekijken",
+    "statLanguages": "{n} talen",
+    "statSymbols": "{n} droomsymbolen",
+    "statPrivateLine": "privé op je apparaat",
+    "whyTitle": "Een duiding die je echt kunt gebruiken",
+    "whyLede": "Dreamscope koppelt je droom aan haar symbolen en leest ze via de traditie die jij vertrouwt — met psychologie ernaast, niet in plaats van.",
+    "feature1Title": "Symbolische analyse",
+    "feature1Body": "Elke droom wordt gekoppeld aan haar kernsymbolen en getraceerd door eeuwen aan duidingstraditie.",
+    "feature2Title": "60 talen",
+    "feature2Body": "Droom en lees symbolen in het Engels, Arabisch, Spaans, Chinees, Japans en 55 andere talen.",
+    "feature3Title": "Alle tradities",
+    "feature3Body": "Ibn Sirin, dieptepsychologie en perspectieven uit verschillende geloven — één duiding, bezien door jouw lens.",
+    "feature4Title": "Bewaard & privé",
+    "feature4Body": "Je dromen blijven op je apparaat. Herbekijk, vergelijk en ontdek patronen door de tijd heen.",
+    "sampleTag": "Voorbeelduiding",
+    "sampleJustNow": "zojuist",
+    "sampleDream": "\"Ik zag een groene slang het huis verlaten via de tuinpoort.\"",
+    "sampleReading": "Slangen markeren transformatie — iets in je leven werpt zijn oude huid af. De poort wijst op een duidelijke uitweg die opengaat. In de traditie van Ibn Sirin betekent een onschuldige slang die het huis verlaat vaak dat een zorg die je al langere tijd met je meedroeg eindelijk loslaat.",
+    "sampleTag1": "Transformatie",
+    "sampleTag2": "Laten gaan",
+    "sampleTag3": "Ibn Sirin",
+    "sampleSaved": "Opgeslagen op je apparaat",
+    "symbolsTitle": "Elk symbool draagt een betekenis",
+    "symbolsLede": "Van water tot vuur: ontdek de meest voorkomende droommotieven en wat ze doorgaans aangeven in verschillende tradities.",
+    "ctaTitle": "Beschrijf je droom",
+    "ctaLede": "Een paar zinnen is genoeg. De duiding duurt slechts enkele seconden en blijft op je apparaat.",
+    "ctaButton": "Beginnen met duiden"
+  },
+  "interpret": {
+    "eyebrow": "Interpretatie",
+    "title": "Beschrijf je droom",
+    "lede": "Schrijf het in je eigen woorden. Hoe meer detail, hoe scherper de duiding — de setting, je gevoelens en alles wat opvallend is, doen er allemaal toe.",
+    "language": "Taal",
+    "yourDream": "Je droom",
+    "placeholder": "Afgelopen nacht droomde ik dat ik door een deur liep die steeds van vorm veranderde...",
+    "loading": "Bezig met duiden...",
+    "button": "Droom duiden",
+    "yourReading": "Jouw duiding",
+    "save": "Bewaren",
+    "saved": "Bewaard",
+    "viewHistory": "Geschiedenis bekijken",
+    "errorEmpty": "Beschrijf je droom eerst.",
+    "errorFailed": "De duiding is mislukt. Probeer het opnieuw.",
+    "errorNetwork": "Verbindingsfout. Probeer het opnieuw.",
+    "perspectiveLabel": "Duiding via",
+    "symbolsLabel": "Symbolen in je droom",
+    "feedbackQ": {
+      "en": "Was this reading helpful?",
+      "ar": "هل كانت هذه القراءة مفيدة؟"
+    },
+    "yes": {
+      "en": "Yes, helpful",
+      "ar": "نعم، مفيدة"
+    },
+    "no": {
+      "en": "Not really",
+      "ar": "ليس تماماً"
+    },
+    "thanks": {
+      "en": "Thank you — your feedback improves future readings.",
+      "ar": "شكراً لك — تقييمك يحسّن القراءات المستقبلية."
+    }
+  },
+  "history": {
+    "eyebrow": "Jouw activiteit",
+    "title": "Droomgeschiedenis",
+    "lede": "Alle duidingen die je hebt gegenereerd, opgeslagen op dit apparaat.",
+    "empty": "Nog geen dromen geduid."
+  },
+  "saved": {
+    "eyebrow": "Jouw bibliotheek",
+    "title": "Bewaarde dromen",
+    "lede": "Bewaar de duidingen die ertoe deden. Ze blijven op dit apparaat.",
+    "empty": "Nog niets bewaard."
+  },
+  "common": {
+    "interpretCta": "Droom duiden",
+    "delete": "Verwijderen",
+    "remove": "Weghalen",
+    "backHome": "Terug naar start"
+  },
+  "symbols": {
+    "eyebrow": "Droomsymbolenwoordenboek",
+    "title": "{n} droomsymbolen",
+    "lede": "Bekijk alle symbolen die wij duiden — gratis, in tientallen talen. Kies de jouwe om de betekenis te lezen.",
+    "search": "Zoek een symbool…"
+  },
+  "about": {
+    "eyebrow": "Over ons",
+    "title": "Een heldere duiding, geworteld in traditie",
+    "p1": "Dreamscope bestaat om droomduiding toegankelijk te maken in je eigen taal. We combineren twee stromingen van inzicht: de klassieke islamitische droombeschouwing van Ibn Sirin, een van de meest invloedrijke droomduiders uit de geschiedenis, en de symbolische kaders van de moderne dieptepsychologie.",
+    "p2": "Elke duiding wordt gegenereerd om je te helpen reflecteren — niet om de toekomst te voorspellen. Symbolen als water, vuur, vliegen of een slang dragen al duizenden jaren betekenis met zich mee, en onze duidingen volgen die draden zodat je kunt vinden wat resoneert met je eigen leven.",
+    "p3": "De dienst is gratis, privé van opzet en beschikbaar in 60 talen. Je dromen verlaten nooit je apparaat.",
+    "card1Title": "Ibn Sirin",
+    "card1Body": "Klassieke islamitische droombeschouwing, getraceerd door eeuwen van duiding.",
+    "card2Title": "60 talen",
+    "card2Body": "Van Arabisch tot Japans — duid in de taal waarin je droomt.",
+    "card3Title": "100% privé",
+    "card3Body": "Dromen blijven op je apparaat. Geen accounts, geen tracking.",
+    "cta": "Beginnen met duiden"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Neem contact op",
+    "lede": "Vragen, correcties of samenwerkingsideeën? Bereik het Dreamscope-team via e-mail.",
+    "email": "E-mail",
+    "disclaimer": "Dreamscope biedt enkel reflectie en vermaak. Duidingen vormen geen medisch, psychologisch of religieus advies. Als je steun nodig hebt, raadpleeg dan een gekwalificeerde professional.",
+    "back": "Terug naar de duider"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Veelgestelde vragen",
+    "q1": "Hoe duidt Dreamscope dromen?",
+    "a1": "Dreamscope combineert klassieke droombeschouwing — inclusief de traditie van Ibn Sirin — met moderne dieptepsychologie. Je beschrijft een droom in je eigen woorden en ontvangt een duiding die haar symbolen koppelt aan gangbare betekenissen in verschillende culturen.",
+    "q2": "Is mijn droomdata privé?",
+    "a2": "Ja. Je dromen worden alleen bewaard in de lokale opslag van je browser op je apparaat. Er wordt niets naar een server gestuurd voor opslag, en je kunt je geschiedenis op elk moment verwijderen.",
+    "q3": "In welke talen kan ik dromen duiden?",
+    "a3": "Dreamscope ondersteunt 60 talen, waaronder Engels, Arabisch, Spaans, Frans, Duits, Chinees, Japans, Koreaans, Turks, Portugees, Russisch, Hindi en meer. De duiding volgt de taal die je kiest.",
+    "q4": "Vervangen de duidingen professioneel advies?",
+    "a4": "Nee. Droomduidingen zijn bedoeld voor reflectie en vermaak. Ze vormen geen medische, psychologische of religieuze begeleiding. Als je worstelt, spreek dan met een gekwalificeerde professional.",
+    "q5": "Hoeveel droomsymbolen worden er behandeld?",
+    "a5": "Dreamscope heeft speciale pagina's voor 146 veelvoorkomende symbolen — slang, water, vliegen, vuur, zwangerschap, geld en nog veel meer — elk beschikbaar in meerdere talen met talloze vraagvarianten."
+  },
+  "notfound": {
+    "code": "404",
+    "title": "Deze droom is vervlogen",
+    "lede": "De pagina die je zocht is er niet. Laten we je terugbrengen naar het duiden.",
+    "cta": "Terug naar start"
+  },
+  "perspectives": {
+    "general": {
+      "name": "Universeel"
+    },
+    "islamic": {
+      "name": "Ibn Sirin (Islamitisch)"
+    },
+    "christian": {
+      "name": "Christelijk"
+    },
+    "jewish": {
+      "name": "Joods"
+    },
+    "hindu": {
+      "name": "Hindoeïstisch"
+    },
+    "buddhist": {
+      "name": "Boeddhistisch"
+    },
+    "psychology": {
+      "name": "Psychologie (Jung)"
+    },
+    "chinese": {
+      "name": "Zhou Gong (Chinees)"
+    }
+  },
+  "daily": {
+    "tag": "Droom van de dag"
+  }
+}

@@ -63,7 +63,7 @@ ${JSON.stringify(source)}`;
   for (const model of FREE_MODELS) {
     try {
       const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 10000);
+      const timeout = setTimeout(() => controller.abort(), 11000);
       const r = await fetch('https://openrouter.ai/api/v1/chat/completions', {
         method: 'POST',
         headers: {
@@ -93,17 +93,26 @@ ${JSON.stringify(source)}`;
       if (!text) continue;
       const cleaned = text.replace(/^```(?:json)?\s*/i, '').replace(/```\s*$/i, '').trim();
       const parsed = JSON.parse(cleaned);
-      // Every source key must come back as a non-empty string
-      const ok = Object.keys(source).every((k) => typeof parsed[k] === 'string' && parsed[k].trim());
-      if (!ok) {
-        console.log(`[translate:${code}] ${model} missing keys`);
-        continue;
-      }
-      // Placeholder integrity
+      // Deep-validate: every leaf in `source` must map to a non-empty string
+      // at the same path in `parsed`, with {placeholders} preserved.
       const ph = (s) => (String(s).match(/\{\w+\}/g) || []).sort().join(',');
-      const broken = Object.keys(source).filter((k) => ph(source[k]) !== ph(parsed[k]));
-      if (broken.length) {
-        console.log(`[translate:${code}] ${model} placeholder mismatch: ${broken.slice(0, 3).join(',')}`);
+      const problems = [];
+      const walk = (src, out, path) => {
+        for (const k of Object.keys(src)) {
+          const s = src[k];
+          const o = out?.[k];
+          if (s && typeof s === 'object') {
+            if (!o || typeof o !== 'object') { problems.push(`${path}${k} (missing object)`); continue; }
+            walk(s, o, `${path}${k}.`);
+          } else {
+            if (typeof o !== 'string' || !o.trim()) { problems.push(`${path}${k} (missing)`); continue; }
+            if (ph(s) !== ph(o)) problems.push(`${path}${k} (placeholders)`);
+          }
+        }
+      };
+      walk(source, parsed, '');
+      if (problems.length) {
+        console.log(`[translate:${code}] ${model} invalid: ${problems.slice(0, 3).join(', ')}`);
         continue;
       }
       return res.status(200).json({ translations: parsed, engine: model });

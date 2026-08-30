@@ -27,7 +27,12 @@ await check('homepage', async () => {
   if (!html.includes('ds-theme')) throw new Error('theme bootstrap missing');
 });
 
-await check('SEO page (/seo/snake/ar)', () => get('/seo/snake/ar'));
+await check('SEO page (/seo/snake/ar)', async () => {
+  const r = await get('/seo/snake/ar');
+  const html = await r.text();
+  if (!html.includes('Ibn Sirin') && !html.includes('ابن سيرين')) throw new Error('content missing');
+  return 'rendered';
+});
 await check('sitemap', async () => {
   const r = await get('/sitemap.xml');
   const xml = await r.text();

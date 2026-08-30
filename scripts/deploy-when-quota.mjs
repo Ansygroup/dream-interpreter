@@ -33,6 +33,8 @@ function sh(cmd) {
   catch (e) { return (e.stdout || '') + (e.stderr || ''); }
 }
 function head() {
+  // Always refresh the remote ref so we deploy the true latest, not a stale cache.
+  sh('git fetch origin master --quiet 2>/dev/null');
   return sh('git rev-parse origin/master').trim();
 }
 function markerSha() {

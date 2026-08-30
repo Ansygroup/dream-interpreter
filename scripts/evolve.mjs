@@ -11,7 +11,7 @@
  * Usage: node scripts/evolve.mjs [--no-translate] [--no-daily] [--base=URL]
  */
 
-import { spawn } from 'node:child_process';
+import { spawn, spawnSync } from 'node:child_process';
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';

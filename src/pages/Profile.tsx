@@ -3,20 +3,75 @@ import { useAuth } from '../contexts/AuthContext';
 import { useI18n } from '../contexts/I18nContext';
 import Layout from '../components/Layout';
 import { migrateLocalDreams } from '../lib/sync';
+import type { DreamItem } from '../components/DreamCard';
+
+interface LocalState {
+  total: number;
+  savedCount: number;
+  streak: number;
+  lastDate: string | null;
+  topSymbols: Array<{ name: string; count: number }>;
+  languages: string[];
+  perspectives: string[];
+}
+
+function computeLocalState(): LocalState {
+  const history: DreamItem[] = JSON.parse(localStorage.getItem('dream-history') || '[]');
+  const saved: DreamItem[] = JSON.parse(localStorage.getItem('saved-dreams') || '[]');
+  const all = [...history, ...saved];
+
+  // Streak: consecutive days (including today/yesterday) with at least one dream
+  const days = new Set(all.map((d) => (d.date || '').slice(0, 10)).filter(Boolean));
+  let streak = 0;
+  const cursor = new Date();
+  // allow the streak to start today or yesterday
+  if (!days.has(cursor.toISOString().slice(0, 10))) cursor.setDate(cursor.getDate() - 1);
+  for (;;) {
+    const key = cursor.toISOString().slice(0, 10);
+    if (!days.has(key)) break;
+    streak += 1;
+    cursor.setDate(cursor.getDate() - 1);
+  }
+
+  const symbolCount = new Map<string, number>();
+  for (const d of all) for (const s of d.symbols ?? []) symbolCount.set(s, (symbolCount.get(s) ?? 0) + 1);
+  const topSymbols = [...symbolCount.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 5)
+    .map(([name, count]) => ({ name, count }));
+
+  const last = all.map((d) => d.date).filter(Boolean).sort().pop() ?? null;
+
+  return {
+    total: history.length,
+    savedCount: saved.length,
+    streak,
+    lastDate: last,
+    topSymbols,
+    languages: [...new Set(all.map((d) => d.language).filter(Boolean))] as string[],
+    perspectives: [...new Set(all.map((d) => d.perspective).filter(Boolean))] as string[],
+  };
+}
+
+const Stat = ({ value, label }: { value: string | number; label: string }) => (
+  <div className="card" style={{ textAlign: 'center', padding: '18px 12px' }}>
+    <div className="serif" style={{ fontSize: 30, color: 'var(--accent)' }}>{value}</div>
+    <div style={{ fontSize: 12.5, color: 'var(--muted)', marginTop: 4 }}>{label}</div>
+  </div>
+);
 
 export default function Profile() {
-  const { t } = useI18n();
+  const { t, language } = useI18n();
   const { user, cloudEnabled, signInWithMagicLink, signInWithGoogle, signOut } = useAuth();
   const [email, setEmail] = useState('');
   const [sent, setSent] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [migrated, setMigrated] = useState<number | null>(null);
+  const [local] = useState<LocalState>(() => computeLocalState());
+  const rtlLangs = ['ar', 'he', 'fa', 'ur'];
 
-  // One-time local→cloud migration right after first login
   useEffect(() => {
-    if (user && migrated === null) {
-      migrateLocalDreams(user.id).then(setMigrated);
-    }
+    if (user && migrated === null) migrateLocalDreams(user.id).then(setMigrated);
   }, [user, migrated]);
 
   const handleMagicLink = async () => {
@@ -31,17 +86,62 @@ export default function Profile() {
     <Layout>
       <div className="section" style={{ paddingTop: 'clamp(48px, 7vw, 80px)' }}>
         <div className="container-narrow">
-          <h1 className="h2 serif" style={{ marginBottom: 28 }}>{t('profile.title')}</h1>
+          <h1 className="h2 serif" style={{ marginBottom: 8 }}>{t('profile.title')}</h1>
+          <p className="lede" style={{ marginBottom: 32 }}>{t('profile.lede')}</p>
+
+          {/* ===== حالتك الآن — محلية وتعمل دائماً ===== */}
+          <h2 className="h3 serif" style={{ marginBottom: 16 }}>{t('profile.yourState')}</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))', gap: 12, marginBottom: 20 }}>
+            <Stat value={local.total} label={t('profile.statDreams')} />
+            <Stat value={local.savedCount} label={t('profile.statSaved')} />
+            <Stat value={local.streak} label={t('profile.statStreak')} />
+            <Stat value={local.topSymbols[0]?.name ?? '—'} label={t('profile.statTopSymbol')} />
+          </div>
+
+          {local.total === 0 ? (
+            <p style={{ color: 'var(--muted)', fontSize: 14, marginBottom: 32 }}>{t('profile.emptyState')}</p>
+          ) : (
+            <div className="card" style={{ marginBottom: 32 }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 12, fontSize: 14, color: 'var(--text-dim)' }}>
+                <div>
+                  <span className="mono-meta" style={{ display: 'block', marginBottom: 6 }}>{t('profile.symbolsYouMeet')}</span>
+                  <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+                    {local.topSymbols.length ? local.topSymbols.map((s) => (
+                      <span key={s.name} className="tag">{s.name} ×{s.count}</span>
+                    )) : <span style={{ color: 'var(--muted)' }}>{t('profile.noneYet')}</span>}
+                  </div>
+                </div>
+                <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap' }}>
+                  <span>
+                    <span className="mono-meta" style={{ display: 'block', marginBottom: 4 }}>{t('profile.lastReading')}</span>
+                    {local.lastDate ? new Date(local.lastDate).toLocaleDateString() : '—'}
+                  </span>
+                  <span>
+                    <span className="mono-meta" style={{ display: 'block', marginBottom: 4 }}>{t('profile.languagesUsed')}</span>
+                    {local.languages.length ? local.languages.map((l) => l.toUpperCase()).join(' · ') : '—'}
+                  </span>
+                  <span>
+                    <span className="mono-meta" style={{ display: 'block', marginBottom: 4 }}>{t('profile.perspectivesUsed')}</span>
+                    {local.perspectives.length
+                      ? local.perspectives.map((p) => t(`perspectives.${p}.name`)).join(' · ')
+                      : '—'}
+                  </span>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* ===== الحساب السحابي ===== */}
+          <h2 className="h3 serif" style={{ marginBottom: 16 }}>{t('profile.cloudTitle')}</h2>
 
           {!cloudEnabled && (
-            <div className="card">
-              <p style={{ color: 'var(--muted)' }}>{t('profile.cloudOff')}</p>
+            <div className="card" style={{ marginBottom: 24 }}>
+              <p style={{ color: 'var(--muted)', fontSize: 14.5, lineHeight: 1.7 }}>{t('profile.cloudOff')}</p>
             </div>
           )}
 
           {cloudEnabled && !user && (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 16, maxWidth: 460 }}>
-              <p className="lede">{t('profile.signInLede')}</p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 16, maxWidth: 460, marginBottom: 24 }}>
               {sent ? (
                 <div className="card" style={{ borderColor: 'var(--accent-line)' }}>
                   <p style={{ color: 'var(--text)' }}>✉️ {t('profile.checkEmail')}</p>
@@ -49,18 +149,9 @@ export default function Profile() {
               ) : (
                 <div className="card">
                   <label htmlFor="email" style={{ fontSize: 13, color: 'var(--muted)', display: 'block', marginBottom: 10 }}>{t('profile.emailLabel')}</label>
-                  <input
-                    id="email"
-                    type="email"
-                    className="field"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="you@example.com"
-                  />
+                  <input id="email" type="email" className="field" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="you@example.com" />
                   {error && <p role="alert" style={{ color: '#f87171', fontSize: 13, marginTop: 10 }}>{error}</p>}
-                  <button onClick={handleMagicLink} className="btn btn-primary" style={{ marginTop: 16, width: '100%' }}>
-                    {t('profile.magicLink')}
-                  </button>
+                  <button onClick={handleMagicLink} className="btn btn-primary" style={{ marginTop: 16, width: '100%' }}>{t('profile.magicLink')}</button>
                   <div style={{ display: 'flex', alignItems: 'center', gap: 12, margin: '18px 0' }}>
                     <span className="hr" style={{ flex: 1 }} /><span className="mono-meta">or</span><span className="hr" style={{ flex: 1 }} />
                   </div>
@@ -75,9 +166,9 @@ export default function Profile() {
           )}
 
           {cloudEnabled && user && (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 16, marginBottom: 24 }}>
               <div className="card">
-                <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 14 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 10 }}>
                   <span style={{ width: 44, height: 44, borderRadius: 999, background: 'var(--accent-glow)', border: '1px solid var(--accent-line)', display: 'grid', placeItems: 'center', fontSize: 18 }}>
                     {(user.email ?? '?')[0]?.toUpperCase()}
                   </span>
@@ -90,11 +181,13 @@ export default function Profile() {
                   <p style={{ fontSize: 13.5, color: 'var(--accent)' }}>✓ {t('profile.migrated', { n: migrated })}</p>
                 )}
               </div>
-              <div>
-                <button onClick={signOut} className="btn btn-ghost">{t('profile.signOut')}</button>
-              </div>
+              <div><button onClick={signOut} className="btn btn-ghost">{t('profile.signOut')}</button></div>
             </div>
           )}
+
+          <p style={{ fontSize: 12.5, color: 'var(--muted)' }}>
+            {t('profile.privacyNote')} · {language && rtlLangs.includes(language) ? '' : ''}
+          </p>
         </div>
       </div>
     </Layout>

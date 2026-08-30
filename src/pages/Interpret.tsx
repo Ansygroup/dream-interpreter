@@ -104,6 +104,9 @@ export default function Interpret() {
                 </button>
               ))}
             </div>
+            <p style={{ marginTop: 12, fontSize: 13.5, color: 'var(--text-dim)', lineHeight: 1.6, maxWidth: '60ch' }}>
+              {t(`perspDesc.${perspective}`)}
+            </p>
           </div>
 
           {/* Language */}

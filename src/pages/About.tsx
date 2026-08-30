@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useI18n } from '../contexts/I18nContext';
 import Layout from '../components/Layout';
+import { PERSPECTIVES } from '../data/perspectives';
 
 export default function About() {
   const { t } = useI18n();
@@ -22,7 +23,22 @@ export default function About() {
             <p>{t('about.p3')}</p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 16, margin: '40px 0' }}>
+          {/* All traditions — the perspective engine */}
+          <h2 className="h3 serif" style={{ margin: '48px 0 8px' }}>{t('about.traditionsTitle')}</h2>
+          <p style={{ color: 'var(--muted)', fontSize: 14.5, marginBottom: 20 }}>{t('about.traditionsLede')}</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(230px, 1fr))', gap: 12, marginBottom: 40 }}>
+            {PERSPECTIVES.map((p) => (
+              <div key={p.id} className="card" style={{ padding: '16px 18px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6, color: 'var(--accent)' }}>
+                  {p.icon}
+                  <span style={{ fontWeight: 600, fontSize: 14, color: 'var(--text)' }}>{t(`perspectives.${p.id}.name`)}</span>
+                </div>
+                <p style={{ color: 'var(--muted)', fontSize: 13, lineHeight: 1.6 }}>{t(`perspDesc.${p.id}`)}</p>
+              </div>
+            ))}
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 16, margin: '0 0 40px' }}>
             {cards.map((c, i) => (
               <div key={i} className="card">
                 <div className="serif" style={{ fontSize: 28, color: 'var(--accent)' }}>{c.title}</div>

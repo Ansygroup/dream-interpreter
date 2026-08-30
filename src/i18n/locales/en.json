@@ -86,7 +86,8 @@
     "thanks": {
       "en": "Thank you — your feedback improves future readings.",
       "ar": "شكراً لك — تقييمك يحسّن القراءات المستقبلية."
-    }
+    },
+    "perspectiveDesc": "One reading that weaves the wisest threads of world traditions with depth psychology."
   },
   "history": {
     "eyebrow": "Your Activity",
@@ -124,7 +125,9 @@
     "card2Body": "From Arabic to Japanese — interpret in the language you dream in.",
     "card3Title": "100% private",
     "card3Body": "Dreams stay on your device. No accounts, no tracking.",
-    "cta": "Start Interpreting"
+    "cta": "Start Interpreting",
+    "traditionsTitle": "Every tradition, one dream",
+    "traditionsLede": "Pick the lens your heart trusts — each reading is generated through a dedicated interpretation school."
   },
   "contact": {
     "eyebrow": "Contact",
@@ -196,6 +199,29 @@
     "member": "Member",
     "migrated": "Migrated {n} dreams from this device to your journal.",
     "signOut": "Sign out",
-    "navLabel": "Profile"
+    "navLabel": "Profile",
+    "lede": "Everything Dreamscope knows about your journey — stored on your device, yours alone.",
+    "yourState": "Your state right now",
+    "statDreams": "Dreams interpreted",
+    "statSaved": "Saved readings",
+    "statStreak": "Day streak",
+    "statTopSymbol": "Top symbol",
+    "emptyState": "No dreams yet — your first reading will light this page up.",
+    "symbolsYouMeet": "Symbols you keep meeting",
+    "noneYet": "—",
+    "lastReading": "Last reading",
+    "languagesUsed": "Languages used",
+    "perspectivesUsed": "Traditions used",
+    "cloudTitle": "Across your devices"
+  },
+  "perspDesc": {
+    "general": "One reading that weaves the wisest threads of world traditions with depth psychology.",
+    "islamic": "The classical school of Ibn Sirin — symbolic, lawful, and soul-centered.",
+    "christian": "Dream reading in the lineage of Joseph and Daniel, with scriptural symbolism.",
+    "jewish": "Torah and Talmudic dream wisdom — a message awaiting wise interpretation.",
+    "hindu": "Vedic symbolism, karma, and the inner landscapes of the mind.",
+    "buddhist": "Impermanence and mindful awareness — observe the dream without grasping.",
+    "psychology": "Jung's archetypes and the shadow — what your psyche is processing.",
+    "chinese": "Zhou Gong's classical dictionary — balance of yin, yang, and the five elements."
   }
 }

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export interface DreamItem {
-  id: number;
+  id: number | string;
   dream: string;
   interpretation: string;
   date: string;
@@ -18,7 +18,7 @@ const MOOD_EMOJI: Record<string, string> = {
 export default function DreamCard({ item, index, onRemove, removeLabel, confirmLabel, perspectiveName }: {
   item: DreamItem;
   index: number;
-  onRemove: (id: number) => void;
+  onRemove: (id: number | string) => void;
   removeLabel: string;
   confirmLabel?: string;
   perspectiveName?: string;

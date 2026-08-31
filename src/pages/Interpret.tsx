@@ -159,7 +159,7 @@ export default function Interpret() {
       symbols: result.symbols,
       mood: mood ?? undefined,
     };
-    const list = JSON.parse(localStorage.getItem('saved-dreams') || '[]') as Array<{ id: number | string }>;
+    const list = JSON.parse(localStorage.getItem('saved-dreams') || '[]') as Array<typeof entry>;
     const exists = list.some((d) => String(d.id) === String(entry.id));
     let next: Array<typeof entry>;
     if (exists) {

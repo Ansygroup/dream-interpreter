@@ -12,3 +12,8 @@ dist
 # temp supabase anon key (never commit)
 .supa-anon.tmp
 .deploy-env-sha
+
+# Dreamscope local secrets — drop your Google OAuth + OpenRouter key here;
+# the self-complete cron enables Google + regenerates locales when present.
+# NEVER commit this file.
+.dreamscope-secrets

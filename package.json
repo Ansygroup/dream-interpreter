@@ -14,7 +14,8 @@
     "deploy": "vercel deploy --prod --yes",
     "ship": "git add -A && git commit -m \"%npm_config_msg%\" && git push origin master && npm run deploy",
     "health": "node scripts/health.mjs",
-    "qa": "node scripts/qa-translations.mjs"
+    "qa": "node scripts/qa-translations.mjs",
+    "test": "node scripts/test-suite.mjs"
   },
   "dependencies": {
     "@fontsource-variable/jetbrains-mono": "^5.3.0",

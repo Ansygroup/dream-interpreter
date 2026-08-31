@@ -253,5 +253,15 @@ for (const f of readdirSync(locDir).filter((x) => x.endsWith('.json') && x !== '
 ok('no type mismatch vs en.json schema across all locales', mismatch === 0);
 
 // ---------------------------------------------------------------------------
+// 15. Login is shared/multi-tenant (for everyone), not a single personal account
+// ---------------------------------------------------------------------------
+section('Shared multi-tenant login copy');
+ok('en.connectTitle says YOUR Supabase project', /your Supabase project/i.test(get(en, 'profile.connectTitle')));
+ok('en.dataNote says YOUR private account', /your private account/i.test(get(en, 'profile.dataNote')));
+ok('en.cloudOff states text sent to service (not on-device only)', /sent to our interpretation service/i.test(get(en, 'profile.cloudOff')));
+const profileSrc2 = read('src/pages/Profile.tsx');
+ok('Profile uses connect() (bring-your-own Supabase)', /connect/.test(profileSrc2) && /supaUrl|supa-url/.test(profileSrc2));
+
+// ---------------------------------------------------------------------------
 console.log(`\nSUITE RESULT: ${passed} passed, ${failed} failed`);
 process.exit(failed === 0 ? 0 : 1);

@@ -188,5 +188,18 @@ const seoLinkSrc = read('src/pages/SEOPage.tsx');
 ok('SEOPage reads symbol+lang params', /useParams/.test(seoLinkSrc) && /symbol/.test(seoLinkSrc) && /lang/.test(seoLinkSrc));
 
 // ---------------------------------------------------------------------------
+// 10. Google login graceful degradation (no raw JSON, translated error)
+// ---------------------------------------------------------------------------
+section('Google login graceful');
+ok('en.googleNotEnabled present', get(en, 'profile.googleNotEnabled') !== undefined);
+ok('ar.googleNotEnabled present', get(ar, 'profile.googleNotEnabled') !== undefined);
+ok('googleNotEnabled is user-facing (no raw JSON term)',
+  !/provider is not enabled/i.test(get(en, 'profile.googleNotEnabled')) &&
+  !/"error"/i.test(get(en, 'profile.googleNotEnabled')));
+const profileGoogleSrc = read('src/pages/Profile.tsx');
+ok('handleGoogle catches provider-not-enabled → googleNotEnabled', profileGoogleSrc.includes('provider is not enabled') && profileGoogleSrc.includes('googleNotEnabled'));
+ok('handleGoogle never leaks raw error', !/JSON\.stringify\(.*error/.test(profileGoogleSrc));
+
+// ---------------------------------------------------------------------------
 console.log(`\nSUITE RESULT: ${passed} passed, ${failed} failed`);
 process.exit(failed === 0 ? 0 : 1);

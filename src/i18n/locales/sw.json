@@ -1,11 +1,11 @@
 {
   "nav": {
-    "interpret": "Tafsiri",
-    "symbols": "Ishara",
-    "about": "Kutuhusu",
-    "faq": "Maswali",
+    "interpret": "Fasiri",
+    "symbols": "Alama",
+    "about": "Kuhusu",
+    "faq": "Maswali Yanayoulizwa",
     "history": "Historia",
-    "saved": "Vilivyohifadhiwa",
+    "saved": "Zilizohifadhiwa",
     "contact": "Wasiliana",
     "start": "Anza",
     "home": "Mwanzo",
@@ -13,59 +13,247 @@
     "ansyGroup": "Ansy Group",
     "language": "Lugha",
     "searchLanguage": "Tafuta lugha…",
-    "noLanguage": "Hakuna lugha inayolingana na utafutaji wako."
+    "noLanguage": "Hakuna lugha inayolingana na utafutaji wako.",
+    "profile": "Wasifu"
   },
   "footer": {
-    "tagline": "Free AI dream interpretation in 60 languages — every tradition, your lens.",
+    "tagline": "Tafsiri ya bureh ya ndoto kwa AI katika lugha 60 — kila tamaduni, mtazamo wako.",
     "copyright": "© {year} Dreamscope"
   },
   "home": {
-    "heroTitle": "{accent} yako inajaribu kusema nini",
-    "heroAccent": "akili ifichayo",
-    "heroLede": "Ancient symbolism, modern psychology, and AI — combined into one clear reading. Describe a dream in your own words and get an interpretation through the tradition you trust.",
-    "interpretCta": "Tafsiri ndoto",
-    "browseCta": "Vinjari ishara",
+    "heroTitle": "Kile {accent} yako inajaribu kusema",
+    "heroAccent": "fahamu ya ndani",
+    "heroLede": "Ishara za kale, saikolojia ya kisasa, na AI — zimeunganishwa katika tafsiri moja wazi. Eleza ndota kwa maneno yako mwenyewe na upate tafsiri kupitia tamaduni unayoiamini.",
+    "interpretCta": "Fasiri Ndoto",
+    "browseCta": "Vinjari Alama",
+    "statLanguages": "Lugha {n}",
+    "statSymbols": "alama za ndoto {n}",
+    "statPrivateLine": "faragha kwenye kifaa chako",
+    "whyTitle": "Ufasiri unaoweza kutumika kweli",
+    "whyLede": "Dreamscope walinganisha ndoto yako na ishara zake, kisha kuzisoma kupitia mila unayoiamini — na sayansi ya akili ikisaidia, badala ya kubadilisha.",
+    "feature1Title": "Uchambuzi wa Ishara",
+    "feature1Body": "Ndoto hizo zote zinafuatwa hadi kwenye alama zake kuu na kupitia mila ya ufasiri wa karne nyingi.",
+    "feature2Title": "Lugha 60",
+    "feature2Body": "Tafsiri na usome ishara kwa Kiingereza, Kiarabu, Kihispania, Kichina, Kijapani, na lugha 55 nyingine zaidi.",
+    "feature3Title": "Milima Yote",
+    "feature3Body": "Saikolojia ya kina na mitazamo kwa imani mbalimbali — usomaji mmoja, ukionekana kupitia mtazamo wako.",
+    "feature4Title": "Imehifadhiwa & Faragha",
+    "feature4Body": "Ndoto zako zinakaa kwenye kifaa chako kwa chaguo-msingi. Ingia ili kusawazisha kati ya vifaa.",
+    "sampleTag": "Usomaji wa Mfano",
+    "sampleJustNow": "sasa hivi",
+    "sampleDream": "\"Nilimuona nyoka wa kijani anatoka nyumbani kupitia mlango wa bustani.\"",
+    "sampleReading": "Nyoka wanaashiria mabadiliko — kitu fulani maishani mwako kinapupya ngozi yake ya zamani. Lga hilo linaonyesha njia wazi ya kutoka inafunguka. Katika milima mingi, nyoka asiye na hatia akitoka nyumbani mara nyingi maana yake ni wasiwasi unaoendelea mwishowe unaondoka.",
+    "sampleTag1": "Mabadiliko",
+    "sampleTag2": "Toleo",
+    "sampleTag3": "Mila",
+    "sampleSaved": "Imehifadhiwa kwenye kifaa chako",
+    "symbolsTitle": "Kila alama inabeba maana",
+    "symbolsLede": "Kutoka maji hadi moto, chunguza motifu za ndoto zinazojirudia na ishara zake katika mila mbalimbali.",
     "ctaTitle": "Eleza ndoto yako",
-    "ctaButton": "Anza kutafsiri",
-    "feature3Body": "Depth psychology and perspectives across faiths — one reading, seen through your lens.",
-    "feature4Body": "Your dreams stay on your device by default. Sign in to sync across devices.",
-    "sampleReading": "Snakes mark transformation — something in your life is shedding its old skin. The gate suggests a clear exit is opening. In many traditions, a harmless snake leaving the home often means a lingering worry is finally moving on.",
-    "sampleTag3": "Tradition",
-    "ctaLede": "A few sentences is enough. The reading takes seconds and stays on your device by default."
+    "ctaLede": "Sentensi chache zinatosha. Uchambuzi huchukua sekunde na unabaki kwenye kifaa chako kwa chaguo-msingi.",
+    "ctaButton": "Anza Kuchambua"
   },
   "interpret": {
     "title": "Eleza ndoto yako",
+    "lede": "Iandike kwa maneno yako mwenyewe. Kadri maelezo yanavyokuwa marefu, ndivyo uchambuzi unavyokuwa makini — mazingira, hisia, na chochote kisicho cha kawaida vyote ni muhimu.",
     "language": "Lugha",
     "yourDream": "Ndoto yako",
-    "placeholder": "Jana usiku niliota nilipita kwenye mlango uliokuwa ukibadilisha umbo...",
-    "button": "Tafsiri ndoto"
-  },
-  "common": {
-    "interpretCta": "Tafsiri ndoto",
-    "backHome": "Rudi mwanzo"
+    "placeholder": "Usiku wa jana ndioota kuwa ninapita katika mlango uliokuwa ukibadilisha umbo...",
+    "loading": "Tunasoma ndoto...",
+    "button": "Fasiri Ndoto",
+    "yourReading": "Ufasiri Wako",
+    "save": "Hifadhi",
+    "saved": "Imehifadhiwa",
+    "savedConfirm": "Imehifadhiwa kwenye shajara yako. Unaweza kuipata wakati wowote chini ya Vilio vilivyohifadhiwa.",
+    "unsaved": "Imeondolewa kwenye Vilio vilivyohifadhiwa.",
+    "disclaimer": "Tafakari tu — si ushauri wa kimatibabu, wa kisaikolojia, wala wa kidini. Hauutabiri mustakabala.",
+    "viewHistory": "Tazama Historia",
+    "errorEmpty": "Tafadhali eleza ndoto yako kwanza.",
+    "errorFailed": "Ufasiri umeshindwa. Tafadhali jaribu tena.",
+    "errorNetwork": "Hitilafu ya muunganisho. Tafadhali jaribu tena.",
+    "perspectiveLabel": "Kusoma kupitia",
+    "perspNotice": "Kila mila inaonyeshwa peke yake. Usomaji ni wa kutafakari na wa uwezekano — si ubashiri wala hukumu.",
+    "compareLabel": "Linganisha mila zote",
+    "compareDesc": "Ndoto moja, ikisomwa kupitia kila mtazamo kwa pamoja — ona wapi mila zinaafikiana na wapi zinatofautiana.",
+    "compareLoading": "Kusoma kupitia kila mila…",
+    "compareBack": "Rudi kwenye tafsiri moja",
+    "compareSymbols": "Alama",
+    "symbolsLabel": "Alama katika ndoto yako",
+    "feedbackQ": "Je, tafsiri hii ilikuwa muhimu?",
+    "yes": "Ndiyo, ilikuwa muhimu",
+    "no": "Si sana",
+    "thanks": "Asante — maoni yako yanaboresha tafsiri za baadaye.",
+    "perspectiveDesc": "Tafsiri moja inayochambua nyuzi hekima za tamaduni za ulimwengu kwa kina cha saikolojia.",
+    "moodLabel": "Ndoto ilikuwa na hisia gani?",
+    "copy": "Nakili",
+    "copied": "Imenakiliwa!",
+    "share": "Sambaza",
+    "example": "Jaribu mfano",
+    "exampleDream": "Usiku wa jana niliota njiwa mweye alitua dirishani mwangu, kisha akageuka kuwa barua niliyokuwa siwezi kuisoma. Nilihisi utulivu lakini pia udadisi.",
+    "shortcutHint": "Bonyeza ⌘/Ctrl + Enter ili kutafsiri",
+    "symbolsSection": "Alama"
   },
   "history": {
     "title": "Historia ya ndoto",
-    "empty": "Hakuna ndoto iliyotafsiriwa bado."
+    "lede": "Kila tafsiri uliyozalisha, imehifadhiwa kwenye kifaa hiki.",
+    "empty": "Bado hakuna ndoto zilizotafsiriwa."
   },
   "saved": {
     "title": "Ndoto zilizohifadhiwa",
+    "lede": "Hifadhi tafsiri zilizokugusa moyo. Zinabaki kwenye kifaa chako.",
     "empty": "Hakuna kilichohifadhiwa bado."
   },
+  "common": {
+    "interpretCta": "Fasiri Ndoto",
+    "delete": "Futa",
+    "remove": "Ondoa",
+    "confirmRemove": "Ondoa?",
+    "backHome": "Rudi Nyumbani"
+  },
   "symbols": {
-    "title": "Ishara {n} za ndoto",
-    "search": "Tafuta ishara…"
+    "title": "Alama za Ndoto {n}",
+    "lede": "Vinjari alama zote tunazofasiri — bila malipo, kwa lugha nyingi. Chagua yako usome maana yake.",
+    "search": "Tafuta alama…",
+    "noResults": "Hakuna alama inayolingana na utafutaji wako."
+  },
+  "about": {
+    "title": "Uchambuzi thabiti, uliojengwa kwa msingi wa jadi",
+    "p1": "Dreamscope inakusudia kufanya uchambuzi wa ndoto upatikane kwa lugha yako na muktadha wako wa kitamaduni. Tunatumia mitindo mbalimbali ya uchambuzi — maarifa ya kidini na kiroho, mila za kitamaduni, na mitambo ya ishara ya saikolojia ya kisasa ya ndani — ili uweze kusoma ndoto yako kupitia mwanga unaouamini.",
+    "p2": "Kila uchambuzi unaundwa ili kukusaidia kufikiri — si kutabiri mustakbali. Ishara kama maji, moto, kuruka, au nyoka zimebeba maana katika tamaduni mbalimbali kwa maelfu ya miaka, na uchambuzi wetu unafuatilia nyuzi hizo ili uweze kupata kinachokugusa katika maisha yako mwenyewe.",
+    "p3": "Huduma hii ni ya bure, ya faragha kwa muundo, na inapatikana kwa lugha 60. Maandishi ya ndoto yako yanatumwa kwa huduma yetu ya uchambuzi ili kutengeneza uchambuzi, kisha hayahifadhiwi nasi; uchambuzi wako unabaki kwenye kifaa chako isipokuwa uingie na usawazishe.",
+    "card1Title": "Mila nyingi",
+    "card1Body": "Mitazamo ya Kiislamu, Kikristo, Kiyahudi, Kihindu, Kibuddha, Kichina, na kisaikolojia — chagua ile unayoiamini.",
+    "card2Title": "Lugha 60",
+    "card2Body": "Kutoka Kiarabu hadi Kijapani — chambua ndoto kwa lugha unayoota.",
+    "card3Title": "Faragha kwa 100%",
+    "card3Body": "Ufasiri wako unabaki kwenye kifaa chako kwa chaguo-msingi. Ingia tu ili kusawazisha; futa wakati wowote.",
+    "cta": "Anza Kufasiri",
+    "traditionsTitle": "Kila mila, ndoto moja",
+    "traditionsLede": "Chagua mtazamo unaouamini moyo wako — kila ufasiri hutolewa kupitia shule maalum ya tafsiri."
+  },
+  "contact": {
+    "title": "Wasiliana nasi",
+    "lede": "Maswali, masahihisho, au mawazo ya ushirikiano? Wasiliana na timu ya Dreamscope kwa barua pepe.",
+    "email": "Barua pepe",
+    "disclaimer": "Dreamscope hutoa tafakari na burudani tu. Tafsiri si ushauri wa kimatibabu, kisaikolojia, au wa kidini. Ukitahitaji msaada, tafadhali wasiliana na mtaalamu wa sifa.",
+    "back": "Rudi kwa Mfasiri"
+  },
+  "faq": {
+    "title": "Maswali yanayoulizwa mara kwa mara",
+    "q1": "Dreamscope inaelezeaje ndoto?",
+    "a1": "Dreamscope inachanganya ujuzi wa ndoto kutoka kwa tamaduni na imani nyingi — ikiwemo mila za Kiislamu, Kikristo, Kiyahudi, Kihindu, Kibudha, na Kichina — pamoja na saikolojia ya kisasa ya ndani. Unaeleza ndoto kwa maneno yako mwenyewe, na upokee tafsiri inayolingana ishara zake na maana zake za kawaida katika tamaduni mbalimbali.",
+    "q2": "Je, data yangu ya ndoto ni ya farin?",
+    "a2": "Ndio. Ndoto zako huhifadhiwa tu katika hifadhi ya kivinjari chako kwenye kifaa chako. Hakuna kitu kinachotumwa kwa seva kwa hifadhi, na unaweza kufuta historia yako wakati wowote.",
+    "q3": "Ndoto zinaweza kufasiriwa katika lugha zipi?",
+    "a3": "Dreamscope inaunga mkono lugha 60 ikiwemo Kiingereza, Kiarabu, Kihispania, Kifaransa, Kijerumani, Kichina, Kijapani, Kikorea, Kituruki, Kireno, Kirusi, Kihindi, na nyinginezo. Tafsiri hufuata lugha unayoichagua.",
+    "q4": "Je, tafsiri hizi ni badala ya ushauri wa kitaalamu?",
+    "a4": "Hapana. Tafsiri za ndoto ni za kujitafakari na burudani. Si mwongozo wa kimatibabu, kisaikolojia, au kidini. Ukiwa katika hali ngumu, tafadhali zungumza na mtaalamu wa kwa.",
+    "q5": "Ishara ngapi za ndoto zimefunikwa?",
+    "a5": "Dreamscope ina kurasa maalum kwa ishara 146 za kawaida — nyoka, maji, kuruka, moto, ujauzito, pesa, na nyingine nyingi — kila moja ikipatikana katika lugha nyingi na aina mbalimbali za maswali marefu."
   },
   "notfound": {
     "title": "Ndoto hii imeyeyuka",
-    "cta": "Rudi mwanzo"
+    "lede": "Ukurasa uliouhitaji haupo hapa. Tutakusaidia urudi kwenye kufasiri ndoto.",
+    "cta": "Rudi Mwanzo"
   },
-  "about": {
-    "p1": "Dreamscope exists to make dream interpretation accessible in your own language and cultural context. We draw on a wide range of interpretive traditions — religious and spiritual scholarship, cultural folklore, and the symbolic frameworks of modern depth psychology — so you can read your dream through the lens you trust.",
-    "card1Title": "Many traditions",
-    "card1Body": "Islamic, Christian, Jewish, Hindu, Buddhist, Chinese, and psychological lenses — pick the one you trust."
+  "perspectives": {
+    "general": {
+      "name": "Ujumla"
+    },
+    "islamic": {
+      "name": "Ibn Sirin (Kiislamu)"
+    },
+    "christian": {
+      "name": "Kikristo"
+    },
+    "jewish": {
+      "name": "Kiyahudi"
+    },
+    "hindu": {
+      "name": "Kihindu"
+    },
+    "buddhist": {
+      "name": "Kibuddha"
+    },
+    "psychology": {
+      "name": "Saikolojia (Jung)"
+    },
+    "chinese": {
+      "name": "Zhou Gong (Mchina)"
+    }
   },
-  "faq": {
-    "a1": "Dreamscope blends dream scholarship from many cultures and faiths — including Islamic, Christian, Jewish, Hindu, Buddhist, and Chinese traditions — with modern depth psychology. You describe a dream in your own words and receive a reading that maps its symbols to their common meanings across cultures."
+  "daily": {
+    "tag": "Ndoto ya leo"
+  },
+  "profile": {
+    "title": "Nafasi yako",
+    "cloudOff": "Maandishi ya ndoto yako yanatumwa kwa huduma yetu ya ufasiri ili kutengeneza tafsiri, kisha hayahifadhiwi na sisi. Tafsiri zinabaki kwenye kifaa chako isipokuwa utiishe sahihi na uchague kusawazisha. Hatupigi au kuchambua data yako kamwe.",
+    "dataNote": "Data yako inakaa wapi: kwenye kifaa chako kwa chaguo-msingi. Ukisajili, jarida lako linaweza kusawazishwa kwenye akaunti yako ya kibinafsi; unaweza kulifuta wakati wowote.",
+    "signInLede": "Ingia ili kulinda jarida lako la ndoto katika vifaa vyako vyote. Historia yako ya mgeni husogea nawe moja kwa moja.",
+    "emailLabel": "Barua pepe",
+    "magicLink": "Nitumie kiungo cha kuingia",
+    "google": "Endelea na Google",
+    "checkEmail": "Angalia kisanduku chako — kiungo cha kuingia kinakusubiri.",
+    "invalidEmail": "Tafadhali ingiza anwani halali ya barua pepe.",
+    "signInError": "Tulishindwa kukuingiza. Tafadhali jaribu tena au utumie kiungo cha barua pepe.",
+    "googleNotEnabled": "Kuingia kwa Google bado hakijawashwa kwenye mradi huu. Mmiliki wa tovuti anahitaji kuunganisha mteja wa Google OAuth katika Supabase.",
+    "guestNote": "Hakuna nenosiri, hakuna ufuatiliaji — ni kiungo tu. Hali ya mgeni yenye hifadhi ya kifaa inabaki kupatikana kikamilifu.",
+    "member": "Mwanachama",
+    "migrated": "Ndoto {n} zimehamishwa kutoka kifaa hiki hadi kwenye shajara yako.",
+    "signOut": "Toka",
+    "navLabel": "Wasifu",
+    "lede": "Kila kitu Dreamscope anachokijua kuhusu safari yako — kimehifadhiwa kwenye kifaa chako, chako peke yako.",
+    "yourState": "Hali yako kwa sasa",
+    "statDreams": "Ndoto zilizofasiriwa",
+    "statSaved": "Usomaji uliohifadhiwa",
+    "statStreak": "Mfululizo wa siku",
+    "statTopSymbol": "Alama ya juu",
+    "emptyState": "Bado hakuna ndoto — usomaji wako wa kwanza utaangazia ukurasa huu.",
+    "symbolsYouMeet": "Alama unazokutana nazo mara kwa mara",
+    "noneYet": "—",
+    "lastReading": "Usomaji wa mwisho",
+    "languagesUsed": "Lugha zilizotumika",
+    "perspectivesUsed": "Mila zilizotumika",
+    "cloudTitle": "Kwenye vifaa vyako vyote",
+    "connectTitle": "Unganisha mradi wako wa Supabase",
+    "connectUrlLabel": "URL ya Mradi",
+    "connectKeyLabel": "Ufunguo wa umma wa Anon",
+    "connectCta": "Unganisha",
+    "connected": "Umeunganishwa — sasa unaweza kuingia na kusawazisha jarida lako.",
+    "connectError": "Imeshindwa kuunganisha. Angalia URL na ufunguo wa anon.",
+    "disconnect": "Tenganisha",
+    "privacyNote": "Ndoto zako zinahifadhiwa kwenye kifaa chako — haziuuzwi kamwe, hazijapangiwa kamwe.",
+    "moodPattern": "Mwelekeo wa hali",
+    "autoSetupTitle": "Usanidi wa amri moja",
+    "autoSetupBody": "Bado huna mradi? Endesha hati ya bootstrap mara moja: inaunda mradi wa Supabase, inatekeleza muundo wa hifadhidata, na kuchapisha URL yako + ufunguo wa anon ili uweke hapo juu. Kuingia kwa Google kunahitaji mteja wa Google Cloud OAuth (tazama hati).",
+    "autoSetupCmd": "SUPABASE_ACCESS_TOKEN=xxx node scripts/setup-supabase.mjs"
+  },
+  "perspDesc": {
+    "general": "Usomaji mmoja ambao unachanganya nyuzi zenye hekima kutoka kwa mila za ulimwengu na saikolojia ya kina.",
+    "islamic": "Shule ya jadi ya Ibn Sirin — ya kiishara, sheria, na inayolenga roho.",
+    "christian": "Usomaji wa ndoto katika nasaba ya Yosefu na Danieli, kwa ishara za maandiko.",
+    "jewish": "Hekima ya ndoto ya Torati na Talmudu — ujumbe unaosubiri tafsiri ya hekima.",
+    "hindu": "Ishara za Vedic, karma, na mandhari za ndani za akili.",
+    "buddhist": "Kutobadilika na ufahamu wa makini — chunguza ndoto bila kushikamana.",
+    "psychology": "Arketi za Jung na kivuli — akili yako inachakata nini.",
+    "chinese": "Kamusi ya kimapokeo ya Zhou Gong — uwiano wa yin, yang, na vipengele vitano."
+  },
+  "moods": {
+    "peace": "Tulivu",
+    "anxiety": "Na wasiwasi",
+    "hope": "Tumaini",
+    "sadness": "Huzuni",
+    "anger": "Hasira",
+    "confusion": "Mchanganyiko"
+  },
+  "seo": {
+    "dreamInterpretation": "Tafsiri ya Ndoto",
+    "traditionsTitle": "Kupitia mila mbalimbali",
+    "traditionsBody": "Alama inaweza kumaanisha mambo tofauti katika tamaduni mbalimbali. Katika mila za Kiislamu, Kikristo, Kiyahudi, Kihindu, Kibudha, Kichina, na kisaikolojia, picha ile ile husomwa kupitia lenzi yake mwenyewe. Chagua lenzi unayoiamini kwenye ukurasa wa tafsiri.",
+    "tryTitle": "Fasiri Ndoto Zako kwa Kutumia AI",
+    "tryLede": "Shiriki ndoto yako na upate tafsiri ya kibinafsi kutoka kwa AI.",
+    "otherLangs": "Lugha Zingine",
+    "otherSymbols": "Alama Zingine za Ndoto",
+    "reflectNote": "Ukurasa huu ni kwa ajili ya kujitafakari na burudani tu. Si ushauri wa kimatibabu, kisaikolojia, au wa kidini, na haulogi jambo lolote kuhusu siku zijazo."
   }
 }

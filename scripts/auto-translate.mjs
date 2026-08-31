@@ -3,7 +3,7 @@
  * auto-translate.mjs — self-completing UI localization for Dreamscope.
  *
  * This is the AGENT-IN-THE-LOOP piece: it needs no secrets from the operator.
- * It pulls the OpenRouter key from the project's Vercel production env (the
+ * It pulls the OpenRouter key from the project's Vercel prod env (the
  * Vercel CLI is already authenticated as `ansygroup`), then runs translate-ui.mjs
  * over every locale that is still partial (neutral EN placeholder copy) or
  * missing — preserving the hand-curated en.json (source) and ar.json (bilingual).
@@ -47,14 +47,15 @@ if (existsSync(secretsFile)) {
 if (!usable(KEY)) { // fall back to Vercel env pull
   const envFile = join(root, '.env.vercel.local');
   rmSync(envFile, { force: true });
-  run('vercel env pull .env.vercel.local --environment production --yes 2>&1', { timeout: 90000 });
+  run('vercel env pull .env.vercel.local --environment production --yes 2>&1', { timeout: 120000 }); // increased timeout
   if (existsSync(envFile)) {
     const txt = readFileSync(envFile, 'utf8');
-    const m = txt.match(/OPENROUTER_API_KEY="?([^"\n]+)"?/);
+    const m = txt.match(/OPENROUTER_API_KEY=\"?([^\"\\n]+)\"?/);
     if (m && usable(m[1])) KEY = m[1]; // ignore "@..." / "[SENSITIVE]" redacted values
     rmSync(envFile, { force: true });
   }
 }
+
 // 2. Self-completing localization — prefer the LIVE /api/translate endpoint
 //    (the deployed app holds OPENROUTER_API_KEY server-side, so we get
 //    high-quality LLM translations with ZERO operator secrets). Falls back
@@ -66,25 +67,26 @@ try {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ code: 'en', source: { footer: { tagline: 'x' } } }),
-    signal: AbortSignal.timeout(15000),
+    // Increased timeout to match endpoint maxDuration (120s) + buffer
+    signal: AbortSignal.timeout(120000),
   });
   probe = String(res.status);
 } catch { probe = '000'; }
 const liveReachable = probe.startsWith('2') || probe === '400'; // 400 means endpoint alive, rejected our tiny payload — still usable
 if (liveReachable) {
   log(`using LIVE /api/translate (no operator secret needed; engine runs on Vercel). probe=${probe}.`);
-  const out = run(`node scripts/translate-live.mjs`, { timeout: 600000 });
+  const out = run(`node scripts/translate-live.mjs`, { timeout: 900000 }); // increased to 15 min
   console.log(out.split('\n').filter((l) => /→|✓|✗|Done|translated/.test(l)).join('\n'));
 } else if (usable(KEY)) {
   const mode = process.argv.includes('--all') ? '--force' : '--complete';
   process.env.OPENROUTER_API_KEY = KEY;
   log(`live endpoint unreachable (probe=${probe}) — using local OpenRouter key.`);
-  const out = run(`node scripts/translate-ui.mjs ${mode}`, { timeout: 600000 });
+  const out = run(`node scripts/translate-ui.mjs ${mode}`, { timeout: 900000 });
   console.log(out.split('\n').filter((l) => /→|✓|✗|Done|translated/.test(l)).join('\n'));
 } else {
   // Last-resort keyless: MyMemory (rate-limited; better than nothing).
   log(`live endpoint unreachable (probe=${probe}) and no local key — falling back to keyless MyMemory.`);
-  const out = run(`node scripts/translate-free.mjs`, { timeout: 600000 });
+  const out = run(`node scripts/translate-free.mjs`, { timeout: 900000 });
   console.log(out.split('\n').filter((l) => /→|✓|✗|Done|translated/.test(l)).join('\n'));
 }
 
@@ -92,6 +94,6 @@ if (liveReachable) {
 const status = run('git status --porcelain src/i18n/locales/');
 if (!status.trim()) { log('no locale changes — nothing to commit.'); process.exit(0); }
 run('git add src/i18n/locales/*.json');
-run('git commit -m "i18n: agent auto-localized UI strings (self-completing localization)" || true');
+run('git commit -m \"i18n: agent auto-localized UI strings (self-completing localization)\" || true');
 run('git push origin master || true');
 log('✅ auto-localization pass complete.');

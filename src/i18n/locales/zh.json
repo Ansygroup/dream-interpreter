@@ -1,11 +1,11 @@
 {
   "nav": {
     "interpret": "解读",
-    "symbols": "意象",
+    "symbols": "象征",
     "about": "关于",
     "faq": "常见问题",
     "history": "历史",
-    "saved": "已收藏",
+    "saved": "收藏",
     "contact": "联系我们",
     "start": "开始",
     "home": "首页",
@@ -13,147 +13,147 @@
     "ansyGroup": "Ansy Group",
     "language": "语言",
     "searchLanguage": "搜索语言…",
-    "noLanguage": "没有匹配的语言。",
-    "profile": "个人"
+    "noLanguage": "未找到匹配的语言。",
+    "profile": "个人主页"
   },
   "footer": {
-    "tagline": "60 种语言免费 AI 解梦 —— 汇聚每一种传统，由你选择视角。",
+    "tagline": "免费 AI 梦境解读，60 种语言，传承多样，由你选择。",
     "copyright": "© {year} Dreamscope"
   },
   "home": {
-    "heroTitle": "你的{accent}想告诉你什么",
+    "heroTitle": "你的{accent}想说的话",
     "heroAccent": "潜意识",
-    "heroLede": "古老的象征、现代心理学与 AI —— 合为一次清晰的解读。用你自己的话描述一个梦境，即可获得你所信赖的传统视角下的诠释。",
-    "interpretCta": "解梦",
-    "browseCta": "浏览意象",
+    "heroLede": "古老的象征、现代心理学与 AI 三者合一，化作清晰的解读。用你自己的语言描述梦境，按照你所信赖的传统获得诠释。",
+    "interpretCta": "解读梦境",
+    "browseCta": "浏览象征",
     "statLanguages": "{n} 种语言",
-    "statSymbols": "{n} 个梦境意象",
-    "statPrivateLine": "本地存储，私密安全",
+    "statSymbols": "{n} 个梦境象征",
+    "statPrivateLine": "本地存储于你的设备",
     "whyTitle": "真正能用的解读",
-    "whyLede": "Dreamscope 将你的梦境映射为意象，再通过你所信赖的传统来阅读 —— 心理学与古老智慧并存，而非取而代之。",
+    "whyLede": "Dreamscope 将你的梦境映射到其中的象征，再用你所信赖的传统去解读——心理学作为补充,而非替代。",
     "feature1Title": "象征分析",
-    "feature1Body": "每个梦境都会映射到其核心意象，并追溯数百年来的解读传统。",
+    "feature1Body": "每个梦境都会被拆解为核心象征，并追溯其跨越数百年解梦传统的脉络。",
     "feature2Title": "60 种语言",
-    "feature2Body": "支持英语、阿拉伯语、西班牙语、中文、日语等 60 种语言的解梦与意象阅读。",
-    "feature3Title": "汇聚各家传统",
-    "feature3Body": "深度心理学与多元信仰视角并存 —— 一次解读，多重视角，由你定调。",
-    "feature4Title": "私密保存",
-    "feature4Body": "梦境默认仅保存在你的设备上。登录后可在多设备间同步。",
-    "sampleTag": "解读示例",
+    "feature2Body": "支持英语、阿拉伯语、西班牙语、中文、日语等 60 种语言的解读与象征阅读。",
+    "feature3Title": "多元传统",
+    "feature3Body": "深度心理学与各信仰视角——一次解读,多重视角,由你选择。",
+    "feature4Title": "本地保存，隐私优先",
+    "feature4Body": "梦境默认只保存在你的设备上。登录后可在多设备之间同步。",
+    "sampleTag": "示例解读",
     "sampleJustNow": "刚刚",
-    "sampleDream": "\"我看见一条绿色的蛇从花园的门离开了家。\"",
-    "sampleReading": "蛇往往象征转变 —— 你的生活中有什么正在褪去旧的外壳。门则暗示一条清晰的退路正在打开。在许多传统中，无害的蛇离开家，常常意味着一个萦绕已久的担忧终于在消散。",
+    "sampleDream": "\"我看见一条绿色的蛇从花园的门离开房子。\"",
+    "sampleReading": "蛇象征转变——你生活中的某些事物正在蜕去旧的形态。门则暗示一条清晰的出口正在打开。在许多传统中,无害的蛇离开居所往往意味着某份久挂心头的担忧终于在远去。",
     "sampleTag1": "转变",
-    "sampleTag2": "释放",
+    "sampleTag2": "释怀",
     "sampleTag3": "传统",
     "sampleSaved": "已保存到你的设备",
-    "symbolsTitle": "每一个意象都承载着意义",
-    "symbolsLede": "从水到火，探索最常见的梦境主题，看它们在不同传统中通常预示着什么。",
+    "symbolsTitle": "每个象征都承载着意义",
+    "symbolsLede": "从水到火,探索最常见的梦境主题,以及它们在多种文化中各自的意涵。",
     "ctaTitle": "描述你的梦境",
-    "ctaLede": "几句话就够了。解读只需数秒，默认仅保存在你的设备上。",
-    "ctaButton": "开始解梦"
+    "ctaLede": "几句话就够了。解读只需几秒,默认保存在你的设备上。",
+    "ctaButton": "开始解读"
   },
   "interpret": {
     "title": "描述你的梦境",
-    "lede": "用你自己的话写下。越详细，解读越精准 —— 场景、感受，以及任何不寻常的细节都很重要。",
+    "lede": "用你自己的话写下。细节越多,解读就越精准——场景、情绪,以及任何不寻常之处都很重要。",
     "language": "语言",
     "yourDream": "你的梦境",
-    "placeholder": "昨晚我梦见自己走过一扇不断变形的门……",
-    "loading": "解读中…",
+    "placeholder": "昨晚我梦见自己走进一扇不断变形的门……",
+    "loading": "正在解读…",
     "button": "解读梦境",
     "yourReading": "你的解读",
     "save": "收藏",
     "saved": "已收藏",
-    "savedConfirm": "已保存到你的日记。可随时在\"已收藏\"中查看。",
+    "savedConfirm": "已收藏到你的日记。可随时在「收藏」中查看。",
     "unsaved": "已从收藏中移除。",
-    "disclaimer": "仅供反思参考 —— 不构成医疗、心理或宗教建议，亦不预测未来。",
+    "disclaimer": "仅为反思参考——非医学、心理或宗教建议,亦不预测未来。",
     "viewHistory": "查看历史",
     "errorEmpty": "请先描述你的梦境。",
-    "errorFailed": "解读失败，请重试。",
-    "errorNetwork": "网络连接错误，请重试。",
+    "errorFailed": "解读失败,请重试。",
+    "errorNetwork": "网络连接异常,请重试。",
     "perspectiveLabel": "解读视角",
-    "perspNotice": "每一种传统单独呈现。解读具有反思性与概率性，并非预言或定论。",
+    "perspNotice": "每个传统单独呈现。解读具有反思性与可能性——并非预言或定论。",
     "compareLabel": "比较所有传统",
-    "compareDesc": "同一个梦境，同时透过所有视角来读 —— 看各家传统的共识与分歧。",
-    "compareLoading": "正在透过所有传统解读…",
+    "compareDesc": "同一个梦境,以多种视角同时解读——看看各传统的共识与分歧。",
+    "compareLoading": "正在以所有传统解读…",
     "compareBack": "返回单一解读",
-    "compareSymbols": "意象",
-    "symbolsLabel": "梦境中的意象",
-    "feedbackQ": "这次解读对你有帮助吗？",
-    "yes": "有帮助",
+    "compareSymbols": "象征",
+    "symbolsLabel": "梦境中的象征",
+    "feedbackQ": "这次解读对你有帮助吗?",
+    "yes": "有,很有帮助",
     "no": "不太有帮助",
-    "thanks": "感谢反馈 —— 你的意见会让未来的解读更好。",
-    "perspectiveDesc": "一次解读，融汇世界各传统最精粹的智慧与深度心理学。",
-    "moodLabel": "这个梦境感觉如何？",
+    "thanks": "感谢你的反馈——它会让未来的解读越来越好。",
+    "perspectiveDesc": "一次解读,融合世界各传统中最具智慧的脉络与深度心理学。",
+    "moodLabel": "梦境感觉如何?",
     "copy": "复制",
-    "copied": "已复制！",
+    "copied": "已复制!",
     "share": "分享",
-    "example": "试试示例",
-    "exampleDream": "昨晚我梦见一只白鸽落在我的窗台上，然后变成了一封我读不懂的信。我感到平静又好奇。",
-    "shortcutHint": "按 ⌘/Ctrl + Enter 开始解读",
-    "symbolsSection": "意象"
+    "example": "试一个例子",
+    "exampleDream": "昨晚我梦见一只白鸽落在窗台上,然后变成一封我读不懂的信。我感到平静又好奇。",
+    "shortcutHint": "按 ⌘/Ctrl + Enter 进行解读",
+    "symbolsSection": "象征"
   },
   "history": {
     "title": "梦境历史",
-    "lede": "你生成过的每一次解读，都存储在本设备上。",
-    "empty": "还没有解读过的梦境。"
+    "lede": "你生成过的所有解读,均保存在本机。",
+    "empty": "尚未解读过任何梦境。"
   },
   "saved": {
-    "title": "已收藏的梦境",
-    "lede": "珍藏打动过你的解读。它们会留在这台设备上。",
-    "empty": "还没有收藏任何内容。"
+    "title": "收藏的梦境",
+    "lede": "珍藏那些触动你的解读。它们只留在这台设备上。",
+    "empty": "还没有收藏。"
   },
   "common": {
-    "interpretCta": "解梦",
+    "interpretCta": "解读梦境",
     "delete": "删除",
     "remove": "移除",
-    "confirmRemove": "确定移除？",
+    "confirmRemove": "确定移除?",
     "backHome": "返回首页"
   },
   "symbols": {
-    "title": "{n} 个梦境意象",
-    "lede": "浏览我们解读的所有意象 —— 免费提供，涵盖数十种语言。选择你的语言来阅读含义。",
-    "search": "搜索意象…",
-    "noResults": "没有匹配的意象。"
+    "title": "{n} 个梦境象征",
+    "lede": "浏览我们解读的所有象征——免费,涵盖数十种语言。选择感兴趣的象征阅读含义。",
+    "search": "搜索象征…",
+    "noResults": "没有找到匹配的象征。"
   },
   "about": {
-    "title": "清晰解读，植根于传统",
-    "p1": "Dreamscope 致力于让你的母语与文化语境都能触及解梦。我们广泛汲取各类解读传统 —— 宗教与精神研究、文化民俗，以及现代深度心理学的象征框架 —— 让你可以通过自己信赖的视角来读懂梦境。",
-    "p2": "每一次解读都旨在帮助你反思，而非预测未来。水、火、飞翔、蛇等意象，已在数千年的文化中承载着意义；我们的解读追溯这些线索，帮你找到与自己生活共鸣之处。",
-    "p3": "本服务免费，设计上注重隐私，覆盖 60 种语言。你的梦境文本会发送至我们的解读服务以生成解读，但不会被我们存储；除非你登录并同步，否则解读只会留存在你的设备上。",
+    "title": "清晰的解读,植根于传统",
+    "p1": "Dreamscope 致力于让你的母语与文化背景都能触及梦境解读。我们融合了广泛的解读传统——宗教与精神学术研究、文化民俗,以及现代深度心理学的象征框架——让你能透过自己信赖的视角去读懂它。",
+    "p2": "每一次解读都旨在帮助你反思——而非预言未来。水、火、飞翔、蛇等象征在数千年的文化中始终承载着意义,我们的解读追溯这些脉络,让你在自身生活中找到共鸣。",
+    "p3": "服务免费,设计即隐私,支持 60 种语言。你的梦境文本会发送至我们的解读服务以生成解读,我们不会存储;你的解读结果默认留在你的设备上,除非你登录并同步。",
     "card1Title": "多元传统",
-    "card1Body": "伊斯兰、基督、犹太、 Hindu、 Buddhist、中华及心理学视角 —— 选择你信赖的那个。",
+    "card1Body": "伊斯兰、基督、犹太、印度教、佛教、中国,以及心理学视角——选择你信赖的那一个。",
     "card2Title": "60 种语言",
-    "card2Body": "从阿拉伯语到日语 —— 用你做梦的语言来解读。",
+    "card2Body": "从阿拉伯语到日语——用你做梦时使用的语言进行解读。",
     "card3Title": "100% 私密",
-    "card3Body": "解读默认仅保存在你的设备上。仅在你希望同步时才登录，可随时删除。",
-    "cta": "开始解梦",
-    "traditionsTitle": "同一个梦境，所有传统",
-    "traditionsLede": "选择你内心信赖的视角 —— 每一次解读都生成自专属的解读学派。"
+    "card3Body": "你的解读默认只保留在设备上。仅在你需要同步时登录,随时可删除。",
+    "cta": "开始解读",
+    "traditionsTitle": "同一个梦境,任意传统",
+    "traditionsLede": "选择你心中信赖的视角——每一次解读都通过专门的解梦学派生成。"
   },
   "contact": {
     "title": "联系我们",
-    "lede": "有疑问、建议或合作想法？请通过邮件与 Dreamscope 团队联系。",
+    "lede": "有疑问、纠错或合作想法?请通过邮件与 Dreamscope 团队联系。",
     "email": "邮箱",
-    "disclaimer": "Dreamscope 仅提供反思与娱乐内容。解读不构成医疗、心理或宗教建议。如果你需要支持，请咨询专业人士。",
-    "back": "返回解梦"
+    "disclaimer": "Dreamscope 仅提供反思与娱乐,解读结果不构成医学、心理或宗教建议。如需支持,请咨询合格的专业人士。",
+    "back": "返回解读页"
   },
   "faq": {
     "title": "常见问题",
-    "q1": "Dreamscope 如何解梦？",
-    "a1": "Dreamscope 融合了多元文化与信仰的梦境学 —— 包括 Islamic、 Christian、 Jewish、 Hindu、 Buddhist 和中华传统 —— 以及现代深度心理学。你用日常语言描述梦境，便会获得一份解读，将其中的意象映射到跨文化的常见含义。",
-    "q2": "我的梦境数据私密吗？",
-    "a2": "是的。你的梦境仅存储在设备的浏览器本地存储中。不会被发送至任何服务器进行存储，你可以随时删除历史记录。",
-    "q3": "支持哪些语言解梦？",
-    "a3": "Dreamscope 支持 60 种语言，包括英语、阿拉伯语、西班牙语、法语、德语、中文、日语、韩语、土耳其语、葡萄牙语、俄语、 Hindi 等。解读会使用你所选择的语言呈现。",
-    "q4": "解读能否替代专业建议？",
-    "a4": "不能。梦境解读仅用于反思与娱乐，并非医疗、心理或宗教指引。如果你正经历困扰，请向专业人士寻求帮助。",
-    "q5": "涵盖多少梦境意象？",
-    "a5": "Dreamscope 为 146 个常见意象设有专属页面 —— 蛇、水、飞翔、火、怀孕、钱财等等 —— 每个意象都提供多种语言版本及长尾问法的变体。"
+    "q1": "Dreamscope 如何解读梦境?",
+    "a1": "Dreamscope 融合了多元文化与信仰的解梦智慧——伊斯兰、基督、犹太、印度教、佛教、中国等传统,以及现代深度心理学。你用自己的话描述梦境,即可获得一份将其象征与跨文化常见含义相对应的解读。",
+    "q2": "我的梦境数据是私密的吗?",
+    "a2": "是的。你的梦境仅存储在本机的浏览器本地存储中,不会被发送至任何服务器用于存储,你也可以随时删除历史记录。",
+    "q3": "支持哪些语言的梦境解读?",
+    "a3": "Dreamscope 支持 60 种语言,包括英语、阿拉伯语、西班牙语、法语、德语、中文、日语、韩语、土耳其语、葡萄牙语、俄语、印地语等。解读将以你选择的语言呈现。",
+    "q4": "解读可以替代专业建议吗?",
+    "a4": "不能。梦境解读仅供反思与娱乐,不构成医学、心理或宗教指引。如果你正在经历困扰,请与合格的专业人士交流。",
+    "q5": "涵盖多少梦境象征?",
+    "a5": "Dreamscope 为 146 个常见象征设有专属页面——蛇、水、飞翔、火、怀孕、金钱等——每一种都支持多种语言,并包含丰富的长尾问题变体。"
   },
   "notfound": {
-    "title": "这个梦境已消散",
-    "lede": "你寻找的页面不在这里。让我们回到解梦吧。",
+    "title": "这个梦消散了",
+    "lede": "你寻找的页面不在这里。让我们回到解读吧。",
     "cta": "返回首页"
   },
   "perspectives": {
@@ -161,82 +161,82 @@
       "name": "通用"
     },
     "islamic": {
-      "name": "伊本·西林（Islamic）"
+      "name": "伊本·西林(伊斯兰)"
     },
     "christian": {
-      "name": "Christian"
+      "name": "基督教"
     },
     "jewish": {
-      "name": "Jewish"
+      "name": "犹太教"
     },
     "hindu": {
-      "name": "Hindu"
+      "name": "印度教"
     },
     "buddhist": {
-      "name": "Buddhist"
+      "name": "佛教"
     },
     "psychology": {
-      "name": "心理学（荣格）"
+      "name": "心理学(荣格)"
     },
     "chinese": {
-      "name": "周公（中华）"
+      "name": "周公(中国)"
     }
   },
   "daily": {
-    "tag": "今日梦境"
+    "tag": "今日之梦"
   },
   "profile": {
     "title": "你的空间",
-    "cloudOff": "你的梦境文本会发送至我们的解读服务以生成解读，但不会被我们存储。除非你登录并选择同步，否则解读将保存在你的设备上。我们绝不售卖或画像你的数据。",
-    "dataNote": "你的数据所在：默认存于你的设备。登录后，日记可同步至你的私人账户，可随时删除。",
-    "signInLede": "登录即可让梦境日记在所有设备间保持同步。访客模式下的历史会自动随你迁移。",
+    "cloudOff": "你的梦境文本会发送至我们的解读服务以生成解读,我们不会存储。解读结果默认保留在你的设备上,除非你登录并选择同步。我们绝不贩卖或画像你的数据。",
+    "dataNote": "你的数据所在:默认在你设备上。登录后,你的日记可同步至你的私人账户;你可以随时删除。",
+    "signInLede": "登录以在所有设备间保留梦境日记。访客历史会自动随你迁移。",
     "emailLabel": "邮箱",
-    "magicLink": "发送登录链接",
+    "magicLink": "发送登录链接给我",
     "google": "使用 Google 继续",
-    "checkEmail": "请查收邮箱 —— 登录链接正在等你。",
+    "checkEmail": "请查看收件箱——登录链接已发送。",
     "invalidEmail": "请输入有效的邮箱地址。",
-    "signInError": "无法登录，请重试或使用邮箱链接。",
-    "googleNotEnabled": "该项目尚未启用 Google 登录。站点所有者需在 Supabase 中接入 Google OAuth 客户端。",
-    "guestNote": "无需密码，不追踪 —— 仅凭一个链接。本地存储的访客模式仍可完全使用。",
+    "signInError": "登录失败,请重试或使用邮箱链接。",
+    "googleNotEnabled": "此项目尚未启用 Google 登录。站点所有者需要在 Supabase 中接入 Google OAuth 客户端。",
+    "guestNote": "无需密码,无需追踪——只是一个链接。访客模式的本地存储仍可完全使用。",
     "member": "会员",
-    "migrated": "已将本设备的 {n} 个梦境迁移至你的日记。",
+    "migrated": "已将本机的 {n} 条梦境迁移至你的日记。",
     "signOut": "退出登录",
-    "navLabel": "个人",
-    "lede": "Dreamscope 所知的一切 —— 存储于你的设备，仅属于你。",
-    "yourState": "你的当下状态",
+    "navLabel": "个人主页",
+    "lede": "Dreamscope 关于你旅程的一切——存储于你的设备,只属于你。",
+    "yourState": "你当前的状态",
     "statDreams": "已解读梦境",
-    "statSaved": "已收藏解读",
+    "statSaved": "收藏解读",
     "statStreak": "连续天数",
-    "statTopSymbol": "最常见意象",
-    "emptyState": "尚无梦境 —— 你的第一次解读将点亮此页面。",
-    "symbolsYouMeet": "反复出现的意象",
+    "statTopSymbol": "最常出现的象征",
+    "emptyState": "尚无梦境——你的第一次解读将点亮这个页面。",
+    "symbolsYouMeet": "你反复遇到的象征",
     "noneYet": "—",
     "lastReading": "最近一次解读",
-    "languagesUsed": "使用过的语言",
-    "perspectivesUsed": "使用过的传统",
-    "cloudTitle": "跨设备同步",
+    "languagesUsed": "使用的语言",
+    "perspectivesUsed": "使用的传统",
+    "cloudTitle": "跨设备",
     "connectTitle": "连接你的 Supabase 项目",
     "connectUrlLabel": "项目 URL",
     "connectKeyLabel": "匿名公钥",
     "connectCta": "连接",
-    "connected": "已连接 —— 现在可以登录并同步你的日记。",
-    "connectError": "无法连接，请检查 URL 与匿名密钥。",
+    "connected": "已连接——现在可以登录并同步你的日记。",
+    "connectError": "无法连接,请检查 URL 和匿名公钥。",
     "disconnect": "断开连接",
-    "privacyNote": "你的梦境存储在设备上 —— 绝不出售，绝不画像。",
+    "privacyNote": "你的梦境存储于你的设备——绝不贩卖,绝不做用户画像。",
     "moodPattern": "情绪模式",
-    "autoSetupTitle": "一键设置",
-    "autoSetupBody": "尚无项目？运行一次引导脚本即可：创建 Supabase 项目、应用数据库架构，并输出 URL 与匿名密钥供你粘贴至上方。Google 登录需要 Google Cloud OAuth 客户端（见脚本）。",
+    "autoSetupTitle": "一键部署",
+    "autoSetupBody": "还没有项目?运行一次引导脚本即可:它会创建一个 Supabase 项目,应用数据库结构,并输出你的 URL 与匿名公钥以粘贴到上方。Google 登录需要配置 Google Cloud OAuth 客户端(详见脚本)。",
     "autoSetupCmd": "SUPABASE_ACCESS_TOKEN=xxx node scripts/setup-supabase.mjs"
   },
   "perspDesc": {
-    "general": "一次解读，融汇世界各传统最精粹的智慧与深度心理学。",
-    "islamic": "伊本·西林的古典学派 —— 象征、法度与灵魂之学。",
-    "christian": "承袭约瑟与但以理传统的梦境解读，结合经文象征。",
-    "jewish": "托拉与塔木德的梦境智慧 —— 一段等待智者诠释的信息。",
-    "hindu": "吠陀象征、业力，以及心灵的内在风景。",
-    "buddhist": "无常与正念觉察 —— 观照梦境而不执取。",
-    "psychology": "荣格的原型与阴影 —— 你的心灵正在处理什么。",
-    "chinese": "周公古典解梦 —— 阴阳平衡与五行生克。"
+    "general": "融合世界各传统中最具智慧的脉络与深度心理学的一次解读。",
+    "islamic": "伊本·西林的古典学派——注重象征、教法与灵魂。",
+    "christian": "承袭约瑟与但以理的解梦传统,结合经文象征。",
+    "jewish": "托拉与塔木德的梦境智慧——等待智者解读的讯息。",
+    "hindu": "吠陀象征、业力与心灵的内在图景。",
+    "buddhist": "无常与正念觉察——观照梦境而不执着。",
+    "psychology": "荣格的原型与阴影——你的心灵正在处理什么。",
+    "chinese": "周公古典解梦——阴阳与五行的平衡。"
   },
   "moods": {
     "peace": "平静",
@@ -247,13 +247,13 @@
     "confusion": "困惑"
   },
   "seo": {
-    "dreamInterpretation": "解梦",
-    "traditionsTitle": "跨越各家传统",
-    "traditionsBody": "同一个意象，在不同文化中可能有不同的含义。在 Islamic、 Christian、 Jewish、 Hindu、 Buddhist、 中华与心理学传统中，同一画面会透过各自的视角来解读。请在解梦页面选择你信赖的视角。",
+    "dreamInterpretation": "梦境解读",
+    "traditionsTitle": "跨越各传统",
+    "traditionsBody": "同一象征在不同文化中可能意涵各异。在伊斯兰、基督、犹太、印度教、佛教、中国及心理学传统中,同一图像会透过各自的视角被解读。请在解读页面选择你信赖的视角。",
     "tryTitle": "用 AI 解读你的梦境",
-    "tryLede": "分享你的梦境，获得个性化的 AI 解读。",
+    "tryLede": "分享你的梦境,获得个性化的 AI 解读。",
     "otherLangs": "其他语言",
-    "otherSymbols": "其他梦境意象",
-    "reflectNote": "本页内容仅供反思与娱乐，不构成医疗、心理或宗教建议，亦不预测未来。"
+    "otherSymbols": "其他梦境象征",
+    "reflectNote": "本页仅供反思与娱乐,不构成医学、心理或宗教建议,亦不预测未来。"
   }
 }

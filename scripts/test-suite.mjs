@@ -152,5 +152,18 @@ ok('ar sampleReading not ابن سيرين-centric', !/ابن سيرين/.test(g
 ok('islamic perspective name keeps Ibn Sirin (legit)', /ibn sirin/i.test(get(en, 'perspectives.islamic.name') || ''));
 
 // ---------------------------------------------------------------------------
+// 7. Locale-aware date formatting (per app language, not OS locale)
+// ---------------------------------------------------------------------------
+section('Locale-aware date formatting');
+const { formatDate } = await import('../src/lib/datetime.ts');
+const d = '2026-08-31T10:30:00Z';
+ok('en formats as Aug 31, 2026', /Aug 31, 2026/.test(formatDate(d, 'en')));
+ok('ar uses Arabic numerals', /[٠-٩]/.test(formatDate(d, 'ar')));
+ok('zh uses 年/月/日', /年.*月.*日/.test(formatDate(d, 'zh')));
+ok('de uses DD.MM.YYYY', /31\.08\.2026/.test(formatDate(d, 'de')));
+ok('ja uses YYYY/MM/DD', /2026\/08\/31/.test(formatDate(d, 'ja')));
+ok('invalid input is safe', formatDate('not-a-date', 'en') === 'not-a-date');
+
+// ---------------------------------------------------------------------------
 console.log(`\nSUITE RESULT: ${passed} passed, ${failed} failed`);
 process.exit(failed === 0 ? 0 : 1);

@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { useI18n } from '../contexts/I18nContext';
+import { formatDate } from '../lib/datetime';
 
 export interface DreamItem {
   id: number | string;
@@ -24,6 +26,7 @@ export default function DreamCard({ item, index, onRemove, removeLabel, confirmL
   perspectiveName?: string;
 }) {
   const [confirming, setConfirming] = useState(false);
+  const { language } = useI18n();
   const excerpt = item.dream.length > 80 ? item.dream.slice(0, 80) + '…' : item.dream;
   return (
     <div className="card card-hover reveal" data-delay={`${(index % 6) * 60}ms`} style={{ padding: '20px 22px' }}>
@@ -49,7 +52,7 @@ export default function DreamCard({ item, index, onRemove, removeLabel, confirmL
         {item.mood && <span className="tag" style={{ fontSize: 10 }}>{MOOD_EMOJI[item.mood] ?? ''} {item.mood}</span>}
         {item.symbols?.slice(0, 4).map((s) => <span key={s} className="tag" style={{ fontSize: 10 }}>{s}</span>)}
         <span className="mono-meta">
-          {new Date(item.date).toLocaleDateString()} · {(item.language || 'en').toUpperCase()}
+          {formatDate(item.date, language)} · {(item.language || 'en').toUpperCase()}
           {perspectiveName ? ` · ${perspectiveName}` : ''}
         </span>
       </div>

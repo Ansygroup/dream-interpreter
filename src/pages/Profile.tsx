@@ -3,6 +3,7 @@ import { useAuth } from '../contexts/AuthContext';
 import { useI18n } from '../contexts/I18nContext';
 import Layout from '../components/Layout';
 import { migrateLocalDreams } from '../lib/sync';
+import { formatDate } from '../lib/datetime';
 import type { DreamItem } from '../components/DreamCard';
 
 interface LocalState {
@@ -160,7 +161,7 @@ export default function Profile() {
                 <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap' }}>
                   <span>
                     <span className="mono-meta" style={{ display: 'block', marginBottom: 4 }}>{t('profile.lastReading')}</span>
-                    {local.lastDate ? new Date(local.lastDate).toLocaleDateString() : '—'}
+                    {local.lastDate ? formatDate(local.lastDate, language) : '—'}
                   </span>
                   <span>
                     <span className="mono-meta" style={{ display: 'block', marginBottom: 4 }}>{t('profile.languagesUsed')}</span>

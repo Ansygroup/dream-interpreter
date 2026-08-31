@@ -179,5 +179,14 @@ ok('ar.contact.title present', get(ar, 'contact.title') !== undefined);
 ok('ar.contact.back present', get(ar, 'contact.back') !== undefined);
 
 // ---------------------------------------------------------------------------
+// 9. Symbol → SEO page links are correctly formed
+// ---------------------------------------------------------------------------
+section('Symbol → SEO links');
+const symbolsSrc = read('src/pages/Symbols.tsx');
+ok('Symbols links to /seo/ path', symbolsSrc.includes('/seo/') && symbolsSrc.includes('${sym}') && symbolsSrc.includes('${l.code}'));
+const seoLinkSrc = read('src/pages/SEOPage.tsx');
+ok('SEOPage reads symbol+lang params', /useParams/.test(seoLinkSrc) && /symbol/.test(seoLinkSrc) && /lang/.test(seoLinkSrc));
+
+// ---------------------------------------------------------------------------
 console.log(`\nSUITE RESULT: ${passed} passed, ${failed} failed`);
 process.exit(failed === 0 ? 0 : 1);

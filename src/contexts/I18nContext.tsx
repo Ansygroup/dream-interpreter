@@ -107,9 +107,9 @@ export const I18nProvider = ({ children }: { children: ReactNode }) => {
     return () => { active = false; };
   }, [language, dicts]);
 
-  // Geo-detect once on mount. Adopt the country's language ONLY when the
-  // browser language agrees with it (an Arabic browser in an Arab country →
-  // Arabic). An English browser in Egypt stays English by design.
+  // Geo-detect once on mount. Adopt the country's language as a *fallback hint*
+  // only when there is no explicit saved choice. We prefer the browser's own
+  // language first (strongest signal of user intent), then geo as a soft nudge.
   useEffect(() => {
     let active = true;
     fetch('/api/geo')
@@ -119,15 +119,19 @@ export const I18nProvider = ({ children }: { children: ReactNode }) => {
         setCountryState(d.country || null);
         let saved: string | null = null;
         try { saved = localStorage.getItem(STORAGE_KEY); } catch { /* private mode */ }
-        if (saved || !d.country) return;
-        const geoLang = resolveLanguageCode(COUNTRY_LANG[d.country]);
-        if (!geoLang) return;
-        const browserBase = (navigator.language || '').toLowerCase().split(/[-_]/)[0];
+        if (saved) return; // explicit user choice wins, never overridden
+        // Prefer browser language immediately (don't wait for agreement).
         const browserLang = resolveLanguageCode(navigator.language);
-        const agrees = browserLang === geoLang || browserBase === geoLang;
-        if (agrees) setLanguageState(geoLang);
+        if (browserLang) { setLanguageState(browserLang); return; }
+        // Fall back to geo country language if browser lang is unresolvable.
+        const geoLang = resolveLanguageCode(COUNTRY_LANG[d.country]);
+        if (geoLang) setLanguageState(geoLang);
       })
-      .catch(() => {});
+      .catch(() => {
+        // Network/geo failed: still apply browser language so UI isn't stuck in EN.
+        const browserLang = resolveLanguageCode(navigator.language);
+        if (browserLang) setLanguageState(browserLang);
+      });
     return () => { active = false; };
   }, []);
 

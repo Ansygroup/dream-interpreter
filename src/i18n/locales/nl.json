@@ -1,176 +1,259 @@
 {
   "nav": {
-    "interpret": "Interpretatie",
-    "symbols": "Symbolen",
-    "about": "Over ons",
+    "interpret": "Interpret",
+    "symbols": "Symbols",
+    "about": "About",
     "faq": "FAQ",
-    "history": "Geschiedenis",
-    "saved": "Bewaard",
+    "history": "History",
+    "saved": "Saved",
     "contact": "Contact",
     "start": "Start",
-    "home": "Startpagina",
+    "home": "Home",
     "aiBlog": "AI Blog",
     "ansyGroup": "Ansy Group",
-    "language": "Taal",
-    "searchLanguage": "Zoek talen…",
-    "noLanguage": "Geen taal komt overeen met je zoekopdracht."
+    "language": "Language",
+    "searchLanguage": "Search languages…",
+    "noLanguage": "No language matches your search.",
+    "profile": "Profile"
   },
   "footer": {
     "tagline": "Free AI dream interpretation in 60 languages — every tradition, your lens.",
     "copyright": "© {year} Dreamscope"
   },
   "home": {
-    "heroTitle": "Wat je {accent} je probeert te vertellen",
-    "heroAccent": "onderbewustzijn",
+    "heroTitle": "What your {accent} is trying to say",
+    "heroAccent": "subconscious",
     "heroLede": "Ancient symbolism, modern psychology, and AI — combined into one clear reading. Describe a dream in your own words and get an interpretation through the tradition you trust.",
-    "interpretCta": "Droom duiden",
-    "browseCta": "Symbolen bekijken",
-    "statLanguages": "{n} talen",
-    "statSymbols": "{n} droomsymbolen",
-    "statPrivateLine": "privé op je apparaat",
-    "whyTitle": "Een duiding die je echt kunt gebruiken",
-    "whyLede": "Dreamscope koppelt je droom aan haar symbolen en leest ze via de traditie die jij vertrouwt — met psychologie ernaast, niet in plaats van.",
-    "feature1Title": "Symbolische analyse",
-    "feature1Body": "Elke droom wordt gekoppeld aan haar kernsymbolen en getraceerd door eeuwen aan duidingstraditie.",
-    "feature2Title": "60 talen",
-    "feature2Body": "Droom en lees symbolen in het Engels, Arabisch, Spaans, Chinees, Japans en 55 andere talen.",
-    "feature3Title": "Alle tradities",
+    "interpretCta": "Interpret a Dream",
+    "browseCta": "Browse Symbols",
+    "statLanguages": "{n} languages",
+    "statSymbols": "{n} dream symbols",
+    "statPrivateLine": "private on your device",
+    "whyTitle": "A reading you can actually use",
+    "whyLede": "Dreamscope maps your dream to its symbols, then reads them through the tradition you trust — with psychology alongside, not instead.",
+    "feature1Title": "Symbolic Analysis",
+    "feature1Body": "Every dream is mapped to its core symbols and traced through centuries of interpretation tradition.",
+    "feature2Title": "60 Languages",
+    "feature2Body": "Interpret and read symbols in English, Arabic, Spanish, Chinese, Japanese, and 55 more languages.",
+    "feature3Title": "All Traditions",
     "feature3Body": "Depth psychology and perspectives across faiths — one reading, seen through your lens.",
-    "feature4Title": "Bewaard & privé",
-    "feature4Body": "Je dromen blijven op je apparaat. Herbekijk, vergelijk en ontdek patronen door de tijd heen.",
-    "sampleTag": "Voorbeelduiding",
-    "sampleJustNow": "zojuist",
-    "sampleDream": "\"Ik zag een groene slang het huis verlaten via de tuinpoort.\"",
+    "feature4Title": "Saved & Private",
+    "feature4Body": "Your dreams stay on your device by default. Sign in to sync across devices.",
+    "sampleTag": "Sample Reading",
+    "sampleJustNow": "just now",
+    "sampleDream": "\"I saw a green snake leave the house through the garden gate.\"",
     "sampleReading": "Snakes mark transformation — something in your life is shedding its old skin. The gate suggests a clear exit is opening. In many traditions, a harmless snake leaving the home often means a lingering worry is finally moving on.",
-    "sampleTag1": "Transformatie",
-    "sampleTag2": "Laten gaan",
+    "sampleTag1": "Transformation",
+    "sampleTag2": "Release",
     "sampleTag3": "Tradition",
-    "sampleSaved": "Opgeslagen op je apparaat",
-    "symbolsTitle": "Elk symbool draagt een betekenis",
-    "symbolsLede": "Van water tot vuur: ontdek de meest voorkomende droommotieven en wat ze doorgaans aangeven in verschillende tradities.",
-    "ctaTitle": "Beschrijf je droom",
-    "ctaLede": "Een paar zinnen is genoeg. De duiding duurt slechts enkele seconden en blijft op je apparaat.",
-    "ctaButton": "Beginnen met duiden"
+    "sampleSaved": "Saved to your device",
+    "symbolsTitle": "Every symbol carries a meaning",
+    "symbolsLede": "From water to fire, explore the most common dream motifs and what each one tends to signal across traditions.",
+    "ctaTitle": "Describe your dream",
+    "ctaLede": "A few sentences is enough. The reading takes seconds and stays on your device by default.",
+    "ctaButton": "Start Interpreting"
   },
   "interpret": {
-    "title": "Beschrijf je droom",
-    "lede": "Schrijf het in je eigen woorden. Hoe meer detail, hoe scherper de duiding — de setting, je gevoelens en alles wat opvallend is, doen er allemaal toe.",
-    "language": "Taal",
-    "yourDream": "Je droom",
-    "placeholder": "Afgelopen nacht droomde ik dat ik door een deur liep die steeds van vorm veranderde...",
-    "loading": "Bezig met duiden...",
-    "button": "Droom duiden",
-    "yourReading": "Jouw duiding",
-    "save": "Bewaren",
-    "viewHistory": "Geschiedenis bekijken",
-    "errorEmpty": "Beschrijf je droom eerst.",
-    "errorFailed": "De duiding is mislukt. Probeer het opnieuw.",
-    "errorNetwork": "Verbindingsfout. Probeer het opnieuw.",
-    "perspectiveLabel": "Duiding via",
-    "symbolsLabel": "Symbolen in je droom",
-    "feedbackQ": {
-      "en": "Was this reading helpful?",
-      "ar": "هل كانت هذه القراءة مفيدة؟"
-    },
-    "yes": {
-      "en": "Yes, helpful",
-      "ar": "نعم، مفيدة"
-    },
-    "no": {
-      "en": "Not really",
-      "ar": "ليس تماماً"
-    },
-    "thanks": {
-      "en": "Thank you — your feedback improves future readings.",
-      "ar": "شكراً لك — تقييمك يحسّن القراءات المستقبلية."
-    }
+    "title": "Describe your dream",
+    "lede": "Write it in your own words. The more detail, the sharper the reading — setting, feelings, and anything unusual all matter.",
+    "language": "Language",
+    "yourDream": "Your dream",
+    "placeholder": "Last night I dreamed I was walking through a door that kept changing shape...",
+    "loading": "Interpreting...",
+    "button": "Interpret Dream",
+    "yourReading": "Your Reading",
+    "save": "Save",
+    "saved": "Saved",
+    "savedConfirm": "Saved to your journal. Find it anytime under Saved.",
+    "unsaved": "Removed from Saved.",
+    "disclaimer": "Reflection only — not medical, psychological, or religious advice. It does not predict the future.",
+    "viewHistory": "View History",
+    "errorEmpty": "Please describe your dream first.",
+    "errorFailed": "The interpretation failed. Please try again.",
+    "errorNetwork": "Connection error. Please try again.",
+    "perspectiveLabel": "Reading through",
+    "perspNotice": "Each tradition is shown on its own. Readings are reflective and probabilistic — not predictions or rulings.",
+    "compareLabel": "Compare all traditions",
+    "compareDesc": "One dream, read through every lens at once — see where the traditions agree and where they diverge.",
+    "compareLoading": "Reading through every tradition…",
+    "compareBack": "Back to single reading",
+    "compareSymbols": "Symbols",
+    "symbolsLabel": "Symbols in your dream",
+    "feedbackQ": "Was this reading helpful?",
+    "yes": "Yes, helpful",
+    "no": "Not really",
+    "thanks": "Thank you — your feedback improves future readings.",
+    "perspectiveDesc": "One reading that weaves the wisest threads of world traditions with depth psychology.",
+    "moodLabel": "How did the dream feel?",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "share": "Share",
+    "example": "Try an example",
+    "exampleDream": "Last night I dreamed a white dove landed on my window, then turned into a letter I couldn't read. I felt calm but curious.",
+    "shortcutHint": "Press ⌘/Ctrl + Enter to interpret",
+    "symbolsSection": "Symbols"
   },
   "history": {
-    "title": "Droomgeschiedenis",
-    "lede": "Alle duidingen die je hebt gegenereerd, opgeslagen op dit apparaat.",
-    "empty": "Nog geen dromen geduid."
+    "title": "Dream history",
+    "lede": "Every interpretation you've generated, stored on this device.",
+    "empty": "No dreams interpreted yet."
   },
   "saved": {
-    "title": "Bewaarde dromen",
-    "lede": "Bewaar de duidingen die ertoe deden. Ze blijven op dit apparaat.",
-    "empty": "Nog niets bewaard."
+    "title": "Saved dreams",
+    "lede": "Keep the interpretations that mattered. They stay on this device.",
+    "empty": "Nothing saved yet."
   },
   "common": {
-    "interpretCta": "Droom duiden",
-    "delete": "Verwijderen",
-    "remove": "Weghalen",
-    "backHome": "Terug naar start"
+    "interpretCta": "Interpret a Dream",
+    "delete": "Delete",
+    "remove": "Remove",
+    "confirmRemove": "Remove?",
+    "backHome": "Return Home"
   },
   "symbols": {
-    "title": "{n} droomsymbolen",
-    "lede": "Bekijk alle symbolen die wij duiden — gratis, in tientallen talen. Kies de jouwe om de betekenis te lezen.",
-    "search": "Zoek een symbool…"
+    "title": "{n} Dream Symbols",
+    "lede": "Browse every symbol we interpret — free, in dozens of languages. Pick yours to read the meaning.",
+    "search": "Search a symbol…",
+    "noResults": "No symbol matches your search."
   },
   "about": {
-    "title": "Een heldere duiding, geworteld in traditie",
+    "title": "A clear reading, rooted in tradition",
     "p1": "Dreamscope exists to make dream interpretation accessible in your own language and cultural context. We draw on a wide range of interpretive traditions — religious and spiritual scholarship, cultural folklore, and the symbolic frameworks of modern depth psychology — so you can read your dream through the lens you trust.",
-    "p2": "Elke duiding wordt gegenereerd om je te helpen reflecteren — niet om de toekomst te voorspellen. Symbolen als water, vuur, vliegen of een slang dragen al duizenden jaren betekenis met zich mee, en onze duidingen volgen die draden zodat je kunt vinden wat resoneert met je eigen leven.",
-    "p3": "De dienst is gratis, privé van opzet en beschikbaar in 60 talen. Je dromen verlaten nooit je apparaat.",
+    "p2": "Every reading is generated to help you reflect — not to predict the future. Symbols like water, fire, flight, or a snake have carried meaning across cultures for thousands of years, and our interpretations trace those threads so you can find what resonates with your own life.",
+    "p3": "The service is free, private by design, and available in 60 languages. Your dream text is sent to our interpretation service to generate a reading, then is not stored by us; your readings stay on your device unless you sign in and sync.",
     "card1Title": "Many traditions",
-    "card1Body": "Klassieke islamitische droombeschouwing, getraceerd door eeuwen van duiding.",
-    "card2Title": "60 talen",
-    "card2Body": "Van Arabisch tot Japans — duid in de taal waarin je droomt.",
-    "card3Title": "100% privé",
-    "card3Body": "Dromen blijven op je apparaat. Geen accounts, geen tracking.",
-    "cta": "Beginnen met duiden"
+    "card1Body": "Islamic, Christian, Jewish, Hindu, Buddhist, Chinese, and psychological lenses — pick the one you trust.",
+    "card2Title": "60 languages",
+    "card2Body": "From Arabic to Japanese — interpret in the language you dream in.",
+    "card3Title": "100% private",
+    "card3Body": "Your readings stay on your device by default. Sign in only to sync; delete anytime.",
+    "cta": "Start Interpreting",
+    "traditionsTitle": "Every tradition, one dream",
+    "traditionsLede": "Pick the lens your heart trusts — each reading is generated through a dedicated interpretation school."
   },
   "contact": {
-    "title": "Neem contact op",
-    "lede": "Vragen, correcties of samenwerkingsideeën? Bereik het Dreamscope-team via e-mail.",
-    "email": "E-mail",
-    "disclaimer": "Dreamscope biedt enkel reflectie en vermaak. Duidingen vormen geen medisch, psychologisch of religieus advies. Als je steun nodig hebt, raadpleeg dan een gekwalificeerde professional.",
-    "back": "Terug naar de duider"
+    "title": "Get in touch",
+    "lede": "Questions, corrections, or partnership ideas? Reach the Dreamscope team by email.",
+    "email": "Email",
+    "disclaimer": "Dreamscope provides reflection and entertainment only. Interpretations are not medical, psychological, or religious advice. If you need support, please consult a qualified professional.",
+    "back": "Back to Interpreter"
   },
   "faq": {
-    "title": "Veelgestelde vragen",
-    "q1": "Hoe duidt Dreamscope dromen?",
+    "title": "Frequently asked questions",
+    "q1": "How does Dreamscope interpret dreams?",
     "a1": "Dreamscope blends dream scholarship from many cultures and faiths — including Islamic, Christian, Jewish, Hindu, Buddhist, and Chinese traditions — with modern depth psychology. You describe a dream in your own words and receive a reading that maps its symbols to their common meanings across cultures.",
-    "q2": "Is mijn droomdata privé?",
-    "a2": "Ja. Je dromen worden alleen bewaard in de lokale opslag van je browser op je apparaat. Er wordt niets naar een server gestuurd voor opslag, en je kunt je geschiedenis op elk moment verwijderen.",
-    "q3": "In welke talen kan ik dromen duiden?",
-    "a3": "Dreamscope ondersteunt 60 talen, waaronder Engels, Arabisch, Spaans, Frans, Duits, Chinees, Japans, Koreaans, Turks, Portugees, Russisch, Hindi en meer. De duiding volgt de taal die je kiest.",
-    "q4": "Vervangen de duidingen professioneel advies?",
-    "a4": "Nee. Droomduidingen zijn bedoeld voor reflectie en vermaak. Ze vormen geen medische, psychologische of religieuze begeleiding. Als je worstelt, spreek dan met een gekwalificeerde professional.",
-    "q5": "Hoeveel droomsymbolen worden er behandeld?",
-    "a5": "Dreamscope heeft speciale pagina's voor 146 veelvoorkomende symbolen — slang, water, vliegen, vuur, zwangerschap, geld en nog veel meer — elk beschikbaar in meerdere talen met talloze vraagvarianten."
+    "q2": "Is my dream data private?",
+    "a2": "Yes. Your dreams are stored only in your browser's local storage on your device. Nothing is sent to a server for storage, and you can delete your history at any time.",
+    "q3": "In which languages can I interpret dreams?",
+    "a3": "Dreamscope supports 60 languages including English, Arabic, Spanish, French, German, Chinese, Japanese, Korean, Turkish, Portuguese, Russian, Hindi, and more. The reading follows the language you choose.",
+    "q4": "Are the interpretations a substitute for professional advice?",
+    "a4": "No. Dream readings are for reflection and entertainment. They are not medical, psychological, or religious guidance. If you are struggling, please speak with a qualified professional.",
+    "q5": "How many dream symbols are covered?",
+    "a5": "Dreamscope has dedicated pages for 146 common symbols — snake, water, flying, fire, pregnancy, money, and many more — each available in multiple languages with long-tail question variants."
   },
   "notfound": {
-    "title": "Deze droom is vervlogen",
-    "lede": "De pagina die je zocht is er niet. Laten we je terugbrengen naar het duiden.",
-    "cta": "Terug naar start"
+    "title": "This dream dissolved",
+    "lede": "The page you were looking for isn't here. Let's get you back to interpreting.",
+    "cta": "Return Home"
   },
   "perspectives": {
     "general": {
-      "name": "Universeel"
+      "name": "Universal"
     },
     "islamic": {
-      "name": "Ibn Sirin (Islamitisch)"
+      "name": "Ibn Sirin (Islamic)"
     },
     "christian": {
-      "name": "Christelijk"
+      "name": "Christian"
     },
     "jewish": {
-      "name": "Joods"
+      "name": "Jewish"
     },
     "hindu": {
-      "name": "Hindoeïstisch"
+      "name": "Hindu"
     },
     "buddhist": {
-      "name": "Boeddhistisch"
+      "name": "Buddhist"
     },
     "psychology": {
-      "name": "Psychologie (Jung)"
+      "name": "Psychology (Jung)"
     },
     "chinese": {
-      "name": "Zhou Gong (Chinees)"
+      "name": "Zhou Gong (Chinese)"
     }
   },
   "daily": {
-    "tag": "Droom van de dag"
+    "tag": "Dream of the day"
+  },
+  "profile": {
+    "title": "Your space",
+    "cloudOff": "Your dream text is sent to our interpretation service to generate a reading, then is not stored by us. Readings are kept on your device unless you sign in and choose to sync. We never sell or profile your data.",
+    "dataNote": "Where your data lives: your device by default. When you sign in, your journal can sync to your private account; you can delete it anytime.",
+    "signInLede": "Sign in to keep your dream journal across all your devices. Your guest history moves with you automatically.",
+    "emailLabel": "Email",
+    "magicLink": "Send me a sign-in link",
+    "google": "Continue with Google",
+    "checkEmail": "Check your inbox — a sign-in link is waiting for you.",
+    "invalidEmail": "Please enter a valid email address.",
+    "signInError": "We couldn't sign you in. Please try again or use the email link.",
+    "googleNotEnabled": "Google sign-in isn't enabled on this project yet. The site owner needs to connect a Google OAuth client in Supabase.",
+    "guestNote": "No password, no tracking — just a link. Guest mode with on-device storage remains fully available.",
+    "member": "Member",
+    "migrated": "Migrated {n} dreams from this device to your journal.",
+    "signOut": "Sign out",
+    "navLabel": "Profile",
+    "lede": "Everything Dreamscope knows about your journey — stored on your device, yours alone.",
+    "yourState": "Your state right now",
+    "statDreams": "Dreams interpreted",
+    "statSaved": "Saved readings",
+    "statStreak": "Day streak",
+    "statTopSymbol": "Top symbol",
+    "emptyState": "No dreams yet — your first reading will light this page up.",
+    "symbolsYouMeet": "Symbols you keep meeting",
+    "noneYet": "—",
+    "lastReading": "Last reading",
+    "languagesUsed": "Languages used",
+    "perspectivesUsed": "Traditions used",
+    "cloudTitle": "Across your devices",
+    "connectTitle": "Connect your Supabase project",
+    "connectUrlLabel": "Project URL",
+    "connectKeyLabel": "Anon public key",
+    "connectCta": "Connect",
+    "connected": "Connected — you can now sign in and sync your journal.",
+    "connectError": "Could not connect. Check the URL and anon key.",
+    "disconnect": "Disconnect",
+    "privacyNote": "Your dreams are stored on your device — never sold, never profiled.",
+    "moodPattern": "Mood pattern",
+    "autoSetupTitle": "One-command setup",
+    "autoSetupBody": "No project yet? Run the bootstrap script once: it creates a Supabase project, applies the database schema, and prints your URL + anon key to paste above. Google sign-in needs a Google Cloud OAuth client (see the script).",
+    "autoSetupCmd": "SUPABASE_ACCESS_TOKEN=xxx node scripts/setup-supabase.mjs"
+  },
+  "perspDesc": {
+    "general": "One reading that weaves the wisest threads of world traditions with depth psychology.",
+    "islamic": "The classical school of Ibn Sirin — symbolic, lawful, and soul-centered.",
+    "christian": "Dream reading in the lineage of Joseph and Daniel, with scriptural symbolism.",
+    "jewish": "Torah and Talmudic dream wisdom — a message awaiting wise interpretation.",
+    "hindu": "Vedic symbolism, karma, and the inner landscapes of the mind.",
+    "buddhist": "Impermanence and mindful awareness — observe the dream without grasping.",
+    "psychology": "Jung's archetypes and the shadow — what your psyche is processing.",
+    "chinese": "Zhou Gong's classical dictionary — balance of yin, yang, and the five elements."
+  },
+  "moods": {
+    "peace": "Peaceful",
+    "anxiety": "Anxious",
+    "hope": "Hopeful",
+    "sadness": "Sad",
+    "anger": "Angry",
+    "confusion": "Confused"
+  },
+  "seo": {
+    "dreamInterpretation": "Dream Interpretation",
+    "traditionsTitle": "Across the traditions",
+    "traditionsBody": "A symbol can mean different things in different cultures. In Islamic, Christian, Jewish, Hindu, Buddhist, Chinese, and psychological traditions, the same image is read through its own lens. Choose the lens you trust on the interpret page.",
+    "tryTitle": "Interpret Your Dreams with AI",
+    "tryLede": "Share your dream and get a personalized AI interpretation.",
+    "otherLangs": "Other Languages",
+    "otherSymbols": "Other Dream Symbols",
+    "reflectNote": "This page is for reflection and entertainment only. It is not medical, psychological, or religious advice, and it does not predict the future."
   }
 }

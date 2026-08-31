@@ -114,7 +114,7 @@ ${JSON.stringify(Object.fromEntries(pairs), null, 0)}`;
     try {
       const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
         method: 'POST',
-        signal: (() => { const c = new AbortController(); setTimeout(() => c.abort(), 45000); return c.signal; })(),
+        signal: (() => { const c = new AbortController(); setTimeout(() => c.abort(), 20000); return c.signal; })(),
         headers: {
           Authorization: `Bearer ${KEY}`,
           'Content-Type': 'application/json',

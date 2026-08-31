@@ -16,13 +16,13 @@
     "noLanguage": "Hakuna lugha inayolingana na utafutaji wako."
   },
   "footer": {
-    "tagline": "Kutafsiri ndoto kwa AI, bila malipo — kulingana na tradition ya Ibn Sirin na saikolojia ya kisasa.",
+    "tagline": "Free AI dream interpretation in 60 languages — every tradition, your lens.",
     "copyright": "© {year} Dreamscope"
   },
   "home": {
     "heroTitle": "{accent} yako inajaribu kusema nini",
     "heroAccent": "akili ifichayo",
-    "heroLede": "Ishara za kale, saikolojia ya kisasa, na AI — zimeunganwa katika usomaji mmoja uwazi. Eleza ndoto yako kwa maneno yako mwenyewe na upate tafsiri iliyozama katika Ibn Sirin na saikolojia ya kina.",
+    "heroLede": "Ancient symbolism, modern psychology, and AI — combined into one clear reading. Describe a dream in your own words and get an interpretation through the tradition you trust.",
     "interpretCta": "Tafsiri ndoto",
     "browseCta": "Vinjari ishara",
     "ctaTitle": "Eleza ndoto yako",

@@ -1,6 +1,6 @@
 // Dreamscope regression test suite — runs with no secrets, no quota, no browser.
 // Verifies the global-platform fixes landed in source + compiled modules.
-import { readFileSync, existsSync } from 'node:fs';
+import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
@@ -199,6 +199,19 @@ ok('googleNotEnabled is user-facing (no raw JSON term)',
 const profileGoogleSrc = read('src/pages/Profile.tsx');
 ok('handleGoogle catches provider-not-enabled → googleNotEnabled', profileGoogleSrc.includes('provider is not enabled') && profileGoogleSrc.includes('googleNotEnabled'));
 ok('handleGoogle never leaks raw error', !/JSON\.stringify\(.*error/.test(profileGoogleSrc));
+
+// ---------------------------------------------------------------------------
+// 11. No single-tradition bias in ANY locale marketing copy (all 60 langs)
+// ---------------------------------------------------------------------------
+section('Global bias regression (all 60 locales)');
+const locDir = join(dirname(fileURLToPath(import.meta.url)), '..', 'src/i18n/locales');
+const MKT = /tagline|heroLede|feature3Body|feature4Body|sampleReading|sampleTag3|ctaLede|about\.p1|about\.card1Title|about\.card1Body|faq\.a1/i;
+let anyBias = 0;
+for (const f of readdirSync(locDir).filter((x) => x.endsWith('.json'))) {
+  const lines = readFileSync(join(locDir, f), 'utf8').split('\n');
+  for (const l of lines) if (/ibn sirin|ابن سيرين/i.test(l) && MKT.test(l)) anyBias++;
+}
+ok('no Ibn Sirin in marketing/about/FAQ across all 60 locales', anyBias === 0);
 
 // ---------------------------------------------------------------------------
 console.log(`\nSUITE RESULT: ${passed} passed, ${failed} failed`);

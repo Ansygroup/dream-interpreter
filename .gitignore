@@ -11,3 +11,4 @@ dist
 
 # temp supabase anon key (never commit)
 .supa-anon.tmp
+.deploy-env-sha

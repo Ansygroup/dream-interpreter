@@ -25,9 +25,7 @@ const LANG_NAMES = {
 const FREE_MODELS = [
   'z-ai/glm-5.2:free',
   'minimax/minimax-m3:free',
-  'nvidia/nemotron-3-super-120b-a12b:free',
   'google/gemma-4-31b-it:free',
-  'inclusionai/ling-3.0-flash-fin:free',
 ];
 
 export const maxDuration = 300;
@@ -87,7 +85,7 @@ ${JSON.stringify(chunkObj)}`;
       for (const model of FREE_MODELS) {
       try {
         const controller = new AbortController();
-        const timeout = setTimeout(() => controller.abort(), 40000);
+        const timeout = setTimeout(() => controller.abort(), 22000);
         const r = await fetch('https://openrouter.ai/api/v1/chat/completions', {
           method: 'POST',
           headers: {
@@ -157,7 +155,10 @@ ${JSON.stringify(chunkObj)}`;
     if (typeof v !== 'string' || !v.trim()) problems.push(`${k} (missing)`);
     else if (ph(srcMap.get(k)) !== ph(v)) problems.push(`${k} (placeholders)`);
   }
-  for (const [k] of flat) if (!(k in merged)) problems.push(`${k} (absent)`);
+  for (const [k] of flat) {
+    const present = flatMerged.some(([mk]) => mk === k);
+    if (!present) problems.push(`${k} (absent)`);
+  }
   if (problems.length) return res.status(502).json({ error: `invalid merge: ${problems.slice(0, 5).join(', ')}` });
 
   return res.status(200).json({ translations: merged, engine: 'chunked-cascade' });

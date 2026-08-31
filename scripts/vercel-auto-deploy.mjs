@@ -92,6 +92,20 @@ if (homeCode === 200 && (await liveBundleHas(FEATURE_RE))) {
 }
 console.log(`[vercel-auto-deploy] need deploy: target=${target.slice(0, 8)} marker=${done.slice(0, 8) || '(none)'}`);
 
+// Verify-gated: never ship a broken build.
+console.log('[vercel-auto-deploy] building + running tests...');
+const buildOut = sh('npm run build 2>&1', 240000);
+if (!/built in|Build complete|dist\/assets/.test(buildOut) && /error/i.test(buildOut)) {
+  console.log('[vercel-auto-deploy] BUILD FAILED — aborting deploy:\n' + buildOut.split('\n').filter(l => /error/i.test(l)).slice(0, 8).join('\n'));
+  process.exit(1);
+}
+const testOut = sh('npm test 2>&1', 120000);
+if (!/SUITE RESULT: \d+ passed, 0 failed/.test(testOut)) {
+  console.log('[vercel-auto-deploy] TESTS FAILED — aborting deploy:\n' + testOut.split('\n').filter(l => /FAIL/.test(l)).slice(0, 8).join('\n'));
+  process.exit(1);
+}
+console.log('[vercel-auto-deploy] build + tests green ✅');
+
 const out = sh('timeout 150 vercel deploy --prod --yes 2>&1', 160000);
 if (/api-deployments-free-per-day/.test(out)) {
   console.log('[vercel-auto-deploy] QUOTA BLOCKED — will retry next tick.');

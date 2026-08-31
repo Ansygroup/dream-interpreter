@@ -1,71 +1,259 @@
 {
   "nav": {
-    "interpret": "Bigyang-kahulugan",
+    "interpret": "Mag-interpret",
     "symbols": "Mga Simbolo",
-    "about": "Tungkol sa amin",
+    "about": "Tungkol",
     "faq": "Mga Madalas Itanong",
     "history": "Kasaysayan",
-    "saved": "Naka-save",
-    "contact": "Makipag-ugnayan",
-    "start": "Simulan",
+    "saved": "Nai-save",
+    "contact": "Kontak",
+    "start": "Magsimula",
     "home": "Home",
     "aiBlog": "AI Blog",
     "ansyGroup": "Ansy Group",
     "language": "Wika",
-    "searchLanguage": "Maghanap ng wika…",
-    "noLanguage": "Walang wika na tumutugma sa iyong paghahanap."
+    "searchLanguage": "Maghanap ng mga wika…",
+    "noLanguage": "Walang wika na tumutugma sa hinahanap mo.",
+    "profile": "Profile"
   },
   "footer": {
-    "tagline": "Free AI dream interpretation in 60 languages — every tradition, your lens.",
+    "tagline": "Libreng AI na pagsasagawa ng panaginip sa 60 wika — bawat tradisyon, ang lente mo.",
     "copyright": "© {year} Dreamscope"
   },
   "home": {
-    "heroTitle": "Ano ang sinusubukan sabihin ng iyong {accent}",
-    "heroAccent": "di-malanang isipan",
-    "heroLede": "Ancient symbolism, modern psychology, and AI — combined into one clear reading. Describe a dream in your own words and get an interpretation through the tradition you trust.",
-    "interpretCta": "Bigyang-kahulugan ang panaginip",
-    "browseCta": "Tingnan ang mga simbolo",
+    "heroTitle": "Ano ang sinasabi ng iyong {accent}",
+    "heroAccent": "kaisipan",
+    "heroLede": "Sinaunang simbolismo, modernong sikolohiya, at AI — pinagsama-sama sa isang malinaw na pagbasa. Ilarawan ang iyong panaginip sa sarili mong mga salita at makakuha ng pagsasagawa sa pamamagitan ng tradisyon na iyong pinagkakatiwalaan.",
+    "interpretCta": "Mag-interpret ng Panaginip",
+    "browseCta": "Tingnan ang mga Simbolo",
+    "statLanguages": "{n} wika",
+    "statSymbols": "{n} simbolo ng panaginip",
+    "statPrivateLine": "pribado sa iyong device",
+    "whyTitle": "Isang pagbasa na talagang mapapakinabangan mo",
+    "whyLede": "Iniuugnay ng Dreamscope ang iyong panaginip sa mga simbolo nito, pagkatapos binabasa ito sa pamamagitan ng tradisyon na iyong pinagkakatiwalaan — kasama ang sikolohiya, hindi bilang kapalit.",
+    "feature1Title": "Simbolikong Pagsusuri",
+    "feature1Body": "Bawat panaginip ay iniuugnay sa mga pangunahing simbolo nito at sinasagisag sa daan-daang taon ng tradisyon sa pagsasagawa.",
+    "feature2Title": "60 Wika",
+    "feature2Body": "Mag-interpret at basahin ang mga simbolo sa Ingles, Arabic, Kastila, Tsino, Hapon, at 55 pang wika.",
+    "feature3Title": "Lahat ng Tradisyon",
+    "feature3Body": "Depth psychology at mga perspektibo mula sa iba't ibang pananampalataya — isang pagbasa, nakikita sa iyong lente.",
+    "feature4Title": "Naka-save at Pribado",
+    "feature4Body": "Ang iyong mga panaginip ay nananatili sa iyong device bilang default. Mag-sign in upang i-sync sa iba't ibang device.",
+    "sampleTag": "Halimbawang Pagbasa",
+    "sampleJustNow": "kararating lang",
+    "sampleDream": "\"Nakita ko ang isang berdeng ahas na lumabas ng bahay sa pamamagitan ng gate ng hardin.\"",
+    "sampleReading": "Ang mga ahas ay tanda ng pagbabago — may bagay sa iyong buhay na nagsisitaktan ng lumang balat. Ang gate ay nagpapahiwatig na may malinaw na labasan na bumubukas. Sa maraming tradisyon, ang isang hindi mapanganib na ahas na lumalabas ng tahanan ay karaniwang nangangahulugang ang isang matagal nang alalahanin ay sa wakas ay umaalis na.",
+    "sampleTag1": "Pagbabago",
+    "sampleTag2": "Paglaya",
+    "sampleTag3": "Tradisyon",
+    "sampleSaved": "Nai-save sa iyong device",
+    "symbolsTitle": "Bawat simbolo ay may kahulugan",
+    "symbolsLede": "Mula sa tubig hanggang apoy, tuklasin ang mga pinakakaraniwang motif ng panaginip at kung ano ang karaniwang ipinapahiwatig ng bawat isa sa iba't ibang tradisyon.",
     "ctaTitle": "Ilarawan ang iyong panaginip",
-    "ctaButton": "Simulang bigyang-kahulugan",
-    "feature3Body": "Depth psychology and perspectives across faiths — one reading, seen through your lens.",
-    "feature4Body": "Your dreams stay on your device by default. Sign in to sync across devices.",
-    "sampleReading": "Snakes mark transformation — something in your life is shedding its old skin. The gate suggests a clear exit is opening. In many traditions, a harmless snake leaving the home often means a lingering worry is finally moving on.",
-    "sampleTag3": "Tradition",
-    "ctaLede": "A few sentences is enough. The reading takes seconds and stays on your device by default."
+    "ctaLede": "Ang ilang pangungusap ay sapat na. Ang pagbasa ay tumatagal ng ilang segundo at nananatili sa iyong device bilang default.",
+    "ctaButton": "Magsimulang Mag-interpret"
   },
   "interpret": {
     "title": "Ilarawan ang iyong panaginip",
+    "lede": "Isulat ito sa sarili mong mga salita. Kung mas maraming detalye, mas matalas ang pagbasa — ang tagpuan, damdamin, at anumang hindi karaniwan ay lahat mahalaga.",
     "language": "Wika",
-    "yourDream": "Ang iyong panaginip",
-    "placeholder": "Kagabi nanaginip akong dumadaan sa isang pinto na walang tigil na nagpapalit ng hugis...",
-    "button": "Bigyang-kahulugan ang panaginip"
-  },
-  "common": {
-    "interpretCta": "Bigyang-kahulugan ang panaginip",
-    "backHome": "Bumalik sa home"
+    "yourDream": "Iyong panaginip",
+    "placeholder": "Kagabi napanaginipan kong naglalakad ako sa isang pinto na patuloy na nagbabago ng hugis...",
+    "loading": "Nagsasagawa...",
+    "button": "Ipakahulugan ang Panaginip",
+    "yourReading": "Iyong Pagbasa",
+    "save": "I-save",
+    "saved": "Nai-save",
+    "savedConfirm": "Nai-save sa iyong journal. Hanapin ito anumang oras sa Nai-save.",
+    "unsaved": "Inalis mula sa Nai-save.",
+    "disclaimer": "Pagninilay lamang — hindi medikal, sikolohikal, o relihiyosong payo. Hindi nito hulaan ang hinaharap.",
+    "viewHistory": "Tingnan ang Kasaysayan",
+    "errorEmpty": "Mangyaring ilarawan muna ang iyong panaginip.",
+    "errorFailed": "Nabigo ang pagsasagawa. Mangyaring subukan muli.",
+    "errorNetwork": "May error sa koneksyon. Mangyaring subukan muli.",
+    "perspectiveLabel": "Binabasa sa pamamagitan ng",
+    "perspNotice": "Bawat tradisyon ay ipinapakita nang mag-isa. Ang mga pagbasa ay nagpapakilos at posibilidad — hindi mga hula o hatol.",
+    "compareLabel": "Ihambing ang lahat ng tradisyon",
+    "compareDesc": "Isang panaginip, binasa sa pamamagitan ng bawat lente nang sabay-sabay — tingnan kung saan nagkakaisa ang mga tradisyon at kung saan sila nagtatalo.",
+    "compareLoading": "Binabasa sa pamamagitan ng bawat tradisyon…",
+    "compareBack": "Bumalik sa iisang pagbasa",
+    "compareSymbols": "Mga Simbolo",
+    "symbolsLabel": "Mga simbolo sa iyong panaginip",
+    "feedbackQ": "Nakatulong ba ang pagbasang ito?",
+    "yes": "Oo, nakatulong",
+    "no": "Hindi gaanong",
+    "thanks": "Salamat — ang iyong feedback ay nagpapabuti ng mga susunod na pagbasa.",
+    "perspectiveDesc": "Isang pagbasa na nagtatahi ng mga pinakamatalinong sinulid ng mga tradisyon ng mundo kasama ang depth psychology.",
+    "moodLabel": "Ano ang pakiramdam ng panaginip?",
+    "copy": "Kopyahin",
+    "copied": "Nakopya!",
+    "share": "Ibahagi",
+    "example": "Subukan ang isang halimbawa",
+    "exampleDream": "Kagabi napanaginipan kong ang isang puting kalapati ay dumapo sa aking bintana, pagkatapos ay naging isang liham na hindi ko mabasa. Naramdaman ko ang kalmado ngunit mausisa.",
+    "shortcutHint": "Pindutin ang ⌘/Ctrl + Enter upang mag-interpret",
+    "symbolsSection": "Mga Simbolo"
   },
   "history": {
-    "title": "Kasaysayan ng mga panaginip",
-    "empty": "Wala pang panaginip na binigyang-kahulugan."
+    "title": "Kasaysayan ng panaginip",
+    "lede": "Bawat pagsasagawa na iyong nabuo, nakaimbak sa device na ito.",
+    "empty": "Wala pang na-interpret na panaginip."
   },
   "saved": {
-    "title": "Mga na-save na panaginip",
-    "empty": "Wala pang na-save."
+    "title": "Mga nai-save na panaginip",
+    "lede": "Itago ang mga pagsasagawa na mahalaga sa iyo. Nananatili ang mga ito sa device na ito.",
+    "empty": "Wala pang nai-save."
+  },
+  "common": {
+    "interpretCta": "Mag-interpret ng Panaginip",
+    "delete": "Burahin",
+    "remove": "Alisin",
+    "confirmRemove": "Alisin?",
+    "backHome": "Bumalik sa Home"
   },
   "symbols": {
-    "title": "{n} simbolo ng panaginip",
-    "search": "Maghanap ng simbolo…"
-  },
-  "notfound": {
-    "title": "Tunaw ang panaginip na ito",
-    "cta": "Bumalik sa home"
+    "title": "{n} Simbolo ng Panaginip",
+    "lede": "Tingnan ang bawat simbolo na aming iniuugnay — libre, sa dose-dosenang wika. Piliin ang iyong paboritong basahin ang kahulugan.",
+    "search": "Maghanap ng simbolo…",
+    "noResults": "Walang simbolo na tumutugma sa iyong hinahanap."
   },
   "about": {
-    "p1": "Dreamscope exists to make dream interpretation accessible in your own language and cultural context. We draw on a wide range of interpretive traditions — religious and spiritual scholarship, cultural folklore, and the symbolic frameworks of modern depth psychology — so you can read your dream through the lens you trust.",
-    "card1Title": "Many traditions",
-    "card1Body": "Islamic, Christian, Jewish, Hindu, Buddhist, Chinese, and psychological lenses — pick the one you trust."
+    "title": "Isang malinaw na pagbasa, nakabatay sa tradisyon",
+    "p1": "Ang Dreamscope ay umiiral upang gawing accessible ang pagsasagawa ng panaginip sa iyong sariling wika at kultural na konteksto. Gumuguhit kami mula sa malawak na hanay ng mga tradisyon sa pagsasagawa — relihiyoso at espirituwal na karunungan, kultural na folklore, at ang mga simbolikong balangkas ng modernong depth psychology — upang mabasa mo ang iyong panaginip sa lente na iyong pinagkakatiwalaan.",
+    "p2": "Ang bawat pagbasa ay nabuo upang tulungan kang magnilay — hindi upang hulaan ang hinaharap. Ang mga simbolo tulad ng tubig, apoy, paglipad, o ahas ay nagdala ng kahulugan sa iba't ibang kultura sa loob ng libu-libong taon, at ang aming mga pagsasagawa ay sinasagisag ang mga sinulid na iyon upang mahanap mo ang tumutugma sa iyong sariling buhay.",
+    "p3": "Ang serbisyo ay libre, pribado sa pamamagitan ng disenyo, at available sa 60 wika. Ang teksto ng iyong panaginip ay ipinadala sa aming serbisyo sa pagsasagawa upang makabuo ng pagbasa, pagkatapos ay hindi ito iniimbak namin; ang iyong mga pagbasa ay nananatili sa iyong device maliban kung ikaw ay mag-sign in at mag-sync.",
+    "card1Title": "Maraming tradisyon",
+    "card1Body": "Islamic, Christian, Jewish, Hindu, Buddhist, Tsino, at sikolohikal na lente — piliin ang pinagkakatiwalaan mo.",
+    "card2Title": "60 wika",
+    "card2Body": "Mula sa Arabic hanggang Hapon — mag-interpret sa wika na iyong napanaginipan.",
+    "card3Title": "100% pribado",
+    "card3Body": "Ang iyong mga pagbasa ay nananatili sa iyong device bilang default. Mag-sign in lamang upang mag-sync; burahin anumang oras.",
+    "cta": "Magsimulang Mag-interpret",
+    "traditionsTitle": "Bawat tradisyon, isang panaginip",
+    "traditionsLede": "Piliin ang lente na pinagkakatiwalaan ng iyong puso — ang bawat pagbasa ay nabuo sa pamamagitan ng isang dedikadong paaralan ng pagsasagawa."
+  },
+  "contact": {
+    "title": "Makipag-ugnayan",
+    "lede": "May mga tanong, pagwawasto, o ideya sa pakikipagtulungan? Makipag-ugnayan sa koponan ng Dreamscope sa email.",
+    "email": "Email",
+    "disclaimer": "Ang Dreamscope ay nagbibigay ng pagninilay at libangan lamang. Ang mga pagsasagawa ay hindi medikal, sikolohikal, o relihiyosong payo. Kung kailangan mo ng suporta, mangyaring kumonsulta sa isang kwalipikadong propesyonal.",
+    "back": "Bumalik sa Interpreter"
   },
   "faq": {
-    "a1": "Dreamscope blends dream scholarship from many cultures and faiths — including Islamic, Christian, Jewish, Hindu, Buddhist, and Chinese traditions — with modern depth psychology. You describe a dream in your own words and receive a reading that maps its symbols to their common meanings across cultures."
+    "title": "Mga madalas itanong",
+    "q1": "Paano nag-interpret ng mga panaginip ang Dreamscope?",
+    "a1": "Pinaghalo ng Dreamscope ang karunungan sa panaginip mula sa maraming kultura at pananampalataya — kabilang ang Islamic, Christian, Jewish, Hindu, Buddhist, at mga tradisyong Tsino — kasama ang modernong depth psychology. Inilalarawan mo ang isang panaginip sa sarili mong mga salita at nakatanggap ng pagbasa na iniuugnay ang mga simbolo nito sa kanilang mga karaniwang kahulugan sa iba't ibang kultura.",
+    "q2": "Pribado ba ang aking data ng panaginip?",
+    "a2": "Oo. Ang iyong mga panaginip ay iniimbak lamang sa local storage ng iyong browser sa iyong device. Walang ipinadadala sa isang server para sa pag-iimbak, at maaari mong burahin ang iyong kasaysayan anumang oras.",
+    "q3": "Sa anong mga wika maaari kong i-interpret ang mga panaginip?",
+    "a3": "Sinusuportahan ng Dreamscope ang 60 wika kabilang ang Ingles, Arabic, Kastila, Pranses, Aleman, Tsino, Hapon, Koreano, Turko, Portuges, Ruso, Hindi, at marami pa. Ang pagbasa ay sumusunod sa wika na iyong pinili.",
+    "q4": "Kapalit ba ng propesyonal na payo ang mga pagsasagawa?",
+    "a4": "Hindi. Ang mga pagbasa ng panaginip ay para sa pagninilay at libangan. Hindi sila medikal, sikolohikal, o relihiyosong patnubay. Kung ikaw ay nahihirapan, mangyaring makipag-usap sa isang kwalipikadong propesyonal.",
+    "q5": "Ilang simbolo ng panaginip ang sakop?",
+    "a5": "Ang Dreamscope ay may dedikadong mga pahina para sa 146 karaniwang simbolo — ahas, tubig, paglipad, apoy, pagbubuntis, pera, at marami pa — bawat isa ay available sa maraming wika na may mga variant ng mahahabang tanong."
+  },
+  "notfound": {
+    "title": "Nawala ang panaginip na ito",
+    "lede": "Ang pahina na iyong hinahanap ay wala dito. Bumalik na tayo sa pag-iinterpret.",
+    "cta": "Bumalik sa Home"
+  },
+  "perspectives": {
+    "general": {
+      "name": "Universal"
+    },
+    "islamic": {
+      "name": "Ibn Sirin (Islamic)"
+    },
+    "christian": {
+      "name": "Kristiyano"
+    },
+    "jewish": {
+      "name": "Hudaismo"
+    },
+    "hindu": {
+      "name": "Hindu"
+    },
+    "buddhist": {
+      "name": "Budista"
+    },
+    "psychology": {
+      "name": "Sikolohiya (Jung)"
+    },
+    "chinese": {
+      "name": "Zhou Gong (Tsino)"
+    }
+  },
+  "daily": {
+    "tag": "Panaginip ng araw"
+  },
+  "profile": {
+    "title": "Iyong espasyo",
+    "cloudOff": "Ang teksto ng iyong panaginip ay ipinadala sa aming serbisyo sa pagsasagawa upang makabuo ng pagbasa, pagkatapos ay hindi ito iniimbak namin. Ang mga pagbasa ay nananatili sa iyong device maliban kung ikaw ay mag-sign in at mag-sync. Hindi namin ibinebenta o ini-profile ang iyong data.",
+    "dataNote": "Saan nakatira ang iyong data: sa iyong device bilang default. Kapag nag-sign in ka, ang iyong journal ay maaaring i-sync sa iyong pribadong account; maaari mong burahin ito anumang oras.",
+    "signInLede": "Mag-sign in upang panatilihin ang iyong dream journal sa lahat ng iyong mga device. Ang iyong kasaysayan bilang bisita ay kusang sumusunod sa iyo.",
+    "emailLabel": "Email",
+    "magicLink": "Ipadala sa akin ang link sa pag-sign in",
+    "google": "Magpatuloy gamit ang Google",
+    "checkEmail": "Suriin ang iyong inbox — may naghihintay na link sa pag-sign in.",
+    "invalidEmail": "Mangyaring maglagay ng wastong email address.",
+    "signInError": "Hindi ka namin ma-sign in. Mangyaring subukan muli o gamitin ang email link.",
+    "googleNotEnabled": "Hindi pa pinapagana ang Google sign-in sa proyektong ito. Kailangang ikonekta ng may-ari ng site ang isang Google OAuth client sa Supabase.",
+    "guestNote": "Walang password, walang pagsubaybay — isang link lamang. Ang guest mode na may on-device storage ay ganap na magagamit.",
+    "member": "Miyembro",
+    "migrated": "Na-migrate ang {n} panaginip mula sa device na ito sa iyong journal.",
+    "signOut": "Mag-sign out",
+    "navLabel": "Profile",
+    "lede": "Lahat ng nalalaman ng Dreamscope tungkol sa iyong paglalakbay — nakaimbak sa iyong device, iyo lamang.",
+    "yourState": "Iyong estado ngayon",
+    "statDreams": "Mga na-interpret na panaginip",
+    "statSaved": "Mga nai-save na pagbasa",
+    "statStreak": "Magkakasunod na araw",
+    "statTopSymbol": "Nangungunang simbolo",
+    "emptyState": "Wala pang panaginip — ang iyong unang pagbasa ay magpapaliwanag sa pahinang ito.",
+    "symbolsYouMeet": "Mga simbolo na patuloy mong nakakasalamuha",
+    "noneYet": "—",
+    "lastReading": "Huling pagbasa",
+    "languagesUsed": "Mga wikang ginamit",
+    "perspectivesUsed": "Mga tradisyong ginamit",
+    "cloudTitle": "Sa iyong mga device",
+    "connectTitle": "Ikonekta ang iyong proyekto sa Supabase",
+    "connectUrlLabel": "URL ng proyekto",
+    "connectKeyLabel": "Anon public key",
+    "connectCta": "Ikonekta",
+    "connected": "Nakakonekta — maaari ka nang mag-sign in at i-sync ang iyong journal.",
+    "connectError": "Hindi makakonekta. Suriin ang URL at anon key.",
+    "disconnect": "Diskonekta",
+    "privacyNote": "Ang iyong mga panaginip ay nakaimbak sa iyong device — hindi ibinebenta, hindi ini-profile.",
+    "moodPattern": "Pattern ng damdamin",
+    "autoSetupTitle": "Setup na isang command",
+    "autoSetupBody": "Wala pang proyekto? Patakbuhin ang bootstrap script nang isang beses: lumilikha ito ng proyekto sa Supabase, nag-aaplay ng database schema, at nagpi-print ng iyong URL + anon key na i-paste sa itaas. Ang Google sign-in ay nangangailangan ng Google Cloud OAuth client (tingnan ang script).",
+    "autoSetupCmd": "SUPABASE_ACCESS_TOKEN=xxx node scripts/setup-supabase.mjs"
+  },
+  "perspDesc": {
+    "general": "Isang pagbasa na nagtatahi ng mga pinakamatalinong sinulid ng mga tradisyon ng mundo kasama ang depth psychology.",
+    "islamic": "Ang klasikal na paaralan ni Ibn Sirin — simboliko, makatarungan, at nakasentro sa kaluluwa.",
+    "christian": "Pagbasa ng panaginip sa linya ni Jose at Daniel, na may simbolismo ng kasulatan.",
+    "jewish": "Karunungan ng Torah at Talmud — isang mensahe na naghihintay ng matalinong pagsasagawa.",
+    "hindu": "Vedikong simbolismo, karma, at ang mga inner landscape ng isip.",
+    "buddhist": "Impermanence at maingat na kamalayan — obserbahan ang panaginip nang hindi humahawak.",
+    "psychology": "Mga arkityo ni Jung at ang anino — kung ano ang pinoproseso ng iyong psyche.",
+    "chinese": "Klasikal na diksyonaryo ni Zhou Gong — balanse ng yin, yang, at limang elemento."
+  },
+  "moods": {
+    "peace": "Payapa",
+    "anxiety": "Balisa",
+    "hope": "Umaasa",
+    "sadness": "Malungkot",
+    "anger": "Galit",
+    "confusion": "Nalilito"
+  },
+  "seo": {
+    "dreamInterpretation": "Pagsasagawa ng Panaginip",
+    "traditionsTitle": "Sa mga tradisyon",
+    "traditionsBody": "Ang isang simbolo ay maaaring mangahulugan ng iba't ibang bagay sa iba't ibang kultura. Sa Islamic, Kristiyano, Hudaismo, Hindu, Budista, Tsino, at mga tradisyong sikolohikal, ang parehong larawan ay binabasa sa pamamagitan ng sarili nitong lente. Piliin ang lente na pinagkakatiwalaan mo sa pahina ng interpret.",
+    "tryTitle": "Ipakahulugan ang Iyong mga Panaginip gamit ang AI",
+    "tryLede": "Ibahagi ang iyong panaginip at makakuha ng personalized na pagsasagawa mula sa AI.",
+    "otherLangs": "Iba pang mga Wika",
+    "otherSymbols": "Iba pang mga Simbolo ng Panaginip",
+    "reflectNote": "Ang pahinang ito ay para sa pagninilay at libangan lamang. Hindi ito medikal, sikolohikal, o relihiyosong payo, at hindi nito hinuhulaan ang hinaharap."
   }
 }

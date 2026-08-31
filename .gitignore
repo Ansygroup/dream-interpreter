@@ -17,3 +17,7 @@ dist
 # the self-complete cron enables Google + regenerates locales when present.
 # NEVER commit this file.
 .dreamscope-secrets
+
+# Vercel env pull (may contain secret references) — never commit
+.env.vercel.local
+.env.local

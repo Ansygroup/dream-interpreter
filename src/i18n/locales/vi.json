@@ -3,7 +3,7 @@
     "interpret": "Giải mã",
     "symbols": "Biểu tượng",
     "about": "Giới thiệu",
-    "faq": "Hỏi đáp",
+    "faq": "Câu hỏi thường gặp",
     "history": "Lịch sử",
     "saved": "Đã lưu",
     "contact": "Liên hệ",
@@ -12,110 +12,248 @@
     "aiBlog": "Blog AI",
     "ansyGroup": "Ansy Group",
     "language": "Ngôn ngữ",
-    "searchLanguage": "Tìm ngôn ngữ…",
-    "noLanguage": "Không có ngôn ngữ nào khớp tìm kiếm của bạn."
+    "searchLanguage": "Tìm kiếm ngôn ngữ…",
+    "noLanguage": "Không có ngôn ngữ nào phù hợp với tìm kiếm của bạn.",
+    "profile": "Hồ sơ"
   },
   "footer": {
-    "tagline": "Free AI dream interpretation in 60 languages — every tradition, your lens.",
+    "tagline": "Giải mã giấc mơ bằng AI miễn phí với 60 ngôn ngữ — mọi truyền thống, theo góc nhìn của bạn.",
     "copyright": "© {year} Dreamscope"
   },
   "home": {
-    "heroTitle": "{accent} của bạn đang muốn nói điều gì",
-    "heroAccent": "vô thức",
-    "heroLede": "Ancient symbolism, modern psychology, and AI — combined into one clear reading. Describe a dream in your own words and get an interpretation through the tradition you trust.",
-    "interpretCta": "Giải mã giấc mơ",
-    "browseCta": "Khám phá biểu tượng",
+    "heroTitle": "Điều tiềm thức {accent} đang muốn nói với bạn",
+    "heroAccent": "tiềm thức",
+    "heroLede": "Biểu tượng cổ xưa, tâm lý học hiện đại và AI — hòa quyện trong một bài giải mã rõ ràng. Hãy mô tả giấc mơ của bạn bằng chính ngôn từ của bạn và nhận lời giải theo truyền thống bạn tin tưởng.",
+    "interpretCta": "Giải Mã Giấc Mơ",
+    "browseCta": "Khám Phá Biểu Tượng",
     "statLanguages": "{n} ngôn ngữ",
     "statSymbols": "{n} biểu tượng giấc mơ",
-    "statPrivateLine": "riêng tư trên thiết bị của bạn",
-    "whyTitle": "Một phép giải bạn thực sự dùng được",
-    "whyLede": "Dreamscope mổ xẻ giấc mơ thành các biểu tượng, rồi đọc chúng qua truyền thống bạn tin tưởng — tâm lý học đi cùng, không thay thế.",
-    "feature1Title": "Phân tích biểu tượng",
-    "feature1Body": "Mỗi giấc mơ được tách thành những biểu tượng cốt lõi và lần theo hàng thế kỷ truyền thống giải mộng.",
-    "feature2Title": "60 ngôn ngữ",
-    "feature2Body": "Giải mã và đọc biểu tượng bằng tiếng Việt, Anh, Ả Rập, Trung, Nhật và 55 ngôn ngữ khác.",
+    "statPrivateLine": "bảo mật trên thiết bị của bạn",
+    "whyTitle": "Một bài luận giải thực sự hữu ích",
+    "whyLede": "Dreamscope ánh xạ giấc mơ của bạn sang các biểu tượng, rồi luận giải chúng qua truyền thống bạn tin tưởng — đi kèm tâm lý học, không thay thế nó.",
+    "feature1Title": "Phân Tích Biểu Tượng",
+    "feature1Body": "Mỗi giấc mơ được ánh xạ sang các biểu tượng cốt lõi và truy nguyên qua nhiều thế kỷ truyền thống luận giải.",
+    "feature2Title": "60 Ngôn Ngữ",
+    "feature2Body": "Giải mã và đọc các biểu tượng bằng tiếng Anh, tiếng Ả Rập, tiếng Tây Ban Nha, tiếng Trung, tiếng Nhật và hơn 55 ngôn ngữ khác.",
     "feature3Title": "Mọi truyền thống",
-    "feature3Body": "Depth psychology and perspectives across faiths — one reading, seen through your lens.",
-    "feature4Title": "Đã lưu & riêng tư",
-    "feature4Body": "Giấc mơ của bạn nằm trên thiết bị của bạn. Đọc lại, so sánh và theo dõi quy luật theo thời gian.",
-    "sampleTag": "Ví dụ giải mộng",
+    "feature3Body": "Tâm lý học chiều sâu và nhiều góc nhìn từ các tôn giáo — chỉ một lần đọc, nhìn qua lăng kính của bạn.",
+    "feature4Title": "Được lưu & Riêng tư",
+    "feature4Body": "Giấc mơ của bạn được lưu trên thiết bị của bạn theo mặc định. Đăng nhập để đồng bộ trên các thiết bị.",
+    "sampleTag": "Bài đọc mẫu",
     "sampleJustNow": "vừa xong",
-    "sampleDream": "\"Tôi thấy một con rắn xanh rời khỏi nhà qua cánh cổng vườn.\"",
-    "sampleReading": "Snakes mark transformation — something in your life is shedding its old skin. The gate suggests a clear exit is opening. In many traditions, a harmless snake leaving the home often means a lingering worry is finally moving on.",
+    "sampleDream": "\"Tôi thấy một con rắn xanh rời khỏi nhà qua cổng vườn.\"",
+    "sampleReading": "Rắn tượng trưng cho sự chuyển hóa — điều gì đó trong cuộc sống của bạn đang lột bỏ lớp cũ. Cổng cho thấy một lối ra rõ ràng đang mở ra. Theo nhiều truyền thống, một con rắn vô hại rời khỏi nhà thường có nghĩa là một mối lo âu cũ cuối cùng cũng đang tan biến.",
     "sampleTag1": "Chuyển hóa",
-    "sampleTag2": "Giải phóng",
-    "sampleTag3": "Tradition",
-    "sampleSaved": "Đã lưu trên thiết bị của bạn",
-    "symbolsTitle": "Mỗi biểu tượng mang một ý nghĩa",
-    "symbolsLede": "Từ nước đến lửa, khám phá những hình tượng mộng phổ biến nhất và điều mỗi hình thường báo hiệu qua các truyền thống.",
-    "ctaTitle": "Kể giấc mơ của bạn",
-    "ctaLede": "Vài câu là đủ. Phép giải chỉ mất vài giây và nằm trên thiết bị của bạn.",
-    "ctaButton": "Bắt đầu giải mã"
+    "sampleTag2": "Mới ra mắt",
+    "sampleTag3": "Truyền thống",
+    "sampleSaved": "Đã lưu vào thiết bị của bạn",
+    "symbolsTitle": "Mỗi biểu tượng đều mang một ý nghĩa",
+    "symbolsLede": "Từ nước đến lửa, khám phá những hình ảnh phổ biến nhất trong giấc mơ và điều mà mỗi hình ảnh thường gợi lên qua các truyền thống khác nhau.",
+    "ctaTitle": "Mô tả giấc mơ của bạn",
+    "ctaLede": "Chỉ cần vài câu là đủ. Bài luận giải chỉ mất vài giây và được lưu trên thiết bị của bạn theo mặc định.",
+    "ctaButton": "Bắt đầu luận giải"
   },
   "interpret": {
-    "title": "Kể giấc mơ của bạn",
-    "lede": "Viết bằng lời của bạn. Chi tiết càng nhiều, phép giải càng sắc — bối cảnh, cảm xúc và mọi điều khác thường đều quan trọng.",
+    "title": "Mô tả giấc mơ của bạn",
+    "lede": "Hãy viết bằng chính ngôn từ của bạn. Càng chi tiết, bài luận giải càng sắc nét — bối cảnh, cảm xúc và bất kỳ điều gì bất thường đều có ý nghĩa.",
     "language": "Ngôn ngữ",
     "yourDream": "Giấc mơ của bạn",
-    "placeholder": "Đêm qua tôi mơ mình đi qua một cánh cửa liên tục thay đổi hình dạng...",
-    "loading": "Đang giải mã...",
-    "button": "Giải mã giấc mơ",
-    "yourReading": "Phép giải của bạn",
+    "placeholder": "Đêm qua tôi mơ thấy mình đi qua một cánh cửa không ngừng thay đổi hình dạng...",
+    "loading": "Đang giải mã giấc mơ...",
+    "button": "Giải Mã Giấc Mơ",
+    "yourReading": "Lời Giải Mã Của Bạn",
     "save": "Lưu",
+    "saved": "Đã lưu",
+    "savedConfirm": "Đã lưu vào nhật ký của bạn. Bạn có thể tìm lại bất kỳ lúc nào trong mục Đã lưu.",
+    "unsaved": "Đã xoá khỏi mục Đã lưu.",
+    "disclaimer": "Chỉ là sự chiêm nghiệm — không phải lời khuyên y tế, tâm lý hay tôn giáo. Không dự đoán tương lai.",
     "viewHistory": "Xem lịch sử",
-    "errorEmpty": "Hãy kể giấc mơ trước đã.",
-    "errorFailed": "Giải mã thất bại. Vui lòng thử lại.",
-    "errorNetwork": "Lỗi kết nối. Vui lòng thử lại."
+    "errorEmpty": "Vui lòng mô tả giấc mơ của bạn trước.",
+    "errorFailed": "Không thể giải nghĩa. Vui lòng thử lại.",
+    "errorNetwork": "Lỗi kết nối. Vui lòng thử lại.",
+    "perspectiveLabel": "Đọc qua lăng kính",
+    "perspNotice": "Mỗi truyền thống được hiển thị riêng biệt. Các bài luận giải mang tính chiêm nghiệm và xác suất — không phải dự đoán hay phán quyết.",
+    "compareLabel": "So sánh tất cả các truyền thống",
+    "compareDesc": "Cùng một giấc mơ, được đọc qua mọi lăng kính cùng lúc — xem nơi các truyền thống đồng thuận và nơi chúng khác biệt.",
+    "compareLoading": "Đang đọc qua tất cả các truyền thống…",
+    "compareBack": "Quay lại bài giải mã đơn lẻ",
+    "compareSymbols": "Biểu tượng",
+    "symbolsLabel": "Biểu tượng trong giấc mơ của bạn",
+    "feedbackQ": "Bài giải mã này có hữu ích không?",
+    "yes": "Có, hữu ích",
+    "no": "Chưa hữu ích lắm",
+    "thanks": "Cảm ơn bạn — phản hồi của bạn giúp cải thiện các bài giải mã sau.",
+    "perspectiveDesc": "Một bài giải mã kết hợp những tinh hoa của các truyền thống thế giới cùng tâm lý học chiều sâu.",
+    "moodLabel": "Giấc mơ mang lại cảm giác thế nào?",
+    "copy": "Sao chép",
+    "copied": "Đã sao chép!",
+    "share": "Chia sẻ",
+    "example": "Thử một ví dụ",
+    "exampleDream": "Đêm qua tôi mơ thấy một con chim bồ câu trắng đậu trên bậu cửa sổ, rồi hóa thành một lá thư mà tôi không đọc được. Tôi cảm thấy bình yên nhưng tò mò.",
+    "shortcutHint": "Nhấn ⌘/Ctrl + Enter để giải mã",
+    "symbolsSection": "Biểu tượng"
   },
   "history": {
     "title": "Lịch sử giấc mơ",
-    "lede": "Mỗi phép giải bạn đã tạo, được lưu trên thiết bị này.",
-    "empty": "Chưa có giấc mơ nào được giải."
+    "lede": "Mọi lời giải mã bạn đã tạo, được lưu trên thiết bị này.",
+    "empty": "Chưa có giấc mơ nào được giải mã."
   },
   "saved": {
     "title": "Giấc mơ đã lưu",
-    "lede": "Giữ lại những phép giải từng chạm đến bạn. Chúng nằm trên thiết bị này.",
-    "empty": "Chưa có gì được lưu."
+    "lede": "Giữ lại những giải nghĩa đã chạm đến bạn. Chúng sẽ được lưu trên thiết bị này.",
+    "empty": "Bạn chưa lưu gì cả."
   },
   "common": {
-    "interpretCta": "Giải mã giấc mơ",
+    "interpretCta": "Giải Mã Giấc Mơ",
     "delete": "Xóa",
-    "remove": "Bỏ",
-    "backHome": "Về trang chủ"
+    "remove": "Gỡ bỏ",
+    "confirmRemove": "Gỡ bỏ?",
+    "backHome": "Về Trang Chủ"
   },
   "symbols": {
-    "title": "{n} biểu tượng giấc mơ",
-    "lede": "Duyệt qua mọi biểu tượng chúng tôi giải mã — miễn phí, bằng hàng chục ngôn ngữ. Chọn biểu tượng của bạn để đọc ý nghĩa.",
-    "search": "Tìm một biểu tượng…"
+    "title": "{n} Biểu Tượng Giấc Mơ",
+    "lede": "Khám phá mọi biểu tượng mà chúng tôi giải nghĩa — miễn phí, bằng nhiều ngôn ngữ. Hãy chọn ngôn ngữ của bạn để đọc ý nghĩa.",
+    "search": "Tìm một biểu tượng…",
+    "noResults": "Không có biểu tượng nào phù hợp với tìm kiếm của bạn."
+  },
+  "about": {
+    "title": "Một lời giải thích rõ ràng, bắt nguồn từ truyền thống",
+    "p1": "Dreamscope ra đời để giúp việc giải nghĩa giấc mơ trở nên gần gũi hơn, bằng chính ngôn ngữ và bối cảnh văn hóa của bạn. Chúng tôi dựa trên nhiều truyền thống diễn giải khác nhau — học thuật tôn giáo và tâm linh, văn hóa dân gian, cùng các khung biểu tượng của tâm lý học chiều sâu hiện đại — để bạn có thể đọc giấc mơ của mình qua lăng kính mà bạn tin tưởng.",
+    "p2": "Mỗi lời giải thích đều được tạo ra để giúp bạn chiêm nghiệm — không phải để dự đoán tương lai. Những biểu tượng như nước, lửa, bay hay rắn đã mang nhiều ý nghĩa xuyên suốt các nền văn hóa hàng ngàn năm, và các cách diễn giải của chúng tôi truy nguyên những sợi chỉ ấy để bạn tìm thấy điều cộng hưởng với chính cuộc sống của mình.",
+    "p3": "Dịch vụ hoàn toàn miễn phí, được thiết kế để bảo mật và hiện có bằng 60 ngôn ngữ. Nội dung giấc mơ của bạn được gửi đến dịch vụ giải nghĩa của chúng tôi để tạo lời giải thích, sau đó không được chúng tôi lưu trữ; các lời giải thích của bạn được giữ trên thiết bị của bạn trừ khi bạn đăng nhập và đồng bộ.",
+    "card1Title": "Nhiều truyền thống",
+    "card1Body": "Hệ quy chiếu Hồi giáo, Kitô giáo, Do Thái giáo, Ấn Độ giáo, Phật giáo, Trung Hoa và tâm lý học — hãy chọn điều bạn tin tưởng.",
+    "card2Title": "60 ngôn ngữ",
+    "card2Body": "Từ tiếng Ả Rập đến tiếng Nhật — giải nghĩa bằng ngôn ngữ mà bạn mơ.",
+    "card3Title": "Bảo mật 100%",
+    "card3Body": "Các bài giải nghĩa của bạn được lưu mặc định trên thiết bị. Chỉ đăng nhập khi muốn đồng bộ; bạn có thể xóa bất kỳ lúc nào.",
+    "cta": "Bắt đầu giải mã giấc mơ",
+    "traditionsTitle": "Mọi truyền thống, trong một giấc mơ",
+    "traditionsLede": "Hãy chọn lăng kính mà trái tim bạn tin tưởng — mỗi bài giải nghĩa được tạo ra theo một trường phái diễn giải riêng."
   },
   "contact": {
-    "title": "Liên hệ",
-    "lede": "Câu hỏi, góp ý hay ý tưởng hợp tác? Viết email cho đội ngũ Dreamscope.",
+    "title": "Liên hệ với chúng tôi",
+    "lede": "Bạn có thắc mắc, góp ý chỉnh sửa, hoặc ý tưởng hợp tác? Hãy liên hệ đội ngũ Dreamscope qua email.",
     "email": "Email",
-    "disclaimer": "Dreamscope chỉ cung cấp nội dung chiêm nghiệm và giải trí. Các phép giải không phải lời khuyên y khoa, tâm lý hay tôn giáo. Nếu bạn cần hỗ trợ, hãy gặp chuyên gia có chuyên môn.",
-    "back": "Về trang giải mã"
+    "disclaimer": "Dreamscope chỉ cung cấp nội dung mang tính chiêm nghiệm và giải trí. Các bài giải nghĩa không phải là lời khuyên y khoa, tâm lý hay tôn giáo. Nếu bạn cần hỗ trợ, vui lòng tham khảo chuyên gia có chuyên môn.",
+    "back": "Trở về trang giải mã"
   },
   "faq": {
-    "title": "Câu hỏi thường gặp",
-    "q1": "Dreamscope giải mã giấc mơ thế nào?",
-    "a1": "Dreamscope blends dream scholarship from many cultures and faiths — including Islamic, Christian, Jewish, Hindu, Buddhist, and Chinese traditions — with modern depth psychology. You describe a dream in your own words and receive a reading that maps its symbols to their common meanings across cultures.",
-    "q2": "Giấc mơ của tôi có riêng tư không?",
-    "a2": "Có. Giấc mơ của bạn chỉ lưu trong bộ nhớ cục bộ của trình duyệt trên thiết bị của bạn. Không gì được gửi lên máy chủ, và bạn có thể xóa lịch sử bất cứ lúc nào.",
+    "title": "Các câu hỏi thường gặp",
+    "q1": "Dreamscope diễn giải giấc mơ như thế nào?",
+    "a1": "Dreamscope kết hợp kiến thức giải mã giấc mơ từ nhiều nền văn hóa và tôn giáo — bao gồm Hồi giáo, Cơ đốc giáo, Do Thái giáo, Hindu, Phật giáo và truyền thống Trung Hoa — cùng với tâm lý học chiều sâu hiện đại. Bạn mô tả giấc mơ bằng lời của mình, sau đó sẽ nhận được một bài luận giải ánh xạ các biểu tượng với ý nghĩa phổ biến xuyên các nền văn hóa.",
+    "q2": "Dữ liệu giấc mơ của tôi có được bảo mật không?",
+    "a2": "Có. Giấc mơ của bạn chỉ được lưu trong bộ nhớ cục bộ của trình duyệt trên thiết bị của bạn. Không có gì được gửi đến máy chủ để lưu trữ, và bạn có thể xóa lịch sử bất cứ lúc nào.",
     "q3": "Tôi có thể giải mã giấc mơ bằng những ngôn ngữ nào?",
-    "a3": "Dreamscope hỗ trợ 60 ngôn ngữ, gồm tiếng Việt, Anh, Ả Rập, Tây Ban Nha, Pháp, Đức, Trung, Nhật, Hàn, Thổ Nhĩ Kỳ, Bồ Đào Nha, Nga, Hindi và nhiều nữa. Phép giải theo ngôn ngữ bạn chọn.",
-    "q4": "Các phép giải có thay thế lời khuyên chuyên môn không?",
-    "a4": "Không. Giải mộng để chiêm nghiệm và giải trí. Không phải hướng dẫn y khoa, tâm lý hay tôn giáo. Nếu bạn đang khó khăn, hãy nói với chuyên gia đủ tiêu chuẩn.",
-    "q5": "Bao nhiêu biểu tượng giấc mơ được bao phủ?",
-    "a5": "Dreamscope có trang riêng cho 146 biểu tượng phổ biến — rắn, nước, bay, lửa, mang thai, tiền bạc và nhiều nữa — mỗi biểu tượng có bản đa ngôn ngữ cùng các biến thể câu hỏi."
+    "a3": "Dreamscope hỗ trợ 60 ngôn ngữ bao gồm tiếng Anh, tiếng Ả Rập, tiếng Tây Ban Nha, tiếng Pháp, tiếng Đức, tiếng Trung, tiếng Nhật, tiếng Hàn, tiếng Thổ Nhĩ Kỳ, tiếng Bồ Đào Nha, tiếng Nga, tiếng Hindi và nhiều ngôn ngữ khác. Bài luận giải sẽ theo ngôn ngữ bạn chọn.",
+    "q4": "Các bài giải mã có thể thay thế lời khuyên từ chuyên gia không?",
+    "a4": "Không. Bài luận giải giấc mơ chỉ dành cho việc suy ngẫm và giải trí. Chúng không phải là lời khuyên y tế, tâm lý hay tôn giáo. Nếu bạn đang gặp khó khăn, vui lòng trò chuyện với một chuyên gia có đủ trình độ.",
+    "q5": "Có bao nhiêu biểu tượng giấc mơ được đề cập?",
+    "a5": "Dreamscope có các trang riêng cho 146 biểu tượng phổ biến — rắn, nước, bay, lửa, mang thai, tiền bạc và nhiều biểu tượng khác — mỗi biểu tượng đều có sẵn bằng nhiều ngôn ngữ với nhiều dạng câu hỏi chi tiết."
   },
   "notfound": {
     "title": "Giấc mơ này đã tan biến",
-    "lede": "Trang bạn tìm không có ở đây. Quay lại giải mã thôi.",
-    "cta": "Về trang chủ"
+    "lede": "Trang bạn tìm không còn ở đây nữa. Hãy cùng quay lại hành trình giải mã giấc mơ nhé.",
+    "cta": "Trở về trang chủ"
   },
-  "about": {
-    "p1": "Dreamscope exists to make dream interpretation accessible in your own language and cultural context. We draw on a wide range of interpretive traditions — religious and spiritual scholarship, cultural folklore, and the symbolic frameworks of modern depth psychology — so you can read your dream through the lens you trust.",
-    "card1Title": "Many traditions",
-    "card1Body": "Islamic, Christian, Jewish, Hindu, Buddhist, Chinese, and psychological lenses — pick the one you trust."
+  "perspectives": {
+    "general": {
+      "name": "Phổ quát"
+    },
+    "islamic": {
+      "name": "Ibn Sirin (Hồi giáo)"
+    },
+    "christian": {
+      "name": "Kitô giáo"
+    },
+    "jewish": {
+      "name": "Do Thái giáo"
+    },
+    "hindu": {
+      "name": "Ấn Độ giáo"
+    },
+    "buddhist": {
+      "name": "Phật giáo"
+    },
+    "psychology": {
+      "name": "Tâm lý học (Jung)"
+    },
+    "chinese": {
+      "name": "Chu Công (Trung Hoa)"
+    }
+  },
+  "daily": {
+    "tag": "Giấc mơ trong ngày"
+  },
+  "profile": {
+    "title": "Không gian của bạn",
+    "cloudOff": "Nội dung giấc mơ của bạn được gửi đến dịch vụ luận giải của chúng tôi để tạo bài đọc, sau đó chúng tôi không lưu trữ. Các bài đọc được giữ trên thiết bị của bạn trừ khi bạn đăng nhập và chọn đồng bộ. Chúng tôi không bao giờ bán hoặc phân tích dữ liệu của bạn.",
+    "dataNote": "Dữ liệu của bạn được lưu ở đâu: mặc định là trên thiết bị của bạn. Khi bạn đăng nhập, nhật ký của bạn có thể đồng bộ với tài khoản riêng của bạn; bạn có thể xóa bất cứ lúc nào.",
+    "signInLede": "Đăng nhập để giữ nhật ký giấc mơ trên mọi thiết bị của bạn. Lịch sử khách của bạn sẽ tự động đi cùng bạn.",
+    "emailLabel": "Email",
+    "magicLink": "Gửi cho tôi liên kết đăng nhập",
+    "google": "Tiếp tục với Google",
+    "checkEmail": "Hãy kiểm tra hộp thư của bạn — một liên kết đăng nhập đang chờ bạn.",
+    "invalidEmail": "Vui lòng nhập địa chỉ email hợp lệ.",
+    "signInError": "Chúng tôi không thể đăng nhập cho bạn. Vui lòng thử lại hoặc sử dụng liên kết qua email.",
+    "googleNotEnabled": "Đăng nhập bằng Google chưa được bật trên dự án này. Chủ trang cần kết nối ứng dụng khách OAuth của Google trong Supabase.",
+    "guestNote": "Không mật khẩu, không theo dõi — chỉ một liên kết. Chế độ khách với bộ nhớ trên thiết bị vẫn khả dụng đầy đủ.",
+    "member": "Thành viên",
+    "migrated": "Đã chuyển {n} giấc mơ từ thiết bị này vào nhật ký của bạn.",
+    "signOut": "Đăng xuất",
+    "navLabel": "Hồ sơ",
+    "lede": "Mọi điều Dreamscope biết về hành trình của bạn — được lưu trên thiết bị, chỉ thuộc về bạn.",
+    "yourState": "Trạng thái hiện tại của bạn",
+    "statDreams": "Giấc mơ đã giải",
+    "statSaved": "Bài giải đã lưu",
+    "statStreak": "Chuỗi ngày liên tiếp",
+    "statTopSymbol": "Biểu tượng nổi bật",
+    "emptyState": "Chưa có giấc mơ nào — bài giải đầu tiên của bạn sẽ thắp sáng trang này.",
+    "symbolsYouMeet": "Biểu tượng bạn thường gặp",
+    "noneYet": "—",
+    "lastReading": "Bài giải gần nhất",
+    "languagesUsed": "Ngôn ngữ đã dùng",
+    "perspectivesUsed": "Truyền thống đã dùng",
+    "cloudTitle": "Trên mọi thiết bị của bạn",
+    "connectTitle": "Kết nối dự án Supabase của bạn",
+    "connectUrlLabel": "URL dự án",
+    "connectKeyLabel": "Khóa công khai ẩn danh",
+    "connectCta": "Kết nối",
+    "connected": "Đã kết nối — bạn có thể đăng nhập và đồng bộ nhật ký của mình.",
+    "connectError": "Không thể kết nối. Vui lòng kiểm tra URL và khóa ẩn danh.",
+    "disconnect": "Ngắt kết nối",
+    "privacyNote": "Những giấc mơ của bạn được lưu trên thiết bị — không bao giờ bị bán, không bao giờ bị phân tích.",
+    "moodPattern": "Mô hình tâm trạng",
+    "autoSetupTitle": "Thiết lập chỉ với một lệnh",
+    "autoSetupBody": "Chưa có dự án? Hãy chạy tập lệnh khởi tạo một lần: nó sẽ tạo dự án Supabase, áp dụng lược đồ cơ sở dữ liệu và in URL cùng khóa ẩn danh để bạn dán vào ô bên trên. Đăng nhập bằng Google cần có ứng dụng khách OAuth trên Google Cloud (xem trong tập lệnh).",
+    "autoSetupCmd": "SUPABASE_ACCESS_TOKEN=xxx node scripts/setup-supabase.mjs"
+  },
+  "perspDesc": {
+    "general": "Một cách lý giải kết hợp những tinh hoa sâu sắc nhất từ các truyền thống trên thế giới cùng tâm lý học chiều sâu.",
+    "islamic": "Trường phái cổ điển của Ibn Sirin — giàu tính biểu tượng, hợp luật và hướng về tâm hồn.",
+    "christian": "Giải mã giấc mơ theo dòng dõi của Giô-sép và Đa-ni-ên, với hệ thống biểu tượng Kinh Thánh.",
+    "jewish": "Tinh hoa giải mã giấc mơ từ Torah và Talmud — một thông điệp đang chờ được người khôn ngoan lý giải.",
+    "hindu": "Biểu tượng Vedic, nghiệp quả và những cảnh quan bên trong của tâm trí.",
+    "buddhist": "Vô thường và tỉnh thức có mặt — hãy quan sát giấc mơ mà không chấp trước.",
+    "psychology": "Nguyên mẫu và bóng tối trong hệ thống của Jung — điều mà tâm trí bạn đang xử lý.",
+    "chinese": "Từ điển cổ điển của Chu Công — sự cân bằng giữa âm, dương và ngũ hành."
+  },
+  "moods": {
+    "peace": "Bình an",
+    "anxiety": "Lo lắng",
+    "hope": "Hy vọng",
+    "sadness": "Buồn",
+    "anger": "Tức giận",
+    "confusion": "Bối rối"
+  },
+  "seo": {
+    "dreamInterpretation": "Giải mã giấc mơ",
+    "traditionsTitle": "Xuyên qua các truyền thống",
+    "traditionsBody": "Mỗi biểu tượng có thể mang ý nghĩa khác nhau trong từng nền văn hóa. Trong các truyền thống Hồi giáo, Cơ đốc giáo, Do Thái giáo, Ấn Độ giáo, Phật giáo, Trung Hoa và tâm lý học, cùng một hình ảnh được đọc qua lăng kính riêng. Hãy chọn lăng kính mà bạn tin tưởng trên trang giải mã.",
+    "tryTitle": "Giải Mã Giấc Mơ Cùng AI",
+    "tryLede": "Chia sẻ giấc mơ của bạn và nhận lời giải thích cá nhân hóa từ AI.",
+    "otherLangs": "Ngôn Ngữ Khác",
+    "otherSymbols": "Biểu Tượng Giấc Mơ Khác",
+    "reflectNote": "Trang này chỉ mang tính chiêm nghiệm và giải trí. Đây không phải là lời khuyên y tế, tâm lý hay tôn giáo, và không dự đoán tương lai."
   }
 }

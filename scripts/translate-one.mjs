@@ -81,14 +81,33 @@ for (const code of targets) {
   console.log(`→ ${code} (key-by-key, ${flat.length} keys, ${existingFlat.size} already done)`);
   let done = 0, failed = 0, skipped = 0;
   for (const [key, value] of flat) {
-    // Skip if already real-translated and placeholder matches
+    // Skip already-translated keys. Also skip keys whose stored value is identical to
+    // the EN source (still untranslated) OR whose value was previously identified as an
+    // untranslatable token (brand name, copyright, em-dash, short symbol, tech command)
+    // so we don't hammer the API for identity returns on every re-run.
     if (existingFlat.has(key)) {
       const v = existingFlat.get(key);
-      const isReal = typeof v === 'string' && v.trim() && !v.trim().startsWith('Free AI dream') && v.trim() !== '';
+      const isFallback = v === value;
+      const isReal = typeof v === 'string' && v.trim() && !isFallback && v.trim() !== '';
+      // unauthocratically untranslatable tokens (brand, copyright, em-dash, short token, tech cmd)
+      const looksUntranslatable = (
+        v.trim().length <= 3 ||
+        v.trim().startsWith('©') ||
+        v.trim().startsWith('SUPABASE_ACCESS_TOKEN') ||
+        /^[A-Z][a-z0-9 ]+ [A-Z][a-z0-9]+$/.test(v.trim())  // "AI Blog", "Home Page", "Free Dreams"
+      );
       if (isReal && ph(v) === ph(value)) { skipped++; continue; }
+      if (looksUntranslatable) { skipped++; continue; }
     }
     const t = await translateOne(code, key, value, `Section: ${key.split('.')[0]}`);
-    if (t) { existingFlat.set(key, t); done++; }
+    if (t) {
+      // API returned identity (same as source) for untranslatable tokens like brand
+      // names, copyright notices, em-dashes, or technical commands — accept as done
+      // so we don't loop forever on every re-run. Still count it as translated.
+      existingFlat.set(key, t);
+      done++;
+      if (t === value) console.log(`   ℹ ${key}: API returned source identically (untranslatable token), accepted`);
+    }
     else { failed++; }
     if ((done + failed) % 25 === 0) {
       // Periodic save

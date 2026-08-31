@@ -1,71 +1,259 @@
 {
   "nav": {
-    "interpret": "Túmọ̀",
-    "symbols": "Àmì",
-    "about": "Nípa wa",
-    "faq": "Ìbéèrè",
-    "history": "Ìtàn",
-    "saved": "Tí a fi pamọ́",
-    "contact": "Kàn sí wa",
+    "interpret": "Ṣe alayida",
+    "symbols": "Awọn aami",
+    "about": "Nipa",
+    "faq": "Awọn ibeere",
+    "history": "Itan",
+    "saved": "Awọn ti a fi pamọ́",
+    "contact": "Kan si wa",
     "start": "Bẹ̀rẹ̀",
-    "home": "Ilé oju-iwe",
+    "home": "Ile",
     "aiBlog": "Bulọọgi AI",
     "ansyGroup": "Ansy Group",
     "language": "Èdè",
-    "searchLanguage": "Ṣàwárí èdè…",
-    "noLanguage": "Kò sí èdè tí ó bá àwárí rẹ mu."
+    "searchLanguage": "Ṣawari ede…",
+    "noLanguage": "Ko si ede ti o ba ibeere rẹ mu.",
+    "profile": "Àbójáde"
   },
   "footer": {
-    "tagline": "Free AI dream interpretation in 60 languages — every tradition, your lens.",
+    "tagline": "Itumọ ala AI ni ọfẹ ni awọn ede 60 — gbogbo ọna-ọrọ, lẹ́nsi rẹ.",
     "copyright": "© {year} Dreamscope"
   },
   "home": {
-    "heroTitle": "Kí ni {accent} rẹ fẹ́ sọ fún ọ",
-    "heroAccent": "ọkàn rẹ tí kò rí",
-    "heroLede": "Ancient symbolism, modern psychology, and AI — combined into one clear reading. Describe a dream in your own words and get an interpretation through the tradition you trust.",
-    "interpretCta": "Túmọ̀ alá",
-    "browseCta": "Yè kíkọ àmì",
-    "ctaTitle": "Ṣàpèjúwe alá rẹ",
-    "ctaButton": "Bẹ̀rẹ̀ ìtumọ̀",
-    "feature3Body": "Depth psychology and perspectives across faiths — one reading, seen through your lens.",
-    "feature4Body": "Your dreams stay on your device by default. Sign in to sync across devices.",
-    "sampleReading": "Snakes mark transformation — something in your life is shedding its old skin. The gate suggests a clear exit is opening. In many traditions, a harmless snake leaving the home often means a lingering worry is finally moving on.",
-    "sampleTag3": "Tradition",
-    "ctaLede": "A few sentences is enough. The reading takes seconds and stays on your device by default."
+    "heroTitle": "Ohun ti {accent} rẹ ń gbìyànjú lati sọ",
+    "heroAccent": "ìmọ̀ ìbànújẹ́",
+    "heroLede": "Àwọn àmì àtijọ́, ìṣe ìwádìí ode onínú, àti AI — darapọ̀ mọ́ sí ìtumọ̀ kan tó yẹ̀. Ṣàlàyé ala kan ni ọ̀rọ̀ ara rẹ, kí o gba ìtumọ̀ rẹ̀ nípa ọ̀nà ìgbàgbọ́ tí o gbẹ́kẹ̀lé.",
+    "interpretCta": "Ṣe Ìtumọ̀ Ìtàn Àlá",
+    "browseCta": "Wo Àwọn Àmì",
+    "statLanguages": "Àwọn èdè {n}",
+    "statSymbols": "Àwọn àmì àlá {n}",
+    "statPrivateLine": "ti ìkọkọ lori ẹ̀rọ rẹ",
+    "whyTitle": "Ìtumọ̀ tí o lè fi ń ṣiṣẹ́",
+    "whyLede": "Dreamscope ń fi àwọn àmì àlá rẹ sí àpapọ̀, kódà ń kà wọ́n nípasẹ̀ àṣà tí o gbẹ́kẹ̀lé — pẹ̀lú ìṣeọ̀rọ̀ ọpọlọ́, kì í ṣe àtìpẹ̀yẹ̀.",
+    "feature1Title": "Ìtúpalẹ̀ Àwọn Àmì",
+    "feature1Body": "Àlá kọ̀ọ̀kan ń jẹà kíkà sọ́dọ̀ àwọn àmì pàtàkì rẹ̀, a sì ń tọpasẹ̀ wọ̀n nípasẹ̀ ọ̀nà ìtumọ̀ ti ọ̀pọ̀lọ́pọ̀ ọ̀dún.",
+    "feature2Title": "Àwọn Èdè 60",
+    "feature2Body": "Tú ìtumọ̀ àti kà àwọn àmì ní Gẹ̀ẹ́sì, Árábíkì, Sípáánì, Ṣáínà, Jẹ́páńì, àti àwọn èdè mìíràn 55.",
+    "feature3Title": "Gbogbo Àṣà",
+    "feature3Body": "Ìmọ̀ ẹ̀dà àti ìwòye láàárín àwọn ìgbàgbọ́ — ìkàwé kan, tí a rí ní abẹ́lẹ̀ rẹ.",
+    "feature4Title": "Tí a Tọ́jú & Tí àṣírí",
+    "feature4Body": "Àwọn òun la tọ́jú lórí ẹ̀rọ rẹ ní ọ̀nà aiyipada. Wọlé láti mu dọ́gba láàárín àwọn ẹ̀rọ.",
+    "sampleTag": "Àpẹẹrẹ Ìkàwé",
+    "sampleJustNow": "nì ńṣẹ́lẹ̀",
+    "sampleDream": "\"Mo rí ejò aláwọ̀ ewé tí ó ti ilé jáde ní ẹnu-ọ̀nà ọgba.\"",
+    "sampleReading": "Àwọn ejò túmọ̀ ìyípadà — ohun kan nínú ìgbé ayé rẹ ń ṣí ẹ̀wà atijẹ́ rẹ sílẹ̀. Ẹnu-ọ̀nà ń fi hàn pé ìtẹ̀sí tó dára ń ṣí. Nínú ọ̀pọ̀lọpọ̀ àṣà, bí ejò tí kò lèwu bá ti ilé jáde, ó túmọ̀ pé ìdààmú tí ó tẹ̀lé ń kọjá lẹ́yìn.",
+    "sampleTag1": "Ìyípadà",
+    "sampleTag2": "Ìtẹ̀jáde",
+    "sampleTag3": "Àṣà",
+    "sampleSaved": "Ti tọ́jú sí ẹ̀rọ rẹ",
+    "symbolsTitle": "Àmì kọ̀ọ̀kan ní ìtumọ̀",
+    "symbolsLede": "Láti inú omi dé inú iná, ṣàwárí àwọn àmì ala wọ́pọ̀ jùlọ àti ohun tí ẹ̀kọ̀ọ̀kan máa ń fi hàn ní àwọn àṣà.",
+    "ctaTitle": "Ṣàpèjúwe ala rẹ",
+    "ctaLede": "Àwọn gbolohun ọ̀rọ̀ kan tó pẹ̀ lè. Ìtumọ̀ yóò gba ìṣẹ́jú àti pé yóò dúró lẹ́rọ̀ rẹ lọ́wọ́lọ́wọ́.",
+    "ctaButton": "Bẹ̀rẹ̀ Ìtumọ̀"
   },
   "interpret": {
-    "title": "Ṣàpèjúwe alá rẹ",
+    "title": "Ṣàpèjúwe ala rẹ",
+    "lede": "Kọ ọ́ nínú àwọn ọ̀rọ̀ tirẹ. Bí ìtẹ̀síwájú bá pọ̀ sí i, ìtumọ̀ yóò jẹ́ tó ṣe — àyíká, ìmọ̀lára, àti ohunkóhun tí kò wọ́pọ̀, gbogbo wọ́n pàtàkì.",
     "language": "Èdè",
-    "yourDream": "Alá rẹ",
-    "placeholder": "Àárọ̀ àná mo lálá pé mo ń kọjá nínú ilẹ̀kun tí ó ń yí ìráwọ̀ padà...",
-    "button": "Túmọ̀ alá"
-  },
-  "common": {
-    "interpretCta": "Túmọ̀ alá",
-    "backHome": "Padà sí ilé oju-iwe"
+    "yourDream": "Àlá rẹ",
+    "placeholder": "Aní àná mo rò pé mo ń kọjá lọ àjò kan tí ó ń yí ọ̀nà rẹ̀ padà nígbà gbogbo...",
+    "loading": "Ó ń túmọ̀ àlá náà...",
+    "button": "Túmọ̀ Àlá",
+    "yourReading": "Ìtumọ̀ Àlá Rẹ",
+    "save": "Fi pamọ́",
+    "saved": "Ti fipamọ́",
+    "savedConfirm": "Ti fipamọ́ sínú àkọsílẹ̀ rẹ. Wá á nígbàkúgbà lábẹ́ Àwọn tí a fipamọ́.",
+    "unsaved": "Ti yọ kúrò nínú Àwọn tí a fipamọ́.",
+    "disclaimer": "Àyẹ̀wò lásìkò yìí — kì í ṣe ìmọ̀ràn ìṣè̀gùn, ọ̀nà ọkàn, tàbí ọ̀rọ̀ ẹ̀sìn. Kò sì lè sọ ohun tí ọ̀la pẹ̀lẹ́.",
+    "viewHistory": "Wo Àbójútó",
+    "errorEmpty": "Jọ̀wọ́, ṣàpèjúwe ala rẹ kọ́kọ́.",
+    "errorFailed": "Ìtumọ̀ kùnà. Jọ̀wọ́ gbìyànjú lẹ́ẹ̀kan sí i.",
+    "errorNetwork": "Àṣìṣe asopọ̀. Jọ̀wọ́ gbìyànjú lẹ́ẹ̀kan sí i.",
+    "perspectiveLabel": "Àyẹ̀wò nípasẹ̀",
+    "perspNotice": "Ìlànà kọ̀ọ̀kan fi hàn lẹ́sẹ̀sẹ̀. Àwọn àyẹ̀wò jẹ́ ọ̀nà ìrònú, kì í ṣe àṣetẹ́lọ̀ tàbí ìdájọ́.",
+    "compareLabel": "Fi ìlànà gbogbo wé ara wọn",
+    "compareDesc": "Ala kan, tí a yẹra wò nípasẹ̀ gbogbo àwọn lẹ́nsi lẹ́ẹ̀kan — wo ibiti àwọn ìlànà bá mu, àti ibiti wọ́n yà.",
+    "compareLoading": "Ń ka gbogbo àwọn ìlànà…",
+    "compareBack": "Pada si itumọ ẹyọkan",
+    "compareSymbols": "Awọn aami",
+    "symbolsLabel": "Awọn aami ninu ala rẹ",
+    "feedbackQ": "Ṣe itumọ yii wulo fun ọ?",
+    "yes": "Bẹẹni, o wulo",
+    "no": "Rara bẹẹni",
+    "thanks": "O ṣeun — idahun rẹ yoo ṣe iranlọwọ fun awọn itumọ iwaju.",
+    "perspectiveDesc": "Itumọ kan ti o hun awọn okun to daye julọ ti awọn aṣa agbaye pọ pẹlu ironu ọkan jinlẹ.",
+    "moodLabel": "Bawo ni ala naa ṣe rí?",
+    "copy": "Ṣẹda ẹda",
+    "copied": "Kà sí ẹ̀dà!",
+    "share": "Pín",
+    "example": "Gbìyànjú àpẹẹrẹ kan",
+    "exampleDream": "Lana alẹ́ mo rí àwẹ́ ẹyẹ títẹ̀ kan lórí fèrèsé mi, ó sì pàdà sí ìwé kan tí mo kò lè kà. Mo mọ̀ lónítíje ṣùgbọ́n mo ń wá ìtumọ̀.",
+    "shortcutHint": "Tẹ ⌘/Ctrl + Enter láti túmọ̀ aláfẹ́ẹ́rẹ́ẹ́",
+    "symbolsSection": "Àwọn àmì"
   },
   "history": {
-    "title": "Ìtàn àwọn alá",
-    "empty": "Kò sí alá tí a ti túmọ̀ sí ti."
+    "title": "Ìtàn àlọ́",
+    "lede": "Gbogbo ìtúmọ̀ tí o ti ṣe, tí a tọ́jú sí ẹ̀rọ yìí.",
+    "empty": "Kò sí aláfẹ́ẹ́rẹ́ tí a túmọ̀ sí ìsinsìnyí."
   },
   "saved": {
-    "title": "Àwọn alá tí a fi pamọ́",
-    "empty": "Kò sí ohun tí a fi pamọ́ ti."
+    "title": "Àwọn aláfẹ́ẹ́rẹ́ tí a tọ́jú",
+    "lede": "Tọ́jú àwọn ìtumọ̀ tí ó pàtàkì. Wọ́n wà lori ẹ̀rọ yìí.",
+    "empty": "Kò sí ohunkóhù tí a tọ́jú síbẹ̀."
+  },
+  "common": {
+    "interpretCta": "Sọ ìtúmọ̀ Kanlí kan",
+    "delete": "Pa rẹ́",
+    "remove": "Yọ kúrò",
+    "confirmRemove": "Yọ kúrò?",
+    "backHome": "Padà Sí Ilé"
   },
   "symbols": {
-    "title": "Àmì alá {n}",
-    "search": "Ṣàwárí àmì…"
-  },
-  "notfound": {
-    "title": "Alá yìí ti rí nkankan",
-    "cta": "Padà sí ilé oju-iwe"
+    "title": "Àwọn Àmì Kanlí {n}",
+    "lede": "Ìtúmọ̀ àwọn àmì kanlí gbogbo wa níbẹ̀ — ọ̀fẹ́, ní ọ̀pọ̀lọpọ̀ èdè. Yan ti rẹ láti ka ìtúmọ̀.",
+    "search": "Wá àmì kanlí…",
+    "noResults": "Ko si àmì tó bá ìwádìí rẹ mu."
   },
   "about": {
-    "p1": "Dreamscope exists to make dream interpretation accessible in your own language and cultural context. We draw on a wide range of interpretive traditions — religious and spiritual scholarship, cultural folklore, and the symbolic frameworks of modern depth psychology — so you can read your dream through the lens you trust.",
-    "card1Title": "Many traditions",
-    "card1Body": "Islamic, Christian, Jewish, Hindu, Buddhist, Chinese, and psychological lenses — pick the one you trust."
+    "title": "Ìtumọ̀ tó kedere, tí ó gbó̩n lórí ìtàn",
+    "p1": "Dreamscope wà láti mú kíkà ìtúmọ̀ ìran di ohun tí ó ṣeé ṣe nínú èdè rẹ àti ìlànà ìlú rẹ. A ń fa láti ọ̀pọ̀lọpọ̀ ìtàn ìtúmọ̀ — ọgbọ́n ọ̀rọ̀ ìgbàgbọ́ àti ẹ̀mí, ìtàn ìlú, àti àwọn ìlànà ìfọwọ́yí ti ìṣe̩ro ìwà ìgbàlódé — kí o lè ka ìran rẹ nípa eyo tí o gbẹ́kẹ̀lé.",
+    "p2": "Gbogbo ìtumọ̀ ni a dá láti ràn ẹ́ lọ́wọ́ láti ronú — kì í ṣe láti sọ ìwà-ọ̀run. Àwọn àmì bí omi, iná, ìfòkàṣe, tabi ejò ti gba ìtumo kọjá àwọn ìlú fún ẹgbẹ̀rún ọdún, àti àwọn ìtumọ̀ wa ń tọpa àwọn okun wọ̀nyẹ́n kí o lè rí ohun tó bá ìgbé-ayé rẹ mu.",
+    "p3": "Iṣẹ́ yìí jẹ́ ọ̀fẹ́, aládàáni, ó sì wà ní 60 èdè. Ọ̀rọ̀ ìran rẹ ní a rán si iṣẹ́ ìtumọ̀ wa láti dá ìkàwé, lẹ́yìn náà a kò fi pamọ́; àwọn ìkàwé rẹ ń dúró lórí ẹ̀rọ rẹ bí o kò bá wọlé kí o sì ṣe àmúṣiṣẹ́pọ̀.",
+    "card1Title": "Ọ̀pọ̀lọpọ̀ ìtàn",
+    "card1Body": "Àwọn eyo Ìsílámù, Kristẹ́nì, Júù, Híndù, Búddà, Ṣáínà, àti ti ìṣe̩ro — yan eyo tí o gbẹ́kẹ̀lé.",
+    "card2Title": "Èdè 60",
+    "card2Body": "Láti Árábùkì sí Jé̩pánì — túmọ̀ nínú èdè tí o ń lá ọ̀n rẹ.",
+    "card3Title": "Aládàáni 100%",
+    "card3Body": "Àwọn ìtumọ̀ rẹ wà ní ẹ̀rọ rẹ ní ìpìlẹ̀. Wọlé nìkan láti bá ẹ̀rọ mìrin mu; pa wọ́n rẹ̀ nígbàkúgbà.",
+    "cta": "Bẹ̀rẹ̀ Ìtúmọ̀",
+    "traditionsTitle": "Ìlànà kọ̀ọ̀kan, ìtàn kan ṣoṣo",
+    "traditionsLede": "Yan ọ̀nà tí ọkàn rẹ gbẹ́kẹ̀lé — ìtumọ̀ kọ̀ọ̀kan jáde láti ọwọ́ ìlànà àlàyé kan."
+  },
+  "contact": {
+    "title": "Bá wa sọ̀rọ̀",
+    "lede": "Ìbéèrè, àtúnṣe, tàbí àwọn èrò ìfẹ́ ọ̀rọ̀? Kàn sí ẹgbẹ́ Dreamscope lẹ́tà.",
+    "email": "Lẹ́tà",
+    "disclaimer": "Dreamscope pèsè ìròyìn àti ìdùnnú nìkan. Àwọn ìtumọ̀ kì í ṣe ìmọ̀ ìṣègùn, ọgbọ́n, tàbí ìmọ̀ ẹ̀sìn. Tí o bá nílò ìrànwọ́, jọ̀wọ́ kàn sí ọ̀gá ọ̀tọ̀tọ̀.",
+    "back": "Padà sí Olùtúmọ̀"
   },
   "faq": {
-    "a1": "Dreamscope blends dream scholarship from many cultures and faiths — including Islamic, Christian, Jewish, Hindu, Buddhist, and Chinese traditions — with modern depth psychology. You describe a dream in your own words and receive a reading that maps its symbols to their common meanings across cultures."
+    "title": "Àwọn ìbéèrè tí a máa ń béèrè",
+    "q1": "Bawo ni Dreamscope ṣe tú àlá rí sí ìtumọ̀?",
+    "a1": "Dreamscope dapọ̀ ọgbọ́n ìtumọ̀ àlá láti ọ̀pọ̀lọpọ̀ àwọn ọmọ-ìlú àti ìgbàgbọ́ — pẹ̀lú ìsìmì, ìgbàgbọ́ Kristẹ́nì, ìhùdú Jùdù, ìhùdú Híndù, ìhùdú Búdù, àti àṣà Kannada — pẹ̀lú ìtumọ̀ ọkàn ìgbàmìíràn. Ìwọ ń ṣe àpèjúwe àlá kan ní ọ̀rọ̀ rẹ ara rẹ, a sì ń fi ìtumọ̀ rẹ fun ọ tí ó Ń darapọ̀ àwọn àmì rẹ̀ pẹ̀lú ìtumọ̀ wọ̀n tí ó wọ́pọ̀ láàrín àwọn ọmọ-ìlú.",
+    "q2": "Ṣé àwọn dátà àlá mi jẹ́ ohun ìkọ̀kọ̀?",
+    "a2": "Bẹ́ẹ̀ni. A ń fi àwọn àlá rẹ pamọ́ nínú ìpamọ́ agbègbè abánisọ̀rọ̀ rẹ nìkan. Kò sí ohun kan tí a ń rán sí olupin fún ìpamọ́, a sì lè pa àwọn ìtàn rẹ́ rẹ́ láìpẹ̀.",
+    "q3": "Ní àwọn èdè wo ni wọ́n lè tú àlá rí sí ìtumọ̀?",
+    "a3": "Dreamscope ṣe àtìlẹ́yìn fún èdè 60 pẹ̀lú Gẹ̀ẹ́sì, Árábùkì, Spéìnì, Faransé, Jámánì, Kannada, Jẹ́pánì, Kọríà, Tọ́kìì, Potogíì, Rọ́ṣíà, Híndì, àti ọ̀pọ̀lọpọ̀ sí i. Ìtumọ̀ náà yóò tẹ̀lé èdè tí o bá yàn.",
+    "q4": "Ṣé àwọn ìtumọ̀ yìí yí ipò ìmọ̀ ọ̀ṣọ́ ìtòsí rọ́pò?",
+    "a4": "Rárá. Àwọn ìtumọ̀ àlá wà fún ìròyìn àti ìgbádùn. Wọn kì í ṣe ìtọ́sọ́nà ìṣègùn, ìtọ́sọ́nà ọkàn, tàbí ìtọ́sọ́nà ìgbàgbọ́. Tí o bá nìyà, jọ̀wọ́ bá ọ̀ṣọ́ ọgbọ́n kan sọ̀rọ̀.",
+    "q5": "Mèlu àmì àlá wo ni wọ́n bo?",
+    "a5": "Dreamscope ní ojú-ìwé pàtàkì fún àmì wọ́pọ̀ 146 — ẹ̀jẹ̀, omi, ìfòòfò, iná, ìyìn ọmọ, owó, àti ọ̀pọ̀lọpọ̀ sí i — ọ̀kọ̀ọ̀kan wọn wà ní ọ̀pọ̀lọpọ̀ èdè pẹ̀lú àwọn ọ̀nà ìbéèrè tó gùn."
+  },
+  "notfound": {
+    "title": "Iṣiri yii tàn kálẹ̀",
+    "lede": "Oju-iwe náà kò sí níbẹ̀. Ẹ jẹ́ ká padà sí ìtúmọ̀ àlá.",
+    "cta": "Padà sí Ilé"
+  },
+  "perspectives": {
+    "general": {
+      "name": "Gbogbo ènìyàn"
+    },
+    "islamic": {
+      "name": "Ibn Sirin (Ìsìm Ìsílámù)"
+    },
+    "christian": {
+      "name": "Kristẹ̀nì"
+    },
+    "jewish": {
+      "name": "Jiu"
+    },
+    "hindu": {
+      "name": "Hindu"
+    },
+    "buddhist": {
+      "name": "Buddhist"
+    },
+    "psychology": {
+      "name": "Ọgbọ́n-inú (Jung)"
+    },
+    "chinese": {
+      "name": "Zhou Gong (Èdè Ṣínà)"
+    }
+  },
+  "daily": {
+    "tag": "Àlá ọjọ́ yìí"
+  },
+  "profile": {
+    "title": "Àyè rẹ",
+    "cloudOff": "Ọ̀rọ̀ àlá rẹ ń kọjá lọ sí iṣẹ́ ìtumọ̀ wa láti gba ìtumọ̀, a kò sí mọ́ ẹ̀ títí di èyí. A ń tọ́jú ìtumọ̀ lórí ẹ̀rọ rẹ bí ó bá jẹ́ pé o kò tíì wọlé. A kò ń ta tàbí ṣe àkọọ́lẹ̀ pẹ̀lú dátà rẹ.",
+    "dataNote": "Níbo ni dátà rẹ gbé: lórí ẹ̀rọ rẹ lẹ́ẹ̀kan. Nígbà tí o bá wọlé, àkọọ́lẹ̀ rẹ lè bá ìforúkọ̀ àdánidá rẹ mu; o lè pa rẹ́ lọ nígbà èyíkéyìí.",
+    "signInLede": "Wọlé láti tọ́jú àkọọ́lẹ̀ àlá rẹ lórí gbogbo ẹ̀rọ rẹ. Ìtàn rẹ gẹ́gẹ́ bí alejo yóò tẹ̀lé rẹ ní àdánidá.",
+    "emailLabel": "Ímeèlì",
+    "magicLink": "Fún mi ní ìjọ́ọ̀nà ìwọlé",
+    "google": "Tẹ̀síwájú pẹ̀lú Google",
+    "checkEmail": "Ṣàyẹ̀wò ìpamọ́ rẹ — ìjọ́ọ̀nà ìwọlé ń dúró de ọ.",
+    "invalidEmail": "Jọwọ́ tẹ àdírẹ́sì í-meélì tó pé.",
+    "signInError": "A kò lè fi ọ́ wọlé. Jọwọ́ gbìyànjú lẹ́ẹ̀kan sí i tàbí lo ìjápọ̀ í-meélì.",
+    "googleNotEnabled": "Ị̀wọ́lé Google kò sí ṣíṣe lórí iṣẹ́ yìí lónìí. Onílé ìtakùn nílò láti so ọ́kọ̀ ìfẹ̀sẹ̀ẹ́rẹ́ Google OAuth pọ̀ nínú Supabase.",
+    "guestNote": "Kò sí ọ̀nà ìfihàn, kò sí títẹ̀lé — ọ̀nà ìjápọ̀ nìkan. Ọ̀nà aleèṣẹ̀ pẹ̀lú ìtajì nínú ẹ̀rọ rẹ wà ní kíkún.",
+    "member": "Ọmọ ẹgbẹ́",
+    "migrated": "A ti gbé àlàáfíà {n} lórí ẹ̀rọ yìí sí àkọọ́lẹ̀ rẹ.",
+    "signOut": "Jáde",
+    "navLabel": "Àbójútó",
+    "lede": "Gbogbo ohun tí Dreamscope mọ̀ nípa ìrìn-àjò rẹ — wà ní ẹ̀rọ rẹ, ti rẹ nìkan.",
+    "yourState": "Ipò rẹ lónìí",
+    "statDreams": "Àlàyé àlà tó ti ṣe àlàyé",
+    "statSaved": "Àwọn ìkàwìrà tó ti pamọ́",
+    "statStreak": "Ọjọ́ títí di òní",
+    "statTopSymbol": "Àmì tó ń kọjá jùlọ",
+    "emptyState": "Kò sí àlà síbẹ̀ — ìkàwìrà akọ́kọ́ rẹ yóò mọ́ ìtàkùtàkù ojú-ọ̀nà yìí.",
+    "symbolsYouMeet": "Àwọn àmì tí ń bá ọ pàdé",
+    "noneYet": "—",
+    "lastReading": "Ìkàwìrà tó kẹ́yìn",
+    "languagesUsed": "Àwọn èdè tí a lò",
+    "perspectivesUsed": "Àwọn ìlànà tí a lò",
+    "cloudTitle": "Lori awọn ẹrọ rẹ",
+    "connectTitle": "So iṣẹ Supabase rẹ pọ",
+    "connectUrlLabel": "URL iṣẹ",
+    "connectKeyLabel": "Bọtini ita gbangba",
+    "connectCta": "So pọ",
+    "connected": "Ti sopọ — o le wọle ati mu iwe iroyin ọla rẹ pọ.",
+    "connectError": "Ko le sopọ. Ṣayẹwo URL naa pẹlu bọtini ita.",
+    "disconnect": "Ya sọtọ",
+    "privacyNote": "Awọn ala rẹ wa lori ẹrọ rẹ — a kò ta, a kò ṣe àbójútó rẹ.",
+    "moodPattern": "Àbọ ọkàn",
+    "autoSetupTitle": "Iṣeto pẹlu aṣẹ kan",
+    "autoSetupBody": "Ko ni iṣẹ akanṣe? Lo iwe afọwọkọ bootstrap lẹẹkan: o ṣẹda iṣẹ akanṣe Supabase, lo eto data, ati tẹ URL rẹ + bọtini ailorukọ jade lati lẹẹ mọ loke. Ifọwọyi Google nilo alabara Google Cloud OAuth (wo iwe afọwọkọ naa).",
+    "autoSetupCmd": "SUPABASE_ACCESS_TOKEN=xxx node scripts/setup-supabase.mjs"
+  },
+  "perspDesc": {
+    "general": "Itumọ kan ti o hun awọn okun toye julọ ti awọn aṣa agbaye pọ pẹlu ironu ijinle.",
+    "islamic": "Ile-iwe atileba ti Ibn Sirin — aami, ofin, ati ọkan.",
+    "christian": "Itumọ ala ni iran ti Joseph ati Daniel, pẹlu aami Ọlọrun.",
+    "jewish": "Ọgbọn ala ti Torah ati Talmud — ifiranṣẹ ti nduro fun itumọ ọlọgbọn.",
+    "hindu": "Aami Vedic, karma, ati awọn ilẹ inu ti ọkan.",
+    "buddhist": "Aipẹ ati imọ iṣọra — wo ala laisi mu u mọ.",
+    "psychology": "Awọn ẹda-ifihan ti Jung ati ojiji — kini ọkan rẹ n ṣiṣẹ lori.",
+    "chinese": "Àtúnjọ àtọ́kọ-ọ̀rọ̀ Zhou Gong — ìdọ́gba láàárín yìn, yáng, àti àwọn ẹ́lẹ́ń-ẹ̀dẹ̀ márùn-ún."
+  },
+  "moods": {
+    "peace": "Àlàáfíà",
+    "anxiety": "Ìdààmú",
+    "hope": "Ìrètí",
+    "sadness": "Ìbànújẹ́",
+    "anger": "Ìbínú",
+    "confusion": "Àìmọ̀ye"
+  },
+  "seo": {
+    "dreamInterpretation": "Ìtumọ̀ Ìran",
+    "traditionsTitle": "Nínú àwọn ìlànà ọ̀rọ̀",
+    "traditionsBody": "Àmì kan lè túmọ̀ ohun kòótùlán nínú àwọn ìṣèlú ọ̀tọ̀ọ̀tọ̀. Nínú ìlànà Ọlásùn Ìsìmí, Kristian, Jùù, Hindu, Búddà, Ṣáínà, àtàwọn ìlànà ìṣèwádíí ọkàn, àwòrán kan náà ń ṣe àyẹ̀wò nínu ìtẹ̀léra tirẹ̀. Yan ìtẹ̀léra tí o gbẹ́kẹ̀lé lórí ojú-ìtumọ̀.",
+    "tryTitle": "Ṣe Aláye Àlà Rẹ pẹ̀lú AI",
+    "tryLede": "Sọ àlà rẹ sọ̀rọ̀ àti gbì aláyè AI ti ara ẹni.",
+    "otherLangs": "Àwọn Èdè Mìíràn",
+    "otherSymbols": "Àwọn Àmì Àlà Mìíràn",
+    "reflectNote": "Ojú-ìwé yìí wà fún ìròyìn àti ìtẹ̀wọ́gbà nìkan. Kì í ṣe ìmọ̀ iṣẹ́ abẹ́, ìmọ̀ ọkàn, tàbí ìmọ̀ ìsìn, àti kò sì ń sọ àmọ̀ràn ìwàlá."
   }
 }

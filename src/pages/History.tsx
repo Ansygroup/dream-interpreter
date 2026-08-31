@@ -15,7 +15,7 @@ export default function History() {
     }
   }, []);
 
-  const remove = (id: number) => {
+  const remove = (id: number | string) => {
     const next = dreams.filter((d) => d.id !== id);
     setDreams(next);
     localStorage.setItem('dream-history', JSON.stringify(next));

@@ -15,7 +15,7 @@ export default function Saved() {
     }
   }, []);
 
-  const remove = (id: number) => {
+  const remove = (id: number | string) => {
     const next = dreams.filter((d) => d.id !== id);
     setDreams(next);
     localStorage.setItem('saved-dreams', JSON.stringify(next));

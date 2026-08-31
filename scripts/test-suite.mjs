@@ -263,5 +263,15 @@ const profileSrc2 = read('src/pages/Profile.tsx');
 ok('Profile uses connect() (bring-your-own Supabase)', /connect/.test(profileSrc2) && /supaUrl|supa-url/.test(profileSrc2));
 
 // ---------------------------------------------------------------------------
+// 16. Language auto-detection prefers browser language (user intent)
+// ---------------------------------------------------------------------------
+section('Language auto-detection (browser-first)');
+const i18nSrc = read('src/contexts/I18nContext.tsx');
+ok('detects navigator.language as primary signal', /resolveLanguageCode\(navigator\.language\)/.test(i18nSrc));
+ok('explicit saved choice is never overridden', /if \(saved\) return/.test(i18nSrc));
+ok('geo is a fallback, not a hard gate', /Fallback to geo|geo country language/.test(i18nSrc));
+ok('falls back to browser lang even if geo fails', /Network\/geo failed/.test(i18nSrc));
+
+// ---------------------------------------------------------------------------
 console.log(`\nSUITE RESULT: ${passed} passed, ${failed} failed`);
 process.exit(failed === 0 ? 0 : 1);

@@ -13,7 +13,8 @@
  *
  * Cron: `node scripts/auto-translate.mjs` every 30m (self-healing localization).
  */
-import { execSync, readFileSync, writeFileSync, existsSync, rmSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, rmSync } from 'node:fs';
+import { execSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 

@@ -26,28 +26,46 @@ const run = (cmd, opts = {}) => {
   catch (e) { return (e.stdout || '') + (e.stderr || ''); }
 };
 
-// 1. Pull production env (contains OPENROUTER_API_KEY). Never commit the file.
-const envFile = join(root, '.env.vercel.local');
-rmSync(envFile, { force: true });
-const pull = run('vercel env pull .env.vercel.local --environment production --yes 2>&1', { timeout: 90000 });
-if (!existsSync(envFile) || !/OPENROUTER_API_KEY=/.test(readFileSync(envFile, 'utf8'))) {
-  log('could not obtain OPENROUTER_API_KEY from Vercel env — will retry next tick.');
+// 1. Resolve OPENROUTER_API_KEY from one of:
+//    a) .dreamscope-secrets (operator-seeded literal key, gitignored) — headless-safe
+//    b) Vercel env pull (works in an interactive pty; may return an encrypted
+//       reference rather than the literal key, in which case we fall through)
+const secretsFile = join(root, '.dreamscope-secrets');
+let KEY = '';
+if (existsSync(secretsFile)) {
+  for (const line of readFileSync(secretsFile, 'utf8').split('\n')) {
+    const t = line.trim();
+    if (t.startsWith('OPENROUTER_API_KEY=')) { KEY = t.slice('OPENROUTER_API_KEY='.length).trim(); break; }
+  }
+}
+if (!KEY || KEY.startsWith('@')) { // '@...' = Vercel encrypted reference, not usable
+  const envFile = join(root, '.env.vercel.local');
   rmSync(envFile, { force: true });
+  run('vercel env pull .env.vercel.local --environment production --yes 2>&1', { timeout: 90000 });
+  if (existsSync(envFile)) {
+    const txt = readFileSync(envFile, 'utf8');
+    const m = txt.match(/OPENROUTER_API_KEY="?([^"\n]+)"?/);
+    if (m && !m[1].startsWith('@')) KEY = m[1];
+    rmSync(envFile, { force: true });
+  }
+}
+if (!KEY || KEY.startsWith('@')) {
+  log('no usable OPENROUTER_API_KEY (Vercel stores it encrypted; drop the literal key into .dreamscope-secrets). Retry next tick.');
   process.exit(0);
 }
-log('obtained OPENROUTER_API_KEY from Vercel production env.');
+log('obtained usable OPENROUTER_API_KEY.');
+process.env.OPENROUTER_API_KEY = KEY; // hand to translate-ui.mjs via env
 
 // 2. Translate all incomplete (non-en/ar) locales.
-//    --complete = only (re)translate partial files; default also covers missing.
+//    --all = force re-translate everything; default (= --complete) only partial files.
 const mode = process.argv.includes('--all') ? '--force' : '--complete';
 const out = run(`node scripts/translate-ui.mjs ${mode}`, { timeout: 600000 });
 console.log(out.split('\n').filter((l) => /→|✓|✗|Done|translated/.test(l)).join('\n'));
 
 // 3. Commit + push the freshly localized locales (if any changed).
-rmSync(envFile, { force: true }); // never leave the secret file on disk
 const status = run('git status --porcelain src/i18n/locales/');
 if (!status.trim()) { log('no locale changes — nothing to commit.'); process.exit(0); }
 run('git add src/i18n/locales/*.json');
-run('git commit -m "i18n: agent auto-localized UI strings (Vercel-pulled OpenRouter key)" || true');
+run('git commit -m "i18n: agent auto-localized UI strings (self-completing localization)" || true');
 run('git push origin master || true');
 log('✅ auto-localization pass complete.');

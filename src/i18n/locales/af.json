@@ -3,69 +3,257 @@
     "interpret": "Vertolk",
     "symbols": "Simbole",
     "about": "Oor ons",
-    "faq": "Gereelde vrae",
+    "faq": "Vrae",
     "history": "Geskiedenis",
     "saved": "Bewaar",
     "contact": "Kontak",
     "start": "Begin",
     "home": "Tuis",
-    "aiBlog": "AI-webjoernaal",
-    "ansyGroup": "Ansy Group",
+    "aiBlog": "KI Blog",
+    "ansyGroup": "Ansy Groep",
     "language": "Taal",
-    "searchLanguage": "Soek tale…",
-    "noLanguage": "Geen taal pas met jou soektog nie."
+    "searchLanguage": " Soek tale…",
+    "noLanguage": "Geen taal stem ooreen met jou soektog nie.",
+    "profile": "Profiel"
   },
   "footer": {
-    "tagline": "Free AI dream interpretation in 60 languages — every tradition, your lens.",
+    "tagline": "Gratis KI-droomvertolking in 60 tale — elke tradisie, jou lens.",
     "copyright": "© {year} Dreamscope"
   },
   "home": {
     "heroTitle": "Wat jou {accent} probeer sê",
-    "heroAccent": "onderbewuste",
-    "heroLede": "Ancient symbolism, modern psychology, and AI — combined into one clear reading. Describe a dream in your own words and get an interpretation through the tradition you trust.",
-    "interpretCta": "Vertolk 'n droom",
-    "browseCta": "Verken simbole",
+    "heroAccent": "onderbewussyn",
+    "heroLede": "Antieke simboliek, moderne sielkunde, en KI — saamgevoeg in een duidelike lesing. Beskryf 'n droom in jou eie woorde en kry 'n vertolking deur die tradisie wat jy vertrou.",
+    "interpretCta": "Vertolk 'n Droom",
+    "browseCta": "Blaai deur Simbole",
+    "statLanguages": "{n} tale",
+    "statSymbols": "{n} droomsimbole",
+    "statPrivateLine": "privaat op jou toestel",
+    "whyTitle": "'n Lesing wat jy werklik kan gebruik",
+    "whyLede": "Dreamscope karteer jou droom na sy simbole, en lees dit dan deur die tradisie wat jy vertrou — met sielkunde langs my, nie in plaas van nie.",
+    "feature1Title": "Simboliese Analise",
+    "feature1Body": "Elke droom word na sy kernsimbole gekarteer en deur eeue se vertolkings tradisie gevolg.",
+    "feature2Title": "60 Tale",
+    "feature2Body": "Vertolk en lees simbole in Engels, Arabies, Spaans, Chinees, Japannese, en 55 ander tale.",
+    "feature3Title": "Alle Tradisies",
+    "feature3Body": "Diepsielkunde en perspektiewe oor gelowe — een lesing, gesien deur jou lens.",
+    "feature4Title": "Bewaar & Privaat",
+    "feature4Body": "Jou drome bly by verstek op jou toestel. Meld aan om oor toestelle heen te sinkroniseer.",
+    "sampleTag": "Voorbeeldlesing",
+    "sampleJustNow": "pas nou",
+    "sampleDream": "\"Ek het 'n groen slang die huis deur die tuinhekkie sien verlaat.\"",
+    "sampleReading": "Slang dui transformasie aan — iets in jou lewe werp sy ou vel af. Die hekkie dui daarop dat 'n duidelike uitgang besig is om oop te gaan. In baie tradisies beteken 'n skadeloze slang wat die huis verlaat dikwels dat 'n ou kommer eindelik besig is om te wyk.",
+    "sampleTag1": "Transformasie",
+    "sampleTag2": "Loslating",
+    "sampleTag3": "Tradisie",
+    "sampleSaved": "Op jou toestel bewaar",
+    "symbolsTitle": "Elke simbool dra 'n betekenis",
+    "symbolsLede": "Van water tot vuur, verken die mees algemene droommotiewe en wat elk oor tradisies heen tendens om aan te dui.",
     "ctaTitle": "Beskryf jou droom",
-    "ctaButton": "Begin vertolk",
-    "feature3Body": "Depth psychology and perspectives across faiths — one reading, seen through your lens.",
-    "feature4Body": "Your dreams stay on your device by default. Sign in to sync across devices.",
-    "sampleReading": "Snakes mark transformation — something in your life is shedding its old skin. The gate suggests a clear exit is opening. In many traditions, a harmless snake leaving the home often means a lingering worry is finally moving on.",
-    "sampleTag3": "Tradition",
-    "ctaLede": "A few sentences is enough. The reading takes seconds and stays on your device by default."
+    "ctaLede": "'n Paar sinne is genoeg. Die lesing neem sekondes en bly by verstek op jou toestel.",
+    "ctaButton": "Begin Vertolk"
   },
   "interpret": {
     "title": "Beskryf jou droom",
+    "lede": "Skryf dit in jou eie woorde. Hoe meer detail, hoe skerper die lesing — omgewing, gevoelens, en enigiets ongewoons maak almal saak.",
     "language": "Taal",
     "yourDream": "Jou droom",
-    "placeholder": "Laasnag het ek gedroom dat ek deur 'n deur loop wat gedurig van vorm verander...",
-    "button": "Vertolk die droom"
-  },
-  "common": {
-    "interpretCta": "Vertolk 'n droom",
-    "backHome": "Terug huis toe"
+    "placeholder": "Verlede nag het ek gedroom ek stap deur 'n deur wat altyd van vorm verander...",
+    "loading": "Besig om te vertolk...",
+    "button": "Vertolk Droom",
+    "yourReading": "Jou Lesing",
+    "save": "Bewaar",
+    "saved": "Bewaar",
+    "savedConfirm": "Na jou joernaal bewaar. Vind dit enige tyd onder Bewaar.",
+    "unsaved": "Van Bewaar verwyder.",
+    "disclaimer": "Slegs besinning — nie mediese, sielkundige of godsdienstige advies nie. Dit voorspel nie die toekoms nie.",
+    "viewHistory": "Bekyk Geskiedenis",
+    "errorEmpty": "Beskryf asseblief eers jou droom.",
+    "errorFailed": "Die vertolking het misluk. Probeer asseblief weer.",
+    "errorNetwork": "Verbindingsfout. Probeer asseblief weer.",
+    "perspectiveLabel": "Lesing deur",
+    "perspNotice": "Elke tradisie word op sy eie getoon. Lesings is besinnend en waarskynlikheidsgebaseerd — nie voorspellings of uitsprake nie.",
+    "compareLabel": "Vergelyk alle tradisies",
+    "compareDesc": "Een droom, deur elke lens gelyktydig gelees — sien waar die tradisies saamstem en waar hulle verskil.",
+    "compareLoading": "Besig om deur elke tradisie te lees…",
+    "compareBack": "Terug na enkele lesing",
+    "compareSymbols": "Simbole",
+    "symbolsLabel": "Simbole in jou droom",
+    "feedbackQ": "Was hierdie lesing nuttig?",
+    "yes": "Ja, nuttig",
+    "no": "Nie regtig nie",
+    "thanks": "Dankie — jou terugvoer verbeter toekomstige lesings.",
+    "perspectiveDesc": "Een lesing wat die wysste drade van wêreldtradisies met diepsielkunde saamvleg.",
+    "moodLabel": "Hoe het die droom gevoel?",
+    "copy": "Kopieer",
+    "copied": "Gekopieer!",
+    "share": "Deel",
+    "example": "Probeer 'n voorbeeld",
+    "exampleDream": "Verlede nag het ek gedroom 'n wit duif land op my venster, en word toe 'n brief wat ek nie kon lees nie. Ek het kalm maar nuuskierig gevoel.",
+    "shortcutHint": "Druk ⌘/Ctrl + Enter om te vertolk",
+    "symbolsSection": "Simbole"
   },
   "history": {
     "title": "Droomgeskiedenis",
+    "lede": "Elke vertolking wat jy gegenereer het, gestoor op hierdie toestel.",
     "empty": "Nog geen drome vertolk nie."
   },
   "saved": {
     "title": "Bewaarde drome",
+    "lede": "Bewaar die vertolkings wat saak gemaak het. Hulle bly op hierdie toestel.",
     "empty": "Nog niks bewaar nie."
   },
+  "common": {
+    "interpretCta": "Vertolk 'n Droom",
+    "delete": "Verwyder",
+    "remove": "Verwyder",
+    "confirmRemove": "Verwyder?",
+    "backHome": "Keer terug Tuis"
+  },
   "symbols": {
-    "title": "{n} droomsimbole",
-    "search": "Soek 'n simbool…"
+    "title": "{n} Droomsimbole",
+    "lede": "Blaai deur elke simbool wat ons vertolk — gratis, in dosyne tale. Kies joune om die betekenis te lees.",
+    "search": " Soek 'n simbool…",
+    "noResults": "Geen simbool stem ooreen met jou soektog nie."
+  },
+  "about": {
+    "title": "'n Duidelike lesing, gewortel in tradisie",
+    "p1": "Dreamscope bestaan om droomvertolking toeganklik te maak in jou eie taal en kulturele konteks. Ons put uit 'n wye verskeidenheid vertolkingstradisies — godsdienstige en spirituele geleerdheid, kulturele folklore, en die simboliese raamwerke van moderne diepsielkunde — sodat jy jou droom kan lees deur die lens wat jy vertrou.",
+    "p2": "Elke lesing word gegenereer om jou te help besin — nie om die toekoms te voorspel nie. Simbole soos water, vuur, vlug, of 'n slang het duisende jare lank oor kulture heen betekenis gedra, en ons vertolkings volg daardie drade sodat jy kan vind wat met jou eie lewe resoneer.",
+    "p3": "Die diens is gratis, privaat volgens ontwerp, en beskikbaar in 60 tale. Jou droomteks word na ons vertolkingsdiens gestuur om 'n lesing te genereer, en word dan nie deur ons gestoor nie; jou lesings bly op jou toestel tensy jy aanmeld en sinkroniseer.",
+    "card1Title": "Baie tradisies",
+    "card1Body": "Islamitiese, Christelike, Joodse, Hindoe-, Boeddhistiese, Chinese, en sielkundige lense — kies die een wat jy vertrou.",
+    "card2Title": "60 tale",
+    "card2Body": "Van Arabies tot Japannese — vertolk in die taal waarin jy droom.",
+    "card3Title": "100% privaat",
+    "card3Body": "Jou lesings bly by verstek op jou toestel. Meld slegs aan om te sinkroniseer; verwyder enige tyd.",
+    "cta": "Begin Vertolk",
+    "traditionsTitle": "Elke tradisie, een droom",
+    "traditionsLede": "Kies die lens wat jou hart vertrou — elke lesing word gegenereer deur 'n toegewyde vertolkingskool."
+  },
+  "contact": {
+    "title": "Kom in verbinding",
+    "lede": "Vrae, regstellings, of vennootskap-idees? Bereik die Dreamscope-span per e-pos.",
+    "email": "E-pos",
+    "disclaimer": "Dreamscope bied slegs besinning en vermaak. Vertolkings is nie mediese, sielkundige of godsdienstige advies nie. Indien jy ondersteuning benodig, raadpleeg asseblief 'n gekwalifiseerde professionele persoon.",
+    "back": "Terug na Vertolker"
+  },
+  "faq": {
+    "title": "Gereelde vrae",
+    "q1": "Hoe vertolk Dreamscope drome?",
+    "a1": "Dreamscope vermeng droomgeleerdheid van baie kulture en gelowe — insluitend Islamitiese, Christelike, Joodse, Hindoe-, Boeddhistiese, en Chinese tradisies — met moderne diepsielkunde. Jy beskryf 'n droom in jou eie woorde en ontvang 'n lesing wat sy simbole na hul algemene betekenisse oor kulture heen karteer.",
+    "q2": "Is my droomdata privaat?",
+    "a2": "Ja. Jou drome word slegs in jou blaaier se plaaslike berging op jou toestel gestoor. Niks word na 'n bediener gestuur vir berging nie, en jy kan jou geskiedenis enige tyd uitvee.",
+    "q3": "In watter tale kan ek drome vertolk?",
+    "a3": "Dreamscope ondersteun 60 tale insluitend Engels, Arabies, Spaans, Frans, Duits, Chinees, Japannese, Koreaans, Turks, Portugees, Russies, Hindi, en meer. Die lesing volg die taal wat jy kies.",
+    "q4": "Vervang die vertolkings professionele advies?",
+    "a4": "Nee. Droomlesings is vir besinning en vermaak. Hulle is nie mediese, sielkundige of godsdienstige leiding nie. Indien jy sukkel, praat asseblief met 'n gekwalifiseerde professionele persoon.",
+    "q5": "Hoeveel droomsimbole word gedek?",
+    "a5": "Dreamscope het toegewyde bladsye vir 146 algemene simbole — slang, water, vlieg, vuur, swangerskap, geld, en vele meer — elk beskikbaar in verskeie tale met langvraag vraagvariasies."
   },
   "notfound": {
     "title": "Hierdie droom het opgelos",
-    "cta": "Terug huis toe"
+    "lede": "Die bladsy waarna jy gesoek het, is nie hier nie. Kom ons kry jou terug na vertolking.",
+    "cta": "Keer terug Tuis"
   },
-  "about": {
-    "p1": "Dreamscope exists to make dream interpretation accessible in your own language and cultural context. We draw on a wide range of interpretive traditions — religious and spiritual scholarship, cultural folklore, and the symbolic frameworks of modern depth psychology — so you can read your dream through the lens you trust.",
-    "card1Title": "Many traditions",
-    "card1Body": "Islamic, Christian, Jewish, Hindu, Buddhist, Chinese, and psychological lenses — pick the one you trust."
+  "perspectives": {
+    "general": {
+      "name": "Universeel"
+    },
+    "islamic": {
+      "name": "Ibn Sirin (Islamities)"
+    },
+    "christian": {
+      "name": "Christelik"
+    },
+    "jewish": {
+      "name": "Joods"
+    },
+    "hindu": {
+      "name": "Hindoe"
+    },
+    "buddhist": {
+      "name": "Boeddhisties"
+    },
+    "psychology": {
+      "name": "Sielkunde (Jung)"
+    },
+    "chinese": {
+      "name": "Zhou Gong (Chinees)"
+    }
   },
-  "faq": {
-    "a1": "Dreamscope blends dream scholarship from many cultures and faiths — including Islamic, Christian, Jewish, Hindu, Buddhist, and Chinese traditions — with modern depth psychology. You describe a dream in your own words and receive a reading that maps its symbols to their common meanings across cultures."
+  "daily": {
+    "tag": "Droom van die dag"
+  },
+  "profile": {
+    "title": "Jou ruimte",
+    "cloudOff": "Jou droomteks word na ons vertolkingsdiens gestuur om 'n lesing te genereer, en word dan nie deur ons gestoor nie. Lesings word op jou toestel bewaar tensy jy aanmeld en kies om te sinkroniseer. Ons verkoop of profileer jou data nooit nie.",
+    "dataNote": "Waar jou data woon: op jou toestel by verstek. Wanneer jy aanmeld, kan jou joernaal na jou privaat rekening sinkroniseer; jy kan dit enige tyd uitvee.",
+    "signInLede": "Meld aan om jou droomjoernaal oor al jou toestelle heen te hou. Jou gasgeskiedenis beweeg outomaties saam met jou.",
+    "emailLabel": "E-pos",
+    "magicLink": "Stuur 'n aanmeldskakel vir my",
+    "google": "Gaan voort met Google",
+    "checkEmail": "Kyk in jou inkassie — 'n aanmeldskakel wag op jou.",
+    "invalidEmail": "Voer asseblief 'n geldige e-posadres in.",
+    "signInError": "Ons kon jou nie aanmeld nie. Probeer asseblief weer of gebruik die e-posskakel.",
+    "googleNotEnabled": "Google-aanmelding is nog nie op hierdie projek geaktiveer nie. Die webwerf-eienaar moet 'n Google OAuth-kliënt in Supabase koppel.",
+    "guestNote": "Geen wagwoord, geen dophouing — net 'n skakel. Gasmodus met op-toestel-berging bly ten volle beskikbaar.",
+    "member": "Lid",
+    "migrated": "Migreer {n} drome van hierdie toestel na jou joernaal.",
+    "signOut": "Meld af",
+    "navLabel": "Profiel",
+    "lede": "Alles wat Dreamscope van jou reis weet — gestoor op jou toestel, slegs joune.",
+    "yourState": "Jou huidige toestand",
+    "statDreams": "Drome vertolk",
+    "statSaved": "Bewaarde lesings",
+    "statStreak": "Dag reeks",
+    "statTopSymbol": "Top simbool",
+    "emptyState": "Nog geen drome nie — jou eerste lesing sal hierdie bladsy laat leef.",
+    "symbolsYouMeet": "Simbole wat jy bly ontmoet",
+    "noneYet": "—",
+    "lastReading": "Laaste lesing",
+    "languagesUsed": "Tale gebruik",
+    "perspectivesUsed": "Tradisies gebruik",
+    "cloudTitle": "Oor jou toestelle heen",
+    "connectTitle": "Koppel jou Supabase-projek",
+    "connectUrlLabel": "Projek-URL",
+    "connectKeyLabel": "Anon openbare sleutel",
+    "connectCta": "Koppel",
+    "connected": "Gekoppel — jy kan nou aanmeld en jou joernaal sinkroniseer.",
+    "connectError": "Kon nie koppel nie. Gaan die URL en anon-sleutel na.",
+    "disconnect": "Ontkoppel",
+    "privacyNote": "Jou drome word op jou toestel gestoor — nooit verkoop, nooit geprofileer nie.",
+    "moodPattern": "Gemoedspatroon",
+    "autoSetupTitle": "Een-bevel opstelling",
+    "autoSetupBody": "Nog geen projek nie? Voer die bootstrap-skrip een keer uit: dit skep 'n Supabase-projek, pas die databasis-skema toe, en druk jou URL + anon-sleutel om hierbo te plak. Google-aanmelding benodig 'n Google Cloud OAuth-kliënt (sien die skrip).",
+    "autoSetupCmd": "SUPABASE_ACCESS_TOKEN=xxx node scripts/setup-supabase.mjs"
+  },
+  "perspDesc": {
+    "general": "Een lesing wat die wysste drade van wêreldtradisies met diepsielkunde saamvleg.",
+    "islamic": "Die klassieke skool van Ibn Sirin — simbolies, wettig, en sielgerig.",
+    "christian": "Droomlesing in die nalatenskap van Josef en Daniël, met skriftuurlike simboliek.",
+    "jewish": "Torah- en Talmudiese droomwysheid — 'n boodskap wat op wyse vertolking wag.",
+    "hindu": "Vediese simboliek, karma, en die innerlike landskappe van die gees.",
+    "buddhist": "Onbestendigheid en bewuste aandag — observeer die droom sonder om vas te gryp.",
+    "psychology": "Jung se argetipes en die skaduwee — wat jou psige verwerk.",
+    "chinese": "Zhou Gong se klassieke woordeboek — balans van jin, jang, en die vyf elemente."
+  },
+  "moods": {
+    "peace": "Vredig",
+    "anxiety": "Angstig",
+    "hope": "Hoopvol",
+    "sadness": "Hartseer",
+    "anger": "Kwaad",
+    "confusion": "Verward"
+  },
+  "seo": {
+    "dreamInterpretation": "Droomvertolking",
+    "traditionsTitle": "Oor die tradisies heen",
+    "traditionsBody": "'n Simbool kan verskillende dinge in verskillende kulture beteken. In Islamitiese, Christelike, Joodse, Hindoe-, Boeddhistiese, Chinese, en sielkundige tradisies word dieselfde beeld deur sy eie lens gelees. Kies die lens wat jy vertrou op die vertolkingsbladsy.",
+    "tryTitle": "Vertolk Jou Drome met KI",
+    "tryLede": "Deel jou droom en kry 'n persoonlike KI-vertolking.",
+    "otherLangs": "Ander Tale",
+    "otherSymbols": "Ander Droomsimbole",
+    "reflectNote": "Hierdie bladsy is slegs vir besinning en vermaak. Dit is nie mediese, sielkundige of godsdienstige advies nie, en dit voorspel nie die toekoms nie."
   }
 }

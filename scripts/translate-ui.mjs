@@ -101,7 +101,7 @@ Rules:
 - Natural, warm, respectful product copy — not word-for-word.
 - Keep every {placeholder} like {accent}, {n}, {year} EXACTLY as-is.
 - Keep the brand name "Dreamscope" untranslated.
-- Keep "Ibn Sirin" rendered appropriately for the language (e.g. ابن سيرين in Arabic).
+- Dreamscope is a GLOBAL, MULTI-FAITH platform: do NOT frame any single tradition (e.g. Ibn Sirin / Islamic) as the foundation or center of the product. Translate "Ibn Sirin" only where it NAMES the Islamic perspective school (e.g. the perspDesc.islamic line), rendered appropriately for the language (ابن سيرين in Arabic). Everywhere else, use neutral phrasing like "your chosen tradition" / "many cultures and faiths".
 - Dreams/spiritual content: neutral and inclusive tone.
 - Respond with ONLY a valid JSON object mapping the SAME keys to the ${english} translations. No markdown fences, no commentary.
 

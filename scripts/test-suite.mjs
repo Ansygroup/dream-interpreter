@@ -129,5 +129,28 @@ if (existsSync(join(ROOT, 'dist/assets'))) {
 }
 
 // ---------------------------------------------------------------------------
+// 6. No platform-centric religious bias (decenter any single tradition)
+// ---------------------------------------------------------------------------
+section('No single-tradition bias (global platform)');
+const enTag = get(en, 'footer.tagline') || '';
+const enHero = get(en, 'home.heroLede') || '';
+const enFeat3 = get(en, 'home.feature3Body') || '';
+const enReading = get(en, 'home.sampleReading') || '';
+const enFaqA1 = get(en, 'faq.a1') || '';
+// Ibn Sirin is allowed ONLY as the NAMED islamic school (perspDesc.islamic / perspectives.islamic name),
+// NOT as the platform's foundation in tagline/hero/feature3/sample/FAQ.
+ok('en tagline not Ibn-Sirin-centric', !/ibn sirin/i.test(enTag));
+ok('en hero not Ibn-Sirin-centric', !/ibn sirin/i.test(enHero));
+ok('en feature3 not Ibn-Sirin-centric', !/ibn sirin/i.test(enFeat3));
+ok('en sampleReading not Ibn-Sirin-centric', !/ibn sirin/i.test(enReading));
+ok('en faq.a1 lists multiple traditions', /islamic|christian|jewish|hindu|buddhist|chinese/i.test(enFaqA1) && !/^.*ibn sirin.*foundation/i.test(enFaqA1));
+ok('ar tagline not ابن سيرين-centric', !/ابن سيرين/.test(get(ar, 'footer.tagline') || ''));
+ok('ar hero not ابن سيرين-centric', !/ابن سيرين/.test(get(ar, 'home.heroLede') || ''));
+ok('ar feature3 not ابن سيرين-centric', !/ابن سيرين/.test(get(ar, 'home.feature3Body') || ''));
+ok('ar sampleReading not ابن سيرين-centric', !/ابن سيرين/.test(get(ar, 'home.sampleReading') || ''));
+// The islamic perspective NAME itself may keep Ibn Sirin (it names a real school)
+ok('islamic perspective name keeps Ibn Sirin (legit)', /ibn sirin/i.test(get(en, 'perspectives.islamic.name') || ''));
+
+// ---------------------------------------------------------------------------
 console.log(`\nSUITE RESULT: ${passed} passed, ${failed} failed`);
 process.exit(failed === 0 ? 0 : 1);

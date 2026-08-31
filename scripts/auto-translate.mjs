@@ -60,9 +60,16 @@ if (!usable(KEY)) { // fall back to Vercel env pull
 //    high-quality LLM translations with ZERO operator secrets). Falls back
 //    to a local OpenRouter call only if the live endpoint is unreachable.
 const BASE = process.env.BASE || 'https://dream-interpreter-alpha-ruddy.vercel.app';
-const probe = (() => {
-  try { return run(`curl -s -o /dev/null -w "%{http_code}" ${BASE}/api/translate -X POST -H "Content-Type: application/json" -d '{"code":"en","source":{"footer":{"tagline":"x"}}}', { timeout: 15000 }); } catch { return '000'; }
-})();
+let probe = '000';
+try {
+  const res = await fetch(`${BASE}/api/translate`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ code: 'en', source: { footer: { tagline: 'x' } } }),
+    signal: AbortSignal.timeout(15000),
+  });
+  probe = String(res.status);
+} catch { probe = '000'; }
 const liveReachable = probe.startsWith('2') || probe === '400'; // 400 means endpoint alive, rejected our tiny payload — still usable
 if (liveReachable) {
   log(`using LIVE /api/translate (no operator secret needed; engine runs on Vercel). probe=${probe}.`);

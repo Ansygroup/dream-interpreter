@@ -29,7 +29,7 @@ const run = (cmd, opts = {}) => {
 // 1. Pull production env (contains OPENROUTER_API_KEY). Never commit the file.
 const envFile = join(root, '.env.vercel.local');
 rmSync(envFile, { force: true });
-const pull = run('vercel env pull .env.vercel.local --environment production 2>&1', { timeout: 90000 });
+const pull = run('vercel env pull .env.vercel.local --environment production --yes 2>&1', { timeout: 90000 });
 if (!existsSync(envFile) || !/OPENROUTER_API_KEY=/.test(readFileSync(envFile, 'utf8'))) {
   log('could not obtain OPENROUTER_API_KEY from Vercel env — will retry next tick.');
   rmSync(envFile, { force: true });

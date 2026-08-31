@@ -1,71 +1,259 @@
 {
   "nav": {
-    "interpret": "Yoʻsh",
-    "symbols": "Belgilar",
-    "about": "Biz haqimizda",
-    "faq": "Savollar",
+    "interpret": "Talqin qilish",
+    "symbols": "Ramzlar",
+    "about": "Haqida",
+    "faq": "FAQ",
     "history": "Tarix",
-    "saved": "Saqlanganlar",
+    "saved": "Saqlangan",
     "contact": "Aloqa",
     "start": "Boshlash",
-    "home": "Asosiy",
-    "aiBlog": "AI blog",
+    "home": "Bosh sahifa",
+    "aiBlog": "AI Blog",
     "ansyGroup": "Ansy Group",
     "language": "Til",
-    "searchLanguage": "Tillarni qidirish…",
-    "noLanguage": "Qidiruvingizga mos til topilmadi."
+    "searchLanguage": "Tillararni qidirish…",
+    "noLanguage": "Qidiruvga mos til topilmadi.",
+    "profile": "Profil"
   },
   "footer": {
-    "tagline": "Free AI dream interpretation in 60 languages — every tradition, your lens.",
+    "tagline": "60 tilda bepul AI tush ta'biri — har bir anʼana, sizning nigohingiz.",
     "copyright": "© {year} Dreamscope"
   },
   "home": {
-    "heroTitle": "Sizning {accent} sizga nima demoqchi",
-    "heroAccent": "onsiz bilimingiz",
-    "heroLede": "Ancient symbolism, modern psychology, and AI — combined into one clear reading. Describe a dream in your own words and get an interpretation through the tradition you trust.",
-    "interpretCta": "Tush tabirini bering",
-    "browseCta": "Ramzlarni ko'rish",
-    "ctaTitle": "Tushingizni tasvirlang",
-    "ctaButton": "Tabirni boshlash",
-    "feature3Body": "Depth psychology and perspectives across faiths — one reading, seen through your lens.",
-    "feature4Body": "Your dreams stay on your device by default. Sign in to sync across devices.",
-    "sampleReading": "Snakes mark transformation — something in your life is shedding its old skin. The gate suggests a clear exit is opening. In many traditions, a harmless snake leaving the home often means a lingering worry is finally moving on.",
-    "sampleTag3": "Tradition",
-    "ctaLede": "A few sentences is enough. The reading takes seconds and stays on your device by default."
+    "heroTitle": "Sizning {accent} nimani aytmoqchi",
+    "heroAccent": "ong osti",
+    "heroLede": "Qadimiy ramziy maʼno, zamonaviy psixologiya va sunʼiy intellekt — barchasi bitta aniq ta'birda. Tushingizni o'z so'zlaringiz bilan tasvirlab, siz ishonadigan anʼana orqali ta'bir oling.",
+    "interpretCta": "Tushni talqin qilish",
+    "browseCta": "Belgilar bilan tanishish",
+    "statLanguages": "{n} tilda",
+    "statSymbols": "{n} ta tush belgisi",
+    "statPrivateLine": "qurilmangizda xususiy",
+    "whyTitle": "Sizga haqiqatan foyda beradigan talqin",
+    "whyLede": "Dreamscope tushingizni uning belgilariga bog'laydi, so'ng siz ishongan an'anagiz orqali o'qiydi — psixologiya yonida bo'ladi, o'rnida emas.",
+    "feature1Title": "Ramziy tahlil",
+    "feature1Body": "Har bir tush asosiy belgilariga ajratiladi va asrlar davom etgan talqin an'anasi orqali izlanadi.",
+    "feature2Title": "60 tilda",
+    "feature2Body": "Ramzlarni ingliz, arab, ispan, xitoy, yapon va yana 55 tilda talqin qiling va o'qing.",
+    "feature3Title": "Barcha an'analar",
+    "feature3Body": "Chuqur psixologiya va turfa e'tiqodlar nuqtai nazari — bir talqin, sizning ko'zlaringiz orqali.",
+    "feature4Title": "Saqlangan va maxfiy",
+    "feature4Body": "Tushlaringiz odatda qurilmangizda saqlanadi. Qurilmalar orasida sinxronlash uchun tizimga kiring.",
+    "sampleTag": "Namuna talqin",
+    "sampleJustNow": "hozirgina",
+    "sampleDream": "\"Yashil ilonni uydan bog' darvozasidan chiqib ketayotganini ko'rdim.\"",
+    "sampleReading": "Ilonlar o'zgarishni anglatadi — hayotingizda bir narsa eski po'stini tashlayapti. Darvoza aniq chiqish yo'li ochilayotganini bildiradi. Ko'p an'analarda zararsiz ilonning uydan chiqishi uzoq vaqtdan beri bezovta qilgan tashvishingiz nihoyat barham topayotganini anglatadi.",
+    "sampleTag1": "O'zgarish",
+    "sampleTag2": "Chiqarish",
+    "sampleTag3": "Anʼana",
+    "sampleSaved": "Qurilmangizga saqlandi",
+    "symbolsTitle": "Har bir ramziy maʼno kasb etadi",
+    "symbolsLede": "Suvdan olovgacha — eng keng tarqalgan tush timsollarini va ularning turli anʼanalardagi maʼnosini kashf eting.",
+    "ctaTitle": "Tushingizni tasvirlab bering",
+    "ctaLede": "Bir nechta gap yetarli. Talqin bir necha soniyada tayyor boʻladi va odatda qurilmangizda saqlanadi.",
+    "ctaButton": "Talqinni boshlash"
   },
   "interpret": {
-    "title": "Tushingizni tasvirlang",
+    "title": "Tushingizni tasvirlab bering",
+    "lede": "Oʻz soʻzlaringiz bilan yozing. Tafsilot qanchalik koʻp boʻlsa, talqin shunchalik aniq boʻladi — joy, his-tuygʻular va har qanday gʻalati narsa hammasi muhim.",
     "language": "Til",
-    "yourDream": "Sizning tushingiz",
-    "placeholder": "Kechqurun doim shaklini o'zgartirib turgan bir eshikdan o'tayotganimni ko'rdim...",
-    "button": "Tush tabirini bering"
-  },
-  "common": {
-    "interpretCta": "Tush tabirini bering",
-    "backHome": "Asosiy sahifaga"
+    "yourDream": "Tushingiz",
+    "placeholder": "Kecha tushimda shaklini doimo o'zgartirib turadigan bir eshikdan yurib o'tayotganimni ko'rdim...",
+    "loading": "Talqin qilinmoqda...",
+    "button": "Tushni talqin qilish",
+    "yourReading": "Sizning talqiningiz",
+    "save": "Saqlash",
+    "saved": "Saqlandi",
+    "savedConfirm": "Kundakchingizga saqlandi. Uni istalgan vaqtda \"Saqlanganlar\" bo'limidan topishingiz mumkin.",
+    "unsaved": "Saqlanganlardan olib tashlandi.",
+    "disclaimer": "Faqat o'z mulohazasi — tibbiy, psixologik yoki diniy maslahat emas. Bu kelajakni bashorat qilmaydi.",
+    "viewHistory": "Tarixni ko'rish",
+    "errorEmpty": "Avval tushingizni tasvirlab bering.",
+    "errorFailed": "Talqin qilish amalga oshmadi. Iltimos, qayta urinib ko'ring.",
+    "errorNetwork": "Ulanish xatosi. Iltimos, qayta urinib ko'ring.",
+    "perspectiveLabel": "Nuqtai nazardan o'qish",
+    "perspNotice": "Har bir an'ana alohida ko'rsatiladi. O'qishlar mulohaza va ehtimolga asoslangan — bashorat yoki hukm emas.",
+    "compareLabel": "Barcha an'analarni solishtirish",
+    "compareDesc": "Bitta tush, bir vaqtning o'zida har bir nuqtai nazardan o'qilgan — an'analar qayerda mos kelishi va qayerda farq qilishini ko'ring.",
+    "compareLoading": "Har bir an'ana orqali o'qilmoqda…",
+    "compareBack": "Yagona ta'birga qaytish",
+    "compareSymbols": "Belgilar",
+    "symbolsLabel": "Tushingizdagi belgilar",
+    "feedbackQ": "Bu ta'bir foydali bo'ldimi?",
+    "yes": "Ha, foydali bo'ldi",
+    "no": "Unchalik emas",
+    "thanks": "Rahmat — fikr-mulohazangiz kelajakdagi ta'birlarni yaxshilaydi.",
+    "perspectiveDesc": "Jahon an'analarining eng donishmand g'oyalarini chuqur psixologiya bilan birlashtirgan yagona ta'bir.",
+    "moodLabel": "Tush qanday his qildirdi?",
+    "copy": "Nusxa olish",
+    "copied": "Nusxalandi!",
+    "share": "Ulashish",
+    "example": "Misolni sinab ko'ring",
+    "exampleDream": "Tunshamol uyimning derazasiga oq kabutar qo'ndi, keyin u o'qiy olmaydigan xatga aylanib qoldi. Men tinch, ammo qiziquvchan edim.",
+    "shortcutHint": "Talqin qilish uchun ⌘/Ctrl + Enter ni bosing",
+    "symbolsSection": "Belgilar"
   },
   "history": {
     "title": "Tushlar tarixi",
-    "empty": "Hali tabir qilingan tush yo'q."
+    "lede": "Siz yaratgan har bir talqin, ushbu qurilmada saqlanadi.",
+    "empty": "Hozircha talqin qilingan tushlar yo'q."
   },
   "saved": {
     "title": "Saqlangan tushlar",
-    "empty": "Hali hech narsa saqlanmagan."
+    "lede": "Eng muhim ta'birlarni saqlang. Ular shu qurilmada saqlanib qoladi.",
+    "empty": "Hozircha hech narsa saqlanmagan."
+  },
+  "common": {
+    "interpretCta": "Tushni ta'birla",
+    "delete": "O'chirish",
+    "remove": "Olib tashlash",
+    "confirmRemove": "Olib tashlashni xohlaysizmi?",
+    "backHome": "Bosh sahifaga qaytish"
   },
   "symbols": {
-    "title": "{n} tush ramzi",
-    "search": "Ramzni qidirish…"
-  },
-  "notfound": {
-    "title": "Bu tush erib ketdi",
-    "cta": "Asosiy sahifaga"
+    "title": "{n} ta tush belgilari",
+    "lede": "Biz ta'bilaydigan barcha belgilarni ko'rib chiqing — bepul, o'nlab tillarda. Ma'nosini o'qish uchun tilingizni tanlang.",
+    "search": "Belgi bo'yicha qidirish…",
+    "noResults": "Hech qanday belgi sizning qidiruvingizga mos kelmadi."
   },
   "about": {
-    "p1": "Dreamscope exists to make dream interpretation accessible in your own language and cultural context. We draw on a wide range of interpretive traditions — religious and spiritual scholarship, cultural folklore, and the symbolic frameworks of modern depth psychology — so you can read your dream through the lens you trust.",
-    "card1Title": "Many traditions",
-    "card1Body": "Islamic, Christian, Jewish, Hindu, Buddhist, Chinese, and psychological lenses — pick the one you trust."
+    "title": "An'anaga asoslangan, tushunarli talqin",
+    "p1": "Dreamscope tushlarni talqin qilishni sizning ona tilingiz va madaniy kontekstingizda qulay qilish uchun yaratilgan. Biz talqin qilishning keng koordinadagi an'analariga — diniy va ruhiy ilmiy merosga, madaniy xalq og'zaki ijodiga va zamonaviy chuqur psixologiyaning ramziy tizimlariga tayanamiz — shunda siz o'zingiz ishonadigan nuqtai nazardan tushingizni o'qiy olishasiz.",
+    "p2": "Har bir talqin sizga fikr yuritishga yordam berish uchun yaratilgan — kelajakni bashorat qilish uchun emas. Suv, olov, parvoz yoki ilon kabi ramziy obrazlar ming yillar davomida turli madaniyatlarda ma'no kasb etgan va bizning talqinlarimiz ana shu ipni topishga yordam beradi, shunda siz o'z hayotingiz bilan rezonans topa olasiz.",
+    "p3": "Xizmat bepul, maxfiylikka asoslangan va 60 tilda mavjud. Sizning tush matningiz talqin yaratish uchun xizmatimizga yuboriladi, so'ngra biz tomonidan saqlanmaydi; talqinlaringiz sizning qurilmangizda qoladi, agar tizimga kirib sinxronlashtirmasangiz.",
+    "card1Title": "Ko'p an'analar",
+    "card1Body": "Islom, Xristianlik, Iudaizm, Hinduizm, Buddizm, Xitoy va psixologik nuqtai nazar — siz ishonadiganini tanlang.",
+    "card2Title": "60 til",
+    "card2Body": "Arab tilidan yapon tiligacha — tush ko'rgan tilingizda talqin qiling.",
+    "card3Title": "100% maxfiy",
+    "card3Body": "Sizning talqinlaringiz odatda faqat qurilmangizda saqlanadi. Sinxronlash uchun tizimga kiring; istalgan vaqtda o'chirib tashlashingiz mumkin.",
+    "cta": "Talqinni boshlash",
+    "traditionsTitle": "Har bir an'ana, bitta tush",
+    "traditionsLede": "Yuragingiz ishongan yo'nalishni tanlang — har bir talqin maxsus talqin maktabi orqali yaratiladi."
+  },
+  "contact": {
+    "title": "Bog'lanish",
+    "lede": "Savollar, tuzatishlar yoki hamkorlik g'oyalari bormi? Dreamscope jamoasi bilan elektron pochta orqali bog'laning.",
+    "email": "Elektron pochta",
+    "disclaimer": "Dreamscope faqat mulohaza va ko'ngil ochar maqsadlarda xizmat qat. Talqinlar tibbiy, psixologik yoki diniy maslahat emas. Agar sizga yordam kerak bo'lsa, iltimos, malakali mutaxassisga murojaat qiling.",
+    "back": "Talqinga qaytish"
   },
   "faq": {
-    "a1": "Dreamscope blends dream scholarship from many cultures and faiths — including Islamic, Christian, Jewish, Hindu, Buddhist, and Chinese traditions — with modern depth psychology. You describe a dream in your own words and receive a reading that maps its symbols to their common meanings across cultures."
+    "title": "Ko'p beriladigan savollar",
+    "q1": "Dreamscope tushlarni qanday talqin qiladi?",
+    "a1": "Dreamscope ko'plab madaniyatlar va e'tiqodlardagi tush ilmini — jumladan, islom, nasroniy, yahudiy, hindu, buddizm va xitoy an'analarini — zamonaviy chuqur psixologiya bilan uyg'unlashtiradi. Siz tushingizni o'z so'zlaringizda tasvirlaysiz va biz sizga uning ramzlarini madaniyatlar bo'ylab umumiy ma'nolarga bog'lovchi talqinni taqdim etamiz.",
+    "q2": "Mening tush ma'lumotlarim maxfiyimi?",
+    "a2": "Ha. Tushlaringiz faqat sizning qurilmangizdagi brauzerning mahalliy xotirasida saqlanadi. Hech narsa serverga saqlash uchun yuborilmaydi va tarixingizni istalgan vaqtda o'chirib tashlashingiz mumkin.",
+    "q3": "Qaysi tillarda tush talqin qilish mumkin?",
+    "a3": "Dreamscope 60 dan ortiq tillarni qo'llab-quvvatlaydi, jumladan ingliz, arab, ispan, fransuz, nemis, xitoy, yapon, koreys, turk, portugal, rus, hind va boshqa tillar. Talqin siz tanlagan tilda beriladi.",
+    "q4": "Talqinlar profesyonel maslahat o'rnini bosa oladimi?",
+    "a4": "Yo'q. Tush talqinlari mulohaza va ko'ngil ochar maqsadga xizmat qiladi. Ular tibbiy, psixologik yoki diniy yo'riqnomadir. Agar siz qiynalayotgan bo'lsangiz, iltimos, malakali mutaxassis bilan gaplashing.",
+    "q5": "Nechta tush ramzlari qamrab olingan?",
+    "a5": "Dreamscope'da 146 ta keng tarqalgan ramzlar — ilon, suv, uchish, olov, homiladorlik, pul va boshqa ko'plab ramzlar uchun alohida sahifalar mavjud bo'lib, har biri ko'plab tillarda batafsil savol variantlari bilan taqdim etilgan."
+  },
+  "notfound": {
+    "title": "Bu tush tarqaldi",
+    "lede": "Siz qidirayotgan sahifa bu yerda yo'q. Keling, tushlaringizni talqin qilishda davom eting.",
+    "cta": "Bosh sahifaga qaytish"
+  },
+  "perspectives": {
+    "general": {
+      "name": "Universal"
+    },
+    "islamic": {
+      "name": "Ibn Sirin (Islom)"
+    },
+    "christian": {
+      "name": "Nasroniy"
+    },
+    "jewish": {
+      "name": "Yahudiy"
+    },
+    "hindu": {
+      "name": "Hindu"
+    },
+    "buddhist": {
+      "name": "Buddizm"
+    },
+    "psychology": {
+      "name": "Psixologiya (Yung)"
+    },
+    "chinese": {
+      "name": "Zhou Gong (Chinese)"
+    }
+  },
+  "daily": {
+    "tag": "Bugungi tush"
+  },
+  "profile": {
+    "title": "Sizning makoningiz",
+    "cloudOff": "Tush matningiz tavsif yaratish uchun talqin xizmatimizga yuboriladi va biz tomonimizdan saqlanmaydi. Talqinlar tizimga kirib, sinxronlashni tanlamasangiz, faqat qurilmangizda saqlanadi. Biz sizning ma'lumotlaringizni hech qachon sotmaysiz yoki profilingizni yuritmaymiz.",
+    "dataNote": "Maʼlumotlaringiz qayerda: odatda, qurilmangizda. Tizimga kirganingizdan soʻng, kundaligingiz shaxsiy hisobingizga sinxronlanishi mumkin; uni istalgan vaqtda oʻchirib tashlashingiz mumkin.",
+    "signInLede": "Tizimga kirib, tushlar daftaringizni barcha qurilmalarda saqlang. Mehmon sifatidagi tarixingiz avtomatik ravishda siz bilan birga harakatlanadi.",
+    "emailLabel": "Elektron pochta",
+    "magicLink": "Men bilan tizimga kirish havolasini yuboring",
+    "google": "Google orqali davom etish",
+    "checkEmail": "Elektron pochtangizni tekshiring — u yerda tizimga kirish havolasi sizni kutmoqda.",
+    "invalidEmail": "Iltimos, to'g'ri email manzilini kiriting.",
+    "signInError": "Sizni tizimga kiritib bo'lmadi. Iltimos, qayta urinib ko'ring yoki email havolasidan foydalaning.",
+    "googleNotEnabled": "Ushbu loyihada Google orqali kirish hozircha yoqilmagan. Sayt egasi Supabase'da Google OAuth mijozini ulashi kerak.",
+    "guestNote": "Na parol, na kuzatuv — faqat havola. Mehmon rejimi qurilmangizda saqlash bilan to'liq mavjud.",
+    "member": "A'zo",
+    "migrated": "Ushbu qurilma dan {n} ta tushni jurnalingizga ko'chirdi.",
+    "signOut": "Chiqish",
+    "navLabel": "Profil",
+    "lede": "Dreamscope sizning sayohatingiz haqida bilgan hamma narsa — qurilmangizda saqlanadi, faqat sizniki.",
+    "yourState": "Hozirgi holatingiz",
+    "statDreams": "Ta'bir qilingan tushlar",
+    "statSaved": "Saqlangan ta'birlar",
+    "statStreak": "Kunlik ketma-ketlik",
+    "statTopSymbol": "Asosiy ramz",
+    "emptyState": "Hozircha tushlar yo'q — birinchi ta'biringiz bu sahifani yoritadi.",
+    "symbolsYouMeet": "Siz bilan tez-tez uchraydigan ramzlar",
+    "noneYet": "—",
+    "lastReading": "Oxirgi ta'bir",
+    "languagesUsed": "Foydalanilgan tillar",
+    "perspectivesUsed": "Foydalanilgan an'analar",
+    "cloudTitle": "Barcha qurilmalaringiz bo'ylab",
+    "connectTitle": "Supabase loyihangizni ulash",
+    "connectUrlLabel": "Loyiha URL manzili",
+    "connectKeyLabel": "Anonim ochiq kalit",
+    "connectCta": "Ulash",
+    "connected": "Ulandi — endi tizimga kirib, kundaligingizni sinxronlash mumkin.",
+    "connectError": "Ulab bo'lmadi. URL manzil va anonim kalitni tekshiring.",
+    "disconnect": "Uzish",
+    "privacyNote": "Tushlaringiz qurilmangizda saqlanadi — hech qachon sotilmaydi, hech qachon tahlil qilinmaydi.",
+    "moodPattern": "Kayfiyat naqshi",
+    "autoSetupTitle": "Bir buyruqda sozlash",
+    "autoSetupBody": "Hali loyihangiz yo'qmi? Bootstrap skriptini bir marta ishga tushiring: u Supabase loyihasini yaratadi, ma'lumotlar bazasi sxemasini qo'llaydi va yuqoriga joylashtirish uchun URL + anon kalitingizni chiqaradi. Google orqali kirish uchun Google Cloud OAuth mijozi kerak (skriptga qarang).",
+    "autoSetupCmd": "SUPABASE_ACCESS_TOKEN=xxx node scripts/setup-supabase.mjs"
+  },
+  "perspDesc": {
+    "general": "Butun dunyo an'analarining eng dono ipaklarini chuqur psixologiya bilan to'qigan bitta talqin.",
+    "islamic": "Ibn Sirinning klassik maktabi — ramziy, qonunga muvofiq va ruhga yo'naltirilgan.",
+    "christian": "Yusuf va Dovud (Daniel) an'analarida tush ta'biri, ilohiy yozuvlarning ramziyligi bilan.",
+    "jewish": "Tavrot va Talmuddagi tush donoligi — dono talqinni kutayotgan bir xabar.",
+    "hindu": "Vedik ramziylik, karma va ongning ichki manzaralari.",
+    "buddhist": "O'tkinchilik va hushyor ong — tushni ushlamasdan kuzating.",
+    "psychology": "Yungning arxetiplari va soya — ongingiz nima ustida ishlayapti.",
+    "chinese": "Zhou Gongning klassik lug'ati — yin, yang va besh elementning muvozanati."
+  },
+  "moods": {
+    "peace": "Tinch",
+    "anxiety": "Xavotirli",
+    "hope": "Umidli",
+    "sadness": "G'amgin",
+    "anger": "G'azabli",
+    "confusion": "Chalkash"
+  },
+  "seo": {
+    "dreamInterpretation": "Tush ta'biri",
+    "traditionsTitle": "Turli an'analar bo'ylab",
+    "traditionsBody": "Bir belgi turli madaniyatlarda turli ma'nolarni anglatishi mumkin. Islom, Nasroniy, Yahudiy, Hindu, Budda, Xitoy va psixologik an'analarda bir xil tasvir o'ziga xos nuqtai nazardan talqin etiladi. Tush ta'biri sahifasida o'zingiz ishongan nuqtai nazarni tanlang.",
+    "tryTitle": "Tushingizni AI bilan talqin qiling",
+    "tryLede": "Tushingizni ulashing va shaxsiy AI talqinini oling.",
+    "otherLangs": "Boshqa tillar",
+    "otherSymbols": "Boshqa tush ramzlari",
+    "reflectNote": "Bu sahifa faqat o'z-o'ziga mulohaza yuritish va ko'ngil ochar maqsadlarga mo'ljallangan. Bu tibbiy, psixologik yoki diniy maslahat emas va kelajakni bashorat qilmaydi."
   }
 }

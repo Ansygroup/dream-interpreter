@@ -25,7 +25,7 @@ const languagesTs = readFileSync(join(root, 'src/i18n/languages.ts'), 'utf8');
 const args = process.argv.slice(2);
 const only = args.find((a) => a.startsWith('--only='))?.split('=')[1]?.split(',').map((s) => s.trim());
 const base = args.find((a) => a.startsWith('--base='))?.split('=')[1] || BASE;
-const CHUNK_KEYS = Number(process.env.CHUNK_KEYS || 25);
+const CHUNK_KEYS = Number(process.env.CHUNK_KEYS || 10000);
 const MAX_ATTEMPTS = Number(process.env.MAX_ATTEMPTS || 4);
 
 const LANG_RE = /code: '([a-z-]+)', native: '[^']*', english: '([^']+)', dir: '(ltr|rtl)'/g;

@@ -30,7 +30,7 @@ const FREE_MODELS = [
   'inclusionai/ling-3.0-flash-fin:free',
 ];
 
-export const maxDuration = 120;
+export const maxDuration = 300;
 
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -82,10 +82,12 @@ Rules:
 
 Input JSON:
 ${JSON.stringify(chunkObj)}`;
-    for (const model of FREE_MODELS) {
+    for (let attempt = 1; attempt <= 2; attempt++) {
+      if (attempt > 1) { console.log(`[translate:${code}] chunk retry ${attempt}`); await new Promise((r) => setTimeout(r, 3000)); }
+      for (const model of FREE_MODELS) {
       try {
         const controller = new AbortController();
-        const timeout = setTimeout(() => controller.abort(), 14000);
+        const timeout = setTimeout(() => controller.abort(), 40000);
         const r = await fetch('https://openrouter.ai/api/v1/chat/completions', {
           method: 'POST',
           headers: {
@@ -125,6 +127,7 @@ ${JSON.stringify(chunkObj)}`;
         console.log(`[translate:${code}] ${model} error ${e?.message || e}`);
         continue;
       }
+    }
     }
     return null;
   }

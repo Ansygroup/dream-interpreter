@@ -25,7 +25,10 @@ const languagesTs = readFileSync(join(root, 'src/i18n/languages.ts'), 'utf8');
 const args = process.argv.slice(2);
 const only = args.find((a) => a.startsWith('--only='))?.split('=')[1]?.split(',').map((s) => s.trim());
 const base = args.find((a) => a.startsWith('--base='))?.split('=')[1] || BASE;
-const CHUNK_KEYS = Number(process.env.CHUNK_KEYS || 10000);
+// Default to small chunks: the live /api/translate engine only reliably serves
+// <=10 keys per request (larger payloads hang/timeout). The script's design
+// intent is "~25 keys"; 10 is the safe ceiling observed against the endpoint.
+const CHUNK_KEYS = Number(process.env.CHUNK_KEYS || 10);
 const MAX_ATTEMPTS = Number(process.env.MAX_ATTEMPTS || 4);
 
 const LANG_RE = /code: '([a-z-]+)', native: '[^']*', english: '([^']+)', dir: '(ltr|rtl)'/g;
@@ -74,7 +77,9 @@ async function translateChunk(code, chunkObj) {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body,
-        signal: AbortSignal.timeout(110000),
+        // 30s ceiling: small chunks normally return in 1-4s; a hung request is an
+        // intermittent endpoint stall and must fail over to the retry quickly.
+        signal: AbortSignal.timeout(30000),
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();

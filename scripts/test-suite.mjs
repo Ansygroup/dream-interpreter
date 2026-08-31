@@ -228,5 +228,13 @@ for (const f of readdirSync(locDir).filter((x) => x.endsWith('.json'))) {
 ok('no religious term in marketing/about/FAQ across all 60 locales', religMkt === 0);
 
 // ---------------------------------------------------------------------------
+// 13. API defaults to NEUTRAL 'general' perspective (never a single faith)
+// ---------------------------------------------------------------------------
+section('API default perspective is neutral');
+const apiSrc = read('api/interpret.js');
+ok('API falls back to general for unknown/missing perspective', /PERSPECTIVES\[perspective\]\s*\?\s*perspective\s*:\s*'general'/.test(apiSrc));
+ok('API buildFallback uses general baseline', /PERSPECTIVES\.general/.test(apiSrc));
+
+// ---------------------------------------------------------------------------
 console.log(`\nSUITE RESULT: ${passed} passed, ${failed} failed`);
 process.exit(failed === 0 ? 0 : 1);

@@ -31,9 +31,24 @@ const features = {
 };
 const api = await post(`${BASE}/api/interpret`, { dream: 'water', perspective: 'general', language: 'en' });
 
+// Multi-school live proof: every perspective must return a real reading.
+const schools = [
+  ['en', 'general'], ['ar', 'islamic'], ['es', 'psychology'], ['zh', 'chinese'],
+  ['fr', 'christian'], ['hi', 'hindu'], ['ru', 'buddhist'], ['de', 'jewish'],
+];
+let schoolsPass = 0;
+for (const [lang, persp] of schools) {
+  const r = await post(`${BASE}/api/interpret`, { dream: 'I saw a snake leaving my house', language: lang, perspective: persp });
+  let j = null; try { j = JSON.parse(r.body); } catch {}
+  const ok = r.code === 200 && j?.interpretation && j.interpretation.trim().length > 20;
+  if (ok) schoolsPass++;
+  console.log(`${ok ? 'PASS' : 'FAIL'}  perspective ${lang}/${persp} (${r.code})`);
+}
+
 console.log('=== dream-interpreter LIVE deploy verify ===');
 for (const [k, v] of Object.entries(features)) console.log(`${v ? 'PASS' : 'FAIL'}  ${k}`);
 console.log(`${api.code === 200 ? 'PASS' : 'FAIL'}  /api/interpret LLM call (${api.code})`);
-const allPass = Object.values(features).every(Boolean) && api.code === 200;
+console.log(`${schoolsPass === schools.length ? 'PASS' : 'FAIL'}  all ${schools.length} perspectives respond (${schoolsPass}/${schools.length})`);
+const allPass = Object.values(features).every(Boolean) && api.code === 200 && schoolsPass === schools.length;
 console.log(allPass ? '\nRESULT: FULL STACK LIVE ✅' : '\nRESULT: INCOMPLETE — deploy pending or partial ⏳');
 process.exit(allPass ? 0 : 2);

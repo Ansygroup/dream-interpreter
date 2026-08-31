@@ -1,6 +1,6 @@
 {
   "nav": {
-    "interpret": "Tolk",
+    "interpret": "Tolke",
     "symbols": "Symboler",
     "about": "Om oss",
     "faq": "FAQ",
@@ -13,77 +13,85 @@
     "ansyGroup": "Ansy Group",
     "language": "Språk",
     "searchLanguage": "Søk språk…",
-    "noLanguage": "Ingen språk passer til søket ditt."
+    "noLanguage": "Ingen språk matcher søket ditt.",
+    "profile": "Profil"
   },
   "footer": {
-    "tagline": "Free AI dream interpretation in 60 languages — every tradition, your lens.",
+    "tagline": "Gratis AI-drømmetydning på 60 språk — hver tradisjon, din linse.",
     "copyright": "© {year} Dreamscope"
   },
   "home": {
-    "heroTitle": "Hva {accent} prøver å si deg",
-    "heroAccent": "underbevisstheten",
-    "heroLede": "Ancient symbolism, modern psychology, and AI — combined into one clear reading. Describe a dream in your own words and get an interpretation through the tradition you trust.",
+    "heroTitle": "Hva din {accent} prøver å si",
+    "heroAccent": "underbevissthet",
+    "heroLede": "Gammel symbolikk, moderne psykologi og AI — samlet i én tydelig lesning. Beskriv en drøm med dine egne ord, og få en tolkning gjennom tradisjonen du stoler på.",
     "interpretCta": "Tolk en drøm",
     "browseCta": "Utforsk symboler",
     "statLanguages": "{n} språk",
     "statSymbols": "{n} drømmesymboler",
     "statPrivateLine": "privat på enheten din",
-    "whyTitle": "En tolkning du faktisk kan bruke",
-    "whyLede": "Dreamscope knytter drømmen din til symbolene sine og leser dem gjennom den tradisjonen du stoler på — med psykologi ved siden av, ikke i stedet for.",
+    "whyTitle": "En lesning du faktisk kan bruke",
+    "whyLede": "Dreamscope knytter drømmen din til dens symboler, og leser dem gjennom tradisjonen du stoler på — med psykologi ved siden av, ikke i stedet for.",
     "feature1Title": "Symbolsk analyse",
-    "feature1Body": "Hver drøm kartlegges etter kjernesymbolene sine og spores gjennom hundreår av tolkningstradisjon.",
+    "feature1Body": "Hver drøm knyttes til sine kjernesymboler og spores gjennom århundrer med tolkningstradisjon.",
     "feature2Title": "60 språk",
-    "feature2Body": "Tolk og les symboler på engelsk, arabisk, spansk, kinesisk, japansk og 55 andre språk.",
+    "feature2Body": "Tolk og les symboler på engelsk, arabisk, spansk, kinesisk, japansk og 55 språk til.",
     "feature3Title": "Alle tradisjoner",
-    "feature3Body": "Depth psychology and perspectives across faiths — one reading, seen through your lens.",
+    "feature3Body": "Dypdepsykologi og perspektiver på tvers av tro — én lesning, sett gjennom din linse.",
     "feature4Title": "Lagret og privat",
-    "feature4Body": "Drømmene dine blir på enheten din. Gå tilbake, sammenlign og følg mønstre over tid.",
-    "sampleTag": "Eksempeltolkning",
+    "feature4Body": "Drømmene dine blir på enheten din som standard. Logg inn for å synkronisere mellom enheter.",
+    "sampleTag": "Eksempellesning",
     "sampleJustNow": "akkurat nå",
     "sampleDream": "«Jeg så en grønn slange forlate huset gjennom hageporten.»",
-    "sampleReading": "Snakes mark transformation — something in your life is shedding its old skin. The gate suggests a clear exit is opening. In many traditions, a harmless snake leaving the home often means a lingering worry is finally moving on.",
+    "sampleReading": "Slanger markerer transformasjon — noe i livet ditt kvitter seg med gammel hud. Porten antyder at en tydelig utgang åpner seg. I mange tradisjoner betyr en ufarlig slange som forlater hjemmet ofte at en langvarig bekymring endelig gir slipp.",
     "sampleTag1": "Transformasjon",
     "sampleTag2": "Løslatelse",
-    "sampleTag3": "Tradition",
+    "sampleTag3": "Tradisjon",
     "sampleSaved": "Lagret på enheten din",
     "symbolsTitle": "Hvert symbol bærer en betydning",
-    "symbolsLede": "Fra vann til ild — utforsk de vanligste drømmemotivene og hva de gjerne signaliserer på tvers av tradisjoner.",
+    "symbolsLede": "Fra vann til ild — utforsk de vanligste drømmemotivene og hva de pleier å signalisere på tvers av tradisjoner.",
     "ctaTitle": "Beskriv drømmen din",
-    "ctaLede": "Noen få setninger holder. Tolkningen tar sekunder og blir på enheten din.",
-    "ctaButton": "Start tolkningen"
+    "ctaLede": "Noen setninger er nok. Lesningen tar sekunder og blir på enheten din som standard.",
+    "ctaButton": "Start tolkning"
   },
   "interpret": {
     "title": "Beskriv drømmen din",
-    "lede": "Skriv med egne ord. Jo mer detalj, desto skarpere blir tolkningen — omgivelser, følelser og alt uvanlig har betydning.",
+    "lede": "Skriv med dine egne ord. Jo mer detalj, desto skarpere lesning — omgivelser, følelser og alt uvanlig teller.",
     "language": "Språk",
-    "yourDream": "Drømmen din",
-    "placeholder": "I natt drømte jeg at jeg gikk gjennom en dør som stadig skiftet form...",
+    "yourDream": "Din drøm",
+    "placeholder": "I natt drømte jeg at jeg gikk gjennom en dør som stadig endret form...",
     "loading": "Tolker...",
     "button": "Tolk drømmen",
-    "yourReading": "Din tolkning",
+    "yourReading": "Din lesning",
     "save": "Lagre",
+    "saved": "Lagret",
+    "savedConfirm": "Lagret i dagboken din. Finn den når som helst under Lagret.",
+    "unsaved": "Fjernet fra Lagret.",
+    "disclaimer": "Kun refleksjon — ikke medisinsk, psykologisk eller religiøs rådgivning. Det forutsier ikke fremtiden.",
     "viewHistory": "Se historikk",
-    "errorEmpty": "Vennligst beskriv drømmen din først.",
-    "errorFailed": "Tolkningen mislyktes. Vennligst prøv igjen.",
-    "errorNetwork": "Tilkoblingsfeil. Vennligst prøv igjen.",
-    "perspectiveLabel": "Tolkning gjennom",
+    "errorEmpty": "Vennligst beschkriv drømmen din først.",
+    "errorFailed": "Tolkningen mislyktes. Prøv igjen.",
+    "errorNetwork": "Tilkoblingsfeil. Prøv igjen.",
+    "perspectiveLabel": "Lest gjennom",
+    "perspNotice": "Hver tradisjon vises for seg. Lesninger er reflekterende og sannsynlighetsbaserte — ikke spådommer eller domsavsigelser.",
+    "compareLabel": "Sammenlign alle tradisjoner",
+    "compareDesc": "Én drøm, lest gjennom hver linse samtidig — se hvor tradisjonene er enige og hvor de skiller lag.",
+    "compareLoading": "Leser gjennom alle tradisjoner…",
+    "compareBack": "Tilbake til én lesning",
+    "compareSymbols": "Symboler",
     "symbolsLabel": "Symboler i drømmen din",
-    "feedbackQ": {
-      "en": "Was this reading helpful?",
-      "ar": "هل كانت هذه القراءة مفيدة؟"
-    },
-    "yes": {
-      "en": "Yes, helpful",
-      "ar": "نعم، مفيدة"
-    },
-    "no": {
-      "en": "Not really",
-      "ar": "ليس تماماً"
-    },
-    "thanks": {
-      "en": "Thank you — your feedback improves future readings.",
-      "ar": "شكراً لك — تقييمك يحسّن القراءات المستقبلية."
-    }
+    "feedbackQ": "Var denne lesningen nyttig?",
+    "yes": "Ja, nyttig",
+    "no": "Ikke egentlig",
+    "thanks": "Takk — tilbakemeldingen din forbedrer fremtidige lesninger.",
+    "perspectiveDesc": "Én lesning som vever de viseste trådene fra verdens tradisjoner sammen med dybdepsykologi.",
+    "moodLabel": "Hvordan føltes drømmen?",
+    "copy": "Kopier",
+    "copied": "Kopiert!",
+    "share": "Del",
+    "example": "Prøv et eksempel",
+    "exampleDream": "I natt drømte jeg at en hvit due landet på vinduet mitt, og så ble den til et brev jeg ikke klarte å lese. Jeg følte meg rolig, men nysgjerrig.",
+    "shortcutHint": "Trykk ⌘/Ctrl + Enter for å tolke",
+    "symbolsSection": "Symboler"
   },
   "history": {
     "title": "Drømmehistorikk",
@@ -92,57 +100,61 @@
   },
   "saved": {
     "title": "Lagrede drømmer",
-    "lede": "Ta vare på tolkningene som betød noe. De blir på denne enheten.",
+    "lede": "Behold tolkningene som betydde noe. De blir på denne enheten.",
     "empty": "Ingenting lagret ennå."
   },
   "common": {
     "interpretCta": "Tolk en drøm",
     "delete": "Slett",
     "remove": "Fjern",
-    "backHome": "Tilbake til forsiden"
+    "confirmRemove": "Fjerne?",
+    "backHome": "Tilbake til hjem"
   },
   "symbols": {
     "title": "{n} drømmesymboler",
-    "lede": "Bla gjennom alle symbolene vi tolker — gratis, på dusinvis av språk. Velg ditt for å lese betydningen.",
-    "search": "Søk etter et symbol…"
+    "lede": "Bla gjennom hvert symbol vi tolker — gratis, på dusinvis av språk. Velg ditt for å lese betydningen.",
+    "search": "Søk etter et symbol…",
+    "noResults": "Ingen symboler matcher søket ditt."
   },
   "about": {
-    "title": "En tydelig tolkning, forankret i tradisjonen",
-    "p1": "Dreamscope exists to make dream interpretation accessible in your own language and cultural context. We draw on a wide range of interpretive traditions — religious and spiritual scholarship, cultural folklore, and the symbolic frameworks of modern depth psychology — so you can read your dream through the lens you trust.",
-    "p2": "Hver tolkning er laget for å hjelpe deg å reflektere — ikke for å spå fremtiden. Symboler som vann, ild, flukt eller en slange har båret mening på tvers av kulturer i tusenvis av år, og våre tolkninger følger disse trådene slik at du kan finne det som resonnerer med ditt eget liv.",
-    "p3": "Tjenesten er gratis, privat av design og tilgjengelig på 60 språk. Drømmene dine forlater aldri enheten din.",
-    "card1Title": "Many traditions",
-    "card1Body": "Klassisk islamsk drømmevitenskap, sporet gjennom hundreår av tolkning.",
+    "title": "En tydelig lesning, forankret i tradisjon",
+    "p1": "Dreamscope finnes for å gjøre drømmetydning tilgjengelig på ditt eget språk og i din kulturelle kontekst. Vi henter fra et bredt spekter av tolkningstradisjoner — religiøs og åndelig vitenskap, kulturell folklore og de symbolske rammene i moderne dybdepsykologi — slik at du kan lese drømmen din gjennom linsen du stoler på.",
+    "p2": "Hver lesning genereres for å hjelpe deg å reflektere — ikke for å forutsi fremtiden. Symboler som vann, ild, flukt eller en slange har båret mening på tvers av kulturer i tusenvis av år, og våre tolkninger sporer disse trådene slik at du kan finne det som resonnerer med ditt eget liv.",
+    "p3": "Tjenesten er gratis, privat av design, og tilgjengelig på 60 språk. Drømmeteksten din sendes til tolkningstjenesten vår for å generere en lesning, og lagres deretter ikke av oss; lesningene dine blir på enheten din med mindre du logger inn og synkroniserer.",
+    "card1Title": "Mange tradisjoner",
+    "card1Body": "Islamsk, kristen, jødisk, hinduistisk, buddhistisk, kinesisk og psykologiske linser — velg den du stoler på.",
     "card2Title": "60 språk",
     "card2Body": "Fra arabisk til japansk — tolk på språket du drømmer på.",
     "card3Title": "100 % privat",
-    "card3Body": "Drømmene blir på enheten din. Ingen kontoer, ingen sporing.",
-    "cta": "Start tolkningen"
+    "card3Body": "Lesningene dine blir på enheten din som standard. Logg inn kun for å synkronisere; slett når som helst.",
+    "cta": "Start tolkning",
+    "traditionsTitle": "Hver tradisjon, én drøm",
+    "traditionsLede": "Velg linsen hjertet ditt stoler på — hver lesning genereres gjennom en dedikert tolkningsskole."
   },
   "contact": {
     "title": "Ta kontakt",
-    "lede": "Spørsmål, rettelser eller samarbeidsidéer? Nå Dreamscope-teamet via e-post.",
+    "lede": "Spørsmål, rettelser eller samarbeidsidéer? Nå Dreamscope-teamet på e-post.",
     "email": "E-post",
-    "disclaimer": "Dreamscope tilbyr kun refleksjon og underholdning. Tolkninger er ikke medisinske, psykologiske eller religiøse råd. Hvis du trenger støtte, vennligst kontakt en kvalifisert fagperson.",
-    "back": "Tilbake til tolkningen"
+    "disclaimer": "Dreamscope tilbyr kun refleksjon og underholdning. Tolkninger er ikke medisinsk, psykologisk eller religiøs rådgivning. Hvis du trenger støtte, vennligst kontakt en kvalifisert fagperson.",
+    "back": "Tilbake til tolkeren"
   },
   "faq": {
     "title": "Ofte stilte spørsmål",
     "q1": "Hvordan tolker Dreamscope drømmer?",
-    "a1": "Dreamscope blends dream scholarship from many cultures and faiths — including Islamic, Christian, Jewish, Hindu, Buddhist, and Chinese traditions — with modern depth psychology. You describe a dream in your own words and receive a reading that maps its symbols to their common meanings across cultures.",
+    "a1": "Dreamscope blander drømmevitenskap fra mange kulturer og tro — inkludert islamsk, kristen, jødisk, hinduistisk, buddhistisk og kinesisk tradisjon — med moderne dybdepsykologi. Du beskriver en drøm med egne ord og mottar en lesning som knytter symbolene til deres vanlige betydninger på tvers av kulturer.",
     "q2": "Er drømmedataene mine private?",
     "a2": "Ja. Drømmene dine lagres kun i nettleserens lokale lagring på enheten din. Ingenting sendes til en server for lagring, og du kan slette historikken din når som helst.",
     "q3": "På hvilke språk kan jeg tolke drømmer?",
-    "a3": "Dreamscope støtter 60 språk, inkludert engelsk, arabisk, spansk, fransk, tysk, kinesisk, japansk, koreansk, tyrkisk, portugisisk, russisk, hindi og flere. Tolkningen følger språket du velger.",
-    "q4": "Er tolkningene en erstatning for profesjonelle råd?",
-    "a4": "Nei. Drømmetolkninger er for refleksjon og underholdning. De er ikke medisinske, psykologiske eller religiøse veiledninger. Hvis du sliter, vennligst snakk med en kvalifisert fagperson.",
+    "a3": "Dreamscope støtter 60 språk, inkludert engelsk, arabisk, spansk, fransk, tysk, kinesisk, japansk, koreansk, tyrkisk, portugisisk, russisk, hindi og flere. Lesningen følger språket du velger.",
+    "q4": "Er tolkningene en erstatning for profesjonell rådgivning?",
+    "a4": "Nei. Drømmelesninger er for refleksjon og underholdning. De er ikke med medisinsk, psykologisk eller religiøs veiledning. Hvis du sliter, vennligst snakk med en kvalifisert fagperson.",
     "q5": "Hvor mange drømmesymboler dekkes?",
-    "a5": "Dreamscope har dedikerte sider for 146 vanlige symboler — slange, vann, å fly, ild, graviditet, penger og mange flere — hver tilgjengelig på flere språk med varianter for langhale-spørsmål."
+    "a5": "Dreamscope har dedikerte sider for 146 vanlige symboler — slange, vann, å fly, ild, graviditet, penger og mange flere — hver tilgjengelig på flere språk med ulike spørsmålsvarianter."
   },
   "notfound": {
     "title": "Denne drømmen forsvant",
-    "lede": "Siden du lette etter finnes ikke. La oss få deg tilbake til tolkningen.",
-    "cta": "Tilbake til forsiden"
+    "lede": "Siden du lette etter er ikke her. La oss få deg tilbake til å tolke.",
+    "cta": "Tilbake til hjem"
   },
   "perspectives": {
     "general": {
@@ -158,7 +170,7 @@
       "name": "Jødisk"
     },
     "hindu": {
-      "name": "Hindu"
+      "name": "Hinduistisk"
     },
     "buddhist": {
       "name": "Buddhistisk"
@@ -172,5 +184,76 @@
   },
   "daily": {
     "tag": "Dagens drøm"
+  },
+  "profile": {
+    "title": "Din plass",
+    "cloudOff": "Drømmeteksten din sendes til tolkningstjenesten vår for å generere en lesning, og lagres deretter ikke av oss. Lesninger beholdes på enheten din med mindre du logger inn og velger å synkronisere. Vi selger eller profilerer aldri dataene dine.",
+    "dataNote": "Hvor dataene dine bor: enheten din som standard. Når du logger inn, kan dagboken din synkroniseres til din private konto; du kan slette den når som helst.",
+    "signInLede": "Logg inn for å beholde drømmedagboken din på alle enhetene dine. Gjestehistorikken din flytter seg automatisk med deg.",
+    "emailLabel": "E-post",
+    "magicLink": "Send meg en innloggingslenke",
+    "google": "Fortsett med Google",
+    "checkEmail": "Sjekk innboksen din — en innloggingslenke venter på deg.",
+    "invalidEmail": "Vennligst skriv inn en gyldig e-postadresse.",
+    "signInError": "Vi kunne ikke logge deg inn. Prøv igjen eller bruk e-postlenken.",
+    "googleNotEnabled": "Google-innlogging er ikke aktivert i dette prosjektet ennå. Sideeieren må koble til en Google OAuth-klient i Supabase.",
+    "guestNote": "Ingen passord, ingen sporing — bare en lenke. Gjestemodus med lokal lagring på enheten forblir fullt tilgjengelig.",
+    "member": "Medlem",
+    "migrated": "Migrerte {n} drømmer fra denne enheten til dagboken din.",
+    "signOut": "Logg ut",
+    "navLabel": "Profil",
+    "lede": "Alt Dreamscope vet om reisen din — lagret på enheten din, kun din.",
+    "yourState": "Din tilstand akkurat nå",
+    "statDreams": "Drømmer tolket",
+    "statSaved": "Lagrede lesninger",
+    "statStreak": "Dagers rekke",
+    "statTopSymbol": "Toppsymbol",
+    "emptyState": "Ingen drømmer ennå — den første lesningen din vil lyse opp denne siden.",
+    "symbolsYouMeet": "Symboler du møter igjen",
+    "noneYet": "—",
+    "lastReading": "Siste lesning",
+    "languagesUsed": "Språk brukt",
+    "perspectivesUsed": "Tradisjoner brukt",
+    "cloudTitle": "På tvers av enhetene dine",
+    "connectTitle": "Koble til ditt Supabase-prosjekt",
+    "connectUrlLabel": "Prosjekt-URL",
+    "connectKeyLabel": "Anon offentlig nøkkel",
+    "connectCta": "Koble til",
+    "connected": "Tilkoblet — du kan nå logge inn og synkronisere dagboken din.",
+    "connectError": "Kunne ikke koble til. Sjekk URL-en og anon-nøkkelen.",
+    "disconnect": "Koble fra",
+    "privacyNote": "Drømmene dine lagres på enheten din — aldri solgt, aldri profilert.",
+    "moodPattern": "Humørmønster",
+    "autoSetupTitle": "Oppsett med én kommando",
+    "autoSetupBody": "Ingen prosjekt ennå? Kjør bootstrap-skriptet én gang: det oppretter et Supabase-prosjekt, bruker databaseskjemaet og skriver ut din URL + anon-nøkkel for å lime inn ovenfor. Google-innlogging krever en Google Cloud OAuth-klient (se skriptet).",
+    "autoSetupCmd": "SUPABASE_ACCESS_TOKEN=xxx node scripts/setup-supabase.mjs"
+  },
+  "perspDesc": {
+    "general": "Én lesning som vever de viseste trådene fra verdens tradisjoner sammen med dybdepsykologi.",
+    "islamic": "Den klassiske skolen til Ibn Sirin — symbolsk, lovbasert og sjelssentrert.",
+    "christian": "Drømmelesing i Josefs og Daniels etterfølgelse, med skriftlig symbolikk.",
+    "jewish": "Torah- og Talmudsk drømmevisdom — en beskjed som venter på vis tolkning.",
+    "hindu": "Vedisk symbolikk, karma og sinnets indre landskap.",
+    "buddhist": "Forgjengelighet og bevisst nærvær — observer drømmen uten å gripe.",
+    "psychology": "Jungs arketyper og skyggen — hva psyken din bearbeider.",
+    "chinese": "Zhou Gongs klassiske ordbok — balanse mellom yin, yang og de fem elementene."
+  },
+  "moods": {
+    "peace": "Fredelig",
+    "anxiety": "Engstelig",
+    "hope": "Håpefull",
+    "anger": "Sint",
+    "sadness": "Trist",
+    "confusion": "Forvirret"
+  },
+  "seo": {
+    "dreamInterpretation": "Drømmetydning",
+    "traditionsTitle": "På tvers av tradisjonene",
+    "traditionsBody": "Et symbol kan bety forskjellige ting i forskjellige kulturer. I islam, kristen, jødisk, hinduistisk, buddhistisk, kinesisk og psykologisk tradisjon leses det samme bildet gjennom sin egen linse. Velg linsen du stoler på på tolkningssiden.",
+    "tryTitle": "Tolke drømmene dine med AI",
+    "tryLede": "Del drømmen din og få en personlig AI-tolkning.",
+    "otherLangs": "Andre språk",
+    "otherSymbols": "Andre drømmesymboler",
+    "reflectNote": "Denne siden er kun for refleksjon og underholdning. Den er ikke medisinsk, psykologisk eller religiøs rådgivning, og den forutsier ikke fremtiden."
   }
 }

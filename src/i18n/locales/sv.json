@@ -13,81 +13,89 @@
     "ansyGroup": "Ansy Group",
     "language": "Språk",
     "searchLanguage": "Sök språk…",
-    "noLanguage": "Inga språk matchar din sökning."
+    "noLanguage": "Inget språk matchar din sökning.",
+    "profile": "Profil"
   },
   "footer": {
-    "tagline": "Free AI dream interpretation in 60 languages — every tradition, your lens.",
+    "tagline": "Gratis AI-drömtydning på 60 språk – varje tradition, din synvinkel.",
     "copyright": "© {year} Dreamscope"
   },
   "home": {
     "heroTitle": "Vad ditt {accent} försöker säga",
     "heroAccent": "undermedvetna",
-    "heroLede": "Ancient symbolism, modern psychology, and AI — combined into one clear reading. Describe a dream in your own words and get an interpretation through the tradition you trust.",
-    "interpretCta": "Tolka en dröm",
+    "heroLede": "Gammal symbolik, modern psykologi och AI – förenat i en tydlig tolkning. Beskriv en dröm med egna ord och få en tolkning genom den tradition du litar på.",
+    "interpretCta": "Tolk en dröm",
     "browseCta": "Utforska symboler",
     "statLanguages": "{n} språk",
     "statSymbols": "{n} drömsymboler",
     "statPrivateLine": "privat på din enhet",
-    "whyTitle": "En läsning du faktiskt kan använda",
-    "whyLede": "Dreamscope kopplar din dröm till dess symboler och läser dem genom den tradition du litar på — med psykologi vid sidan om, inte istället.",
+    "whyTitle": "En tolkning du faktiskt kan använda",
+    "whyLede": "Dreamscope kopplar din dröm till dess symboler och läser dem genom den tradition du litar på – med psykologi vid sidan om, inte istället.",
     "feature1Title": "Symbolisk analys",
     "feature1Body": "Varje dröm kartläggs till sina kärnsymboler och spåras genom århundraden av tolkningstradition.",
     "feature2Title": "60 språk",
-    "feature2Body": "Tolka och läs symboler på engelska, arabiska, spanska, kinesiska, japanska och 55 språk till.",
+    "feature2Body": "Tolk och läs symboler på engelska, arabiska, spanska, kinesiska, japanska och 55 andra språk.",
     "feature3Title": "Alla traditioner",
-    "feature3Body": "Depth psychology and perspectives across faiths — one reading, seen through your lens.",
-    "feature4Title": "Sparat & privat",
-    "feature4Body": "Dina drömmar stannar på din enhet. Återvänd, jämför och se mönster över tid.",
-    "sampleTag": "Exempelläsning",
+    "feature3Body": "Djuppsykologi och perspektiv från olika trosinriktningar – en tolkning, sedd genom din lins.",
+    "feature4Title": "Sparat och privat",
+    "feature4Body": "Dina drömmar stannar på din enhet som standard. Logga in för att synkronisera mellan enheter.",
+    "sampleTag": "Exempeltolkning",
     "sampleJustNow": "just nu",
-    "sampleDream": "\"Jag såg en grön orm lämna huset genom trädgårdsgrinden.\"",
-    "sampleReading": "Snakes mark transformation — something in your life is shedding its old skin. The gate suggests a clear exit is opening. In many traditions, a harmless snake leaving the home often means a lingering worry is finally moving on.",
+    "sampleDream": "\"Jag såg en grön orm lämna huset genom grinden i trädgården.\"",
+    "sampleReading": "Ormar markerar förvandling – något i ditt liv håller på att ömsa sitt gamla skinn. Grindens antyder att en tydlig utgång öppnar sig. I många traditioner betyder en ofarlig orm som lämnar hemmet ofta att en långvarig oro äntligen släpper taget.",
     "sampleTag1": "Förvandling",
     "sampleTag2": "Släppa taget",
     "sampleTag3": "Tradition",
     "sampleSaved": "Sparat på din enhet",
-    "symbolsTitle": "Varje symbol bär en betydelse",
-    "symbolsLede": "Från vatten till eld — utforska de vanligaste drömmotiven och vad de tenderar att signalera över traditioner.",
+    "symbolsTitle": "Varje symbol bär på en mening",
+    "symbolsLede": "Från vatten till eld, utforska de vanligaste drömmotiven och vad varje tenderar att signalera i olika traditioner.",
     "ctaTitle": "Beskriv din dröm",
-    "ctaLede": "Några meningar räcker. Läsningen tar sekunder och stannar på din enhet.",
+    "ctaLede": "Några meningar räcker. Tolkningen tar sekunder och stannar på din enhet som standard.",
     "ctaButton": "Börja tolka"
   },
   "interpret": {
     "title": "Beskriv din dröm",
-    "lede": "Skriv med egna ord. Ju mer detaljer, desto skarpare läsning — miljö, känslor och allt ovanligt spelar roll.",
+    "lede": "Skriv med egna ord. Ju mer detaljer, desto skarpare tolkning – miljö, känslor och allt ovanligt spelar roll.",
     "language": "Språk",
     "yourDream": "Din dröm",
     "placeholder": "I natt drömde jag att jag gick genom en dörr som hela tiden ändrade form...",
-    "loading": "Tolkas...",
-    "button": "Tolk drömmen",
-    "yourReading": "Din läsning",
+    "loading": "Tolkar...",
+    "button": "Tolk dröm",
+    "yourReading": "Din tolkning",
     "save": "Spara",
+    "saved": "Sparad",
+    "savedConfirm": "Sparad i din journal. Hitta den när som helst under Sparade.",
+    "unsaved": "Borttagen från Sparade.",
+    "disclaimer": "Endast reflektion – inte medicinsk, psykologisk eller religiös rådgivning. Den förutsäger inte framtiden.",
     "viewHistory": "Visa historik",
     "errorEmpty": "Beskriv din dröm först.",
     "errorFailed": "Tolkningen misslyckades. Försök igen.",
     "errorNetwork": "Anslutningsfel. Försök igen.",
-    "perspectiveLabel": "Läses genom",
+    "perspectiveLabel": "Tolkas genom",
+    "perspNotice": "Varje tradition visas för sig. Tolkningarna är reflekterande och probabilistiska – inte förutsägelser eller utslag.",
+    "compareLabel": "Jämför alla traditioner",
+    "compareDesc": "En dröm, läst genom varje lins på en gång – se var traditionerna är överens och där de skiljer sig.",
+    "compareLoading": "Läser genom varje tradition…",
+    "compareBack": "Tillbaka till enskild tolkning",
+    "compareSymbols": "Symboler",
     "symbolsLabel": "Symboler i din dröm",
-    "feedbackQ": {
-      "en": "Was this reading helpful?",
-      "ar": "هل كانت هذه القراءة مفيدة؟"
-    },
-    "yes": {
-      "en": "Yes, helpful",
-      "ar": "نعم، مفيدة"
-    },
-    "no": {
-      "en": "Not really",
-      "ar": "ليس تماماً"
-    },
-    "thanks": {
-      "en": "Thank you — your feedback improves future readings.",
-      "ar": "شكراً لك — تقييمك يحسّن القراءات المستقبلية."
-    }
+    "feedbackQ": "Var denna tolkning till hjälp?",
+    "yes": "Ja, till hjälp",
+    "no": "Inte riktigt",
+    "thanks": "Tack – din feedback förbättrar framtida tolkningar.",
+    "perspectiveDesc": "En tolkning som väver de visaste trådarna från världens traditioner med djuppsykologi.",
+    "moodLabel": "Hur kändes drömmen?",
+    "copy": "Kopiera",
+    "copied": "Kopierat!",
+    "share": "Dela",
+    "example": "Prova ett exempel",
+    "exampleDream": "I natt drömde jag att en vit duva landade på mitt fönster och sedan förvandlades till ett brev jag inte kunde läsa. Jag kände mig lugn men nyfiken.",
+    "shortcutHint": "Tryck ⌘/Ctrl + Enter för att tolka",
+    "symbolsSection": "Symboler"
   },
   "history": {
     "title": "Drömhistorik",
-    "lede": "Varje tolkning du har skapat, lagrad på denna enhet.",
+    "lede": "Varje tolkning du har genererat, sparad på denna enhet.",
     "empty": "Inga drömmar har tolkats ännu."
   },
   "saved": {
@@ -96,52 +104,56 @@
     "empty": "Inget sparat ännu."
   },
   "common": {
-    "interpretCta": "Tolka en dröm",
+    "interpretCta": "Tolk en dröm",
     "delete": "Ta bort",
     "remove": "Ta bort",
+    "confirmRemove": "Ta bort?",
     "backHome": "Tillbaka till startsidan"
   },
   "symbols": {
     "title": "{n} drömsymboler",
-    "lede": "Bläddra bland alla symboler vi tolkar — gratis, på dussintals språk. Välj ditt för att läsa betydelsen.",
-    "search": "Sök en symbol…"
+    "lede": "Bläddra bland alla symboler vi tolkar – gratis, på dussintals språk. Välj din för att läsa betydelsen.",
+    "search": "Sök en symbol…",
+    "noResults": "Ingen symbol matchar din sökning."
   },
   "about": {
-    "title": "En tydlig läsning, förankrad i tradition",
-    "p1": "Dreamscope exists to make dream interpretation accessible in your own language and cultural context. We draw on a wide range of interpretive traditions — religious and spiritual scholarship, cultural folklore, and the symbolic frameworks of modern depth psychology — so you can read your dream through the lens you trust.",
-    "p2": "Varje läsning skapas för att hjälpa dig reflektera — inte för att förutsäga framtiden. Symboler som vatten, eld, flykt eller en orm har burit mening över kulturer i tusentals år, och våra tolkningar spårar dessa trådar så att du kan hitta det som resonerar med ditt eget liv.",
-    "p3": "Tjänsten är gratis, privat av design och tillgänglig på 60 språk. Dina drömmar lämnar aldrig din enhet.",
-    "card1Title": "Many traditions",
-    "card1Body": "Klassisk islamisk drömvetenskap, spårad genom århundraden av tolkning.",
+    "title": "En tydlig tolkning, rotad i tradition",
+    "p1": "Dreamscope finns för att göra drömtydning tillgänglig på ditt eget språk och i din kulturella kontext. Vi hämtar inspiration från ett brett spektrum av tolkningstraditioner – religiös och andlig forskning, kulturell folklor och de symboliska ramverken inom modern djuppsykologi – så att du kan läsa din dröm genom den lins du litar på.",
+    "p2": "Varje tolkning genereras för att hjälpa dig reflektera – inte för att förutsäga framtiden. Symboler som vatten, eld, flykt eller en orm har burit mening över kulturer i tusentals år, och våra tolkningar spårar dessa trådar så att du kan hitta det som resonerar med ditt eget liv.",
+    "p3": "Tjänsten är gratis, privat till sin utformning och tillgänglig på 60 språk. Din drömtext skickas till vår tolkningstjänst för att generera en tolkning, och lagras sedan inte av oss; dina tolkningar stannar på din enhet om du inte loggar in och synkroniserar.",
+    "card1Title": "Många traditioner",
+    "card1Body": "Islamisk, kristen, judisk, hinduisk, buddhistisk, kinesisk och psykologisk lins – välj den du litar på.",
     "card2Title": "60 språk",
-    "card2Body": "Från arabiska till japanska — tolka på det språk du drömmer på.",
+    "card2Body": "Från arabiska till japanska – tolka på det språk du drömmer på.",
     "card3Title": "100 % privat",
-    "card3Body": "Drömmar stannar på din enhet. Inga konton, ingen spårning.",
-    "cta": "Börja tolka"
+    "card3Body": "Dina tolkningar stannar på din enhet som standard. Logga in bara för att synkronisera; ta bort när du vill.",
+    "cta": "Börja tolka",
+    "traditionsTitle": "Varje tradition, en dröm",
+    "traditionsLede": "Välj den lins ditt hjärta litar på – varje tolkning genereras genom en dedikerad tolkningsskola."
   },
   "contact": {
-    "title": "Hör av dig",
-    "lede": "Frågor, rättelser eller samarbetsidéer? Nå Dreamscope-teamet via e-post.",
+    "title": "Kom i kontakt",
+    "lede": "Frågor, rättelser eller samarbetsidéer? Kontakta Dreamscope-teamet via e-post.",
     "email": "E-post",
-    "disclaimer": "Dreamscope erbjuder enbart reflektion och underhållning. Tolkningarna är inte medicinsk, psykologisk eller religiös rådgivning. Om du behöver stöd, vänd dig till en kvalificerad professionell.",
-    "back": "Tillbaka till tolken"
+    "disclaimer": "Dreamscope erbjuder endast reflektion och underhållning. Tolkningar är inte medicinsk, psykologisk eller religiös rådgivning. Om du behöver stöd, vänd dig till en kvalificerad professionell.",
+    "back": "Tillbaka till tolkningen"
   },
   "faq": {
     "title": "Vanliga frågor",
     "q1": "Hur tolkar Dreamscope drömmar?",
-    "a1": "Dreamscope blends dream scholarship from many cultures and faiths — including Islamic, Christian, Jewish, Hindu, Buddhist, and Chinese traditions — with modern depth psychology. You describe a dream in your own words and receive a reading that maps its symbols to their common meanings across cultures.",
+    "a1": "Dreamscope blandar drömvetenskap från många kulturer och trosinriktningar – inklusive islamiska, kristna, judiska, hinduiska, buddhistiska och kinesiska traditioner – med modern djuppsykologi. Du beskriver en dröm med egna ord och får en tolkning som kopplar dess symboler till deras vanliga betydelser över kulturer.",
     "q2": "Är min drömdata privat?",
     "a2": "Ja. Dina drömmar lagras bara i din webbläsares lokala lagring på din enhet. Ingenting skickas till en server för lagring, och du kan när som helst ta bort din historik.",
     "q3": "På vilka språk kan jag tolka drömmar?",
-    "a3": "Dreamscope stödjer 60 språk, inklusive engelska, arabiska, spanska, franska, tyska, kinesiska, japanska, koreanska, turkiska, portugisiska, ryska, hindi med mera. Läsningen följer det språk du väljer.",
+    "a3": "Dreamscope stöder 60 språk inklusive engelska, arabiska, spanska, franska, tyska, kinesiska, japanska, koreanska, turkiska, portugisisiska, ryska, hindi och fler. Tolkningen följer det språk du väljer.",
     "q4": "Ersätter tolkningarna professionell rådgivning?",
-    "a4": "Nej. Drömläsningar är för reflektion och underhållning. De är inte medicinsk, psykologisk eller religiös vägledning. Om du har det svårt, tala med en kvalificerad professionell.",
+    "a4": "Nej. Drömtydningar är till för reflektion och underhållning. De är inte medicinsk, psykologisk eller religiös vägledning. Om du har det svårt, tala med en kvalificerad professionell.",
     "q5": "Hur många drömsymboler täcks?",
-    "a5": "Dreamscope har dedikerade sidor för 146 vanliga symboler — orm, vatten, flyga, eld, graviditet, pengar och många fler — varje tillgänglig på flera språk med olika frågevarianter."
+    "a5": "Dreamscope har dedikerade sidor för 146 vanliga symboler – orm, vatten, flyga, eld, graviditet, pengar och många fler – varje tillgänglig på flera språk med långsvansade frågevarianter."
   },
   "notfound": {
     "title": "Denna dröm försvann",
-    "lede": "Sidan du letade efter finns inte här. Låt oss ta dig tillbaka till tolkningen.",
+    "lede": "Sidan du letade efter finns inte här. Låt oss ta dig tillbaka till att tolka.",
     "cta": "Tillbaka till startsidan"
   },
   "perspectives": {
@@ -161,7 +173,7 @@
       "name": "Hinduisk"
     },
     "buddhist": {
-      "name": "Buddistisk"
+      "name": "Buddhistisk"
     },
     "psychology": {
       "name": "Psykologi (Jung)"
@@ -172,5 +184,76 @@
   },
   "daily": {
     "tag": "Dagens dröm"
+  },
+  "profile": {
+    "title": "Ditt utrymme",
+    "cloudOff": "Din drömtext skickas till vår tolkningstjänst för att generera en tolkning, och lagras sedan inte av oss. Tolkningar sparas på din enhet om du inte loggar in och väljer att synkronisera. Vi säljer eller profilerar aldrig din data.",
+    "dataNote": "Var din data finns: på din enhet som standard. När du loggar in kan din journal synkroniseras till ditt privata konto; du kan ta bort den när som helst.",
+    "signInLede": "Logga in för att ha din drömjournal tillgänglig på alla dina enheter. Din gästhistorik flyttas med dig automatiskt.",
+    "emailLabel": "E-post",
+    "magicLink": "Skicka en inloggningslänk till mig",
+    "google": "Fortsätt med Google",
+    "checkEmail": "Kolla din inkorg – en inloggningslänk väntar på dig.",
+    "invalidEmail": "Ange en giltig e-postadress.",
+    "signInError": "Vi kunde inte logga in dig. Försök igen eller använd e-postlänken.",
+    "googleNotEnabled": "Google-inloggning är inte aktiverat ännu på detta projekt. Ägaren behöver ansluta en Google OAuth-klient i Supabase.",
+    "guestNote": "Inget lösenord, ingen spårning – bara en länk. Gästläge med lokal lagring på enheten är fullt tillgängligt.",
+    "member": "Medlem",
+    "migrated": "Migrerade {n} drömmar från denna enhet till din journal.",
+    "signOut": "Logga ut",
+    "navLabel": "Profil",
+    "lede": "Allt Dreamscope vet om din resa – lagrat på din enhet, enbart din.",
+    "yourState": "Ditt tillstånd just nu",
+    "statDreams": "Tolkade drömmar",
+    "statSaved": "Sparade tolkningar",
+    "statStreak": "Dagars svit",
+    "statTopSymbol": "Vanligaste symbol",
+    "emptyState": "Inga drömmar ännu – din första tolkning kommer att lysa upp denna sida.",
+    "symbolsYouMeet": "Symboler du stöter på igen",
+    "noneYet": "—",
+    "lastReading": "Senaste tolkning",
+    "languagesUsed": "Språk som använts",
+    "perspectivesUsed": "Traditioner som använts",
+    "cloudTitle": "Över dina enheter",
+    "connectTitle": "Anslut ditt Supabase-projekt",
+    "connectUrlLabel": "Projekt-URL",
+    "connectKeyLabel": "Anonym publik nyckel",
+    "connectCta": "Anslut",
+    "connected": "Ansluten – du kan nu logga in och synkronisera din journal.",
+    "connectError": "Kunde inte ansluta. Kontrollera URL och anonym nyckel.",
+    "disconnect": "Koppla från",
+    "privacyNote": "Dina drömmar lagras på din enhet – säljs aldrig, profileras aldrig.",
+    "moodPattern": "Mönster i humör",
+    "autoSetupTitle": "Installation med ett kommando",
+    "autoSetupBody": "Inget projekt ännu? Kör bootstrap-skriptet en gång: det skapar ett Supabase-projekt, tillämpar databasschemat och skriver ut din URL + anonyma nyckel att klistra in ovan. Google-inloggning kräver en Google Cloud OAuth-klient (se skriptet).",
+    "autoSetupCmd": "SUPABASE_ACCESS_TOKEN=xxx node scripts/setup-supabase.mjs"
+  },
+  "perspDesc": {
+    "general": "En tolkning som väver de visaste trådarna från världens traditioner med djuppsykologi.",
+    "islamic": "Den klassiska skolan enligt Ibn Sirin – symbolisk, lagbunden och själscentrerad.",
+    "christian": "Drömtydning i Josefs och Daniels tradition, med skriftlig symbolik.",
+    "jewish": "Torahn och Talmudisk drömvisdom – ett budskap som väntar på vis tolkning.",
+    "hindu": "Vedisk symbolik, karma och sinnets inre landskap.",
+    "buddhist": "Föränderlighet och medveten uppmärksamhet – observera drömmen utan att gripas av den.",
+    "psychology": "Jungs arketyper och skuggan – vad din psyke bearbetar.",
+    "chinese": "Zhou Gongs klassiska ordbok – balans mellan yin, yang och de fem elementen."
+  },
+  "moods": {
+    "peace": "Lugn",
+    "anxiety": "Orolig",
+    "hope": "Hoppfull",
+    "sadness": "Ledsen",
+    "anger": "Arg",
+    "confusion": "Förvirrad"
+  },
+  "seo": {
+    "dreamInterpretation": "Drömtydning",
+    "traditionsTitle": "Över traditionerna",
+    "traditionsBody": "En symbol kan betyda olika saker i olika kulturer. I islamiska, kristna, judiska, hinduiska, buddhistiska, kinesiska och psykologiska traditioner läses samma bild genom sin egen lins. Välj den lins du litar på på tolkningssidan.",
+    "tryTitle": "Tolk dina drömmar med AI",
+    "tryLede": "Dela din dröm och få en personlig AI-tolkning.",
+    "otherLangs": "Andra språk",
+    "otherSymbols": "Andra drömsymboler",
+    "reflectNote": "Denna sida är endast för reflektion och underhållning. Den är inte medicinsk, psykologisk eller religiös rådgivning, och den förutsäger inte framtiden."
   }
 }

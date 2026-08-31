@@ -1,6 +1,6 @@
 {
   "nav": {
-    "interpret": "Interpretácia",
+    "interpret": "Výklad",
     "symbols": "Symboly",
     "about": "O nás",
     "faq": "FAQ",
@@ -13,143 +13,155 @@
     "ansyGroup": "Ansy Group",
     "language": "Jazyk",
     "searchLanguage": "Hľadať jazyky…",
-    "noLanguage": "Žiadny jazyk nevyhovuje vášmu vyhľadávaniu."
+    "noLanguage": "Žiadny jazyk nezodpovedá vášmu hľadaniu.",
+    "profile": "Profil"
   },
   "footer": {
-    "tagline": "Free AI dream interpretation in 60 languages — every tradition, your lens.",
+    "tagline": "Bezplatný výklad snov pomocou AI v 60 jazykoch — každá tradícia, váš pohľad.",
     "copyright": "© {year} Dreamscope"
   },
   "home": {
-    "heroTitle": "Čo sa vám snaží povedať vaše {accent}",
+    "heroTitle": "Čo sa vám snaží povedať vaša {accent}",
     "heroAccent": "podvedomie",
-    "heroLede": "Ancient symbolism, modern psychology, and AI — combined into one clear reading. Describe a dream in your own words and get an interpretation through the tradition you trust.",
-    "interpretCta": "Interpretujte sen",
+    "heroLede": "Dávna symbolika, moderná psychológia a AI — spojené do jedného jasného výkladu. Popíšte sen vlastnými slovami a získajte výklad cez tradíciu, ktorej dôverujete.",
+    "interpretCta": "Vyložiť sen",
     "browseCta": "Prehliadať symboly",
     "statLanguages": "{n} jazykov",
     "statSymbols": "{n} symbolov snov",
     "statPrivateLine": "súkromné vo vašom zariadení",
     "whyTitle": "Výklad, ktorý vám naozaj pomôže",
-    "whyLede": "Dreamscope mapuje váš sen na jeho symboly a potom ich číta cez tradíciu, ktorej dôverujete — psychológiu prináša popri nej, nie namiesto nej.",
+    "whyLede": "Dreamscope mapuje váš sen na jeho symboly a potom ich číta cez tradíciu, ktorej dôverujete — s psychológiou popri, nie namiesto nej.",
     "feature1Title": "Symbolická analýza",
     "feature1Body": "Každý sen je namapovaný na svoje základné symboly a sledovaný cez stáročia interpretačnej tradície.",
     "feature2Title": "60 jazykov",
-    "feature2Body": "Interpretujte a čítajte symboly po anglicky, arabsky, španielsky, čínsky, japonsky a v ďalších 55 jazykoch.",
+    "feature2Body": "Vykladajte a čítajte symboly v angličtine, arabčine, španielčine, čínštine, japončine a ďalších 55 jazykoch.",
     "feature3Title": "Všetky tradície",
-    "feature3Body": "Depth psychology and perspectives across faiths — one reading, seen through your lens.",
+    "feature3Body": "Hĺbková psychológia a pohľady rôznych vier — jeden výklad, videný cez váš objektív.",
     "feature4Title": "Uložené a súkromné",
-    "feature4Body": "Vaše sny zostávajú vo vašom zariadení. Vracajte sa k nim, porovnávajte ich a sledujte vzorce v čase.",
+    "feature4Body": "Vaše sny zostávajú vo vašom zariadení. Prihláste sa, ak ich chcete synchronizovať medzi zariadeniami.",
     "sampleTag": "Ukážkový výklad",
     "sampleJustNow": "práve teraz",
-    "sampleDream": "„Videl som zeleného hada, ako odchádza z domu cez záhradnú bránku.“",
-    "sampleReading": "Snakes mark transformation — something in your life is shedding its old skin. The gate suggests a clear exit is opening. In many traditions, a harmless snake leaving the home often means a lingering worry is finally moving on.",
+    "sampleDream": "\"Videl som, ako zelený had opúšťa dom cez záhradnú bránku.\"",
+    "sampleReading": "Hadi znamenajú premenu — vo vašom živote sa niečo zbavuje starej kože. Bránka naznačuje, že sa otvára jasný východ. V mnohých tradíciách neškodný had, ktorý opúšťa dom, často znamená, že sa konečne uvoľňuje dlho trvajúca starosť.",
     "sampleTag1": "Premena",
     "sampleTag2": "Uvoľnenie",
-    "sampleTag3": "Tradition",
-    "sampleSaved": "Uložené vo vašom zariadení",
+    "sampleTag3": "Tradícia",
+    "sampleSaved": "Uložené do vášho zariadenia",
     "symbolsTitle": "Každý symbol nesie význam",
-    "symbolsLede": "Od vody po oheň — preskúmajte najčastejšie motívy snov a čo každý z nich zvykne naznačovať naprieč tradíciami.",
+    "symbolsLede": "Od vody po oheň, preskúmajte najčastejšie motívy snov a čo každý z nich zvykne naznačovať naprieč tradíciami.",
     "ctaTitle": "Popíšte svoj sen",
-    "ctaLede": "Stačí pár viet. Výklad trvá len sekundy a zostáva vo vašom zariadení.",
-    "ctaButton": "Začať interpretáciu"
+    "ctaLede": "Pár viet stačí. Výklad trvá sekundy a zostáva vo vašom zariadení.",
+    "ctaButton": "Začať výklad"
   },
   "interpret": {
     "title": "Popíšte svoj sen",
-    "lede": "Napíšte to vlastnými slovami. Čím viac detailov, tým presnejší výklad — prostredie, pocity a všetko neobvyklé sa počíta.",
+    "lede": "Napíšte ho vlastnými slovami. Čím viac detailov, tým presnejší výklad — prostredie, pocity a všetko neobvyklé sa počítajú.",
     "language": "Jazyk",
     "yourDream": "Váš sen",
-    "placeholder": "Minulú noc som sníval, že som prechádzal cez dvere, ktoré stále menili tvar...",
-    "loading": "Interpretujem...",
-    "button": "Interpretujte sen",
+    "placeholder": "Minulú noc som sníval, že idem cez dvere, ktoré stále menili tvar...",
+    "loading": "Výklad...",
+    "button": "Vyložiť sen",
     "yourReading": "Váš výklad",
     "save": "Uložiť",
+    "saved": "Uložené",
+    "savedConfirm": "Uložené do vášho denníka. Nájdete ho kedykoľvek v Uložených.",
+    "unsaved": "Odstránené z Uložených.",
+    "disclaimer": "Iba na zamyslenie — nie lekárska, psychologická ani náboženská rada. Nepredpovedá budúcnosť.",
     "viewHistory": "Zobraziť históriu",
     "errorEmpty": "Najprv prosím popíšte svoj sen.",
-    "errorFailed": "Interpretácia zlyhala. Skúste to prosím znova.",
+    "errorFailed": "Výklad sa nepodaril. Skúste to prosím znova.",
     "errorNetwork": "Chyba pripojenia. Skúste to prosím znova.",
-    "perspectiveLabel": "Čítanie cez",
+    "perspectiveLabel": "Výklad cez",
+    "perspNotice": "Každá tradícia je zobrazená samostatne. Výklady sú reflexívne a pravdepodobnostné — nie predpovede ani rozhodnutia.",
+    "compareLabel": "Porovnať všetky tradície",
+    "compareDesc": "Jeden sen, čítaný cez všetky objektívy naraz — pozrite sa, kde sa tradície zhodujú a kde sa rozchádzajú.",
+    "compareLoading": "Čítam cez všetky tradície…",
+    "compareBack": "Späť na jednotlivý výklad",
+    "compareSymbols": "Symboly",
     "symbolsLabel": "Symboly vo vašom sne",
-    "feedbackQ": {
-      "en": "Bol tento výklad užitočný?",
-      "ar": "هل كانت هذه القراءة مفيدة؟"
-    },
-    "yes": {
-      "en": "Áno, užitočný",
-      "ar": "نعم، مفيدة"
-    },
-    "no": {
-      "en": "Skôr nie",
-      "ar": "ليس تماماً"
-    },
-    "thanks": {
-      "en": "Ďakujeme — vaša spätná väzba zlepšuje budúce výklady.",
-      "ar": "شكراً لك — تقييمك يحسّن القراءات المستقبلية."
-    }
+    "feedbackQ": "Bol tento výklad užitočný?",
+    "yes": "Áno, užitočný",
+    "no": "Skôr nie",
+    "thanks": "Ďakujeme — vaša spätná väzba zlepšuje budúce výklady.",
+    "perspectiveDesc": "Jeden výklad, ktorý spája najmúdrejšie vlákna svetových tradícií s hĺbkovou psychológiou.",
+    "moodLabel": "Aký pocit ste mali zo sna?",
+    "copy": "Kopírovať",
+    "copied": "Skopírované!",
+    "share": "Zdieľať",
+    "example": "Vyskúšať príklad",
+    "exampleDream": "Minulú noc som sníval, že biely holub pristál na mojom okne a potom sa zmenil na list, ktorý som nedokázal prečítať. Cítil som pokoj, ale aj zvedavosť.",
+    "shortcutHint": "Stlačte ⌘/Ctrl + Enter pre výklad",
+    "symbolsSection": "Symboly"
   },
   "history": {
     "title": "História snov",
-    "lede": "Každá interpretácia, ktorú ste vygenerovali, uložená v tomto zariadení.",
-    "empty": "Zatiaľ ste neinterpretujete žiadne sny."
+    "lede": "Každý výklad, ktorý ste vygenerovali, uložený v tomto zariadení.",
+    "empty": "Zatiaľ ste nevyložili žiadne sny."
   },
   "saved": {
     "title": "Uložené sny",
-    "lede": "Uchovávajte si interpretácie, na ktorých záležalo. Zostávajú v tomto zariadení.",
-    "empty": "Zatiaľ nič uložené."
+    "lede": "Uchovajte si výklady, ktoré na vás zapôsobili. Zostávajú v tomto zariadení.",
+    "empty": "Zatiaľ nie je nič uložené."
   },
   "common": {
-    "interpretCta": "Interpretujte sen",
+    "interpretCta": "Vyložiť sen",
     "delete": "Vymazať",
     "remove": "Odstrániť",
-    "backHome": "Späť domov"
+    "confirmRemove": "Odstrániť?",
+    "backHome": "Návrat domov"
   },
   "symbols": {
-    "title": "{n} snových symbolov",
-    "lede": "Prehliadajte všetky symboly, ktoré interpretujeme — zadarmo, v desiatkach jazykov. Vyberte si svoj a prečítajte si význam.",
-    "search": "Hľadať symbol…"
+    "title": "{n} symbolov snov",
+    "lede": "Prehliadajte všetky symboly, ktoré vykladáme — bezplatne, v desiatkach jazykov. Vyberte si svoj a prečítajte si význam.",
+    "search": "Hľadať symbol…",
+    "noResults": "Žiadny symbol nezodpovedá vášmu hľadaniu."
   },
   "about": {
     "title": "Jasný výklad, zakorenený v tradícii",
-    "p1": "Dreamscope exists to make dream interpretation accessible in your own language and cultural context. We draw on a wide range of interpretive traditions — religious and spiritual scholarship, cultural folklore, and the symbolic frameworks of modern depth psychology — so you can read your dream through the lens you trust.",
-    "p2": "Každý výklad je vytvorený tak, aby vám pomohol zamyslieť sa — nie predpovedať budúcnosť. Symboly ako voda, oheň, let alebo had so sebou nesú význam naprieč kultúrami tisíce rokov a naše interpretácie sledujú tieto vlákna, aby ste našli to, čo rezonuje s vaším vlastným životom.",
-    "p3": "Služba je bezplatná, súkromná svojím návrhom a dostupná v 60 jazykoch. Vaše sny nikdy neopustia vaše zariadenie.",
-    "card1Title": "Many traditions",
-    "card1Body": "Klasická islamská náuka o snoch, sledovaná cez stáročia interpretácie.",
+    "p1": "Dreamscope vznikol, aby sprístupnil výklad snov vo vašom vlastnom jazyku a kultúrnom kontexte. Čerpáme zo širokej škály interpretačných tradícií — náboženského a duchovného učenia, kultúrneho folklóru a symbolických rámcov modernej hĺbkovej psychológie — aby ste si mohli prečítať svoj sen cez objektív, ktorému dôverujete.",
+    "p2": "Každý výklad je generovaný, aby vám pomohol zamyslieť sa — nie predpovedať budúcnosť. Symboly ako voda, oheň, let alebo had so sebou nesú význam naprieč kultúrami tisíce rokov a naše výklady sledujú tieto vlákna, aby ste našli to, čo rezonuje s vaším vlastným životom.",
+    "p3": "Služba je bezplatná, súkromná a dostupná in 60 jazykoch. Text vášho sna sa odošle do našej interpretačnej služby na vygenerovanie výkladu a my ho ďalej neukladáme; vaše výklady zostávajú vo vašom zariadení, pokiaľ sa neprihlásite a neaktivujete synchronizáciu.",
+    "card1Title": "Mnohé tradície",
+    "card1Body": "Islamské, kresťanské, židovské, hinduistické, budhistické, čínske a psychologické pohľady — vyberte si ten, ktorému dôverujete.",
     "card2Title": "60 jazykov",
-    "card2Body": "Od arabčiny po japončinu — interpretujte v jazyku, v ktorom snívate.",
-    "card3Title": "100 % súkromie",
-    "card3Body": "Sny zostávajú vo vašom zariadení. Žiadne účty, žiadne sledovanie.",
-    "cta": "Začať interpretáciu"
+    "card2Body": "Od arabčiny po japončinu — vykladajte v jazyku, v akom snívate.",
+    "card3Title": "100% súkromie",
+    "card3Body": "Vaše výklady zostávajú vo vašom zariadení. Prihláste sa len pre synchronizáciu; kedykoľvek môžete vymazať.",
+    "cta": "Začať výklad",
+    "traditionsTitle": "Každá tradícia, jeden sen",
+    "traditionsLede": "Vyberte si objektív, ktorému dôveruje vaše srdce — každý výklad je generovaný cez dedikovanú interpretačnú školu."
   },
   "contact": {
     "title": "Kontaktujte nás",
-    "lede": "Máte otázky, opravy alebo nápady na spoluprácu? Kontaktujte tím Dreamscope e-mailom.",
+    "lede": "Otázky, opravy alebo nápady na spoluprácu? Napíšte tímu Dreamscope e-mailom.",
     "email": "E-mail",
-    "disclaimer": "Dreamscope poskytuje iba zamyslenie a zábavu. Interpretácie nie sú lekárskou, psychologickou ani náboženskou radou. Ak potrebujete podporu, obráťte sa prosím na kvalifikovaného odborníka.",
-    "back": "Späť na interpretáciu"
+    "disclaimer": "Dreamscope poskytuje iba zamyslenie a zábavu. Výklady nie sú lekárskou, psychologickou ani náboženskou radou. Ak potrebujete podporu, obráťte sa prosím na kvalifikovaného odborníka.",
+    "back": "Späť na výklad"
   },
   "faq": {
     "title": "Často kladené otázky",
-    "q1": "Ako Dreamscope interpretuje sny?",
-    "a1": "Dreamscope blends dream scholarship from many cultures and faiths — including Islamic, Christian, Jewish, Hindu, Buddhist, and Chinese traditions — with modern depth psychology. You describe a dream in your own words and receive a reading that maps its symbols to their common meanings across cultures.",
-    "q2": "Sú údaje o mojich snoch súkromné?",
-    "a2": "Áno. Vaše sny sú uložené iba v lokálnom úložisku vášho prehliadača v zariadení. Na server sa neodosiela nič na ukladanie a svoju históriu môžete kedykoľvek vymazať.",
-    "q3": "V ktorých jazykoch možno interpretovať sny?",
-    "a3": "Dreamscope podporuje 60 jazykov vrátane angličtiny, arabčiny, španielčiny, francúzštiny, nemčiny, čínštiny, japončiny, kórejčiny, turečtiny, portugalčiny, ruštiny, hindčiny a ďalších. Výklad prebieha vo zvolenom jazyku.",
-    "q4": "Sú interpretácie náhradou za odbornú radu?",
-    "a4": "Nie. Výklady snov slúžia na zamyslenie a zábavu. Nie sú lekárskym, psychologickým ani náboženským vedením. Ak máte ťažkosti, obráťte sa prosím na kvalifikovaného odborníka.",
-    "q5": "Koľko snových symbolov je pokrytých?",
-    "a5": "Dreamscope má vyhradené stránky pre 146 bežných symbolov — had, voda, lietanie, oheň, tehotenstvo, peniaze a mnoho ďalších — každý dostupný vo viacerých jazykoch s variantmi dlhých otázok."
+    "q1": "Ako Dreamscope vykladá sny?",
+    "a1": "Dreamscope spája znalosti o snoch z mnohých kultúr a vier — vrátane islamskej, kresťanskej, židovskej, hinduistickej, budhistickej a čínskej tradície — s modernou hĺbkovou psychológiou. Popíšte sen vlastnými slovami a získajte výklad, ktorý mapuje jeho symboly na ich bežné významy naprieč kultúrami.",
+    "q2": "Sú moje údaje o snoch súkromné?",
+    "a2": "Áno. Vaše sny sú uložené iba v lokálnom úložisku vášho prehliadača v zariadení. Nič sa neodosiela na server na účely uchovávania a svoju históriu môžete kedykoľvek vymazať.",
+    "q3": "V akých jazykoch môžem vykladať sny?",
+    "a3": "Dreamscope podporuje 60 jazykov vrátane angličtiny, arabčiny, španielčiny, francúzštiny, nemčiny, čínštiny, japončiny, kórejčiny, turečtiny, portugalčiny, ruštiny, hindčiny a ďalších. Výklad nasleduje jazyk, ktorý si zvolíte.",
+    "q4": "Sú výklady náhradou za odborné poradenstvo?",
+    "a4": "Nie. Výklady snov sú určené na zamyslenie a zábavu. Nie sú lekárskym, psychologickým ani náboženským vedením. Ak máte ťažkosti, obráťte sa prosím na kvalifikovaného odborníka.",
+    "q5": "Koľko symbolov snov je pokrytých?",
+    "a5": "Dreamscope má dedikované stránky pre 146 bežných symbolov — had, voda, let, oheň, tehotenstvo, peniaze a mnoho ďalších — každý dostupný vo viacerých jazykoch s variantmi dlhých otázok."
   },
   "notfound": {
     "title": "Tento sen sa rozplynul",
-    "lede": "Stránka, ktorú ste hľadali, tu nie je. Poďme späť k interpretácii.",
-    "cta": "Späť domov"
+    "lede": "Stránka, ktorú ste hľadali, tu nie je. Poďme späť k výkladu.",
+    "cta": "Návrat domov"
   },
   "perspectives": {
     "general": {
       "name": "Univerzálny"
     },
     "islamic": {
-      "name": "Ibn Sirin (islamský)"
+      "name": "Ibn Sirin (Islamský)"
     },
     "christian": {
       "name": "Kresťanský"
@@ -167,10 +179,81 @@
       "name": "Psychológia (Jung)"
     },
     "chinese": {
-      "name": "Zhou Gong (čínsky)"
+      "name": "Zhou Gong (Čínsky)"
     }
   },
   "daily": {
     "tag": "Sen dňa"
+  },
+  "profile": {
+    "title": "Váš priestor",
+    "cloudOff": "Text vášho sna sa odošle do našej interpretačnej služby na vygenerovanie výkladu a my ho ďalej neukladáme. Výklady sa uchovávajú vo vašom zariadení, pokiaľ sa neprihlásite a nezvolíte si synchronizáciu. Vaše údaje nikdy nepredávame ani neprofilujeme.",
+    "dataNote": "Kde žijú vaše údaje: v predvolenom nastavení vo vašom zariadení. Keď sa prihlásite, váš denník sa môže synchronizovať s vaším súkromným účtom; môžete ho kedykoľvek vymazať.",
+    "signInLede": "Prihláste sa, aby ste si uchovali denník snov vo všetkých svojich zariadeniach. Vaša história v režime hosťa sa presunie automaticky.",
+    "emailLabel": "E-mail",
+    "magicLink": "Pošlite mi prihlasovací odkaz",
+    "google": "Pokračovať cez Google",
+    "checkEmail": "Skontrolujte svoju doručenú poštu — čaká tam na vás prihlasovací odkaz.",
+    "invalidEmail": "Zadajte prosím platnú e-mailovú adresu.",
+    "signInError": "Nepodarilo sa vás prihlásiť. Skúste to prosím znova alebo použite e-mailový odkaz.",
+    "googleNotEnabled": "Prihlásenie cez Google ešte nie je v tomto projekte aktivované. Vlastník stránky musí pripojiť OAuth klienta Google v Supabase.",
+    "guestNote": "Žiadne heslo, žiadne sledovanie — len odkaz. Režim hosťa s lokálnym úložiskom zostáva plne k dispozícii.",
+    "member": "Člen",
+    "migrated": "Migrovaných {n} snov z tohto zariadenia do vášho denníka.",
+    "signOut": "Odhlásiť sa",
+    "navLabel": "Profil",
+    "lede": "Všetko, čo Dreamscope vie o vašej ceste — uložené vo vašom zariadení, len vaše.",
+    "yourState": "Váš aktuálny stav",
+    "statDreams": "Vyložené sny",
+    "statSaved": "Uložené výklady",
+    "statStreak": "Denná šnúra",
+    "statTopSymbol": "Najčastejší symbol",
+    "emptyState": "Zatiaľ žiadne sny — váš prvý výklad rozžiari túto stránku.",
+    "symbolsYouMeet": "Symboly, ktoré sa opakujú",
+    "noneYet": "—",
+    "lastReading": "Posledný výklad",
+    "languagesUsed": "Použité jazyky",
+    "perspectivesUsed": "Použité tradície",
+    "cloudTitle": "Naprieč vašimi zariadeniami",
+    "connectTitle": "Pripojte svoj projekt Supabase",
+    "connectUrlLabel": "URL projektu",
+    "connectKeyLabel": "Verejný anon kľúč",
+    "connectCta": "Pripojiť",
+    "connected": "Pripojené — teraz sa môžete prihlásiť a synchronizovať svoj denník.",
+    "connectError": "Nepodarilo sa pripojiť. Skontrolujte URL a anon kľúč.",
+    "disconnect": "Odpojiť",
+    "privacyNote": "Vaše sny sú uložené vo vašom zariadení — nikdy sa nepredávajú, nikdy sa neprofilujú.",
+    "moodPattern": "Vzor nálad",
+    "autoSetupTitle": "Jednoriadkové nastavenie",
+    "autoSetupBody": "Zatiaľ nemáte projekt? Spustite bootstrap skript raz: vytvorí projekt Supabase, aplikuje schému databázy a vypíše vaše URL + anon kľúč, ktoré vložíte vyššie. Prihlásenie cez Google vyžaduje OAuth klienta Google Cloud (pozrite si skript).",
+    "autoSetupCmd": "SUPABASE_ACCESS_TOKEN=xxx node scripts/setup-supabase.mjs"
+  },
+  "perspDesc": {
+    "general": "Jeden výklad, ktorý spája najmúdrejšie vlákna svetových tradícií s hĺbkovou psychológiou.",
+    "islamic": "Klasická škola Ibn Sirina — symbolická, zákonná a sústredená na dušu.",
+    "christian": "Výklad snov v línii Jozefa a Daniela, so symbolikou Písma.",
+    "jewish": "Tóra a talmudická múdrosť snov — posolstvo čakajúce na múdry výklad.",
+    "hindu": "Védska symbolika, karma a vnútorné krajiny mysle.",
+    "buddhist": "Pomíjivosť a všímavé vedomie — pozorovať sen bez uchopovania.",
+    "psychology": "Jungove archetypy a tieň — to, čo vaša psychika spracúva.",
+    "chinese": "Klasický slovník Zhou Gonga — rovnováha jin, jang a piatich prvkov."
+  },
+  "moods": {
+    "peace": "Pokojný",
+    "anxiety": "Uzkostlivý",
+    "hope": "Nádejný",
+    "sadness": "Smutný",
+    "anger": "Nahnevaný",
+    "confusion": "Zmätený"
+  },
+  "seo": {
+    "dreamInterpretation": "Výklad snov",
+    "traditionsTitle": "Naprieč tradíciami",
+    "traditionsBody": "Symbol môže znamenať rôzne veci v rôznych kultúrach. V islamskej, kresťanskej, židovskej, hinduistickej, budhistickej, čínskej a psychologickej tradícii sa ten istý obraz číta cez vlastný objektív. Na stránke výkladu si vyberte objektív, ktorému dôverujete.",
+    "tryTitle": "Vyložte si svoje sny pomocou AI",
+    "tryLede": "Zdieľajte svoj sen a získajte personalizovaný výklad pomocou AI.",
+    "otherLangs": "Ďalšie jazyky",
+    "otherSymbols": "Ďalšie symboly snov",
+    "reflectNote": "Táto stránka slúži iba na zamyslenie a zábavu. Nie je lekárskou, psychologickou ani náboženskou radou a nepredpovedá budúcnosť."
   }
 }

@@ -1,94 +1,102 @@
 {
   "nav": {
-    "interpret": "Interpretiraj",
+    "interpret": "Protumači",
     "symbols": "Simboli",
     "about": "O nama",
-    "faq": "FAQ",
+    "faq": "Česta pitanja",
     "history": "Povijest",
-    "saved": "Spremljeno",
     "contact": "Kontakt",
-    "start": "Započni",
+    "start": "Počni",
     "home": "Početna",
-    "aiBlog": "AI Blog",
+    "aiBlog": "AI blog",
     "ansyGroup": "Ansy Group",
     "language": "Jezik",
     "searchLanguage": "Pretraži jezike…",
-    "noLanguage": "Nijedan jezik ne odgovara vašoj pretrazi."
+    "noLanguage": "Nijedan jezik ne odgovara pretrazi.",
+    "profile": "Profil",
+    "saved": "Spremljeno"
   },
   "footer": {
-    "tagline": "Free AI dream interpretation in 60 languages — every tradition, your lens.",
+    "tagline": "Besplatna AI interpretacija snova na 60 jezika — svaka tradicija, vaša perspektiva.",
     "copyright": "© {year} Dreamscope"
   },
   "home": {
     "heroTitle": "Što vaša {accent} pokušava reći",
     "heroAccent": "podsvijest",
-    "heroLede": "Ancient symbolism, modern psychology, and AI — combined into one clear reading. Describe a dream in your own words and get an interpretation through the tradition you trust.",
-    "interpretCta": "Interpretiraj san",
+    "heroLede": "Drevna simbolika, moderna psihologija i AI — objedinjeni u jedno jasno tumačenje. Opišite san vlastitim riječima i dobijte tumačenje kroz tradiciju kojoj vjerujete.",
+    "interpretCta": "Protumači san",
     "browseCta": "Pregledaj simbole",
     "statLanguages": "{n} jezika",
     "statSymbols": "{n} simbola snova",
     "statPrivateLine": "privatno na vašem uređaju",
     "whyTitle": "Tumačenje koje zaista možete upotrijebiti",
-    "whyLede": "Dreamscope povezuje vaš san s njegovim simbolima, a zatim ih čita kroz tradiciju kojoj vi vjerujete — s psihologijom uz, a ne umjesto.",
+    "whyLede": "Dreamscope povezuje vaš san s njegovim simbolima, a zatim ih čitita kroz tradiciju kojoj vjerujete — uz psihologiju pokraj, a ne umjesto nje.",
     "feature1Title": "Simbolička analiza",
-    "feature1Body": "Svaki san mapiran je do svojih temeljnih simbola i praćen kroz stoljeća interpretacijske tradicije.",
+    "feature1Body": "Svaki san se povezuje s njegovim temeljnim simbolima i prati kroz stoljeća tradicije tumačenja.",
     "feature2Title": "60 jezika",
     "feature2Body": "Tumačite i čitajte simbole na engleskom, arapskom, španjolskom, kineskom, japanskom i još 55 jezika.",
     "feature3Title": "Sve tradicije",
-    "feature3Body": "Depth psychology and perspectives across faiths — one reading, seen through your lens.",
+    "feature3Body": "Dubinska psihologija i perspektive različitih vjeroispovijesti — jedno tumačenje, gledano kroz vašu prizmu.",
     "feature4Title": "Spremljeno i privatno",
-    "feature4Body": "Vaši snovi ostaju na vašem uređaju. Vratite se, uspoređujte i pratite obrasce kroz vrijeme.",
+    "feature4Body": "Vaši snovi ostaju na vašem uređaju prema zadanoj postavci. Prijavite se za sinkronizaciju između uređaja.",
     "sampleTag": "Primjer tumačenja",
     "sampleJustNow": "upravo sad",
     "sampleDream": "\"Sanjao sam kako zelena zmija izlazi iz kuće kroz vrtna vrata.\"",
-    "sampleReading": "Snakes mark transformation — something in your life is shedding its old skin. The gate suggests a clear exit is opening. In many traditions, a harmless snake leaving the home often means a lingering worry is finally moving on.",
-    "sampleTag1": "Preobrazba",
+    "sampleReading": "Zmije označavaju transformaciju — nešto u vašem životu odbacuje staru kožu. Vrata sugeriraju da se otvara jasan izlaz. U mnogim tradicijama bezopasna zmija koja napušta dom često znači da napokon odlazite od brige koja vas je dugo pratila.",
+    "sampleTag1": "Transformacija",
     "sampleTag2": "Oslobođenje",
-    "sampleTag3": "Tradition",
+    "sampleTag3": "Tradicija",
     "sampleSaved": "Spremljeno na vaš uređaj",
     "symbolsTitle": "Svaki simbol nosi značenje",
-    "symbolsLede": "Od vode do vatre, istražite najčešće motive snova i što svaki od njih obično signalizira kroz tradicije.",
+    "symbolsLede": "Od vode do vatre, istražite najčešće motive snova i što svaki od njih obično nagovještava u različitim tradicijama.",
     "ctaTitle": "Opišite svoj san",
-    "ctaLede": "Nekoliko rečenica je dovoljno. Tumačenje traje svega nekoliko sekundi i ostaje na vašem uređaju.",
+    "ctaLede": "Nekoliko rečenica je dovoljno. Tumačenje stiže u sekundama i ostaje na vašem uređaju prema zadanoj postavci.",
     "ctaButton": "Započni tumačenje"
   },
   "interpret": {
     "title": "Opišite svoj san",
-    "lede": "Napišite ga vlastitim riječima. Što više detalja, to će tumačenje biti jasnije — mjesto, osjećaji i sve neuobičajeno su važni.",
+    "lede": "Napišite ga vlastitim riječima. Što više detalja, to će tumačenje biti preciznije — okruženje, osjećaji i sve neuobičajeno su važni.",
     "language": "Jezik",
     "yourDream": "Vaš san",
-    "placeholder": "Prošlu sam noć sanjao kako hodam kroz vrata koja su se neprestano mijenjala...",
+    "placeholder": "Prošlu sam noć sanjao da prolazim kroz vrata koja su neprestano mijenjala oblik...",
     "loading": "Tumačim...",
-    "button": "Interpretiraj san",
+    "button": "Protumači san",
     "yourReading": "Vaše tumačenje",
     "save": "Spremi",
+    "saved": "Spremljeno",
+    "savedConfirm": "Spremljeno u vaš dnevnik. Pronađite ga bilo kada u rubrici Spremljeno.",
+    "unsaved": "Uklonjeno iz Spremljenog.",
+    "disclaimer": "Samo za promišljanje — nije medicinski, psihološki ni vjerski savjet. Ne predviđa budućnost.",
     "viewHistory": "Pogledaj povijest",
-    "errorEmpty": "Molimo, prvo opišite svoj san.",
+    "errorEmpty": "Molimo prvo opišite svoj san.",
     "errorFailed": "Tumačenje nije uspjelo. Pokušajte ponovo.",
-    "errorNetwork": "Greška u povezivanju. Pokušajte ponovo.",
-    "perspectiveLabel": "Čitanje kroz",
+    "errorNetwork": "Pogreška u vezi. Pokušajte ponovo.",
+    "perspectiveLabel": "Tumačenje kroz",
+    "perspNotice": "Svaka tradicija prikazuje se zasebno. Tumačenja su refleksivna i probabilistička — nisu predviđanja ni presude.",
+    "compareLabel": "Usporedi sve tradicije",
+    "compareDesc": "Jedan san, protumačen kroz svaku prizmu odjednom — pogledajte gdje se tradicije slažu, a gdje se razilaze.",
+    "compareLoading": "Tumačim kroz svaku tradiciju…",
+    "compareBack": "Natrag na pojedinačno tumačenje",
+    "compareSymbols": "Simboli",
     "symbolsLabel": "Simboli u vašem snu",
-    "feedbackQ": {
-      "en": "Je li ovo tumačenje bilo korisno?",
-      "ar": "هل كانت هذه القراءة مفيدة؟"
-    },
-    "yes": {
-      "en": "Da, korisno",
-      "ar": "نعم، مفيدة"
-    },
-    "no": {
-      "en": "Ne baš",
-      "ar": "ليس تماماً"
-    },
-    "thanks": {
-      "en": "Hvala — vaše povratne informacije poboljšavaju buduća tumačenja.",
-      "ar": "شكراً لك — تقييمك يحسّن القراءات المستقبلية."
-    }
+    "feedbackQ": "Je li vam ovo tumačenje bilo korisno?",
+    "yes": "Da, korisno",
+    "no": "Ne baš",
+    "thanks": "Hvala — vaše povratne informacije poboljšavaju buduća tumačenja.",
+    "perspectiveDesc": "Jedno tumačenje koje isprepliće najmudrije niti svjetskih tradicija s dubinskom psihologijom.",
+    "moodLabel": "Kako se osjećao san?",
+    "copy": "Kopiraj",
+    "copied": "Kopirano!",
+    "share": "Podijeli",
+    "example": "Pokušaj primjer",
+    "exampleDream": "Prošlu sam noć sanjao da je bijeli golub sletio na moj prozor, a zatim se pretvorio u pismo koje nisam mogao pročitati. Osjećao sam se smireno, ali znatiželjno.",
+    "shortcutHint": "Pritisnite ⌘/Ctrl + Enter za tumačenje",
+    "symbolsSection": "Simboli"
   },
   "history": {
     "title": "Povijest snova",
     "lede": "Svako tumačenje koje ste generirali, pohranjeno na ovom uređaju.",
-    "empty": "Još nema interpretiranih snova."
+    "empty": "Još nema protumačenih snova."
   },
   "saved": {
     "title": "Spremljeni snovi",
@@ -96,52 +104,56 @@
     "empty": "Još ništa nije spremljeno."
   },
   "common": {
-    "interpretCta": "Interpretiraj san",
-    "delete": "Obriši",
+    "interpretCta": "Protumači san",
+    "delete": "Izbriši",
     "remove": "Ukloni",
+    "confirmRemove": "Ukloniti?",
     "backHome": "Povratak na početnu"
   },
   "symbols": {
     "title": "{n} simbola snova",
-    "lede": "Pregledajte sve simbole koje tumačimo — besplatno, na desecima jezika. Odaberite svoj kako biste pročitali značenje.",
-    "search": "Traži simbol…"
+    "lede": "Pregledajte sve simbole koje tumačimo — besplatno, na desecima jezika. Odaberite svoj da pročitate značenje.",
+    "search": "Traži simbol…",
+    "noResults": "Nijedan simbol ne odgovara vašoj pretrazi."
   },
   "about": {
     "title": "Jasno tumačenje, ukorijenjeno u tradiciji",
-    "p1": "Dreamscope exists to make dream interpretation accessible in your own language and cultural context. We draw on a wide range of interpretive traditions — religious and spiritual scholarship, cultural folklore, and the symbolic frameworks of modern depth psychology — so you can read your dream through the lens you trust.",
-    "p2": "Svako tumačenje generirano je da vam pomogne u promišljanju — ne da predvidi budućnost. Simboli poput vode, vatre, letenja ili zmije nose značenje u kulturama tisućama godina, a naša tumačenja prate te niti kako biste pronašli ono što rezonira s vašim vlastitim životom.",
-    "p3": "Usluga je besplatna, privatna po dizajnu i dostupna na 60 jezika. Vaši snovi nikada ne napuštaju vaš uređaj.",
-    "card1Title": "Many traditions",
-    "card1Body": "Klasična islamska znanost o snovima, praćena kroz stoljeća tumačenja.",
+    "p1": "Dreamscope postoji kako bi tumačenje snova učinio dostupnim na vašem jeziku i u vašem kulturnom kontekstu. Crpimo iz širokog raspona interpretativnih tradicija — vjerske i duhovne znanosti, kulturnog folklora i simboličkih okvira moderne dubinske psihologije — kako biste mogli čitati svoj san kroz prizmu kojoj vjerujete.",
+    "p2": "Svako tumačenje generirano je da vam pomogne u promišljanju — a ne da predvidi budućnost. Simboli poput vode, vatre, leta ili zmije nose značenje u kulturama već tisućama godina, a naša tumačenja prate te niti kako biste pronašli ono što rezonira s vašim vlastitim životom.",
+    "p3": "Usluga je besplatna, privatna po dizajnu i dostupna na 60 jezika. Tekst vašeg snova šalje se našoj usluzi za tumačenje kako bi se generiralo tumačenje, a zatim ga mi ne pohranjujemo; vaša tumačenja ostaju na vašem uređaju osim ako se ne prijavite i sinkronizirate.",
+    "card1Title": "Mnoge tradicije",
+    "card1Body": "Islamska, kršćanska, židovska, hinduistička, budistička, kineska i psihološka prizma — odaberite onu kojoj vjerujete.",
     "card2Title": "60 jezika",
     "card2Body": "Od arapskog do japanskog — tumačite na jeziku na kojem sanjate.",
     "card3Title": "100% privatno",
-    "card3Body": "Snovi ostaju na vašem uređaju. Bez računa, bez praćenja.",
-    "cta": "Započni tumačenje"
+    "card3Body": "Vaša tumačenja ostaju na vašem uređaju prema zadanoj postavci. Prijavite se samo za sinkronizaciju; izbrišite bilo kada.",
+    "cta": "Započni tumačenje",
+    "traditionsTitle": "Svaka tradicija, jedan san",
+    "traditionsLede": "Odaberite prizmu kojoj vaše srce vjeruje — svako tumačenje generirano je kroz zasebnu školu tumačenja."
   },
   "contact": {
     "title": "Stupite u kontakt",
-    "lede": "Pitanja, ispravke ili ideje za suradnju? Kontaktirajte Dreamscope tim putem e-pošte.",
+    "lede": "Pitanja, ispravci ili ideje za suradnju? Kontaktirajte Dreamscope tim e-poštom.",
     "email": "E-pošta",
-    "disclaimer": "Dreamscope pruža samo poticaj za promišljanje i zabavu. Tumačenja nisu medicinski, psihološki ni vjerski savjet. Ako vam je potrebna podrška, obratite se kvalificiranom stručnjaku.",
-    "back": "Natrag na tumač"
+    "disclaimer": "Dreamscope pruža samo promišljanje i zabavu. Tumačenja nisu medicinski, psihološki ni vjerski savjet. Ako vam je potrebna podrška, obratite se kvalificiranom stručnjaku.",
+    "back": "Natrag na tumačenje"
   },
   "faq": {
     "title": "Često postavljana pitanja",
     "q1": "Kako Dreamscope tumači snove?",
-    "a1": "Dreamscope blends dream scholarship from many cultures and faiths — including Islamic, Christian, Jewish, Hindu, Buddhist, and Chinese traditions — with modern depth psychology. You describe a dream in your own words and receive a reading that maps its symbols to their common meanings across cultures.",
+    "a1": "Dreamscope spaja učenja o snovima iz mnogih kultura i vjeroispovijesti — uključujući islamsku, kršćansku, židovsku, hinduističku, budističku i kinesku tradiciju — s modernom dubinskom psihologijom. Opišete san vlastitim riječima i dobijete tumačenje koje povezuje njegove simbole s uobičajenim značenjima u različitim kulturama.",
     "q2": "Jesu li moji podaci o snovima privatni?",
-    "a2": "Da. Vaši snovi pohranjeni su samo u lokalnu pohranu vašeg preglednika na vašem uređaju. Ništa se ne šalje na poslužitelj radi pohrane, a svoju povijest možete obrisati u bilo kojem trenutku.",
+    "a2": "Da. Vaši snovi pohranjuju se samo u lokalnu pohranu vašeg preglednika na vašem uređaju. Ništa se ne šalje na poslužitelj radi pohrane, a svoju povijest možete izbrisati bilo kada.",
     "q3": "Na kojim jezicima mogu tumačiti snove?",
-    "a3": "Dreamscope podržava 60 jezika uključujući engleski, arapski, španjolski, francuski, njemački, kineski, japanski, korejski, turski, portugalski, ruski, hindski i druge. Tumačenje prati jezik koji odaberete.",
+    "a3": "Dreamscope podržava 60 jezika, uključujući engleski, arapski, španjolski, francuski, njemački, kineski, japanski, korejski, turski, portugalski, ruski, hindski i druge. Tumačenje slijedi jezik koji odaberete.",
     "q4": "Jesu li tumačenja zamjena za stručni savjet?",
-    "a4": "Ne. Tumačenja snova služe za promišljanje i zabavu. Ona nisu medicinski, psihološki ni vjerski vodič. Ako se suočavate s poteškoćama, molimo vas da razgovarate s kvalificiranim stručnjakom.",
-    "q5": "Koliko simbola snova je pokriveno?",
-    "a5": "Dreamscope ima posvećene stranice za 146 uobičajenih simbola — zmija, voda, letenje, vatra, trudnoća, novac i mnogi drugi — svaki dostupan na više jezika s varijantama dugih upita."
+    "a4": "Ne. Tumačenja snova služe za promišljanje i zabavu. Ona nisu medicinska, psihološka ni vjerska smjernica. Ako se suočavate s teškoćama, obratite se kvalificiranom stručnjaku.",
+    "q5": "Koliko simbola snova je obuhvaćeno?",
+    "a5": "Dreamscope ima namjenske stranice za 146 uobičajenih simbola — zmija, voda, letenje, vatra, trudnoća, novac i mnogi drugi — svaki dostupan na više jezika s varijantama dugorepih pitanja."
   },
   "notfound": {
     "title": "Ovaj se san raspršio",
-    "lede": "Stranica koju ste tražili nije ovdje. Vratimo vas na tumačenje.",
+    "lede": "Stranica koju tražite nije ovdje. Vratimo vas na tumačenje.",
     "cta": "Povratak na početnu"
   },
   "perspectives": {
@@ -149,28 +161,99 @@
       "name": "Univerzalno"
     },
     "islamic": {
-      "name": "Ibn Sirin (islamsko)"
+      "name": "Ibn Sirin (islamska)"
     },
     "christian": {
-      "name": "Kršćansko"
+      "name": "Kršćanska"
     },
     "jewish": {
-      "name": "Židovsko"
+      "name": "Židovska"
     },
     "hindu": {
-      "name": "Hinduističko"
+      "name": "Hinduistička"
     },
     "buddhist": {
-      "name": "Budističko"
+      "name": "Budistička"
     },
     "psychology": {
       "name": "Psihologija (Jung)"
     },
     "chinese": {
-      "name": "Zhou Gong (kinesko)"
+      "name": "Zhou Gong (kineska)"
     }
   },
   "daily": {
     "tag": "San dana"
+  },
+  "profile": {
+    "title": "Vaš prostor",
+    "cloudOff": "Tekst vašeg snova šalje se našoj usluzi za tumačenje kako bi se generiralo tumačenje, a zatim ga mi ne pohranjujemo. Tumačenja se čuvaju na vašem uređaju osim ako se ne prijavite i odaberete sinkronizaciju. Nikada ne prodajemo niti profiliramo vaše podatke.",
+    "dataNote": "Gdje žive vaši podaci: na vašem uređaju prema zadanoj postavci. Kada se prijavite, vaš se dnevnik može sinkronizirati s vašim privatnim računom; možete ga izbrisati bilo kada.",
+    "signInLede": "Prijavite se kako biste sačuvali dnevnik snova na svim svojim uređajima. Vaša gostujuća povijest automatski se premješta s vama.",
+    "emailLabel": "E-pošta",
+    "magicLink": "Pošaljite mi poveznicu za prijavu",
+    "google": "Nastavite s Googleom",
+    "checkEmail": "Provjerite svoj sandučić — poveznica za prijavu vas čeka.",
+    "invalidEmail": "Molimo unesite valjanu adresu e-pošte.",
+    "signInError": "Nismo vas mogli prijaviti. Pokušajte ponovo ili upotrijebite poveznicu e-poštom.",
+    "googleNotEnabled": "Google prijava još nije omogućena na ovom projektu. Vlasnik stranice treba povezati Google OAuth klijent u Supabaseu.",
+    "guestNote": "Bez lozinke, bez praćenja — samo poveznica. Način za goste s pohranom na uređaju ostaje u potpunosti dostupan.",
+    "member": "Član",
+    "migrated": "Migrirano {n} snova s ovog uređaja u vaš dnevnik.",
+    "signOut": "Odjavi se",
+    "navLabel": "Profil",
+    "lede": "Sve što Dreamscope zna o vašem putovanju — pohranjeno na vašem uređaju, samo vaše.",
+    "yourState": "Vaše trenutno stanje",
+    "statDreams": "Protumačeni snovi",
+    "statSaved": "Spremljena tumačenja",
+    "statStreak": "Dnevni niz",
+    "statTopSymbol": "Najčešći simbol",
+    "emptyState": "Još nema snova — vaše prvo tumačenje osvijetlit će ovu stranicu.",
+    "symbolsYouMeet": "Simboli s kojima se susrećete",
+    "noneYet": "—",
+    "lastReading": "Posljednje tumačenje",
+    "languagesUsed": "Korišteni jezici",
+    "perspectivesUsed": "Korištene tradicije",
+    "cloudTitle": "Na svim vašim uređajima",
+    "connectTitle": "Povežite svoj Supabase projekt",
+    "connectUrlLabel": "URL projekta",
+    "connectKeyLabel": "Anonimni javni ključ",
+    "connectCta": "Poveži",
+    "connected": "Povezano — sada se možete prijaviti i sinkronizirati svoj dnevnik.",
+    "connectError": "Povezivanje nije uspjelo. Provjerite URL i anonimni ključ.",
+    "disconnect": "Odspoji",
+    "privacyNote": "Vaši snovi pohranjeni su na vašem uređaju — nikada se ne prodaju, nikada se ne profiliraju.",
+    "moodPattern": "Obrazac raspoloženja",
+    "autoSetupTitle": "Postavljanje jednom naredbom",
+    "autoSetupBody": "Još nema projekta? Pokrenite skriptu za pokretanje jednom: stvara Supabase projekt, primjenjuje shemu baze podataka i ispisuje vaš URL + anonimni ključ koje možete zalijepiti gore. Google prijava zahtijeva Google Cloud OAuth klijent (pogledajte skriptu).",
+    "autoSetupCmd": "SUPABASE_ACCESS_TOKEN=xxx node scripts/setup-supabase.mjs"
+  },
+  "perspDesc": {
+    "general": "Jedno tumačenje koje isprepliće najmudrije niti svjetskih tradicija s dubinskom psihologijom.",
+    "islamic": "Klasična škola Ibn Sirina — simbolička, zakonita i usmjerena duši.",
+    "christian": "Tumačenje snova u liniji Josipa i Daniela, sa simbolikom Svetog pisma.",
+    "jewish": "Tora i talmudska mudrost snova — poruka koja čeka mudro tumačenje.",
+    "hindu": "Vedska simbolika, karma i unutarnji krajolici uma.",
+    "buddhist": "Prolaznost i svjesna pažnja — promatrajte san bez hvatanja.",
+    "psychology": "Jungovi arhetipovi i sjena — što vaša psiha obrađuje.",
+    "chinese": "Klasični rječnik Zhou Gonga — ravnoteža jina, janga i pet elemenata."
+  },
+  "moods": {
+    "peace": "Mirno",
+    "anxiety": "Anksiozno",
+    "hope": "Puno nade",
+    "sadness": "Tužno",
+    "anger": "Ljutito",
+    "confusion": "Zbunjeno"
+  },
+  "seo": {
+    "dreamInterpretation": "Tumačenje snova",
+    "traditionsTitle": "Kroz tradicije",
+    "traditionsBody": "Simbol može značiti različite stvari u različitim kulturama. U islamskoj, kršćanskoj, židovskoj, hinduističkoj, budističkoj, kineskoj i psihološkoj tradiciji, ista slika čitata se kroz vlastitu prizmu. Odaberite prizmu kojoj vjerujete na stranici za tumačenje.",
+    "tryTitle": "Protumačite svoje snove uz AI",
+    "tryLede": "Podijelite svoj san i dobijte personalizirano AI tumačenje.",
+    "otherLangs": "Ostali jezici",
+    "otherSymbols": "Ostali simboli snova",
+    "reflectNote": "Ova stranica služi samo za promišljanje i zabavu. Nije medicinski, psihološki ni vjerski savjet i ne predviđa budućnost."
   }
 }

@@ -2,7 +2,7 @@
   "nav": {
     "interpret": "Tulkkaa",
     "symbols": "Symbolit",
-    "about": "Tietoja",
+    "about": "Tietoa",
     "faq": "UKK",
     "history": "Historia",
     "saved": "Tallennetut",
@@ -13,140 +13,152 @@
     "ansyGroup": "Ansy Group",
     "language": "Kieli",
     "searchLanguage": "Hae kieliä…",
-    "noLanguage": "Hakuehtoihisi ei löytynyt kieliä."
+    "noLanguage": "Hakusi ei vastaa yhtäkään kieltä.",
+    "profile": "Profiili"
   },
   "footer": {
-    "tagline": "Free AI dream interpretation in 60 languages — every tradition, your lens.",
+    "tagline": "Ilmaista AI-unien tulkintaa 60 kielellä — jokainen perinne, sinun näkökulmastasi.",
     "copyright": "© {year} Dreamscope"
   },
   "home": {
-    "heroTitle": "Mitä {accent} yrittää sanoa sinulle",
-    "heroAccent": "alitajuntasi",
-    "heroLede": "Ancient symbolism, modern psychology, and AI — combined into one clear reading. Describe a dream in your own words and get an interpretation through the tradition you trust.",
+    "heroTitle": "Mitä sinun {accent}si yrittää kertoa",
+    "heroAccent": "alitajunta",
+    "heroLede": "Muinainen symboliikka, moderni psykologia ja tekoäly — yhdessä selkeässä tulkinnassa. Kuvaile unesi omin sanoin ja saat tulkinnan sinulle merkityksellisen perinteen kautta.",
     "interpretCta": "Tulkkaa uni",
     "browseCta": "Selaa symboleita",
     "statLanguages": "{n} kieltä",
-    "statSymbols": "{n} unisymbolia",
+    "statSymbols": "{n} unien symbolia",
     "statPrivateLine": "yksityinen laitteellasi",
     "whyTitle": "Tulkinta, josta on sinulle oikeasti hyötyä",
-    "whyLede": "Dreamscope yhdistää unesi sen symboleihin ja tulkitsee ne sinulle luotettavan perinteen kautta – psykologia rinnalla, ei sen sijaan.",
+    "whyLede": "Dreamscope yhdistää unesi sen symboleihin ja tulkitsee ne sinulle luotettavan perinteen kautta — psykologia rinnalla, ei sen sijasta.",
     "feature1Title": "Symbolinen analyysi",
-    "feature1Body": "Jokainen uni puretaan ydinsymboleikseen ja jäljitetään vuosisatojen tulkintaperinteeseen.",
+    "feature1Body": "Jokainen uni puretaan sen ydinsymboleihin ja jäljitetään vuosisatojen tulkintaperinteessä.",
     "feature2Title": "60 kieltä",
     "feature2Body": "Tulkkaa ja lue symboleita englanniksi, arabiaksi, espanjaksi, kiinaksi, japaniksi ja 55 muulla kielellä.",
     "feature3Title": "Kaikki perinteet",
-    "feature3Body": "Depth psychology and perspectives across faiths — one reading, seen through your lens.",
+    "feature3Body": "Syvyyspsykologiaa ja näkökulmia eri uskonnoista — yksi tulkinta, sinun linssisi kautta.",
     "feature4Title": "Tallennettu ja yksityinen",
-    "feature4Body": "Unesi pysyvät laitteellasi. Palaa niihin, vertaile ja seuraa kaavoja ajan mittaan.",
+    "feature4Body": "Unesi pysyvät laitteellasi oletuksena. Kirjaudu sisään synkronoidaksesi laitteiden välillä.",
     "sampleTag": "Esimerkkitulkinta",
     "sampleJustNow": "juuri nyt",
     "sampleDream": "\"Näin vihreän käärmeen poistuvan talosta puutarhan portista.\"",
-    "sampleReading": "Snakes mark transformation — something in your life is shedding its old skin. The gate suggests a clear exit is opening. In many traditions, a harmless snake leaving the home often means a lingering worry is finally moving on.",
+    "sampleReading": "Käärmeet merkitsevät muutosta — jokin elämässäsi kuorii vanhaa ihoaan. Portti viittaa siihen, että selvä poispääsy avautuu. Monissa perinteissä vaaraton käärme, joka poistuu kodista, tarkoittaa pitkään jatkuneen huolen vihdoin väistyvän.",
     "sampleTag1": "Muutos",
     "sampleTag2": "Vapautuminen",
-    "sampleTag3": "Tradition",
+    "sampleTag3": "Perinne",
     "sampleSaved": "Tallennettu laitteellesi",
     "symbolsTitle": "Jokainen symboli kantaa merkitystä",
-    "symbolsLede": "Vedestä tuleen – tutustu yleisimpiin unien teemoihin ja siihen, mitä ne perinteiden valossa yleensä viestivät.",
+    "symbolsLede": "Vedestä tuleen — tutustu tavallisimpiin unien teemoihin ja siihen, mitä kukin yleensä viestii eri perinteissä.",
     "ctaTitle": "Kuvaile unesi",
-    "ctaLede": "Muutama lause riittää. Tulkinta syntyy sekunneissa ja pysyy laitteellasi.",
+    "ctaLede": "Muutama lause riittää. Tulkinta syntyy sekunneissa ja pysyy laitteellasi oletuksena.",
     "ctaButton": "Aloita tulkinta"
   },
   "interpret": {
     "title": "Kuvaile unesi",
-    "lede": "Kirjoita se omin sanoin. Mitä enemmän yksityiskohtia, sitä tarkempi tulkinta – ympäristö, tunteet ja kaikki epätavallinen ovat tärkeitä.",
+    "lede": "Kirjoita se omin sanoin. Mitä enemmän yksityiskohtia, sitä tarkempi tulkinta — ympäristö, tunteet ja kaikki poikkeava ovat tärkeitä.",
     "language": "Kieli",
     "yourDream": "Unesi",
-    "placeholder": "Viime yönä unissani kävelin oven läpi, joka muutti jatkuvasti muotoaan...",
+    "placeholder": "Viime yönä unissani kävelin oven läpi, jonka muoto jatkuvasti muuttui...",
     "loading": "Tulkitaan...",
     "button": "Tulkkaa uni",
     "yourReading": "Sinun tulkintasi",
     "save": "Tallenna",
+    "saved": "Tallennettu",
+    "savedConfirm": "Tallennettu päiväkirjaasi. Löydät sen milloin tahansa Tallennetut-kohdasta.",
+    "unsaved": "Poistettu Tallennetuista.",
+    "disclaimer": "Vain pohdintaa — ei lääketieteellistä, psykologista tai uskonnollista neuvoa. Se ei ennusta tulevaa.",
     "viewHistory": "Näytä historia",
     "errorEmpty": "Kuvaile ensin unesi.",
     "errorFailed": "Tulkinta epäonnistui. Yritä uudelleen.",
     "errorNetwork": "Yhteysvirhe. Yritä uudelleen.",
-    "perspectiveLabel": "Tulkinta näkökulmasta",
+    "perspectiveLabel": "Tulkinta perinteen kautta",
+    "perspNotice": "Jokainen perinne esitetään erikseen. Tulkinnat ovat pohdiskelevia ja todennäköisyyksiä — eivät ennustuksia tai tuomioita.",
+    "compareLabel": "Vertaile kaikkia perinteitä",
+    "compareDesc": "Yksi uni, tulkittuna kaikkien linssien kautta kerralla — näe, missä perinteet ovat yhtä mieltä ja missä ne eroavat.",
+    "compareLoading": "Tulkitaan kaikkien perinteiden kautta…",
+    "compareBack": "Takaisin yhteen tulkintaan",
+    "compareSymbols": "Symbolit",
     "symbolsLabel": "Unesi symbolit",
-    "feedbackQ": {
-      "en": "Was this reading helpful?",
-      "ar": "هل كانت هذه القراءة مفيدة؟"
-    },
-    "yes": {
-      "en": "Yes, helpful",
-      "ar": "نعم، مفيدة"
-    },
-    "no": {
-      "en": "Not really",
-      "ar": "ليس تماماً"
-    },
-    "thanks": {
-      "en": "Thank you — your feedback improves future readings.",
-      "ar": "شكراً لك — تقييمك يحسّن القراءات المستقبلية."
-    }
+    "feedbackQ": "Oliko tämä tulkinta hyödyllinen?",
+    "yes": "Kyllä, hyödyllinen",
+    "no": "Ei oikeastaan",
+    "thanks": "Kiitos — palautteesi parantaa tulevia tulkintoja.",
+    "perspectiveDesc": "Yksi tulkinta, joka yhdistää maailman perinteiden viisaimmat säikeet syvyyspsykologiaan.",
+    "moodLabel": "Miltä uni tuntui?",
+    "copy": "Kopioi",
+    "copied": "Kopioitu!",
+    "share": "Jaa",
+    "example": "Kokeile esimerkkiä",
+    "exampleDream": "Viime yönä unissani valkoinen kyyhkynen laskeutui ikkunalle ja muuttui sitten kirjeeksi, jota en osannut lukea. Olin rauhallinen mutta utelias.",
+    "shortcutHint": "Paina ⌘/Ctrl + Enter tulkitsemiseen",
+    "symbolsSection": "Symbolit"
   },
   "history": {
     "title": "Unihistoria",
-    "lede": "Jokainen tulkitsemasi uni, tallennettuna tälle laitteelle.",
-    "empty": "Et ole vielä tulkinnut unia."
+    "lede": "Kaikki tulkintasi, tallennettuna tälle laitteelle.",
+    "empty": "Et ole vielä tulkinnut yhtäkään unta."
   },
   "saved": {
     "title": "Tallennetut unet",
-    "lede": "Säilytä ne tulkinnat, jotka olivat merkityksellisiä. Ne pysyvät tällä laitteella.",
+    "lede": "Säilytä ne tulkinnat, jotka merkitsivät. Ne pysyvät tällä laitteella.",
     "empty": "Ei vielä tallennettuja."
   },
   "common": {
     "interpretCta": "Tulkkaa uni",
     "delete": "Poista",
     "remove": "Poista",
-    "backHome": "Palaa etusivulle"
+    "confirmRemove": "Poistetaanko?",
+    "backHome": "Takaisin etusivulle"
   },
   "symbols": {
-    "title": "{n} unisymbolia",
-    "lede": "Selaa kaikkia tulkitsemiamme symboleita – ilmaiseksi, kymmenillä kielillä. Valitse omasi ja lue merkitys.",
-    "search": "Hae symbolia…"
+    "title": "{n} unien symbolia",
+    "lede": "Selaa kaikkia tulkitsemiamme symboleita — ilmaiseksi, kymmenillä kielillä. Valitse omasi lukeaksesi merkityksen.",
+    "search": "Hae symbolia…",
+    "noResults": "Hakusi ei vastaa yhtäkään symbolia."
   },
   "about": {
-    "title": "Selkeä tulkinta, juurtunut perinteeseen",
-    "p1": "Dreamscope exists to make dream interpretation accessible in your own language and cultural context. We draw on a wide range of interpretive traditions — religious and spiritual scholarship, cultural folklore, and the symbolic frameworks of modern depth psychology — so you can read your dream through the lens you trust.",
-    "p2": "Jokainen tulkinta on luotu auttamaan sinua pohtimaan – ei ennustamaan tulevaa. Symbolit kuten vesi, tuli, lento tai käärme ovat kantaneet merkitystä kulttuurien yli tuhansia vuosia, ja tulkintamme jäljittävät näitä lankoja, jotta löydät sen, mikä puhuttelee juuri sinun elämääsi.",
-    "p3": "Palvelu on ilmainen, yksityinen ja saatavilla 60 kielellä. Unesi eivät koskaan poistu laitteeltasi.",
-    "card1Title": "Many traditions",
-    "card1Body": "Klassinen islantilainen unitutkimus, jäljitetty vuosisatojen tulkintaperinteen kautta.",
+    "title": "Selkeä tulkinta, joka juontaa perinteeseen",
+    "p1": "Dreamscope tekee unien tulkinnasta saavutettavaa omalla kielelläsi ja kulttuurikontekstissasi. Hyödynnämme laajaa joukkoa tulkintaperinteitä — uskonnollista ja henkistä tutkimusta, kulttuurista kansanperinnettä ja modernin syvyyspsykologian symbolisia kehyksiä — jotta voit lukea unesi sinulle luotettavan linssin kautta.",
+    "p2": "Jokainen tulkinta on luotu auttamaan sinua pohtimaan — ei ennustamaan tulevaa. Symbolit kuten vesi, tuli, lento tai käärme ovat kantaneet merkitystä kulttuurien yli tuhansia vuosia, ja tulkintamme jäljittävät niitä säikeitä, jotta löydät sen, mikä resonoi oman elämäsi kanssa.",
+    "p3": "Palvelu on ilmainen, oletuksena yksityinen ja saatavilla 60 kielellä. Uniteksti lähetetään tulkintapalveluumme tulkinnan luomiseksi, eikä sitä säilytetä meillä; tulkintasi pysyvät laitteellasi, ellet kirjaudu sisään ja synkronoi.",
+    "card1Title": "Monia perinteitä",
+    "card1Body": "Islamilainen, kristillinen, juutalainen, hindulainen, buddhalainen, kiinalainen ja psykologinen näkökulma — valitse se, johon luotat.",
     "card2Title": "60 kieltä",
-    "card2Body": "Arabiankielestä japaniin – tulkkaa sillä kielellä, jolla unelmoit.",
-    "card3Title": "100 % yksityinen",
-    "card3Body": "Unet pysyvät laitteellasi. Ei tilejä, ei seurantaa.",
-    "cta": "Aloita tulkinta"
+    "card2Body": "Arabiasta japaniin — tulkkaa sillä kielellä, jolla unelmoit.",
+    "card3Title": "100% yksityinen",
+    "card3Body": "Tulkintasi pysyvät laitteellasi oletuksena. Kirjaudu vain synkronoidaksesi; poista milloin tahansa.",
+    "cta": "Aloita tulkinta",
+    "traditionsTitle": "Jokainen perinne, yksi uni",
+    "traditionsLede": "Valitse linssi, johon sydämesi luottaa — jokainen tulkinta luodaan oman tulkintakoulukuntansa kautta."
   },
   "contact": {
     "title": "Ota yhteyttä",
-    "lede": "Kysymyksiä, korjauksia tai yhteistyöideoita? Tavoita Dreamscope-tiimi sähköpostitse.",
+    "lede": "Kysymyksiä, korjauksia tai yhteistyökyvää? Tavoita Dreamscope-tiimi sähköpostitse.",
     "email": "Sähköposti",
-    "disclaimer": "Dreamscope tarjoaa pohdintaa ja viihdettä. Tulkinnat eivät ole lääketieteellistä, psykologista tai uskonnollista neuvontaa. Jos tarvitset tukea, käänny ammattilaisen puoleen.",
+    "disclaimer": "Dreamscope tarjoaa vain pohdintaa ja viihdettä. Tulkinnat eivät ole lääketieteellistä, psykologista tai uskonnollista neuvoa. Jos tarvitset tukea, käänny pätevän ammattilaisen puoleen.",
     "back": "Takaisin tulkitsimeen"
   },
   "faq": {
     "title": "Usein kysytyt kysymykset",
     "q1": "Miten Dreamscope tulkitsee unia?",
-    "a1": "Dreamscope blends dream scholarship from many cultures and faiths — including Islamic, Christian, Jewish, Hindu, Buddhist, and Chinese traditions — with modern depth psychology. You describe a dream in your own words and receive a reading that maps its symbols to their common meanings across cultures.",
-    "q2": "Ovatko uneni tiedot yksityisiä?",
-    "a2": "Kyllä. Unesi tallentuvat vain selaimesi paikalliseen tallennustilaan laitteellasi. Mitään ei lähetetä palvelimelle säilytettäväksi, ja voit poistaa historiansa milloin tahansa.",
-    "q3": "Millä kielillä voin tulkita unia?",
+    "a1": "Dreamscope yhdistää unien tutkimusta monista kulttuureista ja uskonnoista — islamilaisesta, kristillisestä, juutalaisesta, hindulaisesta, buddhalaisesta ja kiinalaisesta perinteestä — moderniin syvyyspsykologiaan. Kuvaelet unen omin sanoin ja saat tulkinnan, joka yhdistää sen symbolit niiden yleisiin kulttuurien ylisiin merkityksiin.",
+    "q2": "Onko unitietoni yksityisiä?",
+    "a2": "Kyllä. Unesi tallentuvat vain selaimesi paikalliseen tallennustilaan laitteellasi. Mitään ei lähetetä palvelimelle säilytettäväksi, ja voit poistaa historiasi milloin tahansa.",
+    "q3": "Millä kielillä unia voi tulkita?",
     "a3": "Dreamscope tukee 60 kieltä, mukaan lukien englanti, arabia, espanja, ranska, saksa, kiina, japani, korea, turkki, portugali, venäjä, hindi ja monet muut. Tulkinta seuraa valitsemaasi kieltä.",
     "q4": "Korvaavatko tulkinnat ammattilaisen neuvoja?",
-    "a4": "Ei. Unitulkinnat ovat pohdintaa ja viihdettä varten. Ne eivät ole lääketieteellistä, psykologista tai uskonnollista ohjausta. Jos kamppailet, keskustele pätevän ammattilaisen kanssa.",
-    "q5": "Kuinka montaa unisymbolia palvelu kattaa?",
-    "a5": "Dreamscopella on omat sivut 146 yleiselle symbolille – käärme, vesi, lentäminen, tuli, raskaus, raha ja monet muut – joista jokainen on saatavilla useilla kielillä ja pitkän hännän kysymysmuunnelmilla."
+    "a4": "Eivät. Unien tulkinnat ovat pohdintaa ja viihdettä varten. Ne eivät ole lääketieteellistä, psykologista tai uskonnollista ohjausta. Jos olet vaikeuksissa, puhu pätevän ammattilaisen kanssa.",
+    "q5": "Kuinka monta unien symbolia katetaan?",
+    "a5": "Dreamscopella on omat sivut 146 yleiselle symbolille — käärme, vesi, lentäminen, tuli, raskaus, raha ja monet muut — kukin saatavilla useilla kielillä ja pitkän hännän kysymysmuunnelmilla."
   },
   "notfound": {
     "title": "Tämä uni haihtui",
-    "lede": "Etsimääsi sivua ei ole täällä. Palataan tulkitsemiseen.",
-    "cta": "Palaa etusivulle"
+    "lede": "Etsimäsi sivu ei ole täällä. Palataan tulkitsemiseen.",
+    "cta": "Takaisin etusivulle"
   },
   "perspectives": {
     "general": {
-      "name": "Yleismaailmallinen"
+      "name": "Universaali"
     },
     "islamic": {
       "name": "Ibn Sirin (islamilainen)"
@@ -172,5 +184,76 @@
   },
   "daily": {
     "tag": "Päivän uni"
+  },
+  "profile": {
+    "title": "Sinun tilasi",
+    "cloudOff": "Unitekstisi lähetetään tulkintapalveluumme tulkinnan luomiseksi, eikä sitä säilytetä meillä. Tulkinnat pysyvät laitteellasi, ellet kirjaudu sisään ja valitse synkronointia. Emme koskaan myy tai profiloi tietojasi.",
+    "dataNote": "Missä tietosi ovat: laitteellasi oletuksena. Kun kirjaudut sisään, päiväkirjasi voi synkronoitua yksityiselle tilillesi; voit poistaa sen milloin tahansa.",
+    "signInLede": "Kirjaudu sisään säilyttääksesi unipäiväkirjasi kaikilla laitteillasi. Vierashistoriasi siirtyy automaattisesti mukanasi.",
+    "emailLabel": "Sähköposti",
+    "magicLink": "Lähetä minulle kirjautumislinkki",
+    "google": "Jatka Googlella",
+    "checkEmail": "Tarkista postilaatikkoosi — kirjautumislinkki odottaa sinua.",
+    "invalidEmail": "Anna kelödyvä sähköpostiosoite.",
+    "signInError": "Emme voineet kirjata sinua sisään. Yritä uudelleen tai käytä sähköpostilinkkiä.",
+    "googleNotEnabled": "Google-kirjautumista ei ole vielä otettu käyttöön tässä projektissa. Sivuston omistajan on yhdistettävä Google OAuth -asiakasohjelma Supabaseen.",
+    "guestNote": "Ei salasanaa, ei seurantaa — vain linkki. Vierastila laitetallennuksella pysyy täysin käytettävissä.",
+    "member": "Jäsen",
+    "migrated": "Siirrettiin {n} unta tältä laitteelta päiväkirjaasi.",
+    "signOut": "Kirjaudu ulos",
+    "navLabel": "Profiili",
+    "lede": "Kaikki, mitä Dreamscope tietää matkastasi — tallennettuna laitteellesi, vain sinun.",
+    "yourState": "Tilasi juuri nyt",
+    "statDreams": "Tulkittua unta",
+    "statSaved": "Tallennettua tulkintaa",
+    "statStreak": "Päivän putki",
+    "statTopSymbol": "Yleisin symboli",
+    "emptyState": "Ei vielä unia — ensimmäinen tulkintasi valaisee tämän sivun.",
+    "symbolsYouMeet": "Symbolit, joita kohtaat toistuvasti",
+    "noneYet": "—",
+    "lastReading": "Viimeisin tulkinta",
+    "languagesUsed": "Käytetyt kielet",
+    "perspectivesUsed": "Käytetyt perinteet",
+    "cloudTitle": "Laitteidesi välillä",
+    "connectTitle": "Yhdistä Supabase-projektisi",
+    "connectUrlLabel": "Projektin URL",
+    "connectKeyLabel": "Julkinen anon-avain",
+    "connectCta": "Yhdistä",
+    "connected": "Yhdistetty — voit nyt kirjautua sisään ja synkronoida päiväkirjasi.",
+    "connectError": "Yhdistäminen epäonnistui. Tarkista URL ja anon-avain.",
+    "disconnect": "Katkaise yhteys",
+    "privacyNote": "Unesi on tallennettu laitteellesi — niitä ei koskaan myydä eikä profiloida.",
+    "moodPattern": "Tunnelmakaava",
+    "autoSetupTitle": "Yhden komennon asennus",
+    "autoSetupBody": "Eikö projektia vielä ole? Suorita bootstrap-skripti kerran: se luo Supabase-projektin, ottaa tietokantaskeeman käyttöön ja tulostaa URL-osoitteesi ja anon-avaimesi liitettäväksi ylle. Google-kirjautuminen vaatii Google Cloud OAuth -asiakasohjelman (katso skripti).",
+    "autoSetupCmd": "SUPABASE_ACCESS_TOKEN=xxx node scripts/setup-supabase.mjs"
+  },
+  "perspDesc": {
+    "general": "Yksi tulkinta, joka yhdistää maailman perinteiden viisaimmat säikeet syvyyspsykologiaan.",
+    "islamic": "Ibn Sirinin klassinen koulu — symbolinen, lainvoimainen ja sielukeskeinen.",
+    "christian": "Unien tulkinta Josephin ja Danielin perinteen mukaan, raamatullisella symboliikalla.",
+    "jewish": "Tooran ja Talmudin unien viisaus — viesti, joka odottaa taitavaa tulkintaa.",
+    "hindu": "Vedalaista symboliikkaa, karmaa ja mielen sisäisiä maisemia.",
+    "buddhist": "Pysymätöntä ja tietoista läsnäoloa — havainnoi unta tarttumatta siihen.",
+    "psychology": "Jungin arkkityypit ja varjo — mitä psyykeesi työstää.",
+    "chinese": "Zhou Gongin klassinen sanakirja — yin, yang ja viiden alkuaineen tasapaino."
+  },
+  "moods": {
+    "peace": "Rauhallinen",
+    "anxiety": "Ahdistunut",
+    "hope": "Toiveikas",
+    "sadness": "Surullinen",
+    "anger": "Vihainen",
+    "confusion": "Hämmentynyt"
+  },
+  "seo": {
+    "dreamInterpretation": "Unien tulkinta",
+    "traditionsTitle": "Perinteiden yli",
+    "traditionsBody": "Symboli voi merkitä eri asioita eri kulttuureissa. Islamilaisessa, kristillisessä, juutalaisessa, hindulaisessa, buddhalaisessa, kiinalaisessa ja psykologisessa perinteessä sama kuva luetaan oman linssinsä kautta. Valitse luottamasi linssi tulkintasivulla.",
+    "tryTitle": "Tulkkaa uniasi tekoälyn avulla",
+    "tryLede": "Jaa unesi ja saa henkilökohtainen AI-tulkinta.",
+    "otherLangs": "Muut kielet",
+    "otherSymbols": "Muut unien symbolit",
+    "reflectNote": "Tämä sivu on tarkoitettu vain pohdintaan ja viihteeseen. Se ei ole lääketieteellistä, psykologista tai uskonnollista neuvoa, eikä se ennusta tulevaa."
   }
 }

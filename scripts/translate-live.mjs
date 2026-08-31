@@ -68,7 +68,14 @@ let ok = 0, failed = [];
 for (const lang of targets) {
   process.stdout.write(`→ ${lang.code} (${lang.english}) … `);
   try {
-    const t = await translateLocale(lang);
+    let t;
+    try { t = await translateLocale(lang); }
+    catch (firstErr) {
+      // Transient: free models queue up; back off and retry once before giving up.
+      console.log(`↻ retrying after 4s…`);
+      await sleep(4000);
+      t = await translateLocale(lang);
+    }
     writeFileSync(join(localesDir, `${lang.code}.json`), JSON.stringify(t, null, 2) + '\n', 'utf8');
     const keys = Object.keys(flatten(t)).length;
     console.log(`✓ ${keys} keys`);
@@ -77,6 +84,8 @@ for (const lang of targets) {
     console.log(`✗ ${e.message}`);
     failed.push(lang.code);
   }
-  await sleep(400); // gentle pacing
+  // 1.2s after success, 3s after failure — keep below Vercel burst thresholds.
+  const last = failed[failed.length - 1] === lang.code;
+  await sleep(last ? 3000 : 1200);
 }
 console.log(`\nDone: ${ok} translated, ${failed.length} failed${failed.length ? ': ' + failed.join(', ') : ''}`);

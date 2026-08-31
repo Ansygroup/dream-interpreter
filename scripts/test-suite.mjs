@@ -236,5 +236,22 @@ ok('API falls back to general for unknown/missing perspective', /PERSPECTIVES\[p
 ok('API buildFallback uses general baseline', /PERSPECTIVES\.general/.test(apiSrc));
 
 // ---------------------------------------------------------------------------
+// 14. Locale schema consistency (no type drift / structural collision)
+// ---------------------------------------------------------------------------
+section('Locale schema consistency (all 60 locales)');
+const enSchema = {};
+const walkSch = (o, p) => { for (const k of Object.keys(o)) { const np = p ? `${p}.${k}` : k; if (o[k] && typeof o[k] === 'object' && !Array.isArray(o[k])) walkSch(o[k], np); else enSchema[np] = typeof o[k]; } };
+walkSch(json('src/i18n/locales/en.json'), '');
+let mismatch = 0;
+for (const f of readdirSync(locDir).filter((x) => x.endsWith('.json') && x !== 'en.json')) {
+  const o = JSON.parse(readFileSync(join(locDir, f), 'utf8'));
+  const ks = {};
+  const w2 = (ob, p) => { for (const k of Object.keys(ob)) { const np = p ? `${p}.${k}` : k; if (ob[k] && typeof ob[k] === 'object' && !Array.isArray(ob[k])) w2(ob[k], np); else ks[np] = typeof ob[k]; } };
+  w2(o, '');
+  for (const k of Object.keys(ks)) if (k in enSchema && ks[k] !== enSchema[k]) mismatch++;
+}
+ok('no type mismatch vs en.json schema across all locales', mismatch === 0);
+
+// ---------------------------------------------------------------------------
 console.log(`\nSUITE RESULT: ${passed} passed, ${failed} failed`);
 process.exit(failed === 0 ? 0 : 1);

@@ -13,135 +13,147 @@
     "ansyGroup": "Ansy Group",
     "language": "Limbă",
     "searchLanguage": "Caută limbi…",
-    "noLanguage": "Nicio limbă nu se potrivește cu căutarea ta."
+    "noLanguage": "Nicio limbă nu se potrivește căutării tale.",
+    "profile": "Profil"
   },
   "footer": {
-    "tagline": "Free AI dream interpretation in 60 languages — every tradition, your lens.",
+    "tagline": "Interpretarea viselor prin AI, gratuită, în 60 de limbi — fiecare tradiție, perspectiva ta.",
     "copyright": "© {year} Dreamscope"
   },
   "home": {
-    "heroTitle": "Ce încearcă să-ți spună {accent}-ul",
-    "heroAccent": "subconștient",
-    "heroLede": "Ancient symbolism, modern psychology, and AI — combined into one clear reading. Describe a dream in your own words and get an interpretation through the tradition you trust.",
+    "heroTitle": "Ce încearcă să-ți transmită {accent}-ul",
+    "heroAccent": "subconștientul",
+    "heroLede": "Simbolism străvechi, psihologie modernă și inteligență artificială — îmbinate într-o interpretare clară. Descrie un vis în cuvintele tale și primește o interpretare prin tradiția în care ai încredere.",
     "interpretCta": "Interpretează un vis",
     "browseCta": "Răsfoiește simboluri",
     "statLanguages": "{n} limbi",
     "statSymbols": "{n} simboluri onirice",
-    "statPrivateLine": "privat pe dispozitivul tău",
-    "whyTitle": "O interpretare pe care o poți folosi cu adevărat",
-    "whyLede": "Dreamscope îți mapează visul pe simbolurile sale, apoi le citește prin tradiția în care ai încredere — cu psihologia alături, nu în loc.",
+    "statPrivateLine": "confidențial pe dispozitivul tău",
+    "whyTitle": "O interpretare cu adevărat utilă",
+    "whyLede": "Dreamscope asociază visul tău cu simbolurile sale, apoi le citește prin tradiția în care ai încredere — cu psihologia alături, nu în loc.",
     "feature1Title": "Analiză simbolică",
-    "feature1Body": "Fiecare vis este mapat pe simbolurile sale centrale și urmărit prin secole de tradiție interpretativă.",
+    "feature1Body": "Fiecare vis este asociat cu simbolurile sale centrale și urmărit prin secole de tradiție a interpretării.",
     "feature2Title": "60 de limbi",
     "feature2Body": "Interpretează și citește simboluri în engleză, arabă, spaniolă, chineză, japoneză și alte 55 de limbi.",
     "feature3Title": "Toate tradițiile",
-    "feature3Body": "Depth psychology and perspectives across faiths — one reading, seen through your lens.",
-    "feature4Title": "Salvat și privat",
-    "feature4Body": "Visele tale rămân pe dispozitivul tău. Revizitează, compară și urmărește tipare în timp.",
-    "sampleTag": "Interpretare exemplu",
+    "feature3Body": "Psihologia profunzimii și perspective din diferite credințe — o singură lectură, văzută prin lentila ta.",
+    "feature4Title": "Salvate și private",
+    "feature4Body": "Visele tale rămân pe dispozitivul tău în mod implicit. Conectează-te pentru a le sincroniza pe toate dispozitivele.",
+    "sampleTag": "Lectură exemplu",
     "sampleJustNow": "chiar acum",
-    "sampleDream": "„Am văzut un șarpe verde ieșind din casă prin poarta grădinii.”",
-    "sampleReading": "Snakes mark transformation — something in your life is shedding its old skin. The gate suggests a clear exit is opening. In many traditions, a harmless snake leaving the home often means a lingering worry is finally moving on.",
+    "sampleDream": "„Am văzut un șarpe verde ieșind din casă poarta grădinii.\"",
+    "sampleReading": "Șerpii marchează transformarea — ceva din viața ta își leapădă vechea piele. Poarta sugerează că se deschide o ieșire clară. În multe tradiții, un șarpe inofensiv care părăsește casa înseamnă adesea că o îngrijorare mai veche se risipește în sfârșit.",
     "sampleTag1": "Transformare",
-    "sampleTag2": "Eliberare",
-    "sampleTag3": "Tradition",
+    "sampleTag2": "Lansare",
+    "sampleTag3": "Tradiție",
     "sampleSaved": "Salvat pe dispozitivul tău",
     "symbolsTitle": "Fiecare simbol poartă o semnificație",
-    "symbolsLede": "De la apă la foc, explorează cele mai comune motive onirice și ce tinde să semnaleze fiecare în diferite tradiții.",
-    "ctaTitle": "Descrie visul tău",
-    "ctaLede": "Câteva propoziții sunt de ajuns. Interpretarea durează câteva secunde și rămâne pe dispozitivul tău.",
+    "symbolsLede": "De la apă la foc, explorează cele mai întâlnite motive onirice și ce anume sugerează fiecare în diverse tradiții.",
+    "ctaTitle": "Descrie-ți visul",
+    "ctaLede": "Câteva propoziții sunt de ajuns. Interpretarea durează câteva secunde și rămâne implicit pe dispozitivul tău.",
     "ctaButton": "Începe interpretarea"
   },
   "interpret": {
-    "title": "Descrie visul tău",
+    "title": "Descrie-ți visul",
     "lede": "Scrie-l în cuvintele tale. Cu cât mai multe detalii, cu atât interpretarea e mai precisă — cadrul, sentimentele și orice lucru neobișnuit contează.",
     "language": "Limbă",
     "yourDream": "Visul tău",
-    "placeholder": "Aseară am visat că mergeam printr-o ușă care își schimba mereu forma...",
+    "placeholder": "Aseară am visat că trec printr-o ușă care își schimba mereu forma...",
     "loading": "Se interpretează...",
     "button": "Interpretează visul",
     "yourReading": "Interpretarea ta",
     "save": "Salvează",
+    "saved": "Salvat",
+    "savedConfirm": "A fost salvat în jurnalul tău. Îl poți găsi oricând la Salvate.",
+    "unsaved": "Eliminat de la Salvate.",
+    "disclaimer": "Doar o reflecție — nu constituie sfat medical, psihologic sau religios. Nu prezice viitorul.",
     "viewHistory": "Vezi istoricul",
-    "errorEmpty": "Te rog descrie mai întâi visul tău.",
-    "errorFailed": "Interpretarea a eșuat. Te rog încearcă din nou.",
-    "errorNetwork": "Eroare de conexiune. Te rog încearcă din nou.",
-    "perspectiveLabel": "Interpretare prin",
+    "errorEmpty": "Te rugăm să descrii mai întâi visul tău.",
+    "errorFailed": "Interpretarea a eșuat. Te rugăm să încerci din nou.",
+    "errorNetwork": "Eroare de conexiune. Te rugăm să încerci din nou.",
+    "perspectiveLabel": "Interpretare prin perspectiva",
+    "perspNotice": "Fiecare tradiție este prezentată separat. Interpretările sunt reflexive și probabile — nu sunt predicții sau verdicte.",
+    "compareLabel": "Compară toate tradițiile",
+    "compareDesc": "Un singur vis, citit prin toate perspectivele deodată — vezi unde tradițiile se pun de acord și unde diferă.",
+    "compareLoading": "Se interpretează prin toate tradițiile…",
+    "compareBack": "Înapoi la o singură interpretare",
+    "compareSymbols": "Simboluri",
     "symbolsLabel": "Simboluri din visul tău",
-    "feedbackQ": {
-      "en": "Was this reading helpful?",
-      "ar": "هل كانت هذه القراءة مفيدة؟"
-    },
-    "yes": {
-      "en": "Yes, helpful",
-      "ar": "نعم، مفيدة"
-    },
-    "no": {
-      "en": "Not really",
-      "ar": "ليس تماماً"
-    },
-    "thanks": {
-      "en": "Thank you — your feedback improves future readings.",
-      "ar": "شكراً لك — تقييمك يحسّن القراءات المستقبلية."
-    }
+    "feedbackQ": "Ți-a fost de ajutor această interpretare?",
+    "yes": "Da, m-a ajutat",
+    "no": "Nu chiar",
+    "thanks": "Îți mulțumim — feedback-ul tău ne ajută să îmbunătățim viitoarele interpretări.",
+    "perspectiveDesc": "O interpretare care îmbină cele mai înțelepte fire ale tradițiilor lumii cu psihologia profunzimii.",
+    "moodLabel": "Cum te-ai simțit în vis?",
+    "copy": "Copiază",
+    "copied": "Copiat!",
+    "share": "Distribuie",
+    "example": "Încearcă un exemplu",
+    "exampleDream": "Aseară am visat că un porumbel alb s-a așezat pe fereastra mea, apoi s-a transformat într-o scrisoare pe care nu o puteam citi. Mă simțeam liniștit, dar curios.",
+    "shortcutHint": "Apasă ⌘/Ctrl + Enter pentru interpretare",
+    "symbolsSection": "Simboluri"
   },
   "history": {
-    "title": "Istoric vise",
+    "title": "Istoricul viselor",
     "lede": "Fiecare interpretare pe care ai generat-o, stocată pe acest dispozitiv.",
     "empty": "Niciun vis interpretat încă."
   },
   "saved": {
     "title": "Vise salvate",
-    "lede": "Păstrează interpretările care au contat. Rămân pe acest dispozitiv.",
+    "lede": "Păstrează interpretările care au contat pentru tine. Rămân pe acest dispozitiv.",
     "empty": "Nimic salvat încă."
   },
   "common": {
-    "interpretCta": "Interpretează un vis",
+    "interpretCta": "Interpretă un vis",
     "delete": "Șterge",
-    "backHome": "Înapoi acasă",
-    "remove": "Elimină"
+    "remove": "Elimină",
+    "confirmRemove": "Elimini?",
+    "backHome": "Înapoi la pagina principală"
   },
   "symbols": {
-    "title": "{n} simboluri onirice",
-    "lede": "Răsfoiește fiecare simbol pe care îl interpretăm — gratuit, în zeci de limbi. Alege-l pe al tău pentru a citi semnificația.",
-    "search": "Caută un simbol…"
+    "title": "{n} simboluri de vis",
+    "lede": "Răsfoiește toate simbolurile pe care le interpretăm — gratuit, în zeci de limbi. Alege-o pe a ta pentru a citi semnificația.",
+    "search": "Caută un simbol…",
+    "noResults": "Niciun simbol nu corespunde căutării tale."
   },
   "about": {
     "title": "O interpretare clară, înrădăcinată în tradiție",
-    "p1": "Dreamscope exists to make dream interpretation accessible in your own language and cultural context. We draw on a wide range of interpretive traditions — religious and spiritual scholarship, cultural folklore, and the symbolic frameworks of modern depth psychology — so you can read your dream through the lens you trust.",
-    "p2": "Fiecare interpretare este generată pentru a te ajuta să reflectezi — nu pentru a prezice viitorul. Simboluri precum apa, focul, zborul sau un șarpe au purtat semnificații în culturi de mii de ani, iar interpretările noastre urmăresc acele fire ca să găsești ce rezonează cu propria ta viață.",
-    "p3": "Serviciul este gratuit, privat prin design și disponibil în 60 de limbi. Visele tale nu părăsesc niciodată dispozitivul tău.",
-    "card1Title": "Many traditions",
-    "card1Body": "Învățătura clasică islamică a viselor, urmărită prin secole de interpretare.",
+    "p1": "Dreamscope există pentru a face interpretarea viselor accesibilă în propria ta limbă și în contextul tău cultural. Ne inspirăm dintr-o gamă largă de tradiții interpretative — învățătură religioasă și spirituală, folclor cultural și cadrele simbolice ale psihologiei moderne a profunzimii — astfel încât să îți poți citi visul prin lentila în care ai încredere.",
+    "p2": "Fiecare interpretare este generată pentru a te ajuta să reflectezi — nu pentru a prezice viitorul. Simboluri precum apa, focul, zborul sau un șarpe au purtat semnificații de-a lungul culturilor timp de mii de ani, iar interpretările noastre urmăresc aceste fire pentru a găsi ceea ce rezonează cu propria ta viață.",
+    "p3": "Serviciul este gratuit, privat prin design și disponibil în 60 de limbi. Textul visului tău este trimis către serviciul nostru de interpretare pentru a genera o lectură, apoi nu este stocat de noi; lecturile tale rămân pe dispozitivul tău, cu excepția cazului în care te conectezi și sincronizezi.",
+    "card1Title": "Multe tradiții",
+    "card1Body": "Lentile islamice, creștine, evreiești, hinduse, budiste, chineze și psihologice — alege-o pe cea în care ai încredere.",
     "card2Title": "60 de limbi",
     "card2Body": "De la arabă la japoneză — interpretează în limba în care visezi.",
     "card3Title": "100% privat",
-    "card3Body": "Visele rămân pe dispozitivul tău. Fără conturi, fără urmărire.",
-    "cta": "Începe interpretarea"
+    "card3Body": "Interpretările tale rămân pe dispozitivul tău în mod implicit. Conectează-te doar pentru a sincroniza; le poți șterge oricând.",
+    "cta": "Începe să interpretezi",
+    "traditionsTitle": "Fiecare tradiție, un singur vis",
+    "traditionsLede": "Alege perspectiva în care inima ta are încredere — fiecare interpretare este generată printr-o școală dedicată de interpretare."
   },
   "contact": {
     "title": "Contactează-ne",
-    "lede": "Întrebări, corecturi sau idei de parteneriat? Scrie echipei Dreamscope prin email.",
-    "email": "Email",
-    "disclaimer": "Dreamscope oferă doar reflecție și divertisment. Interpretările nu constituie sfaturi medicale, psihologice sau religioase. Dacă ai nevoie de sprijin, te rog consultă un profesionist calificat.",
-    "back": "Înapoi la interpretare"
+    "lede": "Întrebări, corecturi sau idei de parteneriat? Scrie echipei Dreamscope prin e-mail.",
+    "email": "E-mail",
+    "disclaimer": "Dreamscope oferă doar reflecție și divertisment. Interpretările nu reprezintă sfaturi medicale, psihologice sau religioase. Dacă ai nevoie de sprijin, te rugăm să consulți un specialist calificat.",
+    "back": "Înapoi la Interpretare"
   },
   "faq": {
     "title": "Întrebări frecvente",
     "q1": "Cum interpretează Dreamscope visele?",
-    "a1": "Dreamscope blends dream scholarship from many cultures and faiths — including Islamic, Christian, Jewish, Hindu, Buddhist, and Chinese traditions — with modern depth psychology. You describe a dream in your own words and receive a reading that maps its symbols to their common meanings across cultures.",
-    "q2": "Datele mele despre vise sunt private?",
-    "a2": "Da. Visele tale sunt stocate doar în memoria locală a browserului, pe dispozitivul tău. Nimic nu este trimis spre stocare pe un server și poți șterge oricând istoricul.",
-    "q3": "În ce limbi pot interpreta visele?",
-    "a3": "Dreamscope suportă 60 de limbi, inclusiv engleză, arabă, spaniolă, franceză, germană, chineză, japoneză, coreeană, turcă, portugheză, rusă, hindi și altele. Interpretarea urmează limba pe care o alegi.",
-    "q4": "Interpretările înlocuiesc sfaturile profesionale?",
-    "a4": "Nu. Interpretările viselor sunt pentru reflecție și divertisment. Nu constituie îndrumare medicală, psihologică sau religioasă. Dacă treci prin momente dificile, te rog vorbește cu un specialist calificat.",
-    "q5": "Câte simboluri onirice sunt acoperite?",
-    "a5": "Dreamscope are pagini dedicate pentru 146 de simboluri comune — șarpe, apă, zbor, foc, sarcină, bani și multe altele — fiecare disponibil în mai multe limbi, cu variante de întrebări detaliate."
+    "a1": "Dreamscope îmbină tradiții de interpretare a viselor din multe culturi și credințe — inclusiv islamice, creștine, iudaice, hinduse, budiste și chinezești — cu psihologia modernă a profunzimii. Descrii un vis în cuvintele tale și primești o lectură care mapează simbolurile acestuia la sensurile lor comune din diferite culturi.",
+    "q2": "Datele mele despre vise sunt confidențiale?",
+    "a2": "Da. Visele tale sunt stocate doar în memoria locală a browserului tău, pe dispozitivul tău. Nimic nu este trimis către un server pentru stocare și poți șterge oricând istoricul tău.",
+    "q3": "În ce limbi pot interpreta vise?",
+    "a3": "Dreamscope este disponibil în 60 de limbi, inclusiv engleză, arabă, spaniolă, franceză, germană, chineză, japoneză, coreeană, turcă, portugheză, rusă, hindi și altele. Lectura urmează limba pe care o alegi.",
+    "q4": "Interpretările înlocuiesc sfaturile unui specialist?",
+    "a4": "Nu. Lecturile viselor sunt pentru reflecție și divertisment. Nu reprezintă îndrumare medicală, psihologică sau religioasă. Dacă te confrunți cu dificultăți, te rugăm să vorbești cu un specialist calificat.",
+    "q5": "Câte simboluri de vise sunt acoperite?",
+    "a5": "Dreamscope are pagini dedicate pentru 146 de simboluri frekvente — șarpe, apă, zbor, foc, sarcină, bani și multe altele — fiecare disponibil în mai multe limbi, cu variante de întrebări detaliate."
   },
   "notfound": {
-    "title": "Acest vis s-a dizolvat",
-    "lede": "Pagina pe care o căutai nu e aici. Hai să te aducem înapoi la interpretare.",
+    "title": "Acest vis s-a risipit",
+    "lede": "Pagina pe care o căutai nu se află aici. Haide să te ajutăm să continui interpretarea.",
     "cta": "Înapoi acasă"
   },
   "perspectives": {
@@ -161,16 +173,87 @@
       "name": "Hindu"
     },
     "buddhist": {
-      "name": "Budist"
+      "name": "Buddhist"
     },
     "psychology": {
-      "name": "Psihologie (Jung)"
+      "name": "Psihologic (Jung)"
     },
     "chinese": {
-      "name": "Zhou Gong (Chinezesc)"
+      "name": "Zhou Gong (chinez)"
     }
   },
   "daily": {
     "tag": "Visul zilei"
+  },
+  "profile": {
+    "title": "Spațiul tău",
+    "cloudOff": "Textul visului tău este trimis serviciului nostru de interpretare pentru a genera o lectură, apoi nu este stocat de noi. Lecturile sunt păstrate pe dispozitivul tău, cu excepția cazului în care te conectezi și alegi să sincronizezi. Nu vindem și nu creăm profiluri pe baza datelor tale.",
+    "dataNote": "Unde se află datele tale: implicit, pe dispozitivul tău. Când te conectezi, jurnalul tău se poate sincroniza cu contul tău privat; îl poți șterge oricând.",
+    "signInLede": "Conectează-te pentru a păstra jurnalul viselor tale pe toate dispozitivele tale. Istoricul tău de oaspete te însoțește automat.",
+    "emailLabel": "Email",
+    "magicLink": "Trimite-mi un link de conectare",
+    "google": "Continuă cu Google",
+    "checkEmail": "Verifică-ți inboxul — te așteaptă un link de conectare.",
+    "invalidEmail": "Te rugăm să introduci o adresă de email validă.",
+    "signInError": "Nu te-am putut autentifica. Te rugăm să încerci din nou sau folosește linkul primit pe email.",
+    "googleNotEnabled": "Conectarea cu Google nu este încă activată în acest proiect. Administratorul site-ului trebuie să conecteze un client Google OAuth în Supabase.",
+    "guestNote": "Fără parolă, fără urmărire — doar un link. Modul pentru vizitatori, cu stocare pe dispozitiv, rămâne complet disponibil.",
+    "member": "Membru",
+    "migrated": "Am migrat {n} vise de pe acest dispozitiv în jurnalul tău.",
+    "signOut": "Deconectare",
+    "navLabel": "Profil",
+    "lede": "Tot ceea ce Dreamscope știe despre călătoria ta — stocat pe dispozitivul tău, doar al tău.",
+    "yourState": "Starea ta acum",
+    "statDreams": "Vise interpretate",
+    "statSaved": "Citiri salvate",
+    "statStreak": "Zile consecutive",
+    "statTopSymbol": "Simbol principal",
+    "emptyState": "Niciun vis încă — prima ta citire va lumina această pagină.",
+    "symbolsYouMeet": "Simboluri care îți apar mereu",
+    "noneYet": "—",
+    "lastReading": "Ultima citire",
+    "languagesUsed": "Limbi folosite",
+    "perspectivesUsed": "Tradiții folosite",
+    "cloudTitle": "Pe toate dispozitivele tale",
+    "connectTitle": "Conectează proiectul tău Supabase",
+    "connectUrlLabel": "URL-ul proiectului",
+    "connectKeyLabel": "Cheie publică anonimă",
+    "connectCta": "Conectare",
+    "connected": "Conectat — te poți autentifica și sincroniza jurnalul.",
+    "connectError": "Conexiunea a eșuat. Verifică URL-ul și cheia anonimă.",
+    "disconnect": "Deconectare",
+    "privacyNote": "Visele tale sunt stocate pe dispozitiv — nu sunt vândute, niciodată folosite pentru profilare.",
+    "moodPattern": "Tipar de stare",
+    "autoSetupTitle": "Configurare printr-o singură comandă",
+    "autoSetupBody": "Nu ai încă un proiect? Rulează o dată scriptul de bootstrap: creează un proiect Supabase, aplică schema bazei de date și îți afișează URL-ul și cheia anon pe care să le lipești mai sus. Autentificarea prin Google necesită un client OAuth Google Cloud (vezi scriptul).",
+    "autoSetupCmd": "SUPABASE_ACCESS_TOKEN=xxx node scripts/setup-supabase.mjs"
+  },
+  "perspDesc": {
+    "general": "O singură interpretare care împletește cele mai înțelepte fire ale tradițiilor lumii cu psihologia profunzimii.",
+    "islamic": "Școala clasică a lui Ibn Sirin — simbolică, dreaptă și centrată pe suflet.",
+    "christian": "Interpretarea visurilor în tradiția lui Iosif și Daniel, cu simbolism scriptural.",
+    "jewish": "Înțelepciunea visurilor din Tora și Talmud — un mesaj ce așteaptă o interpretare înțeleaptă.",
+    "hindu": "Simbolism vedic, karma și peisajele interioare ale minții.",
+    "buddhist": "Impermanență și atență conștientă — observă visul fără a te atașa de el.",
+    "psychology": "Arhetipurile lui Jung și umbra — ceea ce psihicul tău procesează.",
+    "chinese": "Dicționarul clasic al lui Zhou Gong — echilibrul dintre yin, yang și cele cinci elemente."
+  },
+  "moods": {
+    "peace": "Liniștit",
+    "anxiety": "Neliniștit",
+    "hope": "Plin de speranță",
+    "sadness": "Trist",
+    "anger": "Supărat",
+    "confusion": "Confuz"
+  },
+  "seo": {
+    "dreamInterpretation": "Interpretarea viselor",
+    "traditionsTitle": "Prin tradiții",
+    "traditionsBody": "Un simbol poate însemna lucruri diferite în culturi diferite. În tradițiile islamică, creștină, iudaică, hindusă, budistă, chineză și în cea psihologică, aceeași imagine este citită prin propria lentilă. Alege lentila în care ai încredere pe pagina de interpretare.",
+    "tryTitle": "Interpretă-ți visele cu ajutorul AI",
+    "tryLede": "Împărtășește-ne visul tău și primește o interpretare personalizată oferită de AI.",
+    "otherLangs": "Alte limbi",
+    "otherSymbols": "Alte simboluri ale viselor",
+    "reflectNote": "Această pagină este destinată doar reflecției și divertismentului. Nu reprezintă sfat medical, psihologic sau religios și nu prezice viitorul."
   }
 }

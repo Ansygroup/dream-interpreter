@@ -56,22 +56,20 @@ if (!usable(KEY)) { // fall back to Vercel env pull
   }
 }
 if (!usable(KEY)) {
-  log('no usable OPENROUTER_API_KEY — will use KEYLESS localization (no secret needed).');
+  // No usable OpenRouter key and the KEYLESS MyMemory fallback is unreliable
+  // (it returns English "fallback" and would overwrite real translations).
+  // Safer to skip this tick than to clobber locales — retry next cron tick.
+  // To enable: seed `.dreamscope-secrets` with the literal OPENROUTER_API_KEY
+  // (Vercel `env pull` redacts sensitive vars to "[SENSITIVE]", so it cannot be
+  // obtained from Vercel here) or export OPENROUTER_API_KEY in the cron env.
+  log('no usable OPENROUTER_API_KEY — skipping localization this tick (retry next). Do NOT run the KEYLESS MyMemory path: it overwrites real translations with English fallbacks.');
+  process.exit(0);
 }
-// 2. Pick the translation engine:
-//    - If a usable OpenRouter key is present → high-quality LLM localization.
-//    - Otherwise (no key) → KEYLESS MyMemory path so the site is NEVER stuck in
-//      English-only. This is the self-completing default: zero operator secrets.
+// 2. High-quality LLM localization via OpenRouter (free-model cascade).
 const mode = process.argv.includes('--all') ? '--force' : '--complete';
-let out;
-if (usable(KEY)) {
-  process.env.OPENROUTER_API_KEY = KEY;
-  log('using OpenRouter LLM localization (high quality).');
-  out = run(`node scripts/translate-ui.mjs ${mode}`, { timeout: 600000 });
-} else {
-  log('no OpenRouter key — using KEYLESS MyMemory localization (no operator secret needed).');
-  out = run(`node scripts/translate-free.mjs`, { timeout: 600000 });
-}
+process.env.OPENROUTER_API_KEY = KEY;
+log('using OpenRouter LLM localization (high quality).');
+const out = run(`node scripts/translate-ui.mjs ${mode}`, { timeout: 600000 });
 console.log(out.split('\n').filter((l) => /→|✓|✗|Done|translated/.test(l)).join('\n'));
 
 // 3. Commit + push the freshly localized locales (if any changed).

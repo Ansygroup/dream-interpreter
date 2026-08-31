@@ -41,6 +41,7 @@ export default function Saved() {
                   index={i}
                   onRemove={remove}
                   removeLabel={t('common.remove')}
+                  confirmLabel={t('common.confirmRemove')}
                   perspectiveName={d.perspective ? t(`perspectives.${d.perspective}.name`) : undefined}
                 />
               ))}

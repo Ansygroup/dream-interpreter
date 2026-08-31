@@ -41,6 +41,7 @@ export default function History() {
                   index={i}
                   onRemove={remove}
                   removeLabel={t('common.delete')}
+                  confirmLabel={t('common.confirmRemove')}
                   perspectiveName={d.perspective ? t(`perspectives.${d.perspective}.name`) : undefined}
                 />
               ))}

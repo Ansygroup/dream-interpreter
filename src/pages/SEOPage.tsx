@@ -154,7 +154,7 @@ const LANG_NAMES: Record<string, string> = {
 
 export default function SEOPage() {
   const { symbol, lang } = useParams<{ symbol: string; lang: string }>();
-  const { language } = useI18n();
+  const { language, t } = useI18n();
   const ref = useReveal<HTMLDivElement>();
 
   const content = symbol && lang ? CONTENT[symbol]?.[lang] : null;
@@ -236,23 +236,23 @@ export default function SEOPage() {
 
         <div className="space-y-6">
           <div className="card reveal">
-            <h2 className="h3 serif" style={{ color: 'var(--accent)', marginBottom: 12 }}>Dream Interpretation</h2>
-            <p style={{ color: 'var(--muted)', lineHeight: 1.8 }}>{content.meaning} This interpretation combines ancient wisdom (Ibn Sirin) with modern psychology to give you a comprehensive understanding of your dream.</p>
+            <h2 className="h3 serif" style={{ color: 'var(--accent)', marginBottom: 12 }}>{t('seo.dreamInterpretation')}</h2>
+            <p style={{ color: 'var(--muted)', lineHeight: 1.8 }}>{content.meaning} {t('seo.reflectNote')}</p>
           </div>
 
           <div className="card reveal">
-            <h2 className="h3 serif" style={{ color: 'var(--accent)', marginBottom: 12 }}>Islamic Tradition</h2>
-            <p style={{ color: 'var(--muted)', lineHeight: 1.8 }}>In Islamic tradition, dreams are seen as messages from the soul. The interpretation depends on the dreamer's circumstances, the emotions felt, and the overall context of the dream.</p>
+            <h2 className="h3 serif" style={{ color: 'var(--accent)', marginBottom: 12 }}>{t('seo.traditionsTitle')}</h2>
+            <p style={{ color: 'var(--muted)', lineHeight: 1.8 }}>{t('seo.traditionsBody')}</p>
           </div>
 
           <div className="card reveal" style={{ textAlign: 'center', borderColor: 'var(--accent-line)', background: 'var(--accent-glow)' }}>
-            <h2 className="h3 serif" style={{ color: 'var(--accent)', marginBottom: 12 }}>Interpret Your Dreams with AI</h2>
-            <p style={{ color: 'var(--muted)', marginBottom: 20 }}>Share your dream and get a personalized AI interpretation</p>
-            <Link to="/interpret" className="btn btn-primary">Try Dreamscope</Link>
+            <h2 className="h3 serif" style={{ color: 'var(--accent)', marginBottom: 12 }}>{t('seo.tryTitle')}</h2>
+            <p style={{ color: 'var(--muted)', marginBottom: 20 }}>{t('seo.tryLede')}</p>
+            <Link to="/interpret" className="btn btn-primary">{t('home.ctaButton')}</Link>
           </div>
 
           <div className="card reveal">
-            <h3 className="h3 serif" style={{ color: 'var(--accent)', marginBottom: 12 }}>Other Languages</h3>
+            <h3 className="h3 serif" style={{ color: 'var(--accent)', marginBottom: 12 }}>{t('seo.otherLangs')}</h3>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
               {allLangs.filter(l => CONTENT[symbol!]?.[l]).map(l => (
                 <a key={l} href={`/seo/${symbol}/${l}`} className="tag" style={{ textDecoration: 'none' }}>
@@ -263,7 +263,7 @@ export default function SEOPage() {
           </div>
 
           <div className="card reveal">
-            <h3 className="h3 serif" style={{ color: 'var(--accent)', marginBottom: 12 }}>Other Dream Symbols</h3>
+            <h3 className="h3 serif" style={{ color: 'var(--accent)', marginBottom: 12 }}>{t('seo.otherSymbols')}</h3>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
               {allSymbols.filter(s => s !== symbol).map(s => (
                 <a key={s} href={`/seo/${s}/${currentLang}`} className="tag" style={{ textDecoration: 'none', textTransform: 'capitalize' }}>

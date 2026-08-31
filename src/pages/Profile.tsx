@@ -104,8 +104,18 @@ export default function Profile() {
     setError(null);
     if (!email.trim() || !email.includes('@')) { setError(t('profile.invalidEmail')); return; }
     const res = await signInWithMagicLink(email.trim());
-    if (res.error) setError(res.error);
+    if (res.error) setError(t('profile.signInError'));
     else setSent(true);
+  };
+
+  const handleGoogle = async () => {
+    setError(null);
+    const res = await signInWithGoogle();
+    if (res.error) {
+      // Translate the common Supabase provider-not-enabled error into a clear, localized hint.
+      if (/provider is not enabled/i.test(res.error)) setError(t('profile.googleNotEnabled'));
+      else setError(t('profile.signInError'));
+    }
   };
 
   return (
@@ -216,14 +226,14 @@ export default function Profile() {
                   <div style={{ display: 'flex', alignItems: 'center', gap: 12, margin: '18px 0' }}>
                     <span className="hr" style={{ flex: 1 }} /><span className="mono-meta">or</span><span className="hr" style={{ flex: 1 }} />
                   </div>
-                  <button onClick={signInWithGoogle} className="btn btn-ghost" style={{ width: '100%' }}>
+                  <button onClick={handleGoogle} className="btn btn-ghost" style={{ width: '100%' }}>
                     <svg className="icon" viewBox="0 0 24 24" style={{ width: 16, height: 16 }}><circle cx="12" cy="12" r="9" /><path d="M12 8v8M8 12h8" /></svg>
                     {t('profile.google')}
                   </button>
                 </div>
               )}
               <button onClick={() => { try { localStorage.removeItem('ds_supabase_url'); localStorage.removeItem('ds_supabase_key'); } catch {} window.location.reload(); }} className="btn btn-ghost" style={{ fontSize: 13 }}>{t('profile.disconnect')}</button>
-              <p style={{ fontSize: 13, color: 'var(--muted)', lineHeight: 1.6 }}>{t('profile.guestNote')}</p>
+              <p style={{ fontSize: 13, color: 'var(--muted)', lineHeight: 1.6 }}>{t('profile.dataNote')}</p>
             </div>
           )}
 

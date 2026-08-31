@@ -63,11 +63,16 @@
     "button": "Interpret Dream",
     "yourReading": "Your Reading",
     "save": "Save",
+    "saved": "Saved",
+    "savedConfirm": "Saved to your journal. Find it anytime under Saved.",
+    "unsaved": "Removed from Saved.",
+    "disclaimer": "Reflection only — not medical, psychological, or religious advice. It does not predict the future.",
     "viewHistory": "View History",
     "errorEmpty": "Please describe your dream first.",
     "errorFailed": "The interpretation failed. Please try again.",
     "errorNetwork": "Connection error. Please try again.",
     "perspectiveLabel": "Reading through",
+    "perspNotice": "Each tradition is shown on its own. Readings are reflective and probabilistic — not predictions or rulings.",
     "compareLabel": "Compare all traditions",
     "compareDesc": "One dream, read through every lens at once — see where the traditions agree and where they diverge.",
     "compareLoading": "Reading through every tradition…",
@@ -102,18 +107,20 @@
     "interpretCta": "Interpret a Dream",
     "delete": "Delete",
     "remove": "Remove",
+    "confirmRemove": "Remove?",
     "backHome": "Return Home"
   },
   "symbols": {
     "title": "{n} Dream Symbols",
     "lede": "Browse every symbol we interpret — free, in dozens of languages. Pick yours to read the meaning.",
-    "search": "Search a symbol…"
+    "search": "Search a symbol…",
+    "noResults": "No symbol matches your search."
   },
   "about": {
     "title": "A clear reading, rooted in tradition",
     "p1": "Dreamscope exists to make dream interpretation accessible in your own language. We combine two streams of understanding: the classical Islamic dream scholarship of Ibn Sirin, one of the most influential dream interpreters in history, and the symbolic frameworks of modern depth psychology.",
     "p2": "Every reading is generated to help you reflect — not to predict the future. Symbols like water, fire, flight, or a snake have carried meaning across cultures for thousands of years, and our interpretations trace those threads so you can find what resonates with your own life.",
-    "p3": "The service is free, private by design, and available in 60 languages. Your dreams never leave your device.",
+    "p3": "The service is free, private by design, and available in 60 languages. Your dream text is sent to our interpretation service to generate a reading, then is not stored by us; your readings stay on your device unless you sign in and sync.",
     "card1Title": "Ibn Sirin",
     "card1Body": "Classical Islamic dream scholarship, traced through centuries of interpretation.",
     "card2Title": "60 languages",
@@ -180,13 +187,16 @@
   },
   "profile": {
     "title": "Your space",
-    "cloudOff": "Accounts are coming soon. Meanwhile, everything already works for you as a guest — your dreams stay on your device.",
+    "cloudOff": "Your dream text is sent to our interpretation service to generate a reading, then is not stored by us. Readings are kept on your device unless you sign in and choose to sync. We never sell or profile your data.",
+    "dataNote": "Where your data lives: your device by default. When you sign in, your journal can sync to your private account; you can delete it anytime.",
     "signInLede": "Sign in to keep your dream journal across all your devices. Your guest history moves with you automatically.",
     "emailLabel": "Email",
     "magicLink": "Send me a sign-in link",
     "google": "Continue with Google",
     "checkEmail": "Check your inbox — a sign-in link is waiting for you.",
     "invalidEmail": "Please enter a valid email address.",
+    "signInError": "We couldn't sign you in. Please try again or use the email link.",
+    "googleNotEnabled": "Google sign-in isn't enabled on this project yet. The site owner needs to connect a Google OAuth client in Supabase.",
     "guestNote": "No password, no tracking — just a link. Guest mode with on-device storage remains fully available.",
     "member": "Member",
     "migrated": "Migrated {n} dreams from this device to your journal.",
@@ -235,5 +245,15 @@
     "sadness": "Sad",
     "anger": "Angry",
     "confusion": "Confused"
+  },
+  "seo": {
+    "dreamInterpretation": "Dream Interpretation",
+    "traditionsTitle": "Across the traditions",
+    "traditionsBody": "A symbol can mean different things in different cultures. In Islamic, Christian, Jewish, Hindu, Buddhist, Chinese, and psychological traditions, the same image is read through its own lens. Choose the lens you trust on the interpret page.",
+    "tryTitle": "Interpret Your Dreams with AI",
+    "tryLede": "Share your dream and get a personalized AI interpretation.",
+    "otherLangs": "Other Languages",
+    "otherSymbols": "Other Dream Symbols",
+    "reflectNote": "This page is for reflection and entertainment only. It is not medical, psychological, or religious advice, and it does not predict the future."
   }
 }

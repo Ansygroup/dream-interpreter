@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useI18n } from '../contexts/I18nContext';
 import { useAuth } from '../contexts/AuthContext';
@@ -41,6 +41,17 @@ export default function Interpret() {
   const [error, setError] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<'up' | 'down' | null>(null);
   const [copied, setCopied] = useState(false);
+  const [saved, setSaved] = useState(false);
+  const [savedToast, setSavedToast] = useState<string | null>(null);
+
+  // Keep the Saved toggle in sync with localStorage on mount + after navigation.
+  const isSaved = (id: number | string): boolean => {
+    try {
+      const arr = JSON.parse(localStorage.getItem('saved-dreams') || '[]') as Array<{ id: number | string }>;
+      return arr.some((d) => String(d.id) === String(id));
+    } catch { return false; }
+  };
+  useEffect(() => { if (result) setSaved(isSaved(result.id)); }, [result]);
 
   // ⌘/Ctrl + Enter submits the active reading
   const onKeyDown = (e: React.KeyboardEvent) => {
@@ -138,12 +149,30 @@ export default function Interpret() {
 
   const saveDream = () => {
     if (!result) return;
-    const saved = JSON.parse(localStorage.getItem('saved-dreams') || '[]');
-    saved.unshift({ dream, interpretation: result.interpretation, date: new Date().toISOString(), id: Date.now(), language, perspective, symbols: result.symbols, mood: mood ?? undefined });
-    localStorage.setItem('saved-dreams', JSON.stringify(saved));
-    if (user) {
-      saveDreamToCloud(user.id, { dream, interpretation: result.interpretation, date: new Date().toISOString(), id: Date.now(), language, perspective, symbols: result.symbols, mood: mood ?? undefined });
+    const entry = {
+      dream,
+      interpretation: result.interpretation,
+      date: new Date().toISOString(),
+      id: result.id, // unified id with History so Saved/History never diverge
+      language,
+      perspective,
+      symbols: result.symbols,
+      mood: mood ?? undefined,
+    };
+    const list = JSON.parse(localStorage.getItem('saved-dreams') || '[]') as Array<{ id: number | string }>;
+    const exists = list.some((d) => String(d.id) === String(entry.id));
+    let next: Array<typeof entry>;
+    if (exists) {
+      next = list.filter((d) => String(d.id) !== String(entry.id)); // toggle off = unsave
+      setSavedToast(t('interpret.unsaved'));
+    } else {
+      next = [entry, ...list];
+      setSavedToast(t('interpret.savedConfirm'));
     }
+    localStorage.setItem('saved-dreams', JSON.stringify(next));
+    setSaved(!exists);
+    if (user) saveDreamToCloud(user.id, entry);
+    setTimeout(() => setSavedToast(null), 2200);
   };
 
   const sendFeedback = async (helpful: boolean) => {
@@ -195,6 +224,9 @@ export default function Interpret() {
             </div>
             <p style={{ marginTop: 12, fontSize: 13.5, color: 'var(--text-dim)', lineHeight: 1.6, maxWidth: '60ch' }}>
               {t(`perspDesc.${perspective}`)}
+            </p>
+            <p style={{ marginTop: 8, fontSize: 12.5, color: 'var(--muted)', lineHeight: 1.6, maxWidth: '60ch' }}>
+              {t('interpret.perspNotice')}
             </p>
           </div>
 
@@ -310,9 +342,9 @@ export default function Interpret() {
                   </div>
                 </div>
                 <div style={{ display: 'flex', gap: 12, marginTop: 24, flexWrap: 'wrap', alignItems: 'center' }}>
-                  <button onClick={saveDream} className="btn btn-ghost" style={{ padding: '10px 18px' }}>
-                    <svg className="icon" viewBox="0 0 24 24" style={{ width: 16, height: 16 }}><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" /></svg>
-                    {t('interpret.save')}
+                  <button onClick={saveDream} className="btn btn-ghost" style={{ padding: '10px 18px', borderColor: saved ? 'var(--accent)' : 'var(--accent-line)', color: saved ? 'var(--accent)' : 'var(--muted)' }}>
+                    <svg className="icon" viewBox="0 0 24 24" style={{ width: 16, height: 16 }}><path d={saved ? "M5 12l5 5L20 7" : "M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"} /></svg>
+                    {saved ? t('interpret.saved') : t('interpret.save')}
                   </button>
                   <button onClick={() => copyReading(result.interpretation)} className="btn btn-ghost" style={{ padding: '10px 18px' }}>
                     <svg className="icon" viewBox="0 0 24 24" style={{ width: 16, height: 16 }}><rect x="9" y="9" width="11" height="11" rx="2" /><path d="M5 15V5a2 2 0 0 1 2-2h10" /></svg>
@@ -340,6 +372,15 @@ export default function Interpret() {
                   </div>
                 </div>
               </div>
+              <p role="note" style={{ marginTop: 18, fontSize: 12.5, color: 'var(--muted)', lineHeight: 1.6, borderTop: '1px solid var(--border-soft)', paddingTop: 14 }}>
+                {t('interpret.disclaimer')}
+              </p>
+            </div>
+          )}
+
+          {savedToast && (
+            <div role="status" className="reveal" style={{ marginTop: 16 }}>
+              <span className="tag" style={{ borderColor: 'var(--accent-line)', color: 'var(--accent)', background: 'var(--accent-glow)' }}>✓ {savedToast}</span>
             </div>
           )}
 

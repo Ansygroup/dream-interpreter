@@ -84,7 +84,8 @@ for (const code of targets) {
     // Skip if already real-translated and placeholder matches
     if (existingFlat.has(key)) {
       const v = existingFlat.get(key);
-      if (typeof v === 'string' && v.trim() && ph(v) === ph(value)) { skipped++; continue; }
+      const isReal = typeof v === 'string' && v.trim() && !v.trim().startsWith('Free AI dream') && v.trim() !== '';
+      if (isReal && ph(v) === ph(value)) { skipped++; continue; }
     }
     const t = await translateOne(code, key, value, `Section: ${key.split('.')[0]}`);
     if (t) { existingFlat.set(key, t); done++; }

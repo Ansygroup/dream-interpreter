@@ -26,40 +26,52 @@ const run = (cmd, opts = {}) => {
   catch (e) { return (e.stdout || '') + (e.stderr || ''); }
 };
 
-// 1. Resolve OPENROUTER_API_KEY from one of:
+// 1. Resolve OPENROUTER_API_KEY from one of (in priority order):
 //    a) .dreamscope-secrets (operator-seeded literal key, gitignored) — headless-safe
-//    b) Vercel env pull (works in an interactive pty; may return an encrypted
-//       reference rather than the literal key, in which case we fall through)
+//    b) the ambient environment (e.g. an operator-exported OPENROUTER_API_KEY)
+//    c) Vercel env pull (works in an interactive pty; returns an ENCRYPTED reference
+//       "@..." OR a redacted literal "[SENSITIVE]" for sensitive vars — neither is
+//       usable, so we fall through in those cases instead of clobbering a real key).
+//    A usable key must look like an OpenRouter key (starts with "sk-") and must not be
+//    a Vercel encrypted reference ("@...") or a Vercel redaction ("[SENSITIVE]").
+const usable = (k) => !!k && k.startsWith('sk-') && !k.startsWith('@') && k !== '[SENSITIVE]';
+
 const secretsFile = join(root, '.dreamscope-secrets');
-let KEY = '';
+let KEY = process.env.OPENROUTER_API_KEY || '';
 if (existsSync(secretsFile)) {
   for (const line of readFileSync(secretsFile, 'utf8').split('\n')) {
     const t = line.trim();
     if (t.startsWith('OPENROUTER_API_KEY=')) { KEY = t.slice('OPENROUTER_API_KEY='.length).trim(); break; }
   }
 }
-if (!KEY || KEY.startsWith('@')) { // '@...' = Vercel encrypted reference, not usable
+if (!usable(KEY)) { // fall back to Vercel env pull
   const envFile = join(root, '.env.vercel.local');
   rmSync(envFile, { force: true });
   run('vercel env pull .env.vercel.local --environment production --yes 2>&1', { timeout: 90000 });
   if (existsSync(envFile)) {
     const txt = readFileSync(envFile, 'utf8');
     const m = txt.match(/OPENROUTER_API_KEY="?([^"\n]+)"?/);
-    if (m && !m[1].startsWith('@')) KEY = m[1];
+    if (m && usable(m[1])) KEY = m[1]; // ignore "@..." / "[SENSITIVE]" redacted values
     rmSync(envFile, { force: true });
   }
 }
-if (!KEY || KEY.startsWith('@')) {
-  log('no usable OPENROUTER_API_KEY (Vercel stores it encrypted; drop the literal key into .dreamscope-secrets). Retry next tick.');
-  process.exit(0);
+if (!usable(KEY)) {
+  log('no usable OPENROUTER_API_KEY — will use KEYLESS localization (no secret needed).');
 }
-log('obtained usable OPENROUTER_API_KEY.');
-process.env.OPENROUTER_API_KEY = KEY; // hand to translate-ui.mjs via env
-
-// 2. Translate all incomplete (non-en/ar) locales.
-//    --all = force re-translate everything; default (= --complete) only partial files.
+// 2. Pick the translation engine:
+//    - If a usable OpenRouter key is present → high-quality LLM localization.
+//    - Otherwise (no key) → KEYLESS MyMemory path so the site is NEVER stuck in
+//      English-only. This is the self-completing default: zero operator secrets.
 const mode = process.argv.includes('--all') ? '--force' : '--complete';
-const out = run(`node scripts/translate-ui.mjs ${mode}`, { timeout: 600000 });
+let out;
+if (usable(KEY)) {
+  process.env.OPENROUTER_API_KEY = KEY;
+  log('using OpenRouter LLM localization (high quality).');
+  out = run(`node scripts/translate-ui.mjs ${mode}`, { timeout: 600000 });
+} else {
+  log('no OpenRouter key — using KEYLESS MyMemory localization (no operator secret needed).');
+  out = run(`node scripts/translate-free.mjs`, { timeout: 600000 });
+}
 console.log(out.split('\n').filter((l) => /→|✓|✗|Done|translated/.test(l)).join('\n'));
 
 // 3. Commit + push the freshly localized locales (if any changed).

@@ -2,128 +2,258 @@
   "nav": {
     "interpret": "Interpretar",
     "symbols": "Símbolos",
-    "about": "Nosotros",
+    "about": "Acerca de",
     "faq": "Preguntas",
     "history": "Historial",
     "saved": "Guardados",
     "contact": "Contacto",
-    "start": "Empezar",
+    "start": "Comenzar",
     "home": "Inicio",
-    "aiBlog": "Blog IA",
-    "ansyGroup": "Ansy Group",
+    "aiBlog": "Blog de IA",
+    "ansyGroup": "Grupo Ansy",
     "language": "Idioma",
     "searchLanguage": "Buscar idiomas…",
-    "noLanguage": "Ningún idioma coincide con tu búsqueda."
+    "noLanguage": "Ningún idioma coincide con tu búsqueda.",
+    "profile": "Perfil"
   },
   "footer": {
-    "tagline": "Free AI dream interpretation in 60 languages — every tradition, your lens.",
+    "tagline": "Interpretación de sueños con IA gratis en 60 idiomas — cada tradición, tu mirada.",
     "copyright": "© {year} Dreamscope"
   },
   "home": {
-    "heroTitle": "Lo que tu {accent} quiere decirte",
-    "heroAccent": "subconsciente",
-    "heroLede": "Ancient symbolism, modern psychology, and AI — combined into one clear reading. Describe a dream in your own words and get an interpretation through the tradition you trust.",
+    "heroTitle": "Lo que tu {accent} intenta decirte",
+    "heroAccent": "inconsciente",
+    "heroLede": "Simbolismo ancestral, psicología moderna e IA — combinados en una lectura clara. Describe un sueño con tus propias palabras y recibe una interpretación a través de la tradición en la que confías.",
     "interpretCta": "Interpretar un sueño",
     "browseCta": "Explorar símbolos",
     "statLanguages": "{n} idiomas",
-    "statSymbols": "{n} símbolos de sueños",
+    "statSymbols": "{n} símbolos oníricos",
     "statPrivateLine": "privado en tu dispositivo",
-    "whyTitle": "Una lectura que de verdad puedes usar",
-    "whyLede": "Dreamscope descompone tu sueño en sus símbolos y los lee a través de la tradición en la que confías — con la psicología al lado, no en su lugar.",
+    "whyTitle": "Una lectura que realmente puedes usar",
+    "whyLede": "Dreamscope conecta tu sueño con sus símbolos y los lee a través de la tradición en la que confías — con la psicología como compañía, no como reemplazo.",
     "feature1Title": "Análisis simbólico",
-    "feature1Body": "Cada sueño se descompone en sus símbolos esenciales y se rastrea a través de siglos de tradición interpretativa.",
+    "feature1Body": "Cada sueño se conecta con sus símbolos centrales y se rastrea a través de siglos de tradición interpretativa.",
     "feature2Title": "60 idiomas",
-    "feature2Body": "Interpreta y lee símbolos en español, inglés, árabe, chino, japonés y 55 idiomas más.",
+    "feature2Body": "Interpreta y lee símbolos en inglés, árabe, español, chino, japonés y 55 idiomas más.",
     "feature3Title": "Todas las tradiciones",
-    "feature3Body": "Depth psychology and perspectives across faiths — one reading, seen through your lens.",
+    "feature3Body": "Psicología profunda y perspectivas de distintas tradiciones — una sola lectura, vista desde tu mirada.",
     "feature4Title": "Guardado y privado",
-    "feature4Body": "Tus sueños permanecen en tu dispositivo. Reviítelos, compáralos y observa patrones con el tiempo.",
+    "feature4Body": "Tus sueños permanecen en tu dispositivo por defecto. Inicia sesión para sincronizarlos entre dispositivos.",
     "sampleTag": "Lectura de ejemplo",
     "sampleJustNow": "ahora mismo",
-    "sampleDream": "\"Vi una serpiente verde salir de la casa por la puerta del jardín.\"",
-    "sampleReading": "Snakes mark transformation — something in your life is shedding its old skin. The gate suggests a clear exit is opening. In many traditions, a harmless snake leaving the home often means a lingering worry is finally moving on.",
+    "sampleDream": "«Vi una serpiente verde salir de la casa por la puerta del jardín.»",
+    "sampleReading": "Las serpientes marcan transformación — algo en tu vida está dejando atrás su vieja piel. La puerta sugiere que se abre una salida clara. En muchas tradiciones, una serpiente inofensiva que sale del hogar suele significar que una preocupación persistente finalmente se está disipando.",
     "sampleTag1": "Transformación",
     "sampleTag2": "Liberación",
-    "sampleTag3": "Tradition",
+    "sampleTag3": "Tradición",
     "sampleSaved": "Guardado en tu dispositivo",
-    "symbolsTitle": "Cada símbolo lleva un significado",
-    "symbolsLede": "Del agua al fuego, explora los motivos oníricos más comunes y lo que cada uno suele señalar a través de las tradiciones.",
+    "symbolsTitle": "Cada símbolo guarda un significado",
+    "symbolsLede": "Del agua al fuego, explora los motivos oníricos más comunes y lo que suelen señalar en distintas tradiciones.",
     "ctaTitle": "Describe tu sueño",
-    "ctaLede": "Con unas pocas frases basta. La lectura tarda segundos y se queda en tu dispositivo.",
-    "ctaButton": "Empezar a interpretar"
+    "ctaLede": "Unas pocas frases bastan. La lectura toma segundos y permanece en tu dispositivo por defecto.",
+    "ctaButton": "Comenzar a interpretar"
   },
   "interpret": {
     "title": "Describe tu sueño",
-    "lede": "Escríbelo con tus propias palabras. Cuantos más detalles, más nítida la lectura — el lugar, los sentimientos y todo lo inusual importan.",
+    "lede": "Escríbelo con tus propias palabras. Cuanto más detalle, más precisa será la lectura — el entorno, las emociones y cualquier detalle inusual importan.",
     "language": "Idioma",
     "yourDream": "Tu sueño",
-    "placeholder": "Anoche soñé que atravesaba una puerta que no dejaba de cambiar de forma...",
+    "placeholder": "Anoche soñé que caminaba por una puerta que cambiaba de forma constantemente...",
     "loading": "Interpretando...",
     "button": "Interpretar sueño",
     "yourReading": "Tu lectura",
     "save": "Guardar",
+    "saved": "Guardado",
+    "savedConfirm": "Guardado en tu diario. Encuéntralo cuando quieras en Guardados.",
+    "unsaved": "Eliminado de Guardados.",
+    "disclaimer": "Solo una reflexión — no es consejo médico, psicológico ni religioso. No predice el futuro.",
     "viewHistory": "Ver historial",
-    "errorEmpty": "Primero describe tu sueño.",
-    "errorFailed": "La interpretación falló. Inténtalo de nuevo.",
-    "errorNetwork": "Error de conexión. Inténtalo de nuevo."
+    "errorEmpty": "Por favor, describe primero tu sueño.",
+    "errorFailed": "La interpretación falló. Por favor, inténtalo de nuevo.",
+    "errorNetwork": "Error de conexión. Por favor, inténtalo de nuevo.",
+    "perspectiveLabel": "Lectura a través de",
+    "perspNotice": "Cada tradición se muestra por separado. Las lecturas son reflexivas y probables — no predicciones ni dictámenes.",
+    "compareLabel": "Comparar todas las tradiciones",
+    "compareDesc": "Un solo sueño, leído a través de cada mirada a la vez — observa dónde coinciden las tradiciones y dónde difieren.",
+    "compareLoading": "Leyendo a través de cada tradición…",
+    "compareBack": "Volver a la lectura única",
+    "compareSymbols": "Símbolos",
+    "symbolsLabel": "Símbolos en tu sueño",
+    "feedbackQ": "¿Te resultó útil esta lectura?",
+    "yes": "Sí, útil",
+    "no": "No mucho",
+    "thanks": "Gracias — tu opinión mejora las lecturas futuras.",
+    "perspectiveDesc": "Una lectura que entrelaza los hilos más sabios de las tradiciones del mundo con la psicología profunda.",
+    "moodLabel": "¿Cómo se sintió el sueño?",
+    "copy": "Copiar",
+    "copied": "¡Copiado!",
+    "share": "Compartir",
+    "example": "Probar un ejemplo",
+    "exampleDream": "Anoche soñé que una paloma blanca se posó en mi ventana y luego se convirtió en una carta que no podía leer. Me sentí en calma pero curiosa.",
+    "shortcutHint": "Pulsa ⌘/Ctrl + Intro para interpretar",
+    "symbolsSection": "Símbolos"
   },
   "history": {
     "title": "Historial de sueños",
-    "lede": "Cada interpretación que has generado, guardada en este dispositivo.",
-    "empty": "Aún no hay sueños interpretados."
+    "lede": "Cada interpretación que has generado, almacenada en este dispositivo.",
+    "empty": "Aún no se han interpretado sueños."
   },
   "saved": {
     "title": "Sueños guardados",
-    "lede": "Conserva las interpretaciones que te importaron. Se quedan en este dispositivo.",
+    "lede": "Conserva las interpretaciones que te importaron. Permanecen en este dispositivo.",
     "empty": "Aún no hay nada guardado."
   },
   "common": {
     "interpretCta": "Interpretar un sueño",
     "delete": "Eliminar",
     "remove": "Quitar",
+    "confirmRemove": "¿Quitar?",
     "backHome": "Volver al inicio"
   },
   "symbols": {
-    "title": "{n} símbolos de sueños",
+    "title": "{n} símbolos oníricos",
     "lede": "Explora cada símbolo que interpretamos — gratis, en decenas de idiomas. Elige el tuyo para leer su significado.",
-    "search": "Busca un símbolo…"
+    "search": "Buscar un símbolo…",
+    "noResults": "Ningún símbolo coincide con tu búsqueda."
   },
   "about": {
-    "title": "Una lectura clara, con raíces en la tradición",
-    "p1": "Dreamscope exists to make dream interpretation accessible in your own language and cultural context. We draw on a wide range of interpretive traditions — religious and spiritual scholarship, cultural folklore, and the symbolic frameworks of modern depth psychology — so you can read your dream through the lens you trust.",
-    "p2": "Cada lectura se genera para ayudarte a reflexionar — no para predecir el futuro. Símbolos como el agua, el fuego, el vuelo o una serpiente han cargado significado a través de las culturas durante miles de años, y nuestras interpretaciones rastrean esos hilos para que encuentres lo que resuena con tu vida.",
-    "p3": "El servicio es gratuito, privado por diseño y está disponible en 60 idiomas. Tus sueños nunca salen de tu dispositivo.",
-    "card1Title": "Many traditions",
-    "card1Body": "Erudición clásica islámica de los sueños, rastreada a través de siglos de interpretación.",
+    "title": "Una lectura clara, enraizada en la tradición",
+    "p1": "Dreamscope existe para hacer accesible la interpretación de los sueños en tu propio idioma y contexto cultural. Nos basamos en una amplia gama de tradiciones interpretativas — estudios religiosos y espirituales, folclore cultural y los marcos simbólicos de la psicología profunda moderna — para que puedas leer tu sueño a través de la mirada en la que confías.",
+    "p2": "Cada lectura se genera para ayudarte a reflexionar — no para predecir el futuro. Símbolos como el agua, el fuego, el vuelo o una serpiente han cargado significado a lo largo de las culturas durante miles de años, y nuestras interpretaciones siguen esos hilos para que encuentres lo que resuena con tu propia vida.",
+    "p3": "El servicio es gratuito, privado por diseño y está disponible en 60 idiomas. El texto de tu sueño se envía a nuestro servicio de interpretación para generar una lectura y luego no lo almacenamos; tus lecturas permanecen en tu dispositivo a menos que inicies sesión y las sincronices.",
+    "card1Title": "Muchas tradiciones",
+    "card1Body": "Miradas islámica, cristiana, judía, hindú, budista, china y psicológica — elige aquella en la que confías.",
     "card2Title": "60 idiomas",
     "card2Body": "Del árabe al japonés — interpreta en el idioma en el que sueñas.",
     "card3Title": "100% privado",
-    "card3Body": "Los sueños se quedan en tu dispositivo. Sin cuentas, sin rastreo.",
-    "cta": "Empezar a interpretar"
+    "card3Body": "Tus lecturas permanecen en tu dispositivo por defecto. Inicia sesión solo para sincronizar; elimina cuando quieras.",
+    "cta": "Comenzar a interpretar",
+    "traditionsTitle": "Cada tradición, un solo sueño",
+    "traditionsLede": "Elige la mirada en la que confía tu corazón — cada lectura se genera a través de una escuela de interpretación dedicada."
   },
   "contact": {
-    "title": "Contacto",
-    "lede": "¿Preguntas, correcciones o ideas de colaboración? Escribe al equipo de Dreamscope por correo.",
+    "title": "Ponte en contacto",
+    "lede": "¿Preguntas, correcciones o ideas de colaboración? Escribe al equipo de Dreamscope por correo electrónico.",
     "email": "Correo electrónico",
-    "disclaimer": "Dreamscope ofrece contenido de reflexión y entretenimiento. Las interpretaciones no son consejo médico, psicológico ni religioso. Si necesitas apoyo, consulta a un profesional cualificado.",
+    "disclaimer": "Dreamscope ofrece solo reflexión y entretenimiento. Las interpretaciones no son consejo médico, psicológico ni religioso. Si necesitas apoyo, consulta a un profesional cualificado.",
     "back": "Volver al intérprete"
   },
   "faq": {
     "title": "Preguntas frecuentes",
     "q1": "¿Cómo interpreta Dreamscope los sueños?",
-    "a1": "Dreamscope blends dream scholarship from many cultures and faiths — including Islamic, Christian, Jewish, Hindu, Buddhist, and Chinese traditions — with modern depth psychology. You describe a dream in your own words and receive a reading that maps its symbols to their common meanings across cultures.",
-    "q2": "¿Mis sueños son privados?",
-    "a2": "Sí. Tus sueños se guardan solo en el almacenamiento local de tu navegador, en tu dispositivo. No se envía nada a ningún servidor y puedes borrar tu historial cuando quieras.",
+    "a1": "Dreamscope combina la sabiduría onírica de muchas culturas y tradiciones — incluidas las tradiciones islámica, cristiana, judía, hindú, budista y china — con la psicología profunda moderna. Describes un sueño con tus propias palabras y recibes una lectura que conecta sus símbolos con sus significados comunes a través de las culturas.",
+    "q2": "¿Están privados mis datos de sueños?",
+    "a2": "Sí. Tus sueños se almacenan únicamente en el almacenamiento local de tu navegador, en tu dispositivo. No se envía nada a un servidor para su almacenamiento y puedes eliminar tu historial en cualquier momento.",
     "q3": "¿En qué idiomas puedo interpretar sueños?",
-    "a3": "Dreamscope admite 60 idiomas, entre ellos español, inglés, árabe, francés, alemán, chino, japonés, coreano, turco, portugués, ruso, hindi y muchos más. La lectura sigue el idioma que elijas.",
-    "q4": "¿Las interpretaciones sustituyen el consejo profesional?",
-    "a4": "No. Las lecturas de sueños son para reflexionar y entretenerse. No son orientación médica, psicológica ni religiosa. Si estás pasando por un mal momento, habla con un profesional cualificado.",
-    "q5": "¿Cuántos símbolos de sueños cubre Dreamscope?",
-    "a5": "Dreamscope tiene páginas dedicadas a 146 símbolos comunes — serpiente, agua, vuelo, fuego, embarazo, dinero y muchos más — cada uno disponible en varios idiomas con variantes de preguntas."
+    "a3": "Dreamscope admite 60 idiomas, incluidos inglés, árabe, español, francés, alemán, chino, japonés, coreano, turco, portugués, ruso, hindi y muchos más. La lectura sigue el idioma que elijas.",
+    "q4": "¿Sustituyen las interpretaciones al consejo profesional?",
+    "a4": "No. Las lecturas oníricas son para reflexionar y entretenerse. No son orientación médica, psicológica ni religiosa. Si estás pasando por un momento difícil, habla con un profesional cualificado.",
+    "q5": "¿Cuántos símbolos oníricos están cubiertos?",
+    "a5": "Dreamscope tiene páginas dedicadas para 146 símbolos comunes — serpiente, agua, volar, fuego, embarazo, dinero y muchos más — cada uno disponible en varios idiomas con variantes de preguntas de cola larga."
   },
   "notfound": {
-    "title": "Este sueño se disolvió",
+    "title": "Este sueño se disipó",
     "lede": "La página que buscabas no está aquí. Volvamos a interpretar.",
     "cta": "Volver al inicio"
+  },
+  "perspectives": {
+    "general": {
+      "name": "Universal"
+    },
+    "islamic": {
+      "name": "Ibn Sirin (Islámica)"
+    },
+    "christian": {
+      "name": "Cristiana"
+    },
+    "jewish": {
+      "name": "Judía"
+    },
+    "hindu": {
+      "name": "Hindú"
+    },
+    "buddhist": {
+      "name": "Budista"
+    },
+    "psychology": {
+      "name": "Psicología (Jung)"
+    },
+    "chinese": {
+      "name": "Zhou Gong (China)"
+    }
+  },
+  "daily": {
+    "tag": "Sueño del día"
+  },
+  "profile": {
+    "title": "Tu espacio",
+    "cloudOff": "El texto de tu sueño se envía a nuestro servicio de interpretación para generar una lectura y luego no lo almacenamos. Las lecturas se guardan en tu dispositivo a menos que inicies sesión y elijas sincronizarlas. Nunca vendemos ni perfilamos tus datos.",
+    "dataNote": "Dónde viven tus datos: en tu dispositivo por defecto. Cuando inicias sesión, tu diario puede sincronizarse con tu cuenta privada; puedes eliminarlo cuando quieras.",
+    "signInLede": "Inicia sesión para mantener tu diario de sueños en todos tus dispositivos. Tu historial como invitado se traslada contigo automáticamente.",
+    "emailLabel": "Correo electrónico",
+    "magicLink": "Envíame un enlace de acceso",
+    "google": "Continuar con Google",
+    "checkEmail": "Revisa tu bandeja de entrada — te espera un enlace de acceso.",
+    "invalidEmail": "Por favor, introduce una dirección de correo electrónico válida.",
+    "signInError": "No pudimos iniciar sesión. Inténtalo de nuevo o utiliza el enlace por correo.",
+    "googleNotEnabled": "El inicio de sesión con Google aún no está habilitado en este proyecto. El propietario del sitio debe conectar un cliente OAuth de Google en Supabase.",
+    "guestNote": "Sin contraseñas, sin rastreo — solo un enlace. El modo invitado con almacenamiento en el dispositivo sigue disponible por completo.",
+    "member": "Miembro",
+    "migrated": "Se migraron {n} sueños de este dispositivo a tu diario.",
+    "signOut": "Cerrar sesión",
+    "navLabel": "Perfil",
+    "lede": "Todo lo que Dreamscope sabe sobre tu viaje — almacenado en tu dispositivo, solo tuyo.",
+    "yourState": "Tu estado ahora mismo",
+    "statDreams": "Sueños interpretados",
+    "statSaved": "Lecturas guardadas",
+    "statStreak": "Días seguidos",
+    "statTopSymbol": "Símbolo principal",
+    "emptyState": "Aún no hay sueños — tu primera lectura iluminará esta página.",
+    "symbolsYouMeet": "Símbolos que sigues encontrando",
+    "noneYet": "—",
+    "lastReading": "Última lectura",
+    "languagesUsed": "Idiomas utilizados",
+    "perspectivesUsed": "Tradiciones utilizadas",
+    "cloudTitle": "En todos tus dispositivos",
+    "connectTitle": "Conecta tu proyecto de Supabase",
+    "connectUrlLabel": "URL del proyecto",
+    "connectKeyLabel": "Clave pública anónima",
+    "connectCta": "Conectar",
+    "connected": "Conectado — ya puedes iniciar sesión y sincronizar tu diario.",
+    "connectError": "No se pudo conectar. Verifica la URL y la clave anónima.",
+    "disconnect": "Desconectar",
+    "privacyNote": "Tus sueños se almacenan en tu dispositivo — nunca se venden ni se perfilan.",
+    "moodPattern": "Patrón de ánimo",
+    "autoSetupTitle": "Configuración con un solo comando",
+    "autoSetupBody": "¿Aún no tienes un proyecto? Ejecuta una vez el script de bootstrap: crea un proyecto de Supabase, aplica el esquema de la base de datos e imprime tu URL y clave anónima para pegar arriba. El inicio de sesión con Google necesita un cliente OAuth de Google Cloud (consulta el script).",
+    "autoSetupCmd": "SUPABASE_ACCESS_TOKEN=xxx node scripts/setup-supabase.mjs"
+  },
+  "perspDesc": {
+    "general": "Una lectura que entrelaza los hilos más sabios de las tradiciones del mundo con la psicología profunda.",
+    "islamic": "La escuela clásica de Ibn Sirin — simbólica, legal y centrada en el alma.",
+    "christian": "Lectura de sueños en la línea de José y Daniel, con simbolismo bíblico.",
+    "jewish": "Sabiduría onírica de la Torá y el Talmud — un mensaje que espera una interpretación sabia.",
+    "hindu": "Simbolismo védico, karma y los paisajes internos de la mente.",
+    "buddhist": "Impermanencia y atención plena — observar el sueño sin aferrarse.",
+    "psychology": "Los arquetipos de Jung y la sombra — lo que tu psique está procesando.",
+    "chinese": "El diccionario clásico de Zhou Gong — equilibrio del yin, el yang y los cinco elementos."
+  },
+  "moods": {
+    "peace": "Tranquilo",
+    "anxiety": "Ansioso",
+    "hope": "Esperanzado",
+    "sadness": "Triste",
+    "anger": "Enfadado",
+    "confusion": "Confundido"
+  },
+  "seo": {
+    "dreamInterpretation": "Interpretación de sueños",
+    "traditionsTitle": "A través de las tradiciones",
+    "traditionsBody": "Un símbolo puede significar cosas distintas en diferentes culturas. En las tradiciones islámica, cristiana, judía, hindú, budista, china y psicológica, la misma imagen se lee a través de su propia mirada. Elige la mirada en la que confías en la página de interpretar.",
+    "tryTitle": "Interpreta tus sueños con IA",
+    "tryLede": "Comparte tu sueño y obtén una interpretación personalizada con IA.",
+    "otherLangs": "Otros idiomas",
+    "otherSymbols": "Otros símbolos oníricos",
+    "reflectNote": "Esta página es solo para reflexión y entretenimiento. No es consejo médico, psicológico ni religioso, y no predice el futuro."
   }
 }

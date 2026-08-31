@@ -2,70 +2,258 @@
   "nav": {
     "interpret": "Yoz",
     "symbols": "Simvollar",
-    "about": "Haqqımızda",
-    "faq": "Suallar",
+    "about": "Haqqında",
+    "faq": "Tez-tez verilən suallar",
     "history": "Tarixçə",
     "saved": "Saxlanılanlar",
     "contact": "Əlaqə",
     "start": "Başla",
     "home": "Ana səhifə",
-    "aiBlog": "AI bloq",
-    "ansyGroup": "Ansy Group",
+    "aiBlog": "AI Bloq",
+    "ansyGroup": "Ansy Qrup",
     "language": "Dil",
     "searchLanguage": "Dilləri axtar…",
-    "noLanguage": "Axtarışınıza uyğun dil yoxdur."
+    "noLanguage": "Axtarışınıza uyğun dil tapılmadı.",
+    "profile": "Profil"
   },
   "footer": {
-    "tagline": "AI ilə yuxu yozumu, pulsuz — İbn Sirin ənənəsi və müasir psixologiya əsasında.",
+    "tagline": "Pulsuz AI yozumu 60 dildə — hər ənənə, sizin baxışınız.",
     "copyright": "© {year} Dreamscope"
   },
   "home": {
-    "heroTitle": "Sizin {accent} sizə nə demək istəyir",
-    "heroAccent": "yarımadacıq",
-    "heroLede": "Qədim simvolika, müasir psixologiya və SI — bir aydın oxunuşda birləşib. Yuxunuzu öz sözlərinizlə izah edin, İbn Sirin və dərin psixologiyaya söykənən yozum alın.",
-    "interpretCta": "Yuxu yoz",
-    "browseCta": "Simvollara bax",
-    "ctaTitle": "Yuxunuzu izah edin",
-    "ctaButton": "Yozuma başla",
-    "feature3Body": "Depth psychology and perspectives across faiths — one reading, seen through your lens.",
-    "feature4Body": "Your dreams stay on your device by default. Sign in to sync across devices.",
-    "sampleReading": "Snakes mark transformation — something in your life is shedding its old skin. The gate suggests a clear exit is opening. In many traditions, a harmless snake leaving the home often means a lingering worry is finally moving on.",
-    "sampleTag3": "Tradition",
-    "ctaLede": "A few sentences is enough. The reading takes seconds and stays on your device by default."
+    "heroTitle": "{accent} niz sizə nə demək istəyir",
+    "heroAccent": "şüuraltı",
+    "heroLede": "Qədim simvolizm, müasir psixologiya və AI — hamısı bir aydın yozumda. Yuxunuzu öz sözlərinizlə təsvir edin və etibar etdiyiniz ənənə vasitəsilə şərh alın.",
+    "interpretCta": "Yuxunu Yoz",
+    "browseCta": "Simvolları Kəşf Et",
+    "statLanguages": "{n} dil",
+    "statSymbols": "{n} yuxu simvolu",
+    "statPrivateLine": "cihazınızda gizli",
+    "whyTitle": "Həqiqətən işinizə yarayan yozum",
+    "whyLede": "Dreamscope yuxunuzu onun simvollarına uyğunlaşdırır, sonra onları etibar etdiyiniz ənənə vasitəsilə oxuyur — psixologiya yanında, əvəzinə deyil.",
+    "feature1Title": "Simvolik Təhlil",
+    "feature1Body": "Hər yuxu onun əsas simvollarına uyğunlaşdırılır və əsrlik yozum ənənəsi ilə izlənilir.",
+    "feature2Title": "60 Dil",
+    "feature2Body": "İngilis, Ərəb, İspan, Çin, Yapon və daha 55 dildə yozun və simvolları oxuyun.",
+    "feature3Title": "Bütün Ənənələr",
+    "feature3Body": "Dərinlik psixologiyası və inanclar arasında baxışlar — bir yozum, sizin linensiz.",
+    "feature4Title": "Saxlanılan və Gizli",
+    "feature4Body": "Yuxularınız varsayılan olaraq cihazınızda qalır. Cihazlar arasında sinxronizasiya üçün daxil olun.",
+    "sampleTag": "Nümunə Yozum",
+    "sampleJustNow": "indi",
+    "sampleDream": "\"Yaşıl bir ilanın evdən bağ qapısından çıxdığını gördüm.\"",
+    "sampleReading": "İlanlar dəyişikliyi bildirir — həyatınızda nəsə köhnə qabığını tökür. Qapı aydın bir çıxış yolunun açıldığını göstərir. Bir çox ənənədə zərərsiz ilanın evdən çıxması tez-tez uzun müddət davam edən narahatlığın nəhayət bitməsi deməkdir.",
+    "sampleTag1": "Dəyişiklik",
+    "sampleTag2": "Buraxılış",
+    "sampleTag3": "Ənənə",
+    "sampleSaved": "Cihazınıza saxlanıldı",
+    "symbolsTitle": "Hər simvolun bir mənası var",
+    "symbolsLede": "Suddan oduna qədər, ən çox yayılmış yuxu mövzularını və ənənələr arasında hər birinin nə siqnal verdiyini kəşf edin.",
+    "ctaTitle": "Yuxunuzu təsvir edin",
+    "ctaLede": "Bir neçə cümlə kifayətdir. Yozum saniyələr çəkir və varsayılan olaraq cihazınızda qalır.",
+    "ctaButton": "Yozuma Başla"
   },
   "interpret": {
-    "title": "Yuxunuzu izah edin",
+    "title": "Yuxunuzu təsvir edin",
+    "lede": "Öz sözlərinizlə yazın. Nə qədər çox təfərrüat, bir o qədər dəqiq yozum — mühit, hisslər və qeyri-adi olan hər şey vacibdir.",
     "language": "Dil",
     "yourDream": "Sizin yuxunuz",
-    "placeholder": "Dünən gecə gördüm ki, daim formasını dəyişən bir qapıdan keçirəm...",
-    "button": "Yuxunu yoz"
-  },
-  "common": {
-    "interpretCta": "Yuxu yoz",
-    "backHome": "Ana səhifəyə qayıt"
+    "placeholder": "Dünən gecə formanı dəyişməkdə davam edən bir qapıdan keçdiyimi yuxuda gördüm...",
+    "loading": "Yozulur...",
+    "button": "Yuxunu Yoz",
+    "yourReading": "Sizin Yozumunuz",
+    "save": "Saxla",
+    "saved": "Saxlanıldı",
+    "savedConfirm": "Jurnalınıza saxlanıldı. İstənilən vaxt Saxlanılanlar bölməsində tapa bilərsiniz.",
+    "unsaved": "Saxlanılanlardan silindi.",
+    "disclaimer": "Yalnız refleksiya üçün — tibbi, psixoloji və ya dini məsləhət deyil. Gələcəyi proqnozlaşdırmır.",
+    "viewHistory": "Tarixçəyə Bax",
+    "errorEmpty": "Zəhmət olmasa, əvvəlcə yuxunuzu təsvir edin.",
+    "errorFailed": "Yozum uğursuz oldu. Zəhmət olmasa, yenidən cəhd edin.",
+    "errorNetwork": "Bağlantı xətası. Zəhmət olmasa, yenidən cəhd edin.",
+    "perspectiveLabel": "Baxış",
+    "perspNotice": "Hər ənənə ayrıca göstərilir. Yozumlar reflektiv və ehtimallidir — proqnoz və ya hökm deyil.",
+    "compareLabel": "Bütün ənənələri müqayisə et",
+    "compareDesc": "Bir yuxu, eyni anda hər lins vasitəsilə — ənənələrin harada razılaşdığını və harada fərqləndiyini görün.",
+    "compareLoading": "Bütün ənənələr vasitəsilə oxunur…",
+    "compareBack": "Tək yozuma qayıt",
+    "compareSymbols": "Simvollar",
+    "symbolsLabel": "Yuxunuzdakı simvollar",
+    "feedbackQ": "Bu yozum faydalı oldu?",
+    "yes": "Bəli, faydalı",
+    "no": "Əslində yox",
+    "thanks": "Təşəkkür edirik — rəyiniz gələcək yozumları təkmilləşdirir.",
+    "perspectiveDesc": "Dünya ənənələrinin ən ağıllı saplarını dərinlik psixologiyası ilə birləşdirən bir yozum.",
+    "moodLabel": "Yuxu necə hiss olundu?",
+    "copy": "Kopyala",
+    "copied": "Kopyalandı!",
+    "share": "Paylaş",
+    "example": "Nümunəni sınayın",
+    "exampleDream": "Dünən gecə ağ bir güvercinin pəncümârəmə konduğunu, sonra oxuya bilmədiyim bir məktuba çevrildiyini yuxuda gördüm. Sakit amma maraqlı hiss etdim.",
+    "shortcutHint": "Yozmaq üçün ⌘/Ctrl + Enter basın",
+    "symbolsSection": "Simvollar"
   },
   "history": {
     "title": "Yuxu tarixçəsi",
-    "empty": "Hələ yozulan yuxu yoxdur."
+    "lede": "Yaratdığınız hər yozum, bu cihazda saxlanılır.",
+    "empty": "Hələ heç bir yuxu yozulmayıb."
   },
   "saved": {
     "title": "Saxlanılan yuxular",
-    "empty": "Hələ saxlanan yoxdur."
+    "lede": "Vacib olan yozumları saxlayın. Onlar bu cihazda qalır.",
+    "empty": "Hələ heç nə saxlanmayıb."
+  },
+  "common": {
+    "interpretCta": "Yuxunu Yoz",
+    "delete": "Sil",
+    "remove": "Sil",
+    "confirmRemove": "Silinsin?",
+    "backHome": "Ana Səhifəyə Qayıt"
   },
   "symbols": {
-    "title": "{n} yuxu simvolu",
-    "search": "Simvol axtar…"
-  },
-  "notfound": {
-    "title": "Bu yuxu əriyib getdi",
-    "cta": "Ana səhifəyə qayıt"
+    "title": "{n} Yuxu Simvolu",
+    "lede": "Yozduğumuz hər simvolu kəşf edin — onlarla dil pulsuz. Oxumaq üçün öz dilinizi seçin.",
+    "search": "Simvol axtar…",
+    "noResults": "Axtarışınıza uyğun simvol tapılmadı."
   },
   "about": {
-    "p1": "Dreamscope exists to make dream interpretation accessible in your own language and cultural context. We draw on a wide range of interpretive traditions — religious and spiritual scholarship, cultural folklore, and the symbolic frameworks of modern depth psychology — so you can read your dream through the lens you trust.",
-    "card1Title": "Many traditions",
-    "card1Body": "Islamic, Christian, Jewish, Hindu, Buddhist, Chinese, and psychological lenses — pick the one you trust."
+    "title": "Ənənəyə əsaslanan aydın yozum",
+    "p1": "Dreamscope yuxu yozumunu öz dilinizdə və mədəni kontekstinizdə əlçatan etmək üçün mövcuddur. Biz geniş çeşidli yozum ənənələrindən — dini və ruhani elmlər, mədəni folklor və müasir dərinlik psixologiyasının simvolik çərçivələri — istifadə edirik ki, yuxunuzu etibar etdiyiniz lin vasitəsilə oxuya biləsiniz.",
+    "p2": "Hər yozum gələcəyi proqnozlaşdırmaq üçün deyil, refleksiya üçün yozunulur. Su, od, uçmaq və ya ilan kimi simvollar min illərdir ki, mədəniyyətlər arasında məna daşımışdır və bizim yozumlarımız bu sapları izləyir ki, öz həyatınızla rezonanslığı tapa biləsiniz.",
+    "p3": "Xidmət pulsuz, dizayn etibarilə gizli və 60 dildə mövcuddur. Yuxu mətni yozum yaratmaq üçün bizim şərh xidmətimizə göndərilir, sonra bizim tərəfimizdán saxlanılmır; yozumlarınız cihazınızda qalır, əgər daxil olub sinxronlaşdırmasanız.",
+    "card1Title": "Bir çox ənənə",
+    "card1Body": "İslam, Xristian, Yəhudi, Hindu, Buddist, Çin və psixoloji linlər — etibar etdiyinizi seçin.",
+    "card2Title": "60 dil",
+    "card2Body": "Ərəb dilindən Yapon dilinə qədər — yuxu gördüyünüz dildə yozun.",
+    "card3Title": "100% gizli",
+    "card3Body": "Yozumlarınız varsayılan olaraq cihazınızda qalır. Yalnız sinxronizasiya üçün daxil olun; istənilən vaxt silin.",
+    "cta": "Yozuma Başla",
+    "traditionsTitle": "Hər ənənə, bir yuxu",
+    "traditionsLede": "Ürəyinizin etibar etdiyi lini seçin — hər yozum xüsusi yozum məktəbi vasitəsilə yaradılır."
+  },
+  "contact": {
+    "title": "Əlaqə saxlayın",
+    "lede": "Suallar, düzəlişlər və ya tərəfdaşlıq tıklifləri? Dreamscope komandasına e-poçtla müraciət edin.",
+    "email": "E-poçt",
+    "disclaimer": "Dreamscope yalnız refleksiya və əyləncə təqdim edir. Yozumlar tibbi, psixoloji və ya dini məsləhət deyil. Dəstəyə ehtiyacınız varsa, zəhmət olmasa ixtisaslı mütəxəssislə məsləhətləşin.",
+    "back": "Yozucuya Qayıt"
   },
   "faq": {
-    "a1": "Dreamscope blends dream scholarship from many cultures and faiths — including Islamic, Christian, Jewish, Hindu, Buddhist, and Chinese traditions — with modern depth psychology. You describe a dream in your own words and receive a reading that maps its symbols to their common meanings across cultures."
+    "title": "Tez-tez verilən suallar",
+    "q1": "Dreamscope yuxuları necə yozur?",
+    "a1": "Dreamscope bir çox mədəniyyət və inancdan — o cümlədən İslam, Xristian, Yəhudi, Hindu, Buddist və Çin ənənələri — yuxu elmini müasir dərinlik psixologiyası ilə birləşdirir. Siz öz sözlərinizlə yuxu təsvir edirsiniz və onun simvollarını mədəniyyətlər arasında ümumi mənalarına uyğunlaşdıran yozum alırsınız.",
+    "q2": "Yuxu məlumatlarım gizlidir?",
+    "a2": "Bəli. Yuxularınız yalnız brauzerinizin yerli yaddaşında cihazınızda saxlanılır. Saxlama üçün heç bir serverə göndərilmir və istənilən vaxt tarixçənizi sila bilərsiniz.",
+    "q3": "Hansı dillərdə yuxuları yozmaq olar?",
+    "a3": "Dreamscope İngilis, Ərəb, İspan, Fransız, Alman, Çin, Yapon, Koreya, Türk, Portuqal, Rus, Hindi və daha çox daxil olmaqla 60 dili dəstəkləyir. Yozum seçdiyiniz dilə uyğun olur.",
+    "q4": "Yozumlar peşəkar məsləhətin əvəzidirmi?",
+    "a4": "Xeyr. Yuxu yozumları refleksiya ve əyləncə üçündür. Onlar tibbi, psixoloji və ya dini rəhbərlik deyil. Çətinlik çəkirsinizsə, zəhmət olmasa ixtisaslı mütəxəssislə danışın.",
+    "q5": "Neçə yuxu simvolu əhatə olunur?",
+    "a5": "Dreamscope-da ilan, su, uçmaq, od, hamiləlik, pul və daha çox daxil olmaqla 146 ümumi simvol üçün xüsusi səhifələr var — hər biri uzun quyruqlu sual variantları ilə bir neçə dildə mövcuddur."
+  },
+  "notfound": {
+    "title": "Bu yuxu yox oldu",
+    "lede": "Axtardığınız səhifə burada deyil. Gəlin sizi yozuma qaytaraq.",
+    "cta": "Ana Səhifəyə Qayıt"
+  },
+  "perspectives": {
+    "general": {
+      "name": "Universal"
+    },
+    "islamic": {
+      "name": "İbn Sirin (İslam)"
+    },
+    "christian": {
+      "name": "Xristian"
+    },
+    "jewish": {
+      "name": "Yəhudi"
+    },
+    "hindu": {
+      "name": "Hindu"
+    },
+    "buddhist": {
+      "name": "Buddist"
+    },
+    "psychology": {
+      "name": "Psixologiya (Yunq)"
+    },
+    "chinese": {
+      "name": "Zhou Qonq (Çin)"
+    }
+  },
+  "daily": {
+    "tag": "Günün yuxusu"
+  },
+  "profile": {
+    "title": "Sizin məkanınız",
+    "cloudOff": "Yuxu mətni yozum yaratmaq üçün bizim şərh xidmətimizə göndərilir, sonra bizim tərəfimizdán saxlanılmır. Yozumlar cihazınızda saxlanılır, əgər daxil olub sinxronlaşdırmağı seçməsəniz. Məlumatlarınızı heç vaxt satmırıq və ya profilləmirik.",
+    "dataNote": "Məlumatlarınız harada yaşayır: varsayılan olaraq cihazınızda. Daxil olduqda, jurnalınız özəl hesabınıza sinxronlaşa bilər; istənilən vaxt silə bilərsiniz.",
+    "signInLede": "Yuxu jurnalınızı bütün cihazlarınızda saxlamaq üçün daxil olun. Qonaq tarixçəniz avtomatik olaraq sizinlə birlikdə köçür.",
+    "emailLabel": "E-poçt",
+    "magicLink": "Mənə daxilolma linki göndərin",
+    "google": "Google ilə davam et",
+    "checkEmail": "Qutusünüzü yoxlayın — daxilolma linki sizi gözləyir.",
+    "invalidEmail": "Zəhmət olmasa, etibarlı e-poçt ünvanı daxil edin.",
+    "signInError": "Sizi daxil edə bilmədik. Zəhmət olmasa, yenidən cəhd edin və ya e-poçt linkindən istifadə edin.",
+    "googleNotEnabled": "Bu layihədə Google ilə daxilolma həlâ aktiv deyil. Sayt sahibi Supabase-da Google OAuth müştərisini bağlamalıdır.",
+    "guestNote": "Şifrə yoxdur, izləmə yoxdur — sadəcə bir link. Cihazda saxlamma ilə qonaq rejimi tam mövcud olaraq qalır.",
+    "member": "Üzv",
+    "migrated": "Bu cihazdan jurnalınıza {n} yuxu köçürüldü.",
+    "signOut": "Çıxış",
+    "navLabel": "Profil",
+    "lede": "Dreamscope-un sizin səyahətiniz haqqında bildiyi hər şey — cihazınızda saxlanılır, yalnız sizə aid.",
+    "yourState": "İndiki vəziyyətiniz",
+    "statDreams": "Yozulmuş yuxular",
+    "statSaved": "Saxlanılan yoxumlar",
+    "statStreak": "Gün ardıcıllığı",
+    "statTopSymbol": "Əsas simvol",
+    "emptyState": "Hələ yuxu yoxdur — ilk yoxumunuz bu səhifəni işıqlandıracaq.",
+    "symbolsYouMeet": "Davamlı qarşılaşdığınız simvollar",
+    "noneYet": "—",
+    "lastReading": "Son yoxum",
+    "languagesUsed": "İstifadə olunan dillər",
+    "perspectivesUsed": "İstifadə olunan ənənələr",
+    "cloudTitle": "Cihazlarınız arasında",
+    "connectTitle": "Supabase layihənizi bağlayın",
+    "connectUrlLabel": "Layihə URL-i",
+    "connectKeyLabel": "Anon public key",
+    "connectCta": "Bağla",
+    "connected": "Bağlandı — indi daxil ola və jurnalınızı sinxronlaşdıra bilərsiniz.",
+    "connectError": "Bağlantı qurula bilmədi. URL və anon key-i yoxlayın.",
+    "disconnect": "Ayır",
+    "privacyNote": "Yuxularınız cihazınızda saxlanılır — heç vaxt satılmır, heç vaxt profillənmir.",
+    "moodPattern": "Əhval-ruhiyyə nümunəsi",
+    "autoSetupTitle": "Bir əmrlə quraşdırma",
+    "autoSetupBody": "Həlâ layihə yoxdur? Bootstrap skriptini bir dəfə işə salın: Supabase layihəsi yaradır, verilənlər bazası sxemini tətbiq edir və yuxarıda yapışdırmaq üçün URL + anon key-i çap edir. Google ilə daxilolma üçün Google Cloud OAuth müştərisi lazımdır (skriptə baxın).",
+    "autoSetupCmd": "SUPABASE_ACCESS_TOKEN=xxx node scripts/setup-supabase.mjs"
+  },
+  "perspDesc": {
+    "general": "Dünya ənənələrinin ən ağıllı saplarını dərinlik psixologiyası ilə birləşdirən bir yoxum.",
+    "islamic": "İbn Sirinin klassik məktəbi — simvolik, qanunauyğun və ruh mərkəzli.",
+    "christian": "Yusif və Daniel xəttində yuxu oxuması, müqəddəs simvolizmlə.",
+    "jewish": "Tövrat və Talmudik yuxu hikməti — ağıllı yoxum gözləyən bir mesaj.",
+    "hindu": "Vedic simvolizm, karma və zehnin daxili mənzərələri.",
+    "buddhist": "Dəyişkənlik və şüurlu diqqət — yuxunu yapışmadan müşahidə edin.",
+    "psychology": "Yunqun arxetipləri və kölgəsi — zehniniz nə emal edir.",
+    "chinese": "Zhou Qonqun klassik lüğəti — yin, yanq və beş elementin tarazlığı."
+  },
+  "moods": {
+    "peace": "Sakit",
+    "anxiety": "Narahat",
+    "hope": "Ümidli",
+    "sadness": "Qəmli",
+    "anger": "Acrıqlı",
+    "confusion": "Çaşqın"
+  },
+  "seo": {
+    "dreamInterpretation": "Yuxu Yoxumu",
+    "traditionsTitle": "Ənənələr arasında",
+    "traditionsBody": "Bir simvol müxtəlif mədəniyyətlərdə fərqli şeylər demək ola bilər. İslam, Xristian, Yəhudi, Hindu, Buddist, Çin və psixoloji ənənələrdə eyni təsvir öz lin vasitəsilə oxunur. Yoxum səhifəsində etibar etdiyiniz lini seçin.",
+    "tryTitle": "Yuxularınızı AI ilə Yoxun",
+    "tryLede": "Yuxunuzu paylaşın və fərdiləşdirilmiş AI yoxumu alın.",
+    "otherLangs": "Digər Dillər",
+    "otherSymbols": "Digər Yuxu Simvolları",
+    "reflectNote": "Bu səhifə yalnız refleksiya və əyləncə üçündür. Tibbi, psixoloji və ya dini məsləhət deyil və gələcəyi proqnozlaşdırmır."
   }
 }

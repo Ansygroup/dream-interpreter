@@ -165,5 +165,19 @@ ok('ja uses YYYY/MM/DD', /2026\/08\/31/.test(formatDate(d, 'ja')));
 ok('invalid input is safe', formatDate('not-a-date', 'en') === 'not-a-date');
 
 // ---------------------------------------------------------------------------
+// 8. Core routes + Contact page wired (no missing i18n keys)
+// ---------------------------------------------------------------------------
+section('Routes + Contact page');
+const appSrc = read('src/App.tsx');
+for (const r of ['/', '/interpret', '/symbols', '/about', '/faq', '/history', '/saved', '/profile', '/contact']) {
+  ok(`route ${r} registered`, appSrc.includes(`path="${r}"`) || appSrc.includes(`path="/${r.replace('/', '')}"`));
+}
+ok('en.contact.title present', get(en, 'contact.title') !== undefined);
+ok('en.contact.lede present', get(en, 'contact.lede') !== undefined);
+ok('en.contact.email present', get(en, 'contact.email') !== undefined);
+ok('ar.contact.title present', get(ar, 'contact.title') !== undefined);
+ok('ar.contact.back present', get(ar, 'contact.back') !== undefined);
+
+// ---------------------------------------------------------------------------
 console.log(`\nSUITE RESULT: ${passed} passed, ${failed} failed`);
 process.exit(failed === 0 ? 0 : 1);

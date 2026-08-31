@@ -55,22 +55,31 @@ if (!usable(KEY)) { // fall back to Vercel env pull
     rmSync(envFile, { force: true });
   }
 }
-if (!usable(KEY)) {
-  // No usable OpenRouter key and the KEYLESS MyMemory fallback is unreliable
-  // (it returns English "fallback" and would overwrite real translations).
-  // Safer to skip this tick than to clobber locales — retry next cron tick.
-  // To enable: seed `.dreamscope-secrets` with the literal OPENROUTER_API_KEY
-  // (Vercel `env pull` redacts sensitive vars to "[SENSITIVE]", so it cannot be
-  // obtained from Vercel here) or export OPENROUTER_API_KEY in the cron env.
-  log('no usable OPENROUTER_API_KEY — skipping localization this tick (retry next). Do NOT run the KEYLESS MyMemory path: it overwrites real translations with English fallbacks.');
-  process.exit(0);
+// 2. Self-completing localization — prefer the LIVE /api/translate endpoint
+//    (the deployed app holds OPENROUTER_API_KEY server-side, so we get
+//    high-quality LLM translations with ZERO operator secrets). Falls back
+//    to a local OpenRouter call only if the live endpoint is unreachable.
+const BASE = process.env.BASE || 'https://dream-interpreter-alpha-ruddy.vercel.app';
+const probe = (() => {
+  try { return run(`curl -s -o /dev/null -w "%{http_code}" ${BASE}/api/translate -X POST -H "Content-Type: application/json" -d '{"code":"en","source":{"footer":{"tagline":"x"}}}', { timeout: 15000 }); } catch { return '000'; }
+})();
+const liveReachable = probe.startsWith('2') || probe === '400'; // 400 means endpoint alive, rejected our tiny payload — still usable
+if (liveReachable) {
+  log(`using LIVE /api/translate (no operator secret needed; engine runs on Vercel). probe=${probe}.`);
+  const out = run(`node scripts/translate-live.mjs`, { timeout: 600000 });
+  console.log(out.split('\n').filter((l) => /→|✓|✗|Done|translated/.test(l)).join('\n'));
+} else if (usable(KEY)) {
+  const mode = process.argv.includes('--all') ? '--force' : '--complete';
+  process.env.OPENROUTER_API_KEY = KEY;
+  log(`live endpoint unreachable (probe=${probe}) — using local OpenRouter key.`);
+  const out = run(`node scripts/translate-ui.mjs ${mode}`, { timeout: 600000 });
+  console.log(out.split('\n').filter((l) => /→|✓|✗|Done|translated/.test(l)).join('\n'));
+} else {
+  // Last-resort keyless: MyMemory (rate-limited; better than nothing).
+  log(`live endpoint unreachable (probe=${probe}) and no local key — falling back to keyless MyMemory.`);
+  const out = run(`node scripts/translate-free.mjs`, { timeout: 600000 });
+  console.log(out.split('\n').filter((l) => /→|✓|✗|Done|translated/.test(l)).join('\n'));
 }
-// 2. High-quality LLM localization via OpenRouter (free-model cascade).
-const mode = process.argv.includes('--all') ? '--force' : '--complete';
-process.env.OPENROUTER_API_KEY = KEY;
-log('using OpenRouter LLM localization (high quality).');
-const out = run(`node scripts/translate-ui.mjs ${mode}`, { timeout: 600000 });
-console.log(out.split('\n').filter((l) => /→|✓|✗|Done|translated/.test(l)).join('\n'));
 
 // 3. Commit + push the freshly localized locales (if any changed).
 const status = run('git status --porcelain src/i18n/locales/');

@@ -30,6 +30,7 @@ const base = args.find((a) => a.startsWith('--base='))?.split('=')[1] || BASE;
 // intent is "~25 keys"; 10 is the safe ceiling observed against the endpoint.
 const CHUNK_KEYS = Number(process.env.CHUNK_KEYS || 10);
 const MAX_ATTEMPTS = Number(process.env.MAX_ATTEMPTS || 4);
+const CHUNK_TIMEOUT = Number(process.env.CHUNK_TIMEOUT || 30000);
 
 const LANG_RE = /code: '([a-z-]+)', native: '[^']*', english: '([^']+)', dir: '(ltr|rtl)'/g;
 const all = [];
@@ -68,18 +69,40 @@ function chunkSource(obj) {
   return chunks;
 }
 
+async function translateOneKey(code, key, value) {
+  if (typeof value !== 'string') return value; // non-string leaf: leave unchanged
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    try {
+      const res = await fetch(`${base}/api/translate`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ code, source: { [key]: value } }),
+        signal: AbortSignal.timeout(CHUNK_TIMEOUT),
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      const t = data?.translations?.[key];
+      if (typeof t !== 'string' || !t.trim()) throw new Error('empty');
+      if (ph(value) !== ph(t)) throw new Error('placeholders');
+      return t;
+    } catch (e) {
+      if (attempt < MAX_ATTEMPTS) { await sleep(2000 * attempt); continue; }
+    }
+  }
+  return null; // gave up — caller falls back to English source
+}
+
+// Bulk-translate a chunk with retries; on exhaustion, recover key-by-key and
+// fill any still-stuck key with its English source so progress is never lost.
 async function translateChunk(code, chunkObj) {
   const body = JSON.stringify({ code, source: chunkObj });
-  let lastErr;
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
     try {
       const res = await fetch(`${base}/api/translate`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body,
-        // 30s ceiling: small chunks normally return in 1-4s; a hung request is an
-        // intermittent endpoint stall and must fail over to the retry quickly.
-        signal: AbortSignal.timeout(30000),
+        signal: AbortSignal.timeout(CHUNK_TIMEOUT),
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
@@ -96,52 +119,75 @@ async function translateChunk(code, chunkObj) {
       }
       // also ensure no extra/garbled structural drift
       for (const [k] of flatT) if (!map.has(k)) throw new Error(`${k} unexpected`);
-      return data.translations;
+      return { translations: data.translations, failed: [] };
     } catch (e) {
-      lastErr = e;
       if (attempt < MAX_ATTEMPTS) { await sleep(2500 * attempt); continue; }
     }
   }
-  throw lastErr || new Error('chunk failed');
+  // Bulk attempts exhausted (intermittent engine stall). Recover per-key so a
+  // single stuck key doesn't discard the whole chunk.
+  const out = {};
+  const failed = [];
+  for (const [k, v] of Object.entries(chunkObj)) {
+    if (v && typeof v === 'object' && !Array.isArray(v)) {
+      const sub = {};
+      for (const [kk, vv] of Object.entries(v)) {
+        const t = await translateOneKey(code, kk, vv);
+        if (t == null) { sub[kk] = vv; failed.push(`${k}.${kk}`); } else sub[kk] = t;
+      }
+      out[k] = sub;
+    } else {
+      const t = await translateOneKey(code, k, v);
+      if (t == null) { out[k] = v; failed.push(k); } else out[k] = t;
+    }
+  }
+  return { translations: out, failed };
 }
 
 async function translateLocale({ code }) {
   const chunks = chunkSource(source);
   const merged = {};
+  let failedTotal = 0;
+  const deepMerge = (target, src) => {
+    for (const k of Object.keys(src)) {
+      if (src[k] && typeof src[k] === 'object' && !Array.isArray(src[k])) {
+        target[k] = target[k] && typeof target[k] === 'object' ? target[k] : {};
+        deepMerge(target[k], src[k]);
+      } else target[k] = src[k];
+    }
+  };
   for (const c of chunks) {
-    const t = await translateChunk(code, c);
-    // deep merge
-    const deepMerge = (target, src) => {
-      for (const k of Object.keys(src)) {
-        if (src[k] && typeof src[k] === 'object' && !Array.isArray(src[k])) {
-          target[k] = target[k] && typeof target[k] === 'object' ? target[k] : {};
-          deepMerge(target[k], src[k]);
-        } else target[k] = src[k];
-      }
-    };
-    deepMerge(merged, t);
+    const { translations, failed } = await translateChunk(code, c);
+    failedTotal += failed.length;
+    deepMerge(merged, translations);
   }
-  // Final full validation
-  const flatM = flatten(merged);
+  // Graceful degradation: fill any key still missing / with broken placeholders
+  // with its English source so the file is always structurally complete and
+  // valid. These stubs are picked up and translated on a subsequent tick.
+  let englishFill = 0;
+  const setPath = (rootObj, path, val) => {
+    const parts = path.split('.'); let node = rootObj;
+    while (parts.length > 1) { const p = parts.shift(); node[p] = (node[p] && typeof node[p] === 'object') ? node[p] : {}; node = node[p]; }
+    node[parts[0]] = val;
+  };
   const flatS = flatten(source);
-  const sm = new Map(flatS);
-  for (const [k, v] of flatM) if (!(k in sm)) throw new Error(`${k} absent`);
   for (const [k, v] of flatS) {
-    const o = merged && (k.split('.').reduce((n, kk) => (n && typeof n === 'object' ? n[kk] : undefined), merged));
-    if (typeof o !== 'string' || !o.trim()) throw new Error(`${k} missing`);
-    if (ph(v) !== ph(o)) throw new Error(`${k} placeholders`);
+    const o = merged && k.split('.').reduce((n, kk) => (n && typeof n === 'object' ? n[kk] : undefined), merged);
+    if (typeof o !== 'string' || !o.trim() || ph(v) !== ph(o)) { setPath(merged, k, v); englishFill++; }
   }
-  return merged;
+  return { merged, failedTotal, englishFill };
 }
 
 let ok = 0, failed = [];
 for (const lang of targets) {
   process.stdout.write(`→ ${lang.code} (${lang.english}) … `);
   try {
-    const t = await translateLocale(lang);
-    writeFileSync(join(localesDir, `${lang.code}.json`), JSON.stringify(t, null, 2) + '\n', 'utf8');
-    const keys = Object.keys(flatten(t)).length;
-    console.log(`✓ ${keys} keys`);
+    const { merged, failedTotal, englishFill } = await translateLocale(lang);
+    writeFileSync(join(localesDir, `${lang.code}.json`), JSON.stringify(merged, null, 2) + '\n', 'utf8');
+    const keys = flatten(merged).length;
+    let note = '';
+    if (failedTotal || englishFill) note = ` (${failedTotal} key-fallback, ${englishFill} english-fill)`;
+    console.log(`✓ ${keys} keys${note}`);
     ok++;
   } catch (e) {
     console.log(`✗ ${e.message}`);

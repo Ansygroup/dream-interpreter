@@ -42,8 +42,8 @@ try {
   // Only push if there is actually something ahead of the remote — avoids
   // invoking the credential manager when idle (which fails headless).
   let ahead = '';
-  try { ahead = execSync(`git log --oneline origin/${b}..HEAD`, { cwd: root, encoding: 'utf8' }).trim(); }
-  catch { ahead = 'unknown'; }
+  try { ahead = execSync(`git log --oneline origin/${b}..HEAD`, { cwd: root, encoding: 'utf8', timeout: 20000 }).trim(); }
+  catch { try { execSync(`git fetch -q origin ${b}`, { cwd: root, encoding: 'utf8', timeout: 20000, env: { ...process.env, GIT_TERMINAL_PROMPT: '0', GCM_INTERACTIVE: 'never', GCM_TERMINAL_PROMPT: '0' } }); ahead = execSync(`git log --oneline origin/${b}..HEAD`, { cwd: root, encoding: 'utf8', timeout: 20000 }).trim(); } catch { ahead = ''; } }
   if (!ahead) {
     log('✅ nothing to push (local in sync with origin)');
   } else {

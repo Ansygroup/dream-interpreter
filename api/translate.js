@@ -130,10 +130,20 @@ ${JSON.stringify(chunkObj)}`;
   }
 
   const merged = {};
+  const deepMerge = (target, src) => {
+    for (const k of Object.keys(src)) {
+      if (src[k] && typeof src[k] === 'object' && !Array.isArray(src[k])) {
+        target[k] = target[k] && typeof target[k] === 'object' ? target[k] : {};
+        deepMerge(target[k], src[k]);
+      } else {
+        target[k] = src[k];
+      }
+    }
+  };
   for (const chunk of chunks) {
     const t = await translateChunk(chunk);
     if (!t) return res.status(502).json({ error: 'A translation chunk failed' });
-    Object.assign(merged, t);
+    deepMerge(merged, t);
   }
   // Full-object deep-validate
   const flatMerged = flatten(merged);

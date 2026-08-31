@@ -128,7 +128,7 @@ export const SYMBOL_NAMES: Record<string, SymbolName> = {
   shoulder: { en: 'shoulder', ar: 'كتف', aliases: ['كتف'] },
   skin: { en: 'skin', ar: 'جلد', aliases: ['بشرة'] },
   smoke: { en: 'smoke', ar: 'دخان', aliases: ['تدخين'] },
-  snake: { en: 'snake', ar: 'ثعبان', aliases: ['أفعى', 'حية', 'ثعبان'] },
+  snake: { en: 'snake', ar: 'ثعبان', aliases: ['أفعى', 'حية', 'serpiente', 'serpent', 'schlange', 'cobra', 'viper'] },
   snake_bite: { en: 'snake bite', ar: 'لدغ ثعبان', aliases: ['لدغ'] },
   snake_many: { en: 'many snakes', ar: 'ثعابين كثيرة', aliases: ['افاعي'] },
   snow: { en: 'snow', ar: 'ثلج', aliases: ['ثلج'] },

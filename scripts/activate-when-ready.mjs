@@ -58,9 +58,13 @@ try {
   log('enabling Google provider…');
   run(`node scripts/enable-google.mjs --project ${env.SUPABASE_PROJECT_REF}`);
 
-  // 2. Regenerate all non-en/ar locales from neutral en.json (--force)
-  log('regenerating locales (neutral)…');
-  run(`OPENROUTER_API_KEY=${env.OPENROUTER_API_KEY} node scripts/translate-ui.mjs --force`);
+  // 2. Regenerate the 58 non-en/ar locales from neutral en.json (--force, but PRESERVE
+  //    the hand-curated en (source) + ar (bilingual, manually neutralized)).
+  const { readFileSync } = await import('node:fs');
+  const langsTs = readFileSync(join(root, 'src/i18n/languages.ts'), 'utf8');
+  const codes = [...langsTs.matchAll(/code: '([a-z-]+)'/g)].map((m) => m[1]).filter((c) => c !== 'en' && c !== 'ar');
+  log(`regenerating ${codes.length} locales (neutral, preserving en+ar)…`);
+  run(`OPENROUTER_API_KEY=${env.OPENROUTER_API_KEY} node scripts/translate-ui.mjs --only=${codes.join(',')}`);
 
   // 3. Commit + push regenerated locales
   log('committing regenerated locales…');

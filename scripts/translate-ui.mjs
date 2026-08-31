@@ -63,6 +63,7 @@ const isPartial = (code) => {
 
 const targets = all.filter((l) => {
   if (l.code === 'en') return false;
+  if (l.code === 'ar') return false; // hand-curated, bilingual, manually neutralized — never auto-overwrite
   if (only && !only.includes(l.code)) return false;
   if (complete) return existsSync(join(localesDir, `${l.code}.json`)) && isPartial(l.code);
   return force || !existsSync(join(localesDir, `${l.code}.json`));

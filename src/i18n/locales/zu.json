@@ -1,71 +1,259 @@
 {
   "nav": {
-    "interpret": "Humusha",
+    "interpret": "Cacisa",
     "symbols": "Izimpawu",
-    "about": "Mayelana nathi",
-    "faq": "Imibuzo ejwayelekile",
+    "about": "Mayelana",
+    "faq": "Imibuzo Evame Ukubuzwa",
     "history": "Umlando",
-    "saved": "Okugciniwe",
-    "contact": "Xhumana",
+    "saved": "Ezilondoloziwe",
+    "contact": "Thinta",
     "start": "Qala",
     "home": "Ikhaya",
-    "aiBlog": "Ibhulogi le-AI",
+    "aiBlog": "Ibhulogi ye-AI",
     "ansyGroup": "Ansy Group",
-    "language": "Ulwazi",
+    "language": "Ulimi",
     "searchLanguage": "Sesha izilimi…",
-    "noLanguage": "Ayikho ilimi ehambisana nosesho lwakho."
+    "noLanguage": "Alikho limi elihambisana nesicelo sakho.",
+    "profile": "Iphrofayela"
   },
   "footer": {
-    "tagline": "Free AI dream interpretation in 60 languages — every tradition, your lens.",
+    "tagline": "Ukuhumusha amaphupho ngobuhlakani bokwenziwa (AI) mahhala ezilimini ezingama-60 — yonke inkolo, ilensi yakho.",
     "copyright": "© {year} Dreamscope"
   },
   "home": {
-    "heroTitle": "Ini engcane yakho {accent} izama ukukutshela",
-    "heroAccent": "ingqondo yansuku zonke",
-    "heroLede": "Ancient symbolism, modern psychology, and AI — combined into one clear reading. Describe a dream in your own words and get an interpretation through the tradition you trust.",
-    "interpretCta": "Humusha iphupho",
-    "browseCta": "Bheka izimpawu",
+    "heroTitle": "Okuzama ukukusho {accent} yakho",
+    "heroAccent": "engqondweni",
+    "heroLede": "Izimpawu zasendulo, ucwaningo lwangempela lwesayikholoji, nobuhlakani bokwenziwa — kuhlanganiswe ndawonye ukuze kufundwe ngokucacile. Chaza iphupho ngamazwi akho uthole incazelo ngokwenkolo oyithembayo.",
+    "interpretCta": "Cazulula Ipupho",
+    "browseCta": "Bheka Izimpawu",
+    "statLanguages": "{n} izilimi",
+    "statSymbols": "{n} izimpawu zephupho",
+    "statPrivateLine": "yimfihlo kudivayisi yakho",
+    "whyTitle": "Ukufunda ongakusebenzisa ngempela",
+    "whyLede": "I-Dreamscope ihlelela ipupho lakho izimpawu zalo, bese iyifunda ngendlela okhetha ukuyethemba — kanye nesayikholoji, hhayi esikhundleni sayo.",
+    "feature1Title": "Ukuhlaziya Izimpawu",
+    "feature1Body": "Yonke ipupho lihlelelwa izimpawu zalo eziyinhloko futlelulandelwe ngendlela yokutolika yamakhulu eminyaka.",
+    "feature2Title": "Izilimi eziyi-60",
+    "feature2Body": "Hlaziya futhi ufunde izimpawu ngesiNgisi, ngesi-Arabhu, ngesi-Spanish, ngesiShayina, ngesiJapane, kanye nezinye izilimi ezingu-55.",
+    "feature3Title": "Zonke Izinkolo",
+    "feature3Body": "Ucwaningo lwezengqondo nezindlela zokubuka eziphuma ezinkolelweni ezahlukene — ukufunda okukodwa, okubonwa ngeso lakho.",
+    "feature4Title": "Kugcinwe & Kuyimfihlo",
+    "feature4Body": "Amaphupho akho ahlala kudivayisi yakho ngokuzenzakalela. Ngena ngemvume ukuze uvumelanise amaphupho akho kuwo wonke amadivayisi.",
+    "sampleTag": "Isibonelo Sokufunda",
+    "sampleJustNow": "manje",
+    "sampleDream": "\"Ngibone inyoka eluhlaza ishiya indlu ngesango lengadi.\"",
+    "sampleReading": "Izimfundo zikhombisa izinguquko — into ethile empilweni yakho iyakhulula isikhumba sakudala. Isango siphakamisa ukuthi indlela ecacile iyavuleka. Ezinkolweni eziningi, inyoka engeyona eyingozi eshiya ekhaya ivamise ukusho ukuthi ukukhathazeka okuhlale kukhona ekugcineni kuyasuswa.",
+    "sampleTag1": "Inguquko",
+    "sampleTag2": "Ukukhishwa",
+    "sampleTag3": "Isiko",
+    "sampleSaved": "Ilondolozwe kudivayisi yakho",
+    "symbolsTitle": "Uphezu ngalunye luthwala umqondo",
+    "symbolsLede": "Ukusuka emanzini kuya emlilweni, hlola izimpawu zamaphupho ezivamile kanye nokuthi ngayinye ivamise ukukhombisaani ezinkambeni ezahlukene.",
     "ctaTitle": "Chaza iphupho lakho",
-    "ctaButton": "Qala ukuhumusha",
-    "feature3Body": "Depth psychology and perspectives across faiths — one reading, seen through your lens.",
-    "feature4Body": "Your dreams stay on your device by default. Sign in to sync across devices.",
-    "sampleReading": "Snakes mark transformation — something in your life is shedding its old skin. The gate suggests a clear exit is opening. In many traditions, a harmless snake leaving the home often means a lingering worry is finally moving on.",
-    "sampleTag3": "Tradition",
-    "ctaLede": "A few sentences is enough. The reading takes seconds and stays on your device by default."
+    "ctaLede": "Imisho embalwa yanele. Ukufunda kuthatha imizuzwana futhi kuhlala kudivayisi yakho ngokuzenzakalelayo.",
+    "ctaButton": "Qala Ukuhumusha"
   },
   "interpret": {
     "title": "Chaza iphupho lakho",
-    "language": "Ulwazi",
-    "yourDream": "Iphupho lakho",
-    "placeholder": "Izolo ebusuku ngaphupha ukuthi ngiedlula emnyango owashintsha isimo sonke isikhathi...",
-    "button": "Humusha iphupho"
-  },
-  "common": {
-    "interpretCta": "Humusha iphupho",
-    "backHome": "Buyela ekhaya"
+    "lede": "Bhala ngezwi lakho. Lapho kunemininingwane eminingi, ukufunda kuba ngokucacile — isimo, imizwa, nanoma yini engavamile konke kubalulekile.",
+    "language": "Ulimi",
+    "yourDream": "Ipupho lakho",
+    "placeholder": "Ezgameni eledlule ngaphupha ngihamba ngomnyango owayehluka unomumo njalo...",
+    "loading": "Iyachazwa...",
+    "button": "Chaza Ipupho",
+    "yourReading": "Ukufundwa Kwepupho Yakho",
+    "save": "Gcina",
+    "saved": "Kugciniwe",
+    "savedConfirm": "Kugciniwe kujenali yakho. Uyithola noma inini ngaphansi kwe-Saved.",
+    "unsaved": "Kususiwe kuma-Saved.",
+    "disclaimer": "Ukubonisisa kuphela — akusikho iseluleko sezokwelapha, sezengqondo, noma senkolo. Asibikezeli ikusasa.",
+    "viewHistory": "Buka Umlando",
+    "errorEmpty": "Sicela uchaze iphupho lakho kuqala.",
+    "errorFailed": "Ukuhumusha kwehlulekile. Sicela uzame futhi.",
+    "errorNetwork": "Iphutha lokuxhumana. Sicela uzame futhi.",
+    "perspectiveLabel": "Ukufunda ngalensu",
+    "perspNotice": "Isiko ngalinye liboniswa ngokwehlukana. Ukufunda kuyokubonisisa futhi kungenzeka — akusikho okubikezelayo noma izinqumo.",
+    "compareLabel": "Qhathanisa zonke izinkolo",
+    "compareDesc": "Iphupho elilodwa, elifundwa ngalensu zonke ngesikhathi esisodwa — bona lapho izinkolo zivumelana khona futhi lapho zehluka khona.",
+    "compareLoading": "Ukufunda ngalensu zonke…",
+    "compareBack": "Buyela ekufundeni okukodwa",
+    "compareSymbols": "Izimpawu",
+    "symbolsLabel": "Izimpawu ephusheni lakho",
+    "feedbackQ": "Ingabe lesi sifundo besisiza?",
+    "yes": "Yebo, besisiza",
+    "no": "Impela cha",
+    "thanks": "Siyabonga — imibono yakho ithuthukisa izifundo ezizayo.",
+    "perspectiveDesc": "Ukufunda okukodwa okuxuba izintambo ezihlakaniphile zamagugu omhlaba kanye nengqondo ejulile.",
+    "moodLabel": "Iphupho lizizwa lunjani?",
+    "copy": "Kopela",
+    "copied": "Kopishiwe!",
+    "share": "Yabelana",
+    "example": "Zama isibonelo",
+    "exampleDream": "Ebusuku obudlule ngaphupha inyoni yomhlophe ehlala efasiteleni lami, bese iba incwadi engangingifunda. Ngazizwa ngizola kodwa nginesifiso sokwazi.",
+    "shortcutHint": "Cindezela u-⌘/Ctrl + Enter ukuze uhumushele",
+    "symbolsSection": "Izimpawu"
   },
   "history": {
-    "title": "Umlando wamaphupho",
-    "empty": "Kamaphupho ake ahunyushwa."
+    "title": "Umlando wamaphupha",
+    "lede": "Zonke izincazelo owakhiqizile, zigcinwe kule divayisi.",
+    "empty": "Awekho amaphupha asevele ahlungiwe."
   },
   "saved": {
-    "title": "Amaphupho agciniwe",
-    "empty": "Akukhona okugciniwe okukhona."
+    "title": "Amaphupha agciniwe",
+    "lede": "Gcina izincazelo ezaba nomthelela kuwe. Zihlala kule divayisi.",
+    "empty": "Akukho okusalungisiwe okwamanje."
+  },
+  "common": {
+    "interpretCta": "Cacisa Ubuso",
+    "delete": "Sula",
+    "remove": "Susa",
+    "confirmRemove": "Ususa?",
+    "backHome": "Buyela Ekhaya"
   },
   "symbols": {
-    "title": "Izimpawu zamaphupho ezingu-{n}",
-    "search": "Sesha isithonjana…"
-  },
-  "notfound": {
-    "title": "Lesi siphipho",
-    "cta": "Buyela ekhaya"
+    "title": "Izimpawu Zobuso ezi-{n}",
+    "lede": "Bheka zonke izimpawu esizihumushayo — mahhala, ngezilimi eziningi. Khetha eyakho ufunde incazelo yayo.",
+    "search": "Sesha isimpawu…",
+    "noResults": "Akukho uphawu olutholakala oluhambisana nokusesha kwakho."
   },
   "about": {
-    "p1": "Dreamscope exists to make dream interpretation accessible in your own language and cultural context. We draw on a wide range of interpretive traditions — religious and spiritual scholarship, cultural folklore, and the symbolic frameworks of modern depth psychology — so you can read your dream through the lens you trust.",
-    "card1Title": "Many traditions",
-    "card1Body": "Islamic, Christian, Jewish, Hindu, Buddhist, Chinese, and psychological lenses — pick the one you trust."
+    "title": "Ukufunda okucacile, okusekelwa yisintu",
+    "p1": "I-Dreamscope ikhona ukuze yenze ukuhumusha kwephupho kufinyeleleke ngolimi lwakho kanye nembangela yamasiko yakho. Sikha izinto zethu emithonjeni ehlukahlukene yokuhumusha — ulwazi lwezinkolo nezomoya, izindaba zesintu, kanye nezindlela zokuhlaziya zenzululwazi yanamuhla — ukuze ukwazi ukufunda iphupho lakho ngendlela oyethembayo.",
+    "p2": "Zonke izifundo zenzelwe ukukusiza ucabange — hhayi ukubikezela ikusasa. Izimpawu ezifana namanzi, umlilo, ukundiza, noma inyoka zithwele incazelo emiphakathini eminingi amakhulu eminyaka, futhi izincazelo zethu zilandelela leyo misebenzi ukuze uthole okuvumelana nempilo yakho.",
+    "p3": "Inkonzo ayihlawulelwa, iyimfihlo ngenhloso, futhi itholakala ngezilimi ezingama-60. Umbhalo wephupho lakho uthunyelwa enkonweni yethu yokuhumusha ukuze kwakhiwe isifundo, bese ungagcinwa ngathi; izifundo zakho zihlala kudivayisi yakho ngaphandle kokuthi ungene ngemvume futhi uvumelanise.",
+    "card1Title": "Izintu eziningi",
+    "card1Body": "Ama-Muslim, amaKristu, amaJuda, amaHindu, amaBuddha, amaShayina, kanye nezindlela zengqondo — khetha leyo oyethembayo.",
+    "card2Title": "Izilimi ezingama-60",
+    "card2Body": "Kusukela ngesi-Arabhu kuya kusiJapane — humusha ngolimi oluphupha ngalo.",
+    "card3Title": "I-100% imfihlo",
+    "card3Body": "Izifundo zakho zihlala kudivayisi yakho ngokuzenzakalelayo. Ngena ngemvume kuphela ukuze uvumelanise; susa noma yinini.",
+    "cta": "Qala Ukuhumusha",
+    "traditionsTitle": "Wonke umkhuba, iphupho elilodwa",
+    "traditionsLede": "Khetha ilensi ethembwa inhliziyo yakho — isifundo ngasinye sidalwa ngesikole sokuhumusha esizinikelele."
+  },
+  "contact": {
+    "title": "Thinta thina",
+    "lede": "Imibuzo, ukulungisa, noma amathuba okubambisana? Finyelela ithimba le-Dreamscope nge-imeyili.",
+    "email": "I-imeyili",
+    "disclaimer": "I-Dreamscope inikeza ukukhombisa nokuzijabulisa kuphela. Izinhumushi aziyeluleki zokwelashwa, zengqondo, noma zezenkolo. Uma udinga ukwesekwa, sicela uthintane nochwepheshe ofanelekile.",
+    "back": "Buyela kumhumushi"
   },
   "faq": {
-    "a1": "Dreamscope blends dream scholarship from many cultures and faiths — including Islamic, Christian, Jewish, Hindu, Buddhist, and Chinese traditions — with modern depth psychology. You describe a dream in your own words and receive a reading that maps its symbols to their common meanings across cultures."
+    "title": "Imibuzo evame ukubuzwa",
+    "q1": "I-Dreamscope iyiphendula kanjani amaphupho?",
+    "a1": "I-Dreamscope ihlanganisa ulwazi lwamaphupho oluvela ezinkcubeni nezinkolelweni eziningi — okuhlanganisa i-Islam, iKristu, iJuda, iHindu, iBuddha, nezaseChina — kanye nengqondo yanamuhla ejulile. Uchaza iphupho lakho ngamagama akho futhi uthola ukufunda okuhlanganisa izimpawu zalo nokuqukethwe kwazo kuzo zonke izinkcubeni.",
+    "q2": "Idatha yami yephupho iyimfihlo?",
+    "a2": "Yebo. Amaphupho akho agcinwa kuphela kusitoreji somdabu wesiphequluli sakho esithangamini sakho. Akukho lutho oluthunyelwa kumshini wokugcina, futhi ungasusira umlando wakho nganoma isiphi isikhathi.",
+    "q3": "Singaphi ulimi lapho ngingaphendula khona amaphupho?",
+    "a3": "I-Dreamscope isekela izilimi ezingama-60 okuhlanganisa isiNgisi, isi-Arabhu, iSpanishi, isiFulentshi, isiJalimani, isiShayina, isiJapane, isiKoriya, isiTheki, isiPhuthukezi, isiRashiya, isiHindi, nezinye eziningi. Ukufunda kulandela ulimi olukhethayo.",
+    "q4": "Ukuphendulwa kuyisikhundla sezincwadi zochwepheshe?",
+    "a4": "Cha. Ukufunda amaphupho kungokucabula nokuzijabulisa. Akukho ngokwelapha, ngokwengqondo, noma ngokwenkolo. Uma unobunzima, sicela ukhulume nochwepheshe ofanelekile.",
+    "q5": "Zingaki izimpawu zamaphupho ezimboziwe?",
+    "a5": "I-Dreamscope inamakhasi ahlukile ezimpawu eziyikhulu namashumi amane nesithupha ezivamile — inyoka, amanzi, ukundiza, umlilo, ukukhulelwa, imali, nezinye eziningi — ngayinye etholakal ngezilimi eziningi nezinhlobonhlobo zemibuzo."
+  },
+  "notfound": {
+    "title": "Liphupho linyamalale",
+    "lede": "Ikhasi owalifunayo alikho lapha. Asibuyele ekuhumusheni amaphupho.",
+    "cta": "Buyela Ekhaya"
+  },
+  "perspectives": {
+    "general": {
+      "name": "Evamile"
+    },
+    "islamic": {
+      "name": "Ibn Sirin (Isilamu)"
+    },
+    "christian": {
+      "name": "OkwamaKristu"
+    },
+    "jewish": {
+      "name": "OkwamaJuda"
+    },
+    "hindu": {
+      "name": "OkwamaHindu"
+    },
+    "buddhist": {
+      "name": "OkwamaBhudu"
+    },
+    "psychology": {
+      "name": "Izingqondo (Jung)"
+    },
+    "chinese": {
+      "name": "Zhou Gong (IsiShayina)"
+    }
+  },
+  "daily": {
+    "tag": "Ipupho Yosuku"
+  },
+  "profile": {
+    "title": "Indawo Yakho",
+    "cloudOff": "Umbhalo wakho wephupho uthunyelwa encazelweni yethu ukuze sikhiqize ukufunda, bese ungagcinwabi nguthi. Ukufunda kugcinwa kudivayisi yakho ngaphandle kokuthi ungene ngemvume futhi ukhethe ukuvumelanisa. Asikaze sithengise noma siphendle idatha yakho.",
+    "dataNote": "Indawo iphi lapho idatha yakho igcinwa khona: idivayisi yakho ngokuzenzakalelayo. Uma ungena ngemvume, ijenerali yakho ingavumelanisa ne-akhawunti yakho yangasese; ungayisusa noma yinini.",
+    "signInLede": "Ngena ngemvume ukuze ugcine ijenerali yakho yephupho kuzo zonke izinto zakho. Umlando wakho wezivakashi uhamba nawe ngokuzenzakalelayo.",
+    "emailLabel": "I-imeyili",
+    "magicLink": "Thumela isixhumanisi sokungena",
+    "google": "Qhubeka nge-Google",
+    "checkEmail": "Hlola ibhokisi lakho lokungenela — isixhumanisi sokungena silindile.",
+    "invalidEmail": "Sicela ufake ikheli le-imeyili elivumelekile.",
+    "signInError": "Asikwazanga ukungena. Sicela uzame futhi noma usebenzise isixhumanisi se-imeyili.",
+    "googleNotEnabled": "Ukungena nge-Google akukaxhunyiwe kuleli phrojekthi. Umnikazi wesayithi kudingeka axhume iklayenti le-Google OAuth ku-Supabase.",
+    "guestNote": "Ayikho iphasiwedi, ayikho into elandelelayo — nje isixhumanisi. Imodi yezivakashi enesitoreji esitholakala endaweni iyaqhubeka ifumaneka ngokugcwele.",
+    "member": "Ilungu",
+    "migrated": "Ishukile {n} amaphupho kuleli thuluzi iye kujenali yakho.",
+    "signOut": "Phuma",
+    "navLabel": "Iphrofayela",
+    "lede": "Konke i-Dreamscope ekwaziyo ngohambo lwakho — kugcinwe endaweni yakho, okwakho wedwa.",
+    "yourState": "Isimo sakho njengamanje",
+    "statDreams": "Amaphupho achaziwe",
+    "statSaved": "Ukufunda okulondoloziwe",
+    "statStreak": "Usuku olulandelelanayo",
+    "statTopSymbol": "Uphawu oluphambili",
+    "emptyState": "Akwaphupho okwamanje — ukufunda kwakho kokuqala kuzokhanyisa leli khasi.",
+    "symbolsYouMeet": "Ophawu ohlangana nabo njalo",
+    "noneYet": "—",
+    "lastReading": "Ukufunda kokugcina",
+    "languagesUsed": "Izilimi ezisetshenzisiwe",
+    "perspectivesUsed": "Izinkolelo nezifundiso ezisetshenzisiwe",
+    "cloudTitle": "Kudivayisi kwakho",
+    "connectTitle": "Xhuma iphrojekthi yakho ye-Supabase",
+    "connectUrlLabel": "I-URL yephrojekthi",
+    "connectKeyLabel": "Ukhiye womphakathi ongamaziwa",
+    "connectCta": "Xhuma",
+    "connected": "Ixhumile — manje usungangena ngemvume futhi uvumelanise ijazi lakho.",
+    "connectError": "Ayikwazanga ukuxhumana. Hlola i-URL kanye nokhiye ongamaziwa.",
+    "disconnect": "Nqamula",
+    "privacyNote": "Amaphupho akho agcinwa kudivayisi yakho — awakathengiswa, awahlelwa.",
+    "moodPattern": "Iphethini yomoya",
+    "autoSetupTitle": "Ukusethwa ngomyalo owodwa",
+    "autoSetupBody": "Awunayo iphrojekhi? Qalisa iskripthi sokumisa kube kanye: yenza iphrojekthi ye-Supabase, faka isakhiwo sedatha, bese iphrinta i-URL yakho + ukhiye ongaziwa ukuze unamathisele ngenhla. Ukungena ngemvume ye-Google kudinga iklayenti ye-Google Cloud OAuth (bona iskripthi).",
+    "autoSetupCmd": "SUPABASE_ACCESS_TOKEN=xxx node scripts/setup-supabase.mjs"
+  },
+  "perspDesc": {
+    "general": "Ukufunda okukodwa okuxaka izintambo ezinhloniphekile zemvelo zomhlaba kanye nokujula kwengqondo.",
+    "islamic": "Isikole somlando sika-Ibn Sirin — ezimpawu, ezomthetho, nezigxile empilweni.",
+    "christian": "Ukufunda iphupho emlandweni kaJosefa noDaniyeli, nezimpawu zombhalo ongcwele.",
+    "jewish": "Ubuhlakani bamaphupho beTorah neTalmud — umyalezo olindele ukuhunyushwa ngokuhlakanipha.",
+    "hindu": "Izimpawu zeVeda, ikarma, nezwe langaphakathi lengqondo.",
+    "buddhist": "Ukungapheleli nokuqaphela ngokukhulu ukunaka — buka iphupho ngaphambi kokubambelela.",
+    "psychology": "Ama-archetype ka-Jung nomthunzi — lokho umqondo wakho okucubungulayo.",
+    "chinese": "Isichazimazwi esivamile sikaZhou Gong — ukulingana kwe-yin, i-yang, kanye nezinto ezinhlanu."
+  },
+  "moods": {
+    "peace": "Ukuthula",
+    "anxiety": "Ukukhathazeka",
+    "hope": " Ithemba",
+    "sadness": "Usizi",
+    "anger": "Intukuthelo",
+    "confusion": "Ukudideka"
+  },
+  "seo": {
+    "dreamInterpretation": "Ukuhumusha Amaphupho",
+    "traditionsTitle": "Kuzo zonke izinkolo",
+    "traditionsBody": "Uphawu lungasho izinto ezahlukene ezinkoleni ezahlukene. Ezinkolweni zama-Isilamu, amaKristu, amaJuda, amaHindu, amaBuddha, amaShayina, kanye nezengqondo, isithombe esifanayo sifundwa ngelensi yaso. Khetha ilensi oyithembayo ekhasini lokuhumusha.",
+    "tryTitle": "Cacisa Amaphupho Akho nge-AI",
+    "tryLede": "Yabelana ngephupho lakho uthole incazelo ehlonziwe ngu-AI.",
+    "otherLangs": "Ezinye Izilimi",
+    "otherSymbols": "Eminye Imifanekiso Yamaphupho",
+    "reflectNote": "Leli khasi lenzelwe ukucabanga nokuzijabulisa kuphela. Alisiqondiso sezokwelapha, sezengqondo, noma senkolo, futhi alibikezeli ikusasa."
   }
 }

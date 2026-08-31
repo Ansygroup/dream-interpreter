@@ -5,67 +5,255 @@
     "about": "Game da mu",
     "faq": "Tambayoyi",
     "history": "Tarihi",
-    "saved": "Ajiye",
-    "contact": "Tuntube mu",
+    "saved": "An ajiye",
+    "contact": "Tuntuɓe mu",
     "start": "Fara",
     "home": "Gida",
-    "aiBlog": "Bulin AI",
+    "aiBlog": "Blog na AI",
     "ansyGroup": "Ansy Group",
     "language": "Harshe",
     "searchLanguage": "Nemo harsuna…",
-    "noLanguage": "Babu harshe da ya dace da neman ku."
+    "noLanguage": "Babu harshe da ya dace da bincikenku.",
+    "profile": "Bayani"
   },
   "footer": {
-    "tagline": "Free AI dream interpretation in 60 languages — every tradition, your lens.",
+    "tagline": "Fassarar mafarkai ta AI kyauta a cikin harsuna 60 — kowane al'adu, hangen naku.",
     "copyright": "© {year} Dreamscope"
   },
   "home": {
-    "heroTitle": "Me {accent} na kokarin gaya maka",
-    "heroAccent": "zuciyarka ta boye",
-    "heroLede": "Ancient symbolism, modern psychology, and AI — combined into one clear reading. Describe a dream in your own words and get an interpretation through the tradition you trust.",
-    "interpretCta": "Fassara mafarki",
-    "browseCta": "Duba alamomi",
-    "ctaTitle": "Bayyana mafarkinka",
-    "ctaButton": "Fara fassarawa",
-    "feature3Body": "Depth psychology and perspectives across faiths — one reading, seen through your lens.",
-    "feature4Body": "Your dreams stay on your device by default. Sign in to sync across devices.",
-    "sampleReading": "Snakes mark transformation — something in your life is shedding its old skin. The gate suggests a clear exit is opening. In many traditions, a harmless snake leaving the home often means a lingering worry is finally moving on.",
-    "sampleTag3": "Tradition",
-    "ctaLede": "A few sentences is enough. The reading takes seconds and stays on your device by default."
+    "heroTitle": "Abin da {accent} naku yake ƙoƙarin faɗa",
+    "heroAccent": "hankalinku",
+    "heroLede": "Alamomin tsohon da aka gada, ilimin halin dan adam na zamani, da AI — duk haɗe cikin fassarar bayyananniya. Bayyana mafarki a cikin kalmominku kuma ku sami fassara ta al'addar da kuka amince da ita.",
+    "interpretCta": "Fassara Mafarki",
+    "browseCta": "Duba Alamomi",
+    "statLanguages": "Harsuna {n}",
+    "statSymbols": "Alamomin mafarkai {n}",
+    "statPrivateLine": "na sirri a kan na'urarku",
+    "whyTitle": "Fassarar da za ku iya amfani da ita",
+    "whyLede": "Dreamscope yana haɗa mafarkinku da alamominsa, sannan ya karanta su ta al'addar da kuka amince da ita — tare da ilimin halin dan adam a gefen, ba maye gurbinsa ba.",
+    "feature1Title": "Binciken Alamomi",
+    "feature1Body": "Kowane mafarki ana haɗa shi da manyan alamominsa kuma a bi shi ta ƙarni na al'addar fassara.",
+    "feature2Title": "Harsuna 60",
+    "feature2Body": "Fassara ku karanta alamomi a Turanci, Larabci, Sipaniyancin, Sinanci, Jafananci, da sauran harsuna 55.",
+    "feature3Title": "Dukkan Al'adu",
+    "feature3Body": "Binciken zurfin hangen nesa da ra'ayoyi a cikin bangaski — karatu ɗaya, wanda aka gani ta hangen naku.",
+    "feature4Title": "Ajiye & Sirri",
+    "feature4Body": "Mafarkanku suna kan na'urarku ta tsoho. Shiga don daidaita a cikin na'urori.",
+    "sampleTag": "Samfurin Karatu",
+    "sampleJustNow": "yanzu",
+    "sampleDream": "\"Na ga maciji kore yana fita daga gidan ta ƙofar lambu.\"",
+    "sampleReading": "Maciji yana nuna canjis wuri — wani abu a rayuwarku yana shedding tsofaffin fatar jikinsa. Ƙofa tana nuna fita bayyananniya tana buɗewa. A cikin al'adu da yawa, maciji marar cutarwa wanda ya bar gida sau da yawa yana nuna damuwa mai ɗorewa ta ƙarshe tana tafiya.",
+    "sampleTag1": "Canjis",
+    "sampleTag2": "Saki",
+    "sampleTag3": "Al'ada",
+    "sampleSaved": "An ajiye a kan na'urarku",
+    "symbolsTitle": "Kowane alama yana ɗaukar ma'ana",
+    "symbolsLede": "Daga ruwa zuwa wuta, bincika mafi yawan abubuwan da ke bayyana a cikin mafarkai da abin da kowane yake nuna a cikin al'adu.",
+    "ctaTitle": "Bayyana mafarkinku",
+    "ctaLede": "Jimillar jumla kaɗan iske ne. Karatu yana ɗaukar daƙiƙa kaɗan kuma yana zauna a kan na'urarku ta tsoho.",
+    "ctaButton": "Fara Fassara"
   },
   "interpret": {
-    "title": "Bayyana mafarkinka",
+    "title": "Bayyana mafarkinku",
+    "lede": "Rubuta shi da kalmominku. Mafi yawan bayani, mafi tsananin karatu — wurin, abubuwan da kuka ji, da dukak abin da ba na al'ada ba duk suna da muhimmanci.",
     "language": "Harshe",
-    "yourDream": "Mafarkinka",
-    "placeholder": "Jiya da yamma na yi mafarkin cewa ina wuce ta kofa da take canza siffarta koyaushe...",
-    "button": "Fassara mafarki"
-  },
-  "common": {
-    "interpretCta": "Fassara mafarki",
-    "backHome": "Komawa gida"
+    "yourDream": "Mafarkinku",
+    "placeholder": "Jiya dare na yi mafarkin ina taɓa ƙofa waddake take canza siffa…",
+    "loading": "Ana fassara...",
+    "button": "Fassara Mafarki",
+    "yourReading": "Karatunku",
+    "save": "Ajiye",
+    "saved": "An ajiye",
+    "savedConfirm": "An ajiye a cikin littafin ku. Ku same shi a duk lokacin a ƙarƙashin An ajiye.",
+    "unsaved": "An cire daga An ajiye.",
+    "disclaimer": "Tunani ne kawai — ba shawara ta likita, ta ilimin hali, ko ta addi ni ba. Ba yana hasashen gaba ba.",
+    "viewHistory": "Duba Tarihi",
+    "errorEmpty": "Da fatan za a fara bayyana mafarkinku.",
+    "errorFailed": "Fassara ta gaza. Da fatan za a sake gwadawa.",
+    "errorNetwork": "Kuskuren haɗi. Da fatan za a sake gwadawa.",
+    "perspectiveLabel": "Karatu ta hanyar",
+    "perspNotice": "Kowane al'ada ana nuna su daban. Karatuttuka suna tunani ne da yuwuwar — ba hasashe ba.",
+    "compareLabel": "Kwatanta dukkan al'adu",
+    "compareDesc": "Mafarki ɗaya, karanta ta kowane hangen nesa sau ɗaya — ga inda al'adu suka yarda da inda suka bambantasu.",
+    "compareLoading": "Ana karantawa ta kowane al'ada…",
+    "compareBack": "Komawa karatu ɗaya",
+    "compareSymbols": "Alamomi",
+    "symbolsLabel": "Alamomi a cikin mafarkinku",
+    "feedbackQ": "Shin wannan karatu ya taimaka?",
+    "yes": "E, ya taimaka",
+    "no": "Ba sosai ba",
+    "thanks": "Na gode — feedback ɗinku yana inganta karatuttuka na gaba.",
+    "perspectiveDesc": "Karatu ɗaya wanda ke haɗa mafi hikimar zaren al'adun duniya tare da zurfin ilimin halin dan adam.",
+    "moodLabel": "Yaya mafarkin ya ji?",
+    "copy": "Kwafi",
+    "copied": "An kwafi!",
+    "share": "Raba",
+    "example": "Gwada misali",
+    "exampleDream": "Jiya dare na yi mafarkin saniya fari ta sauka a kan taguwata, sannan ta zama wasiƙar da ban iya karantawa ba. Na ji natsuwa amma ina da sha'awa.",
+    "shortcutHint": "Danna ⌘/Ctrl + Enter don fassara",
+    "symbolsSection": "Alamomi"
   },
   "history": {
     "title": "Tarihin mafarkai",
-    "empty": "Babu mafarki da aka fassara har yanzu."
+    "lede": "Kowane fassara da kuka samar, wanda aka adana a kan wannan na'ura.",
+    "empty": "Ba a fassara mafarkai ba har yanzu."
   },
   "saved": {
     "title": "Mafarkai da aka ajiye",
-    "empty": "Babu abinda aka ajiye har yanzu."
+    "lede": "Kiyaye fassarorin da suka yi muhimmanci. Suna kan wannan na'ura.",
+    "empty": "Ba a ajiye komai ba har yanzu."
+  },
+  "common": {
+    "interpretCta": "Fassara Mafarki",
+    "delete": "Share",
+    "remove": "Cire",
+    "confirmRemove": "Cire?",
+    "backHome": "Komawa Gida"
   },
   "symbols": {
-    "title": "{n} alamomin mafarki",
-    "search": "Nemo alama…"
-  },
-  "notfound": {
-    "title": "Wannan mafarkin ya narke",
-    "cta": "Komawa gida"
+    "title": "Alamomin Mafarkai {n}",
+    "lede": "Duba kowane alama da muke fassara — kyauta, cikin ɗaruruwan harsuna. Zaɓi naku don karanta ma'ana.",
+    "search": "Nemo alama…",
+    "noResults": "Babu alama da ta dace da bincikenku."
   },
   "about": {
-    "p1": "Dreamscope exists to make dream interpretation accessible in your own language and cultural context. We draw on a wide range of interpretive traditions — religious and spiritual scholarship, cultural folklore, and the symbolic frameworks of modern depth psychology — so you can read your dream through the lens you trust.",
-    "card1Title": "Many traditions",
-    "card1Body": "Islamic, Christian, Jewish, Hindu, Buddhist, Chinese, and psychological lenses — pick the one you trust."
+    "title": "Karatu bayyananniya, wanda aka tushunta a al'ada",
+    "p1": "Dreamscope yana wanzu don sa fassarar mafarkai ta zama mai sauƙi a cikin naku harshe da yanayin al'adunku. Muna jawo daga faffaɗan al'adun fassara — ilimin addini da na ruhaniya, al'adun gargajiya, da tsafuran alama na zamani na zurfin ilimin halin dan adam — don ku iya karanta mafarkinku ta hangen nesa da kuka amince da shi.",
+    "p2": "Kowane karatu ana samar da shi don taimaka muku yin tunani — ba don hasashen gaba ba. Alamomi kamar ruwa, wuta, tashi, ko maciji suna ɗaukar ma'ana a cikin al'adu na dubun shekaru, kuma fassarar mu suna bi waɗannan zaren don ku sami abin da ya yi daidai da rayuwarku.",
+    "p3": "Sabis ɗa kyauta ne, na sirri ta ƙira, kuma yana samuwa a cikin harsuna 60. Rubutun mafarkinku ana aika shi ga sabis ɗin fassararmu don samar da karatu, sannan ba mu ajiye shi ba; karatuttukanku suna kan na'urarku sai kun shiga kuma ku daidaita.",
+    "card1Title": "Al'adu da yawa",
+    "card1Body": "Hangen nesa na Musulunci, Kirista, Yahudawa, Hindu, Buddist, Sinanci, da na hankali — zaɓi wanda kuka amince da shi.",
+    "card2Title": "Harsuna 60",
+    "card2Body": "Daga Larabci zuwa Jafananci — fassara a cikin harshen da kuka yi mafarki.",
+    "card3Title": "Na sirri 100%",
+    "card3Body": "Karatuttukanku suna kan na'urarku ta tsoho. Shiga kawai don daidaita; share a duk lokacin.",
+    "cta": "Fara Fassara",
+    "traditionsTitle": "Kowane al'ada, mafarki ɗaya",
+    "traditionsLede": "Zaɓi hangen nesa da zuciyarku ta amince da shi — kowane karatu ana samar da shi ta hanyar makarantar fassara ta musamman."
+  },
+  "contact": {
+    "title": "Tuntuɓe mu",
+    "lede": "Tambayoyi, gyare-gyare, ko ra'ayoyin haɗin gwiwa? Aika wa ƙungiyar Dreamscope ta imel.",
+    "email": "Imel",
+    "disclaimer": "Dreamscope yana ba da tunani da nishadi kawai. Fassarar ba shawara ta likita, ta ilimin hali, ko ta addi ba. Idif kuka bujma tallafi, da fatan za a tuntuɓe ƙwararren mai fasaha.",
+    "back": "Komawa Mai Fassara"
   },
   "faq": {
-    "a1": "Dreamscope blends dream scholarship from many cultures and faiths — including Islamic, Christian, Jewish, Hindu, Buddhist, and Chinese traditions — with modern depth psychology. You describe a dream in your own words and receive a reading that maps its symbols to their common meanings across cultures."
+    "title": "Tambayoyin da ake yawan yi",
+    "q1": "Yaya Dreamscope yake fassara mafarkai?",
+    "a1": "Dreamscope yana haɗa ilimin mafarkai duma al'adu da bangaski da yawa — ciki har da Musulunci, Kirista, Yahudawa, Hindu, Buddist, da Sinanci — tare da zurfin ilimin halin dan adam na zamani. Kuna bayyana mafarki a cikin kalmominku kuma kuka sami karatu wanda ke haɗa alamominsa da mafi yawan ma'anansu a cikin al'adu.",
+    "q2": "Shin bayan mafarkinmu na sirri ne?",
+    "a2": "Eh. Mafarkanku ana adana su ne kawai a cikin ma'ajiyar gida ta mai bincikenku a kan na'urarku. Ba a aika komai zuwa uwar garke don adana shi ba, kuma za ku iya share tarihinku a duk lokacin.",
+    "q3": "A cikin waɗanne harsuna zan iya fassara mafarkai?",
+    "a3": "Dreamscope yana goyon bayan harsuna 60 ciki har da Turanci, Larabci, Sipaniyancin, Faransanci, Jamusanci, Sinanci, Jafananci, Koreanci, Turkiyancin, Fotugisancin, Rashanci, Hindi, da ƙari. Karatu yana bi harshen da kuka zaɓa.",
+    "q4": "Shin fassarar su maye gurbin shawara ta ƙwararren mai fasaha?",
+    "a4": "A'a. Karatuttukan mafarkai suna don tunani da nishadi ne. Ba shawara ta likita, ta ilimin hali, ko ta addi ba. Idif kuna fuskur wahala, da fatan za a yi magana da ƙwararren mai fasaha.",
+    "q5": "Dabboben alama nawa ne aka rufe?",
+    "a5": "Dreamscope yana da shafuka na musamman don alamomi na yau da kullum 146 — maciji, ruwa, tashi, wuta, juna biyu, kuɗi, da ƙari — kowane yana samuwa a cikin harsuna da yawa tare da bambance-bambancen tambaya na dogon wutsiya."
+  },
+  "notfound": {
+    "title": "Wannan mafarki ya narke",
+    "lede": "Shafin da kuka nema ba ya nan. Bari mu dawo ku fassara.",
+    "cta": "Komawa Gida"
+  },
+  "perspectives": {
+    "general": {
+      "name": "Na duniya"
+    },
+    "islamic": {
+      "name": "Ibn Sirin (Musulunci)"
+    },
+    "christian": {
+      "name": "Kirista"
+    },
+    "jewish": {
+      "name": "Yahudawa"
+    },
+    "hindu": {
+      "name": "Hindu"
+    },
+    "buddhist": {
+      "name": "Buddist"
+    },
+    "psychology": {
+      "name": "Ilimin Hali (Jung)"
+    },
+    "chinese": {
+      "name": "Zhou Gong (Sinanci)"
+    }
+  },
+  "daily": {
+    "tag": "Mafarkin yau"
+  },
+  "profile": {
+    "title": "Wurinku",
+    "cloudOff": "Rubutun mafarkinku ana aika shi ga sabis ɗin fassararmu don samar da karatu, sannan ba mu ajiye shi ba. Karatuttuka ana kiyaye su a kan na'urarku sai kun shiga kuka zaɓi daidaita. Ba mu taɓa sayarwa ko yin bayani akan bayananku ba.",
+    "dataNote": "Inda bayananku ke zaune: na'urarku ta tsoho. Idif kun shiga, littafin ku na iya daidaita zuwa asusunku na sirri; za ku iya share shi a duk lokacin.",
+    "signInLede": "Shiga don kiyaye littafin mafarkinku a duk na'urorinku. Tarihin baƙo yana tafiya da ku ta atomatik.",
+    "emailLabel": "Imel",
+    "magicLink": "Aiko mini da hanyar shiga",
+    "google": "Ci gaba da Google",
+    "checkEmail": "Duba akwatin saƙonku — hanyar shiga tana jira ku.",
+    "invalidEmail": "Da fatan za a shigar da ingantaccen adireshin imel.",
+    "signInError": "Ba za mu iya shiga ku ba. Da fatan za a sake gwadawa ko amfani da hanyar imel.",
+    "googleNotEnabled": "Shiga da Google ba a kunna shi a kan wannan aikin ba. Mai shafin yana buƙatar haɗa abokin cinikin Google OAuth a Supabase.",
+    "guestNote": "Bai wa kalmar wucewa ba, babu bin diddigi — kawai hanyar haɗi. Yanayin baƙo tare da ajiya a kan na'ura yana cikin girma.",
+    "member": "Memba",
+    "migrated": "An ƙaura mafarkai {n} daga wannan na'ura zuwa littafinku.",
+    "signOut": "Fita",
+    "navLabel": "Bayani",
+    "lede": "Duk abin da Dreamscope ya sani game da tafiyarku — wanda aka adana a kan na'urarku, naku kaɗai.",
+    "yourState": "Halinku yanzu",
+    "statDreams": "Mafarkai da aka fassara",
+    "statSaved": "Karatuttuka da aka ajiye",
+    "statStreak": "Jerin kwanaki",
+    "statTopSymbol": "Babbar alama",
+    "emptyState": "Ba a da mafarkai ba — karatunku na farko zai haskaka wannan shafin.",
+    "symbolsYouMeet": "Alamomi da kuke ci gaba da saduwa",
+    "noneYet": "—",
+    "lastReading": "Karatu na ƙarshe",
+    "languagesUsed": "Harsunan da aka yi amfani da su",
+    "perspectivesUsed": "Al'adun da aka yi amfani da su",
+    "cloudTitle": "A cikin na'urorinku",
+    "connectTitle": "Haɗa aikin Supabase",
+    "connectUrlLabel": "URL na aiki",
+    "connectKeyLabel": "Maɓallin jama'a na Anon",
+    "connectCta": "Haɗa",
+    "connected": "An haɗa — yanzu za ku iya shiga da daidaita littafinku.",
+    "connectError": "Ba za a iya haɗawa ba. Duba URL da maɓallin anon.",
+    "disconnect": "Cire haɗi",
+    "privacyNote": "Mafarkanku ana adana su ne a kan na'urarku — ba a taɓa sayarwa ba, ba a taɓa yin bayani akan su ba.",
+    "moodPattern": "Tsarin yanayi",
+    "autoSetupTitle": "Saitawa da umarni ɗaya",
+    "autoSetupBody": "Babu aiki har yanzu? Gudanar da rubutun bootstrap sau ɗaya: yana ƙirƙira aikin Supabase, yana amfasa tsarin bayanai, kuma yana buga URL + maɓallin anon don manna a sama. Shiga da Google yana buƙatar abokin cinikin Google Cloud OAuth (duba rubutun).",
+    "autoSetupCmd": "SUPABASE_ACCESS_TOKEN=xxx node scripts/setup-supabase.mjs"
+  },
+  "perspDesc": {
+    "general": "Karatu ɗaya wanda ke haɗa mafi hikimar zaren al'adun duniya tare da zurfin ilimin halin dan adam.",
+    "islamic": "Makarantar gargajiya ta Ibn Sirin — alama, doka, da mai da hankali ga rai.",
+    "christian": "Karatun mafarki a cikin zuriyar Yusufu da Daniel, tare da alamar Nassi.",
+    "jewish": "Hikimar mafarkai ta Tura da Talmud — saƙo yana jiran hikimar fassara.",
+    "hindu": "Alamomin Vedic, karma, da yanayen ciki na hankali.",
+    "buddhist": "Rashin dawwama da wayewar mai hankali — lura da mafarki ba tare da ɗauka ba.",
+    "psychology": "Prototypes na Jung da inuwa — abin da psikikinku yake sarrafawa.",
+    "chinese": "Kamus ɗin gargajiya na Zhou Gong — ma'auni na yin, yang, da abubuwa biyar."
+  },
+  "moods": {
+    "peace": "Natsuwa",
+    "anxiety": "Damuwa",
+    "hope": "Fata",
+    "sadness": "Baƙin ciki",
+    "anger": "Fushi",
+    "confusion": "Rudani"
+  },
+  "seo": {
+    "dreamInterpretation": "Fassarar Mafarkai",
+    "traditionsTitle": "A cikin al'adu",
+    "traditionsBody": "Alama na iya nufin abubuwa daban a cikin al'adu daban-daban. A cikin Musulunci, Kirista, Yahudawa, Hindu, Buddist, Sinanci, da al'adun hankali, hoton ɗaya ana karanta shi ta nasa hangen nesa. Zaɓi hangen nesa da kuka amince da shi a shafin fassara.",
+    "tryTitle": "Fassara Mafarkanku tare da AI",
+    "tryLede": "Raba mafarkinku kuma ku sami fassarar AI da aka keɓance muku.",
+    "otherLangs": "Sauran Harsuna",
+    "otherSymbols": "Sauran Alamomin Mafarkai",
+    "reflectNote": "Wannan shafi yana don tunani da nishadi kawai. Ba shawara ta likita, ta ilimin hali, ko ta addi ba, kuma ba yana hasashen gaba ba."
   }
 }

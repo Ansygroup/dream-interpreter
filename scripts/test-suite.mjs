@@ -214,5 +214,19 @@ for (const f of readdirSync(locDir).filter((x) => x.endsWith('.json'))) {
 ok('no Ibn Sirin in marketing/about/FAQ across all 60 locales', anyBias === 0);
 
 // ---------------------------------------------------------------------------
+// 12. No religious centering in marketing copy (any faith framed as foundation)
+// ---------------------------------------------------------------------------
+section('No religious centering (all 60 locales)');
+const RELIGIOUS = /islam|muslim|quran|koran|allah|sharia|sunnah|christian|jewish|hindu|buddhist|torah|bible|gospel|church|mosque|salah/i;
+let religMkt = 0, religFiles = new Set();
+for (const f of readdirSync(locDir).filter((x) => x.endsWith('.json'))) {
+  const lines = readFileSync(join(locDir, f), 'utf8').split('\n');
+  for (const l of lines) {
+    if (RELIGIOUS.test(l) && MKT.test(l) && !/"name":/.test(l)) { religMkt++; religFiles.add(f); }
+  }
+}
+ok('no religious term in marketing/about/FAQ across all 60 locales', religMkt === 0);
+
+// ---------------------------------------------------------------------------
 console.log(`\nSUITE RESULT: ${passed} passed, ${failed} failed`);
 process.exit(failed === 0 ? 0 : 1);

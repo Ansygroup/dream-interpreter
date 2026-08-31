@@ -1,71 +1,259 @@
 {
   "nav": {
-    "interpret": "Tafsirkan",
+    "interpret": "Tafsir",
     "symbols": "Simbol",
-    "about": "Tentang kami",
-    "faq": "Soalan lazim",
+    "about": "Tentang",
+    "faq": "Soalan Lazim",
     "history": "Sejarah",
     "saved": "Disimpan",
     "contact": "Hubungi",
     "start": "Mula",
     "home": "Utama",
     "aiBlog": "Blog AI",
-    "ansyGroup": "Ansy Group",
+    "ansyGroup": "Kumpulan Ansy",
     "language": "Bahasa",
     "searchLanguage": "Cari bahasa…",
-    "noLanguage": "Tiada bahasa sepadan dengan carian anda."
+    "noLanguage": "Tiada bahasa yang sepadan dengan carian anda.",
+    "profile": "Profil"
   },
   "footer": {
-    "tagline": "Tafsir mimpi dengan AI, percuma — berdasarkan tradisi Ibnu Sirin dan psikologi moden.",
+    "tagline": "Tafsiran mimpi AI percuma dalam 60 bahasa — setiap tradisi, lensa anda.",
     "copyright": "© {year} Dreamscope"
   },
   "home": {
     "heroTitle": "Apa yang {accent} anda cuba sampaikan",
-    "heroAccent": "bawah sedar",
-    "heroLede": "Simbolisme kuno, psikologi moden dan AI — digabungkan dalam satu bacaan yang jelas. Ceritakan mimpi anda dengan perkataan sendiri dan terima tafsiran yang berpaksikan Ibnu Sirin dan psikologi mendalam.",
-    "interpretCta": "Tafsirkan mimpi",
-    "browseCta": "Layari simbol",
-    "ctaTitle": "Ceritakan mimpi anda",
-    "ctaButton": "Mula menafsir",
-    "feature3Body": "Depth psychology and perspectives across faiths — one reading, seen through your lens.",
-    "feature4Body": "Your dreams stay on your device by default. Sign in to sync across devices.",
-    "sampleReading": "Snakes mark transformation — something in your life is shedding its old skin. The gate suggests a clear exit is opening. In many traditions, a harmless snake leaving the home often means a lingering worry is finally moving on.",
-    "sampleTag3": "Tradition",
-    "ctaLede": "A few sentences is enough. The reading takes seconds and stays on your device by default."
+    "heroAccent": "alam bawah sedar",
+    "heroLede": "Simbolisme purba, psikologi moden, dan AI — digabungkan menjadi satu bacaan yang jelas. Terangkan mimpi dengan kata-kata anda sendiri dan dapatkan tafsiran melalui tradisi yang anda percayai.",
+    "interpretCta": "Tafsir Mimpi",
+    "browseCta": "Layari Simbol",
+    "statLanguages": "{n} bahasa",
+    "statSymbols": "{n} simbol mimpi",
+    "statPrivateLine": "peribadi pada peranti anda",
+    "whyTitle": "Bacaan yang benar-benar berguna",
+    "whyLede": "Dreamscope memetakan mimpi anda kepada simbolnya, kemudian membacanya melalui tradisi yang anda percayai — dengan psikologi sebagai pendamping, bukan pengganti.",
+    "feature1Title": "Analisis Simbolik",
+    "feature1Body": "Setiap mimpi dipetakan kepada simbol teras dan dijejaki melalui tradisi tafsiran berabad-abad lamanya.",
+    "feature2Title": "60 Bahasa",
+    "feature2Body": "Tafsir dan baca simbol dalam bahasa Inggeris, Arab, Sepanyol, Cina, Jepun, dan 55 bahasa lain.",
+    "feature3Title": "Semua Tradisi",
+    "feature3Body": "Psikologi mendalam dan perspektif merentas agama — satu bacaan, dilihat melalui lensa anda.",
+    "feature4Title": "Disimpan & Peribadi",
+    "feature4Body": "Mimpi anda kekal pada peranti secara lalai. Log masuk untuk segerak merentas peranti.",
+    "sampleTag": "Contoh Bacaan",
+    "sampleJustNow": "tadi",
+    "sampleDream": "\"Saya melihat ular hijau meninggalkan rumah melalui pintu taman.\"",
+    "sampleReading": "Ular menandakan transformasi — sesuatu dalam hidup anda sedang melepaskan kulit lamanya. Pintu menunjukkan bahawa lalu keluar yang jelas sedang terbuka. Dalam banyak tradisi, ular yang tidak berbahaya yang meninggalkan rumah selalunya bermaksud kebimbangan yang berlarutan akhirnya semakin pudar.",
+    "sampleTag1": "Transformasi",
+    "sampleTag2": "Pelepasan",
+    "sampleTag3": "Tradisi",
+    "sampleSaved": "Disimpan pada peranti anda",
+    "symbolsTitle": "Setiap simbol membawa makna",
+    "symbolsLede": "Dari air hingga api, terokai motif mimpi yang paling lazim dan apa yang setiap satunya cenderung isyaratkan merentas tradisi.",
+    "ctaTitle": "Terangkan mimpi anda",
+    "ctaLede": "Beberapa ayat sudah cukup. Bacaan mengambil masa beberapa saat dan kekal pada peranti anda secara lalai.",
+    "ctaButton": "Mula Mentafsir"
   },
   "interpret": {
-    "title": "Ceritakan mimpi anda",
+    "title": "Terangkan mimpi anda",
+    "lede": "Tulis dengan kata-kata anda sendiri. Lebih banyak perincian, lebih tajam bacaannya — suasana, perasaan, dan apa-apa yang luar biasa semuanya penting.",
     "language": "Bahasa",
     "yourDream": "Mimpi anda",
-    "placeholder": "Malam tadi saya bermimpi melalui sebuah pintu yang asyik bertukar bentuk...",
-    "button": "Tafsirkan mimpi"
-  },
-  "common": {
-    "interpretCta": "Tafsirkan mimpi",
-    "backHome": "Kembali ke utama"
+    "placeholder": "Malam tadi saya bermimpi saya berjalan melalui sebuah pintu yang sentiasa berubah bentuk...",
+    "loading": "Mentafsir...",
+    "button": "Tafsir Mimpi",
+    "yourReading": "Bacaan Anda",
+    "save": "Simpan",
+    "saved": "Disimpan",
+    "savedConfirm": "Disimpan ke dalam jurnal anda. Cari ia bila-bila masa di bawah Disimpan.",
+    "unsaved": "Dibuang daripada Disimpan.",
+    "disclaimer": "Refleksi sahaja — bukan nasihat perubatan, psikologi, atau keagamaan. Ia tidak meramalkan masa hadapan.",
+    "viewHistory": "Lihat Sejarah",
+    "errorEmpty": "Sila terangkan mimpi anda dahulu.",
+    "errorFailed": "Tafsiran gagal. Sila cuba lagi.",
+    "errorNetwork": "Ralat sambungan. Sila cuba lagi.",
+    "perspectiveLabel": "Bacaan melalui",
+    "perspNotice": "Setiap tradisi dipaparkan secara berasingan. Bacaan bersifat reflektif dan berkemungkinan — bukan ramalan atau hukum.",
+    "compareLabel": "Bandingkan semua tradisi",
+    "compareDesc": "Satu mimpi, dibaca melalui setiap lensa serentak — lihat di mana tradisi bersetuju dan di mana ia berbeza.",
+    "compareLoading": "Membaca melalui setiap tradisi…",
+    "compareBack": "Kembali ke bacaan tunggal",
+    "compareSymbols": "Simbol",
+    "symbolsLabel": "Simbol dalam mimpi anda",
+    "feedbackQ": "Adakah bacaan ini membantu?",
+    "yes": "Ya, membantu",
+    "no": "Tidak juga",
+    "thanks": "Terima kasih — maklum balas anda menambah baik bacaan akan datang.",
+    "perspectiveDesc": "Satu bacaan yang menganyam utas paling bijak daripada tradisi dunia dengan psikologi mendalam.",
+    "moodLabel": "Bagaimana perasaan mimpi itu?",
+    "copy": "Salin",
+    "copied": "Disalin!",
+    "share": "Kongsi",
+    "example": "Cuba satu contoh",
+    "exampleDream": "Malam tadi saya bermimpi seekor merpati putih mendarat di tingkap saya, kemudian bertukar menjadi surat yang tidak dapat saya baca. Saya berasa tenang tetapi ingin tahu.",
+    "shortcutHint": "Tekan ⌘/Ctrl + Enter untuk mentafsir",
+    "symbolsSection": "Simbol"
   },
   "history": {
     "title": "Sejarah mimpi",
-    "empty": "Belum ada mimpi ditafsirkan."
+    "lede": "Setiap tafsiran yang anda jana, disimpan pada peranti ini.",
+    "empty": "Tiada mimpi yang ditafsir lagi."
   },
   "saved": {
-    "title": "Mimpi disimpan",
-    "empty": "Belum ada yang disimpan."
+    "title": "Mimpi yang disimpan",
+    "lede": "Simpan tafsiran yang menyentuh hati. Ia kekal pada peranti ini.",
+    "empty": "Tiada apa-apa yang disimpan lagi."
+  },
+  "common": {
+    "interpretCta": "Tafsir Mimpi",
+    "delete": "Padam",
+    "remove": "Buang",
+    "confirmRemove": "Buang?",
+    "backHome": "Kembali ke Utama"
   },
   "symbols": {
-    "title": "{n} simbol mimpi",
-    "search": "Cari simbol…"
+    "title": "{n} Simbol Mimpi",
+    "lede": "Layari setiap simbol yang kami tafsir — percuma, dalam puluhan bahasa. Pilih milik anda untuk membaca maknanya.",
+    "search": "Cari simbol…",
+    "noResults": "Tiada simbol yang sepadan dengan carian anda."
+  },
+  "about": {
+    "title": "Bacaan yang jelas, berakar umbi dalam tradisi",
+    "p1": "Dreamscope wujud untuk menjadikan tafsiran mimpi mudah diakses dalam bahasa dan konteks budaya anda sendiri. Kami merangkumi pelbagai tradisi tafsiran — penyelidikan agama dan kerohanian, folklore budaya, dan rangka kerja simbolik psikologi mendalam moden — supaya anda boleh membaca mimpi melalui lensa yang anda percayai.",
+    "p2": "Setiap bacaan dijana untuk membantu anda merenung — bukan untuk meramalkan masa hadapan. Simbol seperti air, api, penerbangan, atau ular telah membawa makna merentas budaya selama ribuan tahun, dan tafsiran kami mengesan utas tersebut supaya anda dapat menemukan apa yang bergema dengan kehidupan anda sendiri.",
+    "p3": "Perkhidmatan ini percuma, peribadi secara reka bentuk, dan tersedia dalam 60 bahasa. Teks mimpi anda dihantar ke perkhidmatan tafsiran kami untuk menjana bacaan, kemudian tidak disimpan oleh kami; bacaan anda kekal pada peranti anda melainkan anda log masuk dan menyegerakkannya.",
+    "card1Title": "Banyak tradisi",
+    "card1Body": "Lensa Islam, Kristian, Yahudi, Hindu, Buddha, Cina, dan psikologi — pilih yang anda percayai.",
+    "card2Title": "60 bahasa",
+    "card2Body": "Dari Arab hingga Jepun — tafsir dalam bahasa yang anda mimpikan.",
+    "card3Title": "100% peribadi",
+    "card3Body": "Bacaan anda kekal pada peranti anda secara lalai. Log masuk hanya untuk segerak; padam bila-bila masa.",
+    "cta": "Mula Mentafsir",
+    "traditionsTitle": "Setiap tradisi, satu mimpi",
+    "traditionsLede": "Pilih lensa yang hati anda percayai — setiap bacaan dijana melalui sekolah tafsiran khusus."
+  },
+  "contact": {
+    "title": "Berhubung",
+    "lede": "Soalan, pembetulan, atau idea perkongsian? Hubungi pasukan Dreamscope melalui e-mel.",
+    "email": "E-mel",
+    "disclaimer": "Dreamscope menyediakan refleksi dan hiburan sahaja. Tafsiran bukan nasihat perubatan, psikologi, atau keagamaan. Jika anda memerlukan sokongan, sila rujuk profesional yang berkelayakan.",
+    "back": "Kembali ke Pentafsir"
+  },
+  "faq": {
+    "title": "Soalan yang kerap ditanya",
+    "q1": "Bagaimanakah Dreamscope mentafsir mimpi?",
+    "a1": "Dreamscope menggabungkan ilmu mimpi daripada banyak budaya dan agama — termasuk tradisi Islam, Kristian, Yahudi, Hindu, Buddha, dan Cina — dengan psikologi mendalam moden. Anda terangkan mimpi dengan kata-kata anda sendiri dan menerima bacaan yang memetakkan simbolnya kepada makna lazim merentas budaya.",
+    "q2": "Adakah data mimpi saya peribadi?",
+    "a2": "Ya. Mimpi anda disimpan hanya dalam storan setempat pelayar pada peranti anda. Tiada apa-apa yang dihantar ke pelayan untuk disimpan, dan anda boleh memadam sejarah anda bila-bila masa.",
+    "q3": "Dalam bahasa apakah saya boleh mentafsir mimpi?",
+    "a3": "Dreamscope menyokong 60 bahasa termasuk bahasa Inggeris, Arab, Sepanyol, Perancis, Jerman, Cina, Jepun, Korea, Turki, Portugis, Rusia, Hindi, dan banyak lagi. Bacaan mengikut bahasa yang anda pilih.",
+    "q4": "Adakah tafsiran ini pengganti nasihat profesional?",
+    "a4": "Tidak. Bacaan mimpi adalah untuk refleksi dan hiburan. Ia bukan bimbingan perubatan, psikologi, atau keagamaan. Jika anda sedang struggles, sila bercakap dengan profesional yang berkelayakan.",
+    "q5": "Berapa banyak simbol mimpi yang diliputi?",
+    "a5": "Dreamscope mempunyai halaman khusus untuk 146 simbol lazim — ular, air, terbang, api, kehamilan, wang, dan banyak lagi — setiap satu tersedia dalam berbilang bahasa dengan variasi soalan ekor panjang."
   },
   "notfound": {
     "title": "Mimpi ini larut",
-    "cta": "Kembali ke utama"
+    "lede": "Halaman yang anda cari tiada di sini. Mari kita bawa anda kembali mentafsir.",
+    "cta": "Kembali ke Utama"
   },
-  "about": {
-    "p1": "Dreamscope exists to make dream interpretation accessible in your own language and cultural context. We draw on a wide range of interpretive traditions — religious and spiritual scholarship, cultural folklore, and the symbolic frameworks of modern depth psychology — so you can read your dream through the lens you trust.",
-    "card1Title": "Many traditions",
-    "card1Body": "Islamic, Christian, Jewish, Hindu, Buddhist, Chinese, and psychological lenses — pick the one you trust."
+  "perspectives": {
+    "general": {
+      "name": "Universal"
+    },
+    "islamic": {
+      "name": "Ibn Sirin (Islam)"
+    },
+    "christian": {
+      "name": "Kristian"
+    },
+    "jewish": {
+      "name": "Yahudi"
+    },
+    "hindu": {
+      "name": "Hindu"
+    },
+    "buddhist": {
+      "name": "Buddha"
+    },
+    "psychology": {
+      "name": "Psikologi (Jung)"
+    },
+    "chinese": {
+      "name": "Zhou Gong (Cina)"
+    }
   },
-  "faq": {
-    "a1": "Dreamscope blends dream scholarship from many cultures and faiths — including Islamic, Christian, Jewish, Hindu, Buddhist, and Chinese traditions — with modern depth psychology. You describe a dream in your own words and receive a reading that maps its symbols to their common meanings across cultures."
+  "daily": {
+    "tag": "Mimpi hari ini"
+  },
+  "profile": {
+    "title": "Ruang anda",
+    "cloudOff": "Teks mimpi anda dihantar ke perkhidmatan tafsiran kami untuk menjana bacaan, kemudian tidak disimpan oleh kami. Bacaan disimpan pada peranti anda melainkan anda log masuk dan memilih untuk segerak. Kami tidak pernah menjual atau memprofilkan data anda.",
+    "dataNote": "Di mana data anda tinggal: peranti anda secara lalai. Apabila anda log masuk, jurnal anda boleh disegerakkan ke akaun peribadi anda; anda boleh memadamkannya bila-bila masa.",
+    "signInLede": "Log masuk untuk menyimpan jurnal mimpi anda merentas semua peranti anda. Sejarah tetamu anda bergerak bersama anda secara automatik.",
+    "emailLabel": "E-mel",
+    "magicLink": "Hantar saya pautan log masuk",
+    "google": "Teruskan dengan Google",
+    "checkEmail": "Periksa peti masuk anda — pautan log masuk sedang menunggu.",
+    "invalidEmail": "Sila masukkan alamat e-mel yang sah.",
+    "signInError": "Kami tidak dapat log masuk anda. Sila cuba lagi atau gunakan pautan e-mel.",
+    "googleNotEnabled": "Log masuk Google belum didayakan pada projek ini lagi. Pemilik tapak perlu menyambungkan klien Google OAuth dalam Supabase.",
+    "guestNote": "Tiada kata laluan, tiada penjejakan — hanya pautan. Mod tetamu dengan storan pada peranti kekal tersedia sepenuhnya.",
+    "member": "Ahli",
+    "migrated": "Berjaya memindahkan {n} mimpi dari peranti ini ke jurnal anda.",
+    "signOut": "Log keluar",
+    "navLabel": "Profil",
+    "lede": "Semua yang Dreamscope tahu tentang perjalanan anda — disimpan pada peranti anda, milik anda sahaja.",
+    "yourState": "Keadaan anda sekarang",
+    "statDreams": "Mimpi yang ditafsir",
+    "statSaved": "Bacaan disimpan",
+    "statStreak": "Rentetan hari",
+    "statTopSymbol": "Simbol utama",
+    "emptyState": "Belum ada mimpi — bacaan pertama anda akan menerangi halaman ini.",
+    "symbolsYouMeet": "Simbol yang sering anda temui",
+    "noneYet": "—",
+    "lastReading": "Bacaan terakhir",
+    "languagesUsed": "Bahasa yang digunakan",
+    "perspectivesUsed": "Tradisi yang digunakan",
+    "cloudTitle": "Merentas peranti anda",
+    "connectTitle": "Sambungkan projek Supabase anda",
+    "connectUrlLabel": "URL Projek",
+    "connectKeyLabel": "Kunci awam anon",
+    "connectCta": "Sambung",
+    "connected": "Disambungkan — anda kini boleh log masuk dan menyegerakkan jurnal anda.",
+    "connectError": "Tidak dapat menyambung. Periksa URL dan kunci anon.",
+    "disconnect": "Putuskan sambungan",
+    "privacyNote": "Mimpi anda disimpan pada peranti anda — tidak pernah dijual, tidak pernah diprofilkan.",
+    "moodPattern": "Corak mood",
+    "autoSetupTitle": "Persediaan satu arahan",
+    "autoSetupBody": "Belum ada projek? Jalankan skrip bootstrap sekali: ia mencipta projek Supabase, menggunakan skema pangkalan data, dan mencetak URL + kunci anon anda untuk ditampal di atas. Log masuk Google memerlukan klien OAuth Google Cloud (lihat skrip).",
+    "autoSetupCmd": "SUPABASE_ACCESS_TOKEN=xxx node scripts/setup-supabase.mjs"
+  },
+  "perspDesc": {
+    "general": "Satu bacaan yang menganyam utas paling bijak daripada tradisi dunia dengan psikologi mendalam.",
+    "islamic": "Sekolah klasik Ibn Sirin — simbolik, syarak, dan berpusatkan jiwa.",
+    "christian": "Bacaan mimpi dalam salasilah Yusuf dan Daniel, dengan simbol skripural.",
+    "jewish": "Kebijaksanaan mimpi Torah dan Talmud — menunggu tafsiran yang bijak.",
+    "hindu": "Simbolisme Vedik, karma, dan landskap dalaman minda.",
+    "buddhist": "Ketidakkekalan dan kesedaran minda — perhatikan mimpi tanpa berpaut.",
+    "psychology": "Arketip Jung dan bayang-bayang — apa yang sedang diproses oleh psyche anda.",
+    "chinese": "Kamus klasik Zhou Gong — keseimbangan yin, yang, dan lima unsur."
+  },
+  "moods": {
+    "peace": "Tenang",
+    "anxiety": "Cemas",
+    "hope": "Berharap",
+    "sadness": "Sedih",
+    "anger": "Marah",
+    "confusion": "Keliru"
+  },
+  "seo": {
+    "dreamInterpretation": "Tafsiran Mimpi",
+    "traditionsTitle": "Merentas tradisi",
+    "traditionsBody": "Simbol boleh membawa makna berbeza dalam budaya berbeza. Dalam tradisi Islam, Kristian, Yahudi, Hindu, Buddha, Cina, dan psikologi, imej yang sama dibaca melalui lensanya sendiri. Pilih lensa yang anda percayai di halaman tafsir.",
+    "tryTitle": "Tafsir Mimpi Anda dengan AI",
+    "tryLede": "Kongsi mimpi anda dan dapatkan tafsiran AI yang diperibadikan.",
+    "otherLangs": "Bahasa Lain",
+    "otherSymbols": "Simbol Mimpi Lain",
+    "reflectNote": "Halaman ini adalah untuk refleksi dan hiburan sahaja. Ia bukan nasihat perubatan, psikologi, atau keagamaan, dan tidak meramalkan masa hadapan."
   }
 }

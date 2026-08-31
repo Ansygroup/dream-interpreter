@@ -13,106 +13,126 @@
     "ansyGroup": "Ansy Group",
     "language": "Valoda",
     "searchLanguage": "Meklēt valodas…",
-    "noLanguage": "Neviena valoda neatbilst jūsu meklējumam.",
+    "noLanguage": "Jūsu meklējumam nav atbilstošu valodu.",
     "profile": "Profils"
   },
   "footer": {
-    "tagline": "Bezmaksas AI sapņu interpretācija, balstīta Ibn Sirīna mācībā un mūsdienu psiholoģijā.",
+    "tagline": "Bezmaksas AI sapņu interpretācija 60 valodās — katra tradīcija, jūsu skatījums.",
     "copyright": "© {year} Dreamscope"
   },
   "home": {
     "heroTitle": "Ko jūsu {accent} mēģina pateikt",
-    "heroAccent": "zemapziņa",
-    "heroLede": "Senā simbolika, mūsdienu psiholoģija un AI — apvienoti vienā skaidrā lasījumā. Aprakstiet sapni saviem vārdiem un saņemiet interpretāciju, kas balstās gan Ibn Sirīna tradīcijā, gan dziļuma psiholoģijā.",
+    "heroAccent": "pasaule",
+    "heroLede": "Senā simbolika, mūsdienu psiholoģija un AI — apvienoti vienā skaidrā lasījumā. Aprakstiet sapni saviem vārdiem un saņemiet interpretāciju caur jums uzticamo tradīciju.",
     "interpretCta": "Interpretēt sapni",
     "browseCta": "Pārlūkot simbolus",
     "statLanguages": "{n} valodas",
     "statSymbols": "{n} sapņu simboli",
     "statPrivateLine": "privāti jūsu ierīcē",
-    "whyTitle": "Lasījums, ko patiešām vari izmantot",
-    "whyLede": "Dreamscope sasaista jūsu sapni ar tās simboliem, tad lasa tos caur tradīciju, kurai uzticaties — ar psiholoģiju līdzās, nevis tās vietā.",
+    "whyTitle": "Lasījums, ko patiešām varat izmantot",
+    "whyLede": "Dreamscope sasaista jūsu sapni ar tā simboliem, pēc tam lasa tos caur jums uzticamo tradīciju — psiholoģija līdzās, nevis tās vietā.",
     "feature1Title": "Simboliskā analīze",
-    "feature1Body": "Katrs sapnis tiek sasaistīts ar tā galvenajiem simboliem un izsekots cauri gadsimtiem ilgajai interpretācijas tradīcijai.",
+    "feature1Body": "Katrs sapnis tiek sasaistīts ar tā pamat simboliem un izsekots caur gadsimtiem ilgu interpretācijas tradīciju.",
     "feature2Title": "60 valodas",
     "feature2Body": "Interpretējiet un lasiet simbolus angļu, arābu, spāņu, ķīniešu, japāņu un vēl 55 valodās.",
     "feature3Title": "Visas tradīcijas",
-    "feature3Body": "Ibn Sirīns, dziļuma psiholoģija un perspektīvas no dažādām ticībām — viens lasījums, skatīts caur jūsu skatpunktu.",
-    "feature4Title": "Saglabāts un privāts",
-    "feature4Body": "Jūsu sapņi paliek jūsu ierīcē. Atgriezieties, salīdziniet un izsekojiet modeļiem laika gaitā.",
+    "feature3Body": "Dzļuma psiholoģija un dažādu ticību perspektīvas — viens lasījums, skatīts caur jūsu skatījumu.",
+    "feature4Title": "Saglabāts un privāti",
+    "feature4Body": "Jūsu sapņi pēc noklusējuma paliek jūsu ierīcē. Pierakstieties, lai sinhronizētu starp ierīcēm.",
     "sampleTag": "Parauga lasījums",
     "sampleJustNow": "tieši tagad",
-    "sampleDream": "\"Es redzēju, kā zaļa čūska pamet māju caur dārza vārtiņiem.\"",
-    "sampleReading": "Čūskas iezīmē pārvērtības — kaut kas jūsu dzīvē nomet veco ādu. Vārti liecina, ka atveras skaidra izeja. Ibn Sirīna tradīcijā nekaitīga čūska, kas pamet māju, bieži nozīmē, ka ilgstoša raizē beidzot aiziet.",
+    "sampleDream": "\"Es redzēju, kā zaļa čūska atstāj māju caur dārza vārtiem.\"",
+    "sampleReading": "Čūskas iezīmē pārvērtības — kaut kas jūsu dzīvē novelk veco ādu. Vārti liecina, ka atveras skaidra izeja. Daudzās tradīcijās nekaitīga čūska, kas pamet māju, bieži nozīmē, ka ilgstoša raizē beidzot aiziet.",
     "sampleTag1": "Pārvērtības",
-    "sampleTag2": "Atbrīvošanās",
-    "sampleTag3": "Ibn Sirīns",
+    "sampleTag2": "Atlaišana",
+    "sampleTag3": "Tradīcija",
     "sampleSaved": "Saglabāts jūsu ierīcē",
     "symbolsTitle": "Katrs simbols nes kādu nozīmi",
-    "symbolsLede": "No ūdens līdz ugunij — izpētiet izplatītākos sapņu motīvus un ko katrs parasti signalizē dažādās tradīcijās.",
+    "symbolsLede": "No ūdens līdz ugunij — izpētiet izplatētākos sapņu motīvus un to, ko katrs parasti signalizē dažādās tradīcijās.",
     "ctaTitle": "Aprakstiet savu sapni",
-    "ctaLede": "Pāris teikumi ir pietiekami. Lasījums aizņem sekundes un paliek jūsu ierīcē.",
+    "ctaLede": "Pāris teikumu pietiek. Lasījums aizņem sekundes un pēc noklusējuma paliek jūsu ierīcē.",
     "ctaButton": "Sākt interpretēt"
   },
   "interpret": {
     "title": "Aprakstiet savu sapni",
-    "lede": "Uzrakstiet to saviem vārdiem. Jo vairāk detaļu, jo asāks lasījums — vide, sajūtas un viss neparastais ir svarīgs.",
+    "lede": "Rakstiet to saviem vārdiem. Jo vairāk detaļu, jo asāks lasījums — vide, sajūtas un viss neparastais ir svarīgs.",
     "language": "Valoda",
     "yourDream": "Jūsu sapnis",
-    "placeholder": "Pagājušajā naktí es sapņoju, ka staigāju caur durvīm, kas nepārtraukti mainīja formu...",
+    "placeholder": "Pagājušo nakti sapņoju, ka eju cauri durvīm, kas nepārtraukti mainīja formu...",
     "loading": "Interpretē...",
     "button": "Interpretēt sapni",
     "yourReading": "Jūsu lasījums",
     "save": "Saglabāt",
+    "saved": "Saglabāts",
+    "savedConfirm": "Saglabāts jūsu dienasgrāmatā. Atrodiet to jebkurā laikā sadaļā Saglabātie.",
+    "unsaved": "Noņemts no Saglabātajiem.",
+    "disclaimer": "Tikai pārdomām — ne medicīnisks, psiholoģisks vai reliģisks padoms. Tas neparedz nākotni.",
     "viewHistory": "Skatīt vēsturi",
     "errorEmpty": "Lūdzu, vispirms aprakstiet savu sapni.",
     "errorFailed": "Interpretācija neizdevās. Lūdzu, mēģiniet vēlreiz.",
     "errorNetwork": "Savienojuma kļūda. Lūdzu, mēģiniet vēlreiz.",
     "perspectiveLabel": "Lasījums caur",
+    "perspNotice": "Katra tradīcija tiek parādīta atsevišķi. Lasījumi ir pārdomu rosinoši un varbūtiski — ne prognozes vai lēmumi.",
+    "compareLabel": "Salīdzināt visas tradīcijas",
+    "compareDesc": "Viens sapnis, lasīts caur katru skatījumu uzreiz — redziet, kur tradīcijas sakrīt un kur atšķiras.",
+    "compareLoading": "Lasījums caur katru tradīciju…",
+    "compareBack": "Atpakaļ uz vienu lasījumu",
+    "compareSymbols": "Simboli",
     "symbolsLabel": "Simboli jūsu sapnī",
     "feedbackQ": "Vai šis lasījums bija noderīgs?",
     "yes": "Jā, noderīgs",
-    "no": "Ne īpaši",
-    "thanks": "Paldies — jūsu atsauksmes uzlabo turpmākos lasījumus.",
-    "perspectiveDesc": "Viens lasījums, kas savij pasaules tradīciju gudrākās diegus ar dziļuma psiholoģiju."
+    "no": "Ne īsti",
+    "thanks": "Paldies — jūsu atsauksme uzlabo turpmākos lasījumus.",
+    "perspectiveDesc": "Viens lasījums, kas saprot gudrākās pasaules tradīciju dzijas ar dziļuma psiholoģiju.",
+    "moodLabel": "Kā jūtas sapnis?",
+    "copy": "Kopēt",
+    "copied": "Nokopēts!",
+    "share": "Dalīties",
+    "example": "Izmēģināt piemēru",
+    "exampleDream": "Pagājušo nakti sapņoju, ka balts balodis nosēdās uz mana loga, tad pārvērtās par vēstuli, ko nevarēju izlasīt. Jutos mierīgs, bet ziņkārīgs.",
+    "shortcutHint": "Nospiediet ⌘/Ctrl + Enter, lai interpretētu",
+    "symbolsSection": "Simboli"
   },
   "history": {
     "title": "Sapņu vēsture",
-    "lede": "Visas interpretācijas, ko esat ģenerējis, saglabātas šajā ierīcē.",
+    "lede": "Katra interpretācija, ko esat ģenerējis, glabāta šajā ierīcē.",
     "empty": "Vēl nav interpretētu sapņu."
   },
   "saved": {
     "title": "Saglabātie sapņi",
-    "lede": "Saglabājiet tās interpretācijas, kas bija svarīgas. Tās paliek šajā ierīcē.",
+    "lede": "Saglabājiet tās interpretācijas, kas bija nozīmīgas. Tās paliek šajā ierīcē.",
     "empty": "Vēl nekas nav saglabāts."
   },
   "common": {
     "interpretCta": "Interpretēt sapni",
     "delete": "Dzēst",
     "remove": "Noņemt",
+    "confirmRemove": "Noņemt?",
     "backHome": "Atgriezties sākumā"
   },
   "symbols": {
     "title": "{n} sapņu simboli",
-    "lede": "Pārlūkojiet katru simbolu, ko interpretējam — bez maksas, desmitiem valodās. Izvēlieties savējo, lai lasītu nozīmi.",
-    "search": "Meklēt simbolu…"
+    "lede": "Pārlūkojiet katru simbolu, ko interpretējam — bez maksas, desmitiem valodu. Izvēlieties savējo, lai lasītu nozīmi.",
+    "search": "Meklēt simbolu…",
+    "noResults": "Jūsu meklējumam nav atbilstoša simbola."
   },
   "about": {
     "title": "Skaidrs lasījums, sakņots tradīcijā",
-    "p1": "Dreamscope pastāv, lai padarītu sapņu interpretāciju pieejamu jūsu dzimtajā valodā. Mēs apvienojam divus izpratnes straumus: klasisko islāma sapņu zinātni, ko pārstāv Ibn Sirīns — viens no ietekmīgākajiem sapņu interpretētājiem vēsturē — un mūsdienu dziļuma psiholoģijas simboliskos ietvarus.",
-    "p2": "Katrs lasījums tiek ģenerēts, lai palīdzētu jums pārdomāt — ne paredzēt nākotni. Simboli kā ūdens, uguns, lidošana vai čūska ir nesuši nozīmi kultūrās tūkstošiem gadu, un mūsu interpretācijas izseko šīs pavedienus, lai jūs atrastu to, kas rezonē ar jūsu paša dzīvi.",
-    "p3": "Pakalpojums ir bezmaksas, pēc dizaina privāts un pieejams 60 valodās. Jūsu sapņi nekad nepamet jūsu ierīci.",
-    "card1Title": "Ibn Sirīns",
-    "card1Body": "Klasiskā islāma sapņu zinātne, izsekota cauri gadsimtu interpretācijas tradīcijai.",
+    "p1": "Dreamscope pastāv, lai padarītu sapņu interpretāciju pieejamu jūsu valodā un kultūras kontekstā. Mēs izmantojam plašu tradīciju klāstu — reliģisku un garīgu mācību, kultūras folkloru un mūsdienu dziļuma psiholoģijas simboliskās sistēmas — lai jūs varētu lasīt savu sapni caur jums uzticamo skatījumu.",
+    "p2": "Katrs lasījums tiek ģenerēts, lai palīdzētu jums pārdomāt — ne prognozēt nākotni. Simboliem kā ūdens, uguns, lidojums vai čūska ir bijusi nozīme kultūrās tūkstošiem gadu, un mūsu interpretācijas izseko šīs dzijas, lai jūs atrastu to, kas rezonē ar jūsu paša dzīvi.",
+    "p3": "Pakalpojums ir bezmaksas, pēc noklusējuma privāts un pieejams 60 valodās. Jūsu sapņa teksts tiek nosūtīts uz mūsu interpretācijas pakalpojumu, lai ģenerētu lasījumu, pēc tam mēs to neglabājam; jūsu lasījumi paliek jūsu ierīcē, ja vien nepiereģistrējaties un nesinhronizējat.",
+    "card1Title": "Daudzas tradīcijas",
+    "card1Body": "Islāma, kristīgā, jūdu, hindu, budistu, ķīniešu un psiholoģiskie skatījumi — izvēlieties jums uzticamo.",
     "card2Title": "60 valodas",
-    "card2Body": "No arābu līdz japāņu — interpretējiet valodā, kurā sapņojat.",
+    "card2Body": "No arābu līdz japāņu — interpretējiet valodā, kādā sapņojat.",
     "card3Title": "100% privāts",
-    "card3Body": "Sapņi paliek jūsu ierīcē. Bez kontiem, bez izsekošanas.",
+    "card3Body": "Jūsu lasījumi pēc noklusējuma paliek jūsu ierīcē. Piereģistrējieties tikai, lai sinhronizētu; dzēst varat jebkurā laikā.",
     "cta": "Sākt interpretēt",
     "traditionsTitle": "Katra tradīcija, viens sapnis",
-    "traditionsLede": "Izvēlieties skatpunktu, kam uzticas jūsu sirds — katrs lasījums tiek ģenerēts caur īpašu interpretācijas skolu."
+    "traditionsLede": "Izvēlieties skatījumu, kam uzticas jūsu sirds — katrs lasījums tiek ģenerēts caur īpašu interpretācijas skolu."
   },
   "contact": {
-    "title": "Sazinieties ar mums",
+    "title": "Sazināties",
     "lede": "Jautājumi, labojumi vai sadarbības idejas? Sazinieties ar Dreamscope komandu pa e-pastu.",
     "email": "E-pasts",
     "disclaimer": "Dreamscope nodrošina tikai pārdomas un izklaidi. Interpretācijas nav medicīnisks, psiholoģisks vai reliģisks padoms. Ja jums nepieciešams atbalsts, lūdzu, konsultējieties ar kvalificētu speciālistu.",
@@ -121,19 +141,19 @@
   "faq": {
     "title": "Bieži uzdotie jautājumi",
     "q1": "Kā Dreamscope interpretē sapņus?",
-    "a1": "Dreamscope apvieno klasisko sapņu zinātni — tostarp Ibn Sirīna tradīciju — ar mūsdienu dziļuma psiholoģiju. Jūs aprakstāt sapni saviem vārdiem un saņemat lasījumu, kas sasaista tā simbolus ar to kopējām nozīmēm kultūrās.",
+    "a1": "Dreamscope apvieno sapņu mācību no daudzām kultūrām un ticībām — islāma, kristīgo, jūdu, hindu, budistu un ķīniešu tradīcijām — ar mūsdienu dziļuma psiholoģiju. Jūs aprakstāt sapni saviem vārdiem un saņemat lasījumu, kas sasaista tā simbolus ar to kopējām nozīmēm dažādās kultūrās.",
     "q2": "Vai mani sapņu dati ir privāti?",
-    "a2": "Jā. Jūsu sapņi tiek glabāti tikai jūsu pārlūkprogrammas lokālajā atmiņā jūsu ierīcē. Nekas netiek sūtīts uz serveri glabāšanai, un jūs jebkurā laikā varat dzēst savu vēsturi.",
+    "a2": "Jā. Jūsu sapņi tiek glabāti tikai jūsu pārlūkprogrammas lokālajā atmiņā jūsu ierīcē. Nekas netiek nosūtīts uz serveri glabāšanai, un jūs varat dzēst savu vēsturi jebkurā laikā.",
     "q3": "Kādās valodās var interpretēt sapņus?",
     "a3": "Dreamscope atbalsta 60 valodas, tostarp angļu, arābu, spāņu, franču, vācu, ķīniešu, japāņu, korejiešu, turku, portugāļu, krievu, hindu un citas. Lasījums seko jūsu izvēlētajai valodai.",
     "q4": "Vai interpretācijas aizstāj profesionālu padomu?",
-    "a4": "Nē. Sapņu lasījumi ir domāti pārdomām un izklaidei. Tie nav medicīniska, psiholoģiska vai reliģiska vadība. Ja jūs cīnāties, lūdzu, runājiet ar kvalificētu speciālistu.",
+    "a4": "Nē. Sapņu lasījumi ir domāti pārdomām un izklaidei. Tie nav medicīniska, psiholoģiska vai reliģiska vadība. Ja jums ir grūtības, lūdzu, runājiet ar kvalificētu speciālistu.",
     "q5": "Cik sapņu simboli ir iekļauti?",
-    "a5": "Dreamscope ir veltītas lapas 146 izplatītiem simboliem — čūska, ūdens, lidošana, uguns, grūtniecība, nauda un daudzi citi — katrs pieejams vairākās valodās ar dažādiem jautājumu variantiem."
+    "a5": "Dreamscope ir veltītas lapas 146 izplatītiem simboliem — čūska, ūdens, lidošana, uguns, grūtniecība, nauda un daudzi citi — katrs pieejams vairākās valodās ar ilgā astes jautājumu variantiem."
   },
   "notfound": {
     "title": "Šis sapnis izkusa",
-    "lede": "Lapa, ko meklējāt, šeit nav. Laiks atgriezties pie interpretēšanas.",
+    "lede": "Lapa, ko meklējāt, te nav. Atgriezīsimies pie interpretēšanas.",
     "cta": "Atgriezties sākumā"
   },
   "perspectives": {
@@ -141,67 +161,99 @@
       "name": "Universāls"
     },
     "islamic": {
-      "name": "Ibn Sirīns (islāma)"
+      "name": "Ibn Sirin (Islāma)"
     },
     "christian": {
-      "name": "Kristietība"
+      "name": "Kristīgā"
     },
     "jewish": {
-      "name": "Jūdaisms"
+      "name": "Jūdu"
     },
     "hindu": {
-      "name": "Hinduisms"
+      "name": "Hindu"
     },
     "buddhist": {
-      "name": "Budisms"
+      "name": "Budistu"
     },
     "psychology": {
       "name": "Psiholoģija (Jungs)"
     },
     "chinese": {
-      "name": "Džou Gungs (ķīniešu)"
+      "name": "Džou Gongs (Ķīniešu)"
     }
   },
   "daily": {
     "tag": "Dienas sapnis"
   },
   "profile": {
-    "title": "Jūsu vieta",
-    "cloudOff": "Konti drīzumā. Līdz tam viss jau darbojas jums kā viesim — jūsu sapņi paliek jūsu ierīcē.",
-    "signInLede": "Pierakstieties, lai saglabātu savu sapņu dienasgrāmatu visās ierīcēs. Jūsu viesa vēsture sekos jums automātiski.",
+    "title": "Jūsu telpa",
+    "cloudOff": "Jūsu sapņa teksts tiek nosūtīts uz mūsu interpretācijas pakalpojumu, lai ģenerētu lasījumu, pēc tam mēs to neglabājam. Lasījumi tiek glabāti jūsu ierīcē, ja vien nepiereģistrējaties un neizvēlaties sinhronizēt. Mēs nekad nepārdodam un neprofilējam jūsu datus.",
+    "dataNote": "Kur dzīvo jūsu dati: pēc noklusējuma jūsu ierīcē. Kad piereģistrējaties, jūsu dienasgrāmata var sinhronizēties ar jūsu privāto kontu; jūs varat to dzēst jebkurā laikā.",
+    "signInLede": "Piereģistrējieties, lai saglabātu savu sapņu dienasgrāmatu visās ierīcēs. Jūsu viesa režīma vēsture pārvietojas automātiski.",
     "emailLabel": "E-pasts",
-    "magicLink": "Nosūtiet man pierakstīšanās saiti",
+    "magicLink": "Nosūtīt man pieteikšanās saiti",
     "google": "Turpināt ar Google",
-    "checkEmail": "Pārbaudiet savu iesūtni — pierakstīšanās saite jūs gaida.",
+    "checkEmail": "Pārbaudiet savu e-pastu — pieteikšanās saiti jūs gaida.",
     "invalidEmail": "Lūdzu, ievadiet derīgu e-pasta adresi.",
-    "guestNote": "Bez paroles, bez izsekošanas — tikai saite. Viesa režīms ar datu glabāšanu ierīcē joprojām ir pilnībā pieejams.",
+    "signInError": "Mēs nevarējām jūs pieteikt. Lūdzu, mēģiniet vēlreiz vai izmantojiet e-pasta saiti.",
+    "googleNotEnabled": "Google pieteikšanās vēl nav iespējota šajā projektā. Vietnes īpašniekam ir jāpieslēdz Google OAuth klients.",
+    "guestNote": "Nav paroles, nav izsekošanas — tikai saite. Viesa režīms ar ierīces glabāšanu joprojām ir pilnībā pieejams.",
     "member": "Dalībnieks",
     "migrated": "Migrēti {n} sapņi no šīs ierīces uz jūsu dienasgrāmatu.",
     "signOut": "Izrakstīties",
     "navLabel": "Profils",
     "lede": "Viss, ko Dreamscope zina par jūsu ceļojumu — glabāts jūsu ierīcē, tikai jūsu.",
-    "yourState": "Jūsu stāvoklis pašlaik",
+    "yourState": "Jūsu pašreizējais stāvoklis",
     "statDreams": "Interpretētie sapņi",
     "statSaved": "Saglabātie lasījumi",
     "statStreak": "Dienu sērija",
-    "statTopSymbol": "Galvenais simbols",
+    "statTopSymbol": "Top simbols",
     "emptyState": "Vēl nav sapņu — jūsu pirmais lasījums izgaismos šo lapu.",
-    "symbolsYouMeet": "Simboli, ar kuriem atkal satiekas",
+    "symbolsYouMeet": "Simboli, ko jūs atkal satiekat",
     "noneYet": "—",
     "lastReading": "Pēdējais lasījums",
     "languagesUsed": "Izmantotās valodas",
     "perspectivesUsed": "Izmantotās tradīcijas",
-    "cloudTitle": "Pāri jūsu ierīcēm",
-    "privacyNote": "Jūsu sapņi tiek glabāti jūsu ierīcē — nekad netiek pārdoti, nekad netiek profilēti."
+    "cloudTitle": "Starp jūsu ierīcēm",
+    "connectTitle": "Pievienojiet savu Supabase projektu",
+    "connectUrlLabel": "Projekta URL",
+    "connectKeyLabel": "Anonīmā publiskā atslēga",
+    "connectCta": "Pievienot",
+    "connected": "Pievienots — tagad varat pieteikties un sinhronizēt savu dienasgrāmatu.",
+    "connectError": "Nevarēja pievienot. Pārbaudiet URL un anonīmo atslēgu.",
+    "disconnect": "Atvienot",
+    "privacyNote": "Jūsu sapņi tiek glabāti jūsu ierīcē — nekad netiek pārdoti, nekad netiek profileti.",
+    "moodPattern": "Noskaņojuma modelis",
+    "autoSetupTitle": "Vienas komandas uzstādīšana",
+    "autoSetupBody": "Vēl nav projekta? Palaidiet bootstrap skriptu vienu reizi: tas izveido Supabase projektu, piemēro datu bāzes shēmu un izdrukā jūsu URL + anonīmo atslēgu, ko ielīmēt iepriekš. Google pieteikšanās nepieciešama Google Cloud OAuth klients (skatiet skriptu).",
+    "autoSetupCmd": "SUPABASE_ACCESS_TOKEN=xxx node scripts/setup-supabase.mjs"
   },
   "perspDesc": {
-    "general": "Viens lasījums, kas savij pasaules tradīciju gudrākās diegus ar dziļuma psiholoģiju.",
-    "islamic": "Klasiskā Ibn Sirīna skola — simboliska, likumīga un uz dvēseli centrēta.",
-    "christian": "Sapņu lasījums Jāzepa un Daniēla tradīcijā, ar svēto rakstu simboliku.",
-    "jewish": "Torah un Talmuda sapņu gudrība — vēstījums, kas gaida saprātīgu interpretāciju.",
-    "hindu": "Vēdu simbolika, karma un prāta iekšējās ainavas.",
-    "buddhist": "Nepastāvība un apzināta uzmanība — vērojiet sapni bez satveršanas.",
-    "psychology": "Junga arhetipi un ēna — ko jūsu psihe apstrādā.",
-    "chinese": "Džou Gunga klasiskā vārdnīca — iņ, jaņ un piecu elementu līdzsvars."
+    "general": "Viens lasījums, kas savij pasaules tradīciju gudrākās dzijas ar dziļuma psiholoģiju.",
+    "islamic": "Ibn Sirin klasiskā skola — simboliska, likumīga un uz dvēseli vērsta.",
+    "christian": "Sapņu lasīšana Jāzepa un Daniela tradīcijā, ar svēto rakstu simboliku.",
+    "jewish": "Torah un Talmūda sapņu gudrība — vēsts, kas gaida gudru interpretāciju.",
+    "hindu": "Vēdiskā simbolika, karma un prāta iekšējās ainavas.",
+    "buddhist": "Nepastāvība un apzināta modrība — novērojiet sapni bez pieķeršanās.",
+    "psychology": "Junga arhetipi un ēna — to, ko jūsu psihe apstrādā.",
+    "chinese": "Džou Gonga klasiskā vārdnīca — in, jan un piecu elementu līdzsvars."
+  },
+  "moods": {
+    "peace": "Mierīgs",
+    "anxiety": "Trauksmainīgs",
+    "hope": "Cerīgs",
+    "sadness": "Skumjš",
+    "anger": "Dusmīgs",
+    "confusion": "Sajaukts"
+  },
+  "seo": {
+    "dreamInterpretation": "Sapņu interpretācija",
+    "traditionsTitle": "Dažādās tradīcijās",
+    "traditionsBody": "Simbols dažādās kultūrās var nozīmēt dažādas lietas. Islāma, kristīgajā, jūdu, hindu, budistu, ķīniešu un psiholoģiskajās tradīcijās tas pats tēls tiek lasīts caur sava skatījumu. Izvēlieties jums uzticamo skatījumu interpretācijas lapā.",
+    "tryTitle": "Interpretējiet savus sapņus ar AI",
+    "tryLede": "Dalieties ar savu sapni un saņemiet personalizētu AI interpretāciju.",
+    "otherLangs": "Citas valodas",
+    "otherSymbols": "Citi sapņu simboli",
+    "reflectNote": "Šī lapa ir domāta tikai pārdomām un izklaidei. Tā nav medicīnisks, psiholoģisks vai reliģisks padoms, un tā neparedz nākotni."
   }
 }

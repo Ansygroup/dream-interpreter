@@ -17,10 +17,10 @@ const LANG_NAMES = {
   ur: 'Urdu', hi: 'Hindi', bn: 'Bengali', pa: 'Punjabi', ta: 'Tamil',
   te: 'Telugu', th: 'Thai', vi: 'Vietnamese', id: 'Indonesian', ms: 'Malay',
   fil: 'Filipino', sw: 'Swahili', am: 'Amharic', ha: 'Hausa', yo: 'Yoruba',
-  zu: 'Zulu', af: 'Afrikaans', ka: 'Georgian', hy: 'Armenian',
-  az: 'Azerbaijani', kk: 'Kazakh', uz: 'Uzbek', ne: 'Nepali', si: 'Sinhala',
-  km: 'Khmer', my: 'Burmese', mn: 'Mongolian',
-};
+ zu: 'Zulu', af: 'Afrikaans', ka: 'Georgian', hy: 'Armenian',
+ az: 'Azerbaijani', kk: 'Kazakh', uz: 'Uzbek', ne: 'Nepali', si: 'Sinhala',
+ km: 'Khmer', my: 'Burmese', mn: 'Mongolian', lt: 'Lithuanian', lo: 'Lao',
+ };
 
 const FREE_MODELS = [
   'z-ai/glm-5.2:free',

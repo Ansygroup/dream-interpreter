@@ -8,3 +8,6 @@ dist
 # deploy idempotency markers (local only)
 .deploy-sha
 .di-deployed-sha
+
+# temp supabase anon key (never commit)
+.supa-anon.tmp

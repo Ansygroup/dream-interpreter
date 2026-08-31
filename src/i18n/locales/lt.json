@@ -17,13 +17,13 @@
     "profile": "Profilis"
   },
   "footer": {
-    "tagline": "Free AI dream interpretation in 60 languages — every tradition, your lens.",
+    "tagline": "Nemokamas AI sapnų aiškinimas 60 kalbų — kiekviena tradicija, jūsų požiūris.",
     "copyright": "© {year} Dreamscope"
   },
   "home": {
     "heroTitle": "Ką jūsų {accent} bando pasakyti",
     "heroAccent": "pasąmonė",
-    "heroLede": "Ancient symbolism, modern psychology, and AI — combined into one clear reading. Describe a dream in your own words and get an interpretation through the tradition you trust.",
+    "heroLede": "Senovės simbolika, šiuolaikinė psichologija ir dirbtinis intelektas — sujungta į vieną aiškų aiškinimą. Apibūdinkite sapną savais žodžiais ir gaukite interpretaciją per jums artimiausią tradiciją.",
     "interpretCta": "Interpretuoti sapną",
     "browseCta": "Peržiūrėti simbolius",
     "statLanguages": "{n} kalbų",
@@ -36,16 +36,16 @@
     "feature2Title": "60 kalbų",
     "feature2Body": "Interpretuokite ir skaitykite simbolius anglų, arabų, ispanų, kinų, japonų kalbomis ir dar 55 kalbomis.",
     "feature3Title": "Visos tradicijos",
-    "feature3Body": "Depth psychology and perspectives across faiths — one reading, seen through your lens.",
+    "feature3Body": "Gylio psichologija ir įvairių tikėjimų požiūriai — viena interpretacija, matoma pro jūsų prizmę.",
     "feature4Title": "Išsaugota ir privatu",
     "feature4Body": "Jūsų sapnai lieka jūsų įrenginyje. Sugrįžkite, palyginkite ir sekite dėsningumus laikui bėgant.",
     "sampleTag": "Pavyzdinis aiškinimas",
     "sampleJustNow": "ką tik",
     "sampleDream": "„Mačiau, kaip žalia gyvatė išėjo iš namo pro sodo vartelius.“",
-    "sampleReading": "Snakes mark transformation — something in your life is shedding its old skin. The gate suggests a clear exit is opening. In many traditions, a harmless snake leaving the home often means a lingering worry is finally moving on.",
+    "sampleReading": "Gyvatės žymi transformaciją — kažkas jūsų gyvenime meta seną odą. Vartai rodo, kad atsiveria aiški išeitis. Daugelyje tradicijų nekenksminga gyvatė, paliekanti namus, dažnai reiškia, kad ilgai kamavęs rūpestis pagaliau iškeliauja.",
     "sampleTag1": "Transformacija",
     "sampleTag2": "Išsiskyrimas",
-    "sampleTag3": "Tradition",
+    "sampleTag3": "Tradicija",
     "sampleSaved": "Išsaugota jūsų įrenginyje",
     "symbolsTitle": "Kiekvienas simbolis turi prasmę",
     "symbolsLede": "Nuo vandens iki ugnies — atraskite dažniausius sapnų motyvus ir ką kiekvienas linkęs reikšti įvairiose tradicijose.",
@@ -73,7 +73,25 @@
     "yes": "Taip, naudingas",
     "no": "Nelabai",
     "thanks": "Ačiū — jūsų atsiliepimas pagerins būsimus aiškinimus.",
-    "perspectiveDesc": "Vienas aiškinimas, kuriame persipina išmintingiausi pasaulio tradicijų siūlai su gelmės psichologija."
+    "perspectiveDesc": "Vienas aiškinimas, kuriame persipina išmintingiausi pasaulio tradicijų siūlai su gelmės psichologija.",
+    "saved": "Išsaugota",
+    "savedConfirm": "Išsaugota jūsų žurnale. Rasite bet kada skiltyje „Išsaugota“.",
+    "unsaved": "Pašalinta iš „Saved“.",
+    "disclaimer": "Tik apmąstymai — tai nėra medicininė, psichologinė ar religinė konsultacija. Ji neprognozuoja ateities.",
+    "perspNotice": "Kiekviena tradicija rodoma atskirai. Interpretacijos yra apmąstančios ir tikimybinės — tai ne pranašystės ar sprendimai.",
+    "compareLabel": "Palyginkite visas tradicijas",
+    "compareDesc": "Viena svajonė, perskaityta per kiekvieną tradiciją iš karto — pamatykite, kur jos sutaria ir kur skiriasi.",
+    "compareLoading": "Skaitome per visas tradicijas…",
+    "compareBack": "Grįžti prie vieno aiškinimo",
+    "compareSymbols": "Simboliai",
+    "moodLabel": "Kaip jautėtės sapne?",
+    "copy": "Kopijuoti",
+    "copied": "Nukopijuota!",
+    "example": "Pabandykite pavyzdį",
+    "exampleDream": "Praėjusią naktį sapnavau, kad ant mano lango nutūpė baltas balandis, kuris paskui virto laišku, kurio negalėjau perskaityti. Jaučiausi rami, bet smalsi.",
+    "shortcutHint": "Paspauskite ⌘/Ctrl + Enter, kad interpretuotumėte",
+    "symbolsSection": "Simboliai",
+    "share": "Dalintis"
   },
   "history": {
     "title": "Sapnų istorija",
@@ -89,19 +107,21 @@
     "interpretCta": "Interpretuoti sapną",
     "delete": "Ištrinti",
     "remove": "Pašalinti",
-    "backHome": "Grįžti į pradžią"
+    "backHome": "Grįžti į pradžią",
+    "confirmRemove": "Pašalinti?"
   },
   "symbols": {
     "title": "{n} sapnų simboliai",
     "lede": "Peržiūrėkite visus simbolius, kuriuos interpretuojame — nemokamai, dešimtimis kalbų. Pasirinkite savo kalbą ir skaitykite reikšmę.",
-    "search": "Ieškoti simbolio…"
+    "search": "Ieškoti simbolio…",
+    "noResults": "Nėra simbolių, atitinkančių jūsų paiešką."
   },
   "about": {
     "title": "Aiškus aiškinimas, įsišaknijęs tradicijoje",
-    "p1": "Dreamscope exists to make dream interpretation accessible in your own language and cultural context. We draw on a wide range of interpretive traditions — religious and spiritual scholarship, cultural folklore, and the symbolic frameworks of modern depth psychology — so you can read your dream through the lens you trust.",
+    "p1": "Dreamscope siekia padaryti sapnų aiškinimą prieinamą jūsų kalba ir kultūriniame kontekste. Mes remiamės įvairiomis aiškinimo tradicijomis – religine ir dvasine mintimi, kultūriniu folkloru bei modernios gylio psichologijos simboliniais modeliais – kad galėtumėte savo sapną perskaityti per jums artimą prizmę.",
     "p2": "Kiekvienas aiškinimas generuojamas tam, kad padėtų jums apmąstyti — o ne nuspėti ateitį. Tokie simboliai kaip vanduo, ugnis, skrydis ar gyvatė tūkstančius metų nešė prasmę įvairiose kultūrose, o mūsų interpretacijos atseka tas gijas, kad rastumėte tai, kas rezonuoja su jūsų gyvenimu.",
     "p3": "Paslauga nemokama, privati pagal dizainą ir prieinama 60 kalbų. Jūsų sapnai niekada nepalieka jūsų įrenginio.",
-    "card1Title": "Many traditions",
+    "card1Title": "Daugelis tradicijų",
     "card1Body": "Klasikinė islamiškoji sapnų hermeneutika, atsekama per šimtmečių interpretavimo tradiciją.",
     "card2Title": "60 kalbų",
     "card2Body": "Nuo arabų iki japonų — interpretuokite ta kalba, kuria sapnuojate.",
@@ -121,7 +141,7 @@
   "faq": {
     "title": "Dažniausiai užduodami klausimai",
     "q1": "Kaip Dreamscope interpretuoja sapnus?",
-    "a1": "Dreamscope blends dream scholarship from many cultures and faiths — including Islamic, Christian, Jewish, Hindu, Buddhist, and Chinese traditions — with modern depth psychology. You describe a dream in your own words and receive a reading that maps its symbols to their common meanings across cultures.",
+    "a1": "Dreamscope sujungia svajonių tyrinėjimo žinias iš daugelio kultūrų ir tikėjimų — įskaitant islamo, krikščionių, judėjų, induistų, budistų bei kinų tradicijas — su šiuolaikine gylio psichologija. Apibūdinkite savo svajonę savais žodžiais ir gaukite aiškinimą, kuriame jos simboliai susiejami su bendromis reikšmėmis įvairiose kultūrose.",
     "q2": "Ar mano sapnų duomenys yra privatūs?",
     "a2": "Taip. Jūsų sapnai saugomi tik jūsų naršyklės vietinėje saugykloje įrenginyje. Nieko nesiunčiama į serverį saugojimui, o istoriją galite bet kada ištrinti.",
     "q3": "Kokiomis kalbomis galima interpretuoti sapnus?",
@@ -192,7 +212,21 @@
     "languagesUsed": "Naudojamos kalbos",
     "perspectivesUsed": "Naudojamos tradicijos",
     "cloudTitle": "Visuose jūsų įrenginiuose",
-    "privacyNote": "Jūsų sapnai saugomi jūsų įrenginyje — niekada neparduodami, niekada neapdorojami profilavimui."
+    "privacyNote": "Jūsų sapnai saugomi jūsų įrenginyje — niekada neparduodami, niekada neapdorojami profilavimui.",
+    "dataNote": "Kur saugomi jūsų duomenys: pagal numatymą – jūsų įrenginyje. Prisijungus, jūsų žurnalas gali sinchronizuotis su privačia paskyra; bet kada galite jį ištrinti.",
+    "googleNotEnabled": "Google prisijungimas šiame projekte dar neįjungtas. Svetainės savininkas turi prijungti „Google OAuth“ klientą „Supabase“.",
+    "connectTitle": "Prijunkite savo Supabase projektą",
+    "connectUrlLabel": "Projekto nuoroda",
+    "connectKeyLabel": "Anonimo viešasis raktas",
+    "connectCta": "Prisijungti",
+    "connected": "Prijungta — dabar galite prisijungti ir sinchronizuoti savo dienoraštį.",
+    "connectError": "Nepavyko prisijungti. Patikrinkite URL ir anoniminį raktą.",
+    "disconnect": "Atsijungti",
+    "moodPattern": "Nuotaikos raštas",
+    "autoSetupTitle": "Vieno mygtuko sąranka",
+    "autoSetupBody": "Dar neturi projekto? Paleisk parengties scenarijų vieną kartą: jis sukurs Supabase projektą, pritaikys duomenų bazės schemą ir atspausdins tavo URL + anon raktą, kurį galėsi įklijuoti aukščiau. Google prisijungimui reikalingas „Google Cloud“ OAuth klientas (žr. scenarijų).",
+    "autoSetupCmd": "SUPABASE_ACCESS_TOKEN=xxx node scripts/setup-supabase.mjs",
+    "signInError": "Nepavyko jūsų prijungti. Bandykite dar kartą arba pasinaudokite el. pašto nuoroda."
   },
   "perspDesc": {
     "general": "Vienas aiškinimas, kuriame persipina išmintingiausi pasaulio tradicijų siūlai su gelmės psichologija.",
@@ -203,5 +237,23 @@
     "buddhist": "Nepastovumas ir sąmoningas dėmesys — stebėkite sapną jo nesulaikydami.",
     "psychology": "Jungo archetipai ir šešėlis — ką jūsų psichika apdoroja.",
     "chinese": "Džou Gongo klasikiniai žodynai — jino, jango ir penkių elementų pusiausvyra."
+  },
+  "moods": {
+    "peace": "Ramus",
+    "anxiety": "Nerimastingas",
+    "hope": "Viltiningas",
+    "anger": "Piktas",
+    "confusion": "Sumišęs",
+    "sadness": "Liūdesys"
+  },
+  "seo": {
+    "dreamInterpretation": "Sapnų interpretacija",
+    "traditionsTitle": "Per tradicijas",
+    "traditionsBody": "Simbolis gali reikšti skirtingus dalykus skirtingose kultūrose. Islamo, krikščionių, žydų, induistų, budistų, kinų ir psichologijos tradicijose tas pats vaizdas aiškinamas per skirtingą prizmę. Pasirinkite prizmę, kuria pasitiki, aiškinimo puslapyje.",
+    "tryTitle": "Aišpinkite savo sapnus su dirbtiniu intelektu",
+    "tryLede": "Pasidalykite savo sapnu ir gaukite asmeninę AI interpretaciją.",
+    "otherLangs": "Kitos kalbos",
+    "reflectNote": "Šis puslapis skirtas tik apmąstymams ir pramogai. Tai nėra medicinos, psichologijos ar religinis patarimas, ir jis neprognozuoja ateities.",
+    "otherSymbols": "Kiti sapnų simboliai"
   }
 }

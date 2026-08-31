@@ -23,6 +23,7 @@ const localesDir = join(root, 'src', 'i18n', 'locales');
 const args = process.argv.slice(2);
 const only = args.find((a) => a.startsWith('--only='))?.split('=')[1]?.split(',').map((s) => s.trim());
 const base = args.find((a) => a.startsWith('--base='))?.split('=')[1] || BASE;
+const fast = args.includes('--fast');
 
 const source = JSON.parse(readFileSync(join(localesDir, 'en.json'), 'utf8'));
 const flatten = (obj, prefix = '') =>
@@ -46,27 +47,31 @@ const targets = only && only.length
   ? only.filter((c) => c !== 'en' && c !== 'ar')
   : flat.map(() => '').concat(); // noop default; require --only
 
-async function translateOne(code, key, value, context) {
-  for (let attempt = 1; attempt <= 5; attempt++) {
+async function translateOne(code, key, value, context, fast) {
+  const maxAttempts = fast ? 2 : 5;
+  const fetchTimeout = fast ? 5000 : 25000;
+  const retrySleep = fast ? 300 : 2000;
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
     try {
       const r = await fetch(`${base}/api/translate-one`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ code, key, value, context }),
-        signal: AbortSignal.timeout(25000),
+        signal: AbortSignal.timeout(fetchTimeout),
       });
-      if (!r.ok) { await sleep(2000 * attempt); continue; }
+      if (!r.ok) { await sleep(retrySleep * attempt); continue; }
       const data = await r.json();
-      if (!data?.translation) { await sleep(2000 * attempt); continue; }
+      if (!data?.translation) { await sleep(retrySleep * attempt); continue; }
       // Placeholder sanity
       if (ph(value) !== ph(data.translation)) {
+        if (fast) return null; // in fast mode, skip on placeholder mismatch
         console.log(`   ⚠ ${key}: placeholder mismatch, retrying`);
         await sleep(1500);
         continue;
       }
       return data.translation;
     } catch (e) {
-      await sleep(2000 * attempt);
+      await sleep(retrySleep * attempt);
     }
   }
   return null;
@@ -99,7 +104,7 @@ for (const code of targets) {
       if (isReal && ph(v) === ph(value)) { skipped++; continue; }
       if (looksUntranslatable) { skipped++; continue; }
     }
-    const t = await translateOne(code, key, value, `Section: ${key.split('.')[0]}`);
+    const t = await translateOne(code, key, value, `Section: ${key.split('.')[0]}`, fast);
     if (t) {
       // API returned identity (same as source) for untranslatable tokens like brand
       // names, copyright notices, em-dashes, or technical commands — accept as done
@@ -115,7 +120,7 @@ for (const code of targets) {
       writeFileSync(outPath, JSON.stringify(partial, null, 2) + '\n', 'utf8');
       console.log(`   …${done} done, ${failed} failed (saved partial)`);
     }
-    await sleep(120); // gentle pacing
+    await sleep(fast ? 20 : 120); // gentle pacing (fast: 20ms, normal: 120ms)
   }
   const final = unflatten([...existingFlat.entries()]);
   writeFileSync(outPath, JSON.stringify(final, null, 2) + '\n', 'utf8');

@@ -213,7 +213,10 @@
     "connectError": "Could not connect. Check the URL and anon key.",
     "disconnect": "Disconnect",
     "privacyNote": "Your dreams are stored on your device — never sold, never profiled.",
-    "moodPattern": "Mood pattern"
+    "moodPattern": "Mood pattern",
+    "autoSetupTitle": "One-command setup",
+    "autoSetupBody": "No project yet? Run the bootstrap script once: it creates a Supabase project, applies the database schema, and prints your URL + anon key to paste above. Google sign-in needs a Google Cloud OAuth client (see the script).",
+    "autoSetupCmd": "SUPABASE_ACCESS_TOKEN=xxx node scripts/setup-supabase.mjs"
   },
   "perspDesc": {
     "general": "One reading that weaves the wisest threads of world traditions with depth psychology.",

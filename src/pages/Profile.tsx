@@ -191,6 +191,13 @@ export default function Profile() {
                   {t('profile.cloudOff')}
                 </p>
               </div>
+              <details style={{ maxWidth: 460 }}>
+                <summary style={{ cursor: 'pointer', fontSize: 13.5, color: 'var(--muted)' }}>⚙ {t('profile.autoSetupTitle')}</summary>
+                <div className="card" style={{ marginTop: 12 }}>
+                  <p style={{ color: 'var(--muted)', fontSize: 13.5, lineHeight: 1.7, marginBottom: 12 }}>{t('profile.autoSetupBody')}</p>
+                  <code style={{ display: 'block', fontSize: 12, color: 'var(--accent)', background: 'var(--surface-2)', padding: '10px 12px', borderRadius: 8, wordBreak: 'break-all' }}>{t('profile.autoSetupCmd')}</code>
+                </div>
+              </details>
             </div>
           )}
 

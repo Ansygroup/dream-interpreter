@@ -53,9 +53,21 @@ const unflatten = (pairs) => {
 };
 const ph = (s) => (String(s).match(/\{[\w.]+\}/g) || []).sort().join(',');
 
+const isEnFallback = (obj) => {
+  const t = (obj?.footer?.tagline) || '';
+  return t.startsWith('Free AI dream') || t === '';
+};
 const targets = all.filter((l) => {
   if (l.code === 'en' || l.code === 'ar') return false;
   if (only && !only.includes(l.code)) return false;
+  // Skip already-real translations unless --all is passed (saves OpenRouter quota
+  // for stubborn locales and avoids re-translating polished files each cron tick).
+  if (!process.argv.includes('--all')) {
+    try {
+      const existing = JSON.parse(readFileSync(join(localesDir, `${l.code}.json`), 'utf8'));
+      if (!isEnFallback(existing)) return false;
+    } catch {}
+  }
   return true;
 });
 

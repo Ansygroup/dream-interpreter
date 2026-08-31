@@ -112,5 +112,10 @@
     "title": "Giấc mơ này đã tan biến",
     "lede": "Trang bạn tìm không có ở đây. Quay lại giải mã thôi.",
     "cta": "Về trang chủ"
+  },
+  "about": {
+    "p1": "Dreamscope exists to make dream interpretation accessible in your own language and cultural context. We draw on a wide range of interpretive traditions — religious and spiritual scholarship, cultural folklore, and the symbolic frameworks of modern depth psychology — so you can read your dream through the lens you trust.",
+    "card1Title": "Many traditions",
+    "card1Body": "Islamic, Christian, Jewish, Hindu, Buddhist, Chinese, and psychological lenses — pick the one you trust."
   }
 }

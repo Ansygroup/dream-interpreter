@@ -26,7 +26,12 @@
     "interpretCta": "Vertolk 'n droom",
     "browseCta": "Verken simbole",
     "ctaTitle": "Beskryf jou droom",
-    "ctaButton": "Begin vertolk"
+    "ctaButton": "Begin vertolk",
+    "feature3Body": "Depth psychology and perspectives across faiths — one reading, seen through your lens.",
+    "feature4Body": "Your dreams stay on your device by default. Sign in to sync across devices.",
+    "sampleReading": "Snakes mark transformation — something in your life is shedding its old skin. The gate suggests a clear exit is opening. In many traditions, a harmless snake leaving the home often means a lingering worry is finally moving on.",
+    "sampleTag3": "Tradition",
+    "ctaLede": "A few sentences is enough. The reading takes seconds and stays on your device by default."
   },
   "interpret": {
     "title": "Beskryf jou droom",
@@ -54,5 +59,13 @@
   "notfound": {
     "title": "Hierdie droom het opgelos",
     "cta": "Terug huis toe"
+  },
+  "about": {
+    "p1": "Dreamscope exists to make dream interpretation accessible in your own language and cultural context. We draw on a wide range of interpretive traditions — religious and spiritual scholarship, cultural folklore, and the symbolic frameworks of modern depth psychology — so you can read your dream through the lens you trust.",
+    "card1Title": "Many traditions",
+    "card1Body": "Islamic, Christian, Jewish, Hindu, Buddhist, Chinese, and psychological lenses — pick the one you trust."
+  },
+  "faq": {
+    "a1": "Dreamscope blends dream scholarship from many cultures and faiths — including Islamic, Christian, Jewish, Hindu, Buddhist, and Chinese traditions — with modern depth psychology. You describe a dream in your own words and receive a reading that maps its symbols to their common meanings across cultures."
   }
 }

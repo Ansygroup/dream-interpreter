@@ -14,26 +14,45 @@ const LANGS = [
   { code: 'ja', label: '日本語' }, { code: 'ko', label: '한국어' },
   { code: 'tr', label: 'Türkçe' }, { code: 'hi', label: 'हिंदी' },
   { code: 'it', label: 'Italiano' },
+  { code: 'el', label: 'Ελληνικά' }, { code: 'km', label: 'ខ្មែរ' },
+  { code: 'lt', label: 'Lietuvių' },
 ];
 
-/** Does a symbol match the query across slug + localized names + aliases? */
+/** Does a symbol match the query across slug + localized names + aliases?
+ *  Searches ALL string fields on the entry (en, ar, el, km, lt, and any
+ *  other locale key that has been self-healed). */
 function matches(slug: string, q: string): boolean {
   if (!q) return true;
   const query = q.trim().toLowerCase();
   if (slug.includes(query)) return true;
   const names = SYMBOL_NAMES[slug];
   if (!names) return false;
-  if (names.en.toLowerCase().includes(query)) return true;
-  if (names.ar.includes(q.trim())) return true; // Arabic exact substring
-  if (names.ar.toLowerCase().includes(query)) return true;
+  // Search every string field on the entry (en, ar, and any locale key)
+  for (const [key, val] of Object.entries(names)) {
+    if (key === 'aliases' || val == null) continue;
+    const s = String(val);
+    if (s.toLowerCase().includes(query)) return true;
+  }
   if (names.aliases?.some((a) => a.toLowerCase().includes(query))) return true;
   return false;
 }
 
-/** Localized display label for a symbol, falling back to the slug. */
+/** Localized display label for a symbol, falling back to slug.
+ *  Tries the requested locale first, then en, then ar, then the first
+ *  available locale, then the slug. */
 function displayName(slug: string, lang: string): string {
   const names = SYMBOL_NAMES[slug];
-  if (names) return lang === 'ar' ? names.ar : names.en;
+  if (!names) return slug.replace(/_/g, ' ');
+  // Direct match (en, ar, or any locale key)
+  const direct = (names as Record<string, string | string[] | undefined>)[lang];
+  if (typeof direct === 'string' && direct) return direct;
+  // Try en, then ar
+  if (names.en) return names.en;
+  if (names.ar) return names.ar;
+  // First non-aliases string value
+  for (const [key, val] of Object.entries(names)) {
+    if (key !== 'aliases' && typeof val === 'string' && val) return val;
+  }
   return slug.replace(/_/g, ' ');
 }
 

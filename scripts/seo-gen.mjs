@@ -1132,6 +1132,17 @@ try {
 
 const dataJson = JSON.stringify({ BASE, LANGS, SYM, QUESTIONS, SCENARIOS, CSS });
 fs.writeFileSync(path.join(process.cwd(), 'api', 'seo-data.json'), dataJson);
+// Also expose it as a static asset so /api/seo-data.json can be served without
+// invoking the serverless function (Vercel static files are CDN-cached and
+// cheaper than function invocations). Vite copies everything in /public
+// verbatim into the deploy output.
+try {
+  const publicApiDir = path.join(process.cwd(), 'public', 'api');
+  fs.mkdirSync(publicApiDir, { recursive: true });
+  fs.writeFileSync(path.join(publicApiDir, 'seo-data.json'), dataJson);
+} catch (e) {
+  console.warn('Failed to copy seo-data.json to public/api:', e.message);
+}
 
 // Generate branded OG images (SVG) per symbol for social share cards
 const ogDir = path.join(process.cwd(), 'public', 'og');

@@ -9,11 +9,13 @@ export interface SymbolName {
   ar: string;
   /** Extra search aliases (any language) — lowercased at query time. */
   aliases?: string[];
+  /** Per-locale translations. Optional, only set for locales that have been translated. */
+  [locale: string]: string | string[] | undefined;
 }
 
 export const SYMBOL_NAMES: Record<string, SymbolName> = {
   airplane: { en: 'airplane', ar: 'طائرة', aliases: ['plane', 'aeroplane', 'طيارة'] },
-  ambulance: { en: 'ambulance', ar: 'إسعاف', aliases: ['سيارة إسعاف'] },
+  ambulance: { en: 'ambulance', ar: 'إسعاف', el: 'ασθενοφόρο', lt: 'greitoji', aliases: ['سيارة إسعاف'] },
   arm: { en: 'arm', ar: 'ذراع', aliases: ['يد', 'ساعد'] },
   baby: { en: 'baby', ar: 'رضيع', aliases: ['infant', 'طفل', 'مولود'] },
   back: { en: 'back', ar: 'ظهر' },

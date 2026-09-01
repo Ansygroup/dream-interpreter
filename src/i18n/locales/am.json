@@ -10,10 +10,11 @@
     "start": "ጀምር",
     "home": "መነሻ",
     "aiBlog": "AI ብሎግ",
-    "ansyGroup": "Ansy Group",
+    "ansyGroup": "አንሲ ቡድን",
     "language": "ቋንቋ",
     "searchLanguage": "ቋንቋዎችን ይፈልጉ…",
-    "noLanguage": "ከፍለጋዎ ጋር የሚስማማ ቋንቋ የለም።"
+    "noLanguage": "ከፍለጋዎ ጋር የሚስማማ ቋንቋ የለም።",
+    "profile": "መገለጫ"
   },
   "footer": {
     "tagline": "በAI የሕልም ትርጓሜ፣ በነጻ — በኢብን ሲሪን ባህልና በዘመናዊ ሥነ-ልብ መሠረት።",
@@ -27,45 +28,232 @@
     "browseCta": "ምልክቶችን ይመልከቱ",
     "ctaTitle": "ሕልምዎን ይግለጹ",
     "ctaButton": "ትርጓሜ ይጀምሩ",
-    "feature3Body": "Depth psychology and perspectives across faiths — one reading, seen through your lens.",
-    "feature4Body": "Your dreams stay on your device by default. Sign in to sync across devices.",
-    "sampleReading": "Snakes mark transformation — something in your life is shedding its old skin. The gate suggests a clear exit is opening. In many traditions, a harmless snake leaving the home often means a lingering worry is finally moving on.",
-    "sampleTag3": "Tradition",
-    "ctaLede": "A few sentences is enough. The reading takes seconds and stays on your device by default."
+    "feature3Body": "ጥልቅ ሥነ-ልቡና እና በእምነቶች ዙሪያ ያሉ አመረኮች — አንድ ንባብ፣ በእርስዎ እይታ።",
+    "feature4Body": "የእንቅልፍ ህልሞችዎ ነባሪ በመሣሪያዎ ላይ ይቆያሉ። በመሣሪያዎች ላይ ለማመሳሰል ይግቡ።",
+    "sampleReading": "እባቦች ለውጥን ያመለክታሉ — በሕይወትዎ ውስጥ ያለ ነገር ያረጀውን ቆዳ እየተቆለፈ ነው። በርሀው ግልጽ የሆነ መውጫ እየተከፈተ እንደሆነ ይጠቁራል። በብዙ ልምዶች፣ ጉዳት የሌለው እባብ ከቤት ሲወጣ ብዙ ጊዜ የቆየ የጭንቀት ስሜት በመጨረሻ እየሄደ መሆኑን ያሳያል።",
+    "sampleTag3": "ባህል",
+    "ctaLede": "ጥቂት ዓረፍተ ነገሮች በቂ ናቸው። የንባብ ጊዜው ሰከንዶችን ያህል ብቻ ነው፣ እና በነባሪነት በመሣሪያዎ ላይ ይቆያል።",
+    "statLanguages": "{n} ቋንቋዎች",
+    "statSymbols": "{n} የህልም ምልክቶች",
+    "statPrivateLine": "በመሣሪያዎ ላይ በመረጃ መቆለፊያ (የግል)",
+    "whyTitle": "በእውነት ሊጠቀሙበት የሚችሉት ትርጉም",
+    "whyLede": "Dreamscope ሕልማዎን ወደ ምልክቶቹ ያዘምናል፣ ከዚያም በሚያምኗቸው ወጎች ያነባል — ጥናታዊ ሳይንስን በጎን አድሮ፣ ፈንታ ሳይሆን።",
+    "feature1Title": "ምስላዊ ትንተና",
+    "feature1Body": "ሁሉንም ሕልሞች ወደ መሠረታዊ ምልክቶቻቸው ይተረጉማል እናም በትርፍ የተረጎመውን ባሕላዊ ሥርዓት ያሳልፋል።",
+    "feature2Title": "60 ቋንቋዎች",
+    "feature2Body": "ምልክቶችን በእንግሊዝኛ፣ አረብኛ፣ ስፓኒሽ፣ ቻይንኛ፣ ጃፓንኛ እና ተጨማሪ 55 ቋንቋዎች ይተረጉሙ እና ያንቡ።",
+    "feature3Title": "ሁሉም ወጎች",
+    "feature4Title": "ተቆጥቷል እና በመረጃ መረጃ የተጠበቀ",
+    "sampleTag": "ናሙና ንባብ",
+    "sampleJustNow": "አሁኑኑ",
+    "sampleDream": "አረንጓዊ እባብ በአትክልቱ በር በኩል ከቤት ወጥቶ እንደሄደ አየሁ።",
+    "sampleTag1": "ለውጥ",
+    "sampleTag2": "መልቀቅ",
+    "sampleSaved": "ወደ መሣሪያዎ ተቀምጧል",
+    "symbolsTitle": "እያንዳንዱ ምልክት ትርጉም ይዛምራል",
+    "symbolsLede": "ከውሃ እስከ እሳት ድረስ፣ በተለምዶ የሚታዩ የሕልም ምስሎችን እና እያንዳንዱ በባህላዊ ልምዶች ምን እንደሚያመለክት ይመልከቱ።"
   },
   "interpret": {
     "title": "ሕልምዎን ይግለጹ",
     "language": "ቋንቋ",
     "yourDream": "ሕልምዎ",
     "placeholder": "ᵻትኞ ሌሊት በየትም ሞላፊ እየተቀየረ በሚሄድ በር እንደሚያልፍ አየሁ።...",
-    "button": "ሕልም ተርጉም"
+    "button": "ሕልም ተርጉም",
+    "lede": "በራስህ ቃላት ጻፍ። ዝርዝር ያለው ትልቅ ትርጉም ይሰጣል — ቦታ፣ ስሜት እና ልዩ የሆኑ ነገሮች ሁሉ አስፈላጊ ናቸው።",
+    "loading": "በመተርጎም ላይ...",
+    "yourReading": "የእርስዎ ትርጓሜ",
+    "save": "አስቀምጥ",
+    "saved": "ተቆምቷል",
+    "savedConfirm": "ወደ መጽሐፍትዎ ተቀምጧል። ሁልጊዜ በተቀምጡት ስር ማግኘት ይችላሉ።",
+    "unsaved": "ከተቆጥቋጭ ተወግዷል።",
+    "disclaimer": "እባክህ ይህ ጽሑፍ ምናብን ለማንበብ እና ትርጉም ለመስጠት ብቻ ነው። እንደ የሕክምና፣ የስነ-ልቦና ወይም የሃይማኖት ምክር መጠቀም የለበትም። የወደፊት ነገሮችን አይገምትም።",
+    "viewHistory": "ታሪክ ይመልከቱ",
+    "errorEmpty": "እባክዎ መጀመሪያ ህልምዎን ይግለጹ።",
+    "errorFailed": "የህልም ትርጉም አልሰራም። እባክዎ እንደገና ይሞክሩ።",
+    "errorNetwork": "የግንኙነት ስህተት። እባክው እንደገና ይሞክሩ።",
+    "perspectiveLabel": "በአንባቢ በኩል በመብረር ላይ",
+    "perspNotice": "እያንዳንዱ ልምድ በተለየ ይታያል። ትርጓሜዎች አንጸባራቂ እና ሊሆኑ የሚችሉ ናቸው — ትንበያዎችም ሆነ ውሳኔዎች አይደሉም።",
+    "compareLabel": "ሁሉንም ባህላዊ ትርጓሜዎች አወዳድር",
+    "compareDesc": "አንድ ሕልም በአንድ ጊዜ በሁሉም ተመልካች ይመልከቱ — ባሕላዊ ትርጓሜዎች የት እንደሚስማሙ እና የት እንደሚለያዩ ይመልከቱ።",
+    "compareLoading": "በሁሉም ወጎች ላይ በዝርዝር እየጠነከርን…",
+    "compareBack": "ወደ ነጠላ ንባብ ይመለሱ",
+    "compareSymbols": "Symbols",
+    "symbolsLabel": "Symbols in your dream → በሕልምዎ ውስጥ ያሉ ምልክቶች",
+    "feedbackQ": "ይህ የተነበበው ጠቃሚ ነበር?",
+    "yes": "አዎ፣ ጠቃሚ ነው",
+    "no": "እንደማይሆን ነው",
+    "thanks": "እናመሰግናለን — አስተያየትዎ የወደፊት ትንበያዎችን ያሻሽላል።",
+    "perspectiveDesc": "አንድ የንባብ ዓይነት የዓለም ባህላዊ ዕውቀትን ከጥልቅ ስነ-ልቦና ጋር የሚያጣምር።",
+    "moodLabel": "የሕልምዎ ስሜት እንዴት ነበር?",
+    "copy": "ቅዳ",
+    "copied": "ተቀድቷል!",
+    "share": "አጋራ",
+    "example": "ምሳሌ ይሞክሩ",
+    "exampleDream": "ያኈፍከው ሌሊት ነጭ ርግብ በመስኮቴ ላይ ተቀምጦ ወደ ማላኘት የማልችለው ደብዳቤ ተለወጠ። የተረጋጋ ነገር ግን የተገረምም ስሜት ነበረብኝ።",
+    "shortcutHint": "ለመተርጎም ⌘/Ctrl + Enter ይጫኑ",
+    "symbolsSection": "ምልክቶች"
   },
   "common": {
     "interpretCta": "ሕልም ተርጉም",
-    "backHome": "ወደ መነሻ"
+    "backHome": "ወደ መነሻ",
+    "delete": "ሰርዝ",
+    "remove": "አስወግድ",
+    "confirmRemove": "ይወገድ?"
   },
   "history": {
     "title": "የሕልም ታሪክ",
-    "empty": "እስካሁን የተተረጎመ ሕልም የለም።"
+    "empty": "እስካሁን የተተረጎመ ሕልም የለም።",
+    "lede": "ሁሉም የተፈጠሩ ትርጓሜዎችዎ፣ በዚህ መሣሪያ ላይ የተከማቹ።"
   },
   "saved": {
     "title": "የተቀመጡ ሕልሞች",
-    "empty": "እስካሁን የተቀመጠ የለም።"
+    "empty": "እስካሁን የተቀመጠ የለም።",
+    "lede": "አስፈላጊ የነበሩትን ትርጓሜዎች ያስቀምጡ። እነሱ በዚህ መሣሪያ ላይ ይቆያሉ።"
   },
   "symbols": {
     "title": "{n} የሕልም ምልክቶች",
-    "search": "ምልክት ይፈልጉ…"
+    "search": "ምልክት ይፈልጉ…",
+    "lede": "በርካታ ቋንቋዎች ውስጥ ያለምንም ክፍያ የምንተረካውን ምልክት ሁሉ ያስሱ። የእርስዎን ምርጫ ያድርጉ ትርጉሙን ለማንበብ።",
+    "noResults": "ምልክት ለፍቺዎ አልተገኘም።"
   },
   "notfound": {
     "title": "ይህ ሕልም ተሟርቷል",
-    "cta": "ወደ መነሻ"
+    "cta": "ወደ መነሻ",
+    "lede": "ያልተገኘው ገጽ እዚህ የለም። እንደገና ህልሞችን ለመተርጎም ወደ መነሻ ገጽ እንሂድ።"
   },
   "about": {
-    "p1": "Dreamscope exists to make dream interpretation accessible in your own language and cultural context. We draw on a wide range of interpretive traditions — religious and spiritual scholarship, cultural folklore, and the symbolic frameworks of modern depth psychology — so you can read your dream through the lens you trust.",
-    "card1Title": "Many traditions",
-    "card1Body": "Islamic, Christian, Jewish, Hindu, Buddhist, Chinese, and psychological lenses — pick the one you trust."
+    "p1": "Dreamscope በቋንቋዎ እና በባህላዊ አውድ ውስጥ የህልም ትርጓሜን ተደራሽ ለማድረግ የተፈጠረ ነው። ከተለያዩ የትርጓሜ ስልጣኖች — ከሃይማኖታዊ እና መንፈሳዊ ጥናት፣ ከባህላዊ ተረቶች፣ እና ከዘመናዊ ጥልቅ ሥነ-ልቡና ምስላዊ ማዕቀፎች — ስንገነዝ የምናገኘውን የሚያምኗቸውን ትር",
+    "card1Title": "ብዙ ልምዶች",
+    "card1Body": "Islamic, Christian, Jewish, Hindu, Buddhist, Chinese, and psychological lenses — pick the one you trust.",
+    "title": "ግልጽ የሆነ ንባብ፣ በባህላዊ መሠረት የተመሰረመ",
+    "p2": "ሁሉም ትርጓሜ የወደፊቱን ህይወት ለመተንበይ ሳይሆን ለማስተዋል የሚያግዝዎ ነው። የውሃ፣ የእሳት፣ የበረራ ወይም የእባብ ምልክቶች ለሺዎች ዓመታት በባህሎች መካከል ትርጉም ይዘው ቆይተዋል፣ የእኛ ትርጓሜዎችም እነዚያን ክሮች በመከተል ከራስዎ ህይወት ጋር የሚዛመደው",
+    "p3": "አገልግሎቱ ነጻ ነው፣ በንድፈ ሃሳብ የመነጽር ሆኖ ተዘጋጅቷል፣ እና በ60 ቋንቋዎች ይገኛል። የእንቅልፍ ጽሑፍዎ የትርጓሜ አገልግሎታችንን ለማመንጨት ይላካል፣ ከዚያም በእኛ አይቀምጥም; የእርስዎ ንባቦች በመሣሪያዎ ላይ ይቆያሉ ያልገቡ እና ካላመሳሱ በስተቀር።",
+    "card2Title": "60 ቋንቋዎች",
+    "card2Body": "ከአረብኛ እስከ ጃፓንኛ — በሚያደርሱበት ቋንቋ ይተረጉም።",
+    "card3Title": "ሙሉ በሙሉ የግል",
+    "card3Body": "የእርስዎ ትርጓሜዎች በነባሪነት በመሣሪያዎ ላይ ይቆያሉ። ለማመሳሰል ብቻ ይግቡ፤ በማንኛውም ጊዜ ይሰርዙ።",
+    "cta": "የትርጓሜ ሂደት ይጀምሩ",
+    "traditionsTitle": "ሁሉም ባህላዊ ልምዶች፣ አንድ እንቁያልቅ",
+    "traditionsLede": "ልብዎ የሚ trust የሆነውን መነፅር ይምረጡ — እያንዳንዱ ንባብ በተወሰነ የትርጓሜ ትምህርት ቤት የሚመረት ነው።"
   },
   "faq": {
-    "a1": "Dreamscope blends dream scholarship from many cultures and faiths — including Islamic, Christian, Jewish, Hindu, Buddhist, and Chinese traditions — with modern depth psychology. You describe a dream in your own words and receive a reading that maps its symbols to their common meanings across cultures."
+    "a1": "Dreamscope የህልም ጥናትን ከብዙ ባሕልና እምነት ጋር ያዋሃዳል — እነዚህም ኢስላማዊ፣ ክርስቲያናዊ፣ ይሁዳዊ፣ ሂንዱዊ፣ ቡድሆዊ፣ እና የቻይና ልምዶችን ጨምሮ — ከዘመናዊ ጥልቅ ስነ-ልቡና ጋር። ህልምህን በራስህ ቃላት ታስለቅማለህ፣ ምልክቶቹም በባሕሎች መካከል ለተለመዱ ትር",
+    "title": "የተደጋገሙ ጥያቄዎች",
+    "q1": "Dreamscope እንዴት ህልሞችን ይተረጉማል?",
+    "q2": "የእንቅልፌ ውሂብ የግል ነው?",
+    "a2": "አዎ። ህልሞችዎ በመሣሪያዎ ላይ በአሳሽዎ የአካባቢ ማከማቻ ውስጥ ብቻ ይቀመጣሉ። ለማስቀመጥ ወደ ሰርቨር ᪨ተላከ ነገር የለም፣ ታሪክዎንም በፈለጉት ጊዜ መሰረዝ ይችላሉ።",
+    "q3": "የህልም ትርጉም በምን ቋንቋዎች ላይ ማድረግ እችላለሁ?",
+    "a3": "Dreamscope እስከ 60 ቋንቋዎች ድረስ ይደግፋል—እንግሊዝኛ፣ አረብኛ፣ ስፓኒሽ፣ ፈረንሳይኛ፣ ጀርመን፣ ቻይንኛ፣ ጃፓንኛ፣ ኮሪያኛ፣ ቱርክኛ፣ ፖርቱጋልኛ፣ ራሽያኛ፣ ሐንዲ፣ እና ሌሎችንም ጨምሮ። ንባቡ የሚመርጡትን ቋንቋ ይከተላል።",
+    "q4": "አረምታዎቹ ለሙያዊ ምክር ተተኪ ናቸው?",
+    "a4": "አይደለም። የህልም ትርጓሜዎች ለማሰላሰልና ለመዝናኛ ናቸው። ህክምና፣ ሥነ-ልቦና ወይም ሃይማኖታዊ መመሪያ አይደሉም። እርስዎ ችግር ላላችሁ ከሆነ፣ እባክዎ ከብቁ ባለሙያ ጋር ይነጋገሩ።",
+    "q5": "ምስሎች ህልም ምልክቶች ስንት ይሸፍናሉ?",
+    "a5": "Dreamscope ለ146 የተለመዱ ምልክቶች የተዘጋጁ ገጾች አሉት — እባብ፣ ውሃ፣ በረራ፣ እሳት፣ እብደት፣ ገንዘብ እና ሌሎችም — እያንዳንዳቸውም በብዙ ቋንቋዎች ከረጅም ጥያቄ ልዩነቶች ጋር ይገኛሉ።"
+  },
+  "contact": {
+    "title": "ᬊናቭርሺን ደርሰው",
+    "lede": "ጥያቄ፣ ማስተካከያ ወይም ትብብር ሃሳብ አለዎት? የ Dreamscope ቡድንን በኢሜይል ያግኙ።",
+    "email": "ኢሜይል",
+    "disclaimer": "Dreamscope ማንኛውንም ነገር ለማስተዋል እና ለመዝናናት ብቻ ያገለግላል። የተደረጉት ትርጉሞች የሕክምና፣ የስነ-ልቡና ወይም የሃይማኖት ምክር አይደሉም። ድጋፍ ካስፈለግዎ እባክዎ ብቁ ባለሙያ ያነጋግሩ።",
+    "back": "ወደ አስተርጓሚው ይመለሱ"
+  },
+  "perspectives": {
+    "general": {
+      "name": "አጠቃላይ"
+    },
+    "islamic": {
+      "name": "Ibn Sirin (እስላማዊ)"
+    },
+    "christian": {
+      "name": "ክርስትናዊ"
+    },
+    "jewish": {
+      "name": "የአይሁድ"
+    },
+    "hindu": {
+      "name": "ሂንዱ"
+    },
+    "buddhist": {
+      "name": "ቡዲስት"
+    },
+    "psychology": {
+      "name": "Psychology (Jung)"
+    },
+    "chinese": {
+      "name": "Zhou Gong (ቻይንኛ)"
+    }
+  },
+  "daily": {
+    "tag": "የዕለቱ ሕልም"
+  },
+  "profile": {
+    "title": "የእርስዎ ቦታ",
+    "cloudOff": "የእንቅልፍ ጽሑፍዎ የመተርጎም አገልግሎታችን ለማንበብ ይላካል፣ ከዚያም በእኛ አይቀመጥም። የማንበቢያዎች ምስሎች በመሣሪያዎ ላይ ይቀመጣሉ ያለምንም ምክንያት ካልገቡ እና ማመሳሰልን ካልመረጡ። የእርስዎን መረጃ በፍፁም አናሽጥም፣ አናጠቀምም።",
+    "dataNote": "የእርስዎ ውሂብ የሚኖርበት ቦታ፡- ነባሪው መሣሪያዎ። በመለያ ሲገቡ ማስታወሻዎ ወደ የግል መለያዎ ሊመሳሰል ይችላል፤ በማንኛውም ጊዜ ማጥፋት ይችላሉ።",
+    "signInLede": "የእንቅልፍ መዝገብዎን በሁሉም መሣሪያዎችዎ ላይ ለማቆየት ይግቡ። የእንግዳ ታሪክዎ አብሮዎ ይንቀሳቀሳል።",
+    "emailLabel": "ኢሜይል",
+    "magicLink": "የመግቢያ አገናኝ ይላኩልኝ",
+    "google": "በ Google ይቀጥሉ",
+    "checkEmail": "ኢሜልዎን ይመልከቱ — የመግቢያ አገናኝ እዚያ እየጠበቀዎታል።",
+    "invalidEmail": "እባክዎ ትክክለኛ የኢሜይል አድራሻ ያስገቡ።",
+    "signInError": "መግባት አልተቻለም። እባክዎ እንደገና ይሞክሩ ወይም የኢሜይል አገናኝ ይጠቀሙ።",
+    "googleNotEnabled": "ጎግል ምዝገባ ገና በዚህ ፕሮጀክት ላይ አልተከናወነም። የድረ-ገጹ ባለቤት በSupabase ውስጥ የGoogle OAuth ደንበኛ ማገናኘት አለበት።",
+    "guestNote": "ምንም የይለፍ ቃል፣ ምንም መከታተል የለም — በቀላሉ አገናኝ ብቻ። የእንግዳ ሁነታ ከመሣሪያ ላይ ያለ የማከማቻ ድጋፍ ሙሉ በሙሉ ይገኛል።",
+    "member": "አባል",
+    "migrated": "{n} ሕልሞች ከዚህ መሣሪያ ወደ መጽሐፍትዎ ተዛውረዋል።",
+    "signOut": "ይውጡ",
+    "navLabel": "መገለጫ",
+    "lede": "ሁሉም ነገር Dreamscope ስለ ጉዞዎ የሚያውቀው — በመሣሪያዎ ላይ የተቀመጠ፣ ለእርስዎ ብቻው።",
+    "yourState": "የአሁኑ ሁኔታህ",
+    "statDreams": "የተተረጉሙ ሕልሞች",
+    "statSaved": "የተቆጠቡ ንባቦች",
+    "statStreak": "የቀን ተከታታይነት",
+    "statTopSymbol": "ቁልፍ ምልክት",
+    "emptyState": "እስከ ዛሬ ሕልም የለም — የመጀመሪያው ንባብዎ ገጹን ያበራል።",
+    "symbolsYouMeet": "የሚያጋጥሙዎ ምልክቶች",
+    "noneYet": "—",
+    "lastReading": "የመጨረሻ ትርጉም",
+    "languagesUsed": "የሚጠቀሙባቸው ቋንቋዎች",
+    "perspectivesUsed": "ባህሎች የተጠቀሙባቸው",
+    "cloudTitle": "በሁሉም መሣሪያዎችዎ ላይ",
+    "connectTitle": "የርስዎ Supabase ፕሮጀክት ያገናኙ",
+    "connectUrlLabel": "የፕሮጀክት አገናኝ",
+    "connectKeyLabel": "የአኖን ሕዝባዊ ቁልፎች",
+    "connectCta": "ይገናኙ",
+    "connected": "ተገናኝቷል — አሁን መለያ ማስገባት እና ማስታወሻዎን ማመሳሰል ይችላሉ።",
+    "connectError": "አልተገናኝም። URL እና anon key ን ያረምዱ።",
+    "disconnect": "ከመለያ ይውጡ",
+    "privacyNote": "ህልሞችዎ በመሣሪያዎ ላይ ይቀመጣሉ — አይሸጡም፣ አይታወቅም።",
+    "moodPattern": "የስሜት ዘይቤ",
+    "autoSetupTitle": "በአንድ ትዕዛዝ መዘጋጀት",
+    "autoSetupBody": "ፕሮጀክት የለምን? የቦትስትራፕ ስክሪፕቱን አንድ ጊዜ ያሂዱ፡ የሱፓቤዝ ፕሮጀክት ይፈጥራል፣ የዳታቤዝ ስኬማውን ያመልክታል፣ እና የእርስዎን URL + anon ቁልፍ ለላይ ለማስገባት ያትማል። የGoogle ስግን ኢን የGoogle Cloud OAuth ደንበኛ ይፈልጋል (ስክሪፕቱን ይመልከቱ)።",
+    "autoSetupCmd": "SUPABASE_ACCESS_TOKEN=xxx node scripts/setup-supabase.mjs"
+  },
+  "perspDesc": {
+    "general": "አንድ ንባብ የአለም ልምዶችን ብልጥ ክርዎች ከጥልቅ ስነ-ልቦና ጋር የሚያጣምም።",
+    "islamic": "የኢብን ሲሪን ክላሲካዊ ትምህርት — ምልክታዊ፣ ህጋዊ እና ነፍስ-ተኮር።",
+    "christian": "ሕሉም መተርጎም በዮሴፍና በዳንኤል የነገሥት ትውልድ፣ ከመጽሐፍ ቅዱስ ምሥሎች ጋር።",
+    "jewish": "የቶራ ና ታልሙዲክ የሕልም ጥበብ — ብልጥ ትርጓሜ የሚጠብቅ መልዕክት።",
+    "hindu": "የቬዲክ ምልክቶች፣ ካርማ እና የአእምሮው የውስጥ አገር ብርሃን።",
+    "buddhist": "እንግዳ ነገር መሆን እና ንቃዊ ግንዛቤ — ሕልሙን ያለ መያዝ ይመልከቱ።",
+    "psychology": "Jung's archetypes and the shadow — what your psyche is processing.",
+    "chinese": "Zhou Gong's classical dictionary — the balance of yin, yang, and the five elements."
+  },
+  "moods": {
+    "peace": "ሰላማዊ",
+    "anxiety": "የተደናገጠ",
+    "hope": "ተስፋ ሰጭ",
+    "sadness": "ሀዘን",
+    "anger": "ቁጣ",
+    "confusion": "ግራ የተዋበ"
+  },
+  "seo": {
+    "dreamInterpretation": "የህልም ትርጓሜ",
+    "traditionsTitle": "በሁሉም ወጎች ውስጥ",
+    "traditionsBody": "አንድ ምልክት በተለያዩ ባህሎች ውስጥ የተለየ ትርጉም ሊኖረው ይችላል። በእስላማዊ፣ በክርስትያን፣ በአይሁዳዊ፣ በሂንዱ፣ በቡዲስት፣ በቻይናዊ እና በሥነ-ልቦናዊ ልምዶች ውስጥ ተመሳሳይ ምስል በራሱ እይታ ይተረጉማል። በሚያምኗቸው እይታዎች ላይ በመመርመር ገጽ ላ",
+    "tryTitle": "ህልሞችዎን በ AI ይተረጉሙ",
+    "tryLede": "ሕልማትዎን ያጋሩ እና በራስ-ሰር የተበጅ የአርቴፊሻል ኢንተለጀንስ ትርጓሜ ያግኙ።",
+    "otherLangs": "ሌሎች ቋንቋዎች",
+    "otherSymbols": "ሌሎች የህልም ምልክቶች",
+    "reflectNote": "ይህ ገጽ ለማዕበል እና ለመዝናኛ ብቻ ነው። የሕክምና፣ የሥነ-ልቡና ወይም የሃይማኖት ምክር አይደለም፣ እና የወደፊትንም አይገምትም።"
   }
 }

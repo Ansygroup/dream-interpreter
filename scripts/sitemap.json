@@ -1,0 +1,3896 @@
+[
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "1.0"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.5"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/af/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/am/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/az/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/bg/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/bn/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/cs/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/da/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/de/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/el/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/es/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/et/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fa/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fi/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fil/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fr/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ha/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/he/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hi/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hr/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hu/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hy/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/id/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/it/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ja/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ka/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/kk/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/km/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ko/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/lt/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/lv/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/mn/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ms/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/my/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ne/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/nl/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/no/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pa/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pl/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pt/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ro/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ru/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/si/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sk/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sl/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sr/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sv/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sw/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ta/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/te/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/th/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/tr/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/uk/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ur/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/uz/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/vi/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/yo/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/zh/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/zu/",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.9"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/af/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/af/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/af/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/af/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/af/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/af/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/af/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/af/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/af/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/af/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/am/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/am/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/am/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/am/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/am/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/am/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/am/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/am/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/am/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/am/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/az/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/az/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/az/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/az/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/az/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/az/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/az/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/az/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/az/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/az/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/bg/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/bg/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/bg/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/bg/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/bg/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/bg/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/bg/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/bg/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/bg/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/bg/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/bn/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/bn/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/bn/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/bn/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/bn/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/bn/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/bn/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/bn/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/bn/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/bn/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/cs/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/cs/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/cs/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/cs/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/cs/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/cs/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/cs/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/cs/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/cs/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/cs/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/da/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/da/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/da/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/da/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/da/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/da/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/da/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/da/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/da/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/da/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/de/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/de/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/de/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/de/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/de/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/de/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/de/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/de/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/de/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/de/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/el/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/el/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/el/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/el/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/el/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/el/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/el/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/el/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/el/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/el/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/es/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/es/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/es/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/es/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/es/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/es/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/es/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/es/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/es/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/es/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/et/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/et/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/et/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/et/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/et/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/et/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/et/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/et/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/et/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/et/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fa/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fa/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fa/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fa/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fa/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fa/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fa/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fa/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fa/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fa/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fi/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fi/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fi/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fi/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fi/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fi/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fi/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fi/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fi/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fi/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fil/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fil/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fil/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fil/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fil/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fil/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fil/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fil/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fil/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fil/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fr/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fr/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fr/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fr/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fr/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fr/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fr/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fr/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fr/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/fr/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ha/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ha/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ha/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ha/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ha/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ha/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ha/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ha/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ha/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ha/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/he/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/he/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/he/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/he/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/he/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/he/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/he/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/he/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/he/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/he/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hi/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hi/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hi/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hi/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hi/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hi/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hi/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hi/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hi/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hi/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hr/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hr/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hr/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hr/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hr/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hr/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hr/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hr/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hr/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hr/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hu/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hu/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hu/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hu/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hu/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hu/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hu/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hu/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hu/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hu/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hy/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hy/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hy/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hy/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hy/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hy/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hy/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hy/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hy/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/hy/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/id/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/id/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/id/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/id/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/id/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/id/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/id/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/id/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/id/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/id/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/it/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/it/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/it/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/it/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/it/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/it/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/it/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/it/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/it/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/it/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ja/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ja/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ja/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ja/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ja/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ja/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ja/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ja/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ja/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ja/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ka/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ka/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ka/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ka/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ka/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ka/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ka/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ka/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ka/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ka/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/kk/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/kk/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/kk/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/kk/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/kk/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/kk/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/kk/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/kk/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/kk/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/kk/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/km/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/km/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/km/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/km/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/km/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/km/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/km/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/km/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/km/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/km/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ko/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ko/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ko/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ko/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ko/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ko/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ko/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ko/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ko/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ko/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/lt/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/lt/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/lt/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/lt/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/lt/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/lt/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/lt/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/lt/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/lt/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/lt/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/lv/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/lv/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/lv/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/lv/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/lv/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/lv/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/lv/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/lv/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/lv/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/lv/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/mn/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/mn/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/mn/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/mn/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/mn/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/mn/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/mn/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/mn/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/mn/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/mn/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ms/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ms/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ms/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ms/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ms/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ms/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ms/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ms/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ms/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ms/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/my/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/my/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/my/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/my/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/my/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/my/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/my/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/my/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/my/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/my/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ne/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ne/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ne/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ne/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ne/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ne/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ne/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ne/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ne/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ne/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/nl/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/nl/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/nl/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/nl/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/nl/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/nl/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/nl/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/nl/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/nl/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/nl/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/no/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/no/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/no/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/no/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/no/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/no/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/no/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/no/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/no/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/no/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pa/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pa/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pa/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pa/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pa/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pa/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pa/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pa/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pa/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pa/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pl/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pl/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pl/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pl/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pl/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pl/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pl/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pl/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pl/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pl/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pt/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pt/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pt/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pt/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pt/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pt/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pt/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pt/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pt/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/pt/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ro/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ro/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ro/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ro/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ro/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ro/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ro/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ro/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ro/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ro/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ru/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ru/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ru/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ru/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ru/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ru/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ru/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ru/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ru/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ru/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/si/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/si/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/si/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/si/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/si/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/si/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/si/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/si/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/si/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/si/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sk/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sk/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sk/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sk/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sk/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sk/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sk/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sk/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sk/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sk/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sl/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sl/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sl/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sl/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sl/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sl/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sl/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sl/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sl/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sl/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sr/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sr/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sr/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sr/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sr/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sr/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sr/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sr/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sr/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sr/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sv/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sv/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sv/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sv/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sv/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sv/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sv/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sv/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sv/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sv/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sw/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sw/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sw/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sw/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sw/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sw/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sw/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sw/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sw/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/sw/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ta/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ta/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ta/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ta/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ta/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ta/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ta/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ta/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ta/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ta/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/te/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/te/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/te/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/te/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/te/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/te/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/te/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/te/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/te/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/te/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/th/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/th/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/th/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/th/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/th/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/th/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/th/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/th/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/th/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/th/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/tr/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/tr/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/tr/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/tr/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/tr/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/tr/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/tr/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/tr/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/tr/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/tr/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/uk/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/uk/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/uk/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/uk/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/uk/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/uk/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/uk/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/uk/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/uk/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/uk/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ur/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ur/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ur/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ur/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ur/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ur/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ur/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ur/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ur/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/ur/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/uz/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/uz/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/uz/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/uz/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/uz/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/uz/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/uz/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/uz/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/uz/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/uz/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/vi/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/vi/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/vi/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/vi/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/vi/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/vi/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/vi/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/vi/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/vi/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/vi/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/yo/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/yo/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/yo/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/yo/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/yo/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/yo/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/yo/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/yo/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/yo/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/yo/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/zh/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/zh/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/zh/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/zh/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/zh/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/zh/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/zh/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/zh/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/zh/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/zh/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/zu/about",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/zu/contact",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/zu/faq",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/zu/symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/zu/saved",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/zu/history",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.6"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/zu/notfound",
+    "lastmod": "2026-09-01",
+    "changefreq": "monthly",
+    "priority": "0.4"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/zu/dream-interpretation",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/zu/dream-symbols",
+    "lastmod": "2026-09-01",
+    "changefreq": "weekly",
+    "priority": "0.7"
+  },
+  {
+    "loc": "https://dream-interpreter-alpha-ruddy.vercel.app/zu/interpret",
+    "lastmod": "2026-09-01",
+    "changefreq": "daily",
+    "priority": "0.8"
+  }
+]

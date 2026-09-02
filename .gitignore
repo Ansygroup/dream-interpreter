@@ -21,3 +21,6 @@ dist
 # Vercel env pull (may contain secret references) — never commit
 .env.vercel.local
 .env.local
+
+.vercel
+.env*

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import { Link } from 'react-router-dom';
 import { useI18n } from '../contexts/I18nContext';
 import { useAuth } from '../contexts/AuthContext';
@@ -16,7 +16,7 @@ const MOODS = [
   { id: 'anger', emoji: '😠' },
   { id: 'confusion', emoji: '🤔' },
 ];
-import { SylvaScene } from '../effects/sylva-scene/SylvaScene';
+const SylvaScene = lazy(() => import('../effects/sylva-scene/SylvaScene').then((m) => ({ default: m.SylvaScene })));
 import { saveDreamToCloud, sendCloudFeedback } from '../lib/sync';
 
 const SYMBOL_SET = new Set(SYMBOL_LIST);
@@ -194,7 +194,9 @@ export default function Interpret() {
 
   return (
     <Layout>
-      <SylvaScene dim={0.55} />
+      <Suspense fallback={null}>
+        <SylvaScene dim={0.55} />
+      </Suspense>
       <div className="section" style={{ paddingTop: 'clamp(48px, 7vw, 80px)', position: 'relative', zIndex: 1 }}>
         <div className="container-narrow">
           <div className="reveal" style={{ marginBottom: 32 }}>

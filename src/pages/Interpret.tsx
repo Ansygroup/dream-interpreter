@@ -16,6 +16,7 @@ const MOODS = [
   { id: 'anger', emoji: '😠' },
   { id: 'confusion', emoji: '🤔' },
 ];
+import { SylvaScene } from '../effects/sylva-scene/SylvaScene';
 import { saveDreamToCloud, sendCloudFeedback } from '../lib/sync';
 
 const SYMBOL_SET = new Set(SYMBOL_LIST);
@@ -193,7 +194,8 @@ export default function Interpret() {
 
   return (
     <Layout>
-      <div className="section" style={{ paddingTop: 'clamp(48px, 7vw, 80px)' }}>
+      <SylvaScene dim={0.55} />
+      <div className="section" style={{ paddingTop: 'clamp(48px, 7vw, 80px)', position: 'relative', zIndex: 1 }}>
         <div className="container-narrow">
           <div className="reveal" style={{ marginBottom: 32 }}>
             <div className="eyebrow" aria-hidden="true">

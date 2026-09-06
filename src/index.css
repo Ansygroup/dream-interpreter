@@ -516,6 +516,28 @@ a { text-underline-offset: 3px; text-decoration-thickness: 1px; }
   box-shadow: 0 0 0 1px var(--accent-line), 0 2px 14px var(--accent-glow);
 }
 
+/* ============ Sylva living-forest backdrop (Interpret) ============ */
+.sylva-scene {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 1.6s var(--ease);
+}
+.sylva-scene[data-state="ready"] { opacity: 1; }
+.sylva-scene iframe {
+  opacity: 0.62;
+  filter: saturate(0.82) brightness(0.72);
+}
+.sylva-scrim {
+  position: absolute;
+  inset: 0;
+  background: var(--bg);
+  pointer-events: none;
+}
+[data-theme="light"] .sylva-scene { display: none; }
+
 /* ============ Reduced motion ============ */
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }

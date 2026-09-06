@@ -72,6 +72,7 @@ export default function Layout({ children, title }: { children: ReactNode; title
   return (
     <div dir={isRtl ? 'rtl' : 'ltr'} style={{ position: 'relative', zIndex: 1 }}>
       <div className="ambient" />
+      <div className="starfield" aria-hidden="true" />
       <div ref={ref}>
         <header className="site-header">
           <nav className="container" style={{ height: 68, display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 20 }}>

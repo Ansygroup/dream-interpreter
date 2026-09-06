@@ -196,6 +196,10 @@ export default function Interpret() {
       <div className="section" style={{ paddingTop: 'clamp(48px, 7vw, 80px)' }}>
         <div className="container-narrow">
           <div className="reveal" style={{ marginBottom: 32 }}>
+            <div className="eyebrow" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"><path d="M20 13.5A8 8 0 0 1 10.5 4 8 8 0 1 0 20 13.5z" /><path d="M17 3.5l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7z" /></svg>
+              <span className="rule" />
+            </div>
             <h1 className="h2 serif" style={{ marginBottom: 14 }}>{t('interpret.title')}</h1>
             <p className="lede">{t('interpret.lede')}</p>
           </div>
@@ -242,6 +246,7 @@ export default function Interpret() {
           {/* Dream input */}
           <div className="reveal">
             <label htmlFor="dream" style={{ fontSize: 13, color: 'var(--muted)', display: 'block', marginBottom: 12 }}>{t('interpret.yourDream')}</label>
+            <div className="obsidian-frame">
             <textarea
               id="dream"
               className="field"
@@ -262,6 +267,7 @@ export default function Interpret() {
                 {t('interpret.example')}
               </button>
               <span style={{ fontSize: 12.5, color: 'var(--text-dim)' }}>{t('interpret.shortcutHint')}</span>
+            </div>
             </div>
             {error && (
               <p role="alert" style={{ color: '#f87171', marginTop: 12, fontSize: 14 }}>{error}</p>
@@ -299,7 +305,7 @@ export default function Interpret() {
 
           {result && !loading && (
             <div className="reveal" style={{ marginTop: 48 }}>
-              <div className="card" style={{ borderColor: 'var(--accent-line)', background: 'var(--surface-2)', boxShadow: 'var(--shadow)' }}>
+              <div className="card sanctum" style={{ borderColor: 'var(--accent-line)', background: 'var(--surface-2)', boxShadow: 'var(--shadow)' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16, flexWrap: 'wrap', gap: 10 }}>
                   <span className="mono-meta" style={{ color: 'var(--accent)' }}>{t('interpret.yourReading')}</span>
                   <span className="mono-meta">{t(`perspectives.${perspective}.name`)}</span>

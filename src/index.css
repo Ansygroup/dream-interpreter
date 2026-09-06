@@ -17,22 +17,22 @@
    Dark is the default canvas; light is a warm paper journal.
    ============================================================ */
 :root {
-  /* Editorial dark canvas */
-  --bg: #0a0c0b;
-  --bg-soft: #0f1311;
-  --surface: #141816;
-  --surface-2: #1a201d;
-  --border: #232b27;
-  --border-soft: #1c231f;
-  --text: #eef1ec;
-  --text-dim: #b6bfb8;
-  --muted: #7e8a82;
-  --accent: #34d399;
-  --accent-deep: #10b981;
-  --accent-contrast: #04110b;
-  --accent-glow: rgba(52, 211, 153, 0.10);
-  --accent-line: rgba(52, 211, 153, 0.22);
-  --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 8px 32px rgba(0,0,0,0.25);
+  /* Nocturne Lux — midnight ink, champagne gold */
+  --bg: #06070c;
+  --bg-soft: #0a0d16;
+  --surface: #0d1120;
+  --surface-2: #141a2e;
+  --border: #252c48;
+  --border-soft: #161c31;
+  --text: #f3edde;
+  --text-dim: #c6c0ab;
+  --muted: #8b91a9;
+  --accent: #d9b36c;
+  --accent-deep: #b8924e;
+  --accent-contrast: #0b0804;
+  --accent-glow: rgba(217, 179, 108, 0.10);
+  --accent-line: rgba(217, 179, 108, 0.30);
+  --shadow: 0 1px 2px rgba(0,0,0,0.55), 0 12px 44px rgba(0,0,0,0.45);
   --radius: 12px;
   --radius-sm: 8px;
   --maxw: 1200px;
@@ -41,22 +41,22 @@
 }
 
 [data-theme="light"] {
-  /* Warm paper journal */
-  --bg: #f6f4ee;
-  --bg-soft: #efece4;
-  --surface: #fcfbf7;
-  --surface-2: #f3f0e9;
-  --border: #ddd8cb;
-  --border-soft: #e7e3d8;
-  --text: #191c1a;
-  --text-dim: #454b47;
-  --muted: #6b736c;
-  --accent: #0c8a5f;
-  --accent-deep: #0a6e4c;
-  --accent-contrast: #f7fffb;
-  --accent-glow: rgba(12, 138, 95, 0.10);
-  --accent-line: rgba(12, 138, 95, 0.30);
-  --shadow: 0 1px 2px rgba(25,28,26,0.06), 0 10px 36px rgba(25,28,26,0.09);
+  /* Warm paper journal, bronze ink */
+  --bg: #f7f2e7;
+  --bg-soft: #efe8d8;
+  --surface: #fdfaf2;
+  --surface-2: #f2ecdd;
+  --border: #d9cfb8;
+  --border-soft: #e6ddc9;
+  --text: #1c1a14;
+  --text-dim: #4a4536;
+  --muted: #6f6a58;
+  --accent: #8a5f14;
+  --accent-deep: #6f4b0e;
+  --accent-contrast: #fbf6ea;
+  --accent-glow: rgba(138, 95, 20, 0.10);
+  --accent-line: rgba(138, 95, 20, 0.32);
+  --shadow: 0 1px 2px rgba(28,26,20,0.07), 0 10px 36px rgba(28,26,20,0.10);
   color-scheme: light;
 }
 
@@ -420,12 +420,109 @@ a { text-underline-offset: 3px; text-decoration-thickness: 1px; }
   .footer-grid { flex-direction: column; align-items: flex-start; }
 }
 
+/* ============ Nocturne Lux — night-sky layer ============ */
+.starfield {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.9;
+  background-image:
+    radial-gradient(1px 1px at 12% 22%, rgba(243, 237, 222, 0.55) 50%, transparent 51%),
+    radial-gradient(1px 1px at 68% 8%, rgba(243, 237, 222, 0.4) 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 84% 34%, rgba(217, 179, 108, 0.6) 50%, transparent 51%),
+    radial-gradient(1px 1px at 32% 66%, rgba(243, 237, 222, 0.35) 50%, transparent 51%),
+    radial-gradient(1px 1px at 52% 48%, rgba(243, 237, 222, 0.3) 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 8% 84%, rgba(217, 179, 108, 0.45) 50%, transparent 51%),
+    radial-gradient(1px 1px at 91% 72%, rgba(243, 237, 222, 0.4) 50%, transparent 51%),
+    radial-gradient(1px 1px at 44% 12%, rgba(243, 237, 222, 0.5) 50%, transparent 51%),
+    radial-gradient(1px 1px at 76% 90%, rgba(243, 237, 222, 0.3) 50%, transparent 51%),
+    radial-gradient(1px 1px at 22% 44%, rgba(217, 179, 108, 0.5) 50%, transparent 51%);
+  animation: star-breathe 9s ease-in-out infinite alternate;
+}
+@keyframes star-breathe { from { opacity: 0.55; } to { opacity: 0.95; } }
+[data-theme="light"] .starfield { display: none; }
+
+/* Eyebrow ornament — crescent, hairline, label */
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.eyebrow .rule {
+  height: 1px;
+  width: 44px;
+  background: var(--accent-line);
+}
+.eyebrow svg { color: var(--accent); flex-shrink: 0; }
+.eyebrow span {
+  font-family: "JetBrains Mono Variable", ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+[dir="rtl"] .eyebrow span { letter-spacing: 0.08em; }
+
+/* Obsidian dream-input frame */
+.obsidian-frame {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: clamp(18px, 2.6vw, 28px);
+  box-shadow: var(--shadow), inset 0 1px 0 rgba(243, 237, 222, 0.04);
+  transition: border-color 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+.obsidian-frame:focus-within {
+  border-color: var(--accent-line);
+  box-shadow: var(--shadow), 0 0 0 3px var(--accent-glow), inset 0 1px 0 rgba(243, 237, 222, 0.05);
+}
+.obsidian-frame .field {
+  background: transparent;
+  border: none;
+  padding: 4px 2px;
+  border-radius: 0;
+}
+.obsidian-frame .field:focus { box-shadow: none; }
+
+/* Sanctum — the revealed reading */
+.sanctum {
+  position: relative;
+  overflow: hidden;
+}
+.sanctum::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  inset-inline: 0;
+  height: 2px;
+  background: var(--accent);
+  opacity: 0.85;
+}
+.sanctum::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  inset-inline: 0;
+  height: 44px;
+  background: var(--accent-glow);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Perspective chip — selected state glows gold */
+.perspective-chip[style*="var(--accent-glow)"] {
+  box-shadow: 0 0 0 1px var(--accent-line), 0 2px 14px var(--accent-glow);
+}
+
 /* ============ Reduced motion ============ */
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
   .page-fade { animation: none; }
   .rise { animation: none; }
   .ambient { animation: none; }
+  .starfield { animation: none; opacity: 0.7; }
   .skeleton { animation: none; }
   * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
 }

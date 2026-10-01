@@ -119,31 +119,37 @@ def translate_with_retry(en_name: str, locale: str, max_retries: int = 3) -> tup
     if not API_KEY:
         return "", "no_api_key"
     target = LOCALE_NAMES.get(locale, locale)
+    # A plain "translate X into Y" prompt reads as an instruction to the
+    # model, and these free models answer "User Safety: safe" instead of the
+    # word — which the quality gate scored as a failed translation. Framing it
+    # as a glossary lookup (word = ...) gets the bare translation back.
     prompt = (
-        f"Translate the following single English word into {target} ({locale}). "
-        f"Reply with only the translated word or short phrase, no punctuation, no explanation.\n\n"
-        f"Word: {en_name}\n"
-        f"{target} ({locale}):"
+        f"Glossary entry: {en_name} ({locale}) = "
+        f"the {target} translation. Write only the {target} word or short "
+        f"phrase, nothing else.\n\n"
+        f"{en_name} ({locale}):"
     )
-    # Free models known to be alive Sep 2026. m2.7 is a reasoning model that
-    # leaks "Here's a thinking process..." — only use it as last-resort and
-    # only after the safer two have failed entirely for THIS call.
+    # Measured 2026-10-01 against this key: openrouter/free is the only entry that
+    # reliably returns a bare translation. The two named free slugs this used to
+    # fall back on are dead — google/gemma-4-26b-a4b-it:free answers 429 and
+    # minimax/minimax-m2.7:free answers 404 "unavailable for free" — so the
+    # chain is one entry and max_retries below does the real work.
     chain = [
-        "openrouter/free",                  # OR router fallback (most reliable)
-        "google/gemma-4-26b-a4b-it:free",   # multilingual
-        "minimax/minimax-m2.7:free",        # reasoning — last (can leak)
+        "openrouter/free",
     ]
     last_err = ""
-    leaked_count = 0
     for m in chain:
         for attempt in range(max_retries):
             body = json.dumps({
                 "model": m,
                 "messages": [{"role": "user", "content": prompt}],
-                # 60 left too little room for reasoning-capable free models: they
-                # spent the whole budget on thinking and returned content=None,
-                # which the quality gate scored as "too_short". Verified 300
-                # returns real translations (doctor -> γιατρός / gydytojas).
+                # These free models are reasoning-tuned: left alone they spend 7000+ tokens
+                # deliberating one word and hit finish_reason="length" with
+                # content=None (~3 of 4 runs), which the quality gate scored as
+                # "too_short". A one-word translation needs no deliberation —
+                # asking for none returns the answer every time
+                # (death_family -> θάνατος_οικογένεια).
+                "reasoning": {"effort": "none"},
                 "max_tokens": 300,
                 "temperature": 0.2,
             }).encode()
@@ -156,18 +162,29 @@ def translate_with_retry(en_name: str, locale: str, max_retries: int = 3) -> tup
                 },
             )
             try:
-                with urllib.request.urlopen(req, timeout=15) as resp:
+                # 15s cut off the slower reasoning runs mid-generation (URLError -> "too_short"
+                # with no retry). 60s matches the host's other free-tier callers.
+                with urllib.request.urlopen(req, timeout=60) as resp:
                     data = json.loads(resp.read().decode())
                 msg = data["choices"][0]["message"]
                 content = (msg.get("content") or "").strip().strip("\"'.,!") or None
+                # A truncated reasoning run returns content=None. Retry it
+                # instead of scoring it as a failed translation.
+                if not content and data["choices"][0].get("finish_reason") == "length":
+                    last_err = f"{m}:truncated_retry_{attempt}"
+                    if attempt < max_retries - 1:
+                        continue
+                    break
                 if content and "thinking process" not in content.lower() and not content.startswith("Here's"):
                     return content, m
+                # A leaked or empty answer is retryable: the next attempt
+                # usually returns a clean translation. (The old leaked_count
+                # guard was redundant once the chain held a single entry.)
                 last_err = f"{m}:leak_or_empty"
-                leaked_count += 1
-                if leaked_count >= 3:
-                    # All 3 models in the chain leaked → no point trying more
-                    return f"[error: all_models_leaked]", "all_models_leaked"
-                break  # No retry for content-quality issues
+                if attempt < max_retries - 1:
+                    time.sleep(2 ** attempt)
+                    continue
+                break
             except urllib.error.HTTPError as e:
                 code = e.code
                 if code == 429 and attempt < max_retries - 1:

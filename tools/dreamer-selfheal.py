@@ -129,13 +129,18 @@ def translate_with_retry(en_name: str, locale: str, max_retries: int = 3) -> tup
         f"phrase, nothing else.\n\n"
         f"{en_name} ({locale}):"
     )
-    # Measured 2026-10-01 against this key: openrouter/free is the only entry that
-    # reliably returns a bare translation. The two named free slugs this used to
-    # fall back on are dead — google/gemma-4-26b-a4b-it:free answers 429 and
-    # minimax/minimax-m2.7:free answers 404 "unavailable for free" — so the
-    # chain is one entry and max_retries below does the real work.
+    # Measured 2026-10-01 against this key.
+    #   qwen/qwen3.8-27b:free             -> answers, honours effort=none
+    #   nvidia/nemotron-3.5-lightning:free -> answers, honours effort=none
+    # openrouter/free (the router) is deliberately NOT here: it rejects
+    # reasoning={"effort":"none"} with 400 "Reasoning is mandatory for this
+    # endpoint", so a translation request there burns its whole budget on
+    # deliberation and returns nothing. A named slug lets us switch reasoning
+    # off. The other two slugs this used to name are dead (gemma-4-26b -> 429,
+    # minimax-m2.7 -> 404 "unavailable for free").
     chain = [
-        "openrouter/free",
+        "qwen/qwen3.8-27b:free",              # verified translation-capable
+        "nvidia/nemotron-3.5-lightning:free", # verified, second pass
     ]
     last_err = ""
     for m in chain:

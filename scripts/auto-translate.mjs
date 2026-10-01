@@ -75,7 +75,10 @@ try {
 const liveReachable = probe.startsWith('2') || probe === '400'; // 400 means endpoint alive, rejected our tiny payload — still usable
 if (liveReachable) {
   log(`using LIVE /api/translate (no operator secret needed; engine runs on Vercel). probe=${probe}.`);
-  const out = run(`node scripts/translate-live.mjs`, { timeout: 900000 }); // increased to 15 min
+  // --all MUST be forwarded: without it the driver skips locales it wrongly
+  // considers complete and the whole run degenerates into a no-op.
+  const allFlag = process.argv.includes('--all') ? ' --all' : '';
+  const out = run(`node scripts/translate-live.mjs${allFlag}`, { timeout: 900000 }); // increased to 15 min
   console.log(out.split('\n').filter((l) => /→|✓|✗|Done|translated/.test(l)).join('\n'));
 } else if (usable(KEY)) {
   const mode = process.argv.includes('--all') ? '--force' : '--complete';

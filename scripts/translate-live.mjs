@@ -78,7 +78,7 @@ function pendingKeys(localeCode) {
     const corrupt =
       typeof v !== 'string' || !v.trim() ||          // missing / empty
       ph(en) !== ph(v) ||                            // placeholder drift
-      /^\s*\{"/.test(v) ||                           // JSON blob stuffed into a string
+      /^\s*[{[]/.test(v) ||                          // JSON blob stuffed into a string
       v === en;                                      // EN fallback
     if (corrupt && !IDENTITY_KEYS.has(k) && !BRAND_KEYS.has(k)) pending.push(k);
   }
@@ -231,3 +231,29 @@ for (const lang of targets) {
   await sleep(1000);
 }
 console.log(`\nDone: ${ok} translated, ${failed.length} failed${failed.length ? ': ' + failed.join(', ') : ''}`);
+
+// 4. Honest completion report. "Done" above only counts files written — it says
+//    nothing about whether the locale is actually complete. An endpoint outage
+//    fills gaps with EN source, so report real coverage instead of a false green.
+const phF = (s) => (String(s).match(/\{[\w.]+\}/g) || []).sort().join(',');
+const IDENTITY = new Set(['profile.noneYet', 'profile.autoSetupCmd', 'footer.copyright',
+  'nav.ansyGroup', 'nav.aiBlog', 'nav.faq']);
+const enFlat = new Map(flatten(JSON.parse(readFileSync(join(localesDir, 'en.json'), 'utf8'))));
+let done = 0, incomplete = [];
+for (const l of all) {
+  if (l.code === 'en' || l.code === 'ar') continue;
+  let j;
+  try { j = JSON.parse(readFileSync(join(localesDir, `${l.code}.json`), 'utf8')); }
+  catch { incomplete.push(`${l.code}(unreadable)`); continue; }
+  const m = new Map(flatten(j));
+  const pending = [];
+  for (const [k, en] of enFlat) {
+    if (IDENTITY.has(k)) continue;
+    const v = m.get(k);
+    if (typeof v !== 'string' || !v.trim() || v === en || phF(en) !== phF(v) || /^\s*[{[]/.test(v)) pending.push(k);
+  }
+  if (pending.length) incomplete.push(`${l.code}(${pending.length})`); else done++;
+}
+console.log(`Coverage: ${done}/${all.length - 2} locales complete` +
+  (incomplete.length ? ` | incomplete: ${incomplete.join(' ')}` : ' | ALL LOCALES COMPLETE'));
+if (incomplete.length) console.log(`⚠️  localization NOT finished — ${incomplete.length} locale(s) still need work (endpoint may be rate-limited; retried next tick).`);

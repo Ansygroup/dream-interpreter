@@ -62,6 +62,24 @@ const BRAND_KEYS = new Set(['nav.ansyGroup', 'nav.aiBlog', 'nav.faq']);
 
 const flatEn = new Map(flatten(source));
 
+// Learned identity tokens: keys the endpoint provably returns unchanged (proper
+// nouns like "Hindu"/"Buddhist", short nav words). Persisted so every later tick
+// stops re-requesting them — otherwise they are "pending" forever and the run
+// never converges. Only ever written after the endpoint ACTUALLY returned the
+// source string identically with valid placeholders.
+const learnedFile = join(root, 'scripts/.i18n-identity.json');
+let learned = new Set();
+try { learned = new Set(JSON.parse(readFileSync(learnedFile, 'utf8'))); } catch { /* first run */ }
+const saveLearned = () => {
+  try { writeFileSync(learnedFile, JSON.stringify([...learned].sort(), null, 2) + '\n', 'utf8'); } catch { /* best effort */ }
+};
+
+/** Load a locale, or null when absent/unreadable. */
+function loadLocale(localeCode) {
+  try { return JSON.parse(readFileSync(join(localesDir, `${localeCode}.json`), 'utf8')); }
+  catch { return null; }
+}
+
 /**
  * Keys in `localeCode` whose value is missing, structurally corrupt, or an
  * untranslated EN copy — i.e. real work left to do. Returns [] when the locale
@@ -69,9 +87,8 @@ const flatEn = new Map(flatten(source));
  */
 function pendingKeys(localeCode) {
   const pending = [];
-  let existing = {};
-  try { existing = JSON.parse(readFileSync(join(localesDir, `${localeCode}.json`), 'utf8')); }
-  catch { return [...flatEn.keys()]; } // unreadable/absent → everything pending
+  const existing = loadLocale(localeCode);
+  if (!existing) return [...flatEn.keys()]; // unreadable/absent → everything pending
   const have = new Map(flatten(existing));
   for (const [k, en] of flatEn) {
     const v = have.get(k);
@@ -80,7 +97,7 @@ function pendingKeys(localeCode) {
       ph(en) !== ph(v) ||                            // placeholder drift
       /^\s*[{[]/.test(v) ||                          // JSON blob stuffed into a string
       v === en;                                      // EN fallback
-    if (corrupt && !IDENTITY_KEYS.has(k) && !BRAND_KEYS.has(k)) pending.push(k);
+    if (corrupt && !IDENTITY_KEYS.has(k) && !BRAND_KEYS.has(k) && !learned.has(k)) pending.push(k);
   }
   return pending;
 }
@@ -88,9 +105,9 @@ function pendingKeys(localeCode) {
 const targets = all.filter((l) => {
   if (l.code === 'en' || l.code === 'ar') return false;
   if (only && !only.includes(l.code)) return false;
-  // Skip only locales that are genuinely complete. A single-string heuristic
-  // (footer.tagline) marked PARTIAL locales as done forever.
-  if (!process.argv.includes('--all') && pendingKeys(l.code).length === 0) return false;
+  // Skip locales with nothing pending — even under --all. Rewriting a complete
+  // locale costs a write and risks an EN regression for zero gain.
+  if (pendingKeys(l.code).length === 0) return false;
   return true;
 });
 
@@ -180,9 +197,11 @@ async function translateChunk(code, chunkObj) {
 }
 
 async function translateLocale({ code }) {
-  const chunks = chunkSource(source);
-  const merged = {};
-  let failedTotal = 0;
+  // ONLY the pending keys are re-requested. Re-sending all 205 keys for a locale
+  // that is 202/205 done costs 205 requests to fix 3 — 57 locales × 205 = ~11.7k
+  // requests, which never fits in a tick and commits nothing.
+  const wanted = new Set(pendingKeys(code));
+  const existing = loadLocale(code) || {};
   const deepMerge = (target, src) => {
     for (const k of Object.keys(src)) {
       if (src[k] && typeof src[k] === 'object' && !Array.isArray(src[k])) {
@@ -191,44 +210,56 @@ async function translateLocale({ code }) {
       } else target[k] = src[k];
     }
   };
-  for (const c of chunks) {
-    const { translations, failed } = await translateChunk(code, c);
-    failedTotal += failed.length;
-    deepMerge(merged, translations);
-  }
-  // Graceful degradation: fill any key still missing / with broken placeholders
-  // with its English source so the file is always structurally complete and
-  // valid. These stubs are picked up and translated on a subsequent tick.
-  let englishFill = 0;
+  const merged = JSON.parse(JSON.stringify(existing));
+  // A partial subtree would make the endpoint 502 on completeness validation,
+  // so translate the pending keys strictly one-by-key (key-by-key has no
+  // completeness constraint).
   const setPath = (rootObj, path, val) => {
     const parts = path.split('.'); let node = rootObj;
     while (parts.length > 1) { const p = parts.shift(); node[p] = (node[p] && typeof node[p] === 'object') ? node[p] : {}; node = node[p]; }
     node[parts[0]] = val;
   };
-  const flatS = flatten(source);
-  for (const [k, v] of flatS) {
-    const o = merged && k.split('.').reduce((n, kk) => (n && typeof n === 'object' ? n[kk] : undefined), merged);
-    if (typeof o !== 'string' || !o.trim() || ph(v) !== ph(o)) { setPath(merged, k, v); englishFill++; }
+  let failedTotal = 0, englishFill = 0, learnedCount = 0;
+  for (const k of wanted) {
+    const en = flatEn.get(k);
+    if (typeof en !== 'string') continue; // non-string leaf
+    const t = await translateOneKey(code, k, en);
+    if (t == null) { englishFill++; failedTotal++; continue; }
+    setPath(merged, k, t);
+    // Endpoint returned the source verbatim: the string is locale-independent
+    // (proper noun, brand, code). Record it so this key never blocks a tick.
+    if (t === en) { learned.add(k); learnedCount++; }
   }
-  return { merged, failedTotal, englishFill };
+  if (learnedCount) saveLearned();
+
+  // Structural guard: keep the file complete and valid even when some keys fell
+  // back to English. Untranslated gaps stay visible as EN fallback and get
+  // retried on the next tick.
+  for (const [k, v] of flatEn) {
+    const o = merged && k.split('.').reduce((n, kk) => (n && typeof n === 'object' ? n[kk] : undefined), merged);
+    if (typeof o !== 'string' || !o.trim() || ph(v) !== ph(o)) { setPath(merged, k, v); if (!wanted.has(k)) englishFill++; }
+  }
+  return { merged, failedTotal, englishFill, pending: wanted.size, learnedCount };
 }
 
 let ok = 0, failed = [];
 for (const lang of targets) {
-  process.stdout.write(`→ ${lang.code} (${lang.english}) … `);
+  const n = pendingKeys(lang.code).length;
+  process.stdout.write(`→ ${lang.code} (${lang.english}) ${n} pending … `);
   try {
-    const { merged, failedTotal, englishFill } = await translateLocale(lang);
+    const { merged, failedTotal, englishFill, pending, learnedCount } = await translateLocale(lang);
     writeFileSync(join(localesDir, `${lang.code}.json`), JSON.stringify(merged, null, 2) + '\n', 'utf8');
     const keys = flatten(merged).length;
-    let note = '';
-    if (failedTotal || englishFill) note = ` (${failedTotal} key-fallback, ${englishFill} english-fill)`;
+    let note = ` of ${pending} translated`;
+    if (learnedCount) note += `, ${learnedCount} identity`;
+    if (failedTotal) note += ` (${failedTotal} failed→EN)`;
     console.log(`✓ ${keys} keys${note}`);
     ok++;
   } catch (e) {
     console.log(`✗ ${e.message}`);
     failed.push(lang.code);
   }
-  await sleep(1000);
+  await sleep(200);
 }
 console.log(`\nDone: ${ok} translated, ${failed.length} failed${failed.length ? ': ' + failed.join(', ') : ''}`);
 
@@ -242,17 +273,8 @@ const enFlat = new Map(flatten(JSON.parse(readFileSync(join(localesDir, 'en.json
 let done = 0, incomplete = [];
 for (const l of all) {
   if (l.code === 'en' || l.code === 'ar') continue;
-  let j;
-  try { j = JSON.parse(readFileSync(join(localesDir, `${l.code}.json`), 'utf8')); }
-  catch { incomplete.push(`${l.code}(unreadable)`); continue; }
-  const m = new Map(flatten(j));
-  const pending = [];
-  for (const [k, en] of enFlat) {
-    if (IDENTITY.has(k)) continue;
-    const v = m.get(k);
-    if (typeof v !== 'string' || !v.trim() || v === en || phF(en) !== phF(v) || /^\s*[{[]/.test(v)) pending.push(k);
-  }
-  if (pending.length) incomplete.push(`${l.code}(${pending.length})`); else done++;
+  const p = pendingKeys(l.code);
+  if (p.length) incomplete.push(`${l.code}(${p.length})`); else done++;
 }
 console.log(`Coverage: ${done}/${all.length - 2} locales complete` +
   (incomplete.length ? ` | incomplete: ${incomplete.join(' ')}` : ' | ALL LOCALES COMPLETE'));

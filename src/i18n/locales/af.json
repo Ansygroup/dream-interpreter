@@ -12,7 +12,7 @@
     "aiBlog": "KI Blog",
     "ansyGroup": "Ansy Groep",
     "language": "Taal",
-    "searchLanguage": " Soek tale…",
+    "searchLanguage": "Soek tale…",
     "noLanguage": "Geen taal stem ooreen met jou soektog nie.",
     "profile": "Profiel"
   },
@@ -113,7 +113,7 @@
   "symbols": {
     "title": "{n} Droomsimbole",
     "lede": "Blaai deur elke simbool wat ons vertolk — gratis, in dosyne tale. Kies joune om die betekenis te lees.",
-    "search": " Soek 'n simbool…",
+    "search": "Soek 'n simbool…",
     "noResults": "Geen simbool stem ooreen met jou soektog nie."
   },
   "about": {

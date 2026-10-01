@@ -217,7 +217,7 @@
     "cloudTitle": "Cihazlarınız arasında",
     "connectTitle": "Supabase layihənizi bağlayın",
     "connectUrlLabel": "Layihə URL-i",
-    "connectKeyLabel": "Anon public key",
+    "connectKeyLabel": "Anon açarı",
     "connectCta": "Bağla",
     "connected": "Bağlandı — indi daxil ola və jurnalınızı sinxronlaşdıra bilərsiniz.",
     "connectError": "Bağlantı qurula bilmədi. URL və anon key-i yoxlayın.",

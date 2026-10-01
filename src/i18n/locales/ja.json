@@ -2,7 +2,7 @@
   "nav": {
     "interpret": "解釈する",
     "symbols": "シンボル",
-    "about": " Dreamscopeについて",
+    "about": "Dreamscopeについて",
     "faq": "よくある質問",
     "history": "履歴",
     "saved": "保存済み",
@@ -112,7 +112,7 @@
   },
   "symbols": {
     "title": "{n} の夢のシンボル",
-    "lede": " Dreamscope が解釈するすべてのシンボルを、無料で多数言語でお届けします。お好きな言語を選んで意味をご覧ください。",
+    "lede": "Dreamscope が解釈するすべてのシンボルを、無料で多数言語でお届けします。お好きな言語を選んで意味をご覧ください。",
     "search": "シンボルを検索…",
     "noResults": "検索に一致するシンボルはありません。"
   },
@@ -187,9 +187,9 @@
   },
   "profile": {
     "title": "マイページ",
-    "cloudOff": " dream text is sent to our interpretation service to generate a reading, then is not stored by us. Readings are kept on your device unless you sign in and choose to sync. We never sell or profile your data.",
-    "dataNote": "あなたのデータの保管場所：基本的にあなたのデバイス上です。サインインすると、 journal があなたのプライベートアカウントに同期されます。いつでも削除できます。",
-    "signInLede": "サインインして、すべてのデバイスで dream journal を同期しましょう。ゲストとしての履歴も自動で引き継がれます。",
+    "cloudOff": "夢のテキストはリーディングを生成するため当社の解釈サービスへ送信されますが、私たち側は保管しません。リーディングは、サインインして同期を選んだ場合にのみ、お使いの端末に保存されます。私たちがお客様のデータを販売したりプロファイルしたりすることはありません。",
+    "dataNote": "あなたのデータの保管場所：基本的にあなたのデバイス上です。サインインすると、ジャーナルがあなたのプライベートアカウントに同期されます。いつでも削除できます。",
+    "signInLede": "サインインして、すべてのデバイスで夢の日記を同期しましょう。ゲストとしての履歴も自動で引き継がれます。",
     "emailLabel": "メールアドレス",
     "magicLink": "サインインリンクを送信",
     "google": "Googleで続行",

@@ -94,9 +94,18 @@ if (liveReachable) {
 }
 
 // 3. Commit + push the freshly localized locales (if any changed).
+//    Push to the CURRENT branch, never a hardcoded "master": the repo carries
+//    long-lived work branches (redesign/*, ops/*) and pushing master from one
+//    of them is rejected as non-fast-forward, silently losing every run's work.
 const status = run('git status --porcelain src/i18n/locales/');
 if (!status.trim()) { log('no locale changes — nothing to commit.'); process.exit(0); }
 run('git add src/i18n/locales/*.json');
-run('git commit -m \"i18n: agent auto-localized UI strings (self-completing localization)\" || true');
-run('git push origin master || true');
+run('git commit -m "i18n: agent auto-localized UI strings (self-completing localization)" || true');
+const BRANCH = run('git rev-parse --abbrev-ref HEAD').trim();
+const pushed = run(`git push origin HEAD:${BRANCH}`);
+if (/rejected|failed/.test(pushed)) {
+  log(`⚠️ push to ${BRANCH} rejected — run 'git pull --rebase' to integrate, then push.`);
+} else {
+  log(`✅ pushed to origin/${BRANCH}.`);
+}
 log('✅ auto-localization pass complete.');

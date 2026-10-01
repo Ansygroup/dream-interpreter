@@ -15,7 +15,8 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, '..');
-const BASE = process.env.API_BASE || 'https://dream-interpreter-alpha-ruddy.vercel.app';
+const BASE = process.env.API_BASE || 'https://dream-interpreter-ansygroups-projects.vercel.app';
+const DEPLOY_LOOP = 'C:/Users/ansy0/ZCodeProject/scripts/deploy-loop.mjs';
 const OUT = path.join(root, 'public', 'dream-today.json');
 const today = new Date().toISOString().slice(0, 10);
 
@@ -40,8 +41,15 @@ sh('git add public/dream-today.json');
 sh('git -c user.email="ansy@ansygroup.com" -c user.name="Hermes" commit -q -m "chore: dream of the day — ' + local.symbol.en + ' (' + today + ')"');
 sh('git push origin master', 60000);
 
-// 3. deploy (quota-safe)
-const out = sh('timeout 150 vercel deploy --prod --yes 2>&1', 160000);
+// 3. deploy (quota-safe).
+// This checkout and repos/dream-interpreter-feed are TWO checkouts linked to the
+// SAME Vercel project. An in-place `vercel deploy` from here uploads this branch's
+// public/ copy (a stale 2026-08-31) and lands QUEUED, never live. The only
+// correct publisher is the shared deploy loop, which syncs origin/master's feed
+// and deploys from a git-free staging dir. 2026-10-01.
+const out = existsSync(DEPLOY_LOOP)
+  ? sh('node ' + JSON.stringify(DEPLOY_LOOP), 900000)
+  : sh('timeout 150 vercel deploy --prod --yes 2>&1', 160000);
 if (/api-deployments-free-per-day/.test(out)) { console.log('[daily-feed] QUOTA BLOCKED — will retry next tick.'); process.exit(0); }
 
 // 4. verify

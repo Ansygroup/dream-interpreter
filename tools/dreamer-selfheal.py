@@ -140,7 +140,11 @@ def translate_with_retry(en_name: str, locale: str, max_retries: int = 3) -> tup
             body = json.dumps({
                 "model": m,
                 "messages": [{"role": "user", "content": prompt}],
-                "max_tokens": 60,
+                # 60 left too little room for reasoning-capable free models: they
+                # spent the whole budget on thinking and returned content=None,
+                # which the quality gate scored as "too_short". Verified 300
+                # returns real translations (doctor -> γιατρός / gydytojas).
+                "max_tokens": 300,
                 "temperature": 0.2,
             }).encode()
             req = urllib.request.Request(

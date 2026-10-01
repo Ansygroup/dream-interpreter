@@ -73,6 +73,39 @@ try {
   probe = String(res.status);
 } catch { probe = '000'; }
 const liveReachable = probe.startsWith('2') || probe === '400'; // 400 means endpoint alive, rejected our tiny payload — still usable
+
+// 2b. LIVENESS probe — a reachable route is NOT a working translator.
+//     The cheap probe above only proves /api/translate exists. When nothing is
+//     pending, the driver below makes ZERO translation calls, so a dead engine
+//     (all models 404/429/402 on Vercel prod) reports a perfect false green:
+//     "Done: 0 translated" + "no locale changes". That breaks the self-completing
+//     loop — it can never notice its own blocker. So always force ONE real
+//     translation through the endpoint and report the verdict, pending or not.
+let engineOk = null, engineDetail = '';
+if (liveReachable) {
+  try {
+    const r2 = await fetch(`${BASE}/api/translate`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ code: 'sw', source: { nav: { home: 'Home' } } }),
+      signal: AbortSignal.timeout(120000),
+    });
+    const j2 = await r2.json().catch(() => ({}));
+    const got = j2?.translations?.nav?.home;
+    engineOk = r2.ok && typeof got === 'string' && got.trim().length > 0;
+    engineDetail = `HTTP ${r2.status}${got ? ` got=${JSON.stringify(got)}` : ` err=${j2?.error || 'no translations'}`}`;
+  } catch (e) { engineOk = false; engineDetail = `threw: ${e?.message || e}`; }
+  log(`${engineOk ? '✅' : '❌'} translation engine liveness: ${engineDetail}`);
+  if (!engineOk) {
+    log('⚠️  ENGINE DEAD but route is up — the self-completing loop is BLOCKED and no cron tick can heal it.');
+    log('   Usual causes, in order: (1) Vercel prod is running STALE code whose');
+    log('   FREE_MODELS list is dead (check: `vercel ls` last Ready age vs the');
+    log('   commit that last touched api/translate.js); (2) deploys failing with');
+    log('   BUILD_ERROR "Resource provisioning failed"; (3) OpenRouter key out of');
+    log('   credits on the Vercel prod env. Locales stay as-is — no work is lost.');
+  }
+}
+
 if (liveReachable) {
   log(`using LIVE /api/translate (no operator secret needed; engine runs on Vercel). probe=${probe}.`);
   // --all MUST be forwarded: without it the driver skips locales it wrongly
@@ -98,7 +131,21 @@ if (liveReachable) {
 //    long-lived work branches (redesign/*, ops/*) and pushing master from one
 //    of them is rejected as non-fast-forward, silently losing every run's work.
 const status = run('git status --porcelain src/i18n/locales/');
-if (!status.trim()) { log('no locale changes — nothing to commit.'); process.exit(0); }
+const hasChanges = !!status.trim();
+// 3b. Exit 75 (EX_TEMPFAIL) when the engine is verifiably dead. A "no locale
+//     changes" success would otherwise be indistinguishable from real progress,
+//     and the cron would report a healthy pass forever while nothing can
+//     translate. Locales are untouched either way — this only makes the failure
+//     visible instead of silently green.
+if (engineOk === false) {
+  if (!hasChanges) log('no locale changes — nothing to commit.');
+  log('❌ exiting 75 (engine dead, locales unchanged) — see the liveness line above.');
+  process.exit(75);
+}
+if (!hasChanges) {
+  log('no locale changes — nothing to commit.');
+  process.exit(0);
+}
 run('git add src/i18n/locales/*.json');
 run('git commit -m "i18n: agent auto-localized UI strings (self-completing localization)" || true');
 const BRANCH = run('git rev-parse --abbrev-ref HEAD').trim();

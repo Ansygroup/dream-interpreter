@@ -95,7 +95,11 @@ function pendingKeys(localeCode) {
     const corrupt =
       typeof v !== 'string' || !v.trim() ||          // missing / empty
       ph(en) !== ph(v) ||                            // placeholder drift
-      /^\s*[{[]/.test(v) ||                          // JSON blob stuffed into a string
+      // JSON blob stuffed into a string, e.g. {"title":"…"} or [{…}].
+      // MUST require a quote/bracket right after `{`, otherwise it also matches a
+      // LEGITIMATE placeholder-leading translation such as "{n} idiomas" — which
+      // made 171 already-correct values look pending forever and starved the run.
+      /^\s*\{\s*["'\[]/.test(v) ||
       v === en;                                      // EN fallback
     if (corrupt && !IDENTITY_KEYS.has(k) && !BRAND_KEYS.has(k) && !learned.has(k)) pending.push(k);
   }

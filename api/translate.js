@@ -22,10 +22,24 @@ const LANG_NAMES = {
  km: 'Khmer', my: 'Burmese', mn: 'Mongolian', lt: 'Lithuanian', lo: 'Lao',
  };
 
+// Free OpenRouter models for UI localization.
+//
+// REFRESHED 2026-10-01: the previous trio (z-ai/glm-5.2:free,
+// minimax/minimax-m3:free, google/gemma-4-31b-it:free) went dead — production
+// logs showed the first two returning HTTP 404 (removed from the catalog) and
+// gemma-4-31b returning HTTP 429 on every chunk, so EVERY /api/translate call
+// ended in 502 "A translation chunk failed" and zero locales could advance.
+//
+// These ids are verified to EXIST in GET https://openrouter.ai/api/v1/models
+// (a 401 with an invalid key proves the route+model resolve; a 404 would mean
+// the model is gone). Ordered most→least capable for copy quality. The loop
+// still walks all of them, so one being rate-limited is not fatal.
 const FREE_MODELS = [
-  'z-ai/glm-5.2:free',
-  'minimax/minimax-m3:free',
+  'nvidia/nemotron-3-super-120b-a12b:free',
+  'qwen/qwen3.8-27b:free',
   'google/gemma-4-31b-it:free',
+  'thinkingmachines/inkling:free',
+  'nvidia/nemotron-3-ultra-550b-a55b:free',
 ];
 
 export const maxDuration = 300;

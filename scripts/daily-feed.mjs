@@ -25,6 +25,22 @@ const getJson = (u) => new Promise((res) => {
 });
 
 console.log(`[daily-feed] ${new Date().toISOString()}`);
+
+// Safety guard: this script pushes the checked-out tree to master and deploys it
+// to production. If the repo is sitting on a feature/redesign branch, that would
+// silently ship unreviewed work. Only the release branch may publish.
+const BRANCH = (process.env.FEED_BRANCH || 'master');
+const head = sh('git rev-parse --abbrev-ref HEAD', 20000).trim();
+if (head !== BRANCH) {
+  console.error(`[daily-feed] ABORT — checked-out branch is ${JSON.stringify(head)}, expected ${JSON.stringify(BRANCH)}.`);
+  console.error('[daily-feed] Refusing to push/deploy from a non-release branch.');
+  process.exit(2);
+}
+if (/^\s*(UU|AA|DD|AU|UA|DU|UD)/.test(sh('git diff --name-only --diff-filter=U', 20000))) {
+  console.error('[daily-feed] ABORT — unresolved merge conflicts.');
+  process.exit(2);
+}
+
 // Already live for today?
 const live = await getJson(`${BASE}/dream-today.json`);
 if (live && live.date === today) { console.log('[daily-feed] live already has today\'s dream — nothing to do.'); process.exit(0); }
@@ -38,7 +54,14 @@ if (local.date !== today) { console.error('[daily-feed] generated date mismatch.
 // 2. commit + push
 sh('git add public/dream-today.json');
 sh('git -c user.email="ansy@ansygroup.com" -c user.name="Hermes" commit -q -m "chore: dream of the day — ' + local.symbol.en + ' (' + today + ')"');
-sh('git push origin master', 60000);
+const push = sh('git push origin ' + BRANCH, 60000);
+// sh() returns '' on success and captured stderr on failure — never deploy a
+// push that did not land, or the card silently reverts on the next build.
+if (/rejected|error:|failed|denied|non-fast-forward/i.test(push)) {
+  console.error('[daily-feed] git push FAILED — not deploying.');
+  console.error(push.trim().slice(0, 500));
+  process.exit(3);
+}
 
 // 3. deploy (quota-safe)
 const out = sh('timeout 150 vercel deploy --prod --yes 2>&1', 160000);

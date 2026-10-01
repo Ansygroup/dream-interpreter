@@ -35,11 +35,12 @@ const LANG_NAMES = {
 // the model is gone). Ordered most→least capable for copy quality. The loop
 // still walks all of them, so one being rate-limited is not fatal.
 const FREE_MODELS = [
+  'openrouter/free',                            // router-side pool — never a retired id
   'nvidia/nemotron-3-super-120b-a12b:free',
-  'qwen/qwen3.8-27b:free',
+  'google/gemma-4-26b-a4b-it:free',
   'google/gemma-4-31b-it:free',
-  'thinkingmachines/inkling:free',
-  'nvidia/nemotron-3-ultra-550b-a55b:free',
+  'qwen/qwen3.8-27b:free',
+  'nvidia/nemotron-3.5-lightning:free',
 ];
 
 export const maxDuration = 300;

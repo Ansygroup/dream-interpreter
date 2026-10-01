@@ -273,5 +273,69 @@ ok('geo is a fallback, not a hard gate', /Fallback to geo|geo country language/.
 ok('falls back to browser lang even if geo fails', /Network\/geo failed/.test(i18nSrc));
 
 // ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+// 17. No retired OpenRouter model ids in the translation/interpretation engines
+//    (a stale :free list makes every chunk 502 -> the agent reports false green)
+// ---------------------------------------------------------------------------
+section('Live OpenRouter free-model cascade');
+const RETIRED = [
+  'z-ai/glm-5.2:free',
+  'minimax/minimax-m3:free',
+  'inclusionai/ling-3.0-flash-fin:free',
+];
+const ENGINE_FILES = ['api/translate.js', 'api/translate-one.js', 'api/interpret.js'];
+// Parse ONLY the FREE_MODELS array literal — a retired id named in a historical
+// comment is documentation, not a live cascade entry.
+const modelIds = (file) => {
+  const m = read(file).match(/const (?:FREE_MODELS|MODELS) = \[([\s\S]*?)\n\];/);
+  return m ? (m[1].match(/'([^']+)'/g) || []).map((s) => s.replace(/'/g, '')) : [];
+};
+let retiredHits = 0;
+for (const f of ENGINE_FILES) {
+  const ids = modelIds(f);
+  if (!ids.length) { failed++; console.log(`   FAIL could not parse model list in ${f}`); continue; }
+  for (const dead of RETIRED) {
+    if (ids.includes(dead)) { retiredHits++; console.log(`   RETIRED ${dead} in ${f}`); }
+  }
+}
+ok('no retired free-model ids in any engine cascade', retiredHits === 0);
+for (const f of ENGINE_FILES) {
+  ok(`${f} leads with the router-side free pool`, modelIds(f)[0] === 'openrouter/free');
+}
+ok('translate cascade keeps 3+ live models (one dying is not fatal)', modelIds('api/translate.js').length >= 3);
+
+// ---------------------------------------------------------------------------
+// 18. Locale values are real translations (no corrupt JSON blobs, placeholders kept)
+// ---------------------------------------------------------------------------
+section('Locale value integrity (all locales)');
+const CORRUPT_BLOB = /^\s*\{\s*["'\[]/;   // a real blob, NOT a legitimate '{n} ...' string
+let corruptVals = 0, emptyVals = 0, phDrift = 0;
+const leaves = (o, p = '') => {
+  const out = {};
+  for (const k of Object.keys(o)) {
+    const np = p ? `${p}.${k}` : k;
+    if (o[k] && typeof o[k] === 'object' && !Array.isArray(o[k])) Object.assign(out, leaves(o[k], np));
+    else out[np] = o[k];
+  }
+  return out;
+};
+const enL = leaves(en);
+for (const f of readdirSync(locDir).filter((x) => x.endsWith('.json'))) {
+  if (f === 'en.json') continue;
+  const L = leaves(json(`src/i18n/locales/${f}`));
+  for (const [k, v] of Object.entries(L)) {
+    if (typeof v !== 'string' || !v.trim()) { emptyVals++; continue; }
+    if (CORRUPT_BLOB.test(v)) { corruptVals++; console.log(`   corrupt ${f}:${k}`); }
+    if (typeof enL[k] === 'string') {
+      const ph = (s) => (s.match(/\{[^}]+\}/g) || []).sort().join('|');
+      if (ph(enL[k]) !== ph(v)) { phDrift++; console.log(`   placeholder drift ${f}:${k}`); }
+    }
+  }
+}
+ok('no empty locale values', emptyVals === 0);
+ok('no JSON-blob (corrupt) locale values', corruptVals === 0);
+ok('every {placeholder} preserved across all locales', phDrift === 0);
+
+// ---------------------------------------------------------------------------
 console.log(`\nSUITE RESULT: ${passed} passed, ${failed} failed`);
 process.exit(failed === 0 ? 0 : 1);

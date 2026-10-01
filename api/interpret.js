@@ -175,11 +175,12 @@ function buildFallback(dream, lang, perspective) {
 // Free-first chain: each free model has its own availability window, so we
 // cascade. A paid model is only used when explicitly set via DREAMSCOPE_AI_MODEL.
 const FREE_MODELS = [
-  'z-ai/glm-5.2:free',
-  'minimax/minimax-m3:free',
+  'openrouter/free',                            // router-side pool — never a retired id
   'nvidia/nemotron-3-super-120b-a12b:free',
+  'google/gemma-4-26b-a4b-it:free',
   'google/gemma-4-31b-it:free',
-  'inclusionai/ling-3.0-flash-fin:free',
+  'qwen/qwen3.8-27b:free',
+  'nvidia/nemotron-3.5-lightning:free',
 ];
 const MODELS = [
   ...(process.env.DREAMSCOPE_AI_MODEL ? [process.env.DREAMSCOPE_AI_MODEL] : FREE_MODELS),

@@ -53,21 +53,44 @@ const unflatten = (pairs) => {
 };
 const ph = (s) => (String(s).match(/\{[\w.]+\}/g) || []).sort().join(',');
 
-const isEnFallback = (obj) => {
-  const t = (obj?.footer?.tagline) || '';
-  return t.startsWith('Free AI dream') || t === '';
-};
+// Tokens that are locale-INDEPENDENT by nature. The endpoint returns them
+// unchanged after burning quota, so treating them as "needs work" makes every
+// tick re-request them forever and report the locale as incomplete.
+const IDENTITY_KEYS = new Set(['profile.noneYet', 'profile.autoSetupCmd', 'footer.copyright']);
+// Brand / proper nouns that intentionally stay in the source language.
+const BRAND_KEYS = new Set(['nav.ansyGroup', 'nav.aiBlog', 'nav.faq']);
+
+const flatEn = new Map(flatten(source));
+
+/**
+ * Keys in `localeCode` whose value is missing, structurally corrupt, or an
+ * untranslated EN copy — i.e. real work left to do. Returns [] when the locale
+ * is genuinely complete.
+ */
+function pendingKeys(localeCode) {
+  const pending = [];
+  let existing = {};
+  try { existing = JSON.parse(readFileSync(join(localesDir, `${localeCode}.json`), 'utf8')); }
+  catch { return [...flatEn.keys()]; } // unreadable/absent → everything pending
+  const have = new Map(flatten(existing));
+  for (const [k, en] of flatEn) {
+    const v = have.get(k);
+    const corrupt =
+      typeof v !== 'string' || !v.trim() ||          // missing / empty
+      ph(en) !== ph(v) ||                            // placeholder drift
+      /^\s*\{"/.test(v) ||                           // JSON blob stuffed into a string
+      v === en;                                      // EN fallback
+    if (corrupt && !IDENTITY_KEYS.has(k) && !BRAND_KEYS.has(k)) pending.push(k);
+  }
+  return pending;
+}
+
 const targets = all.filter((l) => {
   if (l.code === 'en' || l.code === 'ar') return false;
   if (only && !only.includes(l.code)) return false;
-  // Skip already-real translations unless --all is passed (saves OpenRouter quota
-  // for stubborn locales and avoids re-translating polished files each cron tick).
-  if (!process.argv.includes('--all')) {
-    try {
-      const existing = JSON.parse(readFileSync(join(localesDir, `${l.code}.json`), 'utf8'));
-      if (!isEnFallback(existing)) return false;
-    } catch {}
-  }
+  // Skip only locales that are genuinely complete. A single-string heuristic
+  // (footer.tagline) marked PARTIAL locales as done forever.
+  if (!process.argv.includes('--all') && pendingKeys(l.code).length === 0) return false;
   return true;
 });
 

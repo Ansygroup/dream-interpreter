@@ -77,7 +77,7 @@
     "compareDesc": "አንድ ሕልም በአንድ ጊዜ በሁሉም ተመልካች ይመልከቱ — ባሕላዊ ትርጓሜዎች የት እንደሚስማሙ እና የት እንደሚለያዩ ይመልከቱ።",
     "compareLoading": "በሁሉም ወጎች ላይ በዝርዝር እየጠነከርን…",
     "compareBack": "ወደ ነጠላ ንባብ ይመለሱ",
-    "compareSymbols": "Symbols",
+    "compareSymbols": "ምልክቶች",
     "symbolsLabel": "በሕልምዎ ውስጥ ያሉ ምልክቶች",
     "feedbackQ": "ይህ የተነበበው ጠቃሚ ነበር?",
     "yes": "አዎ፣ ጠቃሚ ነው",
@@ -176,7 +176,7 @@
       "name": "ቡዲስት"
     },
     "psychology": {
-      "name": "Psychology (Jung)"
+      "name": "ስክሎጂ (ዩንግ)"
     },
     "chinese": {
       "name": "Zhou Gong (ቻይንኛ)"

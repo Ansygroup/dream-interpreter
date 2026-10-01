@@ -7,6 +7,9 @@
   "nav.home",
   "nav.profile",
   "nav.start",
+  "perspectives.buddhist.name",
+  "perspectives.general.name",
+  "perspectives.hindu.name",
   "profile.connectKeyLabel",
   "profile.emailLabel",
   "profile.navLabel"

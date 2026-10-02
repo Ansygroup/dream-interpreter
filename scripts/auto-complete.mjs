@@ -41,15 +41,15 @@ if (existsSync(envPath)) {
 
 // ---- Secret guard: never stage secret-bearing files ------------------
 // Patterns are built from fragments so this file does not match itself.
-const S = (...parts) => new RegExp(parts.join(''));
+const S = (parts, flags) => new RegExp(parts.join(''), flags);
 const SECRET_PATTERNS = [
-  [S('VERCEL', '_OIDC', '_TOKEN='), 'VERCEL_OIDC_TOKEN'],
-  [S('STRIPE', '_SECRET_KEY=sk_(live|test)_'), 'STRIPE_SECRET_KEY'],
-  [S('OPENROUTER', '_API_KEY=sk-or-v1-[A-Za-z0-9]{20,}'), 'OPENROUTER_API_KEY'],
-  [S('(?:^|[^A-Za-z0-9_])(?:ghp|gho|ghu|ghs|ghr)_[A-Za-z0-9]{20,}', 'm'), 'GitHub token'],
-  [S('AKIA[0-9A-Z]{16}'), 'AWS access key id'],
-  [S('AIza[0-9A-Za-z_-]{30,}'), 'Google API key'],
-  [S('sk_(live|test)_[A-Za-z0-9]{20,}'), 'Stripe secret key'],
+  [S(['VERCEL', '_OIDC', '_TOKEN=']), 'VERCEL_OIDC_TOKEN'],
+  [S(['STRIPE', '_SECRET_KEY=sk_(live|test)_']), 'STRIPE_SECRET_KEY'],
+  [S(['OPENROUTER', '_API_KEY=sk-or-v1-[A-Za-z0-9]{20,}']), 'OPENROUTER_API_KEY'],
+  [S(['(?:^|[^A-Za-z0-9_])(?:ghp|gho|ghu|ghs|ghr)_[A-Za-z0-9]{20,}'], 'm'), 'GitHub token'],
+  [S(['AKIA[0-9A-Z]{16}']), 'AWS access key id'],
+  [S(['AIza[0-9A-Za-z_-]{30,}']), 'Google API key'],
+  [S(['sk_(live|test)_[A-Za-z0-9]{20,}']), 'Stripe secret key'],
 ];
 const ENVISH = /(?:^|\/)(?:vercel-prod\.env|\.env(?:\.\w+)?$|[^/]*\.env$|[^/]*\.pem$|id_rsa$|[^/]*-secrets$|credentials\.json$)/;
 

@@ -34,3 +34,8 @@ src/symbol-names.ts.bak
 
 # Vercel env pull output (carries live VERCEL_OIDC_TOKEN) — NEVER commit
 vercel-prod.env
+
+# curl/http debug debris from ad-hoc translation probes (never commit)
+/body.txt
+/headers.txt
+/vlogs.txt

@@ -31,3 +31,6 @@ __pycache__/
 
 # stray editor backups from symbol-names self-heal
 src/symbol-names.ts.bak
+
+# Vercel env pull output (carries live VERCEL_OIDC_TOKEN) — NEVER commit
+vercel-prod.env

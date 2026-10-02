@@ -1,0 +1,14 @@
+HTTP/1.1 502 Bad Gateway
+Access-Control-Allow-Headers: Content-Type
+Access-Control-Allow-Methods: POST, OPTIONS
+Access-Control-Allow-Origin: *
+Cache-Control: public, max-age=0, must-revalidate
+Content-Length: 38
+Content-Type: application/json; charset=utf-8
+Date: Fri, 02 Oct 2026 22:32:45 GMT
+Etag: W/"26-DNgo2O2Mms1dryODl6oewQjjc1o"
+Server: Vercel
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Vercel-Cache: MISS
+X-Vercel-Id: fra1::iad1::6mkx8-1790980358571-00f0e5a543ee
+

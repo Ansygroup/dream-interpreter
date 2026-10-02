@@ -28,3 +28,6 @@ dist
 # python bytecode (never commit)
 __pycache__/
 *.pyc
+
+# stray editor backups from symbol-names self-heal
+src/symbol-names.ts.bak

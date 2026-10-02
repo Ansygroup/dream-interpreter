@@ -56,8 +56,8 @@ const ENVISH = /(?:^|\/)(?:vercel-prod\.env|\.env(?:\.\w+)?$|[^/]*\.env$|[^/]*\.
 function scanStaged() {
   let files = [];
   try {
-    files = execSync('git diff --cached --name-only --diff-filter=ACM', { cwd: root, encoding: 'utf8' })
-      .split(/\r?\n/).filter(Boolean);
+    files = execSync('git diff --cached --name-only -z --diff-filter=ACMRT', { cwd: root, encoding: 'utf8' })
+      .split(String.fromCharCode(0)).filter(Boolean);
   } catch { return null; }
   for (const f of files) {
     if (ENVISH.test(f)) return { file: f, kind: 'env/credential filename' };

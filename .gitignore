@@ -39,3 +39,4 @@ vercel-prod.env
 /body.txt
 /headers.txt
 /vlogs.txt
+/.sandbox-probe.md

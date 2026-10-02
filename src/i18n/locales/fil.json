@@ -217,7 +217,7 @@
     "cloudTitle": "Sa iyong mga device",
     "connectTitle": "Ikonekta ang iyong proyekto sa Supabase",
     "connectUrlLabel": "URL ng proyekto",
-    "connectKeyLabel": "Anon public key",
+    "connectKeyLabel": "Pampublikong susi (anon)",
     "connectCta": "Ikonekta",
     "connected": "Nakakonekta — maaari ka nang mag-sign in at i-sync ang iyong journal.",
     "connectError": "Hindi makakonekta. Suriin ang URL at anon key.",

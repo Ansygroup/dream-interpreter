@@ -46,10 +46,21 @@ export function localeCodes() {
   return out;
 }
 
-/** Keys the endpoint has proven it returns unchanged. */
+/**
+ * Keys the endpoint has proven it returns unchanged.
+ * Entries are either a bare key (global exemption, legacy shape) or a
+ * "code|key" pair scoped to ONE locale. Prefer the scoped form: a key learned
+ * as identity in one locale says nothing about the other 57, and exempting it
+ * repo-wide masks genuine EN-fallback gaps.
+ */
 export function learnedIdentityKeys() {
   try { return new Set(JSON.parse(readFileSync(join(root, 'scripts/.i18n-identity.json'), 'utf8'))); }
   catch { return new Set(); }
+}
+
+/** Identity learned for `code` only, without a global (bare-key) entry. */
+function isLearnedFor(learned, code, k) {
+  return learned.has(`${code}|${k}`);
 }
 
 /** Pending (locale, key) pairs, grouped per locale and sorted worst-first. */
@@ -63,7 +74,7 @@ export function pendingByLocale() {
     catch { have = null; }
     const pending = [];
     for (const [k, en] of flatEn) {
-      if (IDENTITY_KEYS.has(k) || BRAND_KEYS.has(k) || learned.has(k)) continue;
+      if (IDENTITY_KEYS.has(k) || BRAND_KEYS.has(k) || learned.has(k) || isLearnedFor(learned, code, k)) continue;
       if (!have) { pending.push(k); continue; }
       const v = have.get(k);
       if (typeof v !== 'string' || !v.trim() || ph(en) !== ph(v) ||

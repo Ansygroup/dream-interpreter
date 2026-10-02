@@ -67,12 +67,22 @@ const flatEn = new Map(flatten(source));
 // stops re-requesting them — otherwise they are "pending" forever and the run
 // never converges. Only ever written after the endpoint ACTUALLY returned the
 // source string identically with valid placeholders.
+//
+// Scoped PER (locale, key) — never per key alone. A key learned as identity in
+// ONE locale (e.g. fil for nav.home) says nothing about the other 57: measured on
+// this repo, 13 of 14 learned keys were translated in the large majority of
+// locales, and key-scoped learning silently masked 52 genuine EN-fallback pairs.
+// A key-scoped exemption turns a single stubborn locale into a permanent,
+// repo-wide blind spot. Both files keep the flat `["key"]` shape for back-compat;
+// a `"code|key"` entry scopes to one locale, a bare `"key"` stays global.
 const learnedFile = join(root, 'scripts/.i18n-identity.json');
 let learned = new Set();
 try { learned = new Set(JSON.parse(readFileSync(learnedFile, 'utf8'))); } catch { /* first run */ }
 const saveLearned = () => {
   try { writeFileSync(learnedFile, JSON.stringify([...learned].sort(), null, 2) + '\n', 'utf8'); } catch { /* best effort */ }
 };
+/** Identity learned for a specific locale only (no global entry). */
+const isLearnedFor = (localeCode, k) => learned.has(`${localeCode}|${k}`);
 
 /** Load a locale, or null when absent/unreadable. */
 function loadLocale(localeCode) {
@@ -101,7 +111,8 @@ function pendingKeys(localeCode) {
       // made 171 already-correct values look pending forever and starved the run.
       /^\s*\{\s*["'\[]/.test(v) ||
       v === en;                                      // EN fallback
-    if (corrupt && !IDENTITY_KEYS.has(k) && !BRAND_KEYS.has(k) && !learned.has(k)) pending.push(k);
+    if (corrupt && !IDENTITY_KEYS.has(k) && !BRAND_KEYS.has(k) &&
+        !learned.has(k) && !isLearnedFor(localeCode, k)) pending.push(k);
   }
   return pending;
 }
@@ -230,9 +241,10 @@ async function translateLocale({ code }) {
     const t = await translateOneKey(code, k, en);
     if (t == null) { englishFill++; failedTotal++; continue; }
     setPath(merged, k, t);
-    // Endpoint returned the source verbatim: the string is locale-independent
-    // (proper noun, brand, code). Record it so this key never blocks a tick.
-    if (t === en) { learned.add(k); learnedCount++; }
+    // Endpoint returned the source verbatim for THIS locale. Record it scoped to
+    // (locale, key) so only this pair stops being retried. Learning it as a bare
+    // key would exempt the same string in all 58 locales, hiding genuine gaps.
+    if (t === en) { learned.add(`${code}|${k}`); learnedCount++; }
   }
   if (learnedCount) saveLearned();
 

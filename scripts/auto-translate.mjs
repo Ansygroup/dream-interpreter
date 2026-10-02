@@ -120,7 +120,17 @@ if (liveReachable) {
   }
 }
 
-if (liveReachable) {
+if (liveReachable && engineOk === false) {
+  // Engine is PROVABLY dead (the liveness probe above returned no translation,
+  // and `vercel logs` shows the cascade status: all-429 = free-tier saturation).
+  // Spawning the driver now cannot succeed — it would spend its whole retry
+  // budget (up to 15 min, several hundred doomed upstream calls) before reaching
+  // the same verdict, and on a cron tick that reads as a hang/timeout rather
+  // than a clean EX_TEMPFAIL. Fall through to the regression guard + exit 75 so
+  // a dead upstream is visible in one short run and the next tick just retries.
+  log('engine dead — skipping the translation driver this tick (it could only burn its retry budget).');
+  log('using LIVE /api/translate (no operator secret needed; engine runs on Vercel). probe=' + probe + '.');
+} else if (liveReachable) {
   log(`using LIVE /api/translate (no operator secret needed; engine runs on Vercel). probe=${probe}.`);
   // --all MUST be forwarded: without it the driver skips locales it wrongly
   // considers complete and the whole run degenerates into a no-op.

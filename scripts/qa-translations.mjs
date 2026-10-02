@@ -62,14 +62,31 @@ for (const file of files.sort()) {
   const placeholders = enLeaves.filter(([k, v]) => map.has(k) && ph(map.get(k)) !== ph(v)).map(([k]) => k);
 
   // Script leakage: non-latin-expected locales whose values are >70% latin.
-  // Brand keys are latin by design (Dreamscope / Ansy Group) — excluded.
+  //
+  // Three classes of string are latin by DESIGN and must never be counted as
+  // leakage, or this gate reports a permanent false failure:
+  //   1. Brand keys — Dreamscope / Ansy Group proper nouns.
+  //   2. Locale-independent identity tokens — a shell command, an em-dash.
+  //      These are intentionally identical to en.json in every locale; that is
+  //      what i18n-pending.mjs exempts on the translation side, so skipping the
+  //      same keys here keeps the two gates from disagreeing.
+  //
+  // A high latin ratio ALONE is not leakage: proper nouns stay latin inside a
+  // translated string (my "Zhou Gong (တရုတ်)", zh "按 ⌘/Ctrl + Enter 解读").
+  // The real signal is a string with NO target-script letters at all — that is
+  // untranslated copy. Requiring nonLatinLetters === 0 catches genuine leaks
+  // while leaving partially-translated values alone.
   const BRAND_KEYS = new Set(['nav.ansyGroup', 'footer.copyright', 'app.title']);
+  const IDENTITY_KEYS = new Set(['profile.noneYet', 'profile.autoSetupCmd', 'footer.copyright']);
   const leakage = [];
   if (!LATIN_OK.has(code)) {
     for (const [k, v] of leaves) {
-      if (BRAND_KEYS.has(k)) continue;
+      if (BRAND_KEYS.has(k) || IDENTITY_KEYS.has(k)) continue;
       const enVal = enLeaves.find(([ek]) => ek === k)?.[1] ?? '';
-      if (typeof v === 'string' && String(enVal).length > 8 && latinRatio(v) > 0.7) {
+      if (typeof v !== 'string' || String(enVal).length <= 8) continue;
+      const letters = v.replace(/[^\p{L}]/gu, '');
+      const nonLatinLetters = (letters.match(/[^\p{Script=Latin}]/gu) || []).length;
+      if (latinRatio(v) > 0.7 && nonLatinLetters === 0) {
         leakage.push(k);
       }
     }

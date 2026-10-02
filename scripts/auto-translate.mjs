@@ -155,7 +155,50 @@ if (liveReachable) {
   console.log(out.split('\n').filter((l) => /→|✓|✗|Done|translated/.test(l)).join('\n'));
 }
 
-// 3. Commit + push the freshly localized locales (if any changed).
+// 3. REGRESSION GUARD. The driver writes the EN source back for any key whose
+//    translation FAILED, and `git status` cannot tell that apart from real
+//    progress — a file that differs from HEAD because a curated translation was
+//    replaced by English looks identical to a file that gained a translation.
+//    Committing that ships degraded copy under an "auto-localized" message.
+//
+//    Detect it precisely: a changed key is a REGRESSION when its new value is
+//    byte-identical to the en.json source while the committed value was not.
+//    Real translations are exempt by definition; so are keys the detector
+//    treats as identity/brand tokens (they are equal to EN on purpose).
+//    Any file containing a regression is restored from HEAD and NOT committed.
+const { pendingByLocale, IDENTITY_KEYS, BRAND_KEYS } = await import('./i18n-pending.mjs');
+const enFlat = new Map();
+{
+  const flat = (o, p = '') => Object.entries(o).flatMap(([k, v]) =>
+    v && typeof v === 'object' ? flat(v, `${p}${k}.`) : [[`${p}${k}`, v]]);
+  for (const [k, v] of flat(JSON.parse(readFileSync(join(root, 'src/i18n/locales/en.json'), 'utf8')))) enFlat.set(k, v);
+}
+const regressedFiles = new Set();
+for (const row of pendingByLocale().rows) {
+  const rel = `src/i18n/locales/${row.code}.json`;
+  if (!run(`git diff --name-only HEAD -- ${rel}`).trim()) continue;
+  const head = run(`git show HEAD:${rel}`).trim();
+  if (!head) continue;
+  let headJ, nowJ;
+  try {
+    const flat = (o, p = '') => Object.entries(o).flatMap(([k, v]) =>
+      v && typeof v === 'object' ? flat(v, `${p}${k}.`) : [[`${p}${k}`, v]]);
+    headJ = new Map(flat(JSON.parse(head)));
+    nowJ = new Map(flat(JSON.parse(readFileSync(join(root, rel), 'utf8'))));
+  } catch { continue; }
+  for (const [k, v] of nowJ) {
+    if (IDENTITY_KEYS.has(k) || BRAND_KEYS.has(k)) continue;
+    const en = enFlat.get(k);
+    if (typeof en !== 'string') continue;
+    if (v === en && headJ.get(k) !== en) regressedFiles.add(rel);
+  }
+}
+for (const rel of regressedFiles) {
+  log(`⚠️  ${rel} contains a key replaced by EN fallback after a FAILED translation — restoring from HEAD (not committing degraded copy).`);
+  run(`git checkout HEAD -- ${rel}`);
+}
+
+// 4. Commit + push the freshly localized locales (if any changed).
 //    Push to the CURRENT branch, never a hardcoded "master": the repo carries
 //    long-lived work branches (redesign/*, ops/*) and pushing master from one
 //    of them is rejected as non-fast-forward, silently losing every run's work.

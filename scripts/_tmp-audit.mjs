@@ -45,7 +45,7 @@ console.log(`\nTOTAL: ${codes.length} locales, ${totalPairs} pairs, missing=${mi
 
 // Reconcile the scoped-learn file: does any (code|key) mask an EN pair whose value
 // is clearly NOT correct in that language?
-const ident = JSON.parse(fs.readFileSync(path.join(DIR, '..', '..', 'scripts', '.i18n-identity.json'), 'utf8'));
+const ident = JSON.parse(fs.readFileSync('scripts/.i18n-identity.json', 'utf8'));
 const learned = ident.learned || [];
 console.log(`\nlearned entries: ${learned.length} (${learned.filter((e) => e.includes('|')).length} scoped, ${learned.filter((e) => !e.includes('|')).length} bare)`);
 const enSet = new Set(allEN);

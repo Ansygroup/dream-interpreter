@@ -36,13 +36,26 @@ const schools = [
   ['en', 'general'], ['ar', 'islamic'], ['es', 'psychology'], ['zh', 'chinese'],
   ['fr', 'christian'], ['hi', 'hindu'], ['ru', 'buddhist'], ['de', 'jewish'],
 ];
+// The API enforces a per-IP limit (RATE_LIMIT requests / 60s window), so a
+// single run must throttle itself or it trips its own limiter and reports
+// false FAILs. Sleep between calls and retry once on 429.
+const RATE_LIMIT = 12;
+const RATE_WINDOW_MS = 60 * 1000;
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 let schoolsPass = 0;
 for (const [lang, persp] of schools) {
-  const r = await post(`${BASE}/api/interpret`, { dream: 'I saw a snake leaving my house', language: lang, perspective: persp });
+  let r = { code: 0, body: '' };
+  for (let attempt = 0; attempt < 3; attempt++) {
+    r = await post(`${BASE}/api/interpret`, { dream: 'I saw a snake leaving my house', language: lang, perspective: persp });
+    if (r.code !== 429) break;
+    console.log(`      (429 rate-limited; waiting ${RATE_WINDOW_MS / 1000}s before retry)`);
+    await sleep(RATE_WINDOW_MS + 2000);
+  }
   let j = null; try { j = JSON.parse(r.body); } catch {}
   const ok = r.code === 200 && j?.interpretation && j.interpretation.trim().length > 20;
   if (ok) schoolsPass++;
   console.log(`${ok ? 'PASS' : 'FAIL'}  perspective ${lang}/${persp} (${r.code})`);
+  if (schoolsPass < schools.length && (lang !== 'en')) await sleep(Math.ceil(RATE_WINDOW_MS / RATE_LIMIT) + 500);
 }
 
 console.log('=== dream-interpreter LIVE deploy verify ===');

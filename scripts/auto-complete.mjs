@@ -72,11 +72,27 @@ function scanStaged() {
 
 function unstageAll() { try { execSync('git reset -q', { cwd: root }); } catch { /* nothing staged */ } }
 
+// ---- Debris guard: never stage transient scratch output -------------
+// A translation probe that 502s leaves curl debris (body.txt, headers.txt,
+// vlogs.txt) in the repo root. A blanket add -A once committed that junk to a
+// PUBLIC remote. Such files are unstaged and never committed.
+const DEBRIS = /^(body|headers|vlogs|out|resp|response|debug|tmp|temp|log).txt$/;
+
 // Git auto-push
 try {
   const st = execSync('git status --short', { cwd: root, encoding: 'utf8' }).trim();
   if (st) {
     execSync('git add -A', { cwd: root });
+    // Drop known transient debris from the index before the secret scan.
+    try {
+      const staged = execSync('git diff --cached --name-only -z', { cwd: root, encoding: 'utf8' })
+        .split(String.fromCharCode(0)).filter(Boolean);
+      const junk = staged.filter(f => DEBRIS.test(f.split('/').pop() || ''));
+      for (const f of junk) {
+        execSync('git rm -q --cached -- ' + JSON.stringify(f), { cwd: root });
+        log('ignored debris: ' + f + ' (not committed; add to .gitignore)');
+      }
+    } catch { /* nothing to unstage */ }
     const bad = scanStaged();
     if (bad) {
       unstageAll();

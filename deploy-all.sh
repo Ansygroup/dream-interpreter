@@ -15,12 +15,14 @@ log "=== Ansy Group deploy run start ==="
 # NOTE: `vercel ls` prints an AGE column ("10m", "3h"), NOT a date. Grepping the
 # table for YYYY-MM-DD always matches 0, so the old guard was dead code and never
 # aborted. Use the JSON API and parse createdAt (ms epoch) instead.
-# --scope is REQUIRED: with a .vercel/project.json in cwd, `vercel ls` silently
-# returns ONLY that project's deployments, under-counting the team-wide 100/day cap.
-DEPLOYS_TODAY=$(vercel ls --scope ansygroups-projects --format=json --limit 100 2>/dev/null | python -c "
+# CRITICAL: the query MUST run from a directory with no .vercel/project.json.
+# A linked cwd makes `vercel ls` return ONLY that project and silently IGNORE
+# --scope, under-counting the team-wide 100/day cap (saw 5 when the truth was 25).
+# An unreadable/empty result is treated as EXHAUSTED, so the script fails closed.
+DEPLOYS_TODAY=$(cd "$TMPDIR" 2>/dev/null || cd /; vercel ls --scope ansygroups-projects --format=json --limit 100 2>/dev/null | python -c "
 import sys,json,datetime
 raw=sys.stdin.read(); i=raw.find('{')
-if i<0: print(100); raise SystemExit   # unparseable -> assume EXHAUSTED, never deploy blind
+if i<0: print(100); raise SystemExit
 try: d=json.loads(raw[i:])
 except Exception: print(100); raise SystemExit
 deps=d.get('deployments',d) if isinstance(d,dict) else d

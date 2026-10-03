@@ -236,6 +236,12 @@ Rules:
       const data = await res.json();
       const text = data?.choices?.[0]?.message?.content?.trim();
       if (!text) continue;
+      // A model that returned its scratchpad is a bad model: try the next one
+      // rather than shipping reasoning to the reader.
+      if (leaksReasoning(text)) {
+        console.log(`[interpret] ${model} -> leaked reasoning, skipping`);
+        continue;
+      }
       // Parse "SYMBOLS: a, b" prefix
       const m = text.match(/^SYMBOLS:\s*(.+)\n*/i);
       let symbols = [];
@@ -308,15 +314,57 @@ function redactPII(text) {
     .replace(/https?:\/\/\S+/g, '[link]');
 }
 
-// Response must actually be written in the requested script
+// Per-script character ranges. Only RTL used to be validated, so a reasoning
+// leak written in English sailed through the check for every other language.
+const SCRIPT_RANGES = {
+  ar: /[\u0600-\u06FF]/, fa: /[\u0600-\u06FF]/, ur: /[\u0600-\u06FF]/, ps: /[\u0600-\u06FF]/,
+  he: /[\u0590-\u05FF]/,
+  ru: /[\u0400-\u04FF]/, uk: /[\u0400-\u04FF]/, bg: /[\u0400-\u04FF]/,
+  sr: /[\u0400-\u04FF]/, mk: /[\u0400-\u04FF]/,
+  el: /[\u0370-\u03FF]/,
+  zh: /[\u4E00-\u9FFF]/, ja: /[\u3040-\u30FF\u4E00-\u9FFF]/, ko: /[\uAC00-\uD7AF]/,
+  hi: /[\u0900-\u097F]/, bn: /[\u0980-\u09FF]/, pa: /[\u0A00-\u0A7F]/,
+  ta: /[\u0B80-\u0BFF]/, te: /[\u0C00-\u0C7F]/, kn: /[\u0C80-\u0CFF]/,
+  ml: /[\u0D00-\u0D7F]/, th: /[\u0E00-\u0E7F]/,
+  ka: /[\u10A0-\u10FF]/, hy: /[\u0530-\u058F]/,
+};
+
+// Latin-script languages share one script, so detect the language by its
+// function words instead. A reading must actually contain the target language.
+const LANG_FUNCTION_WORDS = {
+  en: /\b(the|and|is|of|to|that|you|your|this|may|often|symbol|suggests|means|reflect|dream)\b/i,
+  es: /\b(el|la|los|las|de|que|en|un|una|puede|simbolo|significa|reflexion|sueño|ser)\b/i,
+  de: /\b(der|die|das|und|ist|ein|eine|zu|mit|bedeutet|traum|deutet|es)\b/i,
+  fr: /\b(le|la|les|des|une|est|et|peut|symbole|signifie|reflexion|reve|dream)\b/i,
+  it: /\b(il|lo|la|di|che|un|una|puo|simbolo|significa|riflessione|sogno|interpretare)\b/i,
+  pt: /\b(o|a|os|as|de|que|um|uma|pode|simbolo|significa|reflexao|sonho)\b/i,
+  nl: /\b(de|het|een|van|en|is|zijn|symbool|betekent|droom|gedachte)\b/i,
+  tr: /\b(bir|ve|bu|için|ile|olan|simge|anlam|kabus|ruya)\b/i,
+  pl: /\b(i|w|na|nie|jest|że|to|symbol|znaczy|s(en|nu)|refleksja)\b/i,
+  id: /\b(yang|dan|di|untuk|dengan|ini|adalah|simbol|berarti|mimpi|tentang)\b/i,
+  vi: /\b(và|của|là|các|được|những|như|biểu|ý|nghĩa|giấc|mơ)\b/i,
+};
+
+// Some free models return their scratchpad ("Here's a thinking process: ...")
+// as the whole message. That must never reach a reader or the 24h cache.
+const REASONING_LEAK = /(thinking process|analyze user input|detect symbols|user (provides|wants|specifies) (a dream|to)|let'?s think|my reasoning|i need to output|i should output|^(ok, |here'?s |)(a )?thinking|^\s*step \d|^\s*\d+\.\s*\*\*)/im;
+
+function leaksReasoning(text) {
+  return REASONING_LEAK.test(String(text || '').slice(0, 2000));
+}
+
+// Response must actually be written in the requested language/script
 function looksLikeLanguage(text, lang) {
-  const rtl = { ar: /[\u0600-\u06FF]/g, he: /[\u0590-\u05FF]/g, fa: /[\u0600-\u06FF]/g, ur: /[\u0600-\u06FF]/g };
-  const re = rtl[lang];
-  if (!re) return true; // latin-script languages accepted by default
   const letters = text.replace(/[^\p{L}]/gu, '');
   if (!letters) return false;
-  const matches = letters.match(re)?.length ?? 0;
-  return matches / letters.length > 0.5;
+  const re = SCRIPT_RANGES[lang];
+  if (re) {
+    const matches = letters.match(new RegExp(re.source, 'g'))?.length ?? 0;
+    return matches / letters.length > 0.3;
+  }
+  const words = LANG_FUNCTION_WORDS[lang];
+  if (words) return words.test(text) && !leaksReasoning(text);
+  return true;
 }
 
 function getClientIp(req) {
@@ -355,7 +403,7 @@ export default async function handler(req, res) {
   // Cache — identical dreams get the same reading instantly, zero cost
   const key = cacheKey(dream, lang, persp);
   const cached = cacheGet(key);
-  if (cached) {
+  if (cached && !leaksReasoning(cached.interpretation)) {
     return res.status(200).json({ ...cached, engine: 'cache', id: String(Date.now()) });
   }
 
@@ -370,6 +418,7 @@ export default async function handler(req, res) {
     if (!looksLikeLanguage(result.interpretation, lang)) {
       throw new Error('language-mismatch');
     }
+    if (leaksReasoning(result.interpretation)) throw new Error('reasoning-leak');
     dailyLLM.count += 1;
     const value = {
       interpretation: result.interpretation,

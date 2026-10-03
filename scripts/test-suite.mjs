@@ -337,5 +337,36 @@ ok('no JSON-blob (corrupt) locale values', corruptVals === 0);
 ok('every {placeholder} preserved across all locales', phDrift === 0);
 
 // ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+// 19. Output hygiene: the API must never ship the model's scratchpad, and must
+//     validate the script of EVERY language (not just the RTL ones).
+section('Output hygiene (no leaked reasoning / script enforced)');
+const INTERPRET_SRC = read('api/interpret.js');
+
+const LEAK_SAMPLES = [
+  "Here's a thinking process:\n\n1. **Analyze User Input:** - User provides a dream: \"snake\"",
+  'Detect Symbols: - Snake: clear. - House: clear.',
+  "User wants a dream interpretation in German. First line must be exactly SYMBOLS:",
+  "Let's think about the symbols in this dream",
+  'Ok, so the user gave me a snake dream',
+];
+const leakRe = /(thinking process|Analyze User Input|Detect Symbols|User (provides|wants|specifies) (a dream|to)|Let'?s think|my reasoning|I need to output|I should output|^(here'?s |)(a )?thinking process|^ok, |^step \d|^\d+\.\s+\*\*)/im;
+const cleanSamples = [
+  'Eine Schlange, die das Haus verlasst, gilt im Talmud als Zeichen von Wandel.',
+  'A snake leaving the house often signals a release of tension you have been holding.',
+  'ال蛇?'
+];
+ok(`leak detector catches all ${LEAK_SAMPLES.length} known scratchpad samples`, LEAK_SAMPLES.every((t) => leakRe.test(t)));
+ok('leak detector does not false-positive on clean readings', cleanSamples.every((t) => !leakRe.test(t)));
+
+// The shipped source must gate the cache write on the guard.
+ok('source defines a reasoning-leak guard', /leaksReasoning|LEAK_RE|leakRe/i.test(INTERPRET_SRC));
+ok('cache write happens only after the leak guard', /leaksReasoning[\s\S]{0,600}cacheSet\(key, value\)/.test(INTERPRET_SRC));
+const VALIDATOR_BODY = (INTERPRET_SRC.split("const SCRIPT_RANGES")[1] || "").split("function getClientIp")[0];
+ok('script check covers cyrillic (ru/uk/bg/sr)', /ru:/.test(VALIDATOR_BODY) && /uk:/.test(VALIDATOR_BODY) && /bg:/.test(VALIDATOR_BODY));
+ok('script check covers CJK (zh/ja/ko)', /zh:/.test(VALIDATOR_BODY) && /ja:/.test(VALIDATOR_BODY) && /ko:/.test(VALIDATOR_BODY));
+ok('script check covers devanagari (hi/bn/pa)', /hi:/.test(VALIDATOR_BODY) && /bn:/.test(VALIDATOR_BODY) && /pa:/.test(VALIDATOR_BODY));
+ok('latin-script languages are no longer accepted blindly', !/if \(!re\) return true/.test(VALIDATOR_BODY));
+
 console.log(`\nSUITE RESULT: ${passed} passed, ${failed} failed`);
 process.exit(failed === 0 ? 0 : 1);

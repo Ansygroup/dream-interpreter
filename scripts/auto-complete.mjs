@@ -104,13 +104,31 @@ try {
   const b = execSync('git branch --show-current', { cwd: root, encoding: 'utf8' }).trim();
   // Only push if there is actually something ahead of the remote - avoids
   // invoking the credential manager when idle (which fails headless).
+  //
+  // A MISSING origin/<branch> ref does NOT mean "in sync": it means the branch
+  // has never been pushed. The old code let that rev-parse failure land in a
+  // catch that blanked 'ahead', so a first push was reported as
+  // "local in sync with origin" forever and its commits never left the box.
+  const NOPROMPT = { ...process.env, GIT_TERMINAL_PROMPT: '0', GCM_INTERACTIVE: 'never', GCM_TERMINAL_PROMPT: '0' };
+  const refExists = (ref) => {
+    try { execSync(`git rev-parse --verify --quiet ${ref}`, { cwd: root, stdio: ['ignore', 'pipe', 'ignore'], timeout: 20000 }); return true; }
+    catch { return false; }
+  };
+  const upstream = `origin/${b}`;
   let ahead = '';
-  try { ahead = execSync(`git log --oneline origin/${b}..HEAD`, { cwd: root, encoding: 'utf8', timeout: 20000 }).trim(); }
-  catch { try { execSync(`git fetch -q origin ${b}`, { cwd: root, encoding: 'utf8', timeout: 20000, env: { ...process.env, GIT_TERMINAL_PROMPT: '0', GCM_INTERACTIVE: 'never', GCM_TERMINAL_PROMPT: '0' } }); ahead = execSync(`git log --oneline origin/${b}..HEAD`, { cwd: root, encoding: 'utf8', timeout: 20000 }).trim(); } catch { ahead = ''; } }
+  const firstPush = !refExists(upstream);
+  if (firstPush) {
+    // Unpublished branch: every local commit is unpushed work.
+    ahead = execSync('git log --oneline -1 HEAD', { cwd: root, encoding: 'utf8', timeout: 20000 }).trim();
+    log(`no remote ref ${upstream} -> first push of ${b}`);
+  } else {
+    try { execSync(`git fetch -q origin ${b}`, { cwd: root, stdio: ['ignore', 'pipe', 'ignore'], timeout: 45000, env: NOPROMPT }); } catch { /* offline: trust cached ref */ }
+    ahead = execSync(`git log --oneline ${upstream}..HEAD`, { cwd: root, encoding: 'utf8', timeout: 20000 }).trim();
+  }
   if (!ahead) {
     log('nothing to push (local in sync with origin)');
   } else {
-    execSync(`git push origin ${b}`, { cwd: root, stdio: 'inherit', env: { ...process.env, GIT_TERMINAL_PROMPT: '0', GCM_INTERACTIVE: 'never', GCM_TERMINAL_PROMPT: '0' } });
+    execSync(`git push ${firstPush ? '-u ' : ''}origin ${b}`, { cwd: root, stdio: 'inherit', env: NOPROMPT });
     log('pushed');
   }
 } catch (e) { log(`WARN push skipped: ${e.message.split('\n')[0]}`); }

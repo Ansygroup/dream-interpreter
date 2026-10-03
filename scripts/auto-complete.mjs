@@ -128,8 +128,23 @@ try {
   if (!ahead) {
     log('nothing to push (local in sync with origin)');
   } else {
-    execSync(`git push ${firstPush ? '-u ' : ''}origin ${b}`, { cwd: root, stdio: 'inherit', env: NOPROMPT });
-    log('pushed');
+    // Transient connect timeouts to github.com:443 hit this repo regularly:
+    // ls-remote / --dry-run succeed, then the real push dies with
+    // 'Failed to connect to github.com port 443'. Retry instead of dropping
+    // the commit on the floor.
+    const cmd = `git push ${firstPush ? '-u ' : ''}origin ${b}`;
+    let lastErr = '';
+    for (let attempt = 1; attempt <= 3; attempt++) {
+      try {
+        execSync(cmd, { cwd: root, stdio: 'inherit', env: NOPROMPT, timeout: 120000 });
+        log(attempt > 1 ? `pushed (after ${attempt} attempts)` : 'pushed');
+        break;
+      } catch (e) {
+        lastErr = e.message.split(String.fromCharCode(10))[0];
+        if (attempt === 3) { log(`WARN push failed after 3 attempts: ${lastErr}`); break; }
+        log(`push attempt ${attempt} failed (${lastErr}) - retrying`);
+      }
+    }
   }
 } catch (e) { log(`WARN push skipped: ${e.message.split('\n')[0]}`); }
 log('done.');

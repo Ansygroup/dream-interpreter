@@ -11,18 +11,45 @@ log() { echo "[$(ts)] $*" | tee -a "$LOG"; }
 
 log "=== Ansy Group deploy run start ==="
 
-# --- Quota guard: refuse if we already burned deploys today (best-effort) ---
-DEPLOYS_TODAY=$(vercel ls 2>/dev/null | grep -c "$(date '+%Y-%m-%d')" || echo 0)
-if [ "$DEPLOYS_TODAY" -gt 90 ]; then
+# --- Quota guard: refuse if we already burned deploys today ---
+# NOTE: `vercel ls` prints an AGE column ("10m", "3h"), NOT a date. Grepping the
+# table for YYYY-MM-DD always matches 0, so the old guard was dead code and never
+# aborted. Use the JSON API and parse createdAt (ms epoch) instead.
+# --scope is REQUIRED: with a .vercel/project.json in cwd, `vercel ls` silently
+# returns ONLY that project's deployments, under-counting the team-wide 100/day cap.
+DEPLOYS_TODAY=$(vercel ls --scope ansygroups-projects --format=json --limit 100 2>/dev/null | python -c "
+import sys,json,datetime
+raw=sys.stdin.read(); i=raw.find('{')
+if i<0: print(100); raise SystemExit   # unparseable -> assume EXHAUSTED, never deploy blind
+try: d=json.loads(raw[i:])
+except Exception: print(100); raise SystemExit
+deps=d.get('deployments',d) if isinstance(d,dict) else d
+if len(deps)>=100: print(100); raise SystemExit   # page full -> at/over cap
+today=datetime.date.today()
+print(sum(1 for x in deps if datetime.datetime.fromtimestamp(x['createdAt']/1000).date()==today))
+" 2>/dev/null || echo 100)
+[ -z "$DEPLOYS_TODAY" ] && DEPLOYS_TODAY=100
+if [ "$DEPLOYS_TODAY" -gt 90 ] 2>/dev/null; then
   log "QUOTA WARNING: ~$DEPLOYS_TODAY deploys today. ABORTING to avoid 100/day lockout."
   exit 2
 fi
 log "Quota check OK (deploys today ~$DEPLOYS_TODAY)"
 
 deploy() {
-  local repo="$1" name="$2"
+  local repo="$1" name="$2" require_branch="${3:-}"
   log "[deploy] $name ($repo)"
   cd "$repo" || { log "MISSING repo $repo"; return 1; }
+  # Production deploys must come from the canonical branch. dream-interpreter's
+  # master is a SEPARATE WORKTREE (../dream-interpreter-feed); the main checkout
+  # can sit on a feature branch, and deploying that would silently drop every
+  # master-only commit (e.g. the live AI feed fix). Refuse instead of regressing.
+  if [ -n "$require_branch" ] && [ -d .git ]; then
+    local cur; cur="$(git rev-parse --abbrev-ref HEAD 2>/dev/null)"
+    if [ "$cur" != "$require_branch" ]; then
+      log "$name: REFUSING — on branch '$cur', production expects '$require_branch'. Skipping (no deploy spent)."
+      return 3
+    fi
+  fi
   if [ ! -d .git ] && [ ! -f vercel.json ]; then log "$name: not a project, skip"; return 0; fi
   # link if no .vercel/project.json
   if [ ! -f .vercel/project.json ]; then
@@ -35,9 +62,9 @@ deploy() {
   }
 }
 
-deploy "$REPOS/ansygroup.com"   "ansygroup.com"
-deploy "$REPOS/dream-interpreter" "dream-interpreter"
-deploy "$REPOS/ai-blog"          "ai-blog"
+deploy "$REPOS/ansygroup.com"   "ansygroup.com"   ""      # domain not on Vercel DNS (SSL Error) - see report
+deploy "$REPOS/dream-interpreter" "dream-interpreter" "master"
+deploy "$REPOS/ai-blog"          "ai-blog"          "main"
 
 # --- IndexNow ping (only if INDEXNOW_KEY env is present) ---
 ping_indexnow() {

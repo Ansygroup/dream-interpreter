@@ -57,6 +57,16 @@ const DREAMS = {
 };
 const PERSPECTIVE = { en: 'general', ar: 'islamic' };
 
+// A reading is only accepted if it looks like a COMPLETE answer. Without this
+// guard the API's occasionally-truncated AR reply ships verbatim: 2026-10-02
+// cut off mid-word ("...ذي مكانةٍ رفي") and 2026-10-03 at 284 chars
+// ("... قلباً يفتقر إلى الدفء الروحي، وش"), both written to public/ and served
+// live. A short reading that does not end on sentence-final punctuation is a
+// truncated response, not a short interpretation - reject and retry it.
+const MIN_READING = 80;
+const SENTENCE_END = /[.!?؟।۔\n"'\u201d]\s*$/;
+const looksComplete = (t) => t.length >= MIN_READING && SENTENCE_END.test(t.trim());
+
 const post = (lang, dream, persp) => new Promise((res) => {
   const body = JSON.stringify({ dream, perspective: persp, language: lang });
   const rq = https.request(API, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(body) } },
@@ -64,14 +74,28 @@ const post = (lang, dream, persp) => new Promise((res) => {
   rq.on('error', () => res('')); rq.write(body); rq.end();
 });
 
+// Retry a language until it returns a complete-looking reading. Without this a
+// single partial response permanently poisons that day's card.
+const postVerified = async (lang, dream, persp, attempts = 4) => {
+  for (let i = 1; i <= attempts; i++) {
+    const t = await post(lang, dream, persp);
+    if (looksComplete(t)) {
+      if (i > 1) console.warn(`[gen-dream-today] ${lang}: accepted on attempt ${i} (earlier reads were truncated)`);
+      return t;
+    }
+    console.warn(`[gen-dream-today] ${lang}: rejected attempt ${i} (len ${t.length}${t ? ', unterminated' : ', empty'})`);
+  }
+  return '';
+};
+
 (async () => {
   const sym = SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)];
   const d = DREAMS[sym.key] || { en: `I dreamed of ${sym.en.toLowerCase()}.`, ar: `حلمتُ بـ${sym.ar}.` };
   const [enReading, arReading] = await Promise.all([
-    post('en', d.en, PERSPECTIVE.en),
-    post('ar', d.ar, PERSPECTIVE.ar),
+    postVerified('en', d.en, PERSPECTIVE.en),
+    postVerified('ar', d.ar, PERSPECTIVE.ar),
   ]);
-  if (!enReading || !arReading) { console.error('[gen-dream-today] API returned empty reading — abort.'); process.exit(1); }
+  if (!enReading || !arReading) { console.error('[gen-dream-today] API never returned a complete reading — abort (a partial one must not ship).'); process.exit(1); }
   const out = {
     date: new Date().toISOString().slice(0, 10),
     symbol: { key: sym.key, en: sym.en, ar: sym.ar },

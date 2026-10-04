@@ -201,8 +201,17 @@ def translate_with_retry(en_name: str, locale: str, max_retries: int = 3) -> tup
                     continue
                 last_err = f"{m}:HTTP{code}"
                 break
-            except (urllib.error.URLError, KeyError, json.JSONDecodeError) as e:
+            except (urllib.error.URLError, TimeoutError, KeyError, json.JSONDecodeError) as e:
+                # URLError (DNS refused/reset) and a socket/SSL read TimeoutError
+                # are transient network stalls -> back off and retry the SAME
+                # model instead of letting it escape to main() and crash the
+                # whole run. (Since Python 3.10, socket.timeout is an alias of
+                # the builtin TimeoutError, so TimeoutError already covers the
+                # "The read operation timed out" SSL read failures.)
                 last_err = f"{m}:{type(e).__name__}"
+                if attempt < max_retries - 1:
+                    time.sleep(2 ** attempt)
+                    continue
                 break
         # Try next model in chain
     return f"[error: {last_err}]", last_err

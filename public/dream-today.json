@@ -1,17 +1,17 @@
 {
   "date": "2026-10-04",
   "symbol": {
-    "key": "cat",
-    "en": "Cat",
-    "ar": "القطة"
+    "key": "money",
+    "en": "Money",
+    "ar": "المال"
   },
   "dream": {
-    "en": "A cat watched me from a windowsill and then vanished.",
-    "ar": "راقبتني قطةٌ من على حافة نافذة ثم اختفت."
+    "en": "I found coins in the lining of an old coat.",
+    "ar": "وجدتُ قطعاً نقدية في بطانة معطفٍ قديم."
   },
   "reading": {
-    "en": "In classical dream tradition, the cat often embodies intuition, independence, and the hidden instincts that observe us from the margins of our awareness. Positioned on a windowsill—a threshold between your inner world and the outside environment—it suggests an aspect of your own insight watching over a period of transition or contemplation, quietly urging you to pay attention to subtle feelings you may have overlooked.\n\nThe sudden vanishing of the creature speaks to fleeting clarity or opportunities that slip away when we hesitate to act upon our instincts. It represents a gentle reminder that your intuitive wisdom is present, but like a shadowy shadow, it requires conscious attention and grounding before it quietly fades from view.\n\nConsider what subtle instinct or unexpressed truth you have recently set aside, and trust your quiet inner vision before it slips into the background of your daily life.",
-    "ar": "رؤيتك لقطة تراقبك من على حافة النافذة ثم تتوارى عن الأنظار تدعو للتأمل العميق في تفاصيل حياتك اليومية؛ فالقطة في المأثور والتراث، ولا سيما عند ابن سيرين، تشير أحياناً إلى عين ترقب أو نفس تتطلع، أو أمور بسيطة تتطلب منك الانتباه والحذر في تعاملاتك المباشرة، دون أن تحمل في طياتها ما يبعث على القلق أو الخوف.\n\nأما حافة النافذة، فهي رمز حد فاصل بين عالمك الداخلي الخاص وهو البيت، والعالم الخارجي وما يحمله من متغيرات وتفاصيل؛ ووقوف القطة على هذا الحد ثم اختفاؤها يبشر بزوال ما قد تشعر به من تشتت أو قلق، وتحول تلك الهواجس العابرة إلى راحة بال واطمئنان بفضل الله وتوفيقه.\n\nتذكر دائماً أن ما يمر بنا من إشارات هو تذكير لطيف بالاستعانة بالهدوء، ولتكن هذه الرؤيا مساحة لتعزيز الطمأنينة في قلبك والاعتماد على الله في كل خطواتك."
+    "en": "Finding hidden coins in the worn lining of an old coat is a rich motif across classical dream traditions. The coat itself represents your outer persona, protection, and the experiences you have gathered over time. Its lining holds what is private, intimate, or long forgotten. Discovering money tucked away in such a quiet place suggests that valuable personal resources, wisdom, or self-worth—perhaps developed during a past chapter of your life—are waiting to be reclaimed.\n\nIn ancient Middle Eastern and Mediterranean dream interpretation, coins symbolize unexpected blessings, inner value, and spiritual or emotional sustenance. Because these coins were concealed within something aged rather than found out in the open, the dream hints that an answer or asset you currently seek is not outside of you, but already in your possession. It encourages you to revisit past lessons, old creative passions, or personal strengths you may have set aside, as they contain genuine value for your present journey.\n\nMay you look within your own storied history with patience, trusting that the treasures you need have been quietly kept safe all along.",
+    "ar": "تُعبّر رؤية النقود المعدنية في بطانة معطف قديم عن خبايا النفوس والخير المستور الذي قد ينساه الإنسان في زحام الحياة؛ فالنقود في المنام ترمز غالباً إلى الرزق أو الفرج الطارئ والكلمات الطيبة، بينما يمثل المعطف القديم مظلة الأمان، والوقاية، والذكريات القريبة إلى القلب. وعندما تظهر هذه القطع النقدية مختبئة في البطانة، فإن التأويل المستحب عند علماء التفسير كابن سيرين يشير إلى نعمٍ وأرزاق قديمة أو موهبة مدفونة يعود نفعها عليك في وقتٍ أنت بأشد الحاجة فيه إلى الطمأنينة.\n\nيدل هذا المنام على أن في حياتك أو شخصيتك موارد وقوة استثنائية ربما غفلت عنها لبعض الوقت، وأن الأيام القادمة قد تحمل لك انفراجاً غير متوقع من باب قديم أو أمر كنت تظن أن أثره قد انقضى. إن البحث في الماضي والتأمل في التجارب السابقة قد يفتح لك أبواباً جديدة من السكينة والخير والرضا.\n\nفتأمّل في ما تملكه من تجارب ومشاعر دافئة خزّنتها الايام، واعلم أن الفرج والرزق يأتيان غالباً من حيث لا نحتسب ولا نتوقع."
   },
   "engine": "fallback:gemini-3.6-flash"
 }

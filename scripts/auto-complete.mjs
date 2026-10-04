@@ -101,36 +101,66 @@ try {
       execSync('git -c user.email="ansy0@ansygroup.com" -c user.name="ansy0" commit -q -m "chore: auto-complete pending work"', { cwd: root });
     }
   }
-  // Sweep EVERY local branch, not just the checked-out one. A branch parked
-  // on another worktree (master lives in ../dream-interpreter-feed) or left
-  // behind after a checkout stays unpublished forever when the script only
-  // ever inspects HEAD's branch.
+  // Sweep EVERY local branch, not just the checked-out one. A branch parked in
+  // another worktree (master lives in ../dream-interpreter-feed) or left behind
+  // after a checkout stays unpublished forever if only HEAD's branch is checked.
+  const NL_CHR = String.fromCharCode(10);
   const NOPROMPT = { ...process.env, GIT_TERMINAL_PROMPT: '0', GCM_INTERACTIVE: 'never', GCM_TERMINAL_PROMPT: '0' };
   const git = (cmd, extra = {}) =>
     execSync(cmd, { cwd: root, encoding: 'utf8', env: NOPROMPT, timeout: 30000, stdio: ['ignore', 'pipe', 'pipe'], ...extra });
+  const err1 = (e) => String((e && e.message) || '').split(NL_CHR)[0];
+  const isAncestor = (a, ref) => { try { git('git merge-base --is-ancestor ' + a + ' ' + ref, { timeout: 20000 }); return true; } catch { return false; } };
 
-  const branches = git('git for-each-ref --format=%(refname:short) refs/heads').trim().split(String.fromCharCode(10)).filter(Boolean);
+  const branches = git('git for-each-ref --format=%(refname:short) refs/heads')
+    .split(NL_CHR).map((s) => s.trim()).filter(Boolean);
   log('sweeping ' + branches.length + ' local branch(es)');
+
   // One fetch for the whole sweep: per-branch fetches multiply the transient
   // github.com:443 timeouts this repo is prone to.
-  try { git('git fetch -q --prune origin', { timeout: 60000 }); }
-  catch { log('WARN fetch failed - using cached remote refs'); }
+  let fetched = false;
+  for (let a = 1; a <= 2 && !fetched; a++) {
+    try { git('git fetch -q --prune origin', { timeout: 60000 }); fetched = true; }
+    catch (e) { log('WARN fetch attempt ' + a + ' failed (' + err1(e) + ')'); }
+  }
 
-  const refExists = (ref) => { try { git('git rev-parse --verify --quiet ' + ref); return true; } catch { return false; } };
+  // A cached origin/* ref can be stale, which turns "in sync" into a lie when
+  // the remote has moved on. ls-remote is far lighter than fetch and usually
+  // survives where fetch times out, so prefer real remote SHAs for the
+  // comparison and only fall back to the cached refs.
+  const remoteShas = new Map();
+  try {
+    for (const line of git('git ls-remote --heads origin', { timeout: 60000 }).split(NL_CHR)) {
+      const parts = line.trim().split(' ').filter(Boolean);
+      if (parts.length < 2 || !parts[1].startsWith('refs/heads/')) continue;
+      remoteShas.set(parts[1].slice('refs/heads/'.length), parts[0]);
+    }
+    log('ls-remote: ' + remoteShas.size + ' remote branch(es)');
+  } catch (e) { log('WARN ls-remote failed (' + err1(e) + ') - comparing against cached origin/* refs'); }
+
+  const localSha = (ref) => { try { return git('git rev-parse ' + ref, { timeout: 20000 }).trim(); } catch { return ''; } };
+  const remoteShaFor = (b) => {
+    const live = remoteShas.get(b);
+    if (live) return live;
+    try { return git('git rev-parse --verify --quiet origin/' + b, { timeout: 20000 }).trim(); } catch { return ''; }
+  };
 
   const pushBranch = (b) => {
     const upstream = 'origin/' + b;
-    const firstPush = !refExists(upstream);
-    let ahead = '';
+    const head = localSha(b);
+    if (!head) { log('WARN ' + b + ': local HEAD unresolvable - skipped'); return; }
+    const remoteSha = remoteShaFor(b);
+    const firstPush = !remoteSha;
+    if (!firstPush && remoteSha === head) { log(b + ': in sync with ' + upstream); return; }
     if (firstPush) {
-      // Unpublished branch: every local commit is unpushed work.
-      ahead = git('git log --oneline -1 ' + b, { timeout: 20000 }).trim();
-      if (!ahead) return;
       log('no remote ref ' + upstream + ' -> first push of ' + b);
-    } else {
-      ahead = git('git log --oneline ' + upstream + '..' + b, { timeout: 20000 }).trim();
+    } else if (!isAncestor(remoteSha, b)) {
+      const behind = git('git rev-list --count ' + b + '..' + remoteSha, { timeout: 20000 }).trim();
+      log('WARN ' + b + ': remote has ' + behind + ' commit(s) missing locally - push would be rejected, merge/rebase first');
+      return;
     }
-    if (!ahead) { log(b + ': in sync with ' + upstream); return; }
+    const pending = git('git rev-list --count ' + (firstPush ? b : remoteSha + '..' + b), { timeout: 20000 }).trim();
+    if (pending === '0') { log(b + ': nothing local to push'); return; }
+    log(b + ': ' + pending + ' commit(s) to push');
     // Transient connect timeouts to github.com:443 hit this repo regularly:
     // ls-remote / --dry-run succeed, then the real push dies with
     // 'Failed to connect to github.com port 443'. Retry instead of dropping
@@ -143,7 +173,7 @@ try {
         log(attempt > 1 ? b + ': pushed (after ' + attempt + ' attempts)' : b + ': pushed');
         return;
       } catch (e) {
-        lastErr = e.message.split(String.fromCharCode(10))[0];
+        lastErr = err1(e);
         if (attempt === 3) { log('WARN push failed for ' + b + ' after 3 attempts: ' + lastErr); return; }
         log('push attempt ' + attempt + ' for ' + b + ' failed (' + lastErr + ') - retrying');
       }
@@ -152,7 +182,7 @@ try {
 
   for (const b of branches) {
     try { pushBranch(b); }
-    catch (e) { log('WARN ' + b + ' push skipped: ' + e.message.split(String.fromCharCode(10))[0]); }
+    catch (e) { log('WARN ' + b + ' push skipped: ' + err1(e)); }
   }
 } catch (e) { log(`WARN push skipped: ${e.message.split('\n')[0]}`); }
 log('done.');

@@ -37,22 +37,22 @@ def vercel_argv0():
     (C:/Users/<u>/AppData/Roaming/npm/vercel) with no .exe extension, so
     subprocess.run(["vercel", ...]) raises WinError 2 — a shim is not a
     native executable. Prefer the .cmd shim next to it, then the .js entry.
+
+    Strictly PATH-based: if `vercel` is not on PATH, raise so the caller
+    fails CLOSED. A hardcoded fallback path made the "unreachable" test
+    silently succeed, i.e. a broken install looked like a healthy count.
     """
     exe = shutil.which("vercel") or shutil.which("vercel.cmd")
-    if exe:
-        if exe.lower().endswith((".exe", ".cmd", ".bat")):
-            return exe
-        # MSYS shim -> sibling .cmd (or .exe) that native CreateProcess can run
-        base = os.path.splitext(exe)[0]
-        for cand in (base + ".exe", base + ".cmd", base + ".bat"):
-            if os.path.exists(cand):
-                return cand
-        return exe  # last resort: may still work under a POSIX python
-    for cand in (r"C:\Users\ansy0\AppData\Roaming\npm\vercel.cmd",
-                 r"C:\Users\ansy0\AppData\Roaming\npm\node_modules\vercel\dist\index.js"):
+    if not exe:
+        raise RuntimeError("vercel CLI not on PATH")
+    if exe.lower().endswith((".exe", ".cmd", ".bat")):
+        return exe
+    # MSYS shim -> sibling .cmd (or .exe) that native CreateProcess can run
+    base = os.path.splitext(exe)[0]
+    for cand in (base + ".exe", base + ".cmd", base + ".bat"):
         if os.path.exists(cand):
             return cand
-    raise RuntimeError("vercel CLI not found on PATH")
+    return exe  # last resort: may still work under a POSIX python
 
 
 def run_page(args):
@@ -78,13 +78,14 @@ def run_page(args):
 
 
 def main():
-    limit = 100
-    pages = 20
-    for k, v in enumerate(sys.argv[1:]):
-        if v == "--limit" and k + 1 < len(sys.argv):
-            limit = int(sys.argv[k + 1])
-        if v == "--max-pages" and k + 1 < len(sys.argv):
-            pages = int(sys.argv[k + 1])
+    limit, pages = 100, 20
+    argv_rest = sys.argv[1:]
+    for idx, v in enumerate(argv_rest):
+        nxt = argv_rest[idx + 1] if idx + 1 < len(argv_rest) else None
+        if v == "--limit" and nxt:
+            limit = int(nxt)
+        elif v == "--max-pages" and nxt:
+            pages = int(nxt)
 
     today = datetime.date.today()
     count, projects, walked = 0, set(), 0

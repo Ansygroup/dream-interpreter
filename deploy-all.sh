@@ -12,30 +12,34 @@ log() { echo "[$(ts)] $*" | tee -a "$LOG"; }
 log "=== Ansy Group deploy run start ==="
 
 # --- Quota guard: refuse if we already burned deploys today ---
-# NOTE: `vercel ls` prints an AGE column ("10m", "3h"), NOT a date. Grepping the
-# table for YYYY-MM-DD always matches 0, so the old guard was dead code and never
-# aborted. Use the JSON API and parse createdAt (ms epoch) instead.
-# CRITICAL: the query MUST run from a directory with no .vercel/project.json.
-# A linked cwd makes `vercel ls` return ONLY that project and silently IGNORE
-# --scope, under-counting the team-wide 100/day cap (saw 5 when the truth was 25).
-# An unreadable/empty result is treated as EXHAUSTED, so the script fails closed.
-DEPLOYS_TODAY=$(cd "$TMPDIR" 2>/dev/null || cd /; vercel ls --scope ansygroups-projects --format=json --limit 100 2>/dev/null | python -c "
-import sys,json,datetime
-raw=sys.stdin.read(); i=raw.find('{')
-if i<0: print(100); raise SystemExit
-try: d=json.loads(raw[i:])
-except Exception: print(100); raise SystemExit
-deps=d.get('deployments',d) if isinstance(d,dict) else d
-if len(deps)>=100: print(100); raise SystemExit   # page full -> at/over cap
-today=datetime.date.today()
-print(sum(1 for x in deps if datetime.datetime.fromtimestamp(x['createdAt']/1000).date()==today))
-" 2>/dev/null || echo 100)
+# HISTORY (3 dead-guard generations, all fixed here):
+#  1. `vercel ls` prints an AGE column ("10m"), never a date -> grepping the
+#     table for YYYY-MM-DD always matched 0, so the guard never aborted.
+#  2. Switched to `vercel ls --format=json` + parse `createdAt` (ms epoch).
+#     `vercel ls` prints `status` to STDERR, so 2>/dev/null polling sees nothing.
+#  3. The query MUST run from a dir with NO .vercel/project.json: a linked cwd
+#     makes `vercel ls` return ONLY that project and silently ignore --scope,
+#     under-counting the team-wide 100/day cap ~5x (saw 5 when truth was 25).
+#  4. `--limit` is PER PAGE and saturates at 100. `if len(deps) >= 100: print(100)`
+#     misread a SATURATED PAGE as an EXHAUSTED QUOTA: those 100 rows spanned 35
+#     days (2026-08-29 -> today) while only 12 deploys were actually spent today.
+#     Result: deploy-all.sh aborted (exit 2) on EVERY run with ~86 quota left.
+# The counting now lives in scripts/vercel-quota.py, which pages forward until a
+# page's OLDEST deployment predates today, and fails CLOSED (prints 100) on any
+# error. Verified: real count 14 vs old false 100; fail-closed on bad scope AND
+# on vercel-off-PATH; stable at --limit 50/100.
+QUOTA_PY="$REPOS/dream-interpreter/scripts/vercel-quota.py"
+# MSYS path (/c/Users/...) handed to NATIVE Windows python resolves to C:\c\Users\...
+# and dies "can't open file", which fail-closed then reads as "quota exhausted".
+# Normalize to a forward-slash native path before invoking python.
+QUOTA_PY_WIN=$(printf '%s' "$QUOTA_PY" | sed -e 's|^/\([a-zA-Z]\)/|\1:/|')
+DEPLOYS_TODAY=$(cd "$TMPDIR" 2>/dev/null || cd /; python "$QUOTA_PY_WIN" 2>>"$LOG" || echo 100)
 [ -z "$DEPLOYS_TODAY" ] && DEPLOYS_TODAY=100
 if [ "$DEPLOYS_TODAY" -gt 90 ] 2>/dev/null; then
-  log "QUOTA WARNING: ~$DEPLOYS_TODAY deploys today. ABORTING to avoid 100/day lockout."
+  log "QUOTA WARNING: $DEPLOYS_TODAY deploys today. ABORTING to avoid 100/day lockout."
   exit 2
 fi
-log "Quota check OK (deploys today ~$DEPLOYS_TODAY)"
+log "Quota check OK (deploys today ~$DEPLOYS_TODAY / 100)"
 
 deploy() {
   local repo="$1" name="$2" require_branch="${3:-}"
@@ -52,6 +56,13 @@ deploy() {
       return 3
     fi
   fi
+  # DRY_RUN=1 exercises the whole guard/branch path and spends ZERO deploys.
+  # Use it to prove the release wiring before committing quota.
+  if [ "${DRY_RUN:-0}" = "1" ]; then
+    local dirty; dirty="$(git status --porcelain 2>/dev/null | wc -l | tr -d ' ')"
+    log "$name: DRY_RUN — branch OK, $dirty uncommitted file(s), 0 deploys spent."
+    return 0
+  fi
   if [ ! -d .git ] && [ ! -f vercel.json ]; then log "$name: not a project, skip"; return 0; fi
   # link if no .vercel/project.json
   if [ ! -f .vercel/project.json ]; then
@@ -65,8 +76,12 @@ deploy() {
 }
 
 deploy "$REPOS/ansygroup.com"   "ansygroup.com"   ""      # domain not on Vercel DNS (SSL Error) - see report
-deploy "$REPOS/dream-interpreter" "dream-interpreter" "master"
-deploy "$REPOS/ai-blog"          "ai-blog"          "main"
+# dream-interpreter: production is `master`, which lives in the SEPARATE WORKTREE
+# ../dream-interpreter-feed. Point at that checkout, NOT the main one — the main
+# checkout sits on a feature branch and would make the branch guard refuse
+# (or, worse, ship the wrong tree).
+deploy "$REPOS/dream-interpreter-feed" "dream-interpreter" "master"
+deploy "$REPOS/ai-blog"               "ai-blog"          "main"
 
 # --- IndexNow ping (only if INDEXNOW_KEY env is present) ---
 ping_indexnow() {

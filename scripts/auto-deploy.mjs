@@ -30,6 +30,19 @@ const baseIdx = process.argv.indexOf('--base');
 const BASE = baseIdx !== -1 ? process.argv[baseIdx + 1] : 'https://dream-interpreter-alpha-ruddy.vercel.app';
 const MARKER = resolve(root, '.deploy-sha');
 
+// A deploy is only "done" if EVERY perspective answers. This used to check just
+// home/interpret/api, which let the marker be written while some perspectives
+// were still down -> auto-deploy reported "already verified" on later ticks
+// while verify-deploy.mjs correctly reported INCOMPLETE.
+const SCHOOLS = [
+  ['en', 'general'], ['ar', 'islamic'], ['es', 'psychology'], ['zh', 'chinese'],
+  ['fr', 'christian'], ['hi', 'hindu'], ['ru', 'buddhist'], ['de', 'jewish'],
+];
+const RATE_WINDOW_MS = 60 * 1000;
+const RATE_LIMIT = 12;
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+
 function sh(cmd, timeoutMs) {
   try { return execSync(cmd, { cwd: root, encoding: 'utf8', stdio: 'pipe', timeout: timeoutMs }); }
   catch (e) { return (e.stdout || '') + (e.stderr || ''); }
@@ -91,6 +104,35 @@ const liveHasFullSet = async () =>
   (await liveBundleHas(/Compare all traditions/)) &&
   ((await liveBundleHas(/Connect your Supabase project/)) || (await liveBundleHas(/اربط مشروع Supabase/)));
 
+// Probe every perspective against the live API. Retries transport-level failures
+// (ECONNRESET when a cold function hits maxDuration=45s) so a slow-but-healthy
+// cold start is not mistaken for a broken school.
+async function perspectivesOk() {
+  for (const [lang, persp] of SCHOOLS) {
+    let ok = false;
+    for (let attempt = 0; attempt < 3; attempt++) {
+      const r = await fetchWithRetry(`${BASE}/api/interpret`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ dream: 'I saw a snake leaving my house', language: lang, perspective: persp }),
+        timeoutMs: 75000,
+      });
+      if (r.status === 429) { await sleep(RATE_WINDOW_MS + 2000); continue; }
+      let j = null; try { j = JSON.parse(r.body); } catch {}
+      ok = r.status === 200 && !!j?.interpretation && j.interpretation.trim().length > 20;
+      if (ok) break;
+      if (r.status > 0) break;            // real HTTP error -> not a transport flake
+      await sleep(4000);                  // status 0 -> transport; retry
+    }
+    if (!ok) {
+      console.log(`[auto-deploy] perspective ${lang}/${persp} NOT live -> treat deploy as incomplete.`);
+      return false;
+    }
+    if (lang !== 'en') await sleep(Math.ceil(RATE_WINDOW_MS / RATE_LIMIT) + 500);
+  }
+  return true;
+}
+
 async function main() {
   console.log(`[auto-deploy] ${new Date().toISOString()} repo=${root}`);
 
@@ -134,14 +176,17 @@ async function main() {
     timeoutMs: 25000,
   });
   const apiOk = /interpretation/.test(apiRes.body);
-  if (home === '200' && interpret === '200' && apiOk) {
+  const schoolsOk = home === '200' && interpret === '200' && apiOk
+    ? await perspectivesOk()
+    : false;
+  if (home === '200' && interpret === '200' && apiOk && schoolsOk) {
     writeFileSync(MARKER, target);
     console.log(`[auto-deploy] VERIFIED — full stack live (frontend + /api/interpret). marker=${target.slice(0, 8)}.`);
     // Best-effort IndexNow ping (no-ops if INDEXNOW_KEY absent).
     try { sh('node scripts/postdeploy-indexnow.mjs 2>&1'); } catch { /* ignore */ }
   } else {
     // Deployed but verify failed (rare; propagation). Do NOT write marker -> retry next tick.
-    console.log(`[auto-deploy] deployed but verify incomplete (home=${home} interpret=${interpret} api=${apiOk ? 'ok' : 'FAIL'}) — will retry next tick.`);
+    console.log(`[auto-deploy] deployed but verify incomplete (home=${home} interpret=${interpret} api=${apiOk ? 'ok' : 'FAIL'} perspectives=${schoolsOk ? '8/8' : 'FAIL'}) — will retry next tick.`);
   }
 }
 main();

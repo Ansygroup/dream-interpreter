@@ -20,6 +20,12 @@ const OUT = path.join(root, 'public', 'dream-today.json');
 const today = new Date().toISOString().slice(0, 10);
 
 const sh = (cmd, t) => { try { return execSync(cmd, { cwd: root, encoding: 'utf8', stdio: 'pipe', timeout: t }); } catch (e) { return (e.stdout || '') + (e.stderr || ''); } };
+// Same as sh() but keeps the exit code. The generator exits non-zero when the API
+// never returns a complete reading from a real engine, and that MUST stop the
+// pipeline: sh() swallows the code, so a stale boilerplate file left on disk from
+// an earlier tick used to satisfy the existence + date checks and the run went on
+// to commit, push and burn a Vercel quota slot shipping the SAME degraded bytes.
+const shCode = (cmd, t) => { try { return { out: execSync(cmd, { cwd: root, encoding: 'utf8', stdio: 'pipe', timeout: t }), code: 0 }; } catch (e) { return { out: (e.stdout || '') + (e.stderr || ''), code: e.status === null || e.status === undefined ? 1 : e.status }; } };
 const getJson = (u) => new Promise((res) => {
   https.get(u, (r) => { let b = ''; r.on('data', (c) => (b += c)); r.on('end', () => { try { res(JSON.parse(b)); } catch { res(null); } }); }).on('error', () => res(null));
 });
@@ -61,10 +67,16 @@ if (live && live.date === today && looksDegraded(live)) {
 }
 
 // 1. generate
-sh('node scripts/gen-dream-today.mjs', 120000);
+const gen = shCode('node scripts/gen-dream-today.mjs', 180000);
+if (gen.out.trim()) console.log(gen.out.trim());
+if (gen.code !== 0) {
+  console.error('[daily-feed] generator did not produce a real reading (free-model quota still down) — NOT committing, NOT deploying. Will retry next tick.');
+  process.exit(0); // quota-safe: a later tick with quota back regenerates the card
+}
 if (!fs.existsSync(OUT)) { console.error('[daily-feed] generation failed.'); process.exit(1); }
 const local = JSON.parse(fs.readFileSync(OUT, 'utf8'));
 if (local.date !== today) { console.error('[daily-feed] generated date mismatch.'); process.exit(1); }
+if (looksDegraded(local)) { console.error('[daily-feed] generated card is degraded — abort.'); process.exit(1); }
 
 // 2. commit + push
 sh('git add public/dream-today.json');
@@ -82,7 +94,14 @@ if (/rejected|error:|failed|denied|non-fast-forward/i.test(push)) {
 const out = sh('timeout 150 vercel deploy --prod --yes 2>&1', 160000);
 if (/api-deployments-free-per-day/.test(out)) { console.log('[daily-feed] QUOTA BLOCKED — will retry next tick.'); process.exit(0); }
 
-// 4. verify
+// 4. verify — CONTENT, not just the date. `live.date === today` alone was true
+// for the degraded boilerplate card that was already published, so the run
+// printed "VERIFIED" while the site kept serving an offline keyword template.
 const verify = await getJson(`${BASE}/dream-today.json`);
-if (verify && verify.date === today) console.log(`[daily-feed] VERIFIED — live dream of the day: ${local.symbol.en}`);
-else console.log('[daily-feed] deployed but live not yet updated — will retry next tick.');
+if (!verify || verify.date !== today) {
+  console.log('[daily-feed] deployed but live not yet updated — will retry next tick.');
+} else if (looksDegraded(verify)) {
+  console.log('[daily-feed] live card is STILL the offline boilerplate — not verified; will retry next tick.');
+} else {
+  console.log(`[daily-feed] VERIFIED — live dream of the day: ${local.symbol.en} (engine=${verify.engine || 'unknown'}, en ${String(verify.reading?.en || '').length}ch / ar ${String(verify.reading?.ar || '').length}ch)`);
+}

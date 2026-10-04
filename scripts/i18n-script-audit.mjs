@@ -159,16 +159,19 @@ export function localeDefects(code, leaves, enLeaves) {
 
     // (2) latin splice inside a non-latin locale
     //
-    // FUSION is the discriminator, and it is what makes this rule safe:
-    //   - FUSED (a Latin token directly adjacent to non-Latin letters) is always
-    //     a splice — "სიymbolის", "ჩას pastოთ", "призma". No guard applies, so a
-    //     fragment can't hide behind a coincidental EN token ("past" ⊂ "paste").
-    //   - STANDALONE is usually a transliteration, which is CORRECT copy —
-    //     "Hindusthani" for "Hindu", "Дубinska" for "Dubinska". These pass via
-    //     the EN-token set plus the transliteration guard below.
+    // FUSION is the discriminator: a Latin run glued to a NON-LATIN LETTER is a
+    // splice ("სიymbolის", "ჩას pastოთ", "Дубinska", "призma"), whereas a Latin
+    // run standing as its own word is usually a transliteration, which is
+    // CORRECT copy ("Hindusthani" for "Hindu"). Requiring >=2 letters keeps a
+    // 1-char artifact from firing.
     //
-    // Require >=2 letters: a 2-char splice ("ma" in "призma") is a real defect,
-    // but a 1-char run is almost always a classifier artifact.
+    // The EN-token/tech allowlist is checked FIRST and applies to BOTH shapes.
+    // Skipping it for fused tokens is what turns this into a false-positive
+    // factory: every brand legitimately fuses with the target script
+    // ("Dreamscopeについて", "Ibn Sirin의 고전 학파", "Ψυχολογία (Jung)"), and
+    // those tokens ARE in the EN source.
+    // Punctuation must NOT count as fusion — `(Jung)` is a parenthesised
+    // brand, not a splice.
     if (!reason && !dominantLatin) {
       const re = /([^\p{Script=Latin}\s]?)([A-Za-z]{2,})([^\p{Script=Latin}\s]?)/gu;
       let mt;
@@ -176,10 +179,11 @@ export function localeDefects(code, leaves, enLeaves) {
         const [, before, word, after] = mt;
         const lw = word.toLowerCase();
         if (TECH_WORDS.has(lw)) continue;
-        const fused = /[^\p{Script=Latin}]/u.test(before) || /[^\p{Script=Latin}]/u.test(after);
-        if (!fused) {
-          if (enTokens.has(lw) || enTokens.has(lw.replace(/s$/, ''))) continue;
-          // transliteration guard: "hindusthani" contains "hind" (from "hindu")
+        if (enTokens.has(lw) || enTokens.has(lw.replace(/s$/, ''))) continue;
+        // Punctuation neighbours are not fusion; require a real LETTER.
+        const gluedToLetter = (ch) => !!ch && /[^\p{Script=Latin}\p{P}\p{S}\s]/u.test(ch);
+        if (!gluedToLetter(before) && !gluedToLetter(after)) {
+          // standalone token — transliteration guard: "hindusthani" ~ "hindu"
           if ([...enTokens].some((t) => t.length >= 4 && lw.includes(t.slice(0, 4)))) continue;
         }
         reason = `latin-splice:${word}`;

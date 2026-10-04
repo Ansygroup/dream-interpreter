@@ -101,50 +101,58 @@ try {
       execSync('git -c user.email="ansy0@ansygroup.com" -c user.name="ansy0" commit -q -m "chore: auto-complete pending work"', { cwd: root });
     }
   }
-  const b = execSync('git branch --show-current', { cwd: root, encoding: 'utf8' }).trim();
-  // Only push if there is actually something ahead of the remote - avoids
-  // invoking the credential manager when idle (which fails headless).
-  //
-  // A MISSING origin/<branch> ref does NOT mean "in sync": it means the branch
-  // has never been pushed. The old code let that rev-parse failure land in a
-  // catch that blanked 'ahead', so a first push was reported as
-  // "local in sync with origin" forever and its commits never left the box.
+  // Sweep EVERY local branch, not just the checked-out one. A branch parked
+  // on another worktree (master lives in ../dream-interpreter-feed) or left
+  // behind after a checkout stays unpublished forever when the script only
+  // ever inspects HEAD's branch.
   const NOPROMPT = { ...process.env, GIT_TERMINAL_PROMPT: '0', GCM_INTERACTIVE: 'never', GCM_TERMINAL_PROMPT: '0' };
-  const refExists = (ref) => {
-    try { execSync(`git rev-parse --verify --quiet ${ref}`, { cwd: root, stdio: ['ignore', 'pipe', 'ignore'], timeout: 20000 }); return true; }
-    catch { return false; }
-  };
-  const upstream = `origin/${b}`;
-  let ahead = '';
-  const firstPush = !refExists(upstream);
-  if (firstPush) {
-    // Unpublished branch: every local commit is unpushed work.
-    ahead = execSync('git log --oneline -1 HEAD', { cwd: root, encoding: 'utf8', timeout: 20000 }).trim();
-    log(`no remote ref ${upstream} -> first push of ${b}`);
-  } else {
-    try { execSync(`git fetch -q origin ${b}`, { cwd: root, stdio: ['ignore', 'pipe', 'ignore'], timeout: 45000, env: NOPROMPT }); } catch { /* offline: trust cached ref */ }
-    ahead = execSync(`git log --oneline ${upstream}..HEAD`, { cwd: root, encoding: 'utf8', timeout: 20000 }).trim();
-  }
-  if (!ahead) {
-    log('nothing to push (local in sync with origin)');
-  } else {
+  const git = (cmd, extra = {}) =>
+    execSync(cmd, { cwd: root, encoding: 'utf8', env: NOPROMPT, timeout: 30000, stdio: ['ignore', 'pipe', 'pipe'], ...extra });
+
+  const branches = git('git for-each-ref --format=%(refname:short) refs/heads').trim().split(String.fromCharCode(10)).filter(Boolean);
+  log('sweeping ' + branches.length + ' local branch(es)');
+  // One fetch for the whole sweep: per-branch fetches multiply the transient
+  // github.com:443 timeouts this repo is prone to.
+  try { git('git fetch -q --prune origin', { timeout: 60000 }); }
+  catch { log('WARN fetch failed - using cached remote refs'); }
+
+  const refExists = (ref) => { try { git('git rev-parse --verify --quiet ' + ref); return true; } catch { return false; } };
+
+  const pushBranch = (b) => {
+    const upstream = 'origin/' + b;
+    const firstPush = !refExists(upstream);
+    let ahead = '';
+    if (firstPush) {
+      // Unpublished branch: every local commit is unpushed work.
+      ahead = git('git log --oneline -1 ' + b, { timeout: 20000 }).trim();
+      if (!ahead) return;
+      log('no remote ref ' + upstream + ' -> first push of ' + b);
+    } else {
+      ahead = git('git log --oneline ' + upstream + '..' + b, { timeout: 20000 }).trim();
+    }
+    if (!ahead) { log(b + ': in sync with ' + upstream); return; }
     // Transient connect timeouts to github.com:443 hit this repo regularly:
     // ls-remote / --dry-run succeed, then the real push dies with
     // 'Failed to connect to github.com port 443'. Retry instead of dropping
     // the commit on the floor.
-    const cmd = `git push ${firstPush ? '-u ' : ''}origin ${b}`;
+    const cmd = 'git push ' + (firstPush ? '-u ' : '') + 'origin ' + b;
     let lastErr = '';
     for (let attempt = 1; attempt <= 3; attempt++) {
       try {
         execSync(cmd, { cwd: root, stdio: 'inherit', env: NOPROMPT, timeout: 120000 });
-        log(attempt > 1 ? `pushed (after ${attempt} attempts)` : 'pushed');
-        break;
+        log(attempt > 1 ? b + ': pushed (after ' + attempt + ' attempts)' : b + ': pushed');
+        return;
       } catch (e) {
         lastErr = e.message.split(String.fromCharCode(10))[0];
-        if (attempt === 3) { log(`WARN push failed after 3 attempts: ${lastErr}`); break; }
-        log(`push attempt ${attempt} failed (${lastErr}) - retrying`);
+        if (attempt === 3) { log('WARN push failed for ' + b + ' after 3 attempts: ' + lastErr); return; }
+        log('push attempt ' + attempt + ' for ' + b + ' failed (' + lastErr + ') - retrying');
       }
     }
+  };
+
+  for (const b of branches) {
+    try { pushBranch(b); }
+    catch (e) { log('WARN ' + b + ' push skipped: ' + e.message.split(String.fromCharCode(10))[0]); }
   }
 } catch (e) { log(`WARN push skipped: ${e.message.split('\n')[0]}`); }
 log('done.');

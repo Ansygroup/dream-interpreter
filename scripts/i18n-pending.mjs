@@ -24,6 +24,7 @@
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { localeDefects } from './i18n-script-audit.mjs';
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const localesDir = join(root, 'src/i18n/locales');
@@ -65,13 +66,17 @@ function isLearnedFor(learned, code, k) {
 
 /** Pending (locale, key) pairs, grouped per locale and sorted worst-first. */
 export function pendingByLocale() {
-  const flatEn = new Map(flatten(JSON.parse(readFileSync(join(localesDir, 'en.json'), 'utf8'))));
+  const enLeaves = flatten(JSON.parse(readFileSync(join(localesDir, 'en.json'), 'utf8')));
+  const flatEn = new Map(enLeaves);
   const learned = learnedIdentityKeys();
   const rows = [];
   for (const { code, english } of localeCodes()) {
-    let have;
-    try { have = new Map(flatten(JSON.parse(readFileSync(join(localesDir, `${code}.json`), 'utf8')))); }
-    catch { have = null; }
+    let have, leaves;
+    try {
+      const obj = JSON.parse(readFileSync(join(localesDir, `${code}.json`), 'utf8'));
+      leaves = flatten(obj);
+      have = new Map(leaves);
+    } catch { have = null; }
     const pending = [];
     for (const [k, en] of flatEn) {
       if (IDENTITY_KEYS.has(k) || BRAND_KEYS.has(k) || learned.has(k) || isLearnedFor(learned, code, k)) continue;
@@ -79,6 +84,21 @@ export function pendingByLocale() {
       const v = have.get(k);
       if (typeof v !== 'string' || !v.trim() || ph(en) !== ph(v) ||
           /^\s*\{\s*["'\[]/.test(v) || v === en) pending.push(k);
+    }
+    // THIRD BLIND SPOT: a value can be non-EN AND still be defective — a
+    // minority-script splice ("სервисი" Georgian written in Cyrillic) or a
+    // dropped-in Latin word inside a non-latin locale ("სიymbolის"). Both are
+    // `v !== en`, so the check above and every coverage count read them as
+    // "translated". Without this the loop reports COMPLETE forever while the
+    // pages ship visible garbage. Count them as pending so the driver
+    // re-requests them; its failure path leaves the existing value intact, so
+    // this can never regress a locale to English.
+    if (have) {
+      for (const d of localeDefects(code, leaves, enLeaves)) {
+        if (IDENTITY_KEYS.has(d.key) || BRAND_KEYS.has(d.key)) continue;
+        if (learned.has(d.key) || isLearnedFor(learned, code, d.key)) continue;
+        if (!pending.includes(d.key)) pending.push(d.key);
+      }
     }
     rows.push({ code, english, pending });
   }

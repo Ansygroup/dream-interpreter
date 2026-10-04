@@ -130,7 +130,7 @@ try {
   const remoteShas = new Map();
   try {
     for (const line of git('git ls-remote --heads origin', { timeout: 60000 }).split(NL_CHR)) {
-      const parts = line.trim().split(' ').filter(Boolean);
+      const parts = line.trim().split(/\s+/).filter(Boolean);
       if (parts.length < 2 || !parts[1].startsWith('refs/heads/')) continue;
       remoteShas.set(parts[1].slice('refs/heads/'.length), parts[0]);
     }

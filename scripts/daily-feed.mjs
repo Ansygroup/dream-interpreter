@@ -56,6 +56,12 @@ const OFFLINE_BOILERPLATE_EN = 'uniquely yours';
 const looksDegraded = (d) =>
   !!d && !!(d.reading && String(d.reading.en || '').includes(OFFLINE_BOILERPLATE_EN));
 
+// Literal U+FFFD replacement characters render as black diamonds in the card.
+// Independent of how the file was produced, a reading containing one is broken
+// text — never publish it.
+const hasMojibake = (d) =>
+  !!d && !!d.reading && [d.reading.en, d.reading.ar].some((t) => /\ufffd/.test(String(t || '')));
+
 // Already live for today AND not a degraded card?
 const live = await getJson(`${BASE}/dream-today.json`);
 if (live && live.date === today && !looksDegraded(live)) {
@@ -65,9 +71,15 @@ if (live && live.date === today && !looksDegraded(live)) {
 if (live && live.date === today && looksDegraded(live)) {
   console.log('[daily-feed] live card for today is OFFLINE BOILERPLATE (free-model quota was down) — regenerating.');
 }
+if (live && live.date === today && hasMojibake(live)) {
+  console.log('[daily-feed] live card for today contains replacement characters — regenerating.');
+}
 
 // 1. generate
-const gen = shCode('node scripts/gen-dream-today.mjs', 180000);
+// 480s: with the site LLM pool down, the generator waits out the fallback
+// gateway's 1-request-per-minute free gate between EN and AR before giving up.
+// The old 180s ceiling cut the retry off mid-wait and failed the whole day.
+const gen = shCode('node scripts/gen-dream-today.mjs', 480000);
 if (gen.out.trim()) console.log(gen.out.trim());
 if (gen.code !== 0) {
   console.error('[daily-feed] generator did not produce a real reading (free-model quota still down) — NOT committing, NOT deploying. Will retry next tick.');
@@ -77,6 +89,7 @@ if (!fs.existsSync(OUT)) { console.error('[daily-feed] generation failed.'); pro
 const local = JSON.parse(fs.readFileSync(OUT, 'utf8'));
 if (local.date !== today) { console.error('[daily-feed] generated date mismatch.'); process.exit(1); }
 if (looksDegraded(local)) { console.error('[daily-feed] generated card is degraded — abort.'); process.exit(1); }
+if (hasMojibake(local)) { console.error('[daily-feed] generated card contains replacement characters — abort.'); process.exit(1); }
 
 // 2. commit + push
 sh('git add public/dream-today.json');
@@ -102,6 +115,8 @@ if (!verify || verify.date !== today) {
   console.log('[daily-feed] deployed but live not yet updated — will retry next tick.');
 } else if (looksDegraded(verify)) {
   console.log('[daily-feed] live card is STILL the offline boilerplate — not verified; will retry next tick.');
+} else if (hasMojibake(verify)) {
+  console.log('[daily-feed] live card contains replacement characters — not verified; will retry next tick.');
 } else {
   console.log(`[daily-feed] VERIFIED — live dream of the day: ${local.symbol.en} (engine=${verify.engine || 'unknown'}, en ${String(verify.reading?.en || '').length}ch / ar ${String(verify.reading?.ar || '').length}ch)`);
 }

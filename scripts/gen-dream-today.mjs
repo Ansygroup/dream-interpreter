@@ -67,6 +67,15 @@ const MIN_READING = 80;
 const SENTENCE_END = /[.!?؟।۔\n"'\u201d]\s*$/;
 const looksComplete = (t) => t.length >= MIN_READING && SENTENCE_END.test(t.trim());
 
+// A reading can pass every other check and still be visibly broken: the free
+// gateway sometimes emits literal U+FFFD REPLACEMENT CHARACTER mid-word
+// (2026-10-04: "ابن سي��ين" for سيرين, "ش��وراً" for شعوراً). Those bytes are
+// valid UTF-8 and end on punctuation, so the length/terminator gate passed them
+// straight to production and the Arabic card rendered with black diamonds.
+// Corrupted letters are unrecoverable without guessing the word, so reject and
+// re-read rather than ship them.
+const hasMojibake = (t) => /\ufffd/.test(t);
+
 const post = (lang, dream, persp) => new Promise((res) => {
   const body = JSON.stringify({ dream, perspective: persp, language: lang });
   const rq = https.request(API, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(body) } },
@@ -92,41 +101,185 @@ const post = (lang, dream, persp) => new Promise((res) => {
 // 'cache' is fine: it is a real LLM reading replayed from the 24h cache.
 const isRealEngine = (engine) => engine && engine !== 'offline';
 
+/* ---------------- Direct-provider fallback ---------------- */
+
+// The site API only knows OpenRouter. When OpenRouter's shared free pool is
+// exhausted it answers HTTP 429 "free-models-per-day" for every model and the
+// site serves engine:"offline" boilerplate — which is exactly the state that
+// left the 2026-10-04 card as a 194-char keyword template. Free quotas are
+// per-gateway, so a SECOND gateway's pool is still fresh: try it directly
+// before giving up on the day's card. Reads its key from the environment
+// (DREAMSCOPE_FALLBACK_KEY / UNOROUTER_API_KEY) — never hardcode a secret.
+const FALLBACK_BASE = process.env.DREAMSCOPE_FALLBACK_BASE || 'https://api.unorouter.com/v1/chat/completions';
+// Ordered by measured reliability ON THIS GATEWAY for Arabic: gemini-3.6-flash
+// writes clean RTL with zero replacement chars, while deepseek-v4-flash
+// returned U+FFFD mid-word ("ح��ى" for حتى) on the same prompt. A second
+// gateway's quota being free does not mean its first model is text-clean, so
+// the chain must try more than one model before giving up on the day.
+const FALLBACK_MODELS = (process.env.DREAMSCOPE_FALLBACK_MODELS || 'gemini-3.6-flash:free,deepseek-v4-flash:free')
+  .split(',').map((s) => s.trim()).filter(Boolean);
+const fallbackKey = () => process.env.DREAMSCOPE_FALLBACK_KEY || process.env.UNOROUTER_API_KEY || '';
+
+const LANG_NAME = { en: 'English', ar: 'Arabic' };
+
+// The direct model is a raw LLM, not the site's shaped pipeline, so it must be
+// told the house rules itself. A model that answers an Arabic prompt in English
+// would pass looksComplete() and ship a wrong-language card.
+const systemFor = (lang, persp) => `You are Dreamscope, a wise and culturally-grounded dream interpreter writing in ${LANG_NAME[lang]}.
+${persp === 'islamic' ? 'Ground the reading in the Islamic tradition (dream symbolism as in Ibn Sirin); never declare death, illness or misfortune as fact.' : 'Draw on classical and cross-cultural dream symbolism.'}
+Rules:
+- Respond ONLY in ${LANG_NAME[lang]}. No English words at all in an Arabic reading.
+- 2 to 4 short paragraphs, warm and reflective. No headings, no markdown, no bullet lists.
+- Name the key symbols and what they traditionally mean, tied gently to life circumstances.
+- End with one grounding sentence of reflection or gentle guidance.`;
+
+// Reject a "complete" answer written in the wrong script.
+const looksRightScript = (t, lang) => {
+  if (lang !== 'ar') return true;
+  const letters = t.replace(/[^\p{L}]/gu, '');
+  if (!letters) return false;
+  const ar = (letters.match(/[\u0600-\u06FF]/g) || []).length;
+  return ar / letters.length > 0.7;
+};
+
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+// Free models on this gateway allow ~1 request per minute PER ACCOUNT, so the
+// two languages must not race: run them through one serialised queue with a
+// minimum gap, or whichever arrives second is refused and the day is lost.
+const FALLBACK_MIN_GAP_MS = 65000;
+let fbQueue = Promise.resolve();
+let fbLastAt = 0;
+const runSerialised = (fn) => {
+  const run = fbQueue.then(async () => {
+    const wait = fbLastAt + FALLBACK_MIN_GAP_MS - Date.now();
+    if (wait > 0) await sleep(wait);
+    try { return await fn(); } finally { fbLastAt = Date.now(); }
+  });
+  // Keep the chain alive even if this call rejects.
+  fbQueue = run.then(() => {}, () => {});
+  return run;
+};
+
+// One raw call. Resolves { text, engine, retryAfterMs } — retryAfterMs > 0 means
+// the gateway refused on rate limit and the caller should wait and try again.
+const callFallbackOnce = (lang, dream, persp, model) => new Promise((res) => {
+  const key = fallbackKey();
+  if (!key) return res({ text: '', engine: '', retryAfterMs: 0 });
+  const payload = JSON.stringify({
+    model,
+    temperature: 0.7,
+    max_tokens: 900,
+    messages: [
+      { role: 'system', content: systemFor(lang, persp) },
+      { role: 'user', content: `Dream (as the dreamer wrote it):\n"""${dream.slice(0, 2000)}"""\n\nWrite the ${LANG_NAME[lang]} reading now.` },
+    ],
+  });
+  const u = new URL(FALLBACK_BASE);
+  const rq = https.request(
+    {
+      hostname: u.hostname,
+      path: u.pathname + (u.search || ''),
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(payload), Authorization: `Bearer ${key}` },
+      timeout: 90000,
+    },
+    (r) => {
+      let b = '';
+      r.on('data', (c) => (b += c));
+      r.on('end', () => {
+        if (r.statusCode === 429 || r.statusCode === 503) {
+          // 429: free models here are limited to ~1 request/minute per account,
+          // so EN and AR fired together race and the second one loses.
+          // 503: the gateway has no free provider capacity right now.
+          // Both are transient — let the caller retry through the queue gap.
+          const secs = Number((String(b).match(/retry in (\d+)s/i) || [])[1] || 65);
+          return res({ text: '', engine: '', retryAfterMs: (secs + 5) * 1000 });
+        }
+        try {
+          const j = JSON.parse(b);
+          const msg = j?.choices?.[0]?.message || {};
+          // Reasoning-only models put the answer in `reasoning`; using it beats
+          // shipping nothing at all.
+          const text = String(msg.content || msg.reasoning || '').trim();
+          res({ text, engine: text ? `fallback:${j.model || model}` : '', retryAfterMs: 0 });
+        } catch { res({ text: '', engine: '', retryAfterMs: 0 }); }
+      });
+    },
+  );
+  rq.on('timeout', () => rq.destroy());
+  rq.on('error', () => res({ text: '', engine: '', retryAfterMs: 0 }));
+  rq.write(payload);
+  rq.end();
+});
+
+// Try each fallback model in turn, one language at a time. runSerialised already
+// enforces the per-account gap, so a 429 needs no extra sleep here — adding one
+// on top double-waits and can push the run past daily-feed's timeout.
+const callFallback = async (lang, dream, persp) => {
+  for (const model of FALLBACK_MODELS) {
+    const r = await runSerialised(() => callFallbackOnce(lang, dream, persp, model));
+    if (r.text) return r;
+    console.warn(`[gen-dream-today] ${lang}: fallback model ${model} unusable${r.retryAfterMs ? ' (rate-limited)' : ''} — trying next model`);
+  }
+  return { text: '', engine: '', retryAfterMs: 0 };
+};
+
 // Retry a language until it returns a complete reading FROM A REAL ENGINE.
 // Without this a single partial or offline response permanently poisons the card.
-const postVerified = async (lang, dream, persp, attempts = 4) => {
+const postVerified = async (lang, dream, persp, attempts = 3) => {
+  let offlineSeen = false;
+  const acceptable = (t) => looksComplete(t) && looksRightScript(t, lang) && !hasMojibake(t);
   for (let i = 1; i <= attempts; i++) {
     const { text, engine } = await post(lang, dream, persp);
     if (!isRealEngine(engine)) {
-      console.warn(`[gen-dream-today] ${lang}: rejected attempt ${i} — engine=${engine || 'none'} (free-model quota down or no key)`);
+      offlineSeen = true;
+      console.warn(`[gen-dream-today] ${lang}: rejected attempt ${i} — engine=${engine || 'none'} (site LLM quota down)`);
       continue;
     }
-    if (looksComplete(text)) {
+    if (acceptable(text)) {
       if (i > 1) console.warn(`[gen-dream-today] ${lang}: accepted on attempt ${i} (earlier reads were truncated)`);
-      return text;
+      return { text, engine };
     }
-    console.warn(`[gen-dream-today] ${lang}: rejected attempt ${i} (engine=${engine}, len ${text.length}${text ? ', unterminated' : ', empty'})`);
+    const why = hasMojibake(text) ? 'mojibake' : !looksRightScript(text, lang) ? 'wrong script' : 'unterminated/empty';
+    console.warn(`[gen-dream-today] ${lang}: rejected attempt ${i} (engine=${engine}, len ${text.length}, ${why})`);
   }
-  return '';
+  if (!offlineSeen) return { text: '', engine: '' };
+
+  // Site pool exhausted — try the second gateway before giving up on the day.
+  for (let round = 1; round <= 2; round++) {
+    const { text, engine } = await callFallback(lang, dream, persp);
+    if (text && acceptable(text)) {
+      console.log(`[gen-dream-today] ${lang}: site engine down — recovered via fallback gateway (${engine}, ${text.length}ch)`);
+      return { text, engine };
+    }
+    if (!text) break;
+    console.warn(`[gen-dream-today] ${lang}: fallback round ${round} rejected (${hasMojibake(text) ? 'mojibake' : !looksRightScript(text, lang) ? 'wrong script' : 'unterminated'})`);
+  }
+  console.warn(`[gen-dream-today] ${lang}: no clean reading from any engine — not shipping a degraded card`);
+  return { text: '', engine: '' };
 };
 
 (async () => {
   const sym = SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)];
   const d = DREAMS[sym.key] || { en: `I dreamed of ${sym.en.toLowerCase()}.`, ar: `حلمتُ بـ${sym.ar}.` };
-  const [enReading, arReading] = await Promise.all([
+  const [en, ar] = await Promise.all([
     postVerified('en', d.en, PERSPECTIVE.en),
     postVerified('ar', d.ar, PERSPECTIVE.ar),
   ]);
-  if (!enReading || !arReading) { console.error('[gen-dream-today] API never returned a complete reading — abort (a partial one must not ship).'); process.exit(1); }
+  if (!en.text || !ar.text) { console.error('[gen-dream-today] API never returned a complete reading — abort (a partial one must not ship).'); process.exit(1); }
+  const engines = [en.engine, ar.engine];
   const out = {
     date: new Date().toISOString().slice(0, 10),
     symbol: { key: sym.key, en: sym.en, ar: sym.ar },
     dream: { en: d.en, ar: d.ar },
-    reading: { en: enReading, ar: arReading },
-    // Recorded so daily-feed.mjs can tell a real reading from a degraded one and
-    // upgrade it on a later tick once the free-model quota recovers. Cards written
-    // before this field existed have engine === undefined and count as done.
-    engine: 'llm',
+    reading: { en: en.text, ar: ar.text },
+    // Records WHICH engine produced each reading. daily-feed.mjs treats only a
+    // real engine as done, so a card later written by the fallback gateway is
+    // still recognised as a genuine interpretation and can be upgraded when the
+    // site pool recovers. Cards written before this field existed have
+    // engine === undefined and count as done.
+    engine: engines[0] === engines[1] ? engines[0] : engines.join('+'),
   };
   fs.mkdirSync(path.dirname(OUT), { recursive: true });
   fs.writeFileSync(OUT, JSON.stringify(out, null, 2) + '\n');

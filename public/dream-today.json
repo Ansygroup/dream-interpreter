@@ -1,16 +1,17 @@
 {
   "date": "2026-10-04",
   "symbol": {
-    "key": "pregnancy",
-    "en": "Pregnancy",
-    "ar": "الحمل"
+    "key": "cat",
+    "en": "Cat",
+    "ar": "القطة"
   },
   "dream": {
-    "en": "Someone told me news that would change a family forever.",
-    "ar": "أخبرني أحدهم بخبرٍ سيغيّر عائلةً للأبد."
+    "en": "A cat watched me from a windowsill and then vanished.",
+    "ar": "راقبتني قطةٌ من على حافة نافذة ثم اختفت."
   },
   "reading": {
-    "en": "Your dream carries details that are uniquely yours. Reflect on the dominant feelings in it — they are the true key to its meaning.\n\nReflect on what your heart tells you — dreams mirror what we carry within.",
-    "ar": "حلمك يحمل تفاصيل شخصية خاصة بك. تأمل في المشاعر السائدة فيه — هي المفتاح الحقيقي لمعناه.\n\nوفي التراث الإسلامي (ابن سيرين) تُعدّ الأحلام رسائل للروح: تأمّل، وتحرَّ الخير، وتقرَّب بالصلاة والتأمل."
-  }
+    "en": "In classical dream tradition, the cat often embodies intuition, independence, and the hidden instincts that observe us from the margins of our awareness. Positioned on a windowsill—a threshold between your inner world and the outside environment—it suggests an aspect of your own insight watching over a period of transition or contemplation, quietly urging you to pay attention to subtle feelings you may have overlooked.\n\nThe sudden vanishing of the creature speaks to fleeting clarity or opportunities that slip away when we hesitate to act upon our instincts. It represents a gentle reminder that your intuitive wisdom is present, but like a shadowy shadow, it requires conscious attention and grounding before it quietly fades from view.\n\nConsider what subtle instinct or unexpressed truth you have recently set aside, and trust your quiet inner vision before it slips into the background of your daily life.",
+    "ar": "رؤيتك لقطة تراقبك من على حافة النافذة ثم تتوارى عن الأنظار تدعو للتأمل العميق في تفاصيل حياتك اليومية؛ فالقطة في المأثور والتراث، ولا سيما عند ابن سيرين، تشير أحياناً إلى عين ترقب أو نفس تتطلع، أو أمور بسيطة تتطلب منك الانتباه والحذر في تعاملاتك المباشرة، دون أن تحمل في طياتها ما يبعث على القلق أو الخوف.\n\nأما حافة النافذة، فهي رمز حد فاصل بين عالمك الداخلي الخاص وهو البيت، والعالم الخارجي وما يحمله من متغيرات وتفاصيل؛ ووقوف القطة على هذا الحد ثم اختفاؤها يبشر بزوال ما قد تشعر به من تشتت أو قلق، وتحول تلك الهواجس العابرة إلى راحة بال واطمئنان بفضل الله وتوفيقه.\n\nتذكر دائماً أن ما يمر بنا من إشارات هو تذكير لطيف بالاستعانة بالهدوء، ولتكن هذه الرؤيا مساحة لتعزيز الطمأنينة في قلبك والاعتماد على الله في كل خطواتك."
+  },
+  "engine": "fallback:gemini-3.6-flash"
 }

@@ -108,4 +108,9 @@ for (const file of files.sort()) {
 
 console.log(`QA over ${files.length + 1} locales (canonical: en)\n`);
 console.log(report.sort().join('\n'));
-console.log(`\nClean: ${passCount}/${files.length} — issues above need attention (missing keys fall back to EN at runtime).`);
+// The summary must match the actual result. Printing "issues above need
+// attention" on a fully clean run trains you to ignore this gate — a permanent
+// false failure that reports itself even when every locale row is a ✓.
+console.log(passCount === files.length
+  ? `\n✅ Clean: ${passCount}/${files.length} locales — nothing to fix.`
+  : `\n❌ Clean: ${passCount}/${files.length} — issues above need attention (missing keys fall back to EN at runtime).`);

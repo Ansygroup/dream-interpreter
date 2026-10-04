@@ -70,20 +70,42 @@ const looksComplete = (t) => t.length >= MIN_READING && SENTENCE_END.test(t.trim
 const post = (lang, dream, persp) => new Promise((res) => {
   const body = JSON.stringify({ dream, perspective: persp, language: lang });
   const rq = https.request(API, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(body) } },
-    (r) => { let b = ''; r.on('data', (c) => (b += c)); r.on('end', () => { try { res(JSON.parse(b).interpretation || ''); } catch { res(''); } }); });
-  rq.on('error', () => res('')); rq.write(body); rq.end();
+    (r) => {
+      let b = ''; r.on('data', (c) => (b += c));
+      r.on('end', () => {
+        try {
+          const j = JSON.parse(b);
+          res({ text: j.interpretation || '', engine: j.engine || '' });
+        } catch { res({ text: '', engine: '' }); }
+      });
+    });
+  rq.on('error', () => res({ text: '', engine: '' }));
+  rq.write(body); rq.end();
 });
 
-// Retry a language until it returns a complete-looking reading. Without this a
-// single partial response permanently poisons that day's card.
+// The API answers 200 even when every LLM failed: it falls back to a hardcoded
+// keyword template and reports engine:"offline". That fallback is LONG and ends
+// in punctuation, so looksComplete() alone accepted it and 2026-10-04 shipped a
+// 206-char boilerplate card instead of a real reading (10-03 was 922 chars).
+// Offline means "the free-model quota is exhausted" - a reading from it is not
+// an interpretation, so it must never reach public/.
+// 'cache' is fine: it is a real LLM reading replayed from the 24h cache.
+const isRealEngine = (engine) => engine && engine !== 'offline';
+
+// Retry a language until it returns a complete reading FROM A REAL ENGINE.
+// Without this a single partial or offline response permanently poisons the card.
 const postVerified = async (lang, dream, persp, attempts = 4) => {
   for (let i = 1; i <= attempts; i++) {
-    const t = await post(lang, dream, persp);
-    if (looksComplete(t)) {
-      if (i > 1) console.warn(`[gen-dream-today] ${lang}: accepted on attempt ${i} (earlier reads were truncated)`);
-      return t;
+    const { text, engine } = await post(lang, dream, persp);
+    if (!isRealEngine(engine)) {
+      console.warn(`[gen-dream-today] ${lang}: rejected attempt ${i} — engine=${engine || 'none'} (free-model quota down or no key)`);
+      continue;
     }
-    console.warn(`[gen-dream-today] ${lang}: rejected attempt ${i} (len ${t.length}${t ? ', unterminated' : ', empty'})`);
+    if (looksComplete(text)) {
+      if (i > 1) console.warn(`[gen-dream-today] ${lang}: accepted on attempt ${i} (earlier reads were truncated)`);
+      return text;
+    }
+    console.warn(`[gen-dream-today] ${lang}: rejected attempt ${i} (engine=${engine}, len ${text.length}${text ? ', unterminated' : ', empty'})`);
   }
   return '';
 };
@@ -101,6 +123,10 @@ const postVerified = async (lang, dream, persp, attempts = 4) => {
     symbol: { key: sym.key, en: sym.en, ar: sym.ar },
     dream: { en: d.en, ar: d.ar },
     reading: { en: enReading, ar: arReading },
+    // Recorded so daily-feed.mjs can tell a real reading from a degraded one and
+    // upgrade it on a later tick once the free-model quota recovers. Cards written
+    // before this field existed have engine === undefined and count as done.
+    engine: 'llm',
   };
   fs.mkdirSync(path.dirname(OUT), { recursive: true });
   fs.writeFileSync(OUT, JSON.stringify(out, null, 2) + '\n');

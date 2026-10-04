@@ -41,9 +41,24 @@ if (/^\s*(UU|AA|DD|AU|UA|DU|UD)/.test(sh('git diff --name-only --diff-filter=U',
   process.exit(2);
 }
 
-// Already live for today?
+// A real LLM reading is several hundred characters. The offline fallback
+// (engine:"offline", returned when the free-model quota is 429-exhausted) is a
+// ~206-char keyword template that is always "complete" by shape, so a date-only
+// check treated degraded output as a finished card. This detects the boilerplate
+// by content so a later tick can regenerate it once quota recovers.
+const OFFLINE_BOILERPLATE_EN = 'uniquely yours';
+const looksDegraded = (d) =>
+  !!d && !!(d.reading && String(d.reading.en || '').includes(OFFLINE_BOILERPLATE_EN));
+
+// Already live for today AND not a degraded card?
 const live = await getJson(`${BASE}/dream-today.json`);
-if (live && live.date === today) { console.log('[daily-feed] live already has today\'s dream — nothing to do.'); process.exit(0); }
+if (live && live.date === today && !looksDegraded(live)) {
+  console.log('[daily-feed] live already has today\'s dream — nothing to do.');
+  process.exit(0);
+}
+if (live && live.date === today && looksDegraded(live)) {
+  console.log('[daily-feed] live card for today is OFFLINE BOILERPLATE (free-model quota was down) — regenerating.');
+}
 
 // 1. generate
 sh('node scripts/gen-dream-today.mjs', 120000);

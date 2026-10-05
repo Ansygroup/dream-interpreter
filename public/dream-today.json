@@ -1,16 +1,17 @@
 {
-  "date": "2026-10-04",
+  "date": "2026-10-05",
   "symbol": {
-    "key": "pregnancy",
-    "en": "Pregnancy",
-    "ar": "الحمل"
+    "key": "moon",
+    "en": "Moon",
+    "ar": "القمر"
   },
   "dream": {
-    "en": "Someone told me news that would change a family forever.",
-    "ar": "أخبرني أحدهم بخبرٍ سيغيّر عائلةً للأبد."
+    "en": "I walked under a full moon that seemed close enough to touch.",
+    "ar": "مشيتُ تحت بدرٍ بدا قريباً كأنه في متناول اليد."
   },
   "reading": {
-    "en": "Your dream carries details that are uniquely yours. Reflect on the dominant feelings in it — they are the true key to its meaning.\n\nReflect on what your heart tells you — dreams mirror what we carry within.",
-    "ar": "حلمك يحمل تفاصيل شخصية خاصة بك. تأمل في المشاعر السائدة فيه — هي المفتاح الحقيقي لمعناه.\n\nوفي التراث الإسلامي (ابن سيرين) تُعدّ الأحلام رسائل للروح: تأمّل، وتحرَّ الخير، وتقرَّب بالصلاة والتأمل."
-  }
+    "en": "The full moon is a traditional symbol of wholeness, cycles, and the luminous side of the unconscious. In many cultures, it represents intuition, completion, and a moment when hidden things become visible. Walking beneath it suggests you are moving through a time of inner clarity or heightened awareness, perhaps feeling more connected to your true nature than usual.\n\nThe detail that it seemed close enough to touch adds a sense of intimacy and possibility. It may reflect a desire to reach something that feels just beyond grasp—a truth, a relationship, a creative project, or a version of yourself you have long admired. The dream is not predicting the future; it is inviting you to notice what feels illuminated and worth approaching.\n\nRest in the quiet brightness of the image, and let it remind you that you do not have to force the light to arrive.",
+    "ar": "في رؤيا المشي تحت بدرٍ بدا قريباً، يُفسَّر القمر في تأويل ابن سيرين بأنه رمز للهدى والسكينة، ونور البصيرة الذي يُقرب العبد من الطريق المستقيم. والمشي به يُشير إلى السعي المستمر والبحث عن الحقيقة، ما يوضح أن الحالم يخطو بخطى ثابتة نحو الفهم أو الهدف المأمول.  \n\nظهور القمر قريباً كأنه في متناول اليد يعبّر عن وصول الفرصة أو الراحة القريبة، فالنتيجة أن ما يُسعى إليه يصبح قريباً من الإ realization، ما يثير أملًا في تحقيقه عبر الصبر والاعتماد على الله. هذه الرؤية تدعو إلى مراجعة نواياك وتطهير القلب بالصلاة والذكر.  \n\nلذا يُستحبّ أن تُقوّي سعيك بالدعاء والقراءة، فالأمر القريب لا يُتحقق إلا بقلبٍ مَسْكَنٍ بذكر الله. تذكر أن الهدى هو نورٌ لا يُطفأ، فاستمر في متابعة ما يُقربك من رحمة ربك."
+  },
+  "engine": "openrouter/free"
 }

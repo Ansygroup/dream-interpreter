@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-04",
+  "date": "2026-10-05",
   "symbol": {
-    "key": "money",
-    "en": "Money",
-    "ar": "المال"
+    "key": "moon",
+    "en": "Moon",
+    "ar": "القمر"
   },
   "dream": {
-    "en": "I found coins in the lining of an old coat.",
-    "ar": "وجدتُ قطعاً نقدية في بطانة معطفٍ قديم."
+    "en": "I walked under a full moon that seemed close enough to touch.",
+    "ar": "مشيتُ تحت بدرٍ بدا قريباً كأنه في متناول اليد."
   },
   "reading": {
-    "en": "Finding hidden coins in the worn lining of an old coat is a rich motif across classical dream traditions. The coat itself represents your outer persona, protection, and the experiences you have gathered over time. Its lining holds what is private, intimate, or long forgotten. Discovering money tucked away in such a quiet place suggests that valuable personal resources, wisdom, or self-worth—perhaps developed during a past chapter of your life—are waiting to be reclaimed.\n\nIn ancient Middle Eastern and Mediterranean dream interpretation, coins symbolize unexpected blessings, inner value, and spiritual or emotional sustenance. Because these coins were concealed within something aged rather than found out in the open, the dream hints that an answer or asset you currently seek is not outside of you, but already in your possession. It encourages you to revisit past lessons, old creative passions, or personal strengths you may have set aside, as they contain genuine value for your present journey.\n\nMay you look within your own storied history with patience, trusting that the treasures you need have been quietly kept safe all along.",
-    "ar": "تُعبّر رؤية النقود المعدنية في بطانة معطف قديم عن خبايا النفوس والخير المستور الذي قد ينساه الإنسان في زحام الحياة؛ فالنقود في المنام ترمز غالباً إلى الرزق أو الفرج الطارئ والكلمات الطيبة، بينما يمثل المعطف القديم مظلة الأمان، والوقاية، والذكريات القريبة إلى القلب. وعندما تظهر هذه القطع النقدية مختبئة في البطانة، فإن التأويل المستحب عند علماء التفسير كابن سيرين يشير إلى نعمٍ وأرزاق قديمة أو موهبة مدفونة يعود نفعها عليك في وقتٍ أنت بأشد الحاجة فيه إلى الطمأنينة.\n\nيدل هذا المنام على أن في حياتك أو شخصيتك موارد وقوة استثنائية ربما غفلت عنها لبعض الوقت، وأن الأيام القادمة قد تحمل لك انفراجاً غير متوقع من باب قديم أو أمر كنت تظن أن أثره قد انقضى. إن البحث في الماضي والتأمل في التجارب السابقة قد يفتح لك أبواباً جديدة من السكينة والخير والرضا.\n\nفتأمّل في ما تملكه من تجارب ومشاعر دافئة خزّنتها الايام، واعلم أن الفرج والرزق يأتيان غالباً من حيث لا نحتسب ولا نتوقع."
+    "en": "The full moon is a traditional symbol of wholeness, cycles, and the luminous side of the unconscious. In many cultures, it represents intuition, completion, and a moment when hidden things become visible. Walking beneath it suggests you are moving through a time of inner clarity or heightened awareness, perhaps feeling more connected to your true nature than usual.\n\nThe detail that it seemed close enough to touch adds a sense of intimacy and possibility. It may reflect a desire to reach something that feels just beyond grasp—a truth, a relationship, a creative project, or a version of yourself you have long admired. The dream is not predicting the future; it is inviting you to notice what feels illuminated and worth approaching.\n\nRest in the quiet brightness of the image, and let it remind you that you do not have to force the light to arrive.",
+    "ar": "في رؤيا المشي تحت بدرٍ بدا قريباً، يُفسَّر القمر في تأويل ابن سيرين بأنه رمز للهدى والسكينة، ونور البصيرة الذي يُقرب العبد من الطريق المستقيم. والمشي به يُشير إلى السعي المستمر والبحث عن الحقيقة، ما يوضح أن الحالم يخطو بخطى ثابتة نحو الفهم أو الهدف المأمول.  \n\nظهور القمر قريباً كأنه في متناول اليد يعبّر عن وصول الفرصة أو الراحة القريبة، فالنتيجة أن ما يُسعى إليه يصبح قريباً من الإ realization، ما يثير أملًا في تحقيقه عبر الصبر والاعتماد على الله. هذه الرؤية تدعو إلى مراجعة نواياك وتطهير القلب بالصلاة والذكر.  \n\nلذا يُستحبّ أن تُقوّي سعيك بالدعاء والقراءة، فالأمر القريب لا يُتحقق إلا بقلبٍ مَسْكَنٍ بذكر الله. تذكر أن الهدى هو نورٌ لا يُطفأ، فاستمر في متابعة ما يُقربك من رحمة ربك."
   },
-  "engine": "fallback:gemini-3.6-flash"
+  "engine": "openrouter/free"
 }

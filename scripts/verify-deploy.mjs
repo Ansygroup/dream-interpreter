@@ -78,6 +78,9 @@ const features = {
   'User-owned login (Supabase connect)': /Connect your Supabase project/.test(bundle) || /اربط مشروع Supabase/.test(bundle),
 };
 const api = await post(`${BASE}/api/interpret`, { dream: 'water', perspective: 'general', language: 'en' });
+let apiJ = null; try { apiJ = JSON.parse(api.body); } catch {}
+const apiEngine = apiJ?.engine || 'none';
+const apiLlm = api.code === 200 && apiEngine !== 'offline' && apiEngine !== 'none';
 
 // Multi-school live proof: every perspective must return a real reading.
 const schools = [
@@ -100,17 +103,23 @@ for (const [lang, persp] of schools) {
     await sleep(RATE_WINDOW_MS + 2000);
   }
   let j = null; try { j = JSON.parse(r.body); } catch {}
-  const ok = r.code === 200 && j?.interpretation && j.interpretation.trim().length > 20;
-  if (ok) schoolsPass++; else failedSchools.push(`${lang}/${persp}(${r.transport ? 'transport:' + r.transport : r.code})`);
-  console.log(`${ok ? 'PASS' : 'FAIL'}  perspective ${lang}/${persp} (${r.transport ? 'transport:' + r.transport : r.code})`);
+  // A 200 with a long interpretation is NOT proof of a live LLM: api/interpret.js
+  // catches every cascade failure and returns the offline keyword fallback with
+  // engine:'offline'. That made this gate print FULL STACK LIVE while 100% of
+  // readings were template text. Demand a real engine.
+  const engine = j?.engine || 'none';
+  const ok = r.code === 200 && engine !== 'offline' && engine !== 'none'
+    && !!j?.interpretation && j.interpretation.trim().length > 20;
+  if (ok) schoolsPass++; else failedSchools.push(`${lang}/${persp}(${r.transport ? 'transport:' + r.transport : r.code},engine=${engine})`);
+  console.log(`${ok ? 'PASS' : 'FAIL'}  perspective ${lang}/${persp} (${r.transport ? 'transport:' + r.transport : r.code}, engine=${engine})`);
   if (schoolsPass < schools.length && (lang !== 'en')) await sleep(Math.ceil(RATE_WINDOW_MS / RATE_LIMIT) + 500);
 }
 
 console.log('=== dream-interpreter LIVE deploy verify ===');
 for (const [k, v] of Object.entries(features)) console.log(`${v ? 'PASS' : 'FAIL'}  ${k}`);
-console.log(`${api.code === 200 ? 'PASS' : 'FAIL'}  /api/interpret LLM call (${api.code})`);
+console.log(`${apiLlm ? 'PASS' : 'FAIL'}  /api/interpret LLM call (${api.code}, engine=${apiEngine}${apiEngine === 'offline' ? ' -> OFFLINE FALLBACK: OpenRouter cascade is dead' : ''})`);
 console.log(`${schoolsPass === schools.length ? 'PASS' : 'FAIL'}  all ${schools.length} perspectives respond (${schoolsPass}/${schools.length})`);
 if (failedSchools.length) console.log(`  failed: ${failedSchools.join(', ')}`);
-const allPass = Object.values(features).every(Boolean) && api.code === 200 && schoolsPass === schools.length;
+const allPass = Object.values(features).every(Boolean) && apiLlm && schoolsPass === schools.length;
 console.log(allPass ? '\nRESULT: FULL STACK LIVE ✅' : '\nRESULT: INCOMPLETE — deploy pending or partial ⏳');
 process.exit(allPass ? 0 : 2);

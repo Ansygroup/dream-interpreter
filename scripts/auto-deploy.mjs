@@ -119,7 +119,12 @@ async function perspectivesOk() {
       });
       if (r.status === 429) { await sleep(RATE_WINDOW_MS + 2000); continue; }
       let j = null; try { j = JSON.parse(r.body); } catch {}
-      ok = r.status === 200 && !!j?.interpretation && j.interpretation.trim().length > 20;
+      // engine:'offline' means every model in the cascade failed and the user got
+      // the keyword template. That is NOT a deployed feature set -- accepting it
+      // wrote the marker while the product was effectively dead.
+      const engine = j?.engine || 'none';
+      ok = r.status === 200 && engine !== 'offline' && engine !== 'none'
+        && !!j?.interpretation && j.interpretation.trim().length > 20;
       if (ok) break;
       if (r.status > 0) break;            // real HTTP error -> not a transport flake
       await sleep(4000);                  // status 0 -> transport; retry
@@ -143,7 +148,17 @@ async function main() {
   }
   const done = markerSha();
   if (done === target) {
-    console.log(`[auto-deploy] ${target.slice(0, 8)} already deployed+verified — nothing to do.`);
+    // The marker proves a BUILD shipped, not that the product works. If the LLM
+    // cascade is down the deploy is irrelevant, and redeploying identical code
+    // would burn the finite Vercel free-tier quota for nothing. Report the real
+    // blocker and leave the marker alone.
+    if (await perspectivesOk()) {
+      console.log(`[auto-deploy] ${target.slice(0, 8)} already deployed+verified — nothing to do.`);
+    } else {
+      console.log(`[auto-deploy] ${target.slice(0, 8)} marker present but LIVE LLM IS DOWN (engine=offline on every perspective).`);
+      console.log(`[auto-deploy] blocker = upstream OpenRouter free-model quota (HTTP 429 on all 6 models), NOT the Vercel deploy quota.`);
+      console.log(`[auto-deploy] not redeploying — identical code would ship nothing. Marker left untouched.`);
+    }
     process.exit(0);
   }
   // Defense: if live already serves the full feature set, sync the marker (covers
@@ -175,7 +190,9 @@ async function main() {
     body: JSON.stringify({ dream: 'test', language: 'en', perspective: 'general' }),
     timeoutMs: 25000,
   });
-  const apiOk = /interpretation/.test(apiRes.body);
+  let apiJ = null; try { apiJ = JSON.parse(apiRes.body); } catch {}
+  const apiEngine = apiJ?.engine || 'none';
+  const apiOk = /interpretation/.test(apiRes.body) && apiEngine !== 'offline' && apiEngine !== 'none';
   const schoolsOk = home === '200' && interpret === '200' && apiOk
     ? await perspectivesOk()
     : false;
@@ -186,7 +203,7 @@ async function main() {
     try { sh('node scripts/postdeploy-indexnow.mjs 2>&1'); } catch { /* ignore */ }
   } else {
     // Deployed but verify failed (rare; propagation). Do NOT write marker -> retry next tick.
-    console.log(`[auto-deploy] deployed but verify incomplete (home=${home} interpret=${interpret} api=${apiOk ? 'ok' : 'FAIL'} perspectives=${schoolsOk ? '8/8' : 'FAIL'}) — will retry next tick.`);
+    console.log(`[auto-deploy] deployed but verify incomplete (home=${home} interpret=${interpret} api=${apiOk ? 'ok' : `FAIL(engine=${apiEngine})`} perspectives=${schoolsOk ? '8/8' : 'FAIL'}) — will retry next tick.`);
   }
 }
 main();

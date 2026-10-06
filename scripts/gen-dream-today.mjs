@@ -11,7 +11,8 @@
  */
 import https from 'https';
 import fs from 'fs';
-import path from 'path';
+import path from 'node:path';
+import { symbolLabels } from './symbol-labels.mjs';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -19,18 +20,15 @@ const root = path.resolve(__dirname, '..');
 const OUT = path.join(root, 'public', 'dream-today.json');
 const API = process.env.API_BASE || 'https://dream-interpreter-alpha-ruddy.vercel.app/api/interpret';
 
-// Mirror of the SYMBOLS list in Home.tsx (en/ar labels).
-const SYMBOLS = [
-  { key: 'snake', en: 'Snake', ar: 'الثعبان' }, { key: 'water', en: 'Water', ar: 'الماء' },
-  { key: 'flying', en: 'Flying', ar: 'الطيران' }, { key: 'falling', en: 'Falling', ar: 'السقوط' },
-  { key: 'teeth', en: 'Teeth', ar: 'الأسنان' }, { key: 'death', en: 'Death', ar: 'الموت' },
-  { key: 'house', en: 'House', ar: 'البيت' }, { key: 'fire', en: 'Fire', ar: 'النار' },
-  { key: 'dog', en: 'Dog', ar: 'الكلب' }, { key: 'marriage', en: 'Marriage', ar: 'الزواج' },
-  { key: 'cat', en: 'Cat', ar: 'القطة' }, { key: 'bird', en: 'Bird', ar: 'الطائر' },
-  { key: 'fish', en: 'Fish', ar: 'السمكة' }, { key: 'tree', en: 'Tree', ar: 'الشجرة' },
-  { key: 'sun', en: 'Sun', ar: 'الشمس' }, { key: 'moon', en: 'Moon', ar: 'القمر' },
-  { key: 'baby', en: 'Baby', ar: 'الرضيع' }, { key: 'money', en: 'Money', ar: 'المال' },
-  { key: 'pregnancy', en: 'Pregnancy', ar: 'الحمل' }, { key: 'blood', en: 'Blood', ar: 'الدم' },
+// Candidate symbols for the daily card. Labels are NOT stored here — they are
+// resolved from src/symbol-names.ts via symbolLabels(), which is the source of
+// truth. This list used to carry its own (en, ar) copies that drifted from the
+// rest of the site; two of them (garden) never existed as a real symbol.
+const SYMBOL_KEYS = [
+  'snake', 'water', 'flying', 'falling', 'teeth', 'death',
+  'house', 'fire', 'dog', 'marriage', 'cat', 'bird',
+  'fish', 'tree', 'sun', 'moon', 'baby', 'money',
+  'pregnancy', 'blood',
 ];
 // Short dream templates keyed by symbol — gives a plausible dream sentence.
 const DREAMS = {
@@ -88,7 +86,7 @@ const postVerified = async (lang, dream, persp, attempts = 4) => {
 };
 
 (async () => {
-  const sym = SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)];
+  const sym = symbolLabels(SYMBOL_KEYS[Math.floor(Math.random() * SYMBOL_KEYS.length)]);
   const d = DREAMS[sym.key] || { en: `I dreamed of ${sym.en.toLowerCase()}.`, ar: `حلمتُ بـ${sym.ar}.` };
   const [enReading, arReading] = await Promise.all([
     postVerified('en', d.en, PERSPECTIVE.en),

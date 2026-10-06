@@ -41,6 +41,46 @@ ok('FR "serpent" finds snake', matches('serpent').includes('snake'));
 ok('AR "ماء" finds water', matches('ماء').includes('water'));
 ok('unknown "xyzzy" finds nothing', matches('xyzzy').length === 0);
 ok('every SYMBOL_LIST slug has a name entry', SYMBOL_LIST.every((s) => SYMBOL_NAMES[s] && SYMBOL_NAMES[s].en));
+ok('every SYMBOL_LIST slug has an AR label', SYMBOL_LIST.every((s) => SYMBOL_NAMES[s] && SYMBOL_NAMES[s].ar));
+
+// ---------------------------------------------------------------------------
+// 1b. Dream-of-the-day symbol labels (regression: 2026-10-06)
+// The live card shipped `symbol: { key: 'rain', en: 'rain', ar: '' }`, and
+// Home.tsx renders that label as the card badge, so every Arabic visitor saw a
+// BLANK tag on the home page for a full day. Each writer used to carry its own
+// copy of the labels; they now all resolve from src/symbol-names.ts.
+// ---------------------------------------------------------------------------
+section('Dream-of-the-day symbol labels');
+const { symbolLabels, safeSymbolLabels } = await import('./symbol-labels.mjs');
+// Every symbol any writer can pick must resolve to a real, non-empty label.
+const homeKeys = ['snake', 'water', 'flying', 'falling', 'teeth', 'death', 'house', 'fire', 'dog',
+  'marriage', 'cat', 'bird', 'fish', 'tree', 'sun', 'moon', 'baby', 'money', 'pregnancy', 'blood'];
+for (const key of homeKeys) {
+  let got = null;
+  try { got = symbolLabels(key); } catch (e) { got = null; }
+  ok(`home symbol '${key}' resolves`, !!got && !!got.en && !!got.ar, JSON.stringify(got));
+}
+const evolveKeys = ['snake', 'water', 'flying', 'teeth', 'house', 'moon', 'door', 'bird', 'rain'];
+for (const key of evolveKeys) {
+  const got = safeSymbolLabels(key);
+  ok(`evolve scenario '${key}' has a real label`, got.ar !== '—' && got.en !== '—', JSON.stringify(got));
+}
+const fallback = safeSymbolLabels('not-a-real-symbol');
+ok('unknown slug degrades to a placeholder, never empty', fallback.ar === '—' && fallback.en === '—', JSON.stringify(fallback));
+let threw = false;
+try { symbolLabels('not-a-real-symbol'); } catch { threw = true; }
+ok('symbolLabels throws on an unknown slug (build-time guard)', threw);
+// Match the actual assignment, not the comments that quote the old bug.
+const EMPTY_AR_ASSIGN = /symbol\s*:\s*\{[^}]*\bar\s*:\s*(['"])\1/;
+const files = ['./evolve.mjs', './gen-dream-today.mjs', '../src/pages/Home.tsx'];
+let clean = true;
+const offenders = [];
+for (const f of files) {
+  const src = (await import('node:fs')).readFileSync(new URL(f, import.meta.url), 'utf8');
+  const stripped = src.replace(/\/\*[\s\S]*?\*\//g, '').replace(/^\s*\/\/.*$/gm, '');
+  if (EMPTY_AR_ASSIGN.test(stripped)) { clean = false; offenders.push(f); }
+}
+ok('no writer assigns an empty AR label (comments excluded)', clean, offenders.join(', '));
 
 // ---------------------------------------------------------------------------
 // 2. i18n: required keys present in both en + ar

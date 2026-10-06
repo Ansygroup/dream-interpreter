@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useI18n } from '../contexts/I18nContext';
+import { SYMBOL_NAMES } from '../symbol-names';
 import Layout from '../components/Layout';
 
 interface DreamToday {
@@ -10,28 +11,33 @@ interface DreamToday {
   reading: { en: string; ar: string };
 }
 
-const SYMBOLS = [
-  { key: 'snake', en: 'Snake', ar: 'الثعبان' },
-  { key: 'water', en: 'Water', ar: 'الماء' },
-  { key: 'flying', en: 'Flying', ar: 'الطيران' },
-  { key: 'falling', en: 'Falling', ar: 'السقوط' },
-  { key: 'teeth', en: 'Teeth', ar: 'الأسنان' },
-  { key: 'death', en: 'Death', ar: 'الموت' },
-  { key: 'house', en: 'House', ar: 'البيت' },
-  { key: 'fire', en: 'Fire', ar: 'النار' },
-  { key: 'dog', en: 'Dog', ar: 'الكلب' },
-  { key: 'marriage', en: 'Marriage', ar: 'الزواج' },
-  { key: 'cat', en: 'Cat', ar: 'القطة' },
-  { key: 'bird', en: 'Bird', ar: 'الطائر' },
-  { key: 'fish', en: 'Fish', ar: 'السمكة' },
-  { key: 'tree', en: 'Tree', ar: 'الشجرة' },
-  { key: 'sun', en: 'Sun', ar: 'الشمس' },
-  { key: 'moon', en: 'Moon', ar: 'القمر' },
-  { key: 'baby', en: 'Baby', ar: 'الرضيع' },
-  { key: 'money', en: 'Money', ar: 'المال' },
-  { key: 'pregnancy', en: 'Pregnancy', ar: 'الحمل' },
-  { key: 'blood', en: 'Blood', ar: 'الدم' },
+// Slugs shown in the home symbols index. Labels come from symbol-names.ts (the
+// source of truth) via safeSymbolLabels, so a symbol can never render blank and
+// this list can never drift from the rest of the site. 2026-10-06: this used to
+// be a private copy of the labels, and the daily-card writer independently
+// hardcoded `ar: ''`, which showed Arabic visitors an empty badge.
+const SYMBOL_KEYS = [
+  'snake', 'water', 'flying', 'falling', 'teeth', 'death',
+  'house', 'fire', 'dog', 'marriage', 'cat', 'bird',
+  'fish', 'tree', 'sun', 'moon', 'baby', 'money',
+  'pregnancy', 'blood',
 ];
+
+// The daily card's badge. Fall back to the shared names table when the JSON's
+// label is empty (cards published before 2026-10-06 hardcoded `ar: ''`, which
+// rendered a blank tag for Arabic visitors).
+const labelFor = (key: string, lang: string): string => {
+  const hit = SYMBOL_NAMES[key];
+  const label = lang === 'ar' ? hit?.ar : hit?.en;
+  if (!label) return '';
+  return lang === 'ar' ? label : label.charAt(0).toUpperCase() + label.slice(1);
+};
+
+const dailyLabel = (daily: DreamToday, lang: string): string => {
+  const fromJson = lang === 'ar' ? daily.symbol.ar : daily.symbol.en;
+  if (fromJson && fromJson.trim()) return fromJson;
+  return labelFor(daily.symbol.key, lang);
+};
 
 export default function Home() {
   const { t, language } = useI18n();
@@ -152,15 +158,15 @@ export default function Home() {
             <p className="lede" style={{ paddingBottom: 6 }}>{t('home.symbolsLede')}</p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(180px, 1fr))', gap: 12 }}>
-            {SYMBOLS.map((sym, i) => (
+            {SYMBOL_KEYS.map((key, i) => (
               <Link
-                key={sym.key}
-                to={`/seo/${sym.key}/${language}`}
+                key={key}
+                to={`/seo/${key}/${language}`}
                 className="card card-hover reveal"
                 data-delay={`${(i % 5) * 60}ms`}
                 style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', textDecoration: 'none', color: 'var(--text)', padding: '18px 20px' }}
               >
-                <span style={{ fontWeight: 500, fontSize: 15 }}>{language === 'ar' ? sym.ar : sym.en}</span>
+                <span style={{ fontWeight: 500, fontSize: 15 }}>{labelFor(key, language)}</span>
                 <svg className="icon icon-flip" viewBox="0 0 24 24" style={{ color: 'var(--muted)', width: 18, height: 18 }}><path d="M5 12h14M13 6l6 6-6 6" /></svg>
               </Link>
             ))}
@@ -175,7 +181,7 @@ export default function Home() {
             <div className="card" style={{ borderColor: 'var(--accent-line)', animation: 'pageIn 0.6s var(--ease)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 14, flexWrap: 'wrap', gap: 8 }}>
                 <span className="tag">{t('daily.tag')}</span>
-                <span className="mono-meta">{language === 'ar' ? daily.symbol.ar : daily.symbol.en}</span>
+                <span className="mono-meta">{dailyLabel(daily, language)}</span>
               </div>
               <p className="serif" style={{ fontSize: 'clamp(1.3rem, 2.4vw, 1.7rem)', lineHeight: 1.5, marginBottom: 14, fontStyle: 'italic', color: 'var(--text)' }}>
                 “{language === 'ar' ? daily.dream.ar : daily.dream.en}”

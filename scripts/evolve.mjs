@@ -15,6 +15,7 @@ import { spawn, spawnSync } from 'node:child_process';
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { safeSymbolLabels } from './symbol-labels.mjs';
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const args = process.argv.slice(2);
@@ -94,7 +95,6 @@ if (!args.includes('--no-daily')) {
     { key: 'teeth', en: 'My teeth turned to pearls one by one as I smiled at a crowd', ar: 'أسناني تحوّلت إلى لؤلؤ واحدة تلو الأخرى وأنا أبتسم لحشد' },
     { key: 'house', en: 'I discovered a beautiful room in my house I had never noticed before', ar: 'اكتشفت غرفة جميلة في بيتي لم ألاحظها من قبل' },
     { key: 'moon', en: 'The full moon descended and rested beside me on the rooftop', ar: 'البدر هبط واستقر بجانبي على السطح' },
-    { key: 'garden', en: 'I walked into a garden where every tree bore a different fruit in season', ar: 'دخلت حديقة كانت كل شجرة فيها تحمل ثمرة موسمها' },
     { key: 'door', en: 'A door appeared in a wall where there had never been one, and it was unlocked', ar: 'ظهر باب في جدار لم يكن فيه باب قط، وكان مفتوح القفل' },
     { key: 'bird', en: 'A white bird landed on my hand and spoke my name softly', ar: 'طائر أبيض حطّ على يدي وقال اسمي بهدوء' },
     { key: 'rain', en: 'Warm rain fell only over my street, and children danced in it', ar: 'مطر دافئ هطل فوق شارعي وحده، وأطفال يرقصون تحته' },
@@ -121,7 +121,10 @@ if (!args.includes('--no-daily')) {
       const readingAr = await interpret(scenario.ar, 'ar');
       const out = {
         date: today,
-        symbol: { key: scenario.key, en: scenario.key, ar: '' },
+        // Resolve labels from src/symbol-names.ts. Hardcoding them here shipped
+        // `ar: ''` on 2026-10-06, which rendered a BLANK badge on the Arabic
+        // home card. An unknown slug now throws before anything is written.
+        symbol: safeSymbolLabels(scenario.key),
         dream: { en: scenario.en, ar: scenario.ar },
         reading: { en: readingEn, ar: readingAr },
       };

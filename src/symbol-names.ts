@@ -44,7 +44,7 @@ export const SYMBOL_NAMES: Record<string, SymbolName> = {
   dead_person: { en: 'dead person', ar: 'شخص ميت', lt: 'mirusysis', aliases: ['ميت', 'جثة'] },
   death: { en: 'death', ar: 'موت', el: 'θάνατος', km: 'មរណៈ', aliases: ['موت', 'وفاة'] },
   death_family: { en: 'death of family', ar: 'موت أحد الأقارب', el: 'θάνατος της οικογένειας', km: 'ការស្លាប់របស់សមាជិកក្នុងគ្រួសារ', lt: 'sūnų mirtis', aliases: ['وفاة قريب'] },
-  desert: { en: 'desert', ar: 'صحراء', el: 'ἔρημος', km: 'ក្រុមក្រហម', lt: 'dykuma', aliases: ['صحراء'] },
+  desert: { en: 'desert', ar: 'صحراء', el: 'ἔρημος', km: 'វេហា', lt: 'dykuma', aliases: ['صحراء'] },
   doctor: { en: 'doctor', ar: 'طبيب', el: 'ιατρός', km: 'វេជ្ជបណ្ឌិត', lt: 'gydytojas', aliases: ['دكتور'] },
   dog: { en: 'dog', ar: 'كلب', el: 'κύων', km: 'ស្រឡះ', lt: 'šuo', aliases: ['كلب'] },
   dog_attack: { en: 'dog attack', ar: 'هجوم كلب', el: 'προσβολή σκύλου', lt: 'šypsos atakos', aliases: ['عضة كلب'] },

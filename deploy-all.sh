@@ -6,8 +6,15 @@ set -u
 
 REPOS="/c/Users/ansy0/ZCodeProject/projects/repos"
 LOG="$REPOS/deploy-all.log"
+LIVE_DI="https://dream-interpreter-alpha-ruddy.vercel.app"
+LIVE_AB="https://ai-blog-ansygroups-projects.vercel.app"
 ts() { date '+%Y-%m-%d %H:%M'; }
 log() { echo "[$(ts)] $*" | tee -a "$LOG"; }
+# TMPDIR must exist and be writable: the pre-deploy parity gate writes its
+# probe files (sitemap + seo-data.json) there. Resolve it ONCE, up front, so the
+# gate can never silently write nowhere and read back an empty file.
+[ -n "${TMPDIR:-}" ] && [ -d "$TMPDIR" ] && [ -w "$TMPDIR" ] || TMPDIR="$REPOS"
+mkdir -p "$TMPDIR" 2>/dev/null
 
 log "=== Ansy Group deploy run start ==="
 
@@ -57,13 +64,51 @@ deploy() {
     fi
   fi
   # DRY_RUN=1 exercises the whole guard/branch path and spends ZERO deploys.
-  # Use it to prove the release wiring before committing quota.
-  if [ "${DRY_RUN:-0}" = "1" ]; then
+  # Use it to prove the release wiring before committing quota. NOTE: the parity
+  # gate below runs BEFORE this early-return on purpose — a guard that is skipped
+  # in dry-run cannot be proven, and this is exactly the inversion that made
+  # master look safe. DRY_RUN costs no deploys but does spend two curl probes.
+  if [ "${DRY_RUN:-0}" = "1" ] && [ "$name" != "dream-interpreter" ]; then
     local dirty; dirty="$(git status --porcelain 2>/dev/null | wc -l | tr -d ' ')"
     log "$name: DRY_RUN — branch OK, $dirty uncommitted file(s), 0 deploys spent."
     return 0
   fi
   if [ ! -d .git ] && [ ! -f vercel.json ]; then log "$name: not a project, skip"; return 0; fi
+  # PRE-DEPLOY LIVE PARITY GATE (2026-10-06). The branch guard above only says
+  # "this checkout is the expected branch" — it cannot catch the branch being
+  # wrong, i.e. production having been published from somewhere else entirely
+  # (a worktree, a nightly pipeline, a second checkout). That inversion cost a
+  # near-miss: master was "the expected branch" while prod actually served the
+  # fix branch, and deploying would have deleted 13 published languages.
+  # For dream-interpreter, compare the CONTENT FINGERPRINT (sitemap URL count +
+  # published SEO language count), not just the git ref. Abort on regression.
+  if [ "$name" = "dream-interpreter" ]; then
+    local live_locs live_sitemap live_lang_i live_lang_fix
+    live_sitemap="$TMPDIR/parity-sitemap.xml"
+    curl -s -L --max-time 90 "$LIVE_DI/sitemap.xml" -o "$live_sitemap" 2>/dev/null
+    live_locs=$(grep -c '<loc>' "$live_sitemap" 2>/dev/null | tr -d ' ')
+    curl -s -L --max-time 30 "$LIVE_DI/api/seo-data.json" -o "$TMPDIR/parity-seo.json" 2>/dev/null
+    live_lang_i=$(python -c "import json;print(len(json.load(open(r'$TMPDIR/parity-seo.json')).get('LANGS',{})))" 2>/dev/null || echo 0)
+    live_lang_fix=$(python -c "import json;print(len(json.load(open('api/seo-data.json')).get('LANGS',{})))" 2>/dev/null || echo 0)
+    log "$name: PARITY live[sitemap=${live_locs:-?} langs=${live_lang_i:-?}] checkout[langs=${live_lang_fix:-?}]"
+    # Live must never serve MORE languages than this checkout can build, else
+    # publishing deletes already-indexed URLs. Fail closed on an unreadable live.
+    if [ -z "${live_lang_i:-}" ] || [ "${live_lang_i:-0}" = "0" ] || [ "${live_lang_fix:-0}" = "0" ]; then
+      log "$name: REFUSING — parity probe could not read live/checkout langs (fail-closed). Skipping (no deploy spent)."
+      return 4
+    fi
+    if [ "$live_lang_i" -gt "$live_lang_fix" ]; then
+      log "$name: REFUSING — live serves $live_lang_i langs but this checkout only builds $live_lang_fix. Deploying would DELETE $((live_lang_i - live_lang_fix)) published language(s). Skipping (no deploy spent)."
+      return 4
+    fi
+    # Parity holds. In DRY_RUN stop here (all guards proven, 0 deploys spent);
+    # otherwise fall through to the real deploy.
+    if [ "${DRY_RUN:-0}" = "1" ]; then
+      local dirty; dirty="$(git status --porcelain 2>/dev/null | wc -l | tr -d ' ')"
+      log "$name: DRY_RUN — branch + parity OK (live $live_lang_i langs <= checkout $live_lang_fix), $dirty uncommitted file(s), 0 deploys spent."
+      return 0
+    fi
+  fi
   # link if no .vercel/project.json
   if [ ! -f .vercel/project.json ]; then
     vercel link --yes --project "$name" 2>&1 | tail -1 | tee -a "$LOG" || log "$name: link skipped/failed (may already be linked)"
@@ -76,11 +121,17 @@ deploy() {
 }
 
 deploy "$REPOS/ansygroup.com"   "ansygroup.com"   ""      # domain not on Vercel DNS (SSL Error) - see report
-# dream-interpreter: production is `master`, which lives in the SEPARATE WORKTREE
-# ../dream-interpreter-feed. Point at that checkout, NOT the main one — the main
-# checkout sits on a feature branch and would make the branch guard refuse
-# (or, worse, ship the wrong tree).
-deploy "$REPOS/dream-interpreter-feed" "dream-interpreter" "master"
+# dream-interpreter: INVERTED 2026-10-06 — production is NOT master.
+# Measured against live before deploying:
+#   live /api/seo-data.json      LANGS=35, dream date=2026-10-06 ("rain")
+#   main checkout (fix branch)   LANGS=35, dream date=2026-10-06 ("rain")  <-- prod
+#   ../dream-interpreter-feed    LANGS=22, dream date=2026-10-05 ("moon")  <-- master
+# The daily feed pipeline (gen-dream-today.mjs -> daily-feed.mjs -> vercel deploy)
+# runs IN THE MAIN CHECKOUT, so master has been abandoned as the publish source
+# and is now 93 commits BEHIND the branch production actually serves.
+# Deploying master here would delete 13 published languages (bg fa he hr sr sl
+# uk lv et cs hu ro km...) and revert the dream card by a day. Refuse instead.
+deploy "$REPOS/dream-interpreter" "dream-interpreter" "fix/api-reasoning-leak"
 deploy "$REPOS/ai-blog"               "ai-blog"          "main"
 
 # --- IndexNow ping (only if INDEXNOW_KEY env is present) ---

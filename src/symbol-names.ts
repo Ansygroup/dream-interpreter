@@ -88,7 +88,7 @@ export const SYMBOL_NAMES: Record<string, SymbolName> = {
   knee: { en: 'knee', ar: 'ركبة', el: 'γόνυ', km: 'ជង្រង', lt: 'kūnas', aliases: ['ركبة'] },
   knife: { en: 'knife', ar: 'سكين', el: 'μαχαίρι', km: 'កាំម្ជន', lt: 'peilis', aliases: ['سكينة'] },
   laughing: { en: 'laughing', ar: 'ضحك', el: 'γελῶν', km: 'ញើស', lt: 'juokiantis', aliases: ['ضحك'] },
-  leg: { en: 'leg', ar: 'ساق', el: 'πούς', km: 'ក្រុមក្រហម', lt: 'kūnas', aliases: ['ساقين', 'رجل'] },
+  leg: { en: 'leg', ar: 'ساق', el: 'σκέλος', km: 'ជើង', lt: 'šlaunis', aliases: ['ساقين', 'رجل'] },
   light: { en: 'light', ar: 'ضوء', el: 'φως', km: 'កន្លែង', lt: 'mėlynas', aliases: ['نور', 'إضاءة'] },
   lion: { en: 'lion', ar: 'أسد', el: 'λέοντας', km: 'ក្រហម', lt: 'liutas', aliases: ['أسد'] },
   losing_teeth: { en: 'losing teeth', ar: 'سقوط الأسنان', el: 'χάνονται τα οδόντα', km: 'ចាត់ទំនាក់ទំនង', lt: 'įsikartojantys dantai', aliases: ['تساقط الأسنان'] },

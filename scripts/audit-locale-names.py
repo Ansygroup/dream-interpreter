@@ -30,6 +30,7 @@ MUST_DIFFER = [
     ("eye", "ear"),
     ("snake", "key"),
     ("death", "water"),
+    ("leg", "lion"),  # §31: leg once shipped Khmer near-identical to lion's
 ]
 
 # Symbol pairs that legitimately share one translation (same concept, multiple

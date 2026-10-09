@@ -408,5 +408,52 @@ ok('script check covers CJK (zh/ja/ko)', /zh:/.test(VALIDATOR_BODY) && /ja:/.tes
 ok('script check covers devanagari (hi/bn/pa)', /hi:/.test(VALIDATOR_BODY) && /bn:/.test(VALIDATOR_BODY) && /pa:/.test(VALIDATOR_BODY));
 ok('latin-script languages are no longer accepted blindly', !/if \(!re\) return true/.test(VALIDATOR_BODY));
 
+// ---------------------------------------------------------------------------
+// 20. Symbol names (§31): the shipped table once carried model scaffolding
+//     ('medicine (lt): gydyba', 'deepseekosakana') and collisions hidden behind a
+//     romanisation suffix ('ខែ (khae)' vs 'ខែ'). A plain duplicate check reported 0
+//     findings, so the defect reached production. Pin the leak + collision rules
+//     directly on the shipped table, not only inside the python audit.
+section('Symbol names: no scaffolding leak, no romanisation-hidden collision');
+const SYMBOL_SRC = read('src/symbol-names.ts');
+const symbolRows = [...SYMBOL_SRC.matchAll(/^\s{2}([a-z_0-9]+):\s*\{([^{}]*)\}/gm)].map((m) => {
+  const fields = {};
+  for (const [, k, v] of m[2].matchAll(/(\w+):\s*'([^']*)'/g)) fields[k] = v;
+  return { slug: m[1], fields };
+});
+ok('symbol table parsed', symbolRows.length > 100);
+
+const leakRe2 = /\((?:en|ar|el|km|lt|de|fr|es|ru|zh|ja|ko|tr|pt|hi)\)\s*:|deepseek|osakana|(.)\1{4,}/i;
+const leaked = symbolRows.filter((r) =>
+  Object.entries(r.fields).some(([k, v]) => k !== 'aliases' && v && leakRe2.test(v)),
+);
+ok('no symbol locale value contains scaffolding/repetition', leaked.length === 0);
+if (leaked.length) console.log('   leaked:', leaked.map((r) => r.slug).join(', '));
+
+const stripRom = (v) => v.replace(/\s*\([^)]*\)\s*$/, '').trim().toLowerCase();
+const LEGIT_DUP = new Set([
+  'flood|water_flood',
+  'losing_teeth|teeth_fall',
+  'losing_teeth|teeth_falling',
+  'teeth_fall|teeth_falling',
+]);
+const collisions = [];
+for (const loc of ['el', 'km', 'lt']) {
+  const col = new Map();
+  for (const r of symbolRows) {
+    const v = r.fields[loc];
+    if (!v) continue;
+    const key = stripRom(v);
+    col.set(key, [...(col.get(key) || []), r.slug]);
+  }
+  for (const [v, slugs] of col) {
+    if (slugs.length < 2) continue;
+    const legit = slugs.every((a) => slugs.every((b) => a === b || LEGIT_DUP.has([a, b].sort().join('|'))));
+    if (!legit) collisions.push(`${loc}:${v}=${slugs.join('+')}`);
+  }
+}
+ok('no symbol locale value collides across symbols (romanisation stripped)', collisions.length === 0);
+if (collisions.length) console.log('   collisions:', collisions.join(', '));
+
 console.log(`\nSUITE RESULT: ${passed} passed, ${failed} failed`);
 process.exit(failed === 0 ? 0 : 1);

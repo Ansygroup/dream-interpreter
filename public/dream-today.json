@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-05",
+  "date": "2026-10-09",
   "symbol": {
-    "key": "moon",
-    "en": "Moon",
-    "ar": "القمر"
+    "key": "tree",
+    "en": "Tree",
+    "ar": "الشجرة"
   },
   "dream": {
-    "en": "I walked under a full moon that seemed close enough to touch.",
-    "ar": "مشيتُ تحت بدرٍ بدا قريباً كأنه في متناول اليد."
+    "en": "An old tree in my garden bloomed overnight.",
+    "ar": "أزهرت شجرةٌ عتيقة في حديقتي في ليلة."
   },
   "reading": {
-    "en": "The full moon is a traditional symbol of wholeness, cycles, and the luminous side of the unconscious. In many cultures, it represents intuition, completion, and a moment when hidden things become visible. Walking beneath it suggests you are moving through a time of inner clarity or heightened awareness, perhaps feeling more connected to your true nature than usual.\n\nThe detail that it seemed close enough to touch adds a sense of intimacy and possibility. It may reflect a desire to reach something that feels just beyond grasp—a truth, a relationship, a creative project, or a version of yourself you have long admired. The dream is not predicting the future; it is inviting you to notice what feels illuminated and worth approaching.\n\nRest in the quiet brightness of the image, and let it remind you that you do not have to force the light to arrive.",
-    "ar": "في رؤيا المشي تحت بدرٍ بدا قريباً، يُفسَّر القمر في تأويل ابن سيرين بأنه رمز للهدى والسكينة، ونور البصيرة الذي يُقرب العبد من الطريق المستقيم. والمشي به يُشير إلى السعي المستمر والبحث عن الحقيقة، ما يوضح أن الحالم يخطو بخطى ثابتة نحو الفهم أو الهدف المأمول.  \n\nظهور القمر قريباً كأنه في متناول اليد يعبّر عن وصول الفرصة أو الراحة القريبة، فالنتيجة أن ما يُسعى إليه يصبح قريباً من الإ realization، ما يثير أملًا في تحقيقه عبر الصبر والاعتماد على الله. هذه الرؤية تدعو إلى مراجعة نواياك وتطهير القلب بالصلاة والذكر.  \n\nلذا يُستحبّ أن تُقوّي سعيك بالدعاء والقراءة، فالأمر القريب لا يُتحقق إلا بقلبٍ مَسْكَنٍ بذكر الله. تذكر أن الهدى هو نورٌ لا يُطفأ، فاستمر في متابعة ما يُقربك من رحمة ربك."
+    "en": "The old tree in your garden is a powerful symbol of rootedness, heritage, and the long arc of your own life. In many traditions, a tree represents the self as it grows through seasons of hardship and rest, and its age speaks to wisdom earned slowly, often invisibly. That it bloomed overnight suggests a sudden awakening or a burst of vitality after a long period of dormancy, as if something within you has been quietly preparing and has now chosen to reveal itself in a single, unexpected moment.\n\nThe garden itself is the sacred space of your inner world, the place where you tend to your private hopes and memories. For a tree that has stood through many years to flower so rapidly points to a reconciliation with the past, or perhaps an old dream, talent, or relationship that you thought had finished, now returning with fresh color. This is not a frantic bloom but a generous one, a sign that the deep roots of your experience are finally able to feed something beautiful above the surface.\n\nPay attention to what in your life feels both ancient and newly alive. This dream gently asks you to trust that timing is not always linear, and that renewal can come to the most established parts of your being without warning. Let this overnight flowering remind you that you are never too old, too settled, or too weary for a sudden grace.",
+    "ar": "رأيتَ في منامك شجرةً عتيقةً تزهر في حديقتك ليلاً، وهذا من الرؤى الطيبة التي تحمل بشائر الخير والبركة. الشجرة العتيقة في التأويل ترمز إلى الأصالة والجذور الراسخة، وقد تكون إشارة إلى العائلة أو إلى إرثٍ من العلم أو الدين أو الخلق الحسن. أما ازدهارها فيدل على تجدّد الحياة ونموّها بعد طول انتظار، كأنّ الخير الذي كنتَ ترجوه أو تدعو له في السرّ قد آن أوان ظهوره.\n\nأمّا كونُ الإزهار في الليل، ففيه معنى لطيف؛ فالليل في الرؤيا قد يرمز إلى ما يخفى عن العيون، أو إلى فترة سكون وتأمّل. فإذا أزهرت الشجرة في هذا الوقت، فهذا يوحي بأنّ البركة قادمة من حيث لا تحتسب، وأنّ ثمّة خيراً مستوراً يُوشك أن يتبدّى لك أو لأهل بيتك. وقد يكون ذلك إشارة إلى صلاح حالٍ كان يبدو متعثّراً، أو إلى دعوةٍ صادقةٍ استُجيبت في خفاء.\n\nاحفظ هذه الرؤيا في قلبك على أنّها رسالة طمأنينة، وتذكّر أنّ الشجرة العتيقة إنّما تزهر لأنّ جذورها عميقة، وكذلك أنت إذا ثبَتَّ على الخير واليقين، أتاك الله بالفرج من حيث لا تدري. اجعل هذه الليلة المزهرة دافعاً لك إلى شكر الله على نعمه، والتفاؤل بما هو آتٍ، فإنّ في كلّ عتمةٍ بذرةَ ضوءٍ تنتظر الإذن بالظهور."
   },
-  "engine": "openrouter/free"
+  "engine": "fallback:deepseek-ai/DeepSeek-V4-Flash-0731"
 }

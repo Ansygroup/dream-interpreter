@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "audit:symbols": "python scripts/audit-locale-names.py",
     "dev": "vite",
     "build": "tsc -b && vite build && node scripts/seo-gen.mjs",
     "typecheck": "tsc --noEmit",

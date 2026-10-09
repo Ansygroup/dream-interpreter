@@ -55,6 +55,35 @@ def load(path):
     return data
 
 
+# Scaffolding leaked into a translated VALUE instead of a translated name:
+#   'medicine (lt): gydyba'  <- prompt echo, the model answered the instruction
+#   'σellsellsellsell deepseekosakana' <- degenerate repetition + model name
+#   'ការក្រានការក្រានការងារ' <- run-on repetition of the same stem
+# None of these are valid translations, and none collide, so the duplicate
+# check below reported 0 findings and the defect shipped to production.
+LEAK_PATTERNS = [
+    (r"\((?:en|ar|el|km|lt|de|fr|es|ru|zh|ja|ko|tr|pt|hi)\)\s*:", "prompt echo '(lang):' inside a value"),
+    (r"deepseek|osakana", "model name leaked into a value"),
+    (r"(.)\1{4,}", "run-on repetition"),
+    (r"^(?:Repeat|Translate|Match|Keep|Return|Output|Sure|Here(?:'s| is))\b", "instruction preamble"),
+]
+
+
+def strip_romanisation(value):
+    """'ខែ (khae)' and 'ខែ' are the same term; compare them as equal."""
+    return re.sub(r"\s*\([^)]*\)\s*$", "", value).strip().lower()
+
+
+def load(path):
+    src = open(path, encoding="utf-8").read()
+    data = {}
+    for slug, body in re.findall(r"(\w+):\s*\{([^{}]*)\}", src):
+        fields = dict(re.findall(r"(\w+):\s*'([^']*)'", body))
+        if fields:
+            data[slug] = fields
+    return data
+
+
 def main():
     path = sys.argv[1] if len(sys.argv) > 1 else DEFAULT
     data = load(path)
@@ -66,12 +95,23 @@ def main():
     findings = []
     allowed = {frozenset(p) for p in ALLOWED_SAME}
 
-    # 1) same translation reused by two different symbols
+    # 0) scaffolding / degenerate output leaked into a value
+    for slug, fields in data.items():
+        for loc, value in fields.items():
+            if loc == "aliases" or not value:
+                continue
+            for pattern, label in LEAK_PATTERNS:
+                if re.search(pattern, value, re.IGNORECASE | re.MULTILINE):
+                    findings.append("%s.%s: %s -> %r" % (slug, loc, label, value[:70]))
+                    break
+
+    # 1) same translation reused by two different symbols. Compared with the
+    #    romanisation stripped so '(khae)' vs '' cannot hide a collision.
     for loc in LOCALES:
         col = defaultdict(list)
         for slug, fields in data.items():
             if fields.get(loc):
-                col[fields[loc]].append(slug)
+                col[strip_romanisation(fields[loc])].append(slug)
         for value, slugs in col.items():
             if len(slugs) < 2:
                 continue

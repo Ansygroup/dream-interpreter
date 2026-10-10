@@ -1,16 +1,18 @@
+
 {
-  "date": "2026-10-07",
+  "date": "2026-10-09",
   "symbol": {
-    "key": "water",
-    "en": "Water",
-    "ar": "ماء"
+    "key": "tree",
+    "en": "Tree",
+    "ar": "الشجرة"
   },
   "dream": {
-    "en": "Clear water was rising gently in an old well behind my childhood home",
-    "ar": "ماء صافٍ كان يرتفع بهدوء في بئر قديمة خلف بيت طفولتي"
+    "en": "An old tree in my garden bloomed overnight.",
+    "ar": "أزهرت شجرةٌ عتيقة في حديقتي في ليلة."
   },
   "reading": {
-    "en": "The gentle rise of clear water in the well suggests a soft influx of clarity and emotion within you. Clear water often symbolizes purity of feeling and insight, while its upward movement hints at a quiet, natural growth in self‑awareness. This flow may be inviting you to notice the subtle shifts in your inner landscape.\n\nThe old well itself is a timeless symbol of depth and the unconscious, a source that connects you to the wisdom of ancestors and the foundations of your being. Its location behind your childhood home underscores a link to early memories and the security they provide, reminding you that you carry this deep well of experience within.\n\nYour childhood home stands as a metaphor for the nurturing ground from which you sprang, a place of safety and identity. The rising water there may reflect a renewed relationship with",
-    "ar": "ماء صافٍ يرتفع في بئر قديمة يحمل رمزاً للنقاء الداخلي والعواطف العميقة التي تطفو برفق إلى السطح. البئر القديمة خلف بيت الطفولة تشير إلى جذورك وذكرياتك الأولى، وإلى اللاوعي العائلي الذي يخزن ما ورثته من أجيال سابقة. هدوء صعود الماء يعكس عملية شفاء طبيعية غير قسرية، كأن روحك تستعيد نقاءها الأول دون عناء.\n\nهذا الحلم قد يأتي في فترة تعود فيها إلى أصولك أو تعيد فيها تقييم ما ورثته عاطفياً، فالماء الصافي لا يحمل ثقلاً بل يجلب صفاءً. البئر كحاوية عميقة توحي بأن ما يظهر الآن كان مخزوناً طويلاً، وربما تكون مستعداً الآن لاستقباله بوعي جديد.\n\nاسمح لهذا الماء بالصعود بهدوء، وراقب ما يجلبه من صور أو مشاعر دون حكم. الثقة في وتيرة روحك الخاصة هي أرقى أشكال العودة إلى الذات."
-  }
+    "en": "The old tree in your garden is a powerful symbol of rootedness, heritage, and the long arc of your own life. In many traditions, a tree represents the self as it grows through seasons of hardship and rest, and its age speaks to wisdom earned slowly, often invisibly. That it bloomed overnight suggests a sudden awakening or a burst of vitality after a long period of dormancy, as if something within you has been quietly preparing and has now chosen to reveal itself in a single, unexpected moment.\n\nThe garden itself is the sacred space of your inner world, the place where you tend to your private hopes and memories. For a tree that has stood through many years to flower so rapidly points to a reconciliation with the past, or perhaps an old dream, talent, or relationship that you thought had finished, now returning with fresh color. This is not a frantic bloom but a generous one, a sign that the deep roots of your experience are finally able to feed something beautiful above the surface.\n\nPay attention to what in your life feels both ancient and newly alive. This dream gently asks you to trust that timing is not always linear, and that renewal can come to the most established parts of your being without warning. Let this overnight flowering remind you that you are never too old, too settled, or too weary for a sudden grace.",
+    "ar": "رأيتَ في منامك شجرةً عتيقةً تزهر في حديقتك ليلاً، وهذا من الرؤى الطيبة التي تحمل بشائر الخير والبركة. الشجرة العتيقة في التأويل ترمز إلى الأصالة والجذور الراسخة، وقد تكون إشارة إلى العائلة أو إلى إرثٍ من العلم أو الدين أو الخلق الحسن. أما ازدهارها فيدل على تجدّد الحياة ونموّها بعد طول انتظار، كأنّ الخير الذي كنتَ ترجوه أو تدعو له في السرّ قد آن أوان ظهوره.\n\nأمّا كونُ الإزهار في الليل، ففيه معنى لطيف؛ فالليل في الرؤيا قد يرمز إلى ما يخفى عن العيون، أو إلى فترة سكون وتأمّل. فإذا أزهرت الشجرة في هذا الوقت، فهذا يوحي بأنّ البركة قادمة من حيث لا تحتسب، وأنّ ثمّة خيراً مستوراً يُوشك أن يتبدّى لك أو لأهل بيتك. وقد يكون ذلك إشارة إلى صلاح حالٍ كان يبدو متعثّراً، أو إلى دعوةٍ صادقةٍ استُجيبت في خفاء.\n\nاحفظ هذه الرؤيا في قلبك على أنّها رسالة طمأنينة، وتذكّر أنّ الشجرة العتيقة إنّما تزهر لأنّ جذورها عميقة، وكذلك أنت إذا ثبَتَّ على الخير واليقين، أتاك الله بالفرج من حيث لا تدري. اجعل هذه الليلة المزهرة دافعاً لك إلى شكر الله على نعمه، والتفاؤل بما هو آتٍ، فإنّ في كلّ عتمةٍ بذرةَ ضوءٍ تنتظر الإذن بالظهور."
+  },
+  "engine": "fallback:deepseek-ai/DeepSeek-V4-Flash-0731"
 }

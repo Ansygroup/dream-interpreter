@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-11",
+  "date": "2026-10-12",
   "symbol": {
-    "key": "teeth",
-    "en": "Teeth",
-    "ar": "الأسنان"
+    "key": "flying",
+    "en": "Flying",
+    "ar": "الطيران"
   },
   "dream": {
-    "en": "A tooth came loose and crumbled in my hand.",
-    "ar": "تزعزع سنٌ وسقط متفتتاً في يدي."
+    "en": "I was flying above my city at dawn and the streets glowed beneath me.",
+    "ar": "كنتُ أطير فوق مدينتي عند الفجر وتألقت الشوارع تحتي."
   },
   "reading": {
-    "en": "Loose or crumbling teeth are among the most enduring symbols across traditional dream lore, frequently associated with periods of transition, fear of losing control, or anxiety surrounding aging, appearance, and personal influence. In ancient Egyptian and Mesopotamian dream traditions, teeth represented vitality and strength, while later Middle Eastern and Greco-Roman interpretations often viewed them as symbols of household stability or financial security. When a tooth crumbles in your hand rather than simply falling out, it underscores a process that feels gradual yet unavoidable, pointing to an aspect of your waking life where strength or structure is quietly dissolving.\n\nThe act of holding the crumbled pieces in your hand brings a deep sense of intimacy and personal confrontation to the dream. Rather than being a sign of impending misfortune, it often reflects a psychological processing of loss—whether that means letting go of a long-held belief, relinquishing control over an unpredictable situation, or coming to terms with a shift in your personal or professional standing. The hand symbolizes agency and active engagement, suggesting that you are directly encountering a situation where holding on tighter will not preserve what is changing, and that acknowledging this fragility is the first step toward genuine grounding.\n\nReflect on where in your waking life you may be trying to hold together something that has naturally run its course, and consider offering yourself the grace to let it fall away.",
-    "ar": "تُعد الرؤيا التي يظهر فيها السنُ متزعزعاً ثم يسقط متفتتاً في اليد من الأحلام ذات الدلالات العميقة في التراث الإسلامي وتفسير ابن سيرين. فالأسنان في المنام تسير غالباً إلى الأهل والأقارب أو المقربين من الشخص، وزعزعتها تعكس مرحلة من التردد أو التوتر في بعض العلاقات الحميمية، أو ربما تعبيراً عن القلق النفسي والضغوط التي يمر بها الإنسان في حياته اليومية.\n\nأما سقوط السن وتفتته في يدك تحديداً، فهو يحمل في طياته بشارة وتطميناً لطيفاً؛ إذ إن وقوع الشيء في اليد في المنام أفضل بكثير من سقوطه على الأرض واختفائه. وتفتت السن في يدك يشير إلى زوال كرب أو انقضاء همٍّ كان يتعبك بالتدريج، أو تحلل مشكلة كانت تبدو صلبة وصعبة الحل لتعود وتتلاشى بين يديك بفضل الله وتدبيره.\n\nتذكر دائماً أن الأحلام مرآة لما يجول في خلبنا من مشاعر وتخوفات، وعسى أن يكون هذا التفتت رمزاً لتلاشي الصعاب وانفراج الغمة من حياتك، فاستعن بالهدوء والثقة في تدبير الأمور."
+    "en": "In your dream the act of flying suggests a yearning for freedom and a heightened perspective, allowing you to rise above everyday concerns. The city below represents the collective life you belong to—its rhythms, responsibilities, and connections. Dawn introduces the theme of new beginnings and the clarity that comes with the first light. The streets are the pathways you walk each day, linking personal choices to communal flow, while the glowing streets hint at hidden potentials and a sense of hope emerging as awareness expands.\n\nTogether these images point to a moment when you may be ready to view your own life from a broader view, seeing how your aspirations (flying) intersect with the practical world (city, streets) as fresh opportunities (dawn) and inner illumination (glow) become visible.\n\nThis vision invites you to blend your soaring ambitions with grounded actions, honoring both the expansive and the ordinary parts of your journey.\n\nTake a quiet breath now and gently anchor these insights into your next steps.",
+    "ar": "كنتُ أطير فوق مدينتي عند الفجر وتألقت الشوارع تحتي. الطيران في المنام يرمز إلى الارتفاع الروحي أو الطموح، والتحرر من القيود، وقد يدل على سعي الحالم لتحقيق أهدافه أو تجاوز عقباتٍ في حياته. المدينة تمثل البيئة الاجتماعية أو العملية التي يعيش فيها الحالم، بينما الفجر يُشير إلى بداية جديدة، ونورٍ يبدد الظلمة، ويبشر بالأمل والوضوح بعد فترة من الغموض. الشوارع التي تألقت تحت قدميه تعكس طريقًا مُضاءً ومباركًا، suggesting أن مساره يُستنير بالهداية والحكمة، وربما يكون هناك وضوح في القرارات أو فرصٌ تُظهر نفسها بنورٍ واضح.  \nبهذا الحلم يُشجع الحالم على الاستمرار في السعي بثقة، والاعتماد على الصلاة والذكر لتثبيت القلب، وتذكر أن كل جهدٍ مخلص يُقابله نورٌ من الله يضيء الطريق. End with one grounding sentence: ليكن قلبك مستيقظًا للشكر والعمل الصالح، والله يوفقك لما فيه الخير."
   },
-  "engine": "fallback:gemini-3.6-flash"
+  "engine": "openrouter/free+nvidia/nemotron-3-super-120b-a12b:free"
 }

@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-12",
+  "date": "2026-10-13",
   "symbol": {
-    "key": "flying",
-    "en": "Flying",
-    "ar": "الطيران"
+    "key": "blood",
+    "en": "Blood",
+    "ar": "الدم"
   },
   "dream": {
-    "en": "I was flying above my city at dawn and the streets glowed beneath me.",
-    "ar": "كنتُ أطير فوق مدينتي عند الفجر وتألقت الشوارع تحتي."
+    "en": "I noticed a single drop of red on a white page.",
+    "ar": "لاحظتُ قطرةً حمراء وحيدة على صفحة بيضاء."
   },
   "reading": {
-    "en": "In your dream the act of flying suggests a yearning for freedom and a heightened perspective, allowing you to rise above everyday concerns. The city below represents the collective life you belong to—its rhythms, responsibilities, and connections. Dawn introduces the theme of new beginnings and the clarity that comes with the first light. The streets are the pathways you walk each day, linking personal choices to communal flow, while the glowing streets hint at hidden potentials and a sense of hope emerging as awareness expands.\n\nTogether these images point to a moment when you may be ready to view your own life from a broader view, seeing how your aspirations (flying) intersect with the practical world (city, streets) as fresh opportunities (dawn) and inner illumination (glow) become visible.\n\nThis vision invites you to blend your soaring ambitions with grounded actions, honoring both the expansive and the ordinary parts of your journey.\n\nTake a quiet breath now and gently anchor these insights into your next steps.",
-    "ar": "كنتُ أطير فوق مدينتي عند الفجر وتألقت الشوارع تحتي. الطيران في المنام يرمز إلى الارتفاع الروحي أو الطموح، والتحرر من القيود، وقد يدل على سعي الحالم لتحقيق أهدافه أو تجاوز عقباتٍ في حياته. المدينة تمثل البيئة الاجتماعية أو العملية التي يعيش فيها الحالم، بينما الفجر يُشير إلى بداية جديدة، ونورٍ يبدد الظلمة، ويبشر بالأمل والوضوح بعد فترة من الغموض. الشوارع التي تألقت تحت قدميه تعكس طريقًا مُضاءً ومباركًا، suggesting أن مساره يُستنير بالهداية والحكمة، وربما يكون هناك وضوح في القرارات أو فرصٌ تُظهر نفسها بنورٍ واضح.  \nبهذا الحلم يُشجع الحالم على الاستمرار في السعي بثقة، والاعتماد على الصلاة والذكر لتثبيت القلب، وتذكر أن كل جهدٍ مخلص يُقابله نورٌ من الله يضيء الطريق. End with one grounding sentence: ليكن قلبك مستيقظًا للشكر والعمل الصالح، والله يوفقك لما فيه الخير."
+    "en": "In cross-cultural dream symbolism, a single drop of red upon a stark white page presents a powerful contrast between pure potential and vivid emotion or vitality. The pristine white page traditionally represents unwritten possibilities, clean slates, or a mind waiting to articulate its thoughts. Red, the color of passion, life force, and strong feeling, introduces a striking spark of intent or awareness onto that silent canvas. \n\nThis image often reflects a moment in your waking life where a strong truth, passion, or personal insight is demanding your attention amidst an otherwise neutral or undecided situation. It suggests that while the broader picture of your future remains open and unwritten, a singular, powerful focus or heartfelt truth has already begun to make its mark, inviting you to honor what truly moves you as you shape your next chapter.\n\nConsider what vital feeling or quiet certainty is asking to be acknowledged as you begin to write your path forward.",
+    "ar": "القطرة الحمراء في المنام قد ترمز إلى نقطة دمٍ أو حبر، وكلاهما في التأويل يشير إلى أثرٍ صغيرٍ يترك علامةً واضحة؛ فالدم قد يدل على حيويةٍ أو ذنبٍ خفيف، والحبر على علمٍ أو كلمةٍ تُكتب. والصفحة البيضاء ترمز إلى النقاء، أو بدايةٍ جديدة، أو قلبٍ طاهرٍ يستقبل الوحي. اجتماعهما ينبئ بلحظةٍ فارقةٍ يظهر فيها أمرٌ جليّ على خلفيةٍ صافية.\n\nقد يعكس الرؤيا موقفاً في اليقظة حيث تبرز تفصيلةٌ واحدةٌ — كلمةٌ، فعلٌ، أو شعورٌ — وسط صفاءِ نيتك أو صفحةِ عملك النظيفة؛ فاحرص على أن تكون تلك القطرة مدادَ خيرٍ لا أثرَ معصية. راجع نواياك في البدايات الجديدة، وليكن ذكرك لله حارساً لكل نقطةٍ تُسطر."
   },
-  "engine": "openrouter/free+nvidia/nemotron-3-super-120b-a12b:free"
+  "engine": "fallback:gemini-3.6-flash+openrouter/free"
 }

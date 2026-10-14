@@ -1,17 +1,17 @@
 {
   "date": "2026-10-14",
   "symbol": {
-    "key": "snake",
-    "en": "Snake",
-    "ar": "الثعبان"
+    "key": "dog",
+    "en": "Dog",
+    "ar": "الكلب"
   },
   "dream": {
-    "en": "I saw a green snake leave the house through the garden gate.",
-    "ar": "رأيتُ ثعباناً أخضر يغادر المنزل عبر بوابة الحديقة."
+    "en": "A dog I had never met followed me home and stayed.",
+    "ar": "تبعني كلبٌ لم أقابله من قبل حتى المنزل وبقي."
   },
   "reading": {
-    "en": "A green snake often carries the dual meaning of renewal and hidden wisdom; its color suggests growth, healing, or a fresh start, while the snake itself can signal transformation, intuition, or an aspect of the self that is slipping away. The house represents your inner world or personal life, and the garden gate acts as a threshold between the private interior and the wider world beyond.\n\nSeeing the snake leave the house through the gate may reflect a process of letting go—perhaps an old habit, fear, or limiting belief is moving out of your inner space and into the open, allowing new growth to take root. It can also hint that you are ready to bring a previously concealed insight or talent into everyday life, stepping beyond familiar boundaries with a sense of natural progression.\n\nTake a moment to notice what feels ready to be released in your waking life, and nurture the emerging possibilities with patience and gentle curiosity.",
-    "ar": "رأيتُ ثعباناً أخضر يغادر المنزل عبر بوابة الحديقة، وفي tradition الإسلامية يُنظر إلى الثعبان على أنه رمز للعدو الخفي أو للحسد، ولونه الأخضر قد يرمز إلى الغيرة أو إلى أمر يبدو benign لكنه يحمل خطراً مخفياً. المنزل يرمز إلى self والعائلة والبوابة الحديقة إلى حدّ أوtransition بينinner والخارج. مغادرة الثعبان عبر هذه البوابة قد تشير إلى أن تأثيراً سلبياً أو شخصاً مزعجاً يبتعد عن حياتك، أو أنك تتجاوز مشكلة كانت تؤثر على سلامتك الداخلي.  \n\nهذا الحلم يدعو إلى اليقظة والاعتماد على الحماية عبر الصلاة والذكر، ومراجعة العلاقات المحيطة لتتأكد من خلوها من النوايا السيئة، مع الحفاظ على حسن الظن وعدم الاستسلام للوساوس.  \n\nاجعل قلبك مطمئناً بأن الخير يأتي مع التوكل على الله والبعد عن الشكوك الضارة."
+    "en": "A dog in dreams often stands for loyalty, protection, or an instinctual part of yourself that feels familiar yet unknown. Meeting a dog you have never seen before can suggest a new source of support or a quality — such as trust, courage, or companionship — that is beginning to appear in your life. The act of the dog following you home implies that this emerging aspect is guiding you toward a place of safety and inner stability.\n\nHome traditionally symbolizes the core of your being, a sense of belonging, or the comfort of familiar surroundings. When the dog stays at your home, it may indicate that this new loyal energy is settling into your everyday life, offering reassurance and a feeling that you are not alone as you navigate personal growth.\n\nReflect on what fresh loyalty or protective feeling you are welcoming now, and consider how you might nurture it with kindness and attention. Take a moment to notice the quiet companionship within you and let it steady your steps.",
+    "ar": "تبعني كلبٌ لم أقابله من قبل حتى المنزل وبقي. في تفسير الأحلام وفق tradizione الإسلامية، يرمز الكلب إلى الولاء والحماية أو إلى تأثير خارجي قد يكون نافعاً أو يتطلب الحذر، depending on context. قد يدل ظهور كلب غير معروف يتبعك إلى بيتك على دخول شخص جديد أو علاقة ستكون داعمةً ومخلصةً في حياتك، أو على مسؤولية جديدة ستستقر في محيطك الأسري.\n\nالبيت في التعبير الأحلامي يرمز إلى الذات، العائلة، أو الحالة الداخلية. بقاء الكلب في المنزل يشير إلى أن هذا التأثير سيصبح جزءاً من بيئتك اليومية، ربما كصديق مخلص أو كواجبٍ يتطلب الاهتمام والرعاية. لا يُعد هذا نذيراً بسوء، بل دعوةً لتقييم العلاقات المحيطة وضمان أن تكون متوافقة مع القيم الشرعية.\n\nينصح بالتأمل في نوايا هذا الوافد الجديد في حياتك، والصلاة والاستخارة لتحديد ما إذا كان خيراً لك، مع الحفاظ على الطهارة والذكر، والاستعانة بالله في كل قرار."
   },
-  "engine": "nvidia/nemotron-3-super-120b-a12b:free"
+  "engine": "nvidia/nemotron-3-super-120b-a12b:free+openrouter/free"
 }

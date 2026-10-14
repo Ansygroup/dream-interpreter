@@ -1,17 +1,17 @@
 {
   "date": "2026-10-14",
   "symbol": {
-    "key": "pregnancy",
-    "en": "Pregnancy",
-    "ar": "الحمل"
+    "key": "snake",
+    "en": "Snake",
+    "ar": "الثعبان"
   },
   "dream": {
-    "en": "Someone told me news that would change a family forever.",
-    "ar": "أخبرني أحدهم بخبرٍ سيغيّر عائلةً للأبد."
+    "en": "I saw a green snake leave the house through the garden gate.",
+    "ar": "رأيتُ ثعباناً أخضر يغادر المنزل عبر بوابة الحديقة."
   },
   "reading": {
-    "en": "News in a dream often stands for a message or information that is trying to reach your awareness; it can signal that something important is waiting to be heard or understood. When the news is described as capable of changing a family forever, it suggests a communication that could shift the way you see your close relationships or your sense of belonging.\n\nFamily traditionally symbolizes our roots, emotional support, and the patterns we carry from early life. A dream that highlights a transformation within the family may reflect an inner shift—perhaps a new role you are taking on, a change in how you nurture others, or a reevaluation of what home means to you.\n\nConsider what recent information or insight feels like it could alter your family dynamics, and allow yourself to explore it with curiosity rather than fear. Notice any resistance or excitement that arises, and let it guide you toward a more authentic connection with those you love.\n\nTake a moment to breathe and notice what feels true for you right now.",
-    "ar": "في الرؤية يُرى شخصٌ يخبرك بخبرٍ يخصّ العائلة، وهو رمز للعلاقات الاجتماعية أو لظهور شخصٍ جديد. الخبر يرمز إلى معلوماتٍ قادمة قد تُحدث تغييراً. العائلة تمثل الروابط الأسرية والاستقرار.\n\nقد تدلّ هذه الرؤية على أن خبرًا سيُجلب تحولاتٍ في الحياة الأسرية، فالأخبار في المنام تحفّز التفكير والتخطيط، وتُشجع على السؤال عن الحكمة عبر الصلاة والذكر.\n\nفالتفكير في هذا الخبر مع الدعاء يجلب السكينة، وعليك أن تسعى للمتابعة بهدوءٍ وثقةٍ."
+    "en": "A green snake often carries the dual meaning of renewal and hidden wisdom; its color suggests growth, healing, or a fresh start, while the snake itself can signal transformation, intuition, or an aspect of the self that is slipping away. The house represents your inner world or personal life, and the garden gate acts as a threshold between the private interior and the wider world beyond.\n\nSeeing the snake leave the house through the gate may reflect a process of letting go—perhaps an old habit, fear, or limiting belief is moving out of your inner space and into the open, allowing new growth to take root. It can also hint that you are ready to bring a previously concealed insight or talent into everyday life, stepping beyond familiar boundaries with a sense of natural progression.\n\nTake a moment to notice what feels ready to be released in your waking life, and nurture the emerging possibilities with patience and gentle curiosity.",
+    "ar": "رأيتُ ثعباناً أخضر يغادر المنزل عبر بوابة الحديقة، وفي tradition الإسلامية يُنظر إلى الثعبان على أنه رمز للعدو الخفي أو للحسد، ولونه الأخضر قد يرمز إلى الغيرة أو إلى أمر يبدو benign لكنه يحمل خطراً مخفياً. المنزل يرمز إلى self والعائلة والبوابة الحديقة إلى حدّ أوtransition بينinner والخارج. مغادرة الثعبان عبر هذه البوابة قد تشير إلى أن تأثيراً سلبياً أو شخصاً مزعجاً يبتعد عن حياتك، أو أنك تتجاوز مشكلة كانت تؤثر على سلامتك الداخلي.  \n\nهذا الحلم يدعو إلى اليقظة والاعتماد على الحماية عبر الصلاة والذكر، ومراجعة العلاقات المحيطة لتتأكد من خلوها من النوايا السيئة، مع الحفاظ على حسن الظن وعدم الاستسلام للوساوس.  \n\nاجعل قلبك مطمئناً بأن الخير يأتي مع التوكل على الله والبعد عن الشكوك الضارة."
   },
-  "engine": "nvidia/nemotron-3-super-120b-a12b:free+openrouter/free"
+  "engine": "nvidia/nemotron-3-super-120b-a12b:free"
 }

@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-13",
+  "date": "2026-10-14",
   "symbol": {
-    "key": "blood",
-    "en": "Blood",
-    "ar": "الدم"
+    "key": "money",
+    "en": "Money",
+    "ar": "المال"
   },
   "dream": {
-    "en": "I noticed a single drop of red on a white page.",
-    "ar": "لاحظتُ قطرةً حمراء وحيدة على صفحة بيضاء."
+    "en": "I found coins in the lining of an old coat.",
+    "ar": "وجدتُ قطعاً نقدية في بطانة معطفٍ قديم."
   },
   "reading": {
-    "en": "In cross-cultural dream symbolism, a single drop of red upon a stark white page presents a powerful contrast between pure potential and vivid emotion or vitality. The pristine white page traditionally represents unwritten possibilities, clean slates, or a mind waiting to articulate its thoughts. Red, the color of passion, life force, and strong feeling, introduces a striking spark of intent or awareness onto that silent canvas. \n\nThis image often reflects a moment in your waking life where a strong truth, passion, or personal insight is demanding your attention amidst an otherwise neutral or undecided situation. It suggests that while the broader picture of your future remains open and unwritten, a singular, powerful focus or heartfelt truth has already begun to make its mark, inviting you to honor what truly moves you as you shape your next chapter.\n\nConsider what vital feeling or quiet certainty is asking to be acknowledged as you begin to write your path forward.",
-    "ar": "القطرة الحمراء في المنام قد ترمز إلى نقطة دمٍ أو حبر، وكلاهما في التأويل يشير إلى أثرٍ صغيرٍ يترك علامةً واضحة؛ فالدم قد يدل على حيويةٍ أو ذنبٍ خفيف، والحبر على علمٍ أو كلمةٍ تُكتب. والصفحة البيضاء ترمز إلى النقاء، أو بدايةٍ جديدة، أو قلبٍ طاهرٍ يستقبل الوحي. اجتماعهما ينبئ بلحظةٍ فارقةٍ يظهر فيها أمرٌ جليّ على خلفيةٍ صافية.\n\nقد يعكس الرؤيا موقفاً في اليقظة حيث تبرز تفصيلةٌ واحدةٌ — كلمةٌ، فعلٌ، أو شعورٌ — وسط صفاءِ نيتك أو صفحةِ عملك النظيفة؛ فاحرص على أن تكون تلك القطرة مدادَ خيرٍ لا أثرَ معصية. راجع نواياك في البدايات الجديدة، وليكن ذكرك لله حارساً لكل نقطةٍ تُسطر."
+    "en": "Finding coins in the lining of an old coat suggests you are uncovering hidden resources or unexpected value within something familiar yet long-used. In many traditions, coats symbolize the outer layers of identity and protection, while coins represent personal worth, skills, or material gifts. The fact that they are in the lining—something concealed—points to discovering strengths or opportunities you may not have fully acknowledged. This dream often encourages gratitude for what you already possess and confidence in your ability to reveal what is valuable beneath the surface. Let this be a reminder that true richness often lies in overlooked parts of your life.",
+    "ar": "وجدت قطعاً نقدية في بطانة معطفٍ قديم، وفي tradizione الإسلامية ترمز القطع النقدية إلى الرزق والخير غير المتوقع، بينما يرمز المعطف القديم إلى شيء من الماضي قد يكون مهملاً أو مهترئاً، وبطانته تمثل ما هو مخفي أو داخلي. قد يُشير هذا إلى أن الحالم سيكتسب منفعة أو فرصة من شيء كان يعتبره قديماً أو غير ذي قيمة، مثل مهارة نسيت، علاقة قديمة، أو موارد لم تُستغل بعد.\n\nالتفسير يدعو إلى التأمل في ما قد يكون مخفياً في حياتنا، وأن النعم قد تأتي من حيث لا نحتسب، وأن gratitude والاعتراف بما نملك يفتحان أبواباً للمزيد. من المفيد أن يُصلي الحالم ويستغفر، ويطلب من الله التوضيح والبركة في ما سيجده من خير.\n\nلتكون قلبك مفتوحاً للشكر، وتذكر أن الخير الحقيقي يأتي مع العمل الصالح والنية الصافية."
   },
-  "engine": "fallback:gemini-3.6-flash+openrouter/free"
+  "engine": "openrouter/free+nvidia/nemotron-3-super-120b-a12b:free"
 }

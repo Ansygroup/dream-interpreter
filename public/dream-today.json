@@ -1,17 +1,17 @@
 {
   "date": "2026-10-14",
   "symbol": {
-    "key": "money",
-    "en": "Money",
-    "ar": "المال"
+    "key": "cat",
+    "en": "Cat",
+    "ar": "القطة"
   },
   "dream": {
-    "en": "I found coins in the lining of an old coat.",
-    "ar": "وجدتُ قطعاً نقدية في بطانة معطفٍ قديم."
+    "en": "A cat watched me from a windowsill and then vanished.",
+    "ar": "راقبتني قطةٌ من على حافة نافذة ثم اختفت."
   },
   "reading": {
-    "en": "Finding coins in the lining of an old coat suggests you are uncovering hidden resources or unexpected value within something familiar yet long-used. In many traditions, coats symbolize the outer layers of identity and protection, while coins represent personal worth, skills, or material gifts. The fact that they are in the lining—something concealed—points to discovering strengths or opportunities you may not have fully acknowledged. This dream often encourages gratitude for what you already possess and confidence in your ability to reveal what is valuable beneath the surface. Let this be a reminder that true richness often lies in overlooked parts of your life.",
-    "ar": "وجدت قطعاً نقدية في بطانة معطفٍ قديم، وفي tradizione الإسلامية ترمز القطع النقدية إلى الرزق والخير غير المتوقع، بينما يرمز المعطف القديم إلى شيء من الماضي قد يكون مهملاً أو مهترئاً، وبطانته تمثل ما هو مخفي أو داخلي. قد يُشير هذا إلى أن الحالم سيكتسب منفعة أو فرصة من شيء كان يعتبره قديماً أو غير ذي قيمة، مثل مهارة نسيت، علاقة قديمة، أو موارد لم تُستغل بعد.\n\nالتفسير يدعو إلى التأمل في ما قد يكون مخفياً في حياتنا، وأن النعم قد تأتي من حيث لا نحتسب، وأن gratitude والاعتراف بما نملك يفتحان أبواباً للمزيد. من المفيد أن يُصلي الحالم ويستغفر، ويطلب من الله التوضيح والبركة في ما سيجده من خير.\n\nلتكون قلبك مفتوحاً للشكر، وتذكر أن الخير الحقيقي يأتي مع العمل الصالح والنية الصافية."
+    "en": "A cat appearing on a windowsill often carries the whisper of intuition and quiet observation; in many traditions cats are guardians of the unseen, urging us to trust the subtle knowing that slips beneath conscious thought. The windowsill itself marks a threshold — a place where inner and outer worlds meet — suggesting you are currently pausing to watch something from a safe distance before deciding how to engage. Its sudden vanishing hints that the insight or feeling may be fleeting, reminding you that not all messages linger; they arrive, offer a glance, and then fade, inviting you to act while the impression is still fresh.\n\nConsider what in your waking life feels like a quiet watcher — perhaps an intuition, a creative spark, or a relationship that asks for gentle attention rather than force. The dream encourages you to honor that fleeting glimpse, let it inform your next step, and then release the need to hold onto it tightly.  \n\nTake a moment to notice what feels present in your waking life, and let curiosity guide you gently.",
+    "ar": "في التفسير الكلاسيكي لابن سيرين، القطة ترمز إلى امرأة أو أخت تُظهرها الرؤيا، وقد يدل ظهورها على مراقبة أو انتباه من أحد الأحباء أو الأصدقاء. النافذة، من عبارات الحدود والمراقبة، قد تدل على فرصة للرؤية أو اتصالٍ يقترب أو يبتعد. اختفاؤها يعني أن هذا الأثر أو هذه العلاقة لن تدوم، أو أن أمورًا ما تتغير بينما تراقبها بحذر.\n\nقد يعكس الحلم حالة يتردد فيها المحبة أو الفضول على شيء لم يكتمل، وربما يدعوك إلى التأمل فيما تراه، وأن تسأل نفسك إذا كانت نظراتك تُعبّق أم تُبصر. الصلاة والذكر يهدئان القلب حين يتقلب بين الفضول واليقين."
   },
-  "engine": "openrouter/free+nvidia/nemotron-3-super-120b-a12b:free"
+  "engine": "nvidia/nemotron-3-super-120b-a12b:free+openrouter/free"
 }

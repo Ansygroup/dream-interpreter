@@ -1,17 +1,17 @@
 {
   "date": "2026-10-14",
   "symbol": {
-    "key": "cat",
-    "en": "Cat",
-    "ar": "القطة"
+    "key": "pregnancy",
+    "en": "Pregnancy",
+    "ar": "الحمل"
   },
   "dream": {
-    "en": "A cat watched me from a windowsill and then vanished.",
-    "ar": "راقبتني قطةٌ من على حافة نافذة ثم اختفت."
+    "en": "Someone told me news that would change a family forever.",
+    "ar": "أخبرني أحدهم بخبرٍ سيغيّر عائلةً للأبد."
   },
   "reading": {
-    "en": "A cat appearing on a windowsill often carries the whisper of intuition and quiet observation; in many traditions cats are guardians of the unseen, urging us to trust the subtle knowing that slips beneath conscious thought. The windowsill itself marks a threshold — a place where inner and outer worlds meet — suggesting you are currently pausing to watch something from a safe distance before deciding how to engage. Its sudden vanishing hints that the insight or feeling may be fleeting, reminding you that not all messages linger; they arrive, offer a glance, and then fade, inviting you to act while the impression is still fresh.\n\nConsider what in your waking life feels like a quiet watcher — perhaps an intuition, a creative spark, or a relationship that asks for gentle attention rather than force. The dream encourages you to honor that fleeting glimpse, let it inform your next step, and then release the need to hold onto it tightly.  \n\nTake a moment to notice what feels present in your waking life, and let curiosity guide you gently.",
-    "ar": "في التفسير الكلاسيكي لابن سيرين، القطة ترمز إلى امرأة أو أخت تُظهرها الرؤيا، وقد يدل ظهورها على مراقبة أو انتباه من أحد الأحباء أو الأصدقاء. النافذة، من عبارات الحدود والمراقبة، قد تدل على فرصة للرؤية أو اتصالٍ يقترب أو يبتعد. اختفاؤها يعني أن هذا الأثر أو هذه العلاقة لن تدوم، أو أن أمورًا ما تتغير بينما تراقبها بحذر.\n\nقد يعكس الحلم حالة يتردد فيها المحبة أو الفضول على شيء لم يكتمل، وربما يدعوك إلى التأمل فيما تراه، وأن تسأل نفسك إذا كانت نظراتك تُعبّق أم تُبصر. الصلاة والذكر يهدئان القلب حين يتقلب بين الفضول واليقين."
+    "en": "News in a dream often stands for a message or information that is trying to reach your awareness; it can signal that something important is waiting to be heard or understood. When the news is described as capable of changing a family forever, it suggests a communication that could shift the way you see your close relationships or your sense of belonging.\n\nFamily traditionally symbolizes our roots, emotional support, and the patterns we carry from early life. A dream that highlights a transformation within the family may reflect an inner shift—perhaps a new role you are taking on, a change in how you nurture others, or a reevaluation of what home means to you.\n\nConsider what recent information or insight feels like it could alter your family dynamics, and allow yourself to explore it with curiosity rather than fear. Notice any resistance or excitement that arises, and let it guide you toward a more authentic connection with those you love.\n\nTake a moment to breathe and notice what feels true for you right now.",
+    "ar": "في الرؤية يُرى شخصٌ يخبرك بخبرٍ يخصّ العائلة، وهو رمز للعلاقات الاجتماعية أو لظهور شخصٍ جديد. الخبر يرمز إلى معلوماتٍ قادمة قد تُحدث تغييراً. العائلة تمثل الروابط الأسرية والاستقرار.\n\nقد تدلّ هذه الرؤية على أن خبرًا سيُجلب تحولاتٍ في الحياة الأسرية، فالأخبار في المنام تحفّز التفكير والتخطيط، وتُشجع على السؤال عن الحكمة عبر الصلاة والذكر.\n\nفالتفكير في هذا الخبر مع الدعاء يجلب السكينة، وعليك أن تسعى للمتابعة بهدوءٍ وثقةٍ."
   },
   "engine": "nvidia/nemotron-3-super-120b-a12b:free+openrouter/free"
 }

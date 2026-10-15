@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-14",
+  "date": "2026-10-15",
   "symbol": {
-    "key": "dog",
-    "en": "Dog",
-    "ar": "الكلب"
+    "key": "bird",
+    "en": "Bird",
+    "ar": "الطائر"
   },
   "dream": {
-    "en": "A dog I had never met followed me home and stayed.",
-    "ar": "تبعني كلبٌ لم أقابله من قبل حتى المنزل وبقي."
+    "en": "A white bird landed on my open palm and sang.",
+    "ar": "هبط طائرٌ أبيض على راحتي المفتوحة وغرّد."
   },
   "reading": {
-    "en": "A dog in dreams often stands for loyalty, protection, or an instinctual part of yourself that feels familiar yet unknown. Meeting a dog you have never seen before can suggest a new source of support or a quality — such as trust, courage, or companionship — that is beginning to appear in your life. The act of the dog following you home implies that this emerging aspect is guiding you toward a place of safety and inner stability.\n\nHome traditionally symbolizes the core of your being, a sense of belonging, or the comfort of familiar surroundings. When the dog stays at your home, it may indicate that this new loyal energy is settling into your everyday life, offering reassurance and a feeling that you are not alone as you navigate personal growth.\n\nReflect on what fresh loyalty or protective feeling you are welcoming now, and consider how you might nurture it with kindness and attention. Take a moment to notice the quiet companionship within you and let it steady your steps.",
-    "ar": "تبعني كلبٌ لم أقابله من قبل حتى المنزل وبقي. في تفسير الأحلام وفق tradizione الإسلامية، يرمز الكلب إلى الولاء والحماية أو إلى تأثير خارجي قد يكون نافعاً أو يتطلب الحذر، depending on context. قد يدل ظهور كلب غير معروف يتبعك إلى بيتك على دخول شخص جديد أو علاقة ستكون داعمةً ومخلصةً في حياتك، أو على مسؤولية جديدة ستستقر في محيطك الأسري.\n\nالبيت في التعبير الأحلامي يرمز إلى الذات، العائلة، أو الحالة الداخلية. بقاء الكلب في المنزل يشير إلى أن هذا التأثير سيصبح جزءاً من بيئتك اليومية، ربما كصديق مخلص أو كواجبٍ يتطلب الاهتمام والرعاية. لا يُعد هذا نذيراً بسوء، بل دعوةً لتقييم العلاقات المحيطة وضمان أن تكون متوافقة مع القيم الشرعية.\n\nينصح بالتأمل في نوايا هذا الوافد الجديد في حياتك، والصلاة والاستخارة لتحديد ما إذا كان خيراً لك، مع الحفاظ على الطهارة والذكر، والاستعانة بالله في كل قرار."
+    "en": "A white bird often appears in dreams as a sign of purity, peace, or a messenger bringing gentle insight. When it lands on an open palm, the gesture suggests receptivity — your willingness to accept what is offered without resistance. The bird’s song adds the dimension of voice and expression, indicating that the message is not only seen but also heard, resonating with your inner sense of harmony.\n\nTogether, these symbols may reflect a moment in waking life where you feel open to receiving kindness, guidance, or creative inspiration. Perhaps a situation is inviting you to listen more closely to your intuition or to share your own truth with calm confidence. The dream encourages trust in the subtle ways wisdom can arrive — through quiet encounters that feel both delicate and meaningful.\n\nAllow yourself to stay open and attentive, letting the soft notes of your inner voice guide you forward with gentle assurance.",
+    "ar": "هبط الطائر الأبيض على راحة اليد المفتوحة يُعتبر في традиع Ibn Sirin رمزاً للنقاء والبشرى الطيبة، حيث يُرى الطائر الأبيض vaak كرسول خير أو علامة على قبول دعوةٍ صالحة. وقد يدل وضعه على اليد المفتوحة على استعداد الحالم لاستقبال الخير والبركة، واستعداده للعطاء والاستقبال zugleich.\n\nالغرّد أو التغريد الذي أصدره الطائر يُشير إلى صوتٍ حسنٍ يُذكر بالذكر والدعاء، وقد يكون تنبيهاً لزيادة الالتزام بالصلاة والذكر، أو بشارة بأن كلاماً طيباً سيُسمع قريباً من حول الحالم. يجمع هذا المشهد بين purity of heart، openness to receive blessings، and the sweetness of good speech.\n\nلِتَكُنْ قلبك مفتوحاً للخير ولتذكر الله في كل لحظة، فالخير يأتي لمن يستعد لاستقباله بصدق وسكينة."
   },
-  "engine": "nvidia/nemotron-3-super-120b-a12b:free+openrouter/free"
+  "engine": "nvidia/nemotron-3-super-120b-a12b:free"
 }

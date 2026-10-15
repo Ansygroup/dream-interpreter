@@ -1,17 +1,17 @@
 {
   "date": "2026-10-15",
   "symbol": {
-    "key": "bird",
-    "en": "Bird",
-    "ar": "الطائر"
+    "key": "water",
+    "en": "Water",
+    "ar": "الماء"
   },
   "dream": {
-    "en": "A white bird landed on my open palm and sang.",
-    "ar": "هبط طائرٌ أبيض على راحتي المفتوحة وغرّد."
+    "en": "I stood at the edge of a vast calm lake at sunrise.",
+    "ar": "وقفتُ على حافة بحيرة هادئة ممتدة عند شروق الشمس."
   },
   "reading": {
-    "en": "A white bird often appears in dreams as a sign of purity, peace, or a messenger bringing gentle insight. When it lands on an open palm, the gesture suggests receptivity — your willingness to accept what is offered without resistance. The bird’s song adds the dimension of voice and expression, indicating that the message is not only seen but also heard, resonating with your inner sense of harmony.\n\nTogether, these symbols may reflect a moment in waking life where you feel open to receiving kindness, guidance, or creative inspiration. Perhaps a situation is inviting you to listen more closely to your intuition or to share your own truth with calm confidence. The dream encourages trust in the subtle ways wisdom can arrive — through quiet encounters that feel both delicate and meaningful.\n\nAllow yourself to stay open and attentive, letting the soft notes of your inner voice guide you forward with gentle assurance.",
-    "ar": "هبط الطائر الأبيض على راحة اليد المفتوحة يُعتبر في традиع Ibn Sirin رمزاً للنقاء والبشرى الطيبة، حيث يُرى الطائر الأبيض vaak كرسول خير أو علامة على قبول دعوةٍ صالحة. وقد يدل وضعه على اليد المفتوحة على استعداد الحالم لاستقبال الخير والبركة، واستعداده للعطاء والاستقبال zugleich.\n\nالغرّد أو التغريد الذي أصدره الطائر يُشير إلى صوتٍ حسنٍ يُذكر بالذكر والدعاء، وقد يكون تنبيهاً لزيادة الالتزام بالصلاة والذكر، أو بشارة بأن كلاماً طيباً سيُسمع قريباً من حول الحالم. يجمع هذا المشهد بين purity of heart، openness to receive blessings، and the sweetness of good speech.\n\nلِتَكُنْ قلبك مفتوحاً للخير ولتذكر الله في كل لحظة، فالخير يأتي لمن يستعد لاستقباله بصدق وسكينة."
+    "en": "Standing at the edge of a vast calm lake at sunrise suggests a moment of pause between inner depths and emerging light. The lake often symbolizes the unconscious mind or emotions—its stillness reflecting a capacity for clarity and introspection when the surface is undisturbed. The sunrise, a universal sign of renewal, points to fresh awareness, hope, or the start of a new phase in your life. Being at the edge hints that you are poised on a threshold, ready to step from contemplation into action.\n\nThis dream may mirror a real‑life situation where you feel emotionally balanced yet anticipate change—perhaps a decision, a creative project, or a shift in perspective that calls for both inner listening and outward movement. The calm water invites you to trust your feelings, while the dawning light encourages you to bring those insights into the world with optimism.\n\nTake a moment to breathe and notice the quiet possibilities that each new day brings.",
+    "ar": "وقوفك على حافة البحيرة الهادئة يدل على أنك في حالة سكينة وصفاء قلب، والماء الراكد في tradizione ابن سيرين يرمز إلى العلم النافع، والبركة، والطمأنينة الداخلية.  \nشروق الشمس يُعدّ رمزاً للبداية الجديدة، والنور الإلهي الذي يبدد الظلام ويبشر بالأمل والفرج القريب، كما يشير إلى رحمة الله التي تتجدد مع كل فجر.  \nالحافة أو الشاطئ تمثل الحد بين ما هوKnown وما هو مجيد، أي مرحلة انتقال أو تأمل قبل اتخاذ خطوة مهمة، وتشجعك على التوقف والتفكير في نواياك قبل المضي قدماً.  \nلذا استغل هذا الشعور بالهدوء لأداء صلاة الشكر، وذكر الله، وطلب التوفيق في الخطوات القادمة، فإن التوكل على الله والصلاة في أوقاتها يضيء طريقك كما يضيء الفجر سطح الماء."
   },
   "engine": "nvidia/nemotron-3-super-120b-a12b:free"
 }

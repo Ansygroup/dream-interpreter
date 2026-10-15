@@ -1,17 +1,17 @@
 {
   "date": "2026-10-15",
   "symbol": {
-    "key": "flying",
-    "en": "Flying",
-    "ar": "الطيران"
+    "key": "fire",
+    "en": "Fire",
+    "ar": "النار"
   },
   "dream": {
-    "en": "I was flying above my city at dawn and the streets glowed beneath me.",
-    "ar": "كنتُ أطير فوق مدينتي عند الفجر وتألقت الشوارع تحتي."
+    "en": "A small fire warmed a cold empty room.",
+    "ar": "أضاءت نارٌ صغيرة غرفةً باردةً خالية."
   },
   "reading": {
-    "en": "Flying often symbolizes a sense of freedom, perspective, or the desire to rise above everyday concerns. Seeing your city from above can reflect how you view your personal life or community — perhaps feeling connected yet distanced, gaining insight into patterns you normally miss on the ground. Dawn suggests new beginnings, hope, or the quiet moment before activity fully awakens, indicating you may be entering a phase of renewal or clarity.\n\nThe glowing streets beneath you imply that even the ordinary paths of life are illuminated by inner awareness or optimism. This light can represent guidance, intuition, or the recognition that your everyday experiences hold hidden beauty and meaning when viewed with a fresh outlook. Together, these images hint at a growing confidence to navigate your surroundings with a broader, more enlightened view.\n\nTake a moment each day to notice the small lights in your routine — they may be guiding you toward the next step forward.",
-    "ar": "رؤياكِ تحملُ معاني الرُقيّ والنور، فالطيران في المنام كما ذهب ابن سيرين يدلُّ على علوِّ الهمّة والارتقاء عن صغائر الأمور، ورؤية مدينتكِ من الأعلى تعني أنكِ تملكين نظرةً شاملةً لحياتكِ، وأنكِ في مقامٍ يسمح لكِ بمراجعة مساركِ بحكمةٍ واتزان. هذا الطيران ليس هروباً، بل هو اطمئنانٌ داخليّ وثقةٌ بأنّ لكِ مكانةً تليق بكِ بين أهلكِ وناسكِ.\n\nأمّا الفجر الذي تتألّق فيه الشوارع، فهو رمزُ الصدق والبدايات المباركة، فالشارع المضيء في الرؤيا يدلُّ على طريقٍ واضحٍ وسُبلِ خيرٍ تتيسّر لكِ في الأيام القادمة. التألّق تحتكِ قد يكون إشارةً إلى أعمالٍ صالحةٍ أو بركةٍ في الرزق ستشعرين بها، خصوصاً إذا كنتِ تمرّين بفترةِ تردّدٍ أو بحثٍ عن هدف، فالبصيرةُ العليا التي رأيتِها هي دعوةٌ للثقةِ بأنّ القادم أجمل.\n\nاجعلي من هذه الرؤيا سكينةً في قلبكِ، وتذكّري أنّ من طار في منامه فقد نال رفعةً في يقظته، وأنّ الفجر يسبقُ دائماً يوماً جديداً يحملُ في طيّاته ما يُسعدكِ."
+    "en": "Fire traditionally symbolizes warmth, vitality, and inner transformation, indicating a spark of energy or emotion that can provide comfort.  \n\nThe cold, empty room reflects emotional distance or a feeling of barrenness in your waking life, highlighting a need for nourishment or connection.  \n\nEven a small flame can begin to thaw the chill, suggesting that modest acts of care or purpose may warm the spaces that feel empty. Embrace the subtle warmth you sense within and let it guide you to nurture those areas.",
+    "ar": "النارُ الصغيرةُ في المنامِ ترمزُ إلى نورِ الهدايةِ أو علمٍ يسيرٍ يضيءُ قلبَ الرائي، وكونها في غرفةٍ باردةٍ خاليةٍ يدلُّ على وجودِ أملٍ متواضعٍ وسطَ شعورٍ بالوحدةِ أو الفراغِ الروحي.  \n\nالغرفةُ الباردةُ الخاليةُ تعكسُ حالاً من البرودِ العاطفيِّ أو البعدِ عن ذكرِ الله، وقد تكون دعوةً لمراجعةِ العلاقاتِ والعباداتِ التي تمنحُ الدفءَ والطمأنينة.  \n\nينصحُ بالاستزادةِ من الذكرِ والصلاةِ وصحبةِ الصالحين، فإنَّ الشعلةَ الصغرى تكبرُ بذكرِ الله وتزيلُ برودةَ الوحدة.  \n\nاجعل قلبك موطناً للذكر والدعاء، فالنور الصغير يكفي ليبدد ظلمة الوحدة."
   },
-  "engine": "nvidia/nemotron-3-super-120b-a12b:free+fallback:deepseek-v4-flash"
+  "engine": "openrouter/free"
 }

@@ -1,17 +1,17 @@
 {
   "date": "2026-10-15",
   "symbol": {
-    "key": "money",
-    "en": "Money",
-    "ar": "المال"
+    "key": "flying",
+    "en": "Flying",
+    "ar": "الطيران"
   },
   "dream": {
-    "en": "I found coins in the lining of an old coat.",
-    "ar": "وجدتُ قطعاً نقدية في بطانة معطفٍ قديم."
+    "en": "I was flying above my city at dawn and the streets glowed beneath me.",
+    "ar": "كنتُ أطير فوق مدينتي عند الفجر وتألقت الشوارع تحتي."
   },
   "reading": {
-    "en": "Finding coins often points to feelings of value, opportunity, or untapped resources in many traditions, while a coat can symbolize protection, personal identity, or the layers we wear to face the world. Discovering coins hidden in the lining of an old coat suggests that something valuable—perhaps a skill, memory, or inner strength—has been tucked away and is now coming to light. This may reflect a moment when you are recognizing worth that you previously overlooked, or when past experiences are offering unexpected support for present endeavors.\n\nConsider what parts of yourself or your life feel “old” or stored away, and how they might contain riches you have not yet claimed. The dream invites a gentle inventory of your inner assets, encouraging you to acknowledge and use them rather than let them remain unseen.\n\nTake a quiet moment to appreciate the hidden strengths you carry, and let that awareness guide you toward actions that honor your true worth.",
-    "ar": "وجدتُ قطعاً نقدية في بطانة معطفٍ قديمٍ قد يدل في tradizione على اكتشاف خير مخفي أو رزق لم يكن apparentاً؛ فالنقود ترمز تقليدياً إلى الرزق، الفائدة أو النفع الذي قد يأتي من حيث لا يحتسب. ومعطفٍ قديمٍ يمثل ما مضى أو ما أُهمل، وبطانته تشير إلى الجوانب الباطنة أو المخفية من self، ربما مهارات أو موارد لم تُستَغل بعد.\n\nقد يكون الحلم دعوةً لتفقد ما هو مخفي في داخلك أو في ماضيك، لتكتشف ما يمكن أن يسهم في تحسين وضعك المادي أو المعنوي؛ فمثلاً قد تكون هناك فرصة عمل، مشروع صغير، أوeven معرفة نافعة تنتظر أن تُستخرج من ثنايا ما považَه القديم. ويُستحب أن يُقابل هذا الاكتشاف بالشكْر والصلاة، وأن يُستَمر في طلب البركة من الله عبر الدعاء والعمل الصالح.\n\nتذكّر أن الرؤى تُظهر إشاراتً تُحسّن اليقظة ولا تُحدِّد المصير؛ فليكن اكتشافك دافعاً للتفاؤل والعمل، ولتستمر في طلب الحكمة من الله في كل خطوة."
+    "en": "Flying often symbolizes a sense of freedom, perspective, or the desire to rise above everyday concerns. Seeing your city from above can reflect how you view your personal life or community — perhaps feeling connected yet distanced, gaining insight into patterns you normally miss on the ground. Dawn suggests new beginnings, hope, or the quiet moment before activity fully awakens, indicating you may be entering a phase of renewal or clarity.\n\nThe glowing streets beneath you imply that even the ordinary paths of life are illuminated by inner awareness or optimism. This light can represent guidance, intuition, or the recognition that your everyday experiences hold hidden beauty and meaning when viewed with a fresh outlook. Together, these images hint at a growing confidence to navigate your surroundings with a broader, more enlightened view.\n\nTake a moment each day to notice the small lights in your routine — they may be guiding you toward the next step forward.",
+    "ar": "رؤياكِ تحملُ معاني الرُقيّ والنور، فالطيران في المنام كما ذهب ابن سيرين يدلُّ على علوِّ الهمّة والارتقاء عن صغائر الأمور، ورؤية مدينتكِ من الأعلى تعني أنكِ تملكين نظرةً شاملةً لحياتكِ، وأنكِ في مقامٍ يسمح لكِ بمراجعة مساركِ بحكمةٍ واتزان. هذا الطيران ليس هروباً، بل هو اطمئنانٌ داخليّ وثقةٌ بأنّ لكِ مكانةً تليق بكِ بين أهلكِ وناسكِ.\n\nأمّا الفجر الذي تتألّق فيه الشوارع، فهو رمزُ الصدق والبدايات المباركة، فالشارع المضيء في الرؤيا يدلُّ على طريقٍ واضحٍ وسُبلِ خيرٍ تتيسّر لكِ في الأيام القادمة. التألّق تحتكِ قد يكون إشارةً إلى أعمالٍ صالحةٍ أو بركةٍ في الرزق ستشعرين بها، خصوصاً إذا كنتِ تمرّين بفترةِ تردّدٍ أو بحثٍ عن هدف، فالبصيرةُ العليا التي رأيتِها هي دعوةٌ للثقةِ بأنّ القادم أجمل.\n\nاجعلي من هذه الرؤيا سكينةً في قلبكِ، وتذكّري أنّ من طار في منامه فقد نال رفعةً في يقظته، وأنّ الفجر يسبقُ دائماً يوماً جديداً يحملُ في طيّاته ما يُسعدكِ."
   },
-  "engine": "nvidia/nemotron-3-super-120b-a12b:free"
+  "engine": "nvidia/nemotron-3-super-120b-a12b:free+fallback:deepseek-v4-flash"
 }

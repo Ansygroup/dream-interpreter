@@ -1,17 +1,17 @@
 {
   "date": "2026-10-15",
   "symbol": {
-    "key": "fire",
-    "en": "Fire",
-    "ar": "النار"
+    "key": "flying",
+    "en": "Flying",
+    "ar": "الطيران"
   },
   "dream": {
-    "en": "A small fire warmed a cold empty room.",
-    "ar": "أضاءت نارٌ صغيرة غرفةً باردةً خالية."
+    "en": "I was flying above my city at dawn and the streets glowed beneath me.",
+    "ar": "كنتُ أطير فوق مدينتي عند الفجر وتألقت الشوارع تحتي."
   },
   "reading": {
-    "en": "Fire traditionally symbolizes warmth, vitality, and inner transformation, indicating a spark of energy or emotion that can provide comfort.  \n\nThe cold, empty room reflects emotional distance or a feeling of barrenness in your waking life, highlighting a need for nourishment or connection.  \n\nEven a small flame can begin to thaw the chill, suggesting that modest acts of care or purpose may warm the spaces that feel empty. Embrace the subtle warmth you sense within and let it guide you to nurture those areas.",
-    "ar": "النارُ الصغيرةُ في المنامِ ترمزُ إلى نورِ الهدايةِ أو علمٍ يسيرٍ يضيءُ قلبَ الرائي، وكونها في غرفةٍ باردةٍ خاليةٍ يدلُّ على وجودِ أملٍ متواضعٍ وسطَ شعورٍ بالوحدةِ أو الفراغِ الروحي.  \n\nالغرفةُ الباردةُ الخاليةُ تعكسُ حالاً من البرودِ العاطفيِّ أو البعدِ عن ذكرِ الله، وقد تكون دعوةً لمراجعةِ العلاقاتِ والعباداتِ التي تمنحُ الدفءَ والطمأنينة.  \n\nينصحُ بالاستزادةِ من الذكرِ والصلاةِ وصحبةِ الصالحين، فإنَّ الشعلةَ الصغرى تكبرُ بذكرِ الله وتزيلُ برودةَ الوحدة.  \n\nاجعل قلبك موطناً للذكر والدعاء، فالنور الصغير يكفي ليبدد ظلمة الوحدة."
+    "en": "Flying often represents a yearning for freedom or a higher viewpoint on life’s circumstances. Seeing yourself above the city suggests you may be gaining distance from daily routines, allowing you to observe your social world with fresh eyes.  \n\nThe city stands for community, relationships, and the structures that shape your everyday experience. Dawn signals the start of a new phase, hinting at hope, renewal, or the emergence of ideas after a period of darkness.  \n\nThe glowing streets beneath you imply that your path is becoming illuminated; you may be noticing clarity or insight where there was once confusion. This light can reflect inner wisdom guiding you toward purposeful action.  \n\nTake a moment to notice what feels newly visible in your waking life, and let that awareness gently steer your next steps.",
+    "ar": "كنت طيرانك فوق المدينة عند الفجر يشير في tradition إلى ارتفاع في المقام أو تحرر من قيود، ورمز الفجر يرمز إلى بداية جديدة ونور يبدد الظلمة، بينما الشوارع المتألقّة تحتك تدل على وضوح الطريق وبركة في المسعى اليومي. Collectively, هذه الرموز تبشر بفترة من النشاط الإيجابي والوضوح في affairs الحياتية، وقد تعكس شعورك بالتقدم نحو أهدافك أو تجديد نية في عملك وعلاقاتك.\n\nفي سياق الحياة، قد يكون الحلم تشجيعًا على استغلال هذا الزخم من الطاقة المتجددة للسعي في أعمال مفيدة، سواء كانت دراسية، مهنية، أو خيرية، مع الحفاظ على التوازن بين الطموح والامتنان لما هو موجود. التألق تحتك يشير إلى أن أفعالك قد تُ見ّseen كنور للآخرين، فاحرص على أن يكون عملك مصحوبًا بالصدق والدعاء.\n\nلِتَجعلْ هذا الحلم ذكرًا لتجدد نيتك كل صباح، وتستعين بالصلاة والذكر لتثبيت قلبك على طريق الخير، فالحلم يعكس حال النفس ولا يعدّ وعدًا بالغيب."
   },
-  "engine": "openrouter/free"
+  "engine": "nvidia/nemotron-3-super-120b-a12b:free"
 }

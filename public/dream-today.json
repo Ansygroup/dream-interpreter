@@ -1,17 +1,17 @@
 {
   "date": "2026-10-16",
   "symbol": {
-    "key": "falling",
-    "en": "Falling",
-    "ar": "السقوط"
+    "key": "snake",
+    "en": "Snake",
+    "ar": "الثعبان"
   },
   "dream": {
-    "en": "I fell through the air but never hit the ground.",
-    "ar": "سقطتُ عبر الهواء لكنني لم ألمس الأرض."
+    "en": "I saw a green snake leave the house through the garden gate.",
+    "ar": "رأيتُ ثعباناً أخضر يغادر المنزل عبر بوابة الحديقة."
   },
   "reading": {
-    "en": "Falling through the air often points to a sense of losing control or moving through a period of rapid change; in many traditions it signals anxiety about the unknown or a transition that feels unsettling. The air itself represents the realm of thoughts, ideas, and the breath of life—suggesting that your mind is active, perhaps wandering or seeking clarity.\n\nThe ground, by contrast, stands for stability, foundation, and the feeling of being supported. Not hitting the ground in the dream may indicate that you are currently experiencing a suspension between what you know and what you are yet to encounter, hinting at a fear of landing or of confronting a reality that feels unstable. This pause can be protective, giving you time to adjust before you fully settle.\n\nConsider where in your waking life you feel unsteady or as if you are waiting for a solid footing. Gentle practices such as mindful walking, feeling your feet on the floor, or connecting with supportive people can help bring a sense of grounding. Remember that the dream reflects your inner state, not a forecast of what will come.\n\nTake a moment to feel your feet on the earth and notice the steadiness that is already within you.",
-    "ar": "يرمز السقوط في الهواء خلال المنام إلى مرحلة يتداخل فيها الشعور بقلة الاستقرار مع السعي لتجاوز الضغوط أو التحولات الكبيرة في الحياة الواقعية. وكما يشير أهل التعبير والدراية، كالإمام ابن سيرين، فإن الطيران أو السقوط دون الاصطدام يستحضر معاني النجاة واللطف، ويعكس قدرة النفس على الثبات وسط الظروف المتغيرة دون أذى.\n\nعدم ملامسة الأرض في حلمك يعبر عن وجود رعاية وتحفظ لك من عواقب قد تخشاها، ويبشر بتجاوز العقبات دون عناء مجحف. هذه الرؤية تطمئن قلبك بأن الحيرة المؤقتة لن تتسبب في أذى مادي أو معنوي، بل هي مجرد دلالة على السعي والبحث عن التوازن.\n\nتأمل في حياتك اليومية عما يجعلك تشعر بقدان التوازن، وادعُ الله أن يمنحك السكينة والطمأنينة في خطواتك المقبلة."
+    "en": "The snake is a widespread symbol of transformation, healing, and the unconscious; its green hue adds layers of growth, renewal, and connection to nature. Seeing it depart from the house suggests that an inner process of change or a previously hidden aspect of yourself is moving outward, seeking expression in the external world. The house often represents the psyche or personal sense of security, while the garden gate marks a threshold between private inner life and the broader world beyond. Together, the image hints at a gentle release — perhaps letting go of old patterns, fears, or habits — so that new growth can take root outside familiar boundaries.\n\nThis dream may reflect a current readiness to embrace change, to allow personal development to flow into your relationships, work, or creative pursuits. It encourages trust in the natural cycle of shedding what no longer serves you and welcoming fresh possibilities that align with your deeper values.\n\nConsider what you feel ready to leave behind and what new growth you wish to nurture in the world beyond your familiar spaces.",
+    "ar": "رأى الحالم ثعباناً أخضر يغادر المنزل عبر بوابة الحديقة. في تفسير ابن sirin، الثعبان يرمز غالباً إلى عدو خفي أو حسد أو مكيدة، ولون الأخضر قد يدل على الغيرة أو على شخص يظهر مظاهر الخير لكنه يحمل نوايا خفية. المنزل يرمز إلى السكن الأسري والخصوصية، بينما بوابة الحديقة تمثل نقطة خروج أو انتقال من المجال الخاص إلى العام.\n\nقد يعبر الحلم عن أن مصدراً للقلق أو شخصاً يثير الريبة في حياة الحالم يبدأ في الابتعاد عن محيطه العائلي أو الشخصي، أي أن التأثير السلبي يتجه نحو الخروج من دائرة قربه. وهذا قد يكون إشارة إلى تخفيف التوتر أو انتهاء مرحلة من الشكوك، لكنه يدعو الحالم إلى اليقظة وعدم الاستهانة بآثار ما مضى.\n\nينصح بالاستمرار في الذكر والصلاة لتحصين القلب وتوجيه الخطوات، والتفكير في العلاقات المحيطة بحكمة وصبر، والثقة أن الله يبعد عن المسلم ما يضره ويقيده من شر. يُستحسن أن تستمر في ذكر الله والصلاة لتحصين قلبك وتوجيه خطواتك."
   },
-  "engine": "nvidia/nemotron-3-super-120b-a12b:free+fallback:gemini-3.6-flash"
+  "engine": "nvidia/nemotron-3-super-120b-a12b:free"
 }

@@ -1,17 +1,17 @@
 {
   "date": "2026-10-16",
   "symbol": {
-    "key": "fish",
-    "en": "Fish",
-    "ar": "السمكة"
+    "key": "cat",
+    "en": "Cat",
+    "ar": "القطة"
   },
   "dream": {
-    "en": "I swam with a school of fish in clear blue water.",
-    "ar": "سبحتُ مع مجموعة من الأسماك في ماءٍ أزرق صافٍ."
+    "en": "A cat watched me from a windowsill and then vanished.",
+    "ar": "راقبتني قطةٌ من على حافة نافذة ثم اختفت."
   },
   "reading": {
-    "en": "In many traditions, fish represent intuition, abundance, and the deeper currents of the psyche, while water embodies the flow of emotions and the subconscious. The clarity of blue water suggests a calm, transparent emotional state, inviting you to move freely.\n\nSwimming alongside a school of fish points to a sense of community and shared purpose, indicating you are navigating life’s currents with support and confidence. This imagery often reflects harmonious relationships or a feeling of belonging.\n\nTake this feeling of clarity and connection as a gentle reminder to stay attuned to your inner guidance and the supportive people around you.\n\nEmbrace the calm flow and the companionship you experience, letting it enrich your waking life.",
-    "ar": "في رؤى Ibn Sirin، تُ Symbolize الأسماك عادةً الخير الوفير، والعلم أو الصحبة الصالحة، بينما الماء الصافي يرمز إلى النقاء، والهدوء، والوضوء الروحي. لذا فإن سباحتك مع مجموعة من الأسماك في ماء أزرق صافٍ تدل على أن قلبك يسبح في بيئة من الطمأنينة والخير، وربما تقترب من معرفة أو رفقة تُثري حياتك.\n\nإذا كان هذا الحلم يخصك في الواقع، فقد يشير إلى أنك تسير على الطريق الصحيح، محاطًا بأشخاص أو أفكار تُنير طريقك، وأن تفاؤلك بالوضوء والصفاء يعكس حالة طمأنينة داخلية. اسأل نفسك عن المجالات التي تشعر فيها بالوضوء والوضوء الروحي، وتأمل في كيفية الاستفادة من هذه النوايا الطيبة.\n\nختامًا، احرص على الدعاء والذكر المستمر لتثبيت هذه النوايا في قلبك، فالوضوء الروحي يعزز من صافية الماء الذي يسبح فيه قلبك."
+    "en": "In classical dream symbolism, a cat on a windowsill represents a watchful observer positioned at the boundary between your internal world and the outside environment. The windowsill itself marks a threshold of perspective, suggesting you may be contemplating a transition or observing a situation in your waking life from a safe distance before making a move. Cats traditionally embody intuition, autonomy, and subtle awareness, signaling that your subconscious is paying close attention to underlying dynamics or hidden feelings you have yet to fully address.\n\nThe sudden vanishing of the cat points to a fleeting opportunity, a passing intuitive insight, or a fear that a sense of comfort and independence is slipping out of reach. When a symbol disappears so abruptly, it often mirrors a moment in life where clarity or reassurance seems present one moment and elusive the next, encouraging you to capture brief moments of insight before they fade.\n\nPay attention to what seems just out of reach or briefly glimpsed in your life right now, trusting that your quiet intuition will guide you even when certainty appears to vanish.",
+    "ar": "راقبتك قطةٌ من على حافة نافذة ثم اختفت، وقد ترمز القطة في التراث إلى شخصٍ خفيٍّ أو تأثيرٍ خفيٍّ يراقبك من مسافة، بينما النافذة تُشير إلى فرصةٍ لل Blick أو إلى حاجزٍ بينك وبين ما يجري خارجاً. اختفاء القطة قد يوحي بأن هذا التأثير أو القلق مؤقتٌ ولا يدوم، وأنه قد يزول من تلقاء نفسه إذا لم تعطيه انتباهاً مفرطاً.\n\nفي سياق حياتك، قد يكون الحلم يدل على noticing something small that draws your attention—a thought, a person, or a situation that seems to watch you from afar but does not stay. إنه تذكير بأن بعض المخاوف أو الشواغل تكون عابرةً ولا تحتاج إلى رد فعلٍ شديد؛ بل يمكن تهدئتها بالذكر والصلاة، والثقة بأن الله يزيل ما لا ينفع.\n\nلذا خذ لحظةً للهدوء، وادعُ الله أن يبعد عنك ما يزعج قلبك، وركّز على ما هو بناء ومفيد في نهجك اليومي."
   },
-  "engine": "openrouter/free"
+  "engine": "fallback:gemini-3.6-flash+nvidia/nemotron-3-super-120b-a12b:free"
 }

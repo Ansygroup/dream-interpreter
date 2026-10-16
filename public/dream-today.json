@@ -1,17 +1,17 @@
 {
   "date": "2026-10-16",
   "symbol": {
-    "key": "snake",
-    "en": "Snake",
-    "ar": "الثعبان"
+    "key": "fish",
+    "en": "Fish",
+    "ar": "السمكة"
   },
   "dream": {
-    "en": "I saw a green snake leave the house through the garden gate.",
-    "ar": "رأيتُ ثعباناً أخضر يغادر المنزل عبر بوابة الحديقة."
+    "en": "I swam with a school of fish in clear blue water.",
+    "ar": "سبحتُ مع مجموعة من الأسماك في ماءٍ أزرق صافٍ."
   },
   "reading": {
-    "en": "The snake is a widespread symbol of transformation, healing, and the unconscious; its green hue adds layers of growth, renewal, and connection to nature. Seeing it depart from the house suggests that an inner process of change or a previously hidden aspect of yourself is moving outward, seeking expression in the external world. The house often represents the psyche or personal sense of security, while the garden gate marks a threshold between private inner life and the broader world beyond. Together, the image hints at a gentle release — perhaps letting go of old patterns, fears, or habits — so that new growth can take root outside familiar boundaries.\n\nThis dream may reflect a current readiness to embrace change, to allow personal development to flow into your relationships, work, or creative pursuits. It encourages trust in the natural cycle of shedding what no longer serves you and welcoming fresh possibilities that align with your deeper values.\n\nConsider what you feel ready to leave behind and what new growth you wish to nurture in the world beyond your familiar spaces.",
-    "ar": "رأى الحالم ثعباناً أخضر يغادر المنزل عبر بوابة الحديقة. في تفسير ابن sirin، الثعبان يرمز غالباً إلى عدو خفي أو حسد أو مكيدة، ولون الأخضر قد يدل على الغيرة أو على شخص يظهر مظاهر الخير لكنه يحمل نوايا خفية. المنزل يرمز إلى السكن الأسري والخصوصية، بينما بوابة الحديقة تمثل نقطة خروج أو انتقال من المجال الخاص إلى العام.\n\nقد يعبر الحلم عن أن مصدراً للقلق أو شخصاً يثير الريبة في حياة الحالم يبدأ في الابتعاد عن محيطه العائلي أو الشخصي، أي أن التأثير السلبي يتجه نحو الخروج من دائرة قربه. وهذا قد يكون إشارة إلى تخفيف التوتر أو انتهاء مرحلة من الشكوك، لكنه يدعو الحالم إلى اليقظة وعدم الاستهانة بآثار ما مضى.\n\nينصح بالاستمرار في الذكر والصلاة لتحصين القلب وتوجيه الخطوات، والتفكير في العلاقات المحيطة بحكمة وصبر، والثقة أن الله يبعد عن المسلم ما يضره ويقيده من شر. يُستحسن أن تستمر في ذكر الله والصلاة لتحصين قلبك وتوجيه خطواتك."
+    "en": "In many traditions, fish represent intuition, abundance, and the deeper currents of the psyche, while water embodies the flow of emotions and the subconscious. The clarity of blue water suggests a calm, transparent emotional state, inviting you to move freely.\n\nSwimming alongside a school of fish points to a sense of community and shared purpose, indicating you are navigating life’s currents with support and confidence. This imagery often reflects harmonious relationships or a feeling of belonging.\n\nTake this feeling of clarity and connection as a gentle reminder to stay attuned to your inner guidance and the supportive people around you.\n\nEmbrace the calm flow and the companionship you experience, letting it enrich your waking life.",
+    "ar": "في رؤى Ibn Sirin، تُ Symbolize الأسماك عادةً الخير الوفير، والعلم أو الصحبة الصالحة، بينما الماء الصافي يرمز إلى النقاء، والهدوء، والوضوء الروحي. لذا فإن سباحتك مع مجموعة من الأسماك في ماء أزرق صافٍ تدل على أن قلبك يسبح في بيئة من الطمأنينة والخير، وربما تقترب من معرفة أو رفقة تُثري حياتك.\n\nإذا كان هذا الحلم يخصك في الواقع، فقد يشير إلى أنك تسير على الطريق الصحيح، محاطًا بأشخاص أو أفكار تُنير طريقك، وأن تفاؤلك بالوضوء والصفاء يعكس حالة طمأنينة داخلية. اسأل نفسك عن المجالات التي تشعر فيها بالوضوء والوضوء الروحي، وتأمل في كيفية الاستفادة من هذه النوايا الطيبة.\n\nختامًا، احرص على الدعاء والذكر المستمر لتثبيت هذه النوايا في قلبك، فالوضوء الروحي يعزز من صافية الماء الذي يسبح فيه قلبك."
   },
-  "engine": "nvidia/nemotron-3-super-120b-a12b:free"
+  "engine": "openrouter/free"
 }

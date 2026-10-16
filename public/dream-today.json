@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-15",
+  "date": "2026-10-16",
   "symbol": {
-    "key": "flying",
-    "en": "Flying",
-    "ar": "الطيران"
+    "key": "falling",
+    "en": "Falling",
+    "ar": "السقوط"
   },
   "dream": {
-    "en": "I was flying above my city at dawn and the streets glowed beneath me.",
-    "ar": "كنتُ أطير فوق مدينتي عند الفجر وتألقت الشوارع تحتي."
+    "en": "I fell through the air but never hit the ground.",
+    "ar": "سقطتُ عبر الهواء لكنني لم ألمس الأرض."
   },
   "reading": {
-    "en": "Flying often represents a yearning for freedom or a higher viewpoint on life’s circumstances. Seeing yourself above the city suggests you may be gaining distance from daily routines, allowing you to observe your social world with fresh eyes.  \n\nThe city stands for community, relationships, and the structures that shape your everyday experience. Dawn signals the start of a new phase, hinting at hope, renewal, or the emergence of ideas after a period of darkness.  \n\nThe glowing streets beneath you imply that your path is becoming illuminated; you may be noticing clarity or insight where there was once confusion. This light can reflect inner wisdom guiding you toward purposeful action.  \n\nTake a moment to notice what feels newly visible in your waking life, and let that awareness gently steer your next steps.",
-    "ar": "كنت طيرانك فوق المدينة عند الفجر يشير في tradition إلى ارتفاع في المقام أو تحرر من قيود، ورمز الفجر يرمز إلى بداية جديدة ونور يبدد الظلمة، بينما الشوارع المتألقّة تحتك تدل على وضوح الطريق وبركة في المسعى اليومي. Collectively, هذه الرموز تبشر بفترة من النشاط الإيجابي والوضوح في affairs الحياتية، وقد تعكس شعورك بالتقدم نحو أهدافك أو تجديد نية في عملك وعلاقاتك.\n\nفي سياق الحياة، قد يكون الحلم تشجيعًا على استغلال هذا الزخم من الطاقة المتجددة للسعي في أعمال مفيدة، سواء كانت دراسية، مهنية، أو خيرية، مع الحفاظ على التوازن بين الطموح والامتنان لما هو موجود. التألق تحتك يشير إلى أن أفعالك قد تُ見ّseen كنور للآخرين، فاحرص على أن يكون عملك مصحوبًا بالصدق والدعاء.\n\nلِتَجعلْ هذا الحلم ذكرًا لتجدد نيتك كل صباح، وتستعين بالصلاة والذكر لتثبيت قلبك على طريق الخير، فالحلم يعكس حال النفس ولا يعدّ وعدًا بالغيب."
+    "en": "Falling through the air often points to a sense of losing control or moving through a period of rapid change; in many traditions it signals anxiety about the unknown or a transition that feels unsettling. The air itself represents the realm of thoughts, ideas, and the breath of life—suggesting that your mind is active, perhaps wandering or seeking clarity.\n\nThe ground, by contrast, stands for stability, foundation, and the feeling of being supported. Not hitting the ground in the dream may indicate that you are currently experiencing a suspension between what you know and what you are yet to encounter, hinting at a fear of landing or of confronting a reality that feels unstable. This pause can be protective, giving you time to adjust before you fully settle.\n\nConsider where in your waking life you feel unsteady or as if you are waiting for a solid footing. Gentle practices such as mindful walking, feeling your feet on the floor, or connecting with supportive people can help bring a sense of grounding. Remember that the dream reflects your inner state, not a forecast of what will come.\n\nTake a moment to feel your feet on the earth and notice the steadiness that is already within you.",
+    "ar": "يرمز السقوط في الهواء خلال المنام إلى مرحلة يتداخل فيها الشعور بقلة الاستقرار مع السعي لتجاوز الضغوط أو التحولات الكبيرة في الحياة الواقعية. وكما يشير أهل التعبير والدراية، كالإمام ابن سيرين، فإن الطيران أو السقوط دون الاصطدام يستحضر معاني النجاة واللطف، ويعكس قدرة النفس على الثبات وسط الظروف المتغيرة دون أذى.\n\nعدم ملامسة الأرض في حلمك يعبر عن وجود رعاية وتحفظ لك من عواقب قد تخشاها، ويبشر بتجاوز العقبات دون عناء مجحف. هذه الرؤية تطمئن قلبك بأن الحيرة المؤقتة لن تتسبب في أذى مادي أو معنوي، بل هي مجرد دلالة على السعي والبحث عن التوازن.\n\nتأمل في حياتك اليومية عما يجعلك تشعر بقدان التوازن، وادعُ الله أن يمنحك السكينة والطمأنينة في خطواتك المقبلة."
   },
-  "engine": "nvidia/nemotron-3-super-120b-a12b:free"
+  "engine": "nvidia/nemotron-3-super-120b-a12b:free+fallback:gemini-3.6-flash"
 }

@@ -1,17 +1,17 @@
 {
   "date": "2026-10-17",
   "symbol": {
-    "key": "pregnancy",
-    "en": "Pregnancy",
-    "ar": "الحمل"
+    "key": "falling",
+    "en": "Falling",
+    "ar": "السقوط"
   },
   "dream": {
-    "en": "Someone told me news that would change a family forever.",
-    "ar": "أخبرني أحدهم بخبرٍ سيغيّر عائلةً للأبد."
+    "en": "I fell through the air but never hit the ground.",
+    "ar": "سقطتُ عبر الهواء لكنني لم ألمس الأرض."
   },
   "reading": {
-    "en": "This dream centers on the weight of transformative information and its ripple effects through the bonds that shaped you. News that would change a family forever often reflects moments when long-buried truths, new responsibilities, or unexpected shifts in relationships begin to surface in waking life.\n\nThe family symbol points to your foundational connections, your sense of belonging, and the inherited patterns you carry. When a dream emphasizes that news will alter a family, it may be urging you to consider how current decisions or revelations might reshape roles, expectations, or loyalties you once took for granted.\n\nRather than foretelling specific outcomes, this vision mirrors your awareness that significant change is stirring, inviting you to reflect on what truths you may be ready to receive or share, and how you might prepare your heart for the evolving dynamics ahead.\n\nTake a quiet moment to consider which family relationships feel most in flux right now, and what unspoken conversations might be ready to begin.",
-    "ar": "في التراث الإسلامي، يُعتبر الخبر المفاجئ نذيرًا لتحوُّلٍ كبيرٍ في الحياة، والذي قد يشملُ أوضاعًا عائليةً أو مواقفَ مصيريةً. يشير الحلم إلى أن هناك معلومةً ستُعيد بناءً عميقًا لدوائرِ الاهتماماتِ والعلاقاتِ داخل العائلة.\n\nبلغةٍ رمزيةٍ، قد يكون هذا الخبر مرتبطًا بقرارٍ مهمٍّ أو فرصةٍ جديدةٍ تُعيد تشكيلُ مستقبلٍ جماعي. من المفيد أن تتأمّه بصلاةِ الفجرِ أو الظهر، وتستعلم اللهَ الهدى، فالأحلامِ مرآةٌ للضمائرِ وليست تنبؤًا حتميًّا.\n\nاسأل نفسك: ما الذي يمكن أن يغيّرُ نمطَ حياتي أو علاقتي بهم؟"
+    "en": "Falling through the air suggests a sense of losing control or moving through a period of transition, while the air itself often represents thoughts, aspirations, or the realm of the spirit. The ground, which you never reach, traditionally stands for stability, foundation, and connection to everyday reality.\n\nNot hitting the ground may reflect a feeling of being suspended—perhaps you are avoiding a situation that would require you to face reality directly, or you are caught between letting go of old patterns and finding new support. This liminal state can arise when you are uncertain about your next steps or when you feel unsupported in your current endeavors.\n\nConsider what in your waking life feels unresolved or what you might be postponing. Gently bring your attention back to the present by feeling the weight of your body, noticing the support beneath you, and allowing yourself to settle into what is steady. Take a moment to feel your feet on the earth and notice what supports you.",
+    "ar": "سقطُ عبر الهواء في الحلم قد يرمز إلى شعورٍ بفقدان السيطرة أو قلقٍ داخليٍّ بشأن أمورٍ لم تستقر بعد، وحسب ما ورد في تعبير ابن سيرين فإن السقوط يدل على مخاوف من الفشل أو من فقدان مكانةٍ ما، والهواء يرمز إلى الفكر والروح والحركة الداخلية، بينما عدم لمس الأرض يشير إلى شعورٍ بالانفصال عن الواقع أو عدم الثبات في الحياة اليومية.  \nهذا الحلم قد يكون دعوةً لإعادة تقييم التوازن بين الأفكار والمشاعر وبين الواجبات العملية، فالتحليق دون ملامسة الأرض قد يدل على أن العقل يسبح في الخيالات أو التخطيط دون أن يُترجم إلى أفعالٍ ملموسة على الأرض، وهو ما قد يسبب توتراً أو حيرةً في اتخاذ القرارات.  \nللتخفيف من هذا الشعور يُستحسن اللجوء إلى الصلاة والذكر لتثبيت القلب، والعودة إلى ممارساتٍ بسيطةٍ تُشعر بالارتباط بالواقع مثل المشي في الطبيعة أو أداء أعمالٍ نافعة تُعيد grounding للروح وتجلب السكينة الداخلية.  \nينصح بأداء صلاةٍ خفيفة وذكرٍ لتثبيت القلب والعودة إلى السكينة."
   },
-  "engine": "openrouter/free"
+  "engine": "nvidia/nemotron-3-super-120b-a12b:free+cache"
 }

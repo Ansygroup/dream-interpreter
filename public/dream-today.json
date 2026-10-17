@@ -1,17 +1,17 @@
 {
   "date": "2026-10-17",
   "symbol": {
-    "key": "teeth",
-    "en": "Teeth",
-    "ar": "الأسنان"
+    "key": "pregnancy",
+    "en": "Pregnancy",
+    "ar": "الحمل"
   },
   "dream": {
-    "en": "A tooth came loose and crumbled in my hand.",
-    "ar": "تزعزع سنٌ وسقط متفتتاً في يدي."
+    "en": "Someone told me news that would change a family forever.",
+    "ar": "أخبرني أحدهم بخبرٍ سيغيّر عائلةً للأبد."
   },
   "reading": {
-    "en": "A loose, crumbling tooth is one of the most widely recognized dream images across cultures, often touching on themes of power, communication, and how we present ourselves to the world. Psychologically, teeth are tied to confidence, assertiveness, and the ability to \"bite\" or take hold of life's nourishment. When a tooth crumbles in your hand, it can reflect a moment of feeling unsteady about your voice or influence, or a concern that something essential is slipping away.\n\nThe hand, so often representing our agency and what we actively hold or offer, adds another layer. Having the crumbling happen within your own hand suggests this is deeply personal, perhaps an internal sense of fragility or a worry that your efforts may not be as solid as they appear. It is less about actual loss and more about a tender awareness of vulnerability.\n\nDreams like this often surface during times of transition or self-reflection, when we question our readiness or our grip on certain roles. Rather than a warning, this dream invites gentleness with yourself and recognition that strength can include acknowledging softness.\n\nNotice where you may be holding yourself too tightly, and consider that letting a little go can make room for new confidence to grow.",
-    "ar": "تزعزع السن وسقوطه المتفتت في اليد يرمز في tradition إلى شعور بالضعف أو الخوف من فقدان شيء ثمين، سواء كان ذلك علاقة عائلية، مكانة اجتماعية، أو قدرة على التعبير بوضوح. السن في التأويل غالبًا ما يرمز إلى أهل البيت أو إلى ما يعتمد عليه الإنسان في حياته اليومية، بينما اليد التي تحتفظ بالقطعات تدل على محاولة الاحتفاظ بما يزول أو على شعور بالعجز عن السيطرة على الموقف.\n\nقد يعكس هذا الحلم أيضًا قلقًا من التحدث أو من أن يُفهم كلامك بشكل غير صحيح، إذ أن الأسنان مرتبطة بالكلام والتواصل. السقوط المتفتت قد يشير إلى أن الأمور التي تعتمد عليها تبدو هشة وتحتاج إلى تقوية من خلال الصبر، الدعاء، ومراجعة العلاقات مع الأقرباء والأصدقاء.\n\nينصح بأن يلتزم العبد بالذكر والاستغفار، ويطلب من الله الثبات والحكمة في التعامل مع ما يزعجه، وأن يحرص على تعزيز الروابط الأسرية والاجتماعية التي تمثل أساس الاستقرار في الحياة.  \nولذلك يُستحسن أن تلجأ إلى الذكر والدعاء، وتسأل الله الثبات والحكمة."
+    "en": "This dream centers on the weight of transformative information and its ripple effects through the bonds that shaped you. News that would change a family forever often reflects moments when long-buried truths, new responsibilities, or unexpected shifts in relationships begin to surface in waking life.\n\nThe family symbol points to your foundational connections, your sense of belonging, and the inherited patterns you carry. When a dream emphasizes that news will alter a family, it may be urging you to consider how current decisions or revelations might reshape roles, expectations, or loyalties you once took for granted.\n\nRather than foretelling specific outcomes, this vision mirrors your awareness that significant change is stirring, inviting you to reflect on what truths you may be ready to receive or share, and how you might prepare your heart for the evolving dynamics ahead.\n\nTake a quiet moment to consider which family relationships feel most in flux right now, and what unspoken conversations might be ready to begin.",
+    "ar": "في التراث الإسلامي، يُعتبر الخبر المفاجئ نذيرًا لتحوُّلٍ كبيرٍ في الحياة، والذي قد يشملُ أوضاعًا عائليةً أو مواقفَ مصيريةً. يشير الحلم إلى أن هناك معلومةً ستُعيد بناءً عميقًا لدوائرِ الاهتماماتِ والعلاقاتِ داخل العائلة.\n\nبلغةٍ رمزيةٍ، قد يكون هذا الخبر مرتبطًا بقرارٍ مهمٍّ أو فرصةٍ جديدةٍ تُعيد تشكيلُ مستقبلٍ جماعي. من المفيد أن تتأمّه بصلاةِ الفجرِ أو الظهر، وتستعلم اللهَ الهدى، فالأحلامِ مرآةٌ للضمائرِ وليست تنبؤًا حتميًّا.\n\nاسأل نفسك: ما الذي يمكن أن يغيّرُ نمطَ حياتي أو علاقتي بهم؟"
   },
-  "engine": "openrouter/free+nvidia/nemotron-3-super-120b-a12b:free"
+  "engine": "openrouter/free"
 }

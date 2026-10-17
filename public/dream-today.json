@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "symbol": {
-    "key": "tree",
-    "en": "Tree",
-    "ar": "الشجرة"
+    "key": "teeth",
+    "en": "Teeth",
+    "ar": "الأسنان"
   },
   "dream": {
-    "en": "An old tree in my garden bloomed overnight.",
-    "ar": "أزهرت شجرةٌ عتيقة في حديقتي في ليلة."
+    "en": "A tooth came loose and crumbled in my hand.",
+    "ar": "تزعزع سنٌ وسقط متفتتاً في يدي."
   },
   "reading": {
-    "en": "In many traditions the tree is a symbol of rooted wisdom and endurance, while a garden reflects the cultivated aspects of life, and blooming signifies sudden, vibrant growth.\n\nSeeing an old tree in your garden open its blossoms overnight may suggest that a long‑standing part of yourself is now revealing fresh vitality, perhaps a new creative project, a renewed relationship, or a burst of insight that has emerged after a period of quiet stability.\n\nAllow this unexpected blossoming to remind you that growth can arise spontaneously, inviting you to nurture the new possibilities with gentle attention.",
-    "ar": "تُعدّ الشجرة العتيقة في المنام رمزاً أصيلاً للنسب الطيب، والروابط العائلية الممتدة، أو أصول النفس والسكينة التي يرجع إليها الإنسان في ملمّاته. وفي التعبير عند ابن سيرين وغيره من علماء تعبير الرؤى، فإن إزهار الأشجار يُشير إلى تحوّل مبارك، وتجددٍ للأمل، وبشارةٍ بخصوبة السعي وبركةٍ تتفتح بعد فترةٍ من الصبر والانتظار.\n\nأما كون هذا الإزهار قد تمّ في غضون ليلة واحدة، فهذا يرمز إلى اللطف الإلهي السريع والفرج العاجل الذي يغيّر الأحوال من حالٍ إلى حال أفضل مما يظن المترقب. والحديقة هنا تتسع لتكون رمزاً لبيتك، أو عالمك الداخلي، أو محيط أعمالك وعلاقاتك المقربة التي ستحظى بثمَار هذا التجدد والخير الوفير.\n\nيحمل لك هذا المنام إشارة لطيفة إلى أن الأصول القوية والجهود الماضية أوشكت أن تؤتي أكلها ببركةٍ ونماء، فاجعل من هذا الأمل حافزاً لرعاية شؤونك وتعهُّد نعم الله عليك بالحمد والعطاء."
+    "en": "A loose, crumbling tooth is one of the most widely recognized dream images across cultures, often touching on themes of power, communication, and how we present ourselves to the world. Psychologically, teeth are tied to confidence, assertiveness, and the ability to \"bite\" or take hold of life's nourishment. When a tooth crumbles in your hand, it can reflect a moment of feeling unsteady about your voice or influence, or a concern that something essential is slipping away.\n\nThe hand, so often representing our agency and what we actively hold or offer, adds another layer. Having the crumbling happen within your own hand suggests this is deeply personal, perhaps an internal sense of fragility or a worry that your efforts may not be as solid as they appear. It is less about actual loss and more about a tender awareness of vulnerability.\n\nDreams like this often surface during times of transition or self-reflection, when we question our readiness or our grip on certain roles. Rather than a warning, this dream invites gentleness with yourself and recognition that strength can include acknowledging softness.\n\nNotice where you may be holding yourself too tightly, and consider that letting a little go can make room for new confidence to grow.",
+    "ar": "تزعزع السن وسقوطه المتفتت في اليد يرمز في tradition إلى شعور بالضعف أو الخوف من فقدان شيء ثمين، سواء كان ذلك علاقة عائلية، مكانة اجتماعية، أو قدرة على التعبير بوضوح. السن في التأويل غالبًا ما يرمز إلى أهل البيت أو إلى ما يعتمد عليه الإنسان في حياته اليومية، بينما اليد التي تحتفظ بالقطعات تدل على محاولة الاحتفاظ بما يزول أو على شعور بالعجز عن السيطرة على الموقف.\n\nقد يعكس هذا الحلم أيضًا قلقًا من التحدث أو من أن يُفهم كلامك بشكل غير صحيح، إذ أن الأسنان مرتبطة بالكلام والتواصل. السقوط المتفتت قد يشير إلى أن الأمور التي تعتمد عليها تبدو هشة وتحتاج إلى تقوية من خلال الصبر، الدعاء، ومراجعة العلاقات مع الأقرباء والأصدقاء.\n\nينصح بأن يلتزم العبد بالذكر والاستغفار، ويطلب من الله الثبات والحكمة في التعامل مع ما يزعجه، وأن يحرص على تعزيز الروابط الأسرية والاجتماعية التي تمثل أساس الاستقرار في الحياة.  \nولذلك يُستحسن أن تلجأ إلى الذكر والدعاء، وتسأل الله الثبات والحكمة."
   },
-  "engine": "openrouter/free+fallback:gemini-3.6-flash"
+  "engine": "openrouter/free+nvidia/nemotron-3-super-120b-a12b:free"
 }

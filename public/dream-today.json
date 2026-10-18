@@ -1,17 +1,17 @@
 {
   "date": "2026-10-18",
   "symbol": {
-    "key": "flying",
-    "en": "Flying",
-    "ar": "الطيران"
+    "key": "tree",
+    "en": "Tree",
+    "ar": "الشجرة"
   },
   "dream": {
-    "en": "I was flying above my city at dawn and the streets glowed beneath me.",
-    "ar": "كنتُ أطير فوق مدينتي عند الفجر وتألقت الشوارع تحتي."
+    "en": "An old tree in my garden bloomed overnight.",
+    "ar": "أزهرت شجرةٌ عتيقة في حديقتي في ليلة."
   },
   "reading": {
-    "en": "The act of flying suggests a surge of freedom and a broader perspective on your life. It may reflect a recent sense of empowerment or a desire to rise above everyday constraints, allowing you to see possibilities that were hidden before.\n\nThe city below points to your connections with community, work, and social roles. Its streets represent the paths you choose, the relationships you navigate, and the rhythm of daily life that grounds your aspirations.\n\nDawn and the glowing streets together evoke renewal and inner illumination. This moment of light hints at new beginnings, clarity, and the gentle emergence of hope as you move forward.\n\nTake a moment to savor this elevated view and bring its clarity into your daily steps.",
-    "ar": "كنت تطير فوق مدينتك عند الفجر، وفي tradizione Ibn Sirin يُعتبر الطيران في الحلم علامة على ارتفاع في المقام أو تحقيق هدفٍ يسعى إليه الرائي، خاصةً عندما يكون مصحوباً بشعورٍ خفيفٍ وسكينةٍ، وقد يدل على توسع في الآفاق الروحية أو المادية. المدينة تمثل المجتمع الذي تعيش فيه، والطيران فوقها يوحي بأنك تتطلع إلى رؤية أوسع لأمورك الحياتية، وربما تسعى لتجاوز الروتين اليومي بنظرةٍ أعلى.\n\nالفجر يرمز إلى البدايات الجديدة والنور الذي يبدد الظلام، وهو بشارة بالخير والبركة التي قد تأتي بعد فترة من الانتظار أو الجهد. تألق الشوارع تحتك يعكس وضوح الطريق أمامك، وقد يُفسر على أنه دليلٌ على أن deeds الصالحة أو النوايا الطيبة ستُضاء وتصبح مرئيةً للآخرين، كما أن الضوء في الحلم غالبًا ما يرتبط بالهداية الإلهية والعلم النافع.\n\nلذا فالحلم يدعوك إلى الاستمرار في السعي نحو أهدافك بثقة، مع الاعتماد على الصلاة والذكر لتثبيت النية وتوجيه الخطى، وليكن عملك خالصًا لله، فتجد في كل صباحٍ جديدٍ فرصةً للتقدم والفلاح.  \n\nولذا يُستحب أن تستمر في طلب العلم والقيام بالأعمال الصالحة، وتستعين بالصلاة والذكر لتثبيت ما رأيت."
+    "en": "An old tree often symbolizes wisdom, endurance, and deep roots—qualities that have grown within you over time. Seeing it in your garden, a personal and nurturing space, suggests these inner strengths are closely tied to your everyday life and sense of belonging. The sudden bloom overnight points to an unexpected flourishing or a rapid emergence of new ideas, feelings, or opportunities that have been quietly developing beneath the surface.\n\nThis dream may reflect a moment when long-held patience or past efforts are finally bearing fruit, perhaps in a creative project, a relationship, or personal growth. The speed of the bloom hints that the change feels surprising yet natural, as if the conditions were ripe and you were ready to receive it. It invites you to notice where you have been nurturing yourself and to trust that the results can appear swiftly when the time is right.\n\nTake a gentle pause to acknowledge the growth you’ve cultivated, and consider how you can continue to tend your inner garden with the same care that allowed this sudden bloom to unfold.",
+    "ar": "الشجرة العتيقة في المنام ترمز غالباً إلى أصل ثابت أو شخص حكيم في حياتك، وإزهارها ليلاً يدل على بركة خفية تظهر في وقت لا يتوقعه الناس. الحديقة تمثل ملكك الخاص أو محيطك العائلي، والليل يشير إلى أمرٍ يُخفي ثم يُكشف بخير.  \n\nقد يعكس الحلم أن مشروعاً قديماً أو علاقةً طويلة الأمد بدأت تُثمر نتائج طيبة في صمت، وأن الصبر الذي زرعته في قلبك سيأتي بثمارٍ تظهر للعالم في حينه.  \n\nاستمر في رعاية ما زرعتَ بقلبٍ مطمئن، وتذكر أن كل نمو حقيقي يحتاج وقتاً وظلاً قبل أن يلمع في النهار."
   },
-  "engine": "openrouter/free+nvidia/nemotron-3-super-120b-a12b:free"
+  "engine": "nvidia/nemotron-3-super-120b-a12b:free+openrouter/free"
 }

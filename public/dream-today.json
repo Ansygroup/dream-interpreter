@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-17",
+  "date": "2026-10-18",
   "symbol": {
-    "key": "falling",
-    "en": "Falling",
-    "ar": "السقوط"
+    "key": "flying",
+    "en": "Flying",
+    "ar": "الطيران"
   },
   "dream": {
-    "en": "I fell through the air but never hit the ground.",
-    "ar": "سقطتُ عبر الهواء لكنني لم ألمس الأرض."
+    "en": "I was flying above my city at dawn and the streets glowed beneath me.",
+    "ar": "كنتُ أطير فوق مدينتي عند الفجر وتألقت الشوارع تحتي."
   },
   "reading": {
-    "en": "Falling through the air suggests a sense of losing control or moving through a period of transition, while the air itself often represents thoughts, aspirations, or the realm of the spirit. The ground, which you never reach, traditionally stands for stability, foundation, and connection to everyday reality.\n\nNot hitting the ground may reflect a feeling of being suspended—perhaps you are avoiding a situation that would require you to face reality directly, or you are caught between letting go of old patterns and finding new support. This liminal state can arise when you are uncertain about your next steps or when you feel unsupported in your current endeavors.\n\nConsider what in your waking life feels unresolved or what you might be postponing. Gently bring your attention back to the present by feeling the weight of your body, noticing the support beneath you, and allowing yourself to settle into what is steady. Take a moment to feel your feet on the earth and notice what supports you.",
-    "ar": "سقطُ عبر الهواء في الحلم قد يرمز إلى شعورٍ بفقدان السيطرة أو قلقٍ داخليٍّ بشأن أمورٍ لم تستقر بعد، وحسب ما ورد في تعبير ابن سيرين فإن السقوط يدل على مخاوف من الفشل أو من فقدان مكانةٍ ما، والهواء يرمز إلى الفكر والروح والحركة الداخلية، بينما عدم لمس الأرض يشير إلى شعورٍ بالانفصال عن الواقع أو عدم الثبات في الحياة اليومية.  \nهذا الحلم قد يكون دعوةً لإعادة تقييم التوازن بين الأفكار والمشاعر وبين الواجبات العملية، فالتحليق دون ملامسة الأرض قد يدل على أن العقل يسبح في الخيالات أو التخطيط دون أن يُترجم إلى أفعالٍ ملموسة على الأرض، وهو ما قد يسبب توتراً أو حيرةً في اتخاذ القرارات.  \nللتخفيف من هذا الشعور يُستحسن اللجوء إلى الصلاة والذكر لتثبيت القلب، والعودة إلى ممارساتٍ بسيطةٍ تُشعر بالارتباط بالواقع مثل المشي في الطبيعة أو أداء أعمالٍ نافعة تُعيد grounding للروح وتجلب السكينة الداخلية.  \nينصح بأداء صلاةٍ خفيفة وذكرٍ لتثبيت القلب والعودة إلى السكينة."
+    "en": "The act of flying suggests a surge of freedom and a broader perspective on your life. It may reflect a recent sense of empowerment or a desire to rise above everyday constraints, allowing you to see possibilities that were hidden before.\n\nThe city below points to your connections with community, work, and social roles. Its streets represent the paths you choose, the relationships you navigate, and the rhythm of daily life that grounds your aspirations.\n\nDawn and the glowing streets together evoke renewal and inner illumination. This moment of light hints at new beginnings, clarity, and the gentle emergence of hope as you move forward.\n\nTake a moment to savor this elevated view and bring its clarity into your daily steps.",
+    "ar": "كنت تطير فوق مدينتك عند الفجر، وفي tradizione Ibn Sirin يُعتبر الطيران في الحلم علامة على ارتفاع في المقام أو تحقيق هدفٍ يسعى إليه الرائي، خاصةً عندما يكون مصحوباً بشعورٍ خفيفٍ وسكينةٍ، وقد يدل على توسع في الآفاق الروحية أو المادية. المدينة تمثل المجتمع الذي تعيش فيه، والطيران فوقها يوحي بأنك تتطلع إلى رؤية أوسع لأمورك الحياتية، وربما تسعى لتجاوز الروتين اليومي بنظرةٍ أعلى.\n\nالفجر يرمز إلى البدايات الجديدة والنور الذي يبدد الظلام، وهو بشارة بالخير والبركة التي قد تأتي بعد فترة من الانتظار أو الجهد. تألق الشوارع تحتك يعكس وضوح الطريق أمامك، وقد يُفسر على أنه دليلٌ على أن deeds الصالحة أو النوايا الطيبة ستُضاء وتصبح مرئيةً للآخرين، كما أن الضوء في الحلم غالبًا ما يرتبط بالهداية الإلهية والعلم النافع.\n\nلذا فالحلم يدعوك إلى الاستمرار في السعي نحو أهدافك بثقة، مع الاعتماد على الصلاة والذكر لتثبيت النية وتوجيه الخطى، وليكن عملك خالصًا لله، فتجد في كل صباحٍ جديدٍ فرصةً للتقدم والفلاح.  \n\nولذا يُستحب أن تستمر في طلب العلم والقيام بالأعمال الصالحة، وتستعين بالصلاة والذكر لتثبيت ما رأيت."
   },
-  "engine": "nvidia/nemotron-3-super-120b-a12b:free+cache"
+  "engine": "openrouter/free+nvidia/nemotron-3-super-120b-a12b:free"
 }

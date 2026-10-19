@@ -1,17 +1,17 @@
 {
   "date": "2026-10-19",
   "symbol": {
-    "key": "marriage",
-    "en": "Marriage",
-    "ar": "الزواج"
+    "key": "water",
+    "en": "Water",
+    "ar": "الماء"
   },
   "dream": {
-    "en": "I was invited to a wedding where everyone I knew was dancing.",
-    "ar": "دُعيتُ إلى زفاف وكل من أعرفهم يرقصون."
+    "en": "I stood at the edge of a vast calm lake at sunrise.",
+    "ar": "وقفتُ على حافة بحيرة هادئة ممتدة عند شروق الشمس."
   },
   "reading": {
-    "en": "Being invited to a wedding often points to themes of union, commitment, and the start of something new in your life. It can reflect a desire for deeper connection or the recognition of a significant partnership—whether with another person, a project, or an aspect of yourself. Dancing, meanwhile, is a universal symbol of joy, harmony, and free expression; it suggests that you are, or wish to be, moving in rhythm with your emotions and surroundings.\n\nSeeing everyone you know dancing at the wedding may indicate that you feel welcomed and included in your social circle, or that you are noticing a collective sense of celebration around you. This dream could be mirroring a period where your relationships are flowing smoothly, or it might be inviting you to participate more fully in the communal happiness that surrounds you.\n\nAllow this imagery to remind you to embrace opportunities for celebration and to nurture the bonds that bring you joy. Consider how you might bring more of that dance‑like spontaneity into your daily life, honoring both your own milestones and those of the people you care about.\n\nTake a moment to notice the rhythm of your own life and let it guide you toward joyful connection.",
-    "ar": "الزفاف في المنام يرمز إلى زفافٍ literal أو إلى اتحادٍ جديد على الصعيد الاجتماعي أو الروحي، وهو علامة على الفرح والرحمة.\n\nوأن يرقصَ من حولك من أقرب الناس إليك يدل على гармоニーٍ في العلاقات، وربما إشارة إلى أن أصدقائك أو عائلتك يسرون لك الراحة والسعادة، وهو دعوة للاحتفال بالإنجازات الحالية.\n\nفالتأمل في هذا الحلم يُحثك على الدعاء والاستغفار، والابتعاد إلى صالحةٍ تُقوي قلبك لتستقبل ما يأتي بقلبٍ مستقرٍ.\n\nفاستمر في تذكر أن الحلم يعكس قلبك، ولا تدع القلق يسيطر على فرحتك، بل اجعل الصلاة تهديك."
+    "en": "A vast calm lake often mirrors the inner world — its stillness suggesting a period of emotional clarity or a longing for peace. Water, across traditions, carries the energy of the unconscious, intuition, and the flow of feeling; when it lies smooth at dawn, it can reflect a mind settling after turbulence. Sunrise adds the promise of new perception, a quiet illumination touching what was held in darkness. Standing at the edge places you in a threshold space — neither fully immersed nor turned away — a position of witness and choice.\n\nThis scene may arrive when you are approaching a fresh chapter, or when a decision asks you to meet your own depths with honesty. The calm does not demand action; it invites presence. Notice whether the dream felt welcoming or hesitant — both are honest data.\n\nTake a slow breath tomorrow morning and let your gaze rest on whatever natural light you find, simply noticing what rises.",
+    "ar": "وقفت على حافة البحيرة الهادئة عند شروق الشمس يرمز إلى الوقوف عند حدودٍ بين ما هو معروف وما هو مجهول؛ البحيرة في tradición الإسلامية تمثل العلم النقي والسكينة، وهدوءها يعكس صفاء القلب واستقرار الفكر. شروق الشمس يدل على البدايات الجديدة، والنور الإلهي الذي يزيل الظلام ويبشر بالأمل والتوفيق. الوقوف على الحافة قد يدل على استعدادك لاتخاذ خطوةٍ مهمة بعد فترة من التأمل والتحضير، وهو دعوة إلى التوكل على الله مع طلب الحكمة قبل المضي قدماً.  \n\nلتستمر في رحلتك، اجعل ذكر الله وزادك من prayer هو المرسى الذي يثبّتك على الشاطئ ويضيء طريقك نحو ما هو خير."
   },
-  "engine": "nvidia/nemotron-3-super-120b-a12b:free+openrouter/free"
+  "engine": "openrouter/free+nvidia/nemotron-3-super-120b-a12b:free"
 }

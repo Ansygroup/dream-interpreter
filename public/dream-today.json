@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "symbol": {
-    "key": "tree",
-    "en": "Tree",
-    "ar": "الشجرة"
+    "key": "marriage",
+    "en": "Marriage",
+    "ar": "الزواج"
   },
   "dream": {
-    "en": "An old tree in my garden bloomed overnight.",
-    "ar": "أزهرت شجرةٌ عتيقة في حديقتي في ليلة."
+    "en": "I was invited to a wedding where everyone I knew was dancing.",
+    "ar": "دُعيتُ إلى زفاف وكل من أعرفهم يرقصون."
   },
   "reading": {
-    "en": "An old tree often symbolizes wisdom, endurance, and deep roots—qualities that have grown within you over time. Seeing it in your garden, a personal and nurturing space, suggests these inner strengths are closely tied to your everyday life and sense of belonging. The sudden bloom overnight points to an unexpected flourishing or a rapid emergence of new ideas, feelings, or opportunities that have been quietly developing beneath the surface.\n\nThis dream may reflect a moment when long-held patience or past efforts are finally bearing fruit, perhaps in a creative project, a relationship, or personal growth. The speed of the bloom hints that the change feels surprising yet natural, as if the conditions were ripe and you were ready to receive it. It invites you to notice where you have been nurturing yourself and to trust that the results can appear swiftly when the time is right.\n\nTake a gentle pause to acknowledge the growth you’ve cultivated, and consider how you can continue to tend your inner garden with the same care that allowed this sudden bloom to unfold.",
-    "ar": "الشجرة العتيقة في المنام ترمز غالباً إلى أصل ثابت أو شخص حكيم في حياتك، وإزهارها ليلاً يدل على بركة خفية تظهر في وقت لا يتوقعه الناس. الحديقة تمثل ملكك الخاص أو محيطك العائلي، والليل يشير إلى أمرٍ يُخفي ثم يُكشف بخير.  \n\nقد يعكس الحلم أن مشروعاً قديماً أو علاقةً طويلة الأمد بدأت تُثمر نتائج طيبة في صمت، وأن الصبر الذي زرعته في قلبك سيأتي بثمارٍ تظهر للعالم في حينه.  \n\nاستمر في رعاية ما زرعتَ بقلبٍ مطمئن، وتذكر أن كل نمو حقيقي يحتاج وقتاً وظلاً قبل أن يلمع في النهار."
+    "en": "Being invited to a wedding often points to themes of union, commitment, and the start of something new in your life. It can reflect a desire for deeper connection or the recognition of a significant partnership—whether with another person, a project, or an aspect of yourself. Dancing, meanwhile, is a universal symbol of joy, harmony, and free expression; it suggests that you are, or wish to be, moving in rhythm with your emotions and surroundings.\n\nSeeing everyone you know dancing at the wedding may indicate that you feel welcomed and included in your social circle, or that you are noticing a collective sense of celebration around you. This dream could be mirroring a period where your relationships are flowing smoothly, or it might be inviting you to participate more fully in the communal happiness that surrounds you.\n\nAllow this imagery to remind you to embrace opportunities for celebration and to nurture the bonds that bring you joy. Consider how you might bring more of that dance‑like spontaneity into your daily life, honoring both your own milestones and those of the people you care about.\n\nTake a moment to notice the rhythm of your own life and let it guide you toward joyful connection.",
+    "ar": "الزفاف في المنام يرمز إلى زفافٍ literal أو إلى اتحادٍ جديد على الصعيد الاجتماعي أو الروحي، وهو علامة على الفرح والرحمة.\n\nوأن يرقصَ من حولك من أقرب الناس إليك يدل على гармоニーٍ في العلاقات، وربما إشارة إلى أن أصدقائك أو عائلتك يسرون لك الراحة والسعادة، وهو دعوة للاحتفال بالإنجازات الحالية.\n\nفالتأمل في هذا الحلم يُحثك على الدعاء والاستغفار، والابتعاد إلى صالحةٍ تُقوي قلبك لتستقبل ما يأتي بقلبٍ مستقرٍ.\n\nفاستمر في تذكر أن الحلم يعكس قلبك، ولا تدع القلق يسيطر على فرحتك، بل اجعل الصلاة تهديك."
   },
   "engine": "nvidia/nemotron-3-super-120b-a12b:free+openrouter/free"
 }

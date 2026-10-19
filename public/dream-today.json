@@ -1,17 +1,17 @@
 {
   "date": "2026-10-19",
   "symbol": {
-    "key": "water",
-    "en": "Water",
-    "ar": "الماء"
+    "key": "baby",
+    "en": "Baby",
+    "ar": "الرضيع"
   },
   "dream": {
-    "en": "I stood at the edge of a vast calm lake at sunrise.",
-    "ar": "وقفتُ على حافة بحيرة هادئة ممتدة عند شروق الشمس."
+    "en": "I held a calm sleeping baby I somehow knew was mine.",
+    "ar": "احتضنتُ رضيعاً هادئاً نائماً علمتُ أنه لي."
   },
   "reading": {
-    "en": "A vast calm lake often mirrors the inner world — its stillness suggesting a period of emotional clarity or a longing for peace. Water, across traditions, carries the energy of the unconscious, intuition, and the flow of feeling; when it lies smooth at dawn, it can reflect a mind settling after turbulence. Sunrise adds the promise of new perception, a quiet illumination touching what was held in darkness. Standing at the edge places you in a threshold space — neither fully immersed nor turned away — a position of witness and choice.\n\nThis scene may arrive when you are approaching a fresh chapter, or when a decision asks you to meet your own depths with honesty. The calm does not demand action; it invites presence. Notice whether the dream felt welcoming or hesitant — both are honest data.\n\nTake a slow breath tomorrow morning and let your gaze rest on whatever natural light you find, simply noticing what rises.",
-    "ar": "وقفت على حافة البحيرة الهادئة عند شروق الشمس يرمز إلى الوقوف عند حدودٍ بين ما هو معروف وما هو مجهول؛ البحيرة في tradición الإسلامية تمثل العلم النقي والسكينة، وهدوءها يعكس صفاء القلب واستقرار الفكر. شروق الشمس يدل على البدايات الجديدة، والنور الإلهي الذي يزيل الظلام ويبشر بالأمل والتوفيق. الوقوف على الحافة قد يدل على استعدادك لاتخاذ خطوةٍ مهمة بعد فترة من التأمل والتحضير، وهو دعوة إلى التوكل على الله مع طلب الحكمة قبل المضي قدماً.  \n\nلتستمر في رحلتك، اجعل ذكر الله وزادك من prayer هو المرسى الذي يثبّتك على الشاطئ ويضيء طريقك نحو ما هو خير."
+    "en": "A baby in dreams often points to fresh beginnings, innocence, or a part of yourself that feels vulnerable and full of potential. When the baby is calm and sleeping, it suggests that this new aspect is presently at rest, waiting for gentle attention rather than urgent action.\n\nHolding the baby while knowing it is yours reflects a sense of responsibility and nurturing toward this emerging part of your life. The act of cradling something asleep can indicate that you are providing a safe, supportive space for growth, even if you are not yet actively shaping it.\n\nTake a moment to honor the quiet potential within you, allowing it to develop at its own pace while you continue to offer steady, loving care.",
+    "ar": "احتضان رضيع هادئ ونائم في الحلم يدل عادة على بداية جديدة أو بركة صغيرة تُعطى للحالم، فالطفل في تفسير ابن sirin يرمز إلى النقاء، الخير القادم أو مشروع يحتاج إلى رعاية واهتمام. الإحساس بأن الطفل “لي” يعزز الشعور بالمسؤولية والارتباط العاطفي بهذا الأمر الجديد، بينما هدوء نومه يشير إلى استقرار وسكينة ترافق هذه البركة، ولا يُعدّ ذلك promesseً محددةً بل انعكاساً لحالة نفسية مليئة بالأمل والرضا. قد يكون الحلم دعوةً لتقدير ما يُعطى من الله، والقيام برعاية هذا النِّعم بالعمل الصادق والنية الصافية، مع الاستمرار في الذكر والصلاة لتثبيت السكينة في القلب.  \nليُذكر أن الحلم دعوة للشكر والتفكر في ما يُعطى من الله، وللاستمرار في العمل بالصدق والنية الصافية."
   },
-  "engine": "openrouter/free+nvidia/nemotron-3-super-120b-a12b:free"
+  "engine": "nvidia/nemotron-3-super-120b-a12b:free"
 }

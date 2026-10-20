@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-19",
+  "date": "2026-10-20",
   "symbol": {
-    "key": "falling",
-    "en": "Falling",
-    "ar": "السقوط"
+    "key": "house",
+    "en": "House",
+    "ar": "البيت"
   },
   "dream": {
-    "en": "I fell through the air but never hit the ground.",
-    "ar": "سقطتُ عبر الهواء لكنني لم ألمس الأرض."
+    "en": "I wandered through rooms of my childhood home I had forgotten.",
+    "ar": "تجوّلتُ في غرف من بيت طفولتي كنتُ قد نسيتها."
   },
   "reading": {
-    "en": "Falling through the air often symbolizes a sense of losing control or venturing into the unknown, while the air itself can represent thoughts, aspirations, or the realm of the mind. The fact that you never hit the ground suggests that, despite the feeling of dropping, you are not encountering a harsh impact or a concrete obstacle in your waking life; instead, you may be suspended in a state of possibility, waiting for clarity or resolution.\n\nThis dream may reflect a current situation where you feel you are stepping beyond familiar boundaries—perhaps a new project, relationship, or personal growth—but you have not yet faced the consequences or outcomes that usually follow such leaps. The lack of impact can be reassuring, indicating that your inner resources are cushioning the experience, allowing you to explore without fear of immediate failure.\n\nConsider what area of your life feels like a free fall right now, and notice how you are staying aloft. Trust that the support you need is already present, even if it is not yet visible. Allow yourself to linger in this open space, gathering insight before you decide where to land.",
-    "ar": "السقوط في الحلم غالبًا ما يعكس شعورًا بالقلق أو فقدان السيطرة، وقد يشير إلى الحاجة إلى التواضع واللجوء إلى الله تعالى. الهواء يرمز إلى الأفكار أو الروح أو ما هو غير ملموس، وربما يدل على حالة من التردد أو التفكير المستمر في أمر ما. عدم لمس الأرض يعبر عن نقص الاستقرار أو الشعور بعدم الارتباط بأساس متين في الحياة.\n\nقد يكون هذا الحلم تنبيهًا لك لتعيد النظر في جوانب حياتك التي تشعر فيها بأنك “تطفو” دون ثبات، سواء في العمل، العلاقات، أو الشؤون الروحية. يُستحسن أن تسعى لتقوية grounding عبر الصلاة المنتظمة، والذكر، واللجوء إلى الاستشارة الصادقة من أهل العلم أو الثقة.\n\nلذلك، خذ لحظة لتستقر قلبك،.perform Salah بتركيز، واذكر الله تعالى ليُثبّت خطواتك على الطريق المستقيم."
+    "en": "Wandering through rooms of a childhood home often points to the dreamer’s inner landscape — each room can represent a facet of personality, memory, or emotion that once felt familiar. The childhood home itself is a classic symbol of safety, roots, and the formative self; revisiting it suggests a desire to reconnect with early experiences or aspects of the self that have been set aside.\n\nThe act of wandering implies exploration without a fixed destination, indicating a current phase of seeking understanding or integration. Forgetting the rooms hints that some of these inner aspects may have been overlooked or repressed, and the dream invites gentle attention to what has been left behind in the psyche.\n\nReflect on what feelings arise when you recall those early spaces, and let them guide you toward present‑day kindness and self‑acceptance.",
+    "ar": "في رؤيتك،/rooms تمثل spaces داخلية أو جوانب من النفس، بينما بيت طفولتك يرمز إلى جذورك وتجارب الطفولة التي شكلت شخصيتك. التجوال بين هذه الغرف يشير إلى حركة داخلية أو بحث عن جزء مفقود من نفسك.\n\nقد يعبّر هذا الحلم عن رغبة في reconnecting مع ماضٍ كنتَ تنساه، أو عن شعور بأنك تبحث عن استقرارٍ في حياتك الحالية، خاصة إذا كانت circumstances الحالية تشعر بالضياع أو عدم اليقين.\n\nمن خلال prayer والذكر، يمكنك أن تعيد ترتيب هذه الذكريات بأمان، وتستعيد الثقة بأنك لست وحدك في هذه الرحلة. Remember that the dream is a gentle reminder to seek inner peace and return to your authentic self. اعتمد على الصبر والقلب الصافي، فالعقل والروح يستفيدان من التفكير الهادئ."
   },
   "engine": "nvidia/nemotron-3-super-120b-a12b:free+openrouter/free"
 }

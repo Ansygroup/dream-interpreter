@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "symbol": {
-    "key": "house",
-    "en": "House",
-    "ar": "البيت"
+    "key": "fire",
+    "en": "Fire",
+    "ar": "النار"
   },
   "dream": {
-    "en": "I wandered through rooms of my childhood home I had forgotten.",
-    "ar": "تجوّلتُ في غرف من بيت طفولتي كنتُ قد نسيتها."
+    "en": "A small fire warmed a cold empty room.",
+    "ar": "أضاءت نارٌ صغيرة غرفةً باردةً خالية."
   },
   "reading": {
-    "en": "Wandering through rooms of a childhood home often points to the dreamer’s inner landscape — each room can represent a facet of personality, memory, or emotion that once felt familiar. The childhood home itself is a classic symbol of safety, roots, and the formative self; revisiting it suggests a desire to reconnect with early experiences or aspects of the self that have been set aside.\n\nThe act of wandering implies exploration without a fixed destination, indicating a current phase of seeking understanding or integration. Forgetting the rooms hints that some of these inner aspects may have been overlooked or repressed, and the dream invites gentle attention to what has been left behind in the psyche.\n\nReflect on what feelings arise when you recall those early spaces, and let them guide you toward present‑day kindness and self‑acceptance.",
-    "ar": "في رؤيتك،/rooms تمثل spaces داخلية أو جوانب من النفس، بينما بيت طفولتك يرمز إلى جذورك وتجارب الطفولة التي شكلت شخصيتك. التجوال بين هذه الغرف يشير إلى حركة داخلية أو بحث عن جزء مفقود من نفسك.\n\nقد يعبّر هذا الحلم عن رغبة في reconnecting مع ماضٍ كنتَ تنساه، أو عن شعور بأنك تبحث عن استقرارٍ في حياتك الحالية، خاصة إذا كانت circumstances الحالية تشعر بالضياع أو عدم اليقين.\n\nمن خلال prayer والذكر، يمكنك أن تعيد ترتيب هذه الذكريات بأمان، وتستعيد الثقة بأنك لست وحدك في هذه الرحلة. Remember that the dream is a gentle reminder to seek inner peace and return to your authentic self. اعتمد على الصبر والقلب الصافي، فالعقل والروح يستفيدان من التفكير الهادئ."
+    "en": "The small fire in your dream is a classic symbol of inner warmth, inspiration, and the spark of transformation. It suggests a gentle but steady source of motivation or comfort that can dispel darkness and chill. Fire also hints at the burning desire to bring light to a situation that feels dim or neglected.  \n\nThe cold, empty room represents a space of potential—an area of your life that feels vacant, quiet, or perhaps lacking in nourishment. Its emptiness is not necessarily a void but an open canvas where new possibilities can arise. The cold aspect underscores a feeling of stillness or emotional distance.  \n\nTogether, the fire’s modest warmth entering the room illustrates how a small, personal source of energy can begin to fill an empty part of your inner world, inviting comfort and gradual illumination. Take a moment to notice where you might gently nurture that spark in your waking life.",
+    "ar": "النار الصغيرة في المنام تُشير غالبًا إلى نور الهداية أو بداية علم نافع، خاصة إذا كانت في مكان بارد وخالٍ؛ فالبرودة قد ترمز إلى فتور القلب أو وحدة يمر بها الرائي، والفراغ يدل على خلو النفس من الأنس أو الذكر. إضاءة النار لهذا المكان توحي برحمة خفية تدخل حياة الرائي بلطف، تُدفئ ما برد وتستأنس ما خلا.\n\nقد يعكس الحلم لحظة داخلية يشعر فيها صاحب الرؤيا بالحاجة إلى دفء روحي أو بصيرة ترشده في أمر يشغله، والنار هنا ليست حارقة بل مبشرة، وكأنها شرارة دعاء أو عمل صالح بدأ يظهر أثره في خلوة الرائي. الانتباه إلى حال النار — هادئة، غير ضارة — يزيد في رجاء الخير.\n\nاحرص على إدامة الأذكار والصلاة في أوقات السكون، فإن القلوب تُستأنس بذكر الله وتُدفأ بنور طاعته، فربّ شرارة صغيرة أضاءت ظلمة طويلة."
   },
-  "engine": "nvidia/nemotron-3-super-120b-a12b:free+openrouter/free"
+  "engine": "openrouter/free"
 }

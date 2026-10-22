@@ -1,18 +1,18 @@
 
 {
-  "date": "2026-10-21",
+  "date": "2026-10-22",
   "symbol": {
-    "key": "fire",
-    "en": "Fire",
-    "ar": "النار"
+    "key": "flying",
+    "en": "Flying",
+    "ar": "الطيران"
   },
   "dream": {
-    "en": "A small fire warmed a cold empty room.",
-    "ar": "أضاءت نارٌ صغيرة غرفةً باردةً خالية."
+    "en": "I was flying above my city at dawn and the streets glowed beneath me.",
+    "ar": "كنتُ أطير فوق مدينتي عند الفجر وتألقت الشوارع تحتي."
   },
   "reading": {
-    "en": "The small fire in your dream is a classic symbol of inner warmth, inspiration, and the spark of transformation. It suggests a gentle but steady source of motivation or comfort that can dispel darkness and chill. Fire also hints at the burning desire to bring light to a situation that feels dim or neglected.  \n\nThe cold, empty room represents a space of potential—an area of your life that feels vacant, quiet, or perhaps lacking in nourishment. Its emptiness is not necessarily a void but an open canvas where new possibilities can arise. The cold aspect underscores a feeling of stillness or emotional distance.  \n\nTogether, the fire’s modest warmth entering the room illustrates how a small, personal source of energy can begin to fill an empty part of your inner world, inviting comfort and gradual illumination. Take a moment to notice where you might gently nurture that spark in your waking life.",
-    "ar": "النار الصغيرة في المنام تُشير غالبًا إلى نور الهداية أو بداية علم نافع، خاصة إذا كانت في مكان بارد وخالٍ؛ فالبرودة قد ترمز إلى فتور القلب أو وحدة يمر بها الرائي، والفراغ يدل على خلو النفس من الأنس أو الذكر. إضاءة النار لهذا المكان توحي برحمة خفية تدخل حياة الرائي بلطف، تُدفئ ما برد وتستأنس ما خلا.\n\nقد يعكس الحلم لحظة داخلية يشعر فيها صاحب الرؤيا بالحاجة إلى دفء روحي أو بصيرة ترشده في أمر يشغله، والنار هنا ليست حارقة بل مبشرة، وكأنها شرارة دعاء أو عمل صالح بدأ يظهر أثره في خلوة الرائي. الانتباه إلى حال النار — هادئة، غير ضارة — يزيد في رجاء الخير.\n\nاحرص على إدامة الأذكار والصلاة في أوقات السكون، فإن القلوب تُستأنس بذكر الله وتُدفأ بنور طاعته، فربّ شرارة صغيرة أضاءت ظلمة طويلة."
+    "en": "Flying above familiar ground often speaks to a widening perspective — a sense of rising above daily concerns to see the larger pattern. The city below represents your community, your routines, the structures you navigate each day; seeing it from above suggests you are gaining clarity about your place within it. Dawn is the classic threshold of renewal, the moment when darkness yields to light, hinting at a fresh chapter or a shift in awareness. The glowing streets amplify this: the paths you know are lit from within, as if your own attention has made them visible and meaningful.\n\nSuch a vision tends to arrive when you are integrating a new understanding — perhaps a decision made, a relationship deepened, or a creative impulse stirring. The glow does not come from outside; it rises from the streets themselves, reminding you that the resources you seek are already embedded in your everyday life. You need not leave your world to find illumination; you need only change your altitude.\n\nTrust the view you have earned, and let it guide your next steps on the ground.",
+    "ar": "الطيران في المنام يدلّ على ارتفاع الهمّة وتحرّر النفس من القيود، وغالباً ما يُفسَّر على أنه سعي نحو هدف عالٍ أو طلب للعلم والرزق. رؤية المدينة التي تعرفها ترمز إلى محيطك الاجتماعي ومسؤولياتك اليومية، بينما الفجر يشير إلى بداية جديدة ونور الهداية الذي يشرق على قلبك. تألّق الشوارع تحتيك يعكس وضوح الطريق أمامك وبركة الخطوات التي تخطو بها، ويدلّ على أن جهودك ستلقى ثمارها بإذن الله.  \n\nاجعل هذا الحلم دافعاً لك لتثبيت نيتك الصالحة، وأكثر من الدعاء والذكر عند كل فجر، فإن النور الذي رأيته في المنام هو بشارة بتيسير الأمور وتقوية العزيمة."
   },
-  "engine": "openrouter/free"
+  "engine": "nvidia/nemotron-3-ultra-550b-a55b:free"
 }

@@ -1,18 +1,18 @@
 
 {
-  "date": "2026-10-19",
+  "date": "2026-10-21",
   "symbol": {
-    "key": "falling",
-    "en": "Falling",
-    "ar": "السقوط"
+    "key": "fire",
+    "en": "Fire",
+    "ar": "النار"
   },
   "dream": {
-    "en": "I fell through the air but never hit the ground.",
-    "ar": "سقطتُ عبر الهواء لكنني لم ألمس الأرض."
+    "en": "A small fire warmed a cold empty room.",
+    "ar": "أضاءت نارٌ صغيرة غرفةً باردةً خالية."
   },
   "reading": {
-    "en": "Falling through the air often symbolizes a sense of losing control or venturing into the unknown, while the air itself can represent thoughts, aspirations, or the realm of the mind. The fact that you never hit the ground suggests that, despite the feeling of dropping, you are not encountering a harsh impact or a concrete obstacle in your waking life; instead, you may be suspended in a state of possibility, waiting for clarity or resolution.\n\nThis dream may reflect a current situation where you feel you are stepping beyond familiar boundaries—perhaps a new project, relationship, or personal growth—but you have not yet faced the consequences or outcomes that usually follow such leaps. The lack of impact can be reassuring, indicating that your inner resources are cushioning the experience, allowing you to explore without fear of immediate failure.\n\nConsider what area of your life feels like a free fall right now, and notice how you are staying aloft. Trust that the support you need is already present, even if it is not yet visible. Allow yourself to linger in this open space, gathering insight before you decide where to land.",
-    "ar": "السقوط في الحلم غالبًا ما يعكس شعورًا بالقلق أو فقدان السيطرة، وقد يشير إلى الحاجة إلى التواضع واللجوء إلى الله تعالى. الهواء يرمز إلى الأفكار أو الروح أو ما هو غير ملموس، وربما يدل على حالة من التردد أو التفكير المستمر في أمر ما. عدم لمس الأرض يعبر عن نقص الاستقرار أو الشعور بعدم الارتباط بأساس متين في الحياة.\n\nقد يكون هذا الحلم تنبيهًا لك لتعيد النظر في جوانب حياتك التي تشعر فيها بأنك “تطفو” دون ثبات، سواء في العمل، العلاقات، أو الشؤون الروحية. يُستحسن أن تسعى لتقوية grounding عبر الصلاة المنتظمة، والذكر، واللجوء إلى الاستشارة الصادقة من أهل العلم أو الثقة.\n\nلذلك، خذ لحظة لتستقر قلبك،.perform Salah بتركيز، واذكر الله تعالى ليُثبّت خطواتك على الطريق المستقيم."
+    "en": "The small fire in your dream is a classic symbol of inner warmth, inspiration, and the spark of transformation. It suggests a gentle but steady source of motivation or comfort that can dispel darkness and chill. Fire also hints at the burning desire to bring light to a situation that feels dim or neglected.  \n\nThe cold, empty room represents a space of potential—an area of your life that feels vacant, quiet, or perhaps lacking in nourishment. Its emptiness is not necessarily a void but an open canvas where new possibilities can arise. The cold aspect underscores a feeling of stillness or emotional distance.  \n\nTogether, the fire’s modest warmth entering the room illustrates how a small, personal source of energy can begin to fill an empty part of your inner world, inviting comfort and gradual illumination. Take a moment to notice where you might gently nurture that spark in your waking life.",
+    "ar": "النار الصغيرة في المنام تُشير غالبًا إلى نور الهداية أو بداية علم نافع، خاصة إذا كانت في مكان بارد وخالٍ؛ فالبرودة قد ترمز إلى فتور القلب أو وحدة يمر بها الرائي، والفراغ يدل على خلو النفس من الأنس أو الذكر. إضاءة النار لهذا المكان توحي برحمة خفية تدخل حياة الرائي بلطف، تُدفئ ما برد وتستأنس ما خلا.\n\nقد يعكس الحلم لحظة داخلية يشعر فيها صاحب الرؤيا بالحاجة إلى دفء روحي أو بصيرة ترشده في أمر يشغله، والنار هنا ليست حارقة بل مبشرة، وكأنها شرارة دعاء أو عمل صالح بدأ يظهر أثره في خلوة الرائي. الانتباه إلى حال النار — هادئة، غير ضارة — يزيد في رجاء الخير.\n\nاحرص على إدامة الأذكار والصلاة في أوقات السكون، فإن القلوب تُستأنس بذكر الله وتُدفأ بنور طاعته، فربّ شرارة صغيرة أضاءت ظلمة طويلة."
   },
-  "engine": "nvidia/nemotron-3-super-120b-a12b:free+openrouter/free"
+  "engine": "openrouter/free"
 }

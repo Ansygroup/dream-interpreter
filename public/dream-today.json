@@ -1,18 +1,18 @@
 
 {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "symbol": {
-    "key": "flying",
-    "en": "Flying",
-    "ar": "الطيران"
+    "key": "tree",
+    "en": "Tree",
+    "ar": "الشجرة"
   },
   "dream": {
-    "en": "I was flying above my city at dawn and the streets glowed beneath me.",
-    "ar": "كنتُ أطير فوق مدينتي عند الفجر وتألقت الشوارع تحتي."
+    "en": "An old tree in my garden bloomed overnight.",
+    "ar": "أزهرت شجرةٌ عتيقة في حديقتي في ليلة."
   },
   "reading": {
-    "en": "Flying above familiar ground often speaks to a widening perspective — a sense of rising above daily concerns to see the larger pattern. The city below represents your community, your routines, the structures you navigate each day; seeing it from above suggests you are gaining clarity about your place within it. Dawn is the classic threshold of renewal, the moment when darkness yields to light, hinting at a fresh chapter or a shift in awareness. The glowing streets amplify this: the paths you know are lit from within, as if your own attention has made them visible and meaningful.\n\nSuch a vision tends to arrive when you are integrating a new understanding — perhaps a decision made, a relationship deepened, or a creative impulse stirring. The glow does not come from outside; it rises from the streets themselves, reminding you that the resources you seek are already embedded in your everyday life. You need not leave your world to find illumination; you need only change your altitude.\n\nTrust the view you have earned, and let it guide your next steps on the ground.",
-    "ar": "الطيران في المنام يدلّ على ارتفاع الهمّة وتحرّر النفس من القيود، وغالباً ما يُفسَّر على أنه سعي نحو هدف عالٍ أو طلب للعلم والرزق. رؤية المدينة التي تعرفها ترمز إلى محيطك الاجتماعي ومسؤولياتك اليومية، بينما الفجر يشير إلى بداية جديدة ونور الهداية الذي يشرق على قلبك. تألّق الشوارع تحتيك يعكس وضوح الطريق أمامك وبركة الخطوات التي تخطو بها، ويدلّ على أن جهودك ستلقى ثمارها بإذن الله.  \n\nاجعل هذا الحلم دافعاً لك لتثبيت نيتك الصالحة، وأكثر من الدعاء والذكر عند كل فجر، فإن النور الذي رأيته في المنام هو بشارة بتيسير الأمور وتقوية العزيمة."
+    "en": "An old tree blooming overnight is a powerful and hopeful symbol across many traditions, representing sudden renewal, hidden potential, and the unexpected awakening of long-dormant areas of your life. In classical dream lore, a mature tree reflects your foundation, ancestral roots, and the deep strength you have accumulated over time. When it suddenly bursts into blossom, it suggests that something within you—perhaps a forgotten passion, a quiet resilience, or a project you thought had stalled—is receiving fresh vitality and is ready to flourish.\n\nThe setting of your own garden grounds this transformation in your personal sphere, signaling that this growth is intimately connected to your inner self and daily life rather than outside forces. The overnight timing underscores a swift shift in perspective or an impending breakthrough, reminding you that deep preparation often happens beneath the surface long before the visible flowers appear. What felt static or aged is actually rich with life, waiting for the right moment to show its beauty.\n\nTake time to honor the quiet growth already working within you, and trust that your patience and deep roots are about to yield unexpected beauty.",
+    "ar": "رؤية شجرة عتيقة تزهر في ليلة واحدة في المنام تحمل في طياتها بشائر خير بركة ونماء. الشجرة القديمة العتيقة في التعبير الإسلامي، كما يذكر ابن سيرين وغيره من أئمة التعبير، تدل على الأصول الثابتة، والنسب، أو الأمر المتجذر في حياة الإنسان كالعمل أو الأسرة. وإزهارها المفاجئ بعد طول زمان يشير إلى تجدد الأمل، وانفراج الأمور بعد صبر طويل، وفتح أبواب الفرج والخير من حيث لا يحتسب المرء.\n\nأما وقوع هذا الإزهار في الليل، فهو رمز إلى السريرة الصالحة والفرج الذي يأتي في أوقات الهدوء والطمأنينة. فالليل في الرؤى هو سكن وراحة، وإشراق الزهر فيه يبشر بنور يضيء مرحلة جديدة من حياتك، ويمنحك ثمار التعب والجهد الذي غُرِس في الماضي. هذه الرؤيا تدعوك للتفاؤل واستقبال الأيام القادمة بقلب مطمئن وروح متفائلة.\n\nفتأمل ما في حياتك من أمر قديم ظننت أن نماءه قد أبطأ، واستعد لتلقي خيره وبركته بإذن الله ورعايته."
   },
-  "engine": "nvidia/nemotron-3-ultra-550b-a55b:free"
+  "engine": "fallback:gemini-3.6-flash"
 }

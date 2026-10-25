@@ -1,18 +1,18 @@
 
 {
-  "date": "2026-10-23",
+  "date": "2026-10-24",
   "symbol": {
-    "key": "tree",
-    "en": "Tree",
-    "ar": "الشجرة"
+    "key": "baby",
+    "en": "Baby",
+    "ar": "الرضيع"
   },
   "dream": {
-    "en": "An old tree in my garden bloomed overnight.",
-    "ar": "أزهرت شجرةٌ عتيقة في حديقتي في ليلة."
+    "en": "I held a calm sleeping baby I somehow knew was mine.",
+    "ar": "احتضنتُ رضيعاً هادئاً نائماً علمتُ أنه لي."
   },
   "reading": {
-    "en": "An old tree blooming overnight is a powerful and hopeful symbol across many traditions, representing sudden renewal, hidden potential, and the unexpected awakening of long-dormant areas of your life. In classical dream lore, a mature tree reflects your foundation, ancestral roots, and the deep strength you have accumulated over time. When it suddenly bursts into blossom, it suggests that something within you—perhaps a forgotten passion, a quiet resilience, or a project you thought had stalled—is receiving fresh vitality and is ready to flourish.\n\nThe setting of your own garden grounds this transformation in your personal sphere, signaling that this growth is intimately connected to your inner self and daily life rather than outside forces. The overnight timing underscores a swift shift in perspective or an impending breakthrough, reminding you that deep preparation often happens beneath the surface long before the visible flowers appear. What felt static or aged is actually rich with life, waiting for the right moment to show its beauty.\n\nTake time to honor the quiet growth already working within you, and trust that your patience and deep roots are about to yield unexpected beauty.",
-    "ar": "رؤية شجرة عتيقة تزهر في ليلة واحدة في المنام تحمل في طياتها بشائر خير بركة ونماء. الشجرة القديمة العتيقة في التعبير الإسلامي، كما يذكر ابن سيرين وغيره من أئمة التعبير، تدل على الأصول الثابتة، والنسب، أو الأمر المتجذر في حياة الإنسان كالعمل أو الأسرة. وإزهارها المفاجئ بعد طول زمان يشير إلى تجدد الأمل، وانفراج الأمور بعد صبر طويل، وفتح أبواب الفرج والخير من حيث لا يحتسب المرء.\n\nأما وقوع هذا الإزهار في الليل، فهو رمز إلى السريرة الصالحة والفرج الذي يأتي في أوقات الهدوء والطمأنينة. فالليل في الرؤى هو سكن وراحة، وإشراق الزهر فيه يبشر بنور يضيء مرحلة جديدة من حياتك، ويمنحك ثمار التعب والجهد الذي غُرِس في الماضي. هذه الرؤيا تدعوك للتفاؤل واستقبال الأيام القادمة بقلب مطمئن وروح متفائلة.\n\nفتأمل ما في حياتك من أمر قديم ظننت أن نماءه قد أبطأ، واستعد لتلقي خيره وبركته بإذن الله ورعايته."
+    "en": "Holding a baby in dreams often points to a tender new beginning — a creative project, a fresh relationship, or an emerging part of yourself that asks for care. The baby’s calm sleep suggests this newness feels safe and trusted rather than overwhelming. Your quiet certainty that the child is yours speaks to a deep, perhaps unconscious, acceptance of responsibility and belonging.\n\nSuch a scene may mirror a waking moment where you are gently nurturing something fragile yet promising: a skill you are learning, a commitment you have made, or a softer side of your own nature you are allowing to surface. The lack of anxiety in the dream hints that you already possess the patience and steadiness this endeavor requires.\n\nNotice how the dream’s stillness contrasts with any daytime pressure to perform or prove yourself. The sleeping infant does not demand; it simply exists, and your arms are enough.\n\nLet this image remind you that the most vital growth often happens in quiet, unforced moments of presence.",
+    "ar": "احتضان الرضيع الهادئ في المنام يُشير غالباً إلى نعمة جديدة أو مسؤولية تُقبل بقلبٍ مطمئن، فالطفل رمز للبركة والنماء، والنوم العميق يعكس السكينة والطمأنينة التي تغمرك. علمك بأنه “لك” يدل على وعيك التام بهذه الأمانة واستعدادك لرعايتها، وهو ما يتوافق مع تفسير ابن سيرين للاحتضان كدليل على المحبة والالتزام. قد يكون الحلم تذكيراً لك بأن تثق في قدرتك على تحمل ما يُلقى على عاتقك، وأن تسعى لتحقيق التوازن بين العطاء والراحة. استعن بالصلاة والذكر لتثبيت قلبك على هذا الطريق."
   },
-  "engine": "fallback:gemini-3.6-flash"
+  "engine": "nvidia/nemotron-3-ultra-550b-a55b:free"
 }

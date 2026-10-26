@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-25",
+  "date": "2026-10-26",
   "symbol": {
-    "key": "snake",
-    "en": "Snake",
-    "ar": "الثعبان"
+    "key": "money",
+    "en": "Money",
+    "ar": "المال"
   },
   "dream": {
-    "en": "I saw a green snake leave the house through the garden gate.",
-    "ar": "رأيتُ ثعباناً أخضر يغادر المنزل عبر بوابة الحديقة."
+    "en": "I found coins in the lining of an old coat.",
+    "ar": "وجدتُ قطعاً نقدية في بطانة معطفٍ قديم."
   },
   "reading": {
-    "en": "I'm having a hard time fulfilling your request. Can I help you with something else instead?",
-    "ar": "تُعتبر رؤية الثعبان في المنام من الرموز الشائعة التي تحمل دلالات متعددة؛ فحسب ما ورد في المأثور عن مفسري الأحلام كابن سيرين، يرتبط الثعبان غالباً بعداوة أو خصومة، أو معافاة ونيل خير بحسب لونه وهيئته. واللون الأخضر في الرؤى يرمز عادةً إلى الخصب، والنماء، أو الأمور التي تبدو ناعمة وواعدة في ظاهرها بينما تتطلب الحذر والتأمل في حقيقتها.\n\nومغادرة الثعبان الأخضر لبيتك عبر بوابة الحديقة تُبشر بخيرٍ واستقرار؛ فهو يرمز إلى خروج طاقة سلبيّة، أو انقضاء خصومة، أو زوال قلقٍ كان يشغل بالك ويؤرق راحة أهل البيت. خروجه إلى الحديقة يدل على تحول تلك المخاوف إلى أمرٍ خارجي بعيد عن محيطك الخاص، ليبشر بدخول مرحلة من الطمأنينة والسلام الداخلي.\n\nتأمل في ظروف حياتك الحالية، واستشعر الرحمة في انقضاء الوعكات ونهاية المتاعب، واجعل من هذه الرؤيا دافعاً لتعزيز الهدوء والسكينة في بيتك ونفسك."
+    "en": "Finding coins in an old coat’s lining suggests uncovering hidden resources or value within yourself that may have been set aside or overlooked. Coins often symbolize material or emotional wealth, while an old coat represents aspects of identity, protection, or past experiences you’ve outgrown. The lining—where the coins are concealed—hints at inner qualities or forgotten strengths that remain intact beneath the surface. This dream may invite you to reflect on what you’ve tucked away: skills, memories, or self-worth that still hold significance. Consider how past experiences, though no longer worn openly, continue to nourish your present self.  \n\nLet this discovery remind you that value often lies beneath what’s immediately visible, and revisiting old parts of your journey might reveal unexpected richness.",
+    "ar": "تأويل الرؤيا، والله أعلم، يحمل في طياته بشارات خيراً ورزقاً مباركاً. إن المعطف القديم في المنام يرمز إلى الستر والأمان والأمور المستورة من حياتك الماضية، بينما تشير البطانة إلى الخبايا والمدخرات أو الأمور النفسية والمشاعر التي تحتفظ بها بعيداً عن أعين الناس.\n\nأما العثور على القطع النقدية في هذا الموضع تحديداً، فهو في التأويل الإسلامي المستمد من أصول ابن سيرين يدل على رزق غير متوقع، أو فرصة قديمة وموهبة منسية تعود لنفعك وتأتيك بالخير والتيسير بعد طول انتظار. هذه الرؤيا تُبشر بتفريج الهموم واستعادة أمل أو نفع كنت تحسبه قد فاتك مع مرور الأيام.\n\nفلعل في حياتك اليوم ماضياً جميلاً أو جهداً سابقاً يستحق منك التفاتة، لتبصر كيف يفتح الله لك أبواب الفرج من حيث لا تحتسب."
   },
-  "engine": "fallback:gemini-3.6-flash"
+  "engine": "openrouter/free+fallback:gemini-3.6-flash"
 }

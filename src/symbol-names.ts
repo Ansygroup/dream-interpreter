@@ -157,7 +157,7 @@ export const SYMBOL_NAMES: Record<string, SymbolName> = {
   water_drink: { en: 'drinking water', ar: 'شرب الماء', el: 'πίνω potable water', km: 'ទឹកភ្លៀង', lt: 'gėrimo vandenis', aliases: ['ماء'] },
   water_flood: { en: 'water flood', ar: 'فيضان', el: 'πλευροκατάρτιση', km: 'ទឹកជាងកំនត់', lt: 'Vandens švabimas', aliases: ['غرق'] },
   weapon: { en: 'weapon', ar: 'سلاح', el: 'οπλοί (oploi)', km: 'ការការងារ', lt: 'senjata', aliases: ['سلاح'] },
-  wedding: { en: 'wedding', ar: 'زفاف', aliases: ['عرس', 'زواج'] },
-  winning: { en: 'winning', ar: 'فوز', aliases: ['نجاح'] },
-  wound: { en: 'wound', ar: 'جرح', aliases: ['جراح'] },
+  wedding: { en: 'wedding', ar: 'زفاف', el: 'γάμος', km: 'ចិត្តចិត្ត (chiet chiet)', lt: 'sventėja', aliases: ['عرس', 'زواج'] },
+  winning: { en: 'winning', ar: 'فوز', el: 'νίκη (nī́)', km: 'ចាស់ចិត្ត', lt: 'laimė', aliases: ['نجاح'] },
+  wound: { en: 'wound', ar: 'جرح', el: 'τραυματισμός', km: 'ការកែវក្រងការកែវក្រងការកែវក្រង', lt: 'lūžas', aliases: ['جراح'] },
 };

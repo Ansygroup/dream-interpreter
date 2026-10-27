@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-26",
+  "date": "2026-10-27",
   "symbol": {
-    "key": "money",
-    "en": "Money",
-    "ar": "المال"
+    "key": "bird",
+    "en": "Bird",
+    "ar": "الطائر"
   },
   "dream": {
-    "en": "I found coins in the lining of an old coat.",
-    "ar": "وجدتُ قطعاً نقدية في بطانة معطفٍ قديم."
+    "en": "A white bird landed on my open palm and sang.",
+    "ar": "هبط طائرٌ أبيض على راحتي المفتوحة وغرّد."
   },
   "reading": {
-    "en": "Finding coins in an old coat’s lining suggests uncovering hidden resources or value within yourself that may have been set aside or overlooked. Coins often symbolize material or emotional wealth, while an old coat represents aspects of identity, protection, or past experiences you’ve outgrown. The lining—where the coins are concealed—hints at inner qualities or forgotten strengths that remain intact beneath the surface. This dream may invite you to reflect on what you’ve tucked away: skills, memories, or self-worth that still hold significance. Consider how past experiences, though no longer worn openly, continue to nourish your present self.  \n\nLet this discovery remind you that value often lies beneath what’s immediately visible, and revisiting old parts of your journey might reveal unexpected richness.",
-    "ar": "تأويل الرؤيا، والله أعلم، يحمل في طياته بشارات خيراً ورزقاً مباركاً. إن المعطف القديم في المنام يرمز إلى الستر والأمان والأمور المستورة من حياتك الماضية، بينما تشير البطانة إلى الخبايا والمدخرات أو الأمور النفسية والمشاعر التي تحتفظ بها بعيداً عن أعين الناس.\n\nأما العثور على القطع النقدية في هذا الموضع تحديداً، فهو في التأويل الإسلامي المستمد من أصول ابن سيرين يدل على رزق غير متوقع، أو فرصة قديمة وموهبة منسية تعود لنفعك وتأتيك بالخير والتيسير بعد طول انتظار. هذه الرؤيا تُبشر بتفريج الهموم واستعادة أمل أو نفع كنت تحسبه قد فاتك مع مرور الأيام.\n\nفلعل في حياتك اليوم ماضياً جميلاً أو جهداً سابقاً يستحق منك التفاتة، لتبصر كيف يفتح الله لك أبواب الفرج من حيث لا تحتسب."
+    "en": "The white bird is a timeless symbol of peace, spiritual guidance, and messages from the unconscious or higher self. Its gentle landing on your open palm suggests trust, receptivity, and an invitation to receive something precious or enlightening. The act of singing harmonizes with this, indicating an inner expression of joy, authenticity, or a call to embrace your true voice. Together, these symbols point to a moment of quiet connection—perhaps with your deeper self or a creative impulse that feels pure and uplifting. Reflect on what in your waking life might be inviting such tender attention, and let this sense of openness guide you toward honest feeling and gentle action.",
+    "ar": "الطائر الأبيض في المنام يُشير غالباً إلى بشرى طيبة، أو قدوم خبر مفرح، أو شخص نقي السريرة يدخل حياة الرائي. هبوطه على الراحة المفتوحة يعكس استعدادك الداخلي لاستقبال الخير، وسعة صدرك لقبول ما يُقدّر الله لك. التغريد يرمز إلى الذكر الجميل، أو كلام طيب يُسمع، أو انشراح صدر بعد ضيق. هذه الرموز مجتمعة ترسم صورة لحظة رحمة ولطف إلهي، تذكّرك بأن القلوب المفتوحة تُمنح السكينة.  \n\nقد تكون الرؤية دعوةً لتأمل النعم الصغيرة التي تغفل عنها العين، وللتأكد من أن يدك ممدودة بالعطاء لا بالأخذ فقط. الطائر لا يحطّ إلا على موضع أمين، فكذلك البركة تنزل على النفس المطمئنة.  \n\nاحرص على دوام الشكر والذكر، واجعل قلبك كالراحة المفتوحة: مستقبلةً للنور، مطلقةً للخير."
   },
-  "engine": "openrouter/free+fallback:gemini-3.6-flash"
+  "engine": "openrouter/free+nvidia/nemotron-3-ultra-550b-a55b:free"
 }

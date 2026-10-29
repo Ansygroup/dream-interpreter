@@ -1,18 +1,18 @@
 
 {
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "symbol": {
-    "key": "bird",
-    "en": "Bird",
-    "ar": "الطائر"
+    "key": "dog",
+    "en": "Dog",
+    "ar": "الكلب"
   },
   "dream": {
-    "en": "A white bird landed on my open palm and sang.",
-    "ar": "هبط طائرٌ أبيض على راحتي المفتوحة وغرّد."
+    "en": "A dog I had never met followed me home and stayed.",
+    "ar": "تبعني كلبٌ لم أقابله من قبل حتى المنزل وبقي."
   },
   "reading": {
-    "en": "The white bird is a timeless symbol of peace, spiritual guidance, and messages from the unconscious or higher self. Its gentle landing on your open palm suggests trust, receptivity, and an invitation to receive something precious or enlightening. The act of singing harmonizes with this, indicating an inner expression of joy, authenticity, or a call to embrace your true voice. Together, these symbols point to a moment of quiet connection—perhaps with your deeper self or a creative impulse that feels pure and uplifting. Reflect on what in your waking life might be inviting such tender attention, and let this sense of openness guide you toward honest feeling and gentle action.",
-    "ar": "الطائر الأبيض في المنام يُشير غالباً إلى بشرى طيبة، أو قدوم خبر مفرح، أو شخص نقي السريرة يدخل حياة الرائي. هبوطه على الراحة المفتوحة يعكس استعدادك الداخلي لاستقبال الخير، وسعة صدرك لقبول ما يُقدّر الله لك. التغريد يرمز إلى الذكر الجميل، أو كلام طيب يُسمع، أو انشراح صدر بعد ضيق. هذه الرموز مجتمعة ترسم صورة لحظة رحمة ولطف إلهي، تذكّرك بأن القلوب المفتوحة تُمنح السكينة.  \n\nقد تكون الرؤية دعوةً لتأمل النعم الصغيرة التي تغفل عنها العين، وللتأكد من أن يدك ممدودة بالعطاء لا بالأخذ فقط. الطائر لا يحطّ إلا على موضع أمين، فكذلك البركة تنزل على النفس المطمئنة.  \n\nاحرص على دوام الشكر والذكر، واجعل قلبك كالراحة المفتوحة: مستقبلةً للنور، مطلقةً للخير."
+    "en": "In the language of dreams, a dog represents loyalty, protection, and the instinctive aspects of our nature. When an unfamiliar hound chooses to trail your steps and settle into your life, it signals the arrival of an unacknowledged strength, a new friendship, or an intuitive boundary that is coming home to protect you. Classical symbolism often views the uninvited yet faithful canine as a guardian of the inner hearth, indicating that a part of your emotional life is ready to offer you unconditional support and guidance through upcoming changes.\n\nThis quiet companion entering your private space suggests that you are entering a period of greater personal grounding and trust. Perhaps you have recently stepped into a new phase of life, adopted a fresh responsibility, or opened your heart to an unexpected ally. The dog staying with you reassures that this new presence or inner quality is not fleeting, but a steadfast anchor that will help you feel more secure in your daily journey.\n\nTake a moment to notice where unexpected support or quiet trust is trying to enter your wakeful life, and allow yourself to welcome it without fear.",
+    "ar": "الكلب الغريب في المنام من الرموز اللطيفة والمزدوجة في التعبير الإسبيري؛ إذ يشير الكلب عادةً في المأثور ومرويات ابن سيرين إلى الصديق الوفي، أو الحارس الأمين، أو الشخص الذي يكنّ لك مودة وصحبة، وفي أحيان أخرى رمز للعهد والولاية. ومتبعته لك حتى المنزل ودخوله معك يعكس تدفق أمور جديدة إلى حياتك الخاصة، أو دخول رفقة وسند يتبعك ليبث في بيتك الطمأنينة والاستقرار.\n\nوصول الكلب معك إلى أعتاب الدار وبقاؤه هناك يرمز إلى ثبات هذه العلاقة أو حصولك على أمان ومودة لم تكن تتوقعها من أشخاص جدد لم تتعرف عليهم من قبل. هذا المنام يحمل بشارة بوجود دعم غير متوقع يحيط بك وبأهل بيتك، ويؤكد على أن خطواتك القادمة محفوفة بالرعاية والأنس.\n\nافتتح يومك بقلب مطمئن ومستبشر بالخير، وتذكر أن الأنس والصحبة الصالحة تأتينا أحياناً من حيث لا نحتسب."
   },
-  "engine": "openrouter/free+nvidia/nemotron-3-ultra-550b-a55b:free"
+  "engine": "fallback:gemini-3.6-flash"
 }

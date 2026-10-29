@@ -1,17 +1,17 @@
 {
   "date": "2026-10-29",
   "symbol": {
-    "key": "death",
-    "en": "Death",
-    "ar": "الموت"
+    "key": "water",
+    "en": "Water",
+    "ar": "الماء"
   },
   "dream": {
-    "en": "I watched someone I love fade like morning mist.",
-    "ar": "راقبتُ من أحبّ يتلاشى كضباب الصباح."
+    "en": "I stood at the edge of a vast calm lake at sunrise.",
+    "ar": "وقفتُ على حافة بحيرة هادئة ممتدة عند شروق الشمس."
   },
   "reading": {
-    "en": "The loved one in dreams often embodies our deepest attachments and the parts of ourselves we see reflected in another. Fading suggests a natural dissolution — whether of a role, a phase, or the illusion of permanence. Morning mist carries the ancient meaning of a threshold: the moment when night’s mystery lifts into day’s clarity, reminding us that what seems solid may be transient.\n\nThis image may mirror a quiet grief or an unspoken awareness that a relationship is shifting. It can also point to an inner transition, where you are learning to hold love without possession. The mist does not vanish violently; it simply yields to light, hinting that acceptance may come gradually, not by force.\n\nNotice where you are being asked to loosen your grip without losing your care.",
-    "ar": "رؤية من تحبّ يتلاشى كضباب الصباح تحمل رمزية البُعد والغياب غير الملموس؛ الضباب في التأويل الكلاسيكي يُشير إلى غموض الموقف أو إلى أمرٍ لم تتضح معالمه بعد، واختفاء الحبيب فيه قد يعكس خوفاً داخلياً من الفراق أو شعوراً بعدم القدرة على الإمساك بما يُحبّ القلب. المراقبة دون تدخّل تدل على موقف المتفرّج أمام متغيّرات لا سلطان لك عليها، وهو تذكير بأن المحبة الحقيقية تثبت في القلب لا في الحضور المادي فقط.  \n\nفي سياق الحياة، قد يكون الحلم دعوةً لمراجعة التعلّقات وتوطين النفس على أن الأرزاق والآجال بيد الله، وأن الصبر على ما يقدّره القدر من ابتلاء أو ابتعاد هو من أعظم العبادات. اللجوء إلى الصلاة والذكر يمنح السكينة حين تضيق الصدور بخوف الفقد.  \n\nتذكّر أن الرؤيا تعكس حال النفس لا المستقبل، فاجعلها فرصة لتقوية الثقة بالله وحسن الظن به."
+    "en": "Standing before a vast, calm lake at sunrise is a deeply peaceful and transformative vision in the realm of dream symbolism. Across many classical traditions, a still body of water represents the depth of your unconscious mind, your emotional landscape, and the clarity of your inner thoughts. When the waters are calm, it traditionally signifies emotional harmony, mental clarity, and a quiet stillness that allows you to see your true self reflected without distortion.\n\nThe presence of the sunrise adds a powerful layer of renewal and hope to this image. The emerging morning light symbolizes new beginnings, awakening, and the promise of a fresh perspective illuminating what was once hidden in the dark. Tied gently to your waking life, this dream suggests you may be stepping onto the precipice of a new chapter—one where emotional balance and quiet contemplation will help you transition smoothly into a season of personal growth and newly discovered purpose.\n\nTake a quiet moment today to honor this sense of stillness, trusting that the rising light within you will clearly reveal your next step forward.",
+    "ar": "حملت بحيرتك الهادئة عند شروق الشمس بشائر طمأنينة وفتح جديد في حياتك. يرمز الماء الصافي والهادئ في التراث وفي تعبير ابن سيرين إلى الراحة والرزق الطيب وصفاء العيش، بينما يتجلى شروق الشمس كرمز جلي للبدء الجديد، وجلاء الهموم، وانقضاء مرحلة من الغموض لتشرق معها الطموحات والأمل.\n\nوقوفك على الحافة يشير إلى مرحلة انتقالية تقف فيها على عتبة قرارات أو تغيرات إيجابية، حيث تجتمع التطلعات المستقبلية مع الهدوء الداخلي. تجمع هذه الرؤية بين رمزية النور والماء لتطمنك بأن ما تسعى إليه يسير نحو الانفراج والوضوح، مشيرة إلى بركة متوقعة تفيض على أمورك الشخصية أو العملية.\n\nفلتكن هذه الرؤية دعوة لك للاستبشار بما هو قادم والاعتماد على السكينة في اتخاذ خطواتك القادمة."
   },
-  "engine": "nvidia/nemotron-3-ultra-550b-a55b:free+cache"
+  "engine": "fallback:gemini-3.6-flash"
 }

@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "symbol": {
-    "key": "dog",
-    "en": "Dog",
-    "ar": "الكلب"
+    "key": "death",
+    "en": "Death",
+    "ar": "الموت"
   },
   "dream": {
-    "en": "A dog I had never met followed me home and stayed.",
-    "ar": "تبعني كلبٌ لم أقابله من قبل حتى المنزل وبقي."
+    "en": "I watched someone I love fade like morning mist.",
+    "ar": "راقبتُ من أحبّ يتلاشى كضباب الصباح."
   },
   "reading": {
-    "en": "In the language of dreams, a dog represents loyalty, protection, and the instinctive aspects of our nature. When an unfamiliar hound chooses to trail your steps and settle into your life, it signals the arrival of an unacknowledged strength, a new friendship, or an intuitive boundary that is coming home to protect you. Classical symbolism often views the uninvited yet faithful canine as a guardian of the inner hearth, indicating that a part of your emotional life is ready to offer you unconditional support and guidance through upcoming changes.\n\nThis quiet companion entering your private space suggests that you are entering a period of greater personal grounding and trust. Perhaps you have recently stepped into a new phase of life, adopted a fresh responsibility, or opened your heart to an unexpected ally. The dog staying with you reassures that this new presence or inner quality is not fleeting, but a steadfast anchor that will help you feel more secure in your daily journey.\n\nTake a moment to notice where unexpected support or quiet trust is trying to enter your wakeful life, and allow yourself to welcome it without fear.",
-    "ar": "الكلب الغريب في المنام من الرموز اللطيفة والمزدوجة في التعبير الإسبيري؛ إذ يشير الكلب عادةً في المأثور ومرويات ابن سيرين إلى الصديق الوفي، أو الحارس الأمين، أو الشخص الذي يكنّ لك مودة وصحبة، وفي أحيان أخرى رمز للعهد والولاية. ومتبعته لك حتى المنزل ودخوله معك يعكس تدفق أمور جديدة إلى حياتك الخاصة، أو دخول رفقة وسند يتبعك ليبث في بيتك الطمأنينة والاستقرار.\n\nوصول الكلب معك إلى أعتاب الدار وبقاؤه هناك يرمز إلى ثبات هذه العلاقة أو حصولك على أمان ومودة لم تكن تتوقعها من أشخاص جدد لم تتعرف عليهم من قبل. هذا المنام يحمل بشارة بوجود دعم غير متوقع يحيط بك وبأهل بيتك، ويؤكد على أن خطواتك القادمة محفوفة بالرعاية والأنس.\n\nافتتح يومك بقلب مطمئن ومستبشر بالخير، وتذكر أن الأنس والصحبة الصالحة تأتينا أحياناً من حيث لا نحتسب."
+    "en": "The loved one in dreams often embodies our deepest attachments and the parts of ourselves we see reflected in another. Fading suggests a natural dissolution — whether of a role, a phase, or the illusion of permanence. Morning mist carries the ancient meaning of a threshold: the moment when night’s mystery lifts into day’s clarity, reminding us that what seems solid may be transient.\n\nThis image may mirror a quiet grief or an unspoken awareness that a relationship is shifting. It can also point to an inner transition, where you are learning to hold love without possession. The mist does not vanish violently; it simply yields to light, hinting that acceptance may come gradually, not by force.\n\nNotice where you are being asked to loosen your grip without losing your care.",
+    "ar": "رؤية من تحبّ يتلاشى كضباب الصباح تحمل رمزية البُعد والغياب غير الملموس؛ الضباب في التأويل الكلاسيكي يُشير إلى غموض الموقف أو إلى أمرٍ لم تتضح معالمه بعد، واختفاء الحبيب فيه قد يعكس خوفاً داخلياً من الفراق أو شعوراً بعدم القدرة على الإمساك بما يُحبّ القلب. المراقبة دون تدخّل تدل على موقف المتفرّج أمام متغيّرات لا سلطان لك عليها، وهو تذكير بأن المحبة الحقيقية تثبت في القلب لا في الحضور المادي فقط.  \n\nفي سياق الحياة، قد يكون الحلم دعوةً لمراجعة التعلّقات وتوطين النفس على أن الأرزاق والآجال بيد الله، وأن الصبر على ما يقدّره القدر من ابتلاء أو ابتعاد هو من أعظم العبادات. اللجوء إلى الصلاة والذكر يمنح السكينة حين تضيق الصدور بخوف الفقد.  \n\nتذكّر أن الرؤيا تعكس حال النفس لا المستقبل، فاجعلها فرصة لتقوية الثقة بالله وحسن الظن به."
   },
-  "engine": "fallback:gemini-3.6-flash"
+  "engine": "nvidia/nemotron-3-ultra-550b-a55b:free+cache"
 }

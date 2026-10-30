@@ -1,17 +1,17 @@
 {
   "date": "2026-10-30",
   "symbol": {
-    "key": "house",
-    "en": "House",
-    "ar": "البيت"
+    "key": "teeth",
+    "en": "Teeth",
+    "ar": "الأسنان"
   },
   "dream": {
-    "en": "I wandered through rooms of my childhood home I had forgotten.",
-    "ar": "تجوّلتُ في غرف من بيت طفولتي كنتُ قد نسيتها."
+    "en": "A tooth came loose and crumbled in my hand.",
+    "ar": "تزعزع سنٌ وسقط متفتتاً في يدي."
   },
   "reading": {
-    "en": "The childhood home often represents the foundation of identity, while rooms symbolize distinct compartments of memory and self. Wandering through them suggests an inner exploration, and forgotten rooms point to aspects of yourself — talents, emotions, or experiences — that have been set aside or repressed.\n\nThis dream may arise when you are reconnecting with parts of your past that still shape you, perhaps during a transition or period of self-reflection. The tone of wandering implies curiosity rather than fear, indicating a readiness to reclaim what was lost to awareness.\n\nEach room holds a piece of your history; revisiting them can integrate old wounds or dormant strengths into your present life. Consider what old rooms you might revisit with kindness today.",
-    "ar": "طوفك في بيت الطفولة يرمز إلى العودة إلى الجذور والأصول، والبيت في التعبير يدل على ذات الإنسان وأساسه. الغرف المنسية تشير إلى جوانب من شخصيتك أو مواهب وذكريات غُيِّبت عن وعيك، وقد تكون دعوة لاستعادتها ودمجها في حاضرك. التجوال بلا هدف محدد يعكس بحثاً داخلياً عن الطمأنينة أو عن أجزاء مفقودة من القصة الشخصية.\n\nفي المأثور، رؤية المواضع القديمة تدل على مراجعة الحساب واستذكار النعم، وربما بشارة بتجديد عهد مع قيم نشأت عليها. لا تخف من الغرف المغلقة؛ ففتحها في اليقظة يكون بالذكر والتفكر والعمل الصالح، فينشرح الصدر وتستبين الطريق.\n\nخُذ من الرؤيا وقفة هادئة مع النفس، وصلِّ ركعتين شكراً على ما مَنّ الله به من أصول طيبة، واسأل الله أن يريك خيراَ ما في ماضيك وحاضرك."
+    "en": "A loose tooth that crumbles in your hand is one of the most universal dream images, appearing across cultures as a symbol of transition and vulnerability. Traditionally, teeth represent our capacity to \"bite into\" life — to nourish ourselves, speak our truth, and present ourselves to the world. Their loss often mirrors periods when you feel your footing shifting: a changing role, an ending relationship, or the quiet erosion of an old identity.\n\nThe hand that catches the fragments adds a tender detail. Instead of the tooth simply falling away, you hold what remains. This suggests you are not merely suffering the change; you are witnessing it, perhaps even trying to make sense of the pieces. In many traditions, the hand represents agency and the ability to shape what comes next.\n\nYou may be moving through a threshold where something familiar — a way of speaking, a self-image, a source of security — is dissolving. The dream does not warn of disaster; it reflects the natural unease of letting go.\n\nGrounding reflection: Consider what you are currently releasing, and whether your hands might be ready to build something new from what remains.",
+    "ar": "رؤية السن يتزعزع ويسقط متفتتاً في اليد تُفسَّر في المعبر الكلاسيكي بتغيّر في أمرٍ يخصّ الأهل أو المقربين، أو بتسديد دينٍ كان مُثقلاً. السنّ يرمز للقوة والتماسك في العائلة، وتفتّته في اليد يشير إلى أن الأمر خارج عن السيطرة الكاملة لكنّه لا يزال بين يديك لتدبيره. اليد هنا تدل على القدرة على الفعل والمسؤولية، وكأنّ الرؤيا تدعوك للتعامل بهدوء مع ما يتحلّل من حولك دون هلع.  \n\nقد تكون الإشارة إلى مرحلة انتقال في علاقاتٍ أو التزاماتٍ مالية، حيث يبدو الشيء متماسكاً ثم يتبدّى هشّاً عند الممارسة. لا تُنذر الرؤيا بمكروهٍ محدّد، بل تعكس شعوراً داخلياً بضرورة المراجعة والإمساك بما يمكن إمساكه بحكمة.  \n\nاستعن بالصلاة والذكر لتثبيت القلب، وتذكّر أن ما يسقط من بين الأصابع قد يكون بداية لترتيبٍ أفضل."
   },
-  "engine": "openrouter/free+cache"
+  "engine": "nvidia/nemotron-3-ultra-550b-a55b:free"
 }

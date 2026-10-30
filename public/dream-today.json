@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-29",
+  "date": "2026-10-30",
   "symbol": {
-    "key": "money",
-    "en": "Money",
-    "ar": "المال"
+    "key": "house",
+    "en": "House",
+    "ar": "البيت"
   },
   "dream": {
-    "en": "I found coins in the lining of an old coat.",
-    "ar": "وجدتُ قطعاً نقدية في بطانة معطفٍ قديم."
+    "en": "I wandered through rooms of my childhood home I had forgotten.",
+    "ar": "تجوّلتُ في غرف من بيت طفولتي كنتُ قد نسيتها."
   },
   "reading": {
-    "en": "Finding coins hidden within the lining of an old coat carries a deeply reassuring symbol of unexpected value tucked away in something familiar or forgotten. In classical dream traditions, coins often represent personal vitality, wisdom, or self-worth rather than mere material wealth. The old coat, acting as a protective layer worn through past seasons of life, suggests that this newly discovered abundance is not something foreign, but rather an inner strength or resource you have carried with you all along without fully realizing it.\n\nAcross many cultural traditions, unearthing forgotten treasure in everyday garments signifies a period of rediscovering forgotten talents, emotional resilience, or neglected passions. The lining of the coat points to the subtle, hidden parts of your identity—the quiet layers beneath the surface that shelter you from life's cold spells. This dream often arrives when you are navigating a transition, gently reminding you that you already possess the emotional or practical tools required to support your journey.\n\nTake a moment to reflect on what quiet strengths, neglected interests, or past experiences you might reexamine, as they may hold the exact value you need right now.",
-    "ar": "ترمز رؤية القطع النقدية المخبأة في بطانة معطف قديم في التراث الإسلامي لفتح أبواب من الرزق والخير المغفول عنه، أو استعادة بركة وفرص قديمة ظن صاحبها أنها طُويت مع الزمن. المعطف القديم يمثل الحماية والستر والدفء، وبطانته تشير إلى ما يحتفظ به الإنسان في باطنه من ذكريات وتجارب وجهود سابقة لم تذهب سدى.\n\nأما النقود، وخاصة عند العثور عليها بالصدفة داخل مكان يبعث على الأمان، فتشير جلياً في المأثور إلى بشرات سارة وتيسير في الأمور المالية أو معنوية تظهر في وقتها المناسب. قد تكون هذه الرؤيا إشارة إلى نعم أو قدرات ومواهب تمتلكها بالفعل لكنك غفلت عنها، وآن الأوان لتستفيد منها وتستشعر قيمة ما لديك.\n\nتأمل في حياتك اليوم وما قد تكون قد أهملته من أمور نافعة أو روابط طيبة، ففي ماضيك خير مستتر ينتظر أن تكتشفه من جديد."
+    "en": "The childhood home often represents the foundation of identity, while rooms symbolize distinct compartments of memory and self. Wandering through them suggests an inner exploration, and forgotten rooms point to aspects of yourself — talents, emotions, or experiences — that have been set aside or repressed.\n\nThis dream may arise when you are reconnecting with parts of your past that still shape you, perhaps during a transition or period of self-reflection. The tone of wandering implies curiosity rather than fear, indicating a readiness to reclaim what was lost to awareness.\n\nEach room holds a piece of your history; revisiting them can integrate old wounds or dormant strengths into your present life. Consider what old rooms you might revisit with kindness today.",
+    "ar": "طوفك في بيت الطفولة يرمز إلى العودة إلى الجذور والأصول، والبيت في التعبير يدل على ذات الإنسان وأساسه. الغرف المنسية تشير إلى جوانب من شخصيتك أو مواهب وذكريات غُيِّبت عن وعيك، وقد تكون دعوة لاستعادتها ودمجها في حاضرك. التجوال بلا هدف محدد يعكس بحثاً داخلياً عن الطمأنينة أو عن أجزاء مفقودة من القصة الشخصية.\n\nفي المأثور، رؤية المواضع القديمة تدل على مراجعة الحساب واستذكار النعم، وربما بشارة بتجديد عهد مع قيم نشأت عليها. لا تخف من الغرف المغلقة؛ ففتحها في اليقظة يكون بالذكر والتفكر والعمل الصالح، فينشرح الصدر وتستبين الطريق.\n\nخُذ من الرؤيا وقفة هادئة مع النفس، وصلِّ ركعتين شكراً على ما مَنّ الله به من أصول طيبة، واسأل الله أن يريك خيراَ ما في ماضيك وحاضرك."
   },
-  "engine": "fallback:gemini-3.6-flash"
+  "engine": "openrouter/free+cache"
 }

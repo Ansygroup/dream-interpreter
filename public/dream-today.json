@@ -1,17 +1,17 @@
 {
   "date": "2026-10-30",
   "symbol": {
-    "key": "marriage",
-    "en": "Marriage",
-    "ar": "الزواج"
+    "key": "tree",
+    "en": "Tree",
+    "ar": "الشجرة"
   },
   "dream": {
-    "en": "I was invited to a wedding where everyone I knew was dancing.",
-    "ar": "دُعيتُ إلى زفاف وكل من أعرفهم يرقصون."
+    "en": "An old tree in my garden bloomed overnight.",
+    "ar": "أزهرت شجرةٌ عتيقة في حديقتي في ليلة."
   },
   "reading": {
-    "en": "In cross-cultural dream traditions, a wedding rarely foretells an actual marriage; instead, it represents a profound moment of integration, transition, or the union of different aspects of your life. Gathering with people you know signifies a strong subconscious pull toward community, belonging, and shared human experience. It suggests that you are currently evaluating your place within your social circle or contemplating a significant shift in how you relate to the collective around you.\n\nThe act of dancing carries a powerful symbolic weight across classical interpretations. Movement in a celebration speaks to harmony, expression, and the natural flow of time and emotion. Seeing everyone you know immersed in this rhythm reflects a desire for connection and joy, but it can also mirror an internal feeling of watching life unfold around you—inviting you to consider whether you feel like an active participant in this shared celebration or a witness observing from the sidelines.\n\nConsider where in your waking life you are being invited to step into greater harmony with others, or where you might need to embrace the movement of change with an open heart.",
-    "ar": "يحمل حلمك هذا بشائر خير ومسرات، ورؤية الزفاف واجتماع المعارف والأحبة في المنام تشير في أصل التعبير إلى المناسبات السعيدة، والأخبار المبهجة التي تبهج القلب وتجمع الشمل. أما رقص الأحبة والأصدقاء، فهو رمز في المأثور وموروث تفسير الأحلام يعكس الابتهاج، والمشاعر المتبادلة من الود والوئام، وينبئ بقرب حدوث ما يفرح الجمع ويشيع في النفوس راحة وأنسًا.\n\nربما يعكس هذا المنام ما تمر به في حياتك الواقعية من تطلع إلى الفرح ورغبة في مشاركة لحظات الأنس مع من تحبهم، أو يبشر بدخول مرحلة جديدة تتسع فيها دوائر التواصل الاجتماعي وتتجدد فيها أسباب البهجة والطمأنينة. فالرموز تجمع بين الأمل في المستقبل والرغبة الصادقة في رؤية المقربين منك في أفضل حال وأسعد بال.\n\nافتتح يومك بقلب مطمئن ومستبشر بالخير، وتذكر أن التفاؤل بالرؤى الصالحة هو طريق لتحقيق السرور والسكينة في واقعك."
+    "en": "An old tree bursting into unexpected bloom overnight carries profound classical symbolism across many cultures. Traditionally, an ancient tree represents established roots, wisdom, endurance, and long-standing personal foundations or family history. When something so deeply rooted produces sudden blossoms, it signifies an unexpected awakening or a powerful revival of creative energy, hope, or hidden potential within a mature aspect of your life. \n\nThis image suggests that an area of your world you may have viewed as settled, dormant, or stagnant is actually capable of extraordinary transformation and fresh beginnings. The blooming garden points to inner peace and personal growth, reminding you that deep-rooted resilience can yield surprising beauty at any stage of your journey. Trust that the time you have invested in yourself or your path is finally bearing beautiful, vibrant fruit.",
+    "ar": "رؤية الشجرة العتيقة وهي تُزهر في حديقتك خلال ليلة واحدة تُعدّ من الرؤى الرمزية الجميلة والمبشرة في التراث الإسلامي لكسر وتفسير الأحلام؛ فالشجرة العتيقة رمزٌ للأصول الثابتة، والبركة الممتدة، والجهد القديم أو العلاقات الراسخة التي طال عليها العهد. وتفتح أزهارها يرمز إلى تفكك الكرب، وتجدد الأمل، وبداية مرحلة جديدة ملؤها الخير والنماء بعد طول انتظار.\n\nوإزهارها السريع في ليلة واحدة يشير في تفسيرات أهل العلم والرموز، كابن سيرين وغيره، إلى الفرج القريب والمفاجئ، أو نيل أمنية طال السعي إليها حين يشاء الله وتتهيأ أسبابها، وتُشير الحديقة إلى حياة الإنسان الخاصة ودائرته القريبة التي تحيط به. وهي بشارة بأن البذور والجهود التي غُرست قديماً ستؤتي أُكلها وتبث البهجة في قلبك بوقت أسرع مما تتوقع.\n\nفتأمل فيما حولك من أمور ظننتها قد أوشكت على الجفاف، واستبشر خيراً بفتحٍ من الله يتجدد معه الأمل وتزهر به أيامك."
   },
   "engine": "fallback:gemini-3.6-flash"
 }

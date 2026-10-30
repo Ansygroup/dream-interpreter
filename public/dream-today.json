@@ -1,17 +1,17 @@
 {
   "date": "2026-10-30",
   "symbol": {
-    "key": "teeth",
-    "en": "Teeth",
-    "ar": "الأسنان"
+    "key": "fire",
+    "en": "Fire",
+    "ar": "النار"
   },
   "dream": {
-    "en": "A tooth came loose and crumbled in my hand.",
-    "ar": "تزعزع سنٌ وسقط متفتتاً في يدي."
+    "en": "A small fire warmed a cold empty room.",
+    "ar": "أضاءت نارٌ صغيرة غرفةً باردةً خالية."
   },
   "reading": {
-    "en": "A loose tooth that crumbles in your hand is one of the most universal dream images, appearing across cultures as a symbol of transition and vulnerability. Traditionally, teeth represent our capacity to \"bite into\" life — to nourish ourselves, speak our truth, and present ourselves to the world. Their loss often mirrors periods when you feel your footing shifting: a changing role, an ending relationship, or the quiet erosion of an old identity.\n\nThe hand that catches the fragments adds a tender detail. Instead of the tooth simply falling away, you hold what remains. This suggests you are not merely suffering the change; you are witnessing it, perhaps even trying to make sense of the pieces. In many traditions, the hand represents agency and the ability to shape what comes next.\n\nYou may be moving through a threshold where something familiar — a way of speaking, a self-image, a source of security — is dissolving. The dream does not warn of disaster; it reflects the natural unease of letting go.\n\nGrounding reflection: Consider what you are currently releasing, and whether your hands might be ready to build something new from what remains.",
-    "ar": "رؤية السن يتزعزع ويسقط متفتتاً في اليد تُفسَّر في المعبر الكلاسيكي بتغيّر في أمرٍ يخصّ الأهل أو المقربين، أو بتسديد دينٍ كان مُثقلاً. السنّ يرمز للقوة والتماسك في العائلة، وتفتّته في اليد يشير إلى أن الأمر خارج عن السيطرة الكاملة لكنّه لا يزال بين يديك لتدبيره. اليد هنا تدل على القدرة على الفعل والمسؤولية، وكأنّ الرؤيا تدعوك للتعامل بهدوء مع ما يتحلّل من حولك دون هلع.  \n\nقد تكون الإشارة إلى مرحلة انتقال في علاقاتٍ أو التزاماتٍ مالية، حيث يبدو الشيء متماسكاً ثم يتبدّى هشّاً عند الممارسة. لا تُنذر الرؤيا بمكروهٍ محدّد، بل تعكس شعوراً داخلياً بضرورة المراجعة والإمساك بما يمكن إمساكه بحكمة.  \n\nاستعن بالصلاة والذكر لتثبيت القلب، وتذكّر أن ما يسقط من بين الأصابع قد يكون بداية لترتيبٍ أفضل."
+    "en": "A small fire burning in a cold, empty room carries a deeply comforting and ancient symbol of resilience and inner warmth. In cross-cultural dream traditions, an empty room represents an aspect of your current life or state of mind that feels vacant, quiet, or perhaps in need of renewed purpose. The coldness highlights a feeling of isolation or emotional stillness that you may be navigating at this moment.\n\nThe fire, though small, is the heart of this vision. Fire traditionally symbolizes transformation, passion, life force, and spiritual sustenance. Because it does not consume or destroy the room, but instead provides gentle heat, it represents a quietly emerging spark within you. This suggests that even in moments that feel sparse, distant, or devoid of energy, you possess an enduring inner strength capable of bringing warmth and light back into your space.\n\nLet this gentle flame remind you that meaningful warmth often starts small, encouraging you to nourish the quiet sparks of comfort and purpose already present within your life.",
+    "ar": "حين تشرق نارٌ صغيرة في جوف غرفةٍ باردة وخالية، فإن الرؤيا تحمل بشرى الأنس والدفء بعد طول وحشة وجمود. والنار في دلالات المعبّرين كابن سيرين قد ترمز إلى النور والهدية والهداية، كما استأنس بها موسى عليه السلام، فإذا كانت هادئة مضيئة من غير إحراق ولا دخان، فهي رمز للفرج وذهاب الهموم وتبدّل الأحوال إلى ما فيه خير وصلاح.\n\nترمز هذه النار الصغير إلى إشراقة أمل جديدة أو بداية أمرٍ مبارك يبدد برودة العزلة ويردّ على الروح بهجتها وسكينتها. أما خلوّ الغرفة وبرودتها فيشيران إلى مرحلة سابقة من الهدوء أو الشدة، ولكن ظهور ذلك القبس اللطيف يؤكد أن الخير قادم، وأن الأنس سيحلّ محل الوحدة، لتملأ البركة والأمان أركان حياتك.\n\nاجعل هذه الرؤيا بشارة لقلبك برحمة الله، واستقبل أيامك القادمة بطمأنينة ويقين بأن الدفء والفرج أسرع إليك مما تظن."
   },
-  "engine": "nvidia/nemotron-3-ultra-550b-a55b:free"
+  "engine": "fallback:gemini-3.6-flash"
 }

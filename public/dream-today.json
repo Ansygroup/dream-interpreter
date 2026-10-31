@@ -1,17 +1,17 @@
 {
   "date": "2026-10-31",
   "symbol": {
-    "key": "cat",
-    "en": "Cat",
-    "ar": "القطة"
+    "key": "fish",
+    "en": "Fish",
+    "ar": "السمكة"
   },
   "dream": {
-    "en": "A cat watched me from a windowsill and then vanished.",
-    "ar": "راقبتني قطةٌ من على حافة نافذة ثم اختفت."
+    "en": "I swam with a school of fish in clear blue water.",
+    "ar": "سبحتُ مع مجموعة من الأسماك في ماءٍ أزرق صافٍ."
   },
   "reading": {
-    "en": "A cat perching on a windowsill often symbolizes intuition, independence, and the quiet observation of your inner world. Windows in dreams act as boundaries between your private thoughts and the outside realm, suggesting that you are currently contemplating a transition or searching for clarity on a matter close to your heart. The cat’s steady gaze represents a deep, instinctive awareness waiting to be acknowledged.\n\nWhen the cat vanishes, it highlights the transient nature of sudden insights or fleeting opportunities. Across many cultural traditions, a disappearing animal in a dream serves as a subtle reminder that some answers cannot be forced or held onto tightly; rather, they reveal themselves when you step back and trust your natural discernment.\n\nTake a moment today to listen to the quiet nudges of your intuition before making your next decision.",
-    "ar": "يحمل ظهور القطة في المنام رمزية لطيفة في التراث والتفسير التقليدي؛ إذ تُعبر غالباً عن الخصوصية، والاحتراس، أو وجود شخص في محيطك يراقب تحركاتك بعناية وهدوء. ووقوفها على حافة النافذة يشير إلى مرحلة انتقالية أو رؤية للأمور من منظور جديد، حيث تعكس النافذة في عالم الأحلام أفق التطلع والفرص المعلقة بين الداخلي والخارجي.\n\nأما اختفاء القطة بهدوء في الرؤيا، فيُومئ وزوال القلق أو تلاشي أثر التوجس والرقابة التي ربما كنت تشعر بها في حياتك اليومية. يدل هذا التحول السريع على تبدد المخاوف العابرة وتيسير الأمور بعد فترة من الترقب، مما ينبئ بسلام داخلي واستقرار يحل في محيطك.\n\nتأمل في يومك كيف يمكنك مراقبة مشاعرك وأفكارك من بعيد بسلام، ودع ما لا يخدم راحة بالك يختفي ويمضي بسلاسة."
+    "en": "To swim alongside a school of fish in clear, transparent water is a deeply harmonious omen across many cultural traditions. Water represents the realm of emotions and the subconscious, and its pristine clarity suggests a period of mental transparency, peace, and emotional alignment. Rather than struggling against the current, your fluid movement through the depths indicates that you are in sync with your inner self and navigating your current life journey with remarkable grace and ease.\n\nFish are classic cross-cultural symbols of intuition, abundance, spiritual growth, and unseen wisdom emerging from the deep. Moving *with* a school of fish—rather than observing them from afar or trying to catch them—points to a profound sense of belonging and collective support. It traditionally signifies that you are moving in rhythm with a greater community or aligning yourself with the natural, fruitful flow of life rather than fighting it.\n\nMay this dream remind you to trust the supportive currents around you and honor the effortless flow of your own intuition.",
+    "ar": "السباحة والأسماك والماء الصافي هي رؤيا طيبة تحمل في طياتها بشائر الخير والسكينة. في التعبير الإسلامي كما يذكر ابن سيرين، يرمز السباحة بسهولة في ماء أزرق صافٍ إلى الرزق الواسع وتيسير الأمور والتخلص من الهموم والغموم. كما تدل صافية الماء على صفاء النية وطهارة القلب ووضوح الهدف في حياة الرسي.\n\nأما الأسماك فتعد من الرموز الشائعة التي تعبر عن الأرباح والمنافع والمكاسب غير المتوقعة، وقد تشير إلى صلات اجتماعية مباركة وصحبة صالحة تحيط بك وتدعمك في مسيرتك. ووجودك بين مجموعة من الأسماك يعكس حركة إيجابية وتناغماً جميلًا مع من حولك في بيئة العمل أو الحياة الخاصة.\n\nاطمئن فإن هذا الحلم يدعوك للاستبشار بما هو قادم والإقبال على أيامك بثقة ورضا، واستمد من صفاء هذا المنام طاقة لطيفة تعينك على اتخاذ خطواتك المقبلة بكل طمأنينة ويسر."
   },
   "engine": "fallback:gemini-3.6-flash"
 }

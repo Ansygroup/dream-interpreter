@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-30",
+  "date": "2026-10-31",
   "symbol": {
     "key": "tree",
     "en": "Tree",
@@ -10,8 +10,8 @@
     "ar": "أزهرت شجرةٌ عتيقة في حديقتي في ليلة."
   },
   "reading": {
-    "en": "An old tree bursting into unexpected bloom overnight carries profound classical symbolism across many cultures. Traditionally, an ancient tree represents established roots, wisdom, endurance, and long-standing personal foundations or family history. When something so deeply rooted produces sudden blossoms, it signifies an unexpected awakening or a powerful revival of creative energy, hope, or hidden potential within a mature aspect of your life. \n\nThis image suggests that an area of your world you may have viewed as settled, dormant, or stagnant is actually capable of extraordinary transformation and fresh beginnings. The blooming garden points to inner peace and personal growth, reminding you that deep-rooted resilience can yield surprising beauty at any stage of your journey. Trust that the time you have invested in yourself or your path is finally bearing beautiful, vibrant fruit.",
-    "ar": "رؤية الشجرة العتيقة وهي تُزهر في حديقتك خلال ليلة واحدة تُعدّ من الرؤى الرمزية الجميلة والمبشرة في التراث الإسلامي لكسر وتفسير الأحلام؛ فالشجرة العتيقة رمزٌ للأصول الثابتة، والبركة الممتدة، والجهد القديم أو العلاقات الراسخة التي طال عليها العهد. وتفتح أزهارها يرمز إلى تفكك الكرب، وتجدد الأمل، وبداية مرحلة جديدة ملؤها الخير والنماء بعد طول انتظار.\n\nوإزهارها السريع في ليلة واحدة يشير في تفسيرات أهل العلم والرموز، كابن سيرين وغيره، إلى الفرج القريب والمفاجئ، أو نيل أمنية طال السعي إليها حين يشاء الله وتتهيأ أسبابها، وتُشير الحديقة إلى حياة الإنسان الخاصة ودائرته القريبة التي تحيط به. وهي بشارة بأن البذور والجهود التي غُرست قديماً ستؤتي أُكلها وتبث البهجة في قلبك بوقت أسرع مما تتوقع.\n\nفتأمل فيما حولك من أمور ظننتها قد أوشكت على الجفاف، واستبشر خيراً بفتحٍ من الله يتجدد معه الأمل وتزهر به أيامك."
+    "en": "An old tree often represents deep-rooted wisdom, endurance, and the accumulation of life experience. The garden symbolizes a personal or relational space where growth is cultivated, while the sudden bloom suggests an unexpected flourishing of creativity, emotion, or opportunity.\n\nIn waking life, this dream may reflect a period where long‑standing foundations are now revealing new possibilities — perhaps a project, relationship, or inner insight that has finally taken shape after months or years of quiet work. The overnight timing hints that the change feels sudden, yet it is rooted in the tree’s enduring presence.\n\nConsider how this sudden blossoming invites you to nurture your inner growth with patience and openness, trusting that the sturdy roots of your past support the fresh possibilities now unfolding.",
+    "ar": "إن رؤية أزهار الشجرة العتيقة في الحديقة خلال ليلة واحدة تُعدّ من الرؤى المبشرة بالخير والبركة في التعبير الإسلامي وتراث ابن سيرين. فالشجرة العتيقة ترمز في الغالب إلى الجذور الأ any الثابتة والأصل الطيب أو الأيام والسنوات الماضية، وحين تُزهر فجأة، فإن ذلك يشير إلى انبعاث الأمل وتجدد الحياة في أمر ظننتَ أنه مضى أو طال انتظاره.\n\nأما انقضاء ذلك في ليلة واحدة، فيدل على سرعة الفرج وتحول الأحوال بإذن الله، فالحديقة في الرؤيا تمثل راحة النفس وعمل الإنسان وصلاحه. وازدهار الشجر فيها يعكس ثمار الصبر وطيب الأثر ولحظات من الفرح واليسر تأتي بعد عناء أو طول انتظار، لتملأ القلب بالطمأنينة والسكن.\n\nفتأمل في محيطك وما تحمله أيامك، واعلم أن الخير والفرج قد يزهران في حياتك في لحظة لا تتوقعها."
   },
-  "engine": "fallback:gemini-3.6-flash"
+  "engine": "openrouter/free+fallback:gemini-3.6-flash"
 }

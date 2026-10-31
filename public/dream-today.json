@@ -1,18 +1,16 @@
-
 {
-  "date": "2026-10-29",
+  "date": "2026-10-31",
   "symbol": {
-    "key": "death",
-    "en": "Death",
-    "ar": "الموت"
+    "key": "baby",
+    "en": "Baby",
+    "ar": "رضيع"
   },
   "dream": {
-    "en": "I watched someone I love fade like morning mist.",
-    "ar": "راقبتُ من أحبّ يتلاشى كضباب الصباح."
+    "en": "I held a calm sleeping baby I somehow knew was mine.",
+    "ar": "احتضنتُ رضيعاً هادئاً نائماً علمتُ أنه لي."
   },
   "reading": {
-    "en": "The loved one in dreams often embodies our deepest attachments and the parts of ourselves we see reflected in another. Fading suggests a natural dissolution — whether of a role, a phase, or the illusion of permanence. Morning mist carries the ancient meaning of a threshold: the moment when night’s mystery lifts into day’s clarity, reminding us that what seems solid may be transient.\n\nThis image may mirror a quiet grief or an unspoken awareness that a relationship is shifting. It can also point to an inner transition, where you are learning to hold love without possession. The mist does not vanish violently; it simply yields to light, hinting that acceptance may come gradually, not by force.\n\nNotice where you are being asked to loosen your grip without losing your care.",
-    "ar": "رؤية من تحبّ يتلاشى كضباب الصباح تحمل رمزية البُعد والغياب غير الملموس؛ الضباب في التأويل الكلاسيكي يُشير إلى غموض الموقف أو إلى أمرٍ لم تتضح معالمه بعد، واختفاء الحبيب فيه قد يعكس خوفاً داخلياً من الفراق أو شعوراً بعدم القدرة على الإمساك بما يُحبّ القلب. المراقبة دون تدخّل تدل على موقف المتفرّج أمام متغيّرات لا سلطان لك عليها، وهو تذكير بأن المحبة الحقيقية تثبت في القلب لا في الحضور المادي فقط.  \n\nفي سياق الحياة، قد يكون الحلم دعوةً لمراجعة التعلّقات وتوطين النفس على أن الأرزاق والآجال بيد الله، وأن الصبر على ما يقدّره القدر من ابتلاء أو ابتعاد هو من أعظم العبادات. اللجوء إلى الصلاة والذكر يمنح السكينة حين تضيق الصدور بخوف الفقد.  \n\nتذكّر أن الرؤيا تعكس حال النفس لا المستقبل، فاجعلها فرصة لتقوية الثقة بالله وحسن الظن به."
-  },
-  "engine": "nvidia/nemotron-3-ultra-550b-a55b:free+cache"
+    "en": "The appearance of a calm sleeping baby you recognize as yours is a tender symbol of newness, potential, and pure being. In dream traditions across cultures, infants represent beginnings—whether of a project, relationship, aspect of self, or creative impulse that requires nurturing attention. The act of holding suggests care, responsibility, or an invitation to protect something vulnerable within your inner world. The certainty that the child is yours points to an authentic connection with this nascent quality; you may be being called to attend to a fresh idea, a new role, or a part of yourself that needs gentle support. The peaceful sleep of the baby reflects harmony or readiness—whatever this represents is currently in a state of restful possibility. Consider what in your waking life feels newly formed yet settled, or what you may have been neglecting that deserves your tender care.",
+    "ar": "احتضان الرضيع الهادئ النائم في المنام يُشير في تراث ابن سيرين إلى بداية جديدة تحمل بركة ورحمة، فالطفل رمز للمسؤولية الطاهرة والنمو الروحي. الهدوء والنوم يدلان على سلامة النية واستقرار الحال، مما يبشر بمرحلة يسودها السكينة والطمأنينة.\n\nعلمك بأن الرضيع لك يعكس قبولك التام لتلك المسؤولية، سواء كانت مشروعاً جديداً، علاقةً، أو التزاماً دينياً؛ فالمعرفة في الرؤيا علامة على الوعي والجاهزية لتحمل ما يُوكل إليك.\n\nاجعل قلبك مفتوحاً للرعاية والدعاء، واطمئن بأن الله يرعاك في كل خطوة."
+  }
 }

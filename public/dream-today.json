@@ -1,17 +1,17 @@
 {
   "date": "2026-10-31",
   "symbol": {
-    "key": "tree",
-    "en": "Tree",
-    "ar": "الشجرة"
+    "key": "cat",
+    "en": "Cat",
+    "ar": "القطة"
   },
   "dream": {
-    "en": "An old tree in my garden bloomed overnight.",
-    "ar": "أزهرت شجرةٌ عتيقة في حديقتي في ليلة."
+    "en": "A cat watched me from a windowsill and then vanished.",
+    "ar": "راقبتني قطةٌ من على حافة نافذة ثم اختفت."
   },
   "reading": {
-    "en": "An old tree often represents deep-rooted wisdom, endurance, and the accumulation of life experience. The garden symbolizes a personal or relational space where growth is cultivated, while the sudden bloom suggests an unexpected flourishing of creativity, emotion, or opportunity.\n\nIn waking life, this dream may reflect a period where long‑standing foundations are now revealing new possibilities — perhaps a project, relationship, or inner insight that has finally taken shape after months or years of quiet work. The overnight timing hints that the change feels sudden, yet it is rooted in the tree’s enduring presence.\n\nConsider how this sudden blossoming invites you to nurture your inner growth with patience and openness, trusting that the sturdy roots of your past support the fresh possibilities now unfolding.",
-    "ar": "إن رؤية أزهار الشجرة العتيقة في الحديقة خلال ليلة واحدة تُعدّ من الرؤى المبشرة بالخير والبركة في التعبير الإسلامي وتراث ابن سيرين. فالشجرة العتيقة ترمز في الغالب إلى الجذور الأ any الثابتة والأصل الطيب أو الأيام والسنوات الماضية، وحين تُزهر فجأة، فإن ذلك يشير إلى انبعاث الأمل وتجدد الحياة في أمر ظننتَ أنه مضى أو طال انتظاره.\n\nأما انقضاء ذلك في ليلة واحدة، فيدل على سرعة الفرج وتحول الأحوال بإذن الله، فالحديقة في الرؤيا تمثل راحة النفس وعمل الإنسان وصلاحه. وازدهار الشجر فيها يعكس ثمار الصبر وطيب الأثر ولحظات من الفرح واليسر تأتي بعد عناء أو طول انتظار، لتملأ القلب بالطمأنينة والسكن.\n\nفتأمل في محيطك وما تحمله أيامك، واعلم أن الخير والفرج قد يزهران في حياتك في لحظة لا تتوقعها."
+    "en": "A cat perching on a windowsill often symbolizes intuition, independence, and the quiet observation of your inner world. Windows in dreams act as boundaries between your private thoughts and the outside realm, suggesting that you are currently contemplating a transition or searching for clarity on a matter close to your heart. The cat’s steady gaze represents a deep, instinctive awareness waiting to be acknowledged.\n\nWhen the cat vanishes, it highlights the transient nature of sudden insights or fleeting opportunities. Across many cultural traditions, a disappearing animal in a dream serves as a subtle reminder that some answers cannot be forced or held onto tightly; rather, they reveal themselves when you step back and trust your natural discernment.\n\nTake a moment today to listen to the quiet nudges of your intuition before making your next decision.",
+    "ar": "يحمل ظهور القطة في المنام رمزية لطيفة في التراث والتفسير التقليدي؛ إذ تُعبر غالباً عن الخصوصية، والاحتراس، أو وجود شخص في محيطك يراقب تحركاتك بعناية وهدوء. ووقوفها على حافة النافذة يشير إلى مرحلة انتقالية أو رؤية للأمور من منظور جديد، حيث تعكس النافذة في عالم الأحلام أفق التطلع والفرص المعلقة بين الداخلي والخارجي.\n\nأما اختفاء القطة بهدوء في الرؤيا، فيُومئ وزوال القلق أو تلاشي أثر التوجس والرقابة التي ربما كنت تشعر بها في حياتك اليومية. يدل هذا التحول السريع على تبدد المخاوف العابرة وتيسير الأمور بعد فترة من الترقب، مما ينبئ بسلام داخلي واستقرار يحل في محيطك.\n\nتأمل في يومك كيف يمكنك مراقبة مشاعرك وأفكارك من بعيد بسلام، ودع ما لا يخدم راحة بالك يختفي ويمضي بسلاسة."
   },
-  "engine": "openrouter/free+fallback:gemini-3.6-flash"
+  "engine": "fallback:gemini-3.6-flash"
 }

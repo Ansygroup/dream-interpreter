@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "date": "2026-10-31",
   "symbol": {
     "key": "snake",
@@ -13,4 +14,21 @@
     "en": "A green snake traditionally carries meanings of renewal, healing, and quiet wisdom; its color points to growth and vitality. The house often represents the inner self or domestic foundation, while the garden gate marks a threshold between private space and the wider world.\n\nSeeing the snake depart through the gate may reflect a natural release — an old pattern, fear, or creative impulse moving from your inner life into outward expression. The movement outward suggests readiness rather than loss, as if something you have nurtured internally is now seeking its place in the open.\n\nTrust the timing of this transition; what leaves the house through the gate does so because the path is clear.",
     "ar": "الثعبان الأخضر في التأويل الكلاسيكي قد يرمز إلى عدوٍ مبطِن أو فتنةٍ خفية، ولونُه الأخضر يُرجى فيه الخير أو الإسلام، وخروجه من البيت عبر بوابة الحديقة يدل على زوالِ همٍّ أو خروجِ مكروهٍ من محيطك الخاص. البابُ والبستانُ في الرؤيا يشيران إلى المدخل الذي تُغادر منه الأمور، فالخروج عبر البوابة يُفسر غالباً بفرجٍ قريب أو انكشافِ أمرٍ كان مستوراً.\n\nاربط هذا بما تعيشه: ربما هناك موقفٌ أو علاقةٌ تشعرك بالقلق وتستعد للرحيل، أو همٌّ طال أمده وبدأ يتحلل. لا تُعجل بتفسيرٍ قاطع، بل راقب مشاعرك عند اليقظة وتوجه بالدعاء والاستخارة.\n\nاللهم اكشف عنا كل سوء، واجعل خروج ما يضرنا بدايةً لخيرٍ نستبشر به."
   }
+=======
+  "date": "2026-10-29",
+  "symbol": {
+    "key": "death",
+    "en": "Death",
+    "ar": "الموت"
+  },
+  "dream": {
+    "en": "I watched someone I love fade like morning mist.",
+    "ar": "راقبتُ من أحبّ يتلاشى كضباب الصباح."
+  },
+  "reading": {
+    "en": "The loved one in dreams often embodies our deepest attachments and the parts of ourselves we see reflected in another. Fading suggests a natural dissolution — whether of a role, a phase, or the illusion of permanence. Morning mist carries the ancient meaning of a threshold: the moment when night’s mystery lifts into day’s clarity, reminding us that what seems solid may be transient.\n\nThis image may mirror a quiet grief or an unspoken awareness that a relationship is shifting. It can also point to an inner transition, where you are learning to hold love without possession. The mist does not vanish violently; it simply yields to light, hinting that acceptance may come gradually, not by force.\n\nNotice where you are being asked to loosen your grip without losing your care.",
+    "ar": "رؤية من تحبّ يتلاشى كضباب الصباح تحمل رمزية البُعد والغياب غير الملموس؛ الضباب في التأويل الكلاسيكي يُشير إلى غموض الموقف أو إلى أمرٍ لم تتضح معالمه بعد، واختفاء الحبيب فيه قد يعكس خوفاً داخلياً من الفراق أو شعوراً بعدم القدرة على الإمساك بما يُحبّ القلب. المراقبة دون تدخّل تدل على موقف المتفرّج أمام متغيّرات لا سلطان لك عليها، وهو تذكير بأن المحبة الحقيقية تثبت في القلب لا في الحضور المادي فقط.  \n\nفي سياق الحياة، قد يكون الحلم دعوةً لمراجعة التعلّقات وتوطين النفس على أن الأرزاق والآجال بيد الله، وأن الصبر على ما يقدّره القدر من ابتلاء أو ابتعاد هو من أعظم العبادات. اللجوء إلى الصلاة والذكر يمنح السكينة حين تضيق الصدور بخوف الفقد.  \n\nتذكّر أن الرؤيا تعكس حال النفس لا المستقبل، فاجعلها فرصة لتقوية الثقة بالله وحسن الظن به."
+  },
+  "engine": "nvidia/nemotron-3-ultra-550b-a55b:free+cache"
+>>>>>>> origin/master
 }

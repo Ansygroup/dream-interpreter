@@ -22,27 +22,93 @@ const OUT = path.join(root, 'public', 'dream-today.json');
 const today = new Date().toISOString().slice(0, 10);
 
 const sh = (cmd, t) => { try { return execSync(cmd, { cwd: root, encoding: 'utf8', stdio: 'pipe', timeout: t }); } catch (e) { return (e.stdout || '') + (e.stderr || ''); } };
+<<<<<<< HEAD
 // Park the thread without burning a core (a plain spin loop pegged the CPU).
 const sleepMs = (ms) => { try { Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, ms); } catch (_) { const e = Date.now() + ms; while (Date.now() < e) {} } };
+=======
+// Same as sh() but keeps the exit code. The generator exits non-zero when the API
+// never returns a complete reading from a real engine, and that MUST stop the
+// pipeline: sh() swallows the code, so a stale boilerplate file left on disk from
+// an earlier tick used to satisfy the existence + date checks and the run went on
+// to commit, push and burn a Vercel quota slot shipping the SAME degraded bytes.
+const shCode = (cmd, t) => { try { return { out: execSync(cmd, { cwd: root, encoding: 'utf8', stdio: 'pipe', timeout: t }), code: 0 }; } catch (e) { return { out: (e.stdout || '') + (e.stderr || ''), code: e.status === null || e.status === undefined ? 1 : e.status }; } };
+>>>>>>> origin/master
 const getJson = (u) => new Promise((res) => {
   https.get(u, (r) => { let b = ''; r.on('data', (c) => (b += c)); r.on('end', () => { try { res(JSON.parse(b)); } catch { res(null); } }); }).on('error', () => res(null));
 });
 
 console.log(`[daily-feed] ${new Date().toISOString()}`);
-// Already live for today?
+
+// Safety guard: this script pushes the checked-out tree to master and deploys it
+// to production. If the repo is sitting on a feature/redesign branch, that would
+// silently ship unreviewed work. Only the release branch may publish.
+const BRANCH = (process.env.FEED_BRANCH || 'master');
+const head = sh('git rev-parse --abbrev-ref HEAD', 20000).trim();
+if (head !== BRANCH) {
+  console.error(`[daily-feed] ABORT — checked-out branch is ${JSON.stringify(head)}, expected ${JSON.stringify(BRANCH)}.`);
+  console.error('[daily-feed] Refusing to push/deploy from a non-release branch.');
+  process.exit(2);
+}
+if (/^\s*(UU|AA|DD|AU|UA|DU|UD)/.test(sh('git diff --name-only --diff-filter=U', 20000))) {
+  console.error('[daily-feed] ABORT — unresolved merge conflicts.');
+  process.exit(2);
+}
+
+// A real LLM reading is several hundred characters. The offline fallback
+// (engine:"offline", returned when the free-model quota is 429-exhausted) is a
+// ~206-char keyword template that is always "complete" by shape, so a date-only
+// check treated degraded output as a finished card. This detects the boilerplate
+// by content so a later tick can regenerate it once quota recovers.
+const OFFLINE_BOILERPLATE_EN = 'uniquely yours';
+const looksDegraded = (d) =>
+  !!d && !!(d.reading && String(d.reading.en || '').includes(OFFLINE_BOILERPLATE_EN));
+
+// Literal U+FFFD replacement characters render as black diamonds in the card.
+// Independent of how the file was produced, a reading containing one is broken
+// text — never publish it.
+const hasMojibake = (d) =>
+  !!d && !!d.reading && [d.reading.en, d.reading.ar].some((t) => /\ufffd/.test(String(t || '')));
+
+// Already live for today AND not a degraded card?
 const live = await getJson(`${BASE}/dream-today.json`);
-if (live && live.date === today) { console.log('[daily-feed] live already has today\'s dream — nothing to do.'); process.exit(0); }
+if (live && live.date === today && !looksDegraded(live)) {
+  console.log('[daily-feed] live already has today\'s dream — nothing to do.');
+  process.exit(0);
+}
+if (live && live.date === today && looksDegraded(live)) {
+  console.log('[daily-feed] live card for today is OFFLINE BOILERPLATE (free-model quota was down) — regenerating.');
+}
+if (live && live.date === today && hasMojibake(live)) {
+  console.log('[daily-feed] live card for today contains replacement characters — regenerating.');
+}
 
 // 1. generate
-sh('node scripts/gen-dream-today.mjs', 120000);
+// 480s: with the site LLM pool down, the generator waits out the fallback
+// gateway's 1-request-per-minute free gate between EN and AR before giving up.
+// The old 180s ceiling cut the retry off mid-wait and failed the whole day.
+const gen = shCode('node scripts/gen-dream-today.mjs', 480000);
+if (gen.out.trim()) console.log(gen.out.trim());
+if (gen.code !== 0) {
+  console.error('[daily-feed] generator did not produce a real reading (free-model quota still down) — NOT committing, NOT deploying. Will retry next tick.');
+  process.exit(0); // quota-safe: a later tick with quota back regenerates the card
+}
 if (!fs.existsSync(OUT)) { console.error('[daily-feed] generation failed.'); process.exit(1); }
 const local = JSON.parse(fs.readFileSync(OUT, 'utf8'));
 if (local.date !== today) { console.error('[daily-feed] generated date mismatch.'); process.exit(1); }
+if (looksDegraded(local)) { console.error('[daily-feed] generated card is degraded — abort.'); process.exit(1); }
+if (hasMojibake(local)) { console.error('[daily-feed] generated card contains replacement characters — abort.'); process.exit(1); }
 
 // 2. commit + push
 sh('git add public/dream-today.json');
 sh('git -c user.email="ansy@ansygroup.com" -c user.name="Hermes" commit -q -m "chore: dream of the day — ' + local.symbol.en + ' (' + today + ')"');
-sh('git push origin master', 60000);
+const push = sh('git push origin ' + BRANCH, 60000);
+// sh() returns '' on success and captured stderr on failure — never deploy a
+// push that did not land, or the card silently reverts on the next build.
+if (/rejected|error:|failed|denied|non-fast-forward/i.test(push)) {
+  console.error('[daily-feed] git push FAILED — not deploying.');
+  console.error(push.trim().slice(0, 500));
+  process.exit(3);
+}
 
 // 2b. SETTLE: do not hand off to the deploy loop until origin/master ACTUALLY
 // carries today's date. 2026-10-03: the push landed at 03:01:17Z but the deploy
@@ -75,8 +141,11 @@ const out = existsSync(DEPLOY_LOOP)
   : sh('timeout 150 vercel deploy --prod --yes 2>&1', 160000);
 if (/api-deployments-free-per-day/.test(out)) { console.log('[daily-feed] QUOTA BLOCKED — will retry next tick.'); process.exit(0); }
 
-// 4. verify
+// 4. verify — CONTENT, not just the date. `live.date === today` alone was true
+// for the degraded boilerplate card that was already published, so the run
+// printed "VERIFIED" while the site kept serving an offline keyword template.
 const verify = await getJson(`${BASE}/dream-today.json`);
+<<<<<<< HEAD
 if (verify && verify.date === today) {
   console.log(`[daily-feed] VERIFIED — live dream of the day: ${local.symbol.en}`);
   process.exit(0);
@@ -98,3 +167,14 @@ if (/free-per-day|100\/day|quota/i.test(String(retry))) {
   console.log('[daily-feed] STILL STALE after the retry — the feed is committed on origin/master; the next deploy-loop run will promote it.');
 }
 process.exit(1);
+=======
+if (!verify || verify.date !== today) {
+  console.log('[daily-feed] deployed but live not yet updated — will retry next tick.');
+} else if (looksDegraded(verify)) {
+  console.log('[daily-feed] live card is STILL the offline boilerplate — not verified; will retry next tick.');
+} else if (hasMojibake(verify)) {
+  console.log('[daily-feed] live card contains replacement characters — not verified; will retry next tick.');
+} else {
+  console.log(`[daily-feed] VERIFIED — live dream of the day: ${local.symbol.en} (engine=${verify.engine || 'unknown'}, en ${String(verify.reading?.en || '').length}ch / ar ${String(verify.reading?.ar || '').length}ch)`);
+}
+>>>>>>> origin/master

@@ -174,12 +174,23 @@ function buildFallback(dream, lang, perspective) {
 
 // Free-first chain: each free model has its own availability window, so we
 // cascade. A paid model is only used when explicitly set via DREAMSCOPE_AI_MODEL.
+// Ordered by measured liveness (probe-models.py). OpenRouter retires free
+// models silently: a retired id answers HTTP 404 and the whole cascade falls
+// through to offline. Re-probe before blaming the API key.
 const FREE_MODELS = [
+<<<<<<< HEAD
   'openrouter/free',                            // router-side pool — never a retired id
   'nvidia/nemotron-3-super-120b-a12b:free',
   'google/gemma-4-26b-a4b-it:free',
   'google/gemma-4-31b-it:free',
   'nvidia/nemotron-3-ultra-550b-a55b:free',    // replaced qwen/qwen3.8-27b:free (retired -> HTTP 404)
+=======
+  'openrouter/free',                       // router-side pool — never a retired id
+  'nvidia/nemotron-3-super-120b-a12b:free',
+  'google/gemma-4-26b-a4b-it:free',
+  'google/gemma-4-31b-it:free',
+  'qwen/qwen3.8-27b:free',
+>>>>>>> origin/master
   'nvidia/nemotron-3.5-lightning:free',
 ];
 const MODELS = [

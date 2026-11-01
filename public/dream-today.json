@@ -1,17 +1,17 @@
 {
   "date": "2026-11-01",
   "symbol": {
-    "key": "flying",
-    "en": "Flying",
-    "ar": "الطيران"
+    "key": "money",
+    "en": "Money",
+    "ar": "المال"
   },
   "dream": {
-    "en": "I was flying above my city at dawn and the streets glowed beneath me.",
-    "ar": "كنتُ أطير فوق مدينتي عند الفجر وتألقت الشوارع تحتي."
+    "en": "I found coins in the lining of an old coat.",
+    "ar": "وجدتُ قطعاً نقدية في بطانة معطفٍ قديم."
   },
   "reading": {
-    "en": "Flying elevated above the familiar streets of your city suggests a profound shift in perspective, offering you a sense of freedom and a bird's-eye view over your everyday life. In classical dream traditions, flight often symbolizes liberation from heavy burdens, rising above immediate worries, or gaining spiritual clarity. Taking flight at dawn enhances this meaning, as the dawn traditionally signifies new beginnings, hope, and the light of insight breaking through prior ambiguity.\n\nThe glowing streets beneath you represent your path and the foundation of your community illuminated with fresh purpose and potential. Where daily routines might usually feel mundane, this vibrant light highlights hidden possibilities and reassures you that your journey has meaning. Together, these symbols reflect a moment in your waking life where you are ready to view your circumstances with renewed optimism and a expanded sense of direction.\n\nMay this dream remind you to trust the elevated perspective you have recently gained as you step into the promise of a new day.",
-    "ar": "حلم الطيران فوق المدينة في وقت الفجر من الرؤى المحمودة التي تحمل في طياتها بشائر الخير والتجدد. يتجلى الطيران في المأثور الإيماني وتعبيرات ابن سيرين كرمز للرفعة، وعلّو الشأن، والتحرر من الضغوط أو الأثقال التي قد تكبل الروح، بينما يعبر الفجر عن انبثاق الأمل، وبداية مرحلة جديدة ملؤها الضياء والوضوح بعد فترة من العتمة أو الترقب.\n\nأما تألق الشوارع تحتك، فيشير إلى انفراج المسارات أمامك وإشراق الفرص في حياتك الواقعية. إن الرؤية من الأعلى تمنحك بصيرة أعمق للحقيقة ووضوحاً في اتخاذ القرارات، وتألق الطريق يبشر بأن الخطوات القادمة في سعيك وراء أهدافك ستكون ميسرة ومحفوفة بالتوفيق والنجاح بإذن الله.\n\nاستبشر بهذا المنام خيراً، واجعل من صفاء الفجر وطاقة التجدد في حلمك دافعاً لتقبل البدايات الجديدة بقلب مطمئن ونفس واثقة."
+    "en": "Finding coins tucked away in the lining of an old coat is a rich, reassuring symbol of hidden value and overlooked personal strength. In classical dream traditions, coins represent tangible resources, self-worth, and inner potential, while an old coat signifies past experiences, protective habits, or a former chapter of your life. Uncovering something precious in a neglected seam suggests that wisdom, emotional resilience, or talents you acquired long ago are still intact and ready to serve you now.\n\nThis dream often appears during moments of transition or quiet self-doubt, gently reminding you that your true wealth is not missing, merely waiting to be rediscovered. The lining of the coat—the part kept closest to the body and hidden from external view—points to internal reserves rather than outward achievements. You may be underestimating what you already possess, whether that is past knowledge, an old creative passion, or a deep sense of personal grounding that you set aside during a previous season.\n\nMay this dream remind you to trust the quiet treasures within your own history as you move forward.",
+    "ar": "رؤية العملات المعدنية العتيقة في بطانة معطف قديم تحمل في طياتها معانٍ طيبة وإشارات إلى الخير المستور. فالمعطف القديم في التراث والرمزية، كما يذكر مفسرون كابن سيرين، يعبر عن الوقاية والستر والأمان الذي يحف المرء في حياته، بينما ترمز البطانة إلى الأمور الخافية أو الذخائر التي ينساها الإنسان في زحمة الأيام.\n\nأما النقود أو القطع المعدنية، فغالباً ما تشير إلى الأرزاق والتجارات أو الكلمات الطيبة والفرص التي تظهر في وقتها المناسب. والعثور عليها داخل البطانة يبشر بفرج قريب أو نعم وموارد كانت غائبة عن بالك، ربما تكون مهارة قديمة تعود للاستفادة منها، أو رزقاً مباركاً يأطيك من حيث لا تحتسب، أو طمأنينة تعود إلى قلبك بعد فترة من الترقب.\n\nهذا الحلم يدعوك إلى التأمل في النعم المحيطة بك والتي قد تغفل عينك عنها، متذكراً أن الفرج والخير غالباً ما يكمنان في أضعف الأسباب وأبسط الأشياء المحيطة بك."
   },
   "engine": "fallback:gemini-3.6-flash"
 }

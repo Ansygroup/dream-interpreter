@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-31",
+  "date": "2026-11-01",
   "symbol": {
-    "key": "fish",
-    "en": "Fish",
-    "ar": "السمكة"
+    "key": "falling",
+    "en": "Falling",
+    "ar": "السقوط"
   },
   "dream": {
-    "en": "I swam with a school of fish in clear blue water.",
-    "ar": "سبحتُ مع مجموعة من الأسماك في ماءٍ أزرق صافٍ."
+    "en": "I fell through the air but never hit the ground.",
+    "ar": "سقطتُ عبر الهواء لكنني لم ألمس الأرض."
   },
   "reading": {
-    "en": "To swim alongside a school of fish in clear, transparent water is a deeply harmonious omen across many cultural traditions. Water represents the realm of emotions and the subconscious, and its pristine clarity suggests a period of mental transparency, peace, and emotional alignment. Rather than struggling against the current, your fluid movement through the depths indicates that you are in sync with your inner self and navigating your current life journey with remarkable grace and ease.\n\nFish are classic cross-cultural symbols of intuition, abundance, spiritual growth, and unseen wisdom emerging from the deep. Moving *with* a school of fish—rather than observing them from afar or trying to catch them—points to a profound sense of belonging and collective support. It traditionally signifies that you are moving in rhythm with a greater community or aligning yourself with the natural, fruitful flow of life rather than fighting it.\n\nMay this dream remind you to trust the supportive currents around you and honor the effortless flow of your own intuition.",
-    "ar": "السباحة والأسماك والماء الصافي هي رؤيا طيبة تحمل في طياتها بشائر الخير والسكينة. في التعبير الإسلامي كما يذكر ابن سيرين، يرمز السباحة بسهولة في ماء أزرق صافٍ إلى الرزق الواسع وتيسير الأمور والتخلص من الهموم والغموم. كما تدل صافية الماء على صفاء النية وطهارة القلب ووضوح الهدف في حياة الرسي.\n\nأما الأسماك فتعد من الرموز الشائعة التي تعبر عن الأرباح والمنافع والمكاسب غير المتوقعة، وقد تشير إلى صلات اجتماعية مباركة وصحبة صالحة تحيط بك وتدعمك في مسيرتك. ووجودك بين مجموعة من الأسماك يعكس حركة إيجابية وتناغماً جميلًا مع من حولك في بيئة العمل أو الحياة الخاصة.\n\nاطمئن فإن هذا الحلم يدعوك للاستبشار بما هو قادم والإقبال على أيامك بثقة ورضا، واستمد من صفاء هذا المنام طاقة لطيفة تعينك على اتخاذ خطواتك المقبلة بكل طمأنينة ويسر."
+    "en": "Falling through the air without ever striking the ground is one of the most classic motifs in dream lore, traditionally symbolizing a profound transition where you have let go of control yet haven't found a new foundation. Across many ancient traditions, endless falling reflects a period of uncertainty—a feeling of being suspended between two chapters of life, free from your previous anchors, but uncertain of where you will land.\n\nThe central symbol here is the vast, untethered air itself, which represents potential, surrender, and the surrender of earthly certainty. While sudden dropping often mirrors anxieties about losing security or status, the absence of an impact softens the omen. In classical interpretation, never hitting the bottom suggests that the perceived danger of your current instability is far less destructive than you fear; the mind is simply coming to terms with the weightlessness of change.\n\nConsider where in your waking life you feel as though you are suspended without firm ground, and trust that remaining in motion is not the same as falling apart.",
+    "ar": "تُعبر رؤية السقوط عبر الهواء دون لمس الأرض في التراث التفسيري، كما أشار أمثال ابن سيرين، عن مرحلة يمر بها الإنسان بين التخلي والرجاء. فالسقوط في المنام غالباً ما يرمز إلى عدم الاستقرار أو الخوف من فقدان السيطرة في بعض أمور الحياة، غير أن عدم الارتطام بالأرض يحمل بشرى لطيفة بالنجاة والسلامة، ويشير إلى أن اللطف الإلهي يحيط بك ويحميك من التعثر الفعلي.\n\nتتجسد في هذا الحلم رمزيتا الهواء والتحليق المعلق، حيث يعكس الهواء الشديد والتنقل فيه حالة من التشتت أو القلق النفسي تجاه المستقبل، بينما يعبر محالفة عدم الملامسة عن قوة في روحك ورعاية تحميك من الوقوع في المشكلات. تدعوك هذه الرؤية إلى الطمأنينة وعدم الانسياق وراء المخاوف العابرة، وتذكرك بأن ما تخشاه قد لا يقع أبداً.\n\nاستحضر السكينة في يومك، واجعل من هذا المنام دافعاً لتوثيق صلتك بخالقك والاعتماد عليه في كل خطواتك."
   },
   "engine": "fallback:gemini-3.6-flash"
 }

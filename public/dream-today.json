@@ -1,17 +1,17 @@
 {
-  "date": "2026-11-01",
+  "date": "2026-11-02",
   "symbol": {
-    "key": "teeth",
-    "en": "Teeth",
-    "ar": "الأسنان"
+    "key": "pregnancy",
+    "en": "Pregnancy",
+    "ar": "الحمل"
   },
   "dream": {
-    "en": "A tooth came loose and crumbled in my hand.",
-    "ar": "تزعزع سنٌ وسقط متفتتاً في يدي."
+    "en": "Someone told me news that would change a family forever.",
+    "ar": "أخبرني أحدهم بخبرٍ سيغيّر عائلةً للأبد."
   },
   "reading": {
-    "en": "Teeth are among the oldest and most universal symbols in dream tradition, often representing power, security, vitality, and your ability to nourish yourself or speak your truth. Across classical Middle Eastern and Western folklore, teeth falling out or crumbling typically signals a deep fear of losing control, anxieties around aging or physical well-being, or a sense that something once foundational in your life is becoming unstable. Handing the pieces of yourself after they break suggests you are actively witnessing a transition or a decline in a situation you previously relied upon.\n\nWhen a tooth crumbles directly in your hand, the dream moves beyond passive fear into a moment of realization. Holding the dust or fragments shows that a belief, a relationship, or a source of personal confidence has broken down to the point where it can no longer be put back together as it was. It often mirrors times in waking life where stress has accumulated, leaving you feeling vulnerable, exposed, or concerned about how others perceive your strength.\n\nRather than predicting misfortune, this dream invites you to release what can no longer support you and conserve your energy for what truly lasts. Take a moment today to consider where you might be holding on to stress or trying to preserve something that has already run its course, and allow yourself permission to rest.",
-    "ar": "رؤية تزعزع السن وسقوطه متفتتاً في اليد تحمل في طياتها معاني الرزق وتفريج الهموم وفق ما ذكره علماء تعبير الرؤى كالإبن سيرين. فالسن في المنام كثيراً ما يرمز إلى الأهل أو السند أو أمر عزيز يشغل بال الرسيخ في حياته اليومية، ورؤيته يتزعزع تشير إلى مرحلة من التوتر أو القلق العابر حول موضوع يعتمد عليه صاحب الرؤيا.\n\nأما سقوط السن في كف اليد وتفتته، فهو بشرى خير ولين؛ إذ يرى أهل التفسير أن احتضان السن باليد بدلاً من سقوطه على الأرض يدل على نيل منفعة، أو قضاء دين، أو التخلص من عبء ثقيل يزول تدريجياً وتتلاشى أسبابه كما يتفتت السن دون ألم أو أذى.\n\nتأمل في حياتك عما يسبب لك القلق هذه الأيام، واعلم أن التغيرات التي تبدو مقلقة في بدايتها قد تكون سبباً لتيسير أمورك وزوال ما يثقل كاهلك بإذن الله."
+    "en": "Receiving news that fundamentally alters a family's trajectory in a dream often mirrors an internal transition or an impending shift in your waking dynamics. In classical dream traditions, hearing unexpected or monumental tidings rarely portends a literal external event; rather, it symbolizes the arrival of an inevitable realization, an unvoiced truth, or a conscious desire to reshape long-standing relational patterns.\n\nThe concept of family within dreams typically represents your foundational beliefs, ancestral roots, and the inner circle of safety and identity you carry within yourself. When a unknown or unnamed messenger delivers life-altering news, it suggests that a part of your subconscious—or an outside circumstance—is prompting you to re-examine those core structures and release dynamic roles that no longer serve your growth.\n\nTo dream of a permanent shift within your domestic or emotional world invites you to embrace change rather than fear it. Consider what unspoken truths or emerging boundaries in your personal life are calling for your honest attention today.",
+    "ar": "رؤية سماع خبر كبير أو مفاجئ في المنام تحمل في طياتها دلالات عميقة؛ فالخبر في التعبيرات الإسلامية وتفاسير أئمة تعبير الرؤى، كابن سيرين، غالبًا ما يرتبط بالتحولات الجذرية والانتقال من حال إلى حال. وما قد يبدو في الظاهر مدعاة للقلق أو الترقب، يشير في الأصل إلى بشائر بالتغير وتبدل الظروف نحو الأفضل، أو بداية مرحلة جديدة تحمل الخير والبركة للعائلة بأكملها، إذ إن الكلمة والخبر في الرؤى هما رمز للفرج وتحقق أمر انتظرته القلوب طويلًا.\n\nيعكس هذا الحلم يرتبط بحديث النفس وما تجيش به السيرة الحياتية؛ حيث تجسد الرؤيا حالة الترقب والتفكير المستمر في مستقبل الأسرة واستقرارها. وسماع أن الخبر سيغير العائلة للأبد يرمز في العادة إلى توثيق الروابط، أو حلول حدث سار يجتمع عليه الشمل، كزواج أو نجاح أو رزق واسع يفيض خيره على الجميع، مع أخذ العبرة بضرورة التفؤل بالخير، فالأحلام تتبع ما يتمناه المرء من استبشار برحمة الله وفضله.\n\nاستحضر الدفء والسكينة في علاقتك بأهلك، واجعل من هذه الرؤيا دافعًا لتعزيز التواصل والتراحم، متوكلًا على الله الذي يسيّر الأمور كلها إلى ما فيه الخير والصلاح."
   },
   "engine": "fallback:gemini-3.6-flash"
 }

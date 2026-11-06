@@ -106,8 +106,10 @@ try {
   // after a checkout stays unpublished forever if only HEAD's branch is checked.
   const NL_CHR = String.fromCharCode(10);
   const NOPROMPT = { ...process.env, GIT_TERMINAL_PROMPT: '0', GCM_INTERACTIVE: 'never', GCM_TERMINAL_PROMPT: '0' };
-  const git = (cmd, extra = {}) =>
-    execSync(cmd, { cwd: root, encoding: 'utf8', env: NOPROMPT, timeout: 30000, stdio: ['ignore', 'pipe', 'pipe'], ...extra });
+  const git = (cmd, extra = {}) => {
+    const fixed = /^git/.test(cmd) ? cmd.replace(/^git/, 'git -c credential.helper= -c credential.helper=store') : cmd;
+    return execSync(fixed, { cwd: root, encoding: 'utf8', env: NOPROMPT, timeout: 30000, stdio: ['ignore', 'pipe', 'pipe'], ...extra });
+  };
   const err1 = (e) => String((e && e.message) || '').split(NL_CHR)[0];
   const isAncestor = (a, ref) => { try { git('git merge-base --is-ancestor ' + a + ' ' + ref, { timeout: 20000 }); return true; } catch { return false; } };
 
@@ -169,7 +171,7 @@ try {
     let lastErr = '';
     for (let attempt = 1; attempt <= 3; attempt++) {
       try {
-        execSync(cmd, { cwd: root, stdio: 'inherit', env: NOPROMPT, timeout: 120000 });
+        execSync(/^git/.test(cmd) ? cmd.replace(/^git/, 'git -c credential.helper= -c credential.helper=store') : cmd, { cwd: root, stdio: 'inherit', env: NOPROMPT, timeout: 120000 });
         log(attempt > 1 ? b + ': pushed (after ' + attempt + ' attempts)' : b + ': pushed');
         return;
       } catch (e) {

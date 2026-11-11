@@ -1,18 +1,18 @@
 
 {
-  "date": "2026-11-07",
+  "date": "2026-11-11",
   "symbol": {
-    "key": "baby",
-    "en": "Baby",
-    "ar": "الرضيع"
+    "key": "death",
+    "en": "Death",
+    "ar": "الموت"
   },
   "dream": {
-    "en": "I held a calm sleeping baby I somehow knew was mine.",
-    "ar": "احتضنتُ رضيعاً هادئاً نائماً علمتُ أنه لي."
+    "en": "I watched someone I love fade like morning mist.",
+    "ar": "راقبتُ من أحبّ يتلاشى كضباب الصباح."
   },
   "reading": {
-    "en": "Holding a calm, sleeping baby in a dream is one of the most reassuring symbols across world traditions, representing new beginnings, unexpressed potential, and inner peace. In classic dream lore, a baby that is entirely serene signifies a project, creative endeavor, or personal transition that is taking root naturally and without distress. Recognizing this child as your own—even if unexpected—reflects a deep, quiet acceptance of a new part of yourself or a responsibility you are fully prepared to nurture.\n\nBecause the child is resting rather than crying or demanding attention, the dream suggests that your recent efforts or hidden aspirations are in a state of harmonious growth. Culturally, caring for a peaceful infant points to hidden strengths and an instinctual wisdom that is guiding your life behind the scenes. It highlights a period where trust in your own journey outweighs anxiety about the future, offering reassurance that what you are bringing into the world is safe in your hands.\n\nTake comfort in this stillness, and allow yourself to trust the quiet, steady growth unfolding within your life.",
-    "ar": "حمل الرضيع الهادئ والنائم في المنام يبشر بخير وفير، فهو في التأويل الشعبي والتقليدي، ولا سيما عند المفسرين كابن سيرين، يعبر عن البدايات الجديدة والطاهرة، ويرمز إلى الأمانة والمسؤولية المباركة التي تأتي بفرص ناعمة وميسرة من دون عناء. \n\nويرتبط شعور الملكية في الحلم، حين علمتِ أنه لكِ، باحتضان الجوانب النامية في حياتكِ أو نضج أفكار ومشروعات جديدة ترعاها بكل حب وصبر. ويزيد سكون الرضيع ونومه العميق من الدلالة على طمأنينة البال وراحة الفكر واستقرار الأحوال بعيداً عن القلق والاضطراب.\n\nاستقبلي هذه الرؤية كدعوة لطيفة لتغذية مشاعرك الصافية والعناية بما تنمينه في واقعكِ بالرفق ذاته والمحبة."
+    "en": "This dream speaks to one of the most poignant human experiences: the fear of loss and the quiet transition of deep emotional bonds. Across many cultural traditions, mist represents the boundary between the seen and the unseen, symbolizing ambiguity, impermanence, or a feeling that something meaningful is slipping beyond your grasp. Watching a loved one fade within this mist suggests an underlying anxiety about distance, whether that manifests as emotional detachment, a changing relationship dynamic, or simply the natural evolution of life moving forward.\n\nRather than predicting an actual loss, dreams of fading figures traditionally reflect the dreamer's internal processing of vulnerability. Love naturally carries the shadow of fear—the worry that what is precious to us might prove fleeting. The gentle nature of morning mist, which dissolves softly with the rising sun rather than shattering abruptly, hints that this vision is less about tragic ending and more about learning to surrender control over what cannot be permanently anchored.\n\nTake this vision as a gentle invitation to cherish your connections in the present moment without holding onto them too tightly.",
+    "ar": "رؤية تلاشي من تحب كضباب الصباح تحمل في طياتها رمزية عميقة تتصل بأحوال القلوب وتغير المفاهيم. في التراث الإسلامي وكتب تعبير الرؤى، يُشير الضباب غالباً إلى الغموض، أو الحيرة، أو مرحلة من عدم الوضوح وشيء من القلق العاطفي الذي قد يمر به الإنسان في علاقاته أو تجاه من يعز عليهم.\n\nاختفاء الحبيب هنا لا يعني بالضرورة البعد المادي أو الفقد، بل يرمز في كثير من الأحيان إلى الخوف الداخلي من تغير المشاعر، أو الرغبة في التمسك بما نخشى ضياعه. فالصباح يترافق دائماً مع الإشراق وتجلي الحقائق، وظهور الضباب فيه يمثل لحظات عابرة تزول بطلوع الشمس واستقرار الرؤية.\n\nتذكر دائماً أن ما يخشى القلب تشتته غالباً ما يحتاج إلى الطمأنينة والتأنّي، والتأمل الصادق في مكنونات النفس يدلك على طريق الوضوح والسكينة."
   },
   "engine": "fallback:gemini-3.6-flash"
 }

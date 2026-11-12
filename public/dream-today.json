@@ -1,17 +1,17 @@
 {
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "symbol": {
-    "key": "death",
-    "en": "Death",
-    "ar": "الموت"
+    "key": "pregnancy",
+    "en": "Pregnancy",
+    "ar": "الحمل"
   },
   "dream": {
-    "en": "I watched someone I love fade like morning mist.",
-    "ar": "راقبتُ من أحبّ يتلاشى كضباب الصباح."
+    "en": "Someone told me news that would change a family forever.",
+    "ar": "أخبرني أحدهم بخبرٍ سيغيّر عائلةً للأبد."
   },
   "reading": {
-    "en": "This dream speaks to one of the most poignant human experiences: the fear of loss and the quiet transition of deep emotional bonds. Across many cultural traditions, mist represents the boundary between the seen and the unseen, symbolizing ambiguity, impermanence, or a feeling that something meaningful is slipping beyond your grasp. Watching a loved one fade within this mist suggests an underlying anxiety about distance, whether that manifests as emotional detachment, a changing relationship dynamic, or simply the natural evolution of life moving forward.\n\nRather than predicting an actual loss, dreams of fading figures traditionally reflect the dreamer's internal processing of vulnerability. Love naturally carries the shadow of fear—the worry that what is precious to us might prove fleeting. The gentle nature of morning mist, which dissolves softly with the rising sun rather than shattering abruptly, hints that this vision is less about tragic ending and more about learning to surrender control over what cannot be permanently anchored.\n\nTake this vision as a gentle invitation to cherish your connections in the present moment without holding onto them too tightly.",
-    "ar": "رؤية تلاشي من تحب كضباب الصباح تحمل في طياتها رمزية عميقة تتصل بأحوال القلوب وتغير المفاهيم. في التراث الإسلامي وكتب تعبير الرؤى، يُشير الضباب غالباً إلى الغموض، أو الحيرة، أو مرحلة من عدم الوضوح وشيء من القلق العاطفي الذي قد يمر به الإنسان في علاقاته أو تجاه من يعز عليهم.\n\nاختفاء الحبيب هنا لا يعني بالضرورة البعد المادي أو الفقد، بل يرمز في كثير من الأحيان إلى الخوف الداخلي من تغير المشاعر، أو الرغبة في التمسك بما نخشى ضياعه. فالصباح يترافق دائماً مع الإشراق وتجلي الحقائق، وظهور الضباب فيه يمثل لحظات عابرة تزول بطلوع الشمس واستقرار الرؤية.\n\nتذكر دائماً أن ما يخشى القلب تشتته غالباً ما يحتاج إلى الطمأنينة والتأنّي، والتأمل الصادق في مكنونات النفس يدلك على طريق الوضوح والسكينة."
+    "en": "Hearing news that has the power to alter a family forever in a dream often touches on deep emotional transitions, impending shifts in identity, or unspoken anxieties about change. Words delivered by an unknown or ambiguous messenger traditionally represent your own intuitive awareness—a part of your psyche signaling that a dynamic within your personal world or inner life is undergoing a significant evolution.\n\nIn cross-cultural dream traditions, the concept of family symbolizes foundational stability, shared history, and core values. Hearing life-changing news within this context does not necessarily foretell a literal event; rather, it highlights your readiness or hesitation to face major internal realizations, shifts in responsibilities, or a transformation in how you relate to those closest to you. \n\nConsider what area of your life currently feels on the precipice of quiet transformation, and trust your ability to navigate whatever changes unfold.",
+    "ar": "رؤية الاستماع إلى خبر مفصلي أو هام في المنام يحمل في طياته دلالات عميقة ترتبط بالتحولات والتغيرات في اليقظة. وفي أصول تفسير الأحلام للأئمة الكبار كابن سيرين، يُعبر سماع الأخبار في الرؤى غالباً عن بزوغ مرحلة جديدة أو استقبال أنباء تُبدل الأحوال وتفتح آفاقاً غير متوقعة، فالخبر هنا يرمز إلى رمزية الانتقال والوعي بما هو قادم.\n\nكما أن ارتباط الخبر بالعائلة والأسرة يُشير في المأثور إلى رابطة التماسك والاهتمام المشترك بالمستقبل، ولا يعني بالضرورة حثيث السوء، بل قد يُشير إلى تبدل الظروف نحو الأفضل، أو اجتماع الكلمة على أمر ذي شأن يُجدد العلاقات ويزيدها قرباً وثباتاً أمام المتغيرات.\n\nلتكن هذه الرؤية دافعاً لطيفاً للإقبال على عائلتك بمزيد من المحبة والتواصل، واستقبال القادم بقلب مطمئن ونفس متفائلة."
   },
   "engine": "fallback:gemini-3.6-flash"
 }

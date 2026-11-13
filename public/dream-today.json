@@ -1,17 +1,17 @@
 {
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "symbol": {
-    "key": "pregnancy",
-    "en": "Pregnancy",
-    "ar": "الحمل"
+    "key": "fire",
+    "en": "Fire",
+    "ar": "النار"
   },
   "dream": {
-    "en": "Someone told me news that would change a family forever.",
-    "ar": "أخبرني أحدهم بخبرٍ سيغيّر عائلةً للأبد."
+    "en": "A small fire warmed a cold empty room.",
+    "ar": "أضاءت نارٌ صغيرة غرفةً باردةً خالية."
   },
   "reading": {
-    "en": "Hearing news that has the power to alter a family forever in a dream often touches on deep emotional transitions, impending shifts in identity, or unspoken anxieties about change. Words delivered by an unknown or ambiguous messenger traditionally represent your own intuitive awareness—a part of your psyche signaling that a dynamic within your personal world or inner life is undergoing a significant evolution.\n\nIn cross-cultural dream traditions, the concept of family symbolizes foundational stability, shared history, and core values. Hearing life-changing news within this context does not necessarily foretell a literal event; rather, it highlights your readiness or hesitation to face major internal realizations, shifts in responsibilities, or a transformation in how you relate to those closest to you. \n\nConsider what area of your life currently feels on the precipice of quiet transformation, and trust your ability to navigate whatever changes unfold.",
-    "ar": "رؤية الاستماع إلى خبر مفصلي أو هام في المنام يحمل في طياته دلالات عميقة ترتبط بالتحولات والتغيرات في اليقظة. وفي أصول تفسير الأحلام للأئمة الكبار كابن سيرين، يُعبر سماع الأخبار في الرؤى غالباً عن بزوغ مرحلة جديدة أو استقبال أنباء تُبدل الأحوال وتفتح آفاقاً غير متوقعة، فالخبر هنا يرمز إلى رمزية الانتقال والوعي بما هو قادم.\n\nكما أن ارتباط الخبر بالعائلة والأسرة يُشير في المأثور إلى رابطة التماسك والاهتمام المشترك بالمستقبل، ولا يعني بالضرورة حثيث السوء، بل قد يُشير إلى تبدل الظروف نحو الأفضل، أو اجتماع الكلمة على أمر ذي شأن يُجدد العلاقات ويزيدها قرباً وثباتاً أمام المتغيرات.\n\nلتكن هذه الرؤية دافعاً لطيفاً للإقبال على عائلتك بمزيد من المحبة والتواصل، واستقبال القادم بقلب مطمئن ونفس متفائلة."
+    "en": "A small fire in a cold, empty room speaks of quiet resilience. Fire traditionally carries life-force, hope, and transformation; cold suggests emotional distance, stillness, or a season of feeling undernourished. The empty room is the inner space where solitude and possibility meet—not merely lack, but room to begin.\n\nThat the fire is small yet warming matters. It hints that comfort need not arrive as a blaze; a modest spark, a single honest gesture, or one steady routine can change the atmosphere within you. The dream gently reflects a capacity to nurture yourself or a situation that has felt bare, and it invites attention to what small warmth is already present.\n\nLet one simple act of care be enough for today.",
+    "ar": "النار الصغيرة التي تُضيء ولا تُحرق تُشير في تعبير الرؤيا إلى نور الهداية أو أمل صغير يبدأ في القلب، وقد تدل على طاعة أو جهد قليل لكنه نافع. أما الغرفة الباردة الخالية فترمز إلى وحدة أو فراغ عاطفي أو مرحلة ينتظر فيها الإنسان من يملأ المكان دفئًا ومعنى.\n\nاجتماعهما يوحي بأن في حياتك بذرة خير أو بصيرة صغيرة تكفي لتبديد بعض البرود والوحشة، لا بالاندفاع بل بالثبات والرعاية. فإن كانت النار هادئة مطيعة فهي أقرب إلى نور الطمأنينة والذكر، وإن كانت مجرد ضوء عابر فهي تذكير بأن الأمل قد يبدأ صغيرًا.\n\nانظر إلى ما حولك: ربما تحتاج إلى وصل صلة، أو إحياء عادة طيبة، أو الاقتراب ممن يمنحك دفئًا صادقًا. اجعل هذه الومضة الصغيرة بداية رفق ويقين، واستعن بالصلاة والذكر على تثبيت القلب."
   },
-  "engine": "fallback:gemini-3.6-flash"
+  "engine": "openrouter/free"
 }

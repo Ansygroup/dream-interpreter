@@ -1,17 +1,17 @@
 {
-  "date": "2026-11-13",
+  "date": "2026-11-14",
   "symbol": {
-    "key": "fire",
-    "en": "Fire",
-    "ar": "النار"
+    "key": "pregnancy",
+    "en": "Pregnancy",
+    "ar": "الحمل"
   },
   "dream": {
-    "en": "A small fire warmed a cold empty room.",
-    "ar": "أضاءت نارٌ صغيرة غرفةً باردةً خالية."
+    "en": "Someone told me news that would change a family forever.",
+    "ar": "أخبرني أحدهم بخبرٍ سيغيّر عائلةً للأبد."
   },
   "reading": {
-    "en": "A small fire in a cold, empty room speaks of quiet resilience. Fire traditionally carries life-force, hope, and transformation; cold suggests emotional distance, stillness, or a season of feeling undernourished. The empty room is the inner space where solitude and possibility meet—not merely lack, but room to begin.\n\nThat the fire is small yet warming matters. It hints that comfort need not arrive as a blaze; a modest spark, a single honest gesture, or one steady routine can change the atmosphere within you. The dream gently reflects a capacity to nurture yourself or a situation that has felt bare, and it invites attention to what small warmth is already present.\n\nLet one simple act of care be enough for today.",
-    "ar": "النار الصغيرة التي تُضيء ولا تُحرق تُشير في تعبير الرؤيا إلى نور الهداية أو أمل صغير يبدأ في القلب، وقد تدل على طاعة أو جهد قليل لكنه نافع. أما الغرفة الباردة الخالية فترمز إلى وحدة أو فراغ عاطفي أو مرحلة ينتظر فيها الإنسان من يملأ المكان دفئًا ومعنى.\n\nاجتماعهما يوحي بأن في حياتك بذرة خير أو بصيرة صغيرة تكفي لتبديد بعض البرود والوحشة، لا بالاندفاع بل بالثبات والرعاية. فإن كانت النار هادئة مطيعة فهي أقرب إلى نور الطمأنينة والذكر، وإن كانت مجرد ضوء عابر فهي تذكير بأن الأمل قد يبدأ صغيرًا.\n\nانظر إلى ما حولك: ربما تحتاج إلى وصل صلة، أو إحياء عادة طيبة، أو الاقتراب ممن يمنحك دفئًا صادقًا. اجعل هذه الومضة الصغيرة بداية رفق ويقين، واستعن بالصلاة والذكر على تثبيت القلب."
+    "en": "In dream language, “news” often points to a message arriving from the unconscious—something you are beginning to know but have not yet spoken aloud. “Family” can represent belonging, shared history, or the part of yourself shaped by those closest to you. Together, they suggest a moment of threshold: information that feels weighty because it may alter how you see your place among others.\n\nBecause the dream is so brief, I don’t want to invent a meaning that isn’t yours. Could you share what kind of news it was, or how you felt when you heard it? That single detail would help the reading stay true to your inner world.\n\nWhatever the news represents, it seems to be asking you to notice what you are ready to acknowledge about change and belonging.",
+    "ar": "رأيتَ في منامك أنّ أحدهم يحملك خبراً يغيّر مجرى عائلةٍ إلى الأبد، وهذا المنام يحمل دلالاتٍ عميقة في كتب التعبير. الخبر في المنام يُشير إلى ما يصل إلى الأذن من كلامٍ يترك أثراً في النفس، وقد فسّره ابن سيرين على أنّه بشارة أو إنذار بحسب حال الرائي وحال قائل الخبر في الرؤيا. ومن رآى أنّه يتلقّى خبراً عن عائلته، فقد يكون ذلك انعكاساً لاهتمامه بأمرٍ يخصّ أقرباءه أو شعوره بمسؤوليةٍ تجاههم، والله أعلم بغيبه.\n\nأمّا \"تغيّر العائلة للأبد\" فهي رمزٌ للتحوّلات الكبرى التي تمرّ بها البيوت، فقد تكون إشارةً إلى انتقالٍ في الحال، أو لمّ شمل بعد فراق، أو حدثٍ يجمع القلوب على خير. وتغيّر الأحوال في المنام غالباً ما يُفسَّر بحسب ما يحمله الرائي في قلبه من أملٍ أو قلق، فإذا كنتَ تشعر بالاطمئنان في الرؤيا فهو خيرٌ يُقبل، وإن كنتَ متوجّساً فلتكن هذه دعوةً لك للتأمّل في علاقتك بأهلك وتقوية أواصر المودّة بينكم.\n\nلا ينبغي أن ينقلب الخبر في نفسك إلى همٍّ أو خوفٍ من المجهول، فالأحلام رسائل تعينك على التروّي وحسن التدبّر. اجعل شغلك الشاغل أن تكون سبباً في سعادة أهل بيتك وصلاح أحوالهم، وثق أنّ ما يأتي به الله للعائلة التي تتمسّك بالخير هو عاقبةٌ حميدة مهما بدت الظروف."
   },
-  "engine": "openrouter/free"
+  "engine": "openrouter/free+fallback:deepseek-v4-flash"
 }
